@@ -1,0 +1,69 @@
+AI kitchen auto-layout provides efficient and intelligent layout design capabilities for customized kitchen solutions. You can freely draw cabinets, place appliances, generate professional layout plans with one click, and use AI enhancement features to quickly complete the entire design process from space planning to visualization, efficiently creating a practical and aesthetically pleasing kitchen space.
+
+For Users
+=========
+
+**Individual users** are gradually opening, and **Enterprise users** can contact the CSC to apply for activation\~
+
+* If some enterprise accounts do not have the kitchen \& closet design entrance, please contact the CSC to apply.
+
+Entrance
+========
+
+Enter customized design, select **Kitchen** , and then click on the top **Al Kitchen Auto- Layout**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552281348/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+**Al Kitchen Auto- Layout**
+===========================
+
+1. Click **Draw Layout**, draw cabinets in the canvas room, and right-click to exit after completion.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775552398733/D0F6A7934A629582CB972C4F55C2A615.gif)
+
+2. From the left toolbar, select the required **appliance** and place it on the canvas.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775552454566/435B495D2CC0DB3743BE6523FD081D5D.gif)
+
+* Select an appliance and adjust its position by entering values in the input box or dragging it directly; if you need to delete it, just click the **Delete** button in the floating window.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552527328/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+* If an error occurs, click the **Undo** or **Redo** buttons in the bottom-right corner; if you need to redraw, click **Clear**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552559159/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. Once the layout is complete, click the **Generate** button in the bottom-right corner, and then click **Confirm** in the pop-up window for replacing current design with the new layout.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552595060/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. After the AI layout is generated, it will automatically enter the rendering large screen page, where you can select the desired lighting template for **Render**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552932306/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+* If you want to make modifications, return to the tool page. When the tool page changes, you can click **Project Sync** in the render window, and the render window will synchronize updates (e.g., changing the floor material). Then directly select a lighting template in the render window and perform **Render**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775556170083/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775554266826/DCE71965D19C1438840BBBDE410C6B53.gif)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775555297042/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. After rendering, click **Gallery** to view the results.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554970829/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554992664/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+AI Enhancement
+==============
+
+1. If you want to quickly get a good effect picture, go to the rendering page and click **AI Enhancement** in the bottom-right corner (AI Enhancement is add Kitchen decors to enrich cabinet rendering visuals).
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554738204/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. After rendering, click to view the results.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554919775/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554943998/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)

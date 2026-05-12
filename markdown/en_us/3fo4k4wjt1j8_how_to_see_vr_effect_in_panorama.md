@@ -1,0 +1,60 @@
+### Overview
+
+The panorama feature of Coohom allows you to experience room scenes immersively as long as you wear compatible VR devices that are properly set up.
+
+Some operations in the Panorama rely on VR handles while some do not. Operations that you can perform without using a handle or joystick include Rotate View and Room Navigation. Meanwhile, the handle or joystick is required for replacing items, clicking on buttons such as the Line switch as well as other operations that are more complex.
+
+### **Preconditions**
+
+1. Click the VR settings in the merchant platform, then panorama/720 tour renderings will have VR mode.
+2. Click rendered panorama/720 tour on your phone and experience it with VR glasses
+
+Click the VR settings in the merchant platform, then panorama/720 tour renderings will have VR mode.
+
+Click rendered panorama/720 tour on your phone and experience it with VR glasses
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733842653445/F4D7C80613D36793BC24F1D400FEE2E8.png)
+
+**Device requirements**
+
+Below are the brands of devices that you can choose from, which are the basic ones that you can start out with. For a truer VR experience, you can try more advanced ones, such as devices with joysticks.
+
+* Google Cardboard, VR Headsets 3D Box Virtual Reality Glasses
+* GOGO 3D VR Glasses Virtual Reality Glasses
+* Other devices. We recommend that you test your device to get to know every aspect of the virtual reality experience it can bring.
+
+Google Cardboard, VR Headsets 3D Box Virtual Reality Glasses
+
+GOGO 3D VR Glasses Virtual Reality Glasses
+
+Other devices. We recommend that you test your device to get to know every aspect of the virtual reality experience it can bring.
+
+### **Steps**
+
+1. Have the VR glasses and your smartphone ready. Also, get panorama links.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/jpeg/1733842656252/C30F2A2A76A3BF5C5EAFD1CF76042717.jpeg)
+
+2. Open the panorama link. Click the VR button on the right side of the panorama.
+
+**DEMO (light 720-tour)**
+
+**<https://www.coohom.com/pub/tool/panorama/show?obsPlanId=3FO43N7KQ0C1>**
+
+**DEMO (smart 720-tour)**
+
+**[https://www.coohom.com/pub/tool/panorama/aiwalking?obsPlanId=3FO43N7KQ0C1\&locale=en_US](https://www.coohom.com/pub/tool/panorama/aiwalking?obsPlanId=3FO43N7KQ0C1&locale=en_US)**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733842660734/46C9E2E218D08926EC98484ADC8AD008.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733842663918/655342D92F86620ED47350D3C6F13F38.png)
+
+3. Unlock the phone and put the phone into the VR glasses.
+
+**Tables can't be imported directly. Please insert an image of your table which can be found [here](https://helpcenter.coohom.com/en/articles/6686156-how-to-see-vr-effect-in-panorama).**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733842666015/05B6A628F57AF3E65942EAE156D67C0A.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733842668257/3B88D243DCA83E3F2708223EBB8E60C4.png)
+
+4. Open the box of the VR glasses and fit the phone in.
+
+5. Wear VR glasses to view the panorama. You can adjust the interpupillary distance (IPD) by rotating the knob. To increase IPD, rotate the knob clockwise. To decrease IPD, rotate the knob anti-clockwise.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733842672588/1EC8713128BF114870241598CB22DDA9.png)

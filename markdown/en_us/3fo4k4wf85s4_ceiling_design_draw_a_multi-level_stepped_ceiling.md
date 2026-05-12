@@ -1,0 +1,70 @@
+In the ceiling editor tool, with the help of the offset tool and moldings materials, you can quickly complete the drawing of multi-level stepped ceilings and achieve the desired design effect.
+
+For Users
+=========
+
+All Users
+
+Entrance
+========
+
+Select the ceiling and click to enter **Ceiling Editor**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775196957466/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+Draw a Multi-level Stepped Ceiling
+==================================
+
+1. Use the **Rectangle** tool from the top toolbar to draw a rectangle, then click the **Offset** tool in the top toolbar, click anywhere on the ceiling, input the offset value, and press the **Enter** key to confirm.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775198291312/BDD03DBD7B143CFD44CBE3156FF860F8.gif)
+
+2. Click the rectangular area generated after the offset, and set a **Extrusion** value in the lower-right corner.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775198230639/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. Next, offset two profile lines on the ceiling, then click **Moldings** in the left sidebar, and select suitable lines from the material library to place in the desired position.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775202978016/224070BBD0FEA231C555DBA16061712F.gif)
+
+![](https://qhstaticssl.kujiale.com/image/png/1776233233877/88D5DD2C2B5F423D3124D7EBC6EB3991.png)
+
+* You can also click on **My Account** in the left sidebar, select pre-saved corner lines and decorative lines from your favorites, and place them in the desired position.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775204223582/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775203160430/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775203335020/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. After placement, select the profile lines and click to enter **Section Edit** , adjust the dimensions as needed, and click **Done**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1775203450431/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775203646931/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. Select the configured profile lines, click **Duplicate** , and then **Paste Into Current Styling Area**.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775203799208/4DCE9FB8A8A5511E39215C44E472F432.gif)
+
+6. If you want to center the decorative lines, select the lines, and check **Center Molding** in the left sidebar.
+
+![](https://qhstaticssl.kujiale.com/image/png/1776233268915/6A6020AA6E8E14832E26628D111407CA.png)
+
+7. Then click the configured profile lines and **Paste Into Current Styling Area** in the same way.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1776233331684/4DCE9FB8A8A5511E39215C44E472F432.gif)
+
+8. After completing the settings, you can drag and enlarge the top-right viewport to check the effect and see if adjustments are needed.
+
+![](https://qhstaticssl.kujiale.com/image/png/1776233299687/E56E8569E6564A33F583697BDF973725.png)
+
+9. If no adjustments are needed, click **Exit with Save** in the upper-right corner. After rendering, you will get a satisfactory render.
+
+![](https://qhstaticssl.kujiale.com/image/png/1776233315379/DA3E2CD0DB96064E167156BDF80B80AB.png)
+
+* Final effect as follows:
+
+![](https://qhstaticssl.kujiale.com/image/jpeg/1775207116866/B1CE343C6E86C04510A1032043453AD7.jpg)
+
+<br />

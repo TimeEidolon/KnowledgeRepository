@@ -1,0 +1,57 @@
+团队成员可以将自己个人空间的方案及模型素材复制到团队空间。方案复制到团队空间后，所有团队成员均可查看、编辑，模型素材复制到团队空间后，仅本人可见并使用，其他成员无法查看
+
+面向用户
+====
+
+所有Elite用户，逐步开放中\~
+
+复制方案到团队空间
+=========
+
+1. 点击方案右上角的**...** 按钮，选择**移动到**
+
+![](https://qhstaticssl.kujiale.com/image/png/1773818601669/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 在弹出的面板选择**空间** ，然后点击**确认**
+
+![](https://qhstaticssl.kujiale.com/image/png/1773818786091/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. 复制成功后，在左上角点击切换至**团队空间**，就可以看到已复制的方案
+
+![](https://qhstaticssl.kujiale.com/image/png/1773818975689/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1773819098930/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+批量复制模型到团队空间
+===========
+
+1. 点击左侧栏的**模型** ，你可以看到自己上传的所有**模型** 及**纹理** ，然后点击右上角的**批量复制**
+
+![](https://qhstaticssl.kujiale.com/image/png/1773821015337/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1773821110888/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 在弹出的面板选择**空间** ，然后点击**确认**
+
+![](https://qhstaticssl.kujiale.com/image/png/1773819867083/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. 复制成功后，在左上角点击切换至**团队空间**
+
+![](https://qhstaticssl.kujiale.com/image/png/1773821148661/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. 在团队空间的**个人库**便可以看到从个人空间复制过来的所有模型及纹理
+
+![](https://qhstaticssl.kujiale.com/image/png/1773820418470/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1773820462906/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+注意事项
+====
+
+1. 复制方案时，仅支持**单个复制**，暂不支持批量操作
+
+2. 复制模型素材默认**批量复制**，模型库内全部模型与纹理将同步复制，无需手动选择
+
+3. 只能从个人空间复制到团队空间，不能从团队空间复制到个人空间
+
+<br />

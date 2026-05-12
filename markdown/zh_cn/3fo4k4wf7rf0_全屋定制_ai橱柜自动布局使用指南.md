@@ -1,0 +1,69 @@
+AI 厨房自动布局，为全屋定制厨房提供高效智能的布局设计能力。你可自由绘制柜体、摆放电器，一键生成专业布局方案，还可以使用AI 增强功能，快速完成从空间规划到效果呈现的全流程设计，高效打造实用美观的厨房空间
+
+面向用户
+====
+
+个人用户逐步开放中，企业用户可联系客户成功顾问申请开通\~
+
+* 部分企业账号中没有全屋定制设计入口的，需要联系客户成功顾问申请
+
+入口
+===
+
+进入全屋定制设计，选择**厨房** ，然后点击顶部的**AI厨房自动布局**
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552281348/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+AI厨房自动布局
+========
+
+1. 点击**绘制布局**，在画布房间内绘制橱柜，绘制完成点击鼠标右键退出
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775552398733/D0F6A7934A629582CB972C4F55C2A615.gif)
+
+2. 从左侧工具栏选择需要的**电器**放置画布中
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775552454566/435B495D2CC0DB3743BE6523FD081D5D.gif)
+
+* 选中电器，可以在输入框中输入数值调整位置，也可以直接拖动调整；若需删除，直接点击浮窗中的删除按钮即可
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552527328/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+* 若操作有误，可点击右下角的**撤销** 或**恢复** 按钮；如需重新绘制，点击**清空**即可
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552559159/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. 布局完成，点击右下角的**生成** 按钮，然后在**是否用新布局替换当前设计** 的弹窗中点击**确认**
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552595060/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. AI布局生成后会默认进入渲染大屏页面，你可以选择需要的灯光模板进行**渲染**
+
+![](https://qhstaticssl.kujiale.com/image/png/1775552932306/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+* 若是想要进行修改，先返回工具页面，当工具页面发生变化，你可以点击渲染窗口的**项目同步** ，渲染窗口将同步更新（例如更换地面材质）。然后可直接在渲染窗口选择灯光模板并进行**渲染**
+
+![](https://qhstaticssl.kujiale.com/image/png/1775556170083/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1775554266826/DCE71965D19C1438840BBBDE410C6B53.gif)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775555297042/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. 渲染完成，点击**图册**查看效果
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554970829/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554992664/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+AI增强
+====
+
+1. 若是想要快速得到一张好的效果图，可以在渲染页面中，点击右下角的**AI增强**（AI增强是添加厨房装饰元素，丰富橱柜渲染效果）
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554738204/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 渲染完成，点击查看效果
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554919775/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1775554943998/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)

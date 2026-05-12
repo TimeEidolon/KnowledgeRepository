@@ -1,0 +1,70 @@
+Mastering 360° walkthrough rendering techniques in the rendering tool allows for the creation of stunning 3D panoramic images, providing a comprehensive presentation of design solutions. Compared to regular renderings, 360° walkthrough showcase richer, more three-dimensional, and interactive content.
+
+⭐Before reading the article, it is recommended to watch the video tutorial first for easy getting started\~
+
+<br />
+
+🎥 \[Video URL\](https://www.youtube.com/watch?v=fnz6ifRl1WA)
+
+<br />
+
+For Users
+=========
+
+All users
+
+Render 360° Walkthrough
+=======================
+
+1. In the design tool, click **Render** on the left sidebar to enter the rendering page.
+
+![](https://qhstaticssl.kujiale.com/image/png/1773906463715/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. At the top, select **360° Walkthrough** , then click **Smart Views** on the right side to quickly choose a suitable perspective.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773912108713/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+* Alternatively, you can manually adjust the camera position in the top-right window to set the desired perspective.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1773907874093/D0F6A7934A629582CB972C4F55C2A615.gif)
+
+3. Once perspective is set, choose **Resolutions, Ambient Lights,** and **Environment** from the left sidebar.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773912108586/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1773908558901/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. Then click **Generate** at the bottom.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773912108714/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+View 360° Walkthrough
+=====================
+
+Click **Gallery** in the top-right corner, then select **Large View** at the top to view the render results.
+
+![](https://qhstaticssl.kujiale.com/image/png/1773908899839/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773912108520/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+* You can also **View in Separate Window** for a more intuitive experience.
+
+![](https://qhstaticssl.kujiale.com/image/png/1773910157649/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/gif/1773912109363/1CA83DEA6D0928946F2BD389D15284CF.gif)
+
+Share 360° Walkthrough
+======================
+
+Click the **Share** button at the bottom of the image to share your rendering via QR code or link.
+
+![](https://qhstaticssl.kujiale.com/image/png/1773911118427/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+Delete 360° Walkthrough
+=======================
+
+Click **Move to the Recycle Bin** at the bottom of the image to delete the current rendering.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773912108648/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+<br />

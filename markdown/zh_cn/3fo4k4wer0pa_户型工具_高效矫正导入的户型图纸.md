@@ -1,0 +1,41 @@
+在户型工具中使用导入前处理功能，可以一站式解决户型图纸拍摄变形、画面杂乱的预处理难题。无需复杂操作，一键完成透视矫正、画面清理，搭配精准比例尺设置，轻松还原户型真实尺寸，快速完成户型智能识别，让户型绘制更高效省心
+
+⭐在阅读文章前，建议您先查看视频教程，便于快速上手\~
+
+<br />
+
+🎥 \[Video URL\](https://www.youtube.com/watch?v=_LtTVgDxCOc)
+
+<br />
+
+面向用户
+====
+
+所有用户
+
+导入前处理
+=====
+
+1. 在户型工具中点击**导入图纸** ，图纸加载成功后，AI会自动识别图片是否需要处理，点击**确定**会自动进行处理
+
+![](https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png)
+
+* 您也可以点击**导入前处理**按钮，可一键清除水印、底纹、褶皱并消除透视形变，点击后自动开始处理
+
+![](https://qhstaticssl.kujiale.com/image/png/1773131721761/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 等待处理完成，左侧为处理前的原图，右侧为处理后的图，左右两张图可以分别用**鼠标滚轮** 缩放，用**鼠标中键**拖动，然后根据需要勾选要使用的图
+
+* 选择**使用原图时** ，使用的是处理前的原图纸；选择**使用处理结果**，则使用处理后的图纸
+
+![](https://qhstaticssl.kujiale.com/image/png/1773130898787/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. 移动比例尺至墙面，然后输入实际长度
+
+![](https://qhstaticssl.kujiale.com/image/png/1773130993312/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. 点击右下角的**导入**，稍等片刻户型就生成成功了
+
+![](https://qhstaticssl.kujiale.com/image/png/1773131360411/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1773131643549/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)

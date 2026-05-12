@@ -1,0 +1,55 @@
+Credits are Coohom's exclusive consumption unit for AI features, used to exchange for the capability to call AI tools within the platform; **only applicable to new AI-related features**, without affecting your existing paid benefits for design, rendering, etc. Each AI tool call will consume the corresponding amount of credits, and the specific consumption standard is subject to the tool's prompt.
+
+Entrance
+========
+
+On the Workspace page, click on your avatar to view your current credit balance, and click the **Credits** button to check detailed usage records.
+
+![](https://qhstaticssl.kujiale.com/image/png/1778232059488/EB03C83A224EE714E23B896B475943E1.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209808/BB8D7B8F030947723BB8C67710326C20.png)
+
+Purchase Credits
+================
+
+On the credits detail page, click **Top Up Credits**, then purchase as needed on the recharge page (Elite team members will be supported for purchase at a later stage).
+
+![](https://qhstaticssl.kujiale.com/image/png/1778211861320/2CBA59A688EDE16E011841B168BC4D1A.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209850/A5E5CCCA38886840B360AFB4F804B56A.png)
+
+Core Rules of Credits
+=====================
+
+Functions Requiring Credits
+---------------------------
+
+|            Function             |                                   Billing Rules                                    |                                                                 Online Documentation Link                                                                  |
+|---------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AI Modeler                      | Credits are calculated based on the model and parameters selected during the call. | [\[Model Materials\] AI Modeler Tool Operation Guide](https://www.coohom.com/helpcenter/model-materials-ai-modeler-tool-operation-guide?kjl_source=hc)     |
+| AI Smart Layout for Floor Plans | Credits are consumed per call, with the exact amount based on actual usage.        | [\[Floor Plan\] AI Smart Layout Tool Usage Guide](https://www.coohom.com/helpcenter/floor-plan-ai-smart-layout-tool-usage-guide?kjl_source=hc)             |
+| AI Kitchen Auto Layout          | Credits are consumed per call, with 40 credits used for each call.                 | [\[Kitchen Design\] Al Kitchen Auto-Layout Usage Guide](https://www.coohom.com/helpcenter/kitchen-design-al-kitchen-auto-layout-usage-guide?kjl_source=hc) |
+| AI Real-time Rendering          | Credits are consumed based on duration.                                            | [\[Render\] Real-time Rendering Operation Guide](https://www.coohom.com/helpcenter/render-real-time-rendering-operation-guide?kjl_source=hc)               |
+| Other Features                  | More features are continuously updated.                                            | /                                                                                                                                                          |
+
+How to Obtain Credits
+---------------------
+
+There are three ways for individual users to obtain credits:
+
+* Membership Activation: Users can receive corresponding credits upon activating membership.
+* Purchase: Users can directly purchase credits for their accounts.
+* Trial Experience: To facilitate user experience of new AI features, Coohom offers a small number of credits upon entering AI features.
+
+FAQ
+===
+
+**Q1:** My individual account shows 0 credits. Does this affect existing rendering/design functionalities?
+
+**A1:** No impact. Credits are only applicable to new AI features such as AI modeler and AI smart layout, and your existing paid benefits such as rendering and modeling are not affected by the credit balance and can be used normally.
+
+**Q2:** Do credits have an expiration date?
+
+**A2:** Yes, they do. Credits will expire after the validity period ends. Generally, gifted credits have a shorter validity period, while purchased credits have a longer one.
+
+<br />
