@@ -37,7 +37,7 @@ Please follow the steps below:
 
 11. If you have **Pro account** and you may share this project by duplicate the link.  
 
-​<https://www.coohom.com/pub/saas/apps/project/share/MQEDAW5MCMIFSAABAY888888>
+​[https://www.coohom.com/pub/saas/apps/project/share/MQEDAW5MCMIFSAABAY888888](https://www.coohom.com/pub/saas/apps/project/share/MQEDAW5MCMIFSAABAY888888)
 
 **For more details, please check out the tutorial video below:**  
 🎥 \[Video URL\](https://www.youtube.com/watch?v=S0k-7aoIbKo )
