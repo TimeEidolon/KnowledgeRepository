@@ -39,7 +39,7 @@ Other devices. We recommend that you test your device to get to know every aspec
 
 **DEMO (light 720-tour)**
 
-**<https://www.coohom.com/pub/tool/panorama/show?obsPlanId=3FO43N7KQ0C1>**
+**[https://www.coohom.com/pub/tool/panorama/show?obsPlanId=3FO43N7KQ0C1](https://www.coohom.com/pub/tool/panorama/show?obsPlanId=3FO43N7KQ0C1)**
 
 **DEMO (smart 720-tour)**
 
