@@ -61,7 +61,7 @@ While performing operations, hold down the shortcut key **Y** to adjust opacity,
 Generate Floor Plan
 -------------------
 
-Once local adjustments are completed, directly click **Generate**to finalize.
+Once local adjustments are completed, directly click **Generate** to finalize.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1778310724682/2DE787103875984F16E02A61CB13CC4E.png)
 

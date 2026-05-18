@@ -1,4 +1,4 @@
-720° VR tours can be understood as a series of panoramas.It is recommended that you watch the video tutorial before reading the article, it can help you understand the 720° VR tour:  
+720° VR tours can be understood as a series of panoramas. It is recommended that you watch the video tutorial before reading the article, it can help you understand the 720° VR tour:  
 🎥 \[Video URL\](https://www.youtube.com/watch?v=f_6HXus8n1A)
 
 The following are the highlights of the functions:

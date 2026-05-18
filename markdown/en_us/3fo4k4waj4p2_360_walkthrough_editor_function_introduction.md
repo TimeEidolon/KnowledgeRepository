@@ -63,7 +63,7 @@ Now there exist six types of hotspots: text, image, link, audio, video, and scen
 
 * **Text hotspot:** Viewers can see text descriptions when they click on the hotspot.
 * **Image hotspot:** Viewers can see images uploaded by the creator when they click on the hotspot. Multiple images can be uploaded for display.
-* **Link hotspot:**Viewers can see the link and directly redirect to the corresponding webpage by clicking on the hotspot.
+* **Link hotspot:** Viewers can see the link and directly redirect to the corresponding webpage by clicking on the hotspot.
 * **Audio hotspot:** Viewers can listen to audio uploaded by the creator when they click on the hotspot.
 * **Video hotspot:** Viewers can watch videos uploaded by the creator or videos generated within Coohom when they click on the hotspot.
 * **Scene hotspot:** This hotspot only appears in 720 roaming. It allows configuration of hotspot styles that navigate between different panoramas in the 720 roaming.
@@ -87,7 +87,7 @@ This feature provides various capabilities related to panorama sharing.
 * **Work Status:** You can set the availability and validity period of the panorama. Panoramas that are taken down or have expired cannot be accessed.
 * **Sharing Formats:** You can choose between formats such as posters, QR codes, and links. Posters allow customization of the panorama's title, description, and thumbnail.
 * **Sharing Password:** To protect the copyright of the panorama, you can set a password. Without the password, access to the panoramic image is restricted.
-* **Sharing Time:**For different clients, you can set multiple expiration times for the same panorama and generate different links for sharing.
+* **Sharing Time:** For different clients, you can set multiple expiration times for the same panorama and generate different links for sharing.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1749711855827/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 

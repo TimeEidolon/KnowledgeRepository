@@ -60,7 +60,7 @@ Refraction map: Use the map to control the corresponding degree of refraction in
 Refraction glossiness: The clarity of refraction inside the object, the smaller the value, the more frosted it is; the larger the value, the cleaner and more thorough;
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843355927/4BF64F8EF502D5A3B6F7CD4A9ABAC435.png)
 
-**Bump:**Concave-convex ratio: the depth of the concave-convex, the value should not be too large, it is recommended not to exceed the default double
+**Bump:** Concave-convex ratio: the depth of the concave-convex, the value should not be too large, it is recommended not to exceed the default double
 
 **Bump original texture**: white bulge, black depression, you need to pay attention to uploading textures, preferably seamless textures to have better material effects
 
@@ -81,7 +81,7 @@ Fog Color: glass color, default no color
 <br />
 
 
-​**Fresnel:**When enabled, the reflection intensity will depend on the viewing angle of the surface, and the reflections at different angles are different; it is usually locked, and the Fresnel of the object can be changed freely after the lock is turned off;
+​**Fresnel:** When enabled, the reflection intensity will depend on the viewing angle of the surface, and the reflections at different angles are different; it is usually locked, and the Fresnel of the object can be changed freely after the lock is turned off;
 
 Fresnel IOR （index of refraction）: Fresnel index of refraction of the surface of an object
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843360971/051D13E678F9A11537A1A41CAB488186.png)

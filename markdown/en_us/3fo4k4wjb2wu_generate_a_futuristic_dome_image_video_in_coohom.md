@@ -29,7 +29,7 @@ Please follow the steps below:
 8. Adjust lights under **Custom Lights**, make sure every room has lighting.
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733830104516/5C7F6FE57439A863989A6599ACD4DE47.png)
 
-9. Save the Lights, then click on **GENERATE**button.
+9. Save the Lights, then click on **GENERATE** button.
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733830107764/FE43FE7E600488AEE3BD3C86D9FD9562.png)
 
 10. Next, check out the image effect.
