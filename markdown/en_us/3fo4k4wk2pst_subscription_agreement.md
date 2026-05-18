@@ -16,7 +16,7 @@ To activate this service, you may proceed with payment using one of the designat
 
 <br />
 
-To prevent inconvenience or losses resulting from delayed subscription renewal due to oversight or other reasons, Coohom offers an automatic renewal service. Unless otherwise specified by Coohom, **your subscription will automatically renew for an additional term upon expiration, and you authorize Coohom to charge the applicable fee from your payment account on the next billing date.**You are responsible for ensuring sufficient funds for successful payment and acknowledge liability for renewal failures due to insufficient balances. Auto-renewal can be managed or canceled at any time via the subscription interface.
+To prevent inconvenience or losses resulting from delayed subscription renewal due to oversight or other reasons, Coohom offers an automatic renewal service. Unless otherwise specified by Coohom, **your subscription will automatically renew for an additional term upon expiration, and you authorize Coohom to charge the applicable fee from your payment account on the next billing date.** You are responsible for ensuring sufficient funds for successful payment and acknowledge liability for renewal failures due to insufficient balances. Auto-renewal can be managed or canceled at any time via the subscription interface.
 
 <br />
 

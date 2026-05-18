@@ -122,26 +122,26 @@ FAQ
 
 **Q2: Do the materials made with the Real-time Material Editor have the same rendering effect as Coohom projects or floor plans?**
 
-**A2:**The rendering effects are basically the same. However, there can be slight visual differences due to varied settings of scenes, lighting, and camera angles.
+**A2:** The rendering effects are basically the same. However, there can be slight visual differences due to varied settings of scenes, lighting, and camera angles.
 
 **Q3: What is Material Template?**
 
-**A3:**Material Template is the updated version of Rendering Category. Each template can be seen as a material base with pre-configured basic effects. By adjusting parameters, you can edit on the material base to create a new material on your own.
+**A3:** Material Template is the updated version of Rendering Category. Each template can be seen as a material base with pre-configured basic effects. By adjusting parameters, you can edit on the material base to create a new material on your own.
 
 **Q4: If I forget to save a material that has been rendered or adjusted, will that material still be there after I exit the page?**
 
-**A4:**No, your rendered or adjusted material cannot be retrieved if you quit without saving. We recommend that you save it soon after the rendering or adjustment is done.
+**A4:** No, your rendered or adjusted material cannot be retrieved if you quit without saving. We recommend that you save it soon after the rendering or adjustment is done.
 
 **Q5: Will the effects of a real-time material look exactly the same as before if I finally set its parameters and category to the original state?**
 
-**A5:**In most cases, it will look exactly the same as before. However, there can be trivial differences in some materials. So we suggest that you observe the actual effects after setting the parameters and category to the original state to make sure it meets your expectation.
+**A5:** In most cases, it will look exactly the same as before. However, there can be trivial differences in some materials. So we suggest that you observe the actual effects after setting the parameters and category to the original state to make sure it meets your expectation.
 
 **Q6: Why would renderings fail sometimes?**
 
-**A6:**Renderings could fail sometimes because of low internet speed or network congestion. You can click Retry after a while for a new attempt.
+**A6:** Renderings could fail sometimes because of low internet speed or network congestion. You can click Retry after a while for a new attempt.
 
 **Q7: Is there a limited number of renderings that I'm entitled to in the material editor?**
 
-**A7:**So far, there's no limit to the renderings entitled to any user in the material editor. However, if you start too many rendering operations in a short period, the tasks may end up in a long queue, prolonging the rendering process greatly. Therefore, we suggest that you cut back on the renderings that are not so necessary.
+**A7:** So far, there's no limit to the renderings entitled to any user in the material editor. However, if you start too many rendering operations in a short period, the tasks may end up in a long queue, prolonging the rendering process greatly. Therefore, we suggest that you cut back on the renderings that are not so necessary.
 
 <br />

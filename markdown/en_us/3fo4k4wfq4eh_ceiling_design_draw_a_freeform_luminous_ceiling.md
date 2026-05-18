@@ -47,7 +47,7 @@ Draw a Freeform Luminous Ceiling
 
 ![](https://qhstaticssl.kujiale.com/image/png/1777023112080/D223EF61135483A3D9A152A05325A89B.png)
 
-8. Click the **Molding Brush**at the top, pick a ceiling material, and apply it to decoration lines.
+8. Click the **Molding Brush** at the top, pick a ceiling material, and apply it to decoration lines.
 
 ![](https://qhstaticssl.kujiale.com/image/gif/1777023328322/BDD03DBD7B143CFD44CBE3156FF860F8.gif)
 

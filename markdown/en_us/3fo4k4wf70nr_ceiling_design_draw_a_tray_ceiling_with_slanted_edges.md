@@ -23,7 +23,7 @@ Drawing a Tray Ceiling with Slanted Edges
 
 ![](https://qhstaticssl.kujiale.com/image/gif/1775117954562/435B495D2CC0DB3743BE6523FD081D5D.gif)
 
-3. Click the rectangular area generated after offsetting, and set the **Extrusion**value in the lower-right corner.
+3. Click the rectangular area generated after offsetting, and set the **Extrusion** value in the lower-right corner.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1775117984063/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
@@ -43,7 +43,7 @@ Drawing a Tray Ceiling with Slanted Edges
 
 7. After completing the settings, you can drag and enlarge the top-right viewport to check the effect and see if adjustments are needed.
 
-![](https://qhstaticssl.kujiale.com/image/png/1775119532640/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)8. If no adjustments are needed, click **Exit** **with** **Save**at the top-right corner. After rendering, you will get a satisfactory rendering.
+![](https://qhstaticssl.kujiale.com/image/png/1775119532640/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)8. If no adjustments are needed, click **Exit** **with** **Save** at the top-right corner. After rendering, you will get a satisfactory rendering.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1775119638620/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 

@@ -1,6 +1,6 @@
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/gif/1733841174373/6FD48C9323BF455138F7FAA8ECFECB17.gif)
 
-1. Select **IMAGES/VIDEOS**in the header of our 3D floor planner.
+1. Select **IMAGES/VIDEOS** in the header of our 3D floor planner.
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841176421/BD362FDADD1ED2F1EC446355FC8AE687.png)  
 
 2. Choose **Front View** , **Panorama,** or
