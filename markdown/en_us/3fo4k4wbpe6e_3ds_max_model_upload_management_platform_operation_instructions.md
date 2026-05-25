@@ -10,7 +10,7 @@ Download and Installation
 
 **1. Download**
 
-① Enter theworkspace, select **Models** , and find **Model Management Platform**.
+① Enter the workspace, select **Models** , and find **Model Management Platform**.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1778222825023/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
@@ -67,7 +67,7 @@ Open a local .max file on your computer. Click **Upload Model**. Once the cloud 
 
 **④ Add to Library**
 
-After the transfer is complete, open **Models** and click**Model Management Platform** , select the model, and click **Archive**.
+After the transfer is complete, open **Models** and click **Model Management Platform** , select the model, and click **Archive**.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1778223019229/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 

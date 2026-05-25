@@ -8,7 +8,7 @@ All users
 Entrance
 ========
 
-Select the ceiling surface and click to enter**Ceiling Editor.**
+Select the ceiling surface and click to enter **Ceiling Editor.**
 
 ![](https://qhstaticssl.kujiale.com/image/png/1775208957696/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
@@ -49,7 +49,7 @@ Draw a Ceiling with No Main Light
 
 ![](https://qhstaticssl.kujiale.com/image/png/1775212244582/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
-9. If no adjustments are needed, click**Exit** **with Save** in the top-right corner, and after rendering, you will obtain a satisfactory effect image.
+9. If no adjustments are needed, click **Exit** **with Save** in the top-right corner, and after rendering, you will obtain a satisfactory effect image.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1775212263934/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 

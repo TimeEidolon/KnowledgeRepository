@@ -14,7 +14,7 @@ To upload your own Textures/Materials/Paints, you may:
 
 ![](https://qhstaticssl.kujiale.com/image/png/1778149717160/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
-2. Click**Models** on the left navigation bar to enter **Uploads** part.  
+2. Click **Models** on the left navigation bar to enter **Uploads** part.  
 * Upload model materials in advanced tool, see online documentation for details:[Click to here](https://www.coohom.com/helpcenter/closet-design-upload-model-materials-in-advanced-tool?kjl_source=hc).
 
 ![](https://qhstaticssl.kujiale.com/image/png/1778142535636/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
