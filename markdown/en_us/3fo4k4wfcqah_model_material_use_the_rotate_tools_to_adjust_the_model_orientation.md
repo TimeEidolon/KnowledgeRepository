@@ -43,7 +43,7 @@ Three-Axis Rotation
 
 **Method 1**
 
-Select the model, click on **Switch Control** in the floating window, select**Rotate**, then click on the corresponding arc line as needed to rotate.
+Select the model, click on **Switch Control** in the floating window, select **Rotate**, then click on the corresponding arc line as needed to rotate.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1774334153030/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 

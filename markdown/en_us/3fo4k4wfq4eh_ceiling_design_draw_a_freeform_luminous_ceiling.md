@@ -63,7 +63,7 @@ Draw a Freeform Luminous Ceiling
 
 ![](https://qhstaticssl.kujiale.com/image/png/1777023714803/29FF7A53205D766ADC2FBD3C2EEB50DE.png)
 
-12. If no adjustments are needed, click**Exit** **with Save** at the top right. After rendering, a satisfactory rendering can be generated.
+12. If no adjustments are needed, click **Exit** **with Save** at the top right. After rendering, a satisfactory rendering can be generated.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1777023745687/B8C69D804944DAF2AF246DFFA0A0156C.png)
 

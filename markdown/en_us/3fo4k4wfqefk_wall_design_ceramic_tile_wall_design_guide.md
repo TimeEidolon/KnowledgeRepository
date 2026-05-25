@@ -15,7 +15,7 @@ Select the wall and click to enter **Wall Editor.**
 Ceramic Tile Wall Design
 ========================
 
-1. After entering the **Wall Editor** page, click on the wall, and in the floating window that pops up,select**Edit Paving.**
+1. After entering the **Wall Editor** page, click on the wall, and in the floating window that pops up, select **Edit Paving.**
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1777255887514/EB1B8D710321692C215818424D1833E2.png)
 
@@ -47,7 +47,7 @@ Ceramic Tile Wall Design
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1777255887699/92120615114332FD38169E01E2D370BD.png)
 
-7. Then select the tiles that have been placed, click **Set as Paving Scheme** in the floating window, choose **Grid** , and modify the**Gap** and **Pattern** in the left panel.
+7. Then select the tiles that have been placed, click **Set as Paving Scheme** in the floating window, choose **Grid** , and modify the **Gap** and **Pattern** in the left panel.
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1777255887523/A5B6EEAF469CC71F9588C7F124380567.png)
 
@@ -67,7 +67,7 @@ Ceramic Tile Wall Design
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1777255887668/43E0B8C28BE73992987264538C908173.png)
 
-11. After tiling is completed, modify the**Gap** value in the left panel.
+11. After tiling is completed, modify the **Gap** value in the left panel.
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1777255887522/926A0108468A746ECD557B44D710426D.png)
 

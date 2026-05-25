@@ -28,7 +28,7 @@
 
 ### How to start generate image and view your results?
 
-1.Click **GENERATE** to start redering. Click **Gallery** to view your results.
+1.Click **GENERATE** to start rendering. Click **Gallery** to view your results.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886571245/9E91FE32E6D12EC54B8589BD8B7AFC54.png)
 
@@ -36,6 +36,6 @@
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886572782/433C29EE9DDA82775D118D5372E78FF5.png)
 
-### **Related Artical:**
+### **Related Article:**
 
 **[3 Steps to Light Customization](https://www.coohom.com/en_US/helpcenter/article/3-steps-to-light-customization?kjl_source=hc)**
