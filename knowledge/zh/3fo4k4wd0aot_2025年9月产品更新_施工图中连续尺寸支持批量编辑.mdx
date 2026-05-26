@@ -26,6 +26,10 @@ description: "本期门窗定制、施工图纸等多款工具带来新增功能
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=ZXSN6HleAEs
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/ZXSN6HleAEs
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/ZXSN6HleAEs/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=ZXSN6HleAEs" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/ZXSN6HleAEs/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZXSN6HleAEs" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -93,8 +97,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=ZXSN6HleAEs
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/ZXSN6HleAEs" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/ZXSN6HleAEs
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/ZXSN6HleAEs/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=ZXSN6HleAEs" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/ZXSN6HleAEs/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 重点更新详情 **【厨卫定制】门板支持配置把手样式包，[点击查看详情，了解使用方式](https://www.coohom.com/zh_CN/helpcenter/%E4%BC%81%E4%B8%9A-%E6%8A%8A%E6%89%8B%E6%A0%B7%E5%BC%8F%E5%8C%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E?kjl_source=hc)** 在室内设计中，如果门板和把手的组合选择过于自由，往往会导致样式不统一或安装冲突，影响设计效率与效果。为门板配置把手样式包，可以实现门板与把手的安装限制，让某个门板只能匹配特定把手，让设计更高效、更精准
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1758615151870/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

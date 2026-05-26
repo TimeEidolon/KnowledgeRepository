@@ -215,6 +215,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 4. Drawings are Drawn in Model Space Only drawings drawn in **model space** are supported, and **all information drawn in layout space cannot be accurately identified**. **About the solution to the inaccurate identification of drawings drawn in the layout space：** * Find the structure floor plan in the layout, double-click the layout window to enter the editing mode, copy it to the newly created empty CAD file, save it and then use it for identification.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1745579434135/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

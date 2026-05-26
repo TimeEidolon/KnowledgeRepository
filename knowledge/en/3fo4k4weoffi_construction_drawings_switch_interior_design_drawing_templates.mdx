@@ -13,9 +13,13 @@ Users can switch interior design drawing templates according to their needs. Aft
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=Dn25\_zOLOiU
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Dn25_zOLOiU
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Dn25_zOLOiU
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Dn25_zOLOiU/hqdefault.jpg
 
-[Video](https://www.youtube.com/watch?v=Dn25\_zOLOiU)
+<a href="https://www.youtube.com/watch?v=Dn25_zOLOiU" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Dn25_zOLOiU/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Dn25_zOLOiU" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 Enter the construction drawing tool, click **Settings** in the upper right corner, and select **Switch Construction Drawing Template**.
@@ -106,8 +110,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=Dn25\_zOLOiU
-[Video](https://www.youtube.com/watch?v=Dn25\_zOLOiU)
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Dn25_zOLOiU
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Dn25_zOLOiU
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Dn25_zOLOiU/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=Dn25_zOLOiU" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Dn25_zOLOiU/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Enter the construction drawing tool, click **Settings** in the upper right corner, and select **Switch Construction Drawing Template**.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1766135778091/48054880BC850BDC36E1FD2D4D73C6EE.png

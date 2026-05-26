@@ -68,6 +68,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: If there are other models in SketchUp besides the main model Open the model in SketchUp: Edit – Unhide – All, then delete (Delete key) unnecessary scenes, leaving only the needed model.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313581331/8FC568051A84925D1726E26FF0EA2BCA.png
 

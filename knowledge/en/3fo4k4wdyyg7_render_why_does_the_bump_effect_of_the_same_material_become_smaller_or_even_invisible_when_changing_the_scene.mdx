@@ -39,6 +39,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: The effects within the green box and the red box in the image are completely different, but it is indeed the same material. This is because different lighting conditions produce different effects.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp
 

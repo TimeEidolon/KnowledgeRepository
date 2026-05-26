@@ -58,6 +58,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: First, check the model units. The upload model requires the unit to be millimeters. Size errors will result in incorrect upload size. “Window” - “Model Info” - “Unit Settings”, set the unit to mm.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779775/940DF5A2F079E67020F45AE98DECC519.png
 

@@ -96,6 +96,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 使用企业管理员账号登录Coohom，进入 **“设置 - 自定义设置 - 通用设置**，滚动到页面底部，将**“企业方案查看权限”**设置为**“部门方案”**，刷新当前页面即可生效
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751265763506/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

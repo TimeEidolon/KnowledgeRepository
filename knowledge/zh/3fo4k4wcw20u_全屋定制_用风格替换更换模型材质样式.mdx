@@ -111,6 +111,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 入口 点击模型，进入**风格替换**面板，分为**柜体、掩门及把手**类目，可在相对类目下对**样式、材质等**进行选择替换
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753240891018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

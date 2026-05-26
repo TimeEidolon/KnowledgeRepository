@@ -144,6 +144,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 在**[方案](https://www.coohom.com/pub/saas/apps/project/list?kjl_source=hc)**页面，将鼠标悬停在您想要编辑的方案上，点击**进入方案** * **详细操作可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/quickly-enter-the-coohom-design-project?kjl_source=hc)**
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1752651223619/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1752828486278/C709A4E4F6A47B36A86D49088F73D677.png

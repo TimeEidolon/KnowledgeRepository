@@ -49,6 +49,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Entrance to submit plans to the enterprise library: Photo Studio Workbench - My Project - Select Target Plan - “...” - Submit to the Enterprise Library - Select the corresponding group - click “Confirm”
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1769583566647/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

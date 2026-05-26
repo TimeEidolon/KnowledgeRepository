@@ -71,6 +71,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 问题原因 渲染检测引入了渲染任务加时提示和加时标签；更加清晰的告知渲染出图时间较长的原因。 出现加时提示/标签时，说明渲染图中出现了影响渲染速度的模型或者材质，并且没有在渲染前点击对应的优化选项。或者在全景图中开启了超真实渲染等参数（这些参数需要更多的渲染资源以提供更好的渲染结果，故而耗时相对较久） ps：该提示仅作提醒用，并非增加了渲染耗时，渲染出图时长主要取决于设计复杂程度、模型材质以及加时参数等
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761548730802/521C2C96DB04405C47056425665B249A.png
 

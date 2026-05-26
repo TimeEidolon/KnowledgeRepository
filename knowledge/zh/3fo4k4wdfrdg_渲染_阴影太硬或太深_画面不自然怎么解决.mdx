@@ -50,6 +50,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 由于阳光照射下产生的阴影，可以调节阴影柔和度，数值越大阴影边缘越柔和。 2.在灯光模板中，使用面积更大的光源（例如面光源）会使阴影更加的柔和自然 3.推荐使用最新灯光模板，可以输出更自然的灯光
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959114/852DB08411120674B0649707C1F842DF.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959110/299064F71AF542EFBE52BB11D1DDB87E.png

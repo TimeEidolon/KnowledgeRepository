@@ -606,6 +606,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: **1. Introduction to the New Account Management Version** **1.1****Accessing the New Version** * **Log in​ enterprise account.** * Navigate to: ​**Management**​ → ​**Account Management**. * Click ​**​【Switch to New Version】​**​ in the upper-privileges corner to toggle between versions.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1750130511352/99EABB0646DA7ED02E1518FD557D0B04.png
 

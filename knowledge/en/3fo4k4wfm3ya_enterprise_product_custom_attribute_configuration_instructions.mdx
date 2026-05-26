@@ -183,6 +183,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: On the Workspace page, click **Enterprise Catalog - Custom Products - Product Catalog**, then select **Kitchen & Bath/Custom Furniture/Doors & Windows** at the top of the custom product library page, and click **Advanced**.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1778838089412/86B42C8BC8407DB361815EA544866EB2.png
 

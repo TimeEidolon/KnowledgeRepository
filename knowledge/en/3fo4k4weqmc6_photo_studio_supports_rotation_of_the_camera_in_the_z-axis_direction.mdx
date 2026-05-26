@@ -57,6 +57,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: **1. Feature Access** * Access 3D Photo Studio - Right-side resource panel ‘Camera’ - Select the camera to adjust the Z-axis - Scroll down to ‘Rotation’ - Enable Z-axis * + The Z-axis of the camera is disabled by default and needs to be manually activated.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773395402168/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

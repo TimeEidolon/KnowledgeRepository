@@ -55,6 +55,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Open the Automatic exposure of the version(only available in lighting version below 3.0). For manual lighting, use the effect settings for manual lighting. (The Extremely fast rendering does not have this parameter, and when problems occur with the Extremely fast rendering, it is unlikely to result in a completely white situation.)
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png
 

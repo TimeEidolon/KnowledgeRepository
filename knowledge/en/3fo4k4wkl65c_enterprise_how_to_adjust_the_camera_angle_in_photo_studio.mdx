@@ -139,6 +139,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Camera adjustment UI optimization The toolbar on the right is mainly composed of five functions: [Lens Movement Description], [Picture Scale Selection], [Camera Pitch Angle Setting], [Effect Preview] and [Confirm Shooting], which are clearer and easier for users to operate.
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855030098/702A0119D3AEBBDEE6EF453FE7806878.png
 

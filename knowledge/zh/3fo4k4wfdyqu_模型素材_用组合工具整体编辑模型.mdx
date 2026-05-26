@@ -14,6 +14,10 @@ description: "在设计工具中，您可以对成品模型进行快速组合与
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=-zVA5KgCLzk
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/-zVA5KgCLzk
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/-zVA5KgCLzk/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=-zVA5KgCLzk" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/-zVA5KgCLzk/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/-zVA5KgCLzk" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -108,8 +112,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=-zVA5KgCLzk
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/-zVA5KgCLzk" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/-zVA5KgCLzk
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/-zVA5KgCLzk/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=-zVA5KgCLzk" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/-zVA5KgCLzk/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 按住**shift/⇧**键，选择多个模型，然后点击浮窗中的**组合** * 注意：家具也可以跟墙面软装饰、灯具等模型进行合并组合
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/gif/1773991643483/D0F6A7934A629582CB972C4F55C2A615.gif

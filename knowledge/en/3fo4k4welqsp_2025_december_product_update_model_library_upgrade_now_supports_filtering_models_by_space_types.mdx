@@ -120,6 +120,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Key Update Details **[Model Materials] The model library has been upgraded to support filtering models by space types, [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/model-materials-guide-for-using-the-model-library?kjl_source=hc)** The new model library has clear section divisions, including personal resource management, premium model recommendations, and precise category navigation, making every model search and use easy and efficient.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1768199875077/57332ED30DA651CA1B698BBF9BD047E4.gif
 

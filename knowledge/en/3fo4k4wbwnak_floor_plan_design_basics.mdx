@@ -14,6 +14,10 @@ This article will take you to quickly get started: from creating a new project, 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=vm2RwiBdSxI
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/vm2RwiBdSxI
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/vm2RwiBdSxI/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=vm2RwiBdSxI" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/vm2RwiBdSxI/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/vm2RwiBdSxI" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -158,8 +162,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=vm2RwiBdSxI
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/vm2RwiBdSxI" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/vm2RwiBdSxI
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/vm2RwiBdSxI/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=vm2RwiBdSxI" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/vm2RwiBdSxI/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Entrance **Entrance One:** Enter the **workspace**, click **upload floor plan** and select the required drawings to import, you can choose to import a single or multiple CAD files, or select a CAD file containing multiple drawings. Uploading floor plan supports**importing CAD floor plan files and images in pdf/ png/ jpg format. The specific operation can be seen in the tutorial document:****[Click here for Tutorial 1](https://www.coohom.com/zh_CN/helpcenter/%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0-%E5%AF%BC%E5%85%A5cad%E6%88%B7%E5%9E%8B%E6%96%87%E4%BB%B6?kjl_source=hc)****, [Click here for Tutorial 2](https://www.coohom.com/zh_CN/helpcenter/%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0-%E5%AF%BC%E5%85%A5cad%E6%88%B7%E5%9E%8B%E5%9B%BE%E7%89%87?kjl_source=hc)**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779350930262/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

@@ -94,6 +94,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 产生原因 （1）面光源，是一个范围性光源，但是由于面光源存在形状，所以在贴近模型时，会出现阴影分解，接受照射的区域变亮。光源背面的模型因为没有光照，所以是灰色。如下图 ![https://qhstaticssl.kujiale.com/image/png/1703056339110/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_469,h_375/format,webp](https://qhstaticssl.kujiale.com/image/png/1703056339110/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_469,h_375/format,webp)
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1703056232255/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_589,h_376/format,webp
 

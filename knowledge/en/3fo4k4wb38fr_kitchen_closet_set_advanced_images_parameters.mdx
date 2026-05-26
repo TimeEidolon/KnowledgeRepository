@@ -167,6 +167,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Enter the **workspace** and select the **kitchen＆closet design**. * You can also Click **Create new project** in the top right corner, then click **kitchen＆closet design.**
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1779174570444/FEC81AA7082ECE5794728A71F4F9C251.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1779259327455/6951E52E3B8C8FBFFA30BBE495D72F91.png

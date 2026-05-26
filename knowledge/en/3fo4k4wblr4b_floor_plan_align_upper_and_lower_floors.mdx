@@ -13,9 +13,13 @@ In the floor plan tool, you can use the align multi-floor units tool to align th
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=\_rDeKhDLlLc
+MEDIA_VIDEO: https://www.youtube.com/watch?v=_rDeKhDLlLc
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/_rDeKhDLlLc
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/_rDeKhDLlLc/hqdefault.jpg
 
-[Video](https://www.youtube.com/watch?v=\_rDeKhDLlLc)
+<a href="https://www.youtube.com/watch?v=_rDeKhDLlLc" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/_rDeKhDLlLc/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/_rDeKhDLlLc" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 Entrance In the upper toolbar, select **"Toolkit - Align multi-floor units - Align with upper/Align with lower"**.
@@ -74,8 +78,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=\_rDeKhDLlLc
-[Video](https://www.youtube.com/watch?v=\_rDeKhDLlLc)
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=_rDeKhDLlLc
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/_rDeKhDLlLc
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/_rDeKhDLlLc/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=_rDeKhDLlLc" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/_rDeKhDLlLc/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Entrance In the upper toolbar, select **"Toolkit - Align multi-floor units - Align with upper/Align with lower"**.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1747987950890/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

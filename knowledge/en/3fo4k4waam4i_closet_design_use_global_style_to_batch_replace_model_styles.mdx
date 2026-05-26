@@ -13,9 +13,13 @@ description: "Global style** supports one-click replacement of materials, styles
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=Nx4DMIP2v\_w
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Nx4DMIP2v_w
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Nx4DMIP2v_w
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Nx4DMIP2v_w/hqdefault.jpg
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Nx4DMIP2v" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=Nx4DMIP2v_w" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Nx4DMIP2v_w/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Nx4DMIP2v_w" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 Entrance 1、Select **Kitchen＆Bath** / **Closet /** **Doors＆Windows** to enter the customization interface. 2、Select the **Global edit-****Global style** from the top toolbar.
@@ -81,8 +85,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=Nx4DMIP2v\_w
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Nx4DMIP2v" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Nx4DMIP2v_w
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Nx4DMIP2v_w
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Nx4DMIP2v_w/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=Nx4DMIP2v_w" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Nx4DMIP2v_w/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Entrance 1、Select **Kitchen＆Bath** / **Closet /** **Doors＆Windows** to enter the customization interface. 2、Select the **Global edit-****Global style** from the top toolbar.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737632349196/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

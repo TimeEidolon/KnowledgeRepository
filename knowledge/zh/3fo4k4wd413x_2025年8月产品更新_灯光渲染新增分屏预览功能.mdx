@@ -105,6 +105,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 重点更新详情 **【灯光渲染】实时渲染新增分屏预览功能，[点击查看详情，了解使用方式](https://www.coohom.com/zh_CN/helpcenter/%E5%AE%9E%E6%97%B6%E6%B8%B2%E6%9F%93%EF%BC%9A%E5%88%86%E5%B1%8F%E9%A2%84%E8%A7%88%E5%8A%9F%E8%83%BD%E6%8C%87%E5%8D%97?kjl_source=hc)** 分屏预览功能可以实现双向协作 —— 您可以在一个电脑屏幕上专注调整渲染参数、移动画布或优化材质与灯光，另一个屏幕则实时呈现渲染效果，让设计调整与效果预览互不干扰
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1754364405377/A0E28499C2A16EEA48070AAD5861030B.gif
 

@@ -14,6 +14,10 @@ You can select the cabinet internal zone by yourself, quickly and evenly place t
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=1i78saWtbo8
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/1i78saWtbo8
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/1i78saWtbo8/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=1i78saWtbo8" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/1i78saWtbo8/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/1i78saWtbo8" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -83,8 +87,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=1i78saWtbo8
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/1i78saWtbo8" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/1i78saWtbo8
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/1i78saWtbo8/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=1i78saWtbo8" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/1i78saWtbo8/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Select the panel in the **Parts**, drag the panel into the cabinet, and select the **Panel Array** in the floating toolbar.
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1740110730834/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

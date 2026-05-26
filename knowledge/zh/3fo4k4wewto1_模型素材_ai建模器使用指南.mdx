@@ -269,6 +269,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 选择不同的工具以及使用不同的方式生成模型时，可以点击**参数**，然后根据需要进行设置 * **PBR：**开启**PBR**后，会让材质更真实、光影效果更自然、细节更丰富 * **高清纹理：**开启高清纹理后，模型表面纹理细节会更加细腻清晰，材质质感更贴近原图真实效果 * **高精度多边形：**开启高精度多边形后，模型边缘将更平滑，细节轮廓还原更精准
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1778751397701/29748BC3E2E649BDAC4BA1BA3EE8E365.png
 

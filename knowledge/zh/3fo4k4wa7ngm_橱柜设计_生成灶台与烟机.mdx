@@ -14,6 +14,10 @@ description: "使用灶台生成工具，在对应橱柜上安装灶台、烟机
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=AwhMBLBtshA
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/AwhMBLBtshA
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/AwhMBLBtshA/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=AwhMBLBtshA" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/AwhMBLBtshA/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/AwhMBLBtshA" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -111,8 +115,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=AwhMBLBtshA
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/AwhMBLBtshA" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/AwhMBLBtshA
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/AwhMBLBtshA/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=AwhMBLBtshA" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/AwhMBLBtshA/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 入口 选择**厨卫定制**，进入定制设计界面 **入口一：**选择顶层工具栏中的**生成-灶台**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1739515258381/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

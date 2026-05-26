@@ -206,6 +206,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Enter the project that you want to work on. In the left-side navigation panel, click Advanced Tool. In the Advanced Tool panel, click Kitchen & Bath or Closet. No matter what you click, you can export quotations for any of these 3 item types as long as they exist in your project.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749725225607/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

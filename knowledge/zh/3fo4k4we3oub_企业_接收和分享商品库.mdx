@@ -246,6 +246,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 在商家工作台点击**企业库**，然后选择**商品分享**，然后选择顶部**我的分享**并点击右上角的**发起分享**
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1764663584953/03D13977853E899358D64D627AAC2B86.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1764663597615/0221FAFE29941463F03D840568BA2F21.png

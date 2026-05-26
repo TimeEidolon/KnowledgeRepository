@@ -45,6 +45,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 原因 出现这个问题的大多是卫生间等封闭小空间，这些空间都有一定的特性，空间小，没有窗户或者窗户较小，这种场景大多数需要射灯或者补灯来照亮，射灯等光源的特性决定了他对正下方的影响要大于侧面，所以对地面的影响会大于对墙面的影响，这就会造成地面的材质出现比墙面材质较浅的效果，造成视觉上的颜色不一致。这也是现实中真实存在的一种效果。
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png
 

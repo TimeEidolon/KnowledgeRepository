@@ -52,6 +52,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Using new material upload, but rendered lighting is with Realistic Indoor daytime light 3.0, or using old material upload, rendered lighting is natural realistic. Upload texture color (new material upload) Natural realistic effect Realistic Indoor daytime light 3.0
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/png/1608272299674/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_383/format,webp
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763098921017/BAF339F8AFF6F0618A1889226BEB9E7A.png

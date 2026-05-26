@@ -122,6 +122,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Key Update Details **[Floor Plan Design] AI smart layout tools have been added to the floor plan tools (Available to some users, gradually opening up), [Click here for details and learn how to use](https://www.coohom.com/helpcenter/floor-plan-ai-smart-layout-tool-usage-guide?kjl_source=hc)** Want to say goodbye to the hassle of space planning and unlock your ideal home with one click? The AI design feature brings you an unprecedented efficient design experience. Whether you need to plan the full layout or focus on renovating a specific rooms, AI can quickly generate a personalized solution based on your preferences and support one-click switching to a 3D view for an immersive preview.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1776848612991/DCE71965D19C1438840BBBDE410C6B53.gif
 

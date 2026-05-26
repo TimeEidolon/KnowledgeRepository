@@ -276,6 +276,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: For Users **Enterprise users** with relevant permissions. If you have any needs, please contact CSC for consultation. * The sub-account needs the main account to configure the role permissions of the **AI Kitchen Auto Layout Designer** in the **Employee Management** of the workspace, and it can be used normally after the configuration is completed.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1778813266977/6C47626ECB27E2D5C647FB629250E5E7.png
 

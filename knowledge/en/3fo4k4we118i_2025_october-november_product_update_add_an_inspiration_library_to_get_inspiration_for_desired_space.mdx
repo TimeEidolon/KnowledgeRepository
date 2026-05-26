@@ -26,6 +26,10 @@ When modifying wall height, you can directly modify it in the right property bar
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=BxDwfyasWoE
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/BxDwfyasWoE
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/BxDwfyasWoE/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=BxDwfyasWoE" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/BxDwfyasWoE/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/BxDwfyasWoE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -103,8 +107,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=BxDwfyasWoE
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/BxDwfyasWoE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/BxDwfyasWoE
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/BxDwfyasWoE/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=BxDwfyasWoE" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/BxDwfyasWoE/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Key Update Details **[Account Management] Added VIP management and pre-binding functions (Available to some users), [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/enterprise-guide-for-using-vip-management-and-pre-binding-functions?kjl_source=hc)** VIP account management functions can help enterprises better manage accounts and VIPs, supporting VIP viewing and binding, including active and expired VIPs.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762307823292/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

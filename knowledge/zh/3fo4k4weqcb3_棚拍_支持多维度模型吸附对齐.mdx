@@ -115,6 +115,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 1. 模型对齐 * 支持通过「轴心点」或「定界框」两种对齐方式，将多个对象快速校准到统一位置基准。 * 操作入口： 3D 棚拍工作台 - 按住【Shift】键选中需要对齐的多个对象 - 右侧操作面板 - 【对象】-【对齐】
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773626939694/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

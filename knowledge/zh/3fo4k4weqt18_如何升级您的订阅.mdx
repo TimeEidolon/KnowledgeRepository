@@ -126,6 +126,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: **[用](https://www.coohom.com/user/signin)**你的 Coohom 账户登录 * 如果你是老用户可以直接用账号登录，如果你是新用户的话要先**注册**，注册后在登录
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1773137188110/86E1A01A9854AC2601F47F37512E7C59.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1773137188018/1512F7B47BF7ECB7C582D5C0CAB358EC.png

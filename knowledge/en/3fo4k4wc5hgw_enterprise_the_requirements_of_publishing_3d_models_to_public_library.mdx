@@ -448,6 +448,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: **(1)  You can choose from the following keywords:** Brand, Style, Color, Material, Space, Type(MUST BE INCLUDED). Don't change the order of this keywords. **(2)  Not allowed keywords:** Pure numbers, special symbols(\ / \_ > < \* % ^ ! ~), personal names, place names, company names, and contact information. Reference: Castle Rock Bar Table
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1749002674753/A77A3CC16B736414FE155227CEC2258B
 

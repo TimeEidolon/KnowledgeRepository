@@ -14,6 +14,10 @@ description: "绘制墙体后，可以对墙体的长度、厚度和高度进行
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=JGti9OcCrYM
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/JGti9OcCrYM
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/JGti9OcCrYM/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=JGti9OcCrYM" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/JGti9OcCrYM/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/JGti9OcCrYM" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -131,8 +135,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=JGti9OcCrYM
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/JGti9OcCrYM" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/JGti9OcCrYM
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/JGti9OcCrYM/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=JGti9OcCrYM" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/JGti9OcCrYM/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 进入设计工具，选中需要修改的墙体，点击**标注长度**的尺寸线，**激活尺寸线输入框**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1772767688455/D0F6A7934A629582CB972C4F55C2A615.gif

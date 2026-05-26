@@ -14,6 +14,10 @@ description: "在户型工具中，可以选中单个构件，或批量选择多
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=8mhcXvuEcq4
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/8mhcXvuEcq4
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/8mhcXvuEcq4/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=8mhcXvuEcq4" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/8mhcXvuEcq4/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/8mhcXvuEcq4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -135,8 +139,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=8mhcXvuEcq4
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/8mhcXvuEcq4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/8mhcXvuEcq4
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/8mhcXvuEcq4/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=8mhcXvuEcq4" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/8mhcXvuEcq4/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 选中需要锁定的**单个/多个**户型构件，在弹出的浮窗中点击**锁定**（**选择多个构件时按“shift/⇧”**） * 多选构件必须是同类型，示例：墙体可以跟建筑构件多选锁定，但是墙体不可以和门窗一起多选锁定 * 当选择多个户型构件时，锁定状态一致则可以同时锁定或解锁
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1754641977822/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

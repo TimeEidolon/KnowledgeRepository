@@ -254,6 +254,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 直接上传了max文件没有上传贴图文件 如果模型没有贴图（材质没有用到贴图），可以只单独上传max文件，如果有贴图的就需要进行归档上传（归档会把模型中用到的贴图一起打包）。 操作步骤如下： a）先看一下在max中模型的效果是不是我们想要的，如果贴图丢失或者贴图路径错误或者使用了多维子材质，在max中就会呈现黑色。则还不能归档上传，需要查看是否是原因2、5、6导致的。 b） 如果显示材质是正常的，如下图，则可以进行归档，把贴图一起打包上传。 c） 归档操作如下：
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png
 

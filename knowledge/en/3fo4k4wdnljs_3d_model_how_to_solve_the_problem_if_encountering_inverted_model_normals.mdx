@@ -60,6 +60,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Self-check Currently, max offers many plugins and small tools for checking normals that you can choose from. If there are no small tools, you can also check within max. Use vraylightmtl for the part that needs checking and render it. The areas appearing black indicate reversed normals, while the correct color should be that of vraylight.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png
 

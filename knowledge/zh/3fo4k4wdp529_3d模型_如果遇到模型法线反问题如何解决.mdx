@@ -60,6 +60,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 自检 目前max有很多检查法线的插件、小工具，可以自行选择 如果没有小工具，那么在max里也可以检查，使用vraylightmtl赋予需要检测的部位，进行渲染，出现黑色的地方就是法线反，正常应该是vraylight的颜色
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png
 

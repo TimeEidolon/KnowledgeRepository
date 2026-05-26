@@ -25,7 +25,11 @@ The interface of Photo Studio 2.0
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=oCFG13xk2yM 
+MEDIA_VIDEO: https://www.youtube.com/watch?v=oCFG13xk2yM
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/oCFG13xk2yM
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/oCFG13xk2yM/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=oCFG13xk2yM" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/oCFG13xk2yM/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/oCFG13xk2yM" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -47,8 +51,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=oCFG13xk2yM 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/oCFG13xk2yM" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=oCFG13xk2yM
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/oCFG13xk2yM
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/oCFG13xk2yM/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=oCFG13xk2yM" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/oCFG13xk2yM/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Overview Photo Studio 2.0 is a product display rendering tool launched by Coohom. It not only contains a large number of studio templates and material public libraries, but also supports real-time preview of rendering effects, which greatly improves the efficiency of drawing, and saves more than 95% of the production cost of product marketing materials. At present, Photo Studio 2.0 is only open to Coohom enterprise users, and enterprise users can contact the exclusive customer service to obtain a quotation. ### **Steps** **How to use Photo Studio 2.0** The interface of Photo Studio 2.0
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855682237/1B02CDE1CC8EB7C2CAD119424B8AD726.png

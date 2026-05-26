@@ -14,6 +14,10 @@ description: "可自由编辑台面前后挡水，满足多样化的台面设计
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=6AJRQKFcOu4
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/6AJRQKFcOu4
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/6AJRQKFcOu4/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=6AJRQKFcOu4" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/6AJRQKFcOu4/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/6AJRQKFcOu4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -109,8 +113,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=6AJRQKFcOu4
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/6AJRQKFcOu4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/6AJRQKFcOu4
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/6AJRQKFcOu4/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=6AJRQKFcOu4" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/6AJRQKFcOu4/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 入口 生成台面后，选中台面，浮窗工具栏中选择**自由编辑** * 生成台面的操作，**可见教程文档：[生成台面](https://www.coohom.com/zh_CN/helpcenter/article/%E7%94%9F%E6%88%90%E5%8F%B0%E9%9D%A2?kjl_source=hc)**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1740031862023/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

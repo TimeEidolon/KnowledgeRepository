@@ -49,6 +49,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 可以在层级/设计场景/右侧参数面板找到对应的灯源对象，然后给对象添加关键帧即可 通过灯光关键帧的设置可以输出各种灯光动画，譬如：场景自然光不同时间的动态变化效果/房间开关灯效果/商业空间场景各种灯效变化/数码产品周围光一致变化等效果 * 视频效果参考： [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_a57b70c6_893a_460b_1772677025303.mp4)
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614332669/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

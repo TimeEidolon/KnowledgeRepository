@@ -142,6 +142,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: When you are in the tools interface, click the Render button on the top bar.
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849927391/6B362773AA4B351D8E9F44D5CEE5D49A.png
 

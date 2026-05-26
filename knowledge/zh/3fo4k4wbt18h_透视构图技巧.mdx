@@ -96,6 +96,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 三分构图法 **作用**：三分法则将画面或空间分为三等分，通过将重要元素放置在分割线或交叉点上，增强视觉平衡和焦点 **应用**：在室内设计中，可以将家具、装饰画或灯具等关键元素放置在三分线的交叉点上，避免将重要元素放在正中心，使空间更具动态感和层次感。例如：将沙发或茶几放置在房间的三分线上，可以营造出更自然的布局
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843904671/99F5C804F770E189057BF06F658B6B14.png
 

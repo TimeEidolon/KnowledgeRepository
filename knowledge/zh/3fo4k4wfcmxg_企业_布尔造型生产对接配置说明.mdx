@@ -85,6 +85,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 其他 对于元件对接的后端软件，需要将布尔造型的效果真实作用在底层元件上，默认情况下只显示效果，要勇于对接时，需前往设置 **1. 配置入口** 在商家后台**企业库 - 定制商品库 - 高级配置 - 下单输出 - 数据输出设置 - 其它设置，**然后打开**布尔造型生产对接**的开关，点击**保存**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png
 

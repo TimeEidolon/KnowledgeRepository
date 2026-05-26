@@ -20,7 +20,14 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=Irru\_Sau\_lE
-[Video](https://www.youtube.com/watch?v=Irru\_Sau\_lE)
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Irru_Sau_lE
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Irru_Sau_lE
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Irru_Sau_lE/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=Irru_Sau_lE" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Irru_Sau_lE/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 </Visibility>

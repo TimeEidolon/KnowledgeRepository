@@ -14,6 +14,10 @@ In the floor plan tool, the door opening function supports drawing rect, arc, ar
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=CK3f9qLg1LA
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/CK3f9qLg1LA
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/CK3f9qLg1LA/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=CK3f9qLg1LA" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/CK3f9qLg1LA/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/CK3f9qLg1LA" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -141,8 +145,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=CK3f9qLg1LA
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/CK3f9qLg1LA" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/CK3f9qLg1LA
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/CK3f9qLg1LA/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=CK3f9qLg1LA" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/CK3f9qLg1LA/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Enter the 3D design interface, select **"Floor Plan - Door Opening"**, place the door opening on the target wall and adjust the size.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1747211341329/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

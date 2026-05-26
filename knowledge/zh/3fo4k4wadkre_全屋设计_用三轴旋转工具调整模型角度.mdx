@@ -14,6 +14,10 @@ description: "在设计过程中有一些柜体模型放置时需要调整角度
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=u640wh4d8Rk
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/u640wh4d8Rk
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/u640wh4d8Rk/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=u640wh4d8Rk" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/u640wh4d8Rk/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/u640wh4d8Rk" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -90,8 +94,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=u640wh4d8Rk
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/u640wh4d8Rk" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/u640wh4d8Rk
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/u640wh4d8Rk/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=u640wh4d8Rk" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/u640wh4d8Rk/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 三轴旋转 1、切换为**选择整体** 2、选中柜体，切换控件中选择**三轴旋转**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1736994849165/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

@@ -16,9 +16,6 @@ MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115093892/A8
 ![](https://qhstatic-us-s3.coohom.com/image/png/1749115093892/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstatic-us-s3.coohom.com/image/png/1749115093892/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-Now you may build your own electronic commerce website with all these exciting features simply by integrating Coohom Open API.  
-After that, customers can design with your goods, do the rendering to see what it looks like, then purchase what he wants.  
-And everything happens on your website!
 
 # Workflow
 
@@ -90,6 +87,11 @@ MEDIA_* lines below (they contain full https:// URLs).
 For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
 
 MEDIA_STEP_1_TEXT: Workflow We are now happy to announce that we have made a successful integration with the company [postofixe](https://www.postofixe.com/). Here is how to achieve the whole integration. (You can ***right-click the picture*** to open a new page to view the large one.)
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115093892/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

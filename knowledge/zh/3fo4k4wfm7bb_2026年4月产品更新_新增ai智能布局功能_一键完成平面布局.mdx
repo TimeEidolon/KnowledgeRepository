@@ -122,6 +122,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 重点更新详情 **【户型设计】户型工具新增AI智能布局工具（部分用户可用，逐步开放）， [点击查看详情，了解使用方式](https://www.coohom.com/helpcenter/floor-plan-ai-smart-layout-tool-usage-guide?kjl_source=hc)** 想要告别繁琐的空间规划，一键解锁理想家居？AI智能布局功能为您带来前所未有的高效设计体验。无论您是需要统筹全屋的设计，还是专注于某个特定房间的改造，AI都能根据您的喜好快速生成专属方案，并支持一键切换3D视角进行沉浸式预览
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1776848612991/DCE71965D19C1438840BBBDE410C6B53.gif
 

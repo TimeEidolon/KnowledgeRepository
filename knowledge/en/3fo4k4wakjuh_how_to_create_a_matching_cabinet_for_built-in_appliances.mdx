@@ -118,6 +118,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Search for cabinet models that align with your appliance's specifications.
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1741860543636/0022C66B9F1CD5E59BB7E7A90CB50AC9.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1741860560740/D7A7BEFF092189F304491D0733559057.png

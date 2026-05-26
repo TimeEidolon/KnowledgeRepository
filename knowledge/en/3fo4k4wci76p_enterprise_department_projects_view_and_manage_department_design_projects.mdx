@@ -96,6 +96,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Log in to Coohom with your enterprise administrator account, then go to **Setting - Customization - General Settings**. Scroll down to the bottom of the page, set **"Team Projects View Permissions"** to **"Department Projects"**, and refresh the current page to apply the changes.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751263201648/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

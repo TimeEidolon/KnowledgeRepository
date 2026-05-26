@@ -215,6 +215,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 4. 图纸在模型空间绘制 仅支持在**模型空间**绘制的图纸，**所有在布局空间绘制的信息无法准确识别** **关于在布局空间绘制的图纸无法准确识别的解决方法：** * 在布局中找到结构户型图，双击布局窗口进入编辑模式，将其复制到新建的空CAD文件中，保存后再用于识别
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1648902031132/0298CE22228ADA305C19991FA5973F2F.png
 

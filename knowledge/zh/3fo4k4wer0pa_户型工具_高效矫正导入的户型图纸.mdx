@@ -13,9 +13,13 @@ description: "在户型工具中使用导入前处理功能，可以一站式解
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=\_LtTVgDxCOc
+MEDIA_VIDEO: https://www.youtube.com/watch?v=_LtTVgDxCOc
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/_LtTVgDxCOc
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/_LtTVgDxCOc/hqdefault.jpg
 
-[Video](https://www.youtube.com/watch?v=\_LtTVgDxCOc)
+<a href="https://www.youtube.com/watch?v=_LtTVgDxCOc" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/_LtTVgDxCOc/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/_LtTVgDxCOc" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 在户型工具中点击**导入图纸**，图纸加载成功后，AI会自动识别图片是否需要处理，点击**确定**会自动进行处理 * 您也可以点击**导入前处理**按钮，可一键清除水印、底纹、褶皱并消除透视形变，点击后自动开始处理
@@ -95,8 +99,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=\_LtTVgDxCOc
-[Video](https://www.youtube.com/watch?v=\_LtTVgDxCOc)
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=_LtTVgDxCOc
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/_LtTVgDxCOc
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/_LtTVgDxCOc/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=_LtTVgDxCOc" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/_LtTVgDxCOc/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 在户型工具中点击**导入图纸**，图纸加载成功后，AI会自动识别图片是否需要处理，点击**确定**会自动进行处理 * 您也可以点击**导入前处理**按钮，可一键清除水印、底纹、褶皱并消除透视形变，点击后自动开始处理
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png

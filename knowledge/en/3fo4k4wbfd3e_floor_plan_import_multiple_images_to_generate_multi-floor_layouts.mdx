@@ -14,6 +14,10 @@ Users can import multiple house type pictures, identify and generate multi-floor
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=UCnDCHPmwxg
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/UCnDCHPmwxg
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/UCnDCHPmwxg/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=UCnDCHPmwxg" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/UCnDCHPmwxg/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/UCnDCHPmwxg" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -146,8 +150,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=UCnDCHPmwxg
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/UCnDCHPmwxg" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/UCnDCHPmwxg
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/UCnDCHPmwxg/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=UCnDCHPmwxg" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/UCnDCHPmwxg/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: In the design tool, click **Import 2D Drawing**, select the drawings you need to upload from the popup panel, and click **Open**.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779186783109/4BCD1377ADBDCABF1C48D785ECEE311F.png

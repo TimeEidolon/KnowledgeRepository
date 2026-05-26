@@ -145,6 +145,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Take a Picture for Your Own Texture **what you need: good lighting and a professional SLR camera.** * The best professional photography equipment you need are DSLR Cameras. * Mobile phones are not recommended because the quality of pictures taken by mobile phones is not good enough; also the filters in mobile phones camera will cause color difference, which makes it difficult to apply in the adjustment.
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886123251/C825B9F6E621AFA5ADE616F0201EDB4D.png
 

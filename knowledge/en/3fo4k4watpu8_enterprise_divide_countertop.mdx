@@ -116,6 +116,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Entrance **Entrance One:**After generating countertop, select the countertop and select **Divide** in the floating toolbar. * The operation of generating countertop can be seen in the tutorial: **[Generate Countertop](https://www.coohom.com/en_US/helpcenter/article/generate-countertop?kjl_source=hc)**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1739869884460/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

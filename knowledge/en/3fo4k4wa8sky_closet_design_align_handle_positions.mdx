@@ -13,9 +13,13 @@ When custom cabinet design, align handles can be used to keep the handle height 
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=c\_9GZeribGw
+MEDIA_VIDEO: https://www.youtube.com/watch?v=c_9GZeribGw
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/c_9GZeribGw
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/c_9GZeribGw/hqdefault.jpg
 
-[Video](https://www.youtube.com/watch?v=c\_9GZeribGw)
+<a href="https://www.youtube.com/watch?v=c_9GZeribGw" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/c_9GZeribGw/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/c_9GZeribGw" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 Select the **Toolkit-Align handles** from the top toolbar.
@@ -106,8 +110,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=c\_9GZeribGw
-[Video](https://www.youtube.com/watch?v=c\_9GZeribGw)
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=c_9GZeribGw
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/c_9GZeribGw
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/c_9GZeribGw/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=c_9GZeribGw" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/c_9GZeribGw/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Select the **Toolkit-Align handles** from the top toolbar.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1739268186318/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

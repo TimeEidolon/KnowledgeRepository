@@ -94,6 +94,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 组合按钮创建：多选部件/组合后，点击【组合按钮】创建组合 **2.重置部件组合关系**：通过在层级面板的拖拽操作，可以实现部件组合关系的修改与重置 **注意：拖拽时可以根据白色高亮指引线来判断当前处于哪一层级** 例如在下方视频中，通过白色高亮指引线，将部件置于组合内外 **3.断开部件组合关系****：**目前支持三种创建部件组合的方式
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/gif/1769757693725/3161E3004791C00731893E3D5736087C.gif
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1769757998676/9BFF424A3AC4EB463BB9DD4F04872EC6.gif

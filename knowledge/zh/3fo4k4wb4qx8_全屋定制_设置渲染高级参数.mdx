@@ -167,6 +167,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 进入**工作台**，点击**厨房和衣橱设计** * 你也可以点击右上角的**创建新项目**，然后点击**厨房和衣橱设计**
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1779174346980/0F35F6EF2CA845F3953FC71B8718E3C1.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1779259297589/924BFF5850C8CBED6F6EC3BE2DE39786.png

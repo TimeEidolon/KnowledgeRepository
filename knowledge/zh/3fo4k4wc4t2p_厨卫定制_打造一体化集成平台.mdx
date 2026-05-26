@@ -26,6 +26,10 @@ description: "快来体验Coohom最新推出的一系列厨卫定制设计工具
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=UC6k4nMGq30
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/UC6k4nMGq30
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/UC6k4nMGq30/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=UC6k4nMGq30" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/UC6k4nMGq30/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/UC6k4nMGq30" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -47,8 +51,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=UC6k4nMGq30
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/UC6k4nMGq30" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/UC6k4nMGq30
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/UC6k4nMGq30/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=UC6k4nMGq30" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/UC6k4nMGq30/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 快来体验Coohom最新推出的一系列厨卫定制设计工具吧！ 这套工具旨在通过同一平台，为专业设计师提供涵盖卫浴设计绘图、全景展示、方案报价、订单交付、订单管理等在内的综合一站式服务 借助该工具套装，您可轻松设计定制橱柜与衣柜，在三维场景中进行项目设计，更能一键生成高清效果图，一分钟即可渲染完成
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749178057425/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

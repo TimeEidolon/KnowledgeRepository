@@ -14,6 +14,10 @@ description: "在参数面板中，所有参数以分组的形式展示，基础
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=Wrge7953GD8
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Wrge7953GD8
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Wrge7953GD8/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=Wrge7953GD8" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Wrge7953GD8/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Wrge7953GD8" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -119,8 +123,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=Wrge7953GD8
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Wrge7953GD8" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Wrge7953GD8
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Wrge7953GD8/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=Wrge7953GD8" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Wrge7953GD8/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 参数面板 1、选中模型，右侧参数面板被激活 **注意：若关闭了尺寸限制，部分可选项类型的参数，文字会变为数字显示，重新开启尺寸限制即可！**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737082447588/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

@@ -43,6 +43,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 解决方法 进入渲染-材质资源管理器找到非伽马2.2的贴图再进入材质编辑器，或直接进入材质编辑器-slate材质编辑器，找到非伽马2.2的贴图，打开后，修改为”覆盖-2.2“并保存（覆盖原贴图）
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/BF34A45BFE23DF2032305A4F848821C2.png
 

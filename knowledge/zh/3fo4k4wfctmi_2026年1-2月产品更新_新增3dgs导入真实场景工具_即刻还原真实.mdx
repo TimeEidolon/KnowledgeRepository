@@ -120,6 +120,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 重点更新详情 **【全屋定制】KC工具中新增实景空间设计工具（部分用户可见），[点击查看详情，了解使用方式](https://www.coohom.com/helpcenter/kitchen-closet-real-scene-space-design-operation-guide?kjl_source=hc)** 无需手动绘制，一键解锁实景还原与创意设计！该功能支持上传真实场景图片及全景图，自动识别并生成户型，后续可在工具内自由二次设计，完成后一键渲染全新效果图
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1770716686625/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

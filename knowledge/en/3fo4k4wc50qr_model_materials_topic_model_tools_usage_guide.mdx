@@ -14,6 +14,10 @@ Curated model spotlights from top websites, all within the tool! It is a super c
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=t-Rn9M-qtk0
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/t-Rn9M-qtk0
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/t-Rn9M-qtk0/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=t-Rn9M-qtk0" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/t-Rn9M-qtk0/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/t-Rn9M-qtk0" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -155,8 +159,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=t-Rn9M-qtk0
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/t-Rn9M-qtk0" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/t-Rn9M-qtk0
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/t-Rn9M-qtk0/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=t-Rn9M-qtk0" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/t-Rn9M-qtk0/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Method One Step 1: Go to the Coohom project interface and click on **Models** - **Popular**.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1768300097432/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

@@ -156,6 +156,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Entrance **Import 2D Drawing** and click **Review Recognition** to enter the review and adjust results page. * Note: If you do not need to adjust the floor plan, you can directly click the **Import** button to produce the layout.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779258465890/CFD84F283EF8818D0AFDEA4DC9254DAE.png
 

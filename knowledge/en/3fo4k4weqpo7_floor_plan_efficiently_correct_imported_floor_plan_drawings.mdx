@@ -13,9 +13,13 @@ In the floor plan tool, use the pre-import processing feature to solve pre-proce
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=\_LtTVgDxCOc
+MEDIA_VIDEO: https://www.youtube.com/watch?v=_LtTVgDxCOc
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/_LtTVgDxCOc
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/_LtTVgDxCOc/hqdefault.jpg
 
-[Video](https://www.youtube.com/watch?v=\_LtTVgDxCOc)
+<a href="https://www.youtube.com/watch?v=_LtTVgDxCOc" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/_LtTVgDxCOc/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/_LtTVgDxCOc" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 Click to **Import 2D Drawing** in the floor plan tool. After the drawings are loaded successfully, the AI will automatically identify whether the image needs to be processed, and click **Confirm** to process it automatically. * You can also click the pre-import processing buttontoremoving watermals, backgrounds, wrinkles, and fixing perspective distortionwith one click. Processing will start automatically after clicking.
@@ -95,8 +99,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=\_LtTVgDxCOc
-[Video](https://www.youtube.com/watch?v=\_LtTVgDxCOc)
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=_LtTVgDxCOc
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/_LtTVgDxCOc
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/_LtTVgDxCOc/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=_LtTVgDxCOc" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/_LtTVgDxCOc/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Click to **Import 2D Drawing** in the floor plan tool. After the drawings are loaded successfully, the AI will automatically identify whether the image needs to be processed, and click **Confirm** to process it automatically. * You can also click the pre-import processing buttontoremoving watermals, backgrounds, wrinkles, and fixing perspective distortionwith one click. Processing will start automatically after clicking.
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png

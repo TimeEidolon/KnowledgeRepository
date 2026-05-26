@@ -246,6 +246,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: On the enterprise workspace, click **Enterprise Catalog**, then select **Product Sharing**. Then, choose **My Sharings** at the top and click **Share Products** in the upper right corner.
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1764663584953/03D13977853E899358D64D627AAC2B86.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1764663597615/0221FAFE29941463F03D840568BA2F21.png

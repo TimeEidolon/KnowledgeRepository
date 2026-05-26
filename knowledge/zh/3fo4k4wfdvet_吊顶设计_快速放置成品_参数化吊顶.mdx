@@ -14,6 +14,10 @@ description: "在设计工具中，可直接放置成品吊顶与参数化吊顶
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=F3fYlb63Xwk
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/F3fYlb63Xwk
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/F3fYlb63Xwk/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=F3fYlb63Xwk" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/F3fYlb63Xwk/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/F3fYlb63Xwk" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -186,8 +190,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=F3fYlb63Xwk
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/F3fYlb63Xwk" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/F3fYlb63Xwk
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/F3fYlb63Xwk/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=F3fYlb63Xwk" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/F3fYlb63Xwk/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 入口 入口1：点击左侧栏的**模型**，选择**热门**，然后点击进入**吊顶指南**，在这里你可以看到丰富的吊顶素材
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773974072431/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

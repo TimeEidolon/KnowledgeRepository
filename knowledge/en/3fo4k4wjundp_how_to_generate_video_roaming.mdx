@@ -105,7 +105,11 @@ With Coohom Roaming video, you will be able to display the interior design of yo
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=UQL1GuTgxDk 
+MEDIA_VIDEO: https://www.youtube.com/watch?v=UQL1GuTgxDk
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/UQL1GuTgxDk
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/UQL1GuTgxDk/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=UQL1GuTgxDk" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/UQL1GuTgxDk/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/UQL1GuTgxDk" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -179,8 +183,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=UQL1GuTgxDk 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/UQL1GuTgxDk" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=UQL1GuTgxDk
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/UQL1GuTgxDk
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/UQL1GuTgxDk/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=UQL1GuTgxDk" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/UQL1GuTgxDk/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: * **What is a Roaming Video？** ### **What is a Roaming Video？** Coohom's roaming video feature enables users to use their own projects to create a marketing video quickly and easily. Telling a story with videos is a better way to let the audience follow the ideas, and understand the design concepts and product features. * **How to Access Roaming Video?** **How to Access Roaming Video?** Your project → Enter tool → IMAGES/VIDEOS→ Roaming video
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840888172/97F65696E36303A4A20A45583CC7E470.png

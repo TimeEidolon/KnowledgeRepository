@@ -156,6 +156,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 入口 导入图纸，点击**检查识别结果**进入**预览并调整识别结果**页面 * 注意：如果不需要对户型进行调整，可以直接点击**导入**按钮生成户型
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779258465890/CFD84F283EF8818D0AFDEA4DC9254DAE.png
 

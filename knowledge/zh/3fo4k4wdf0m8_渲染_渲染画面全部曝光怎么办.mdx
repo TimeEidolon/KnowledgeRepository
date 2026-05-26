@@ -58,6 +58,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 解决方法 在排查这种大面积曝光的时候，由于无法从画面判断是哪个光源出现问题，所以需要使用自动曝光参数，来定位曝光的光源。 1.打开模板的自动曝光参数（灯光模板3.0以下才有），手动灯光就使用在手动灯光的效果设置中开启。（极速模板没有此参数，且极速模板出现问题时，大概率不会出现全白的情况。）
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png
 

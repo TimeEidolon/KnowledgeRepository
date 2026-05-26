@@ -71,6 +71,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Cause of the Problem Rendering detection introduced rendering task overtime prompts and labels; providing a clearer indication of the reasons for longer rendering times. When overtime prompts/labels appear, it means that there are models or materials in the rendering that affect the rendering speed, and the corresponding optimization options were not clicked before rendering. Or ultra-realistic rendering and other parameters were enabled in the panorama (these parameters require more rendering resources to provide better rendering results, thus taking relatively longer). ps: This prompt is only for reminder purposes and does not increase the rendering time. The rendering duration mainly depends on the complexity of the design, model materials, and overtime parameters.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761548730802/521C2C96DB04405C47056425665B249A.png
 

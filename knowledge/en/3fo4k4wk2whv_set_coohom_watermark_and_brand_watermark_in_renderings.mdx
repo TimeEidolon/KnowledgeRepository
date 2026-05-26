@@ -13,9 +13,13 @@ In the renderings, Coohom watermark and brand watermark can be optionally remove
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=j\_rdBhThjog
+MEDIA_VIDEO: https://www.youtube.com/watch?v=j_rdBhThjog
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/j_rdBhThjog
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/j_rdBhThjog/hqdefault.jpg
 
-[Video](https://www.youtube.com/watch?v=j\_rdBhThjog)
+<a href="https://www.youtube.com/watch?v=j_rdBhThjog" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/j_rdBhThjog/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/j_rdBhThjog" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 Disable Watermark Users with Pro and above permissions can choose not to display the Coohom watermark in images (turn off the watermark switch before rendering). Enter **Workspace**, choose **"Settings - Customization - General Settings"** and **uncheck the Watermark**. After unchecking the watermark, watermarks in renderings, 360° walkthrough, and 720º VR tours will no longer be displayed. * **Note:** If you want to hide the Coohom watermark, please uncheck this option before rendering .
@@ -149,8 +153,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=j\_rdBhThjog
-[Video](https://www.youtube.com/watch?v=j\_rdBhThjog)
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=j_rdBhThjog
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/j_rdBhThjog
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/j_rdBhThjog/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=j_rdBhThjog" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/j_rdBhThjog/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Disable Watermark Users with Pro and above permissions can choose not to display the Coohom watermark in images (turn off the watermark switch before rendering). Enter **Workspace**, choose **"Settings - Customization - General Settings"** and **uncheck the Watermark**. After unchecking the watermark, watermarks in renderings, 360° walkthrough, and 720º VR tours will no longer be displayed. * **Note:** If you want to hide the Coohom watermark, please uncheck this option before rendering .
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1754042557998/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

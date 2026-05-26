@@ -153,6 +153,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Definitions and Settings of Three Types of Constraints In Kujiale photo studio, three types of  [Constraint]  functions have been introduced. Details are as follows: **(1) Parent-Child Constraint** Definition: It is as if there is a line between A and B;  B (child) rotates, scales, and moves based on A (parent)'s axis Application Scenario: Office chair animation video (the wheels only have rotation animation frames; set the body as the parent object so that the wheels move along with the body while rotating themselves) Setting Entry: The "Hierarchy" operation panel on the left side of the 3D photo studio design interface - drag B to be under A's hierarchy
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1770014319035/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

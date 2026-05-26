@@ -51,6 +51,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Self-check Currently, max offers many plugins and small tools for checking overlapping faces, which can be chosen as needed. If there are no small tools, you can still check within max. Use vraylightmtl and connect vraydirt to the light color node. Assign this material to the parts that need testing and render. Gray areas indicate overlapping faces; they should normally be the color of vraylight.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png
 

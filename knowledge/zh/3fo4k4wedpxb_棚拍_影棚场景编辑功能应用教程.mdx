@@ -149,6 +149,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 2. 怎么快速筛选出支持「场景编辑」的公棚模板？ 在“3D棚拍”选棚界面勾选上“场景编辑”即可，如下图
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1770016199563/60C9A3F8756FC523A0B7F5DFA519E58F.gif
 

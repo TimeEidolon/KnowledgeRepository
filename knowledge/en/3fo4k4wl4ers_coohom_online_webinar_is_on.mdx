@@ -33,6 +33,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Dear Coohom Users, We are thrilled to announce some exciting updates regarding our ongoing online webinars designed specifically for our valued users like you! At Coohom, we continuously strive to enhance your experience and empower you with the latest tools and knowledge to elevate your design projects.
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733932315378/2072900CCA866C2DB4B61C2FC6A1A933.png
 

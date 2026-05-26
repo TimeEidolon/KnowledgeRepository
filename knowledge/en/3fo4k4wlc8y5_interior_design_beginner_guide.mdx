@@ -12,6 +12,10 @@ In order to get you started with Coohom faster, it is recommended to watch the v
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=ynfB0P0esH0
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/ynfB0P0esH0
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/ynfB0P0esH0/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=ynfB0P0esH0" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/ynfB0P0esH0/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/ynfB0P0esH0" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -91,8 +95,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=ynfB0P0esH0
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/ynfB0P0esH0" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/ynfB0P0esH0
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/ynfB0P0esH0/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=ynfB0P0esH0" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/ynfB0P0esH0/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Step 1: Draw Floor Plan Select the room tool. Click once to fix the start point of the room. When you get a satisfactory room, click another time to finish. Then select the wall tool to add walls for creating more rooms if you like. After that, you can add doors to access the rooms.
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/gif/1733929239551/2E8BB623F3F9479A6813E28C108E903C.gif

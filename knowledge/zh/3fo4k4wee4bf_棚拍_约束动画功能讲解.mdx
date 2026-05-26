@@ -151,6 +151,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 三种约束的定义及设置 在酷家乐棚拍中为大家上新了三种【约束】功能，详情如下： **（1） 父子约束** 定义：即A跟B彷佛之间有一条线；  B（子）以A（父）的轴心为轴心进行旋转、缩放、移动 应用场景：办公椅动画视频（轮子仅作旋转动画帧，设置车身为父对象，可让轮子跟着车身位移移动的同时自身旋转） 设置入口：3D棚拍设计界面左侧“层级”操作面板-拖动B到A层级下
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1770014319035/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

@@ -71,7 +71,11 @@ Kindly rerfer to the video below:
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=RaQQd92UhkM 
+MEDIA_VIDEO: https://www.youtube.com/watch?v=RaQQd92UhkM
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/RaQQd92UhkM
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/RaQQd92UhkM/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=RaQQd92UhkM" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/RaQQd92UhkM/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/RaQQd92UhkM" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -183,8 +187,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=RaQQd92UhkM 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/RaQQd92UhkM" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=RaQQd92UhkM
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/RaQQd92UhkM
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/RaQQd92UhkM/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=RaQQd92UhkM" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/RaQQd92UhkM/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: In the [Inspiration - Model Library](https://www.coohom.com/pub/market/portal/model/library/detail/3FO4K4W1CJVV), you can favorite a single model or a Group. Then, you will find Favorites models in My Account in the Floor plan.
 MEDIA_STEP_1_IMAGE_1: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843160997/CA6BFA138843B3497B2F4F1AC03ABD30.png

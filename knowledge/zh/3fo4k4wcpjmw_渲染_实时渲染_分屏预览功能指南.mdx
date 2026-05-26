@@ -16,6 +16,10 @@ description: "在移动画布、调整材质和灯光参数时，实时预览可
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=AIluGhhlU04
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/AIluGhhlU04
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/AIluGhhlU04/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=AIluGhhlU04" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/AIluGhhlU04/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/AIluGhhlU04" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -112,8 +116,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=AIluGhhlU04
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/AIluGhhlU04" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/AIluGhhlU04
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/AIluGhhlU04/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=AIluGhhlU04" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/AIluGhhlU04/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 在移动画布、调整材质和灯光参数时，实时预览可以实时观察设计效果。其中的分屏预览功能可以实现双向协作 —— 您可以在一个电脑屏幕上专注调整渲染参数、移动画布或优化材质与灯光，另一个屏幕则实时呈现渲染效果，让设计调整与效果预览互不干扰，大幅提升操作效率~ ⭐在阅读文章前，建议您先查看与实时渲染相关的教程文档：[点击查看](https://www.coohom.com/en_US/helpcenter/real-time-rendering-is-launched-in-coohom?kjl_source=hc)
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1754364405377/A0E28499C2A16EEA48070AAD5861030B.gif

@@ -52,6 +52,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 首先检查模型单位，上传模型要求单位为毫米，尺寸错误会导致上传尺寸错误。 “窗口”-“模型信息”-“单位设置”，把单位设为mm 2.如果单位为正常的，使用卷尺工具测量模型尺寸，查看模型尺寸大小，工具栏选择卷尺工具。 3.选中模型，选择"缩放工具"，点模型的任意一个端点就可以等比例缩放，左下角是缩放比例，可以直接输入想要缩放的数据。
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779775/940DF5A2F079E67020F45AE98DECC519.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779770/F0892333DBAA1FD1FEA99D47BEC5A34D.png

@@ -105,6 +105,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Key Update Details **[Render & Light] The split screen preview function added to the real-time rendering, [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/real-time-rendering-split-screen-preview-function-guide?kjl_source=hc)** The split screen preview function enables bi-directional collaboration —— you can focus on adjusting rendering parameters, moving the canvas, or optimizing materials and lighting on one computer screen, while another screen displays the rendering effect in real-time, allowing design adjustments and effect preview without interference.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1754373961990/175FD20C7E46514376DFC22D0C36AD7F.gif
 

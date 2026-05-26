@@ -334,6 +334,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 1. 入口 进入工作台，选择**“企业库 - 定制商品 - 定制商品库”**，选择对应定制工具线，点击**“高级配置 - 风格约束模板”** **注意：不同工具线的风格约束不通用，例如：厨卫定制做的风格约束模板，在衣柜工具线不存在、不可用**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744189248923/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

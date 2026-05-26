@@ -276,6 +276,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 面向用户 有相关权限的企业用户，有需要可以联系客户成功顾问咨询 * 子账号需要主账号在**工作台**的**员工管理**中配置**AI厨房自动布局设计**的角色权限，配置完成可正常使用
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1778813266977/6C47626ECB27E2D5C647FB629250E5E7.png
 

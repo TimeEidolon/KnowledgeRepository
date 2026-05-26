@@ -328,6 +328,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 进入**工作台**，选择**“****设置 - 自定义设置 - 使用偏好 - 全屋定制设计工具版本”** 提供两个版本的选项： * 当前选择：**“全屋定制”**（当前稳定版） * 备用选项：**“全屋定制测试版”**（2D设计版）
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1754445851117/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

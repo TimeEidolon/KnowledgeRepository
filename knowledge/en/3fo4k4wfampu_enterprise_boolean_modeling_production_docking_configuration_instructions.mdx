@@ -85,6 +85,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Others For backend software that docks components, the Boolean modeling effects need to be truly applied to the underlying components. By default, only the effects are displayed. To proceed with docking, you must go to the settings. **1. Configuration Entrance** In the merchant backend **Enterprise Catalog - Product Catalog - Advanced - Production Output - Data Output Settings - Other Settings,** then turn on the switch for **Boolean Modeling Production Docking** and click **Save**.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png
 

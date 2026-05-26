@@ -124,6 +124,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 在通用报价页面选择**价目表**，然后点击报价后的**编辑**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1765506784508/D6328CB7A1A0F89A1ABFE3B81DD62197.png
 

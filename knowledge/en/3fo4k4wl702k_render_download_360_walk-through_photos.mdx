@@ -14,6 +14,10 @@ The 360 tour cannot be downloaded as it can only be opened by link to see the wa
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=UiVtmgZ0q7o
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/UiVtmgZ0q7o
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/UiVtmgZ0q7o/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=UiVtmgZ0q7o" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/UiVtmgZ0q7o/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/UiVtmgZ0q7o" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -66,8 +70,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=UiVtmgZ0q7o
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/UiVtmgZ0q7o" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/UiVtmgZ0q7o
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/UiVtmgZ0q7o/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=UiVtmgZ0q7o" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/UiVtmgZ0q7o/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Download 360 Walk-through Photos Go to “My Projects”, click “Project Details” and you will be relocated to the render gallery. Click the three dots on the panorama render to download the image package.
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1742392478931/F4C5F260F2D844D3649085B02725EBCB.png

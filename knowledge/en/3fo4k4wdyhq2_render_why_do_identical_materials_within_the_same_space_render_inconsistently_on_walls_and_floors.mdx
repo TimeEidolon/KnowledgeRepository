@@ -45,6 +45,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Reason This issue mostly occurs in small enclosed spaces like bathrooms. These spaces have certain characteristics: they are small, have no windows or small windows, and in such scenarios, spotlights or additional lighting is needed for illumination. The characteristic of such light sources is that their impact is greater directly below than to the sides. Therefore, the impact on the floor is greater than on the walls, resulting in the floor material appearing lighter than the wall material, causing a visual color inconsistency. This is an effect that also exists in real life.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png
 

@@ -60,7 +60,11 @@ Transparency (acrylic, glass, etc.)
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=MQRkKs1hQ4U 
+MEDIA_VIDEO: https://www.youtube.com/watch?v=MQRkKs1hQ4U
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/MQRkKs1hQ4U
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/MQRkKs1hQ4U/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=MQRkKs1hQ4U" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/MQRkKs1hQ4U/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/MQRkKs1hQ4U" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -89,8 +93,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=MQRkKs1hQ4U 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/MQRkKs1hQ4U" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=MQRkKs1hQ4U
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/MQRkKs1hQ4U
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/MQRkKs1hQ4U/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=MQRkKs1hQ4U" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/MQRkKs1hQ4U/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Using the 3D Viewer Effect Editor, you can fine-tune 3D models by adjusting the lighting, lens effects, material settings, texture, background, etc to further customize the product in context. **To Access :** Enterprise Catalog >> Product >> Create 3D Viewer >> 3D Viewer Editor
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907445055/A8C2A83C8D6E62A16AB8167D7BFD8475.png

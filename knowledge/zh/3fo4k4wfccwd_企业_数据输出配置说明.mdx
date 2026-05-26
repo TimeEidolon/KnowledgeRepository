@@ -78,6 +78,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 入口 在商家后台的**企业库 - 定制商品库 - 高级配置 - 下单输出 - 数据输出设置**中，根据需要进行配置
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png
 

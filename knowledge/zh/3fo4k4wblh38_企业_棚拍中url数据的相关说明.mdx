@@ -97,6 +97,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 影棚照片图库与特定产品型号相关。浏览这些照片时，您可以从顶部 URL 中的元数据中判断出该影棚照片是为哪个产品型号拍摄的，然后您可以根据BrandGoodId搜索目标型号 * 在下图中，照片对应的模型 ID，即 BrandGoodId，图中红框标注处的“3FO48E5RLI8B” * 同时，相册 ID便是该相册的影棚 ID，显示为“3FO4K58VANHC” * 通过输入 BrandGoodId，您可以在企业目录的模型库中查找与照片相关的产品型号。搜索完成后，产品型号的名称也会显示在其预览下方 * 您还可以根据产品名称搜索目标型号 * 下图为相关产品型号名称： * 通过输入型号名称，您可以获得相同的搜索结果
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1748486854726/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1748486938925/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

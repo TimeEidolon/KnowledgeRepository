@@ -182,17 +182,40 @@ VISIBLE_GUIDE_RE = re.compile(
 NUMBERED_STEP_RE = re.compile(r"^(\d+)\.\s+(.+)$")
 
 
+def parse_youtube_video_id(url: str) -> str | None:
+    if not url:
+        return None
+    normalized = url.replace("\\_", "_").replace("\\", "")
+    match = re.search(
+        r"(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/)([\w-]{6,})",
+        normalized,
+        re.IGNORECASE,
+    )
+    return match.group(1) if match else None
+
+
+def normalize_video_watch_url(url: str) -> str:
+    normalized = url.replace("\\_", "_").replace("\\", "").strip()
+    video_id = parse_youtube_video_id(normalized)
+    if video_id:
+        return f"https://www.youtube.com/watch?v={video_id}"
+    return normalized
+
+
+def youtube_thumbnail_url(video_id: str) -> str:
+    return f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
+
+
+def youtube_embed_url(video_id: str) -> str:
+    return f"https://www.youtube.com/embed/{video_id}"
+
+
 def youtube_embed_html(url: str) -> str:
-    match = VIDEO_MD_RE.search(url)
-    video_id = None
-    if match:
-        video_id = match.group(2) or match.group(3)
-    if not video_id and "youtube.com/embed/" in url:
-        video_id = url.rsplit("/", 1)[-1].split("?", 1)[0]
+    video_id = parse_youtube_video_id(url)
     if video_id:
         return (
             f'<iframe width="100%" height="400" '
-            f'src="https://www.youtube.com/embed/{video_id}" '
+            f'src="{youtube_embed_url(video_id)}" '
             f'title="Video" frameborder="0" '
             f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
             f'gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
@@ -200,17 +223,55 @@ def youtube_embed_html(url: str) -> str:
     return f"[Video]({url})"
 
 
+def youtube_clickable_preview_html(watch_url: str) -> str:
+    """Thumbnail + link — survives assistant chat where iframes are stripped."""
+    watch_url = normalize_video_watch_url(watch_url)
+    video_id = parse_youtube_video_id(watch_url)
+    if not video_id:
+        return ""
+    thumb = youtube_thumbnail_url(video_id)
+    return (
+        f'<a href="{watch_url}" target="_blank" rel="noopener noreferrer">'
+        f'<img src="{thumb}" alt="Video tutorial — click to play" '
+        f'style="max-width:100%;height:auto;border-radius:8px;" />'
+        f"</a>"
+    )
+
+
+def direct_video_html(url: str) -> str:
+    return (
+        f'<video controls style="width:100%;max-width:100%;" '
+        f'src="{url}"></video>'
+    )
+
+
+def build_video_media_lines(video_url: str) -> list[str]:
+    """Plain-text video metadata for AI indexing (iframe/HTML may be stripped)."""
+    watch_url = normalize_video_watch_url(video_url)
+    lines = [f"MEDIA_VIDEO: {watch_url}"]
+    video_id = parse_youtube_video_id(watch_url)
+    if video_id:
+        lines.append(f"MEDIA_VIDEO_EMBED: {youtube_embed_url(video_id)}")
+        lines.append(f"MEDIA_VIDEO_THUMBNAIL: {youtube_thumbnail_url(video_id)}")
+    elif re.search(r"\.(?:mp4|webm|mov)(?:\?|$)", watch_url, re.IGNORECASE):
+        lines.append(f"MEDIA_VIDEO_FILE: {watch_url}")
+    return lines
+
+
 def extract_intro_video_url(body: str) -> str | None:
     for line in body.splitlines():
         stripped = line.strip()
         if not stripped:
             continue
+        if stripped.startswith("MEDIA_VIDEO:"):
+            return normalize_video_watch_url(stripped.split(":", 1)[1].strip())
         if "🎥" in stripped or "video" in stripped.lower() or "youtube" in stripped.lower():
             match = VIDEO_MD_RE.search(stripped)
             if match:
-                return match.group(1) or (
+                raw = match.group(1) or (
                     f"https://www.youtube.com/watch?v={match.group(2) or match.group(3)}"
                 )
+                return normalize_video_watch_url(raw)
     embed = re.search(r"youtube\.com/embed/([\w-]{6,})", body)
     if embed:
         return f"https://www.youtube.com/watch?v={embed.group(1)}"
@@ -350,14 +411,17 @@ def build_visible_step_guide(body: str) -> str:
         "",
     ]
     if video_url:
-        lines.extend(
-            [
-                f"MEDIA_VIDEO: {video_url}",
-                "",
-                extract_intro_video(body) or "",
-                "",
-            ]
-        )
+        lines.extend(build_video_media_lines(video_url))
+        lines.append("")
+        preview = youtube_clickable_preview_html(video_url)
+        if preview:
+            lines.append(preview)
+            lines.append("")
+        elif re.search(r"\.(?:mp4|webm|mov)(?:\?|$)", video_url, re.IGNORECASE):
+            lines.append(direct_video_html(video_url))
+            lines.append("")
+        lines.append(extract_intro_video(body) or "")
+        lines.append("")
     for num, text, urls in steps:
         lines.append(f"### Step {num}")
         lines.append(text)
@@ -393,12 +457,19 @@ def build_agent_media_block(body: str) -> str:
         "MEDIA_STEP_N_IMAGE URL using:",
         '`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`',
         "",
+        "For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview",
+        "(assistant chat often strips iframes):",
+        '`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`',
+        "For MEDIA_VIDEO_FILE (.mp4), use `<video controls src=\"URL\"></video>`.",
+        "",
     ]
     if video_url:
-        parts.append(f"MEDIA_VIDEO: {video_url}")
-        embed = youtube_embed_html(video_url)
-        if embed:
-            parts.append(embed)
+        parts.extend(build_video_media_lines(video_url))
+        preview = youtube_clickable_preview_html(video_url)
+        if preview:
+            parts.append(preview)
+        elif re.search(r"\.(?:mp4|webm|mov)(?:\?|$)", video_url, re.IGNORECASE):
+            parts.append(direct_video_html(video_url))
         parts.append("")
     for num, text, urls in steps:
         parts.append(f"MEDIA_STEP_{num}_TEXT: {text}")

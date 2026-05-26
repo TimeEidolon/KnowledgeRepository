@@ -14,6 +14,10 @@ description: "设计师可对由多个柜体组合设计的柜体模型进行组
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=Q4uOHPMHVnE
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Q4uOHPMHVnE
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Q4uOHPMHVnE/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=Q4uOHPMHVnE" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Q4uOHPMHVnE/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Q4uOHPMHVnE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -85,8 +89,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=Q4uOHPMHVnE
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Q4uOHPMHVnE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Q4uOHPMHVnE
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Q4uOHPMHVnE/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=Q4uOHPMHVnE" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Q4uOHPMHVnE/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 组合 1、**按住shift**选中多个柜体后，浮窗工具栏中出现组合键，点击**组合**，完成多个模型的组合 * **Win系统快捷键：Ctrl+G**（需要在选择完模型，松开shift键后，按住Ctrl+G） * **Mac系统快捷键：Command+G**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737114049408/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

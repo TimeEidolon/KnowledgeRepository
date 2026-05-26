@@ -120,6 +120,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 重点更新详情 **【模型素材】模型库升级，支持按空间类型筛选模型，[点击查看详情，了解使用方式](https://www.coohom.com/zh_CN/helpcenter/%E6%A8%A1%E5%9E%8B%E7%B4%A0%E6%9D%90-%E6%A8%A1%E5%9E%8B%E5%BA%93%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97?kjl_source=hc)** 模型库新界面有清晰的板块划分，涵盖个人资源管理、优质模型推荐与精准分类导航，让每一次模型查找与调用都轻松高效
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1768199875077/57332ED30DA651CA1B698BBF9BD047E4.gif
 

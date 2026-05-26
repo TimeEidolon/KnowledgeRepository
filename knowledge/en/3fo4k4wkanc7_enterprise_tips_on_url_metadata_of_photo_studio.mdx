@@ -97,6 +97,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: A gallery of photos that are shot in the photo studio are related to a specific product model. While you browse these photos, from the metadata in the URL on top, you can tell which product model the studio photo is shot for. Then you can search for the target model based on the BrandGoodId. * In the picture below, the ID of the model for the photo, i.e., the BrandGoodId, is highlighted in a red box. It is shown as "3FO48E5RLI8B". * Meanwhile, the album ID, i.e. the studio ID of the gallery of photos, is shown as "3FO4K58VANHC". * By typing in the BrandGoodId, you can find the product model related to the photos in the model library from Enterprise Catalog. When the search is done, the name of the product model is also indicated below its preview. * You can also search for the target model based on the product name. * The picture below shows the name of the related product model: * By typing in the model name, you can get the same search result.
 MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1748486854726/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1748486938925/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

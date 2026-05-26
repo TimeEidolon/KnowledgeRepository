@@ -84,6 +84,10 @@ Bạn có thể tham khảo video hướng dẫn chi tiết tại đây:
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=wfaZRuH_aV4
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/wfaZRuH_aV4
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/wfaZRuH_aV4/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=wfaZRuH_aV4" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/wfaZRuH_aV4/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/wfaZRuH_aV4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -105,8 +109,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=wfaZRuH_aV4
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/wfaZRuH_aV4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/wfaZRuH_aV4
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/wfaZRuH_aV4/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=wfaZRuH_aV4" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/wfaZRuH_aV4/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Câu hỏi: Làm cách nào để tôi import/upload file AutoCAD vào Coohom? Câu trả lời: Bước 1: Vào phần **Vẽ mặt bằng,** chọn **Nhập ảnh** (Import Image), nhưng trước tiên hãy đảm bảo bạn đã chuyển đổi tệp CAD sang định dạng JPEG. Bước 2: Trong bước này, như được hiển thị trong ảnh chụp màn hình, hãy nhấp vào Vẽ (Draw). Bước 3: Nhập tỷ lệ cho toàn bộ mặt bằng theo yêu cầu. Bước 4: Vẽ tường và phòng theo cách thủ công bằng các công cụ có sẵn trên **Công cụ sàn.**
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1747815736019/5A717F8BBB549B8AFB544C9837049C5A.png

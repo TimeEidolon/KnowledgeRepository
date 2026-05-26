@@ -51,6 +51,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: You can find the corresponding light source object in the hierarchy/design scene/right parameter panel, and then add keyframes to the object. By setting keyframes for lighting, various lighting animations can be output, such as dynamic changes in natural light at different times within a scene/room light switch effect/commercial space scene various light effects change/digital product surrounding light consistent change effect, etc. * Video effect reference: [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_a57b70c6_893a_460b_1772677025303.mp4)
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614332669/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

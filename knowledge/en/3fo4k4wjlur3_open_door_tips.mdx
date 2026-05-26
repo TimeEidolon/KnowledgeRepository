@@ -33,7 +33,11 @@ Here is a short video for your reference:
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=aCU-RD0-WSs 
+MEDIA_VIDEO: https://www.youtube.com/watch?v=aCU-RD0-WSs
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/aCU-RD0-WSs
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/aCU-RD0-WSs/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=aCU-RD0-WSs" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/aCU-RD0-WSs/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/aCU-RD0-WSs" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -83,8 +87,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=aCU-RD0-WSs 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/aCU-RD0-WSs" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=aCU-RD0-WSs
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/aCU-RD0-WSs
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/aCU-RD0-WSs/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=aCU-RD0-WSs" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/aCU-RD0-WSs/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: Hi Coohomers, We have updated new **open door** models rencently. And this article will show how to use the **Open Door** to do a rendering as below:
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849210525/72000B20893D2FF544E67E6595950C7F.png

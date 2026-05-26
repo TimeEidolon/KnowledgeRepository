@@ -14,6 +14,10 @@ description: "在户型工具中，支持在多层别墅中跨层挖洞，绘制
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=G27aQ9aoWWA
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/G27aQ9aoWWA
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/G27aQ9aoWWA/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=G27aQ9aoWWA" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/G27aQ9aoWWA/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/G27aQ9aoWWA" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -117,8 +121,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=G27aQ9aoWWA
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/G27aQ9aoWWA" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/G27aQ9aoWWA
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/G27aQ9aoWWA/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=G27aQ9aoWWA" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/G27aQ9aoWWA/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 进入户型工具，将窗户拖到一层中合适的墙体上 * **如何绘制多层别墅，可见教程文档：[【户型设计】绘制多层别墅](https://www.coohom.com/zh_CN/helpcenter/%E6%88%B7%E5%9E%8B%E8%AE%BE%E8%AE%A1-%E7%BB%98%E5%88%B6%E5%A4%9A%E5%B1%82%E5%88%AB%E5%A2%85)**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1748331228480/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

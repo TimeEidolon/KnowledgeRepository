@@ -81,6 +81,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Entrance On the workspace page, click on the avatar to view your current credit balance. Click the **Credits** button to see detailed usage records (Note: The initial credit balance is set to 0).
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1778221465572/DE055A567B444600C64A510187779584.png
 

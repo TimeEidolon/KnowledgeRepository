@@ -80,6 +80,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Optimized Improvements **1. Engine Upgrade** Video rendering has been upgraded. When using lighting from Fast & Interior Series 3.0 and above, fast rendering now supports more types of dynamic models and newly added materials, including translucent, overlay, and blended materials.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058819/0BB7DA08FED6DC84C3E8D24BB4EAFCD1.gif
 

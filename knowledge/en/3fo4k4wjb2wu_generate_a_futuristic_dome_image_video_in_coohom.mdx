@@ -62,7 +62,11 @@ Please follow the steps below:
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=S0k-7aoIbKo 
+MEDIA_VIDEO: https://www.youtube.com/watch?v=S0k-7aoIbKo
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/S0k-7aoIbKo
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/S0k-7aoIbKo/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=S0k-7aoIbKo" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/S0k-7aoIbKo/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/S0k-7aoIbKo" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -166,8 +170,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=S0k-7aoIbKo 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/S0k-7aoIbKo" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=S0k-7aoIbKo
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/S0k-7aoIbKo
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/S0k-7aoIbKo/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=S0k-7aoIbKo" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/S0k-7aoIbKo/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: ### **What you can dream, you can make it in Coohom.** Different kind of models can be uploaded in Coohom and you can get fast, high quality Images, like this Dome:
 MEDIA_STEP_1_IMAGE_1: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733830073730/922AD80196E47ED826D81939A910901C.png

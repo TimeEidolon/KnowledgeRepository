@@ -14,6 +14,10 @@ description: "在吊顶设计工具中，借助偏移工具与倒角工具，即
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=EYFU7tDGvuU
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/EYFU7tDGvuU
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/EYFU7tDGvuU/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=EYFU7tDGvuU" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/EYFU7tDGvuU/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/EYFU7tDGvuU" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -117,8 +121,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=EYFU7tDGvuU
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/EYFU7tDGvuU" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/EYFU7tDGvuU
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/EYFU7tDGvuU/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=EYFU7tDGvuU" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/EYFU7tDGvuU/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 入口 选中顶面，点击进入**吊顶设计**
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1775122972437/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

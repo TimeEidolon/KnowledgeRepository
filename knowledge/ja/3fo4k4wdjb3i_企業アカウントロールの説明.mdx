@@ -243,6 +243,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: **③JSON/XMLファイルダウンロード** デザインツールでJSON/XMLファイルをダウンロードする権限。 **２－２　カスタム注文システムに関わる権限** 「カスタム注文システム」： Coohomでは、**カスタム注文システム**というカスタム製品を使用してプラン作り、生産までつながるオーダーシステムがあります。（Group以上の企業版のみ） 主なプロセスとしては：デザイン → 受注審査 → 生産審査 → 生産となります。
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1761295362482/F9F026560786C5C0CAACD88B0EC82F3C.png
 

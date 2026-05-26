@@ -139,6 +139,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: 重点更新详情 **【厨卫定制】新增快捷素材面板，可以快速取用模型，[点击查看详情，了解使用方式](https://www.coohom.com/zh_CN/helpcenter/%E7%94%A8%E5%BF%AB%E6%8D%B7%E7%B4%A0%E6%9D%90%E9%9D%A2%E6%9D%BF%E5%BF%AB%E9%80%9F%E5%8F%96%E7%94%A8%E6%A8%A1%E5%9E%8B?kjl_source=hc)** 设计方案时可通过快捷键快速取用常用模型，减少在左侧模型库翻找模型的时间，提高设计效率
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753863868690/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 

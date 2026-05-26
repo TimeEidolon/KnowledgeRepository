@@ -132,7 +132,11 @@ For details about Photo Shooting, you can check out the video below.
 
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=Hk2ma246naU 
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Hk2ma246naU
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Hk2ma246naU
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Hk2ma246naU/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=Hk2ma246naU" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Hk2ma246naU/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Hk2ma246naU" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -231,8 +235,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-MEDIA_VIDEO: https://www.youtube.com/watch?v=Hk2ma246naU 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Hk2ma246naU" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Hk2ma246naU
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/Hk2ma246naU
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/Hk2ma246naU/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=Hk2ma246naU" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/Hk2ma246naU/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: * **Approaches to Photo Shooting** * **Approaches to Video Shooting** **Approaches to Photo Shooting** **Approaches to Video Shooting** ### **Access 1 Photo studio >> Products** In the left-side navigation pane, click the Photo Studio, click on Products.
 MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733910888602/0C96B8FEB1C6A654C7D2538326586817.png

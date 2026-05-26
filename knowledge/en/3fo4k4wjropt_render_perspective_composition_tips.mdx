@@ -96,6 +96,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Rule of Thirds Composition **Role**: The rule of thirds divides a frame or space into three equal parts, enhancing visual balance and focus by placing key elements along the dividing lines or their intersections. **Application**: In interior design, key elements such as furniture, artwork, or lighting fixtures can be placed at the intersections of the rule of thirds lines. This avoids placing important elements in the center, creating a more dynamic and layered space. For example, positioning a sofa or coffee table along the rule of thirds lines can result in a more natural layout.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1746786398477/052CDAF4478DCF7717E8918D821D1DB8.png
 

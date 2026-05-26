@@ -94,6 +94,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Reason (1) Area light source is a type of light source with a range, but due to the shape of the area light source, when it is close to the model, shadow decomposition occurs, and the illuminated area becomes brighter. The model on the back of the light source is gray due to the lack of light. As shown below ![https://qhstaticssl.kujiale.com/image/png/1703056339110/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_469,h_375/format,webp](https://qhstaticssl.kujiale.com/image/png/1703056339110/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_469,h_375/format,webp)
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1703056232255/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_589,h_376/format,webp
 

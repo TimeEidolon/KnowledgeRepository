@@ -254,6 +254,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Uploaded the max file without the texture files If the model has no textures (materials do not use textures), you can upload the max file alone. If there are textures, then a packaged upload is required (packaging will bundle the textures used in the model). Steps: a) First, check the model effect in max to see if it's what we want. If textures are missing, or the path is wrong, or using multi-sub materials, it will appear black in max. Therefore, you cannot package upload yet; check if reasons 2, 5, or 6 are causing this. b) If the displayed materials are normal, as shown below, you can package and upload the textures together. c) Archive operation as follows:
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png
 

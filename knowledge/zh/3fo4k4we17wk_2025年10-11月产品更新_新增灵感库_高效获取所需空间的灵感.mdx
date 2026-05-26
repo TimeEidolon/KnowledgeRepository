@@ -26,6 +26,10 @@ description: "本期门窗定制、施工图纸等多款工具带来新增功能
 Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 MEDIA_VIDEO: https://www.youtube.com/watch?v=BxDwfyasWoE
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/BxDwfyasWoE
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/BxDwfyasWoE/hqdefault.jpg
+
+<a href="https://www.youtube.com/watch?v=BxDwfyasWoE" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/BxDwfyasWoE/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/BxDwfyasWoE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -103,8 +107,15 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_VIDEO: https://www.youtube.com/watch?v=BxDwfyasWoE
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/BxDwfyasWoE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+MEDIA_VIDEO_EMBED: https://www.youtube.com/embed/BxDwfyasWoE
+MEDIA_VIDEO_THUMBNAIL: https://img.youtube.com/vi/BxDwfyasWoE/hqdefault.jpg
+<a href="https://www.youtube.com/watch?v=BxDwfyasWoE" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/BxDwfyasWoE/hqdefault.jpg" alt="Video tutorial — click to play" style="max-width:100%;height:auto;border-radius:8px;" /></a>
 
 MEDIA_STEP_1_TEXT: 重点更新详情 **【账户管理】新增VIP管理和预绑定功能（部分用户可见），[点击查看详情，了解使用方式](https://www.coohom.com/zh_CN/helpcenter/%E4%BC%81%E4%B8%9A-vip%E7%AE%A1%E7%90%86%E4%B8%8E%E9%A2%84%E7%BB%91%E5%AE%9A%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97?kjl_source=hc)** VIP账号管理功能可以更好地帮助企业进行账号和VIP管理，支持VIP的查看、绑定，包括生效中的和已经到期的VIP
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762307823292/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png

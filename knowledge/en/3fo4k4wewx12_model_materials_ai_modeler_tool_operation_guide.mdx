@@ -295,6 +295,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: When choosing different tools and methods to generate models, you can click **Parameter** and adjust settings as needed. * **PBR:** Enabling **PBR** makes materials more realistic, with more natural lighting and shading effects and richer details. * **HD Texture:** Enabling **HD Texture** makes the model's surface texture finer, clearer, and closer to the real effect of the original image. * **High- Poly:** Enabling **High- Poly** ensures smoother model edges and more precise restoration of detail contours.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1778751397701/29748BC3E2E649BDAC4BA1BA3EE8E365.png
 

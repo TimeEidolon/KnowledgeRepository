@@ -120,6 +120,11 @@ For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
 MEDIA_STEP_N_IMAGE URL using:
 `<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
+For video: if MEDIA_VIDEO_THUMBNAIL exists, output a clickable preview
+(assistant chat often strips iframes):
+`<a href="MEDIA_VIDEO"><img src="MEDIA_VIDEO_THUMBNAIL" alt="Video" /></a>`
+For MEDIA_VIDEO_FILE (.mp4), use `<video controls src="URL"></video>`.
+
 MEDIA_STEP_1_TEXT: Key Update Details **[Kitchen & Closet Design]** A new 3DGS import realistic scene function has been added to the Kitchen & Closet tool (Available to some users), **[Click here for details and learn how to use](https://www.coohom.com/helpcenter/kitchen-closet-real-scene-space-design-operation-guide?kjl_source=hc)** No manual drawing needed, unlock realistic scene restoration and creative design with one click! This function supports uploading realistic scene images and panoramic images, automatically recognizing and generating floor plans. Subsequent design modifications can be freely done within the tool, and new renderings can be completed with one click.
 MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1770716686625/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
