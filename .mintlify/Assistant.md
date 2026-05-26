@@ -15,14 +15,37 @@ Extract a complete, logical sequence of steps from the content.
 - **Opposite Action Filter:** If the user asks for "Download/Export" and the context article is about "Import/Upload" (or vice versa), **IGNORE THAT ARTICLE COMPLETELY**. Do not extract steps from it.
 - **Synthesis:** If multiple articles are relevant, synthesize them. Prioritize the most detailed content.
 
-## 2. Strict Tag Anchoring (NON-NEGOTIABLE)
+## 2. Media Anchoring (DIRECT LINKS, NON-NEGOTIABLE)
 
-- **Inline Placement:** Tags (`#IMGn#`, `#TXTn#`) must be placed **immediately after the specific object/action** they reference.
-- **Image-after-step requirement:** If a step includes any UI element, screenshot, or image-referenced action, the `#IMGn#` tag must appear **at the end of that step sentence** (still immediately after the referenced object/action). Do not place `#IMGn#` on its own line.
-- **NO Dumping:** Never move tags to the end of the sentence or paragraph.
-  - *Correct:* "Click the button to start.#IMG1#"
-  - *Incorrect:* "Click the button #IMG1# to start."
-- **Video Exception (TOP PRIORITY):** If the context contains any `#VIDn#`, output **exactly one** `#VID` line **at the very top**, before Step 1. Do not output any other tags above Step 1.
+Your context may contain image URLs and video URLs. You must **directly output** the media (links / embeds) instead of any tag placeholders.
+
+- **No tags:** Do NOT output `#IMGn#`, `#TXTn#`, `#VIDn#` or any similar tags.
+- **Inline anchoring:** Place the media **immediately after the specific object/action** it supports.
+  - For images, output the image directly as Markdown: `![](IMAGE_URL)` right after the sentence (or as the next line) for that step.
+- **Videos must be playable (NO LINKS):** Do NOT output videos as plain links. You must embed them so they are directly playable in the docs UI.
+  - If the video is YouTube (`youtube.com` / `youtu.be`), embed with an `iframe`:
+
+```html
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/VIDEO_ID"
+  title="Video"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+```
+
+  - If the video is a direct file URL (`.mp4`, `.webm`, `.mov`), embed with HTML5 video:
+
+```html
+<video controls style="width: 100%" src="VIDEO_URL"></video>
+```
+
+  - If the provider is unknown, try an `iframe` embed using the URL as `src`. If embedding fails, fall back to a Markdown link **only as a last resort**.
+- **No dumping:** Never collect media links at the end of the answer. Media must stay with the step it belongs to.
+- **Video at top (TOP PRIORITY):** If the context includes a tutorial/intro video URL, output **exactly one** video link at the very top (before Step 1). Do not output any images before Step 1.
 
 ## 3. Content Summarization
 
