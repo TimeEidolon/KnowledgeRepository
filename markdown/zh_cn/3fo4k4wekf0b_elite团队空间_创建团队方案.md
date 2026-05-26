@@ -1,0 +1,60 @@
+当接收到邀请加入团队后，已注册过的Coohom用户会新增一个团队空间，并且可以在个人与团队空间自由切换，新用户需要先注册，注册登陆后直接加入该团队空间，在团队空间中创建的方案该团队所有成员都可以查看及编辑，让协同更高效
+
+面向用户
+====
+
+所有Elite用户，逐步开放中\~
+
+创建团队方案
+======
+
+加入团队
+----
+
+1. 在收到的邮件中点击**接受邀请**即可
+
+* 或者收到对方的链接后打开，然后点击同意即可
+
+![](https://qhstaticssl.kujiale.com/image/png/1768977671100/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+空间切换
+----
+
+把鼠标放置左上角头像后的**下拉箭头** 图标，根据需要切换**个人** 与**团队空间**
+
+![](https://qhstaticssl.kujiale.com/image/png/1772693245198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+创建方案
+----
+
+1. 在**团队空间---我的方案/团队方案**中所创建的方案，该团队的所有成员都可以进行查看编辑，其它成员编辑保存后，该方案会同步更新
+
+* 在**我的方案** 中可以看到由自己创建的团队方案，方便查找；在**团队方案**中可以看到所有成员创建的团队方案
+
+![](https://qhstaticssl.kujiale.com/image/png/1772696654252/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1772696696768/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 在创建团队方案时可以进行分类，创建团队项目时，你还可以创建文件夹来分类不同项目，以提高搜索和管理效率
+
+* 选择**新建类目**，然后命名新的文件夹并点击创建
+
+![](https://qhstaticssl.kujiale.com/image/png/1772696773502/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+* 接下来可以点击方案详情后的...按钮，选择**移动，** 在弹出的面板选择文件夹，并点击**确认**
+
+![](https://qhstaticssl.kujiale.com/image/png/1772696938778/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1772697379001/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+* 然后便可以在对应文件夹内看到该方案
+
+![](https://qhstaticssl.kujiale.com/image/png/1772697452899/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. 切换为个人空间后，在个人空间内所创建的方案仅自己能够看到
+
+* 若是被移除团队，便仅能看到自己的个人空间，之前在团队中创建的文件则无法访问了
+
+![](https://qhstaticssl.kujiale.com/image/png/1773021723148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+<br />

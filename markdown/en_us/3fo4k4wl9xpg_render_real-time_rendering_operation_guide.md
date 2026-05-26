@@ -1,0 +1,140 @@
+Real-time rendering function adopts new cloud real-time lighting rendering technology to bring instant feedback design experience. Users can preview the final lighting rendering effect in real-time while adjusting lighting, materials, and post-processing parameters, achieving the "what you see is what you get" in rendering. This article will explain in detail how to use the real-time rendering function.
+
+⭐Before reading the article, it is recommended to watch the video tutorial first for easy getting started\~
+
+🎥 \[Video URL\](https://www.youtube.com/watch?v=fr0eP0944Hs)
+
+<br />
+
+🎥 \[Video URL\](https://www.youtube.com/watch?v=BmHFEF6I8QI)
+
+<br />
+
+For Users
+=========
+
+All users
+
+Real-time Rendering Interface Layout
+====================================
+
+![](https://qhstaticssl.kujiale.com/image/png/1761126703727/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+Main Steps
+==========
+
+Create a Real-time Rendering Template
+-------------------------------------
+
+**1. Entrance**
+
+**Entrance One:** Open the render toolbar and select **Real-time Rendering.**
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1761213913146/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+**Entrance Two:** Enter the **Render** tool, click **Add to Real-time Rendering** under the left lights section.
+
+![](https://qhstaticssl.kujiale.com/image/png/1761122570632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+**2. Select a Template**
+
+There are six templates available for real-time rendering: Daytime, Nighttime, Indoor Daytime 3.1, Indoor Nighttime 3.1, Ultra-Fast Daylight 3.1, Ultra-Fast Nightlight 3.1.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1761213912979/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+Real-time Preview
+-----------------
+
+1. During canvas movement, material adjustments, and lighting parameter changes, the camera view is rendered in real-time to observe the design effect.
+
+2. Supports three modes: **Full Screen Preview, Split Screen Preview, Small Window Preview**. You can switch via the top bar or the top-right corner button.
+
+![](https://qhstaticssl.kujiale.com/image/png/1761123393012/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1761213913015/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1761123716412/5F7DFBC0A76E5BFD0389AF799BBB0963.gif)
+
+3. Split screen and small window preview provide a lock function: To keep a fixed window view, click the **Lock** icon at the bottom right in the current view; to follow canvas changes, click Unlock.
+
+* Detailed operations for split screen preview can be found in the tutorial document: [Click to view](https://www.coohom.com/en_US/helpcenter/real-time-rendering-split-screen-preview-function-guide?kjl_source=hc)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1761213913007/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1761124888306/F4520B6A1C6B88C3283711665889585A.gif)
+
+Views Adjustment
+----------------
+
+1. Click the bottom left corner of the main interface to switch between 2D/3D views, making it easier to adjust light sources or select materials in different views.
+
+2. Supports canvas movement with the mouse or keyboard keys Q (up), E (down), W (forward), S (backward), A (left), D (right); also allows quick camera lens positioning using camera parameters and smart views.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1761213913078/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1761125123842/978D377480769386A1A0FC4F14D1785D.gif)
+
+Lights Adjustment
+-----------------
+
+**1.** **Adjust the Environment**
+
+* Supports adjustment of sunshine and ambient light, controlling the main light source and outdoor effects.
+* The public library offers various outdoor texture maps, and users can upload their own outdoor images.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1761213913028/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+**2. Adjust Lights**
+
+* Click the light icon to adjust the location and effect parameters of the light.
+* Currently supports five common lights: **Rectangular Area Light, Circular Area Light, Omni Light, Spotlight, IES Light**, allowing flexible light settings based on scene needs.
+
+![](https://qhstaticssl.kujiale.com/image/png/1761125440658/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/gif/1761213913254/FBDD7E154593BA358C4C06FCA0D77B50.gif)
+
+Materials Adjustment
+--------------------
+
+1. In the real-time rendering environment, materials can be easily adjusted and replaced to achieve the best solution effect.
+
+2. Select the model part and adjust material parameters in the right-hand panel. You can also click replace to change materials, with a rich selection available in the public library.
+
+![](https://qhstaticssl.kujiale.com/image/png/1761125631466/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/gif/1761213913189/45640CE7136E14B8A09D2D972E7006EA.gif)
+
+Effect Settings
+---------------
+
+The real-time rendering environment provides rendering parameters and post-processing functions, allowing users to further optimize the image effect.
+
+**1. Rendering Parameters:** In the right-hand panel, you can set exposure, ambient blocking, brightness, etc., to achieve a more realistic rendering image.
+
+**2. Post-Processing:** By using beautification parameters and LUT filters, you can set the color of the image to make the overall effect more harmonious. Currently, four sets of parameter presets and eight LUTs are available for quick style switching.
+
+![](https://qhstaticssl.kujiale.com/image/png/1761125865955/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/gif/1761213913455/297AF0A6C781D4713D6A1584BF5EEE13.gif)
+
+Render Output
+-------------
+
+Once satisfied with the lighting project, click the ... button next to the render button at the top right, select the desired image type, aspect ratios, and resolutions, then click **Render** . After rendering, the results can be viewed in the **Gallery**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1761126047971/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1761213913047/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1761126282676/FB05B0D6F94CD615598E203F22E4170F.gif)
+
+Precautions
+===========
+
+1. Real-time rendering only supports Coohom 5.0 version solutions.
+
+2. Materials modified and replaced during real-time rendering only take effect for the current template; the original design project and other templates will not be altered.
+
+3. In real-time rendering mode, 8K UHD, 360° Walkthrough 16K, 32K coupons cannot be used.
+
+<br />

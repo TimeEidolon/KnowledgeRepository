@@ -1,0 +1,58 @@
+**Before**: After changing the name of a panorama in the gallery, the new name will not be synchronized to other modules including the rendering lists of projects and corresponding 720 tours.
+
+**Now**: On the contrary, the new name of the panoramas will be updated immediately to all related modules now.
+
+### 1.How to rename a panorama?
+
+Step1: Click "Enter Tool"
+
+Step2: Enter the gallery
+
+Step3: Change the name of the panorama.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/jpeg/1733842791901/DF1556BF9A0A75EB4A7EBE6A392AAE0C.jpg)
+
+### 2. After renaming the panorama, some of the modules will be changed synchronously
+
+<br />
+
+**Module 1**
+
+**Projects renderings**
+
+**(Projects\>\>View project\>\>Renderings)**
+
+a. Click "view project"
+
+b. Click "Rendering", and you will find the name of the panorama has been changed.
+
+**Module 2**
+
+**Generate/Regenerate Light 720 Tour**
+
+**(Projects\>\>View project\>\>720 Tour\>\>Generate Light 720 Tour)**
+
+a.Click "720 Tour" and then generate a light 720 tour.
+
+b.You can find that the name of the panorama has been changed.
+
+**Module 3**
+
+**View light 720 tour**
+
+**(Projects\>\>View project\>\>720 Tour\>\>View light 720 tour)**
+
+**Notes:**
+
+-The light 720-tour you generated before will be invariant even if you have changed the name of the panorama.
+
+<br />
+
+
+​
+
+-If you want to apply the new name of panorama in light 720-tour, the only thing you can do is to regenerate a new light 720 tour.
+
+a. View the newly generated 720 tour
+
+b. The arrow's name, touch point's name in the floor plan navigator as well as the room's name will be changed automatically.

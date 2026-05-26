@@ -1,0 +1,77 @@
+Coohom支持上传3ds Max和SketchUp模型，本文会详细讲解3ds Max 和 SketchUp 模型的上传要求，便于您更顺利地上传模型
+
+面向用户
+====
+
+所有用户
+
+3D模型上传入口
+========
+
+**⭐关于上传3D 模型的详细操作步骤，可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/3d-%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%BC%A0%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E?kjl_source=hc)**
+
+1. 进入**工作台** ，选择**模型** ，点击**上传模型**
+
+![](https://qhstaticssl.kujiale.com/image/png/1778134874093/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 拖放模型文件或点击本地上传。请确保文件要求正确，如以下说明中所述
+
+![](https://qhstaticssl.kujiale.com/image/png/1778134829479/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+SketchUp 模型上传要求
+===============
+
+1. 目前只支持 SketchUp 2024 和更早的版本
+
+2. 仅支持单个.skp文件上传
+
+3. 模型文件和模型对象大小都应小于 **200MB(** **如何检查实际对象大小：从模型文件中导出obj.格式)**
+
+4. 单位应为**毫米或英寸**
+
+5. 模型每边的尺寸不应超过 **30米**
+
+6. 纹理格式支持 .jpg 和 png，图像模式应为 RGB，纹理文件的像素不应超过 **5000**
+
+7. 材质支持 SketchUp 默认材质，不支持 V-Ray 或其他插件材质
+
+8. 前视图应设置为模型的正面视图
+
+3ds Max 模型上传要求
+==============
+
+1. 3ds Max 文件必须保存在2021版或更早版本中，**文件需要存档**
+
+![](https://qhstaticssl.kujiale.com/image/png/1747739635567/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 压缩文件的大小、压缩文件中实现的最大文件大小以及模型对象大小应小于 **200MB**   
+
+(如何检查实际对象大小：从模型文件中导出 obj. 格式)
+
+3. 模型应转换为可编辑网格，并且模型多边形的数量应小于 **2,000,000**
+
+![](https://qhstaticssl.kujiale.com/image/png/1747739659126/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. 系统单位应匹配显示单位，强烈建议将单位设置为mm或英寸，模型每边的尺寸不应超过**30米**
+
+![](https://qhstaticssl.kujiale.com/image/png/1747739695198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. 请为您的模型使用 V-Ray 材质，其他材料可能会导致显示效果不佳
+
+6. 位图路径必须准确，位图中的纹理名称必须与您提供的名称一致
+
+![](https://qhstaticssl.kujiale.com/image/png/1747739733993/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+纹理位图格式
+======
+
+纹理应为 jpg 或 png 格式，TIF、PSD 和 TGA 格式可能会导致模型上传失败（图像文件模式应为 RGB。不建议使用 CMYK 模型，因为它可能会改变纹理颜色并导致模型效果出现严重的色差问题)
+
+注意事项
+====
+
+1. 不支持毛茸茸或毛茸茸的材质
+
+2. 天花板应具有照明灯带效果，请将灯带设置为发光材质，并在模型场景中移除 V-Ray 灯光
+
+3. 有关模型标准的更多详细信息，请参阅**[通用模型标准](https://www.coohom.com/en_US/helpcenter/coohom-amazon-modeling-standards-3ds-max?kjl_source=hc)**

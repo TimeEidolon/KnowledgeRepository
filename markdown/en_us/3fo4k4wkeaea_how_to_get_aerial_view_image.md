@@ -1,0 +1,41 @@
+### Video tutorial:
+
+🎥 \[Video URL\](https://www.youtube.com/watch?v=LDHIX9ighJA )
+
+### How to get to the function?
+
+1.Enter **IMAGES/VIDEOS** Tool
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886559623/CD6120838F543847E13B2719AD5AA5D0.png)
+
+2.Click Aerial View on the top
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886560868/4EAC825335B5CA755433A64953BABD5A.png)
+
+### How to adjust the images?
+
+1. Adjust the aspect ratio, resolution, watermark state, wall modes, background and rendering lights on the left bar.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886562876/E049F62CDC0810A230AB02ECA692120E.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886565881/976ACAC5474D5AB87157813779632E9C.png)
+
+2.In the main area you could preview your perspective. Drag model to rotate or move.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886567215/3F9BDD8D11E8EC658E1A021CACF553FD.png)
+
+3.Adjust the detailed parameters on the right bar. Camera angle can also be saved here.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886569936/AFB575D9229CBA01C843C205B6381C80.png)
+
+### How to start generate image and view your results?
+
+1.Click **GENERATE** to start redering. Click **Gallery** to view your results.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886571245/9E91FE32E6D12EC54B8589BD8B7AFC54.png)
+
+2. Get your rendering results in Gallery.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886572782/433C29EE9DDA82775D118D5372E78FF5.png)
+
+### **Related Artical:**
+
+**[3 Steps to Light Customization](https://www.coohom.com/en_US/helpcenter/article/3-steps-to-light-customization?kjl_source=hc)**

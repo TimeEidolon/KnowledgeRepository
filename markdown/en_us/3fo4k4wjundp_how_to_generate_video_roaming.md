@@ -1,0 +1,118 @@
+With Coohom Roaming video, you will be able to display the interior design of your projects to your clients in a more interactive way.
+
+* **What is a Roaming Video？**
+
+### **What is a Roaming Video？**
+
+Coohom's roaming video feature enables users to use their own projects to create a marketing video quickly and easily. Telling a story with videos is a better way to let the audience follow the ideas, and understand the design concepts and product features.
+
+* **How to Access Roaming Video?**
+
+**How to Access Roaming Video?**
+
+Your project → Enter tool → IMAGES/VIDEOS→ Roaming video
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840888172/97F65696E36303A4A20A45583CC7E470.png)
+
+Click **Edit the camera path** to get started:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840891123/4256C77847FD0CA1952EC620422D8B56.png)
+
+* How to Edit Camera Path?
+
+### How to Edit Camera Path?
+
+Enter the shooting video editing panel and click "**Create Lens**". Currently, the platform provides three lenses:
+
+1. **Straight lens** allows the lens to move in a horizontal straight line
+2. **Curve lens** allows the lens to move along a curved path
+3. **Vertical lens** allows the lens to move vertically up and down
+
+**Straight lens** allows the lens to move in a horizontal straight line
+
+**Curve lens** allows the lens to move along a curved path
+
+**Vertical lens** allows the lens to move vertically up and down
+
+* How to Adjust the Lens?
+
+### How to Adjust the Lens?
+
+   1. Select Straight lens, draw the path on the operation panel, and then move the mouse up and down in the path box to adjust the lens view.  
+   Adjust the lens to the appropriate height through the preview window (mainly through the height of the starting point to control the lens height);  
+   ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745243527623/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)  
+   2. The usage of arc lens is basically consistent with linear lens; The difference is that the path of the arc lens is controlled by three points. The starting point controls the orientation and height of the arc, and the third point controls the bending size of the arc.  
+   ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745243658136/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)  
+   In addition, the arc lens can be turned into a focusing lens. As shown in the figure, first turn on the focus switch, then place the focus on the product to be shot, and then adjust the height of the starting point and the height of the focus to achieve the desired effect.  
+   ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745243767847/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)  
+   3. Vertical lens: Click create a lens to place the lens at the commodity to be shot, aim the lens at the commodity, and control the lens path by adjusting the height of the starting point and ending point of the lens.  
+   ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745243798885/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)  
+
+Select Straight lens, draw the path on the operation panel, and then move the mouse up and down in the path box to adjust the lens view.
+
+Adjust the lens to the appropriate height through the preview window (mainly through the height of the starting point to control the lens height);
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840894339/EAB0421CFE32105AF7DE5E00B7CE7DF6.png)
+
+The usage of arc lens is basically consistent with linear lens; The difference is that the path of the arc lens is controlled by three points. The starting point controls the orientation and height of the arc, and the third point controls the bending size of the arc.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840901223/96766764D061695F3EA24EB1780B38B2.png)
+
+In addition, the arc lens can be turned into a focusing lens. As shown in the figure, first turn on the focus switch, then place the focus on the product to be shot, and then adjust the height of the starting point and the height of the focus to achieve the desired effect.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840905672/E694DC723B332D2F5B5F85652EC158D8.png)
+
+Vertical lens: Click create a lens to place the lens at the commodity to be shot, aim the lens at the commodity, and control the lens path by adjusting the height of the starting point and ending point of the lens.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840912189/5EBCE41FF719765903B51E1D07A82167.png)
+
+* How to Get Preview Effect?
+
+### How to Get Preview Effect?
+
+Click **"Preview all/Preview"** the clip preview on the right to ensure that there is no path with an inappropriate angle such as mold penetration. Please note that the total length of the lens should not exceed 30 seconds.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840915070/164F2F8705326B48925DD946250B3CA7.png)
+
+* How to Generate Videos?
+
+### How to Generate Videos?
+
+Click "**Complete**" on the top right corner to set the resolution and parameters before rendering.
+
+Please note that the video may need to be generated overnight, and will show up in the gallery after the process is done.
+
+* Watch a step-by-step video tutorial
+
+### Watch a step-by-step video tutorial
+
+With Coohom Roaming video, you will be able to display the interior design of your projects to your clients in a more interactive way.  
+🎥 \[Video URL\](https://www.youtube.com/watch?v=UQL1GuTgxDk )
+
+FAQ
+
+### **Is there a limit to camera's height such as 3 meters?**
+
+No, Camera's height is mainly decided by the floor height. If you want the camera height to be above the 3 meters, you need to adjust the floor height first.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840918669/4E3BD8FA48F45CD1EC3CB9C337EFE043.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733840922168/7F00ED12B04013DFC3E42FB0C394ABEF.png)  
+
+* Who has access to Roaming Video？
+
+### Who has access to Roaming Video？
+
+The roaming video feature is available for all type of accounts, but **basic** accounts do not have the tokens to make video. Therefore, Coohom decided to give basic accounts access token upon request via Live Chat which it is a one-time request.
+
+* How long shall I wait for the video rendering process?
+
+### How long shall I wait for the video rendering process?
+
+Theoretically, the video rendering will be running to avoid rush hour, so it may take some hours to generate the rendered video.
+
+* Is there a limitation on the number of Roaming videos for each project?
+
+### Is there a limitation on the number of Roaming videos for each project?
+
+There is no video render limitations, you can render as long as you have tokens.
+
+* Can I add my watermark or music to the video?
+
+### Can I add my watermark or music to the video?
+
+Currently no, you are suggested to use other applications to edit the video.
+
+How can I adjust
