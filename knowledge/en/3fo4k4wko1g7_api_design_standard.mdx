@@ -1,0 +1,59 @@
+---
+title: "api-design-standard"
+description: "API Design Standard"
+---
+
+API Design Standard
+
+To provide simple, extensible and consistent Open APIs, we design them with some design standards.  
+From input to output, we have made some restrictions to achieve consistent user experience.
+
+# Host
+
+In the absence of special instructions, all Open APIs will be hosted with [www.coohom.com](https://www.coohom.com/).  
+And **HTTPS** is enable in any scenario.
+
+# API Prefix
+
+We have made the restriction that all Open APIs of the same version shall have the same API prefix.  
+And in API definition API prefix will be used to maintain consistent meaning.
+
+![](https://qhstatic-us-s3.coohom.com/image/png/1749115660333/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Standard Field
+
+The standard field maintains the fields we use uniformly in the API entry, and we only use the same field in similar scenarios.  
+Four standard fields have been defined in document **Authentication**, which are not explained here.
+
+![](https://qhstatic-us-s3.coohom.com/image/png/1749115310978/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Standard Response Data Structure
+
+## Outer Unified Data Structure
+
+All APIs respond in the form of JSON, and the outer data structure is unified as follows
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1749115691586/53D1F60400EA97E9BE984BE9FB4BD3C8.png)
+
+## List Unified Data Structure
+
+In most scenarios where a list of resources is requested, we use this data structure to encapsulate it.  
+It is next to the outer data structure, and is a specification for the value of d:
+
+![](https://qhstatic-us-s3.coohom.com/image/png/1749115747373/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# HTTP Response Status Code
+
+Typically, HTTP response status code is 200.  
+Specific business success or exceptions are represented by c field in the outer unified data structure.  
+0 means success, other values mean exceptions.  
+But it does not exclude the use of HTTP status codes in special cases, such as server-level exceptions, some framework errors and undefined exceptions.  
+When dealing with the response result, you should judge the validity of the result by the priority order of HTTP status > c value.  
+All HTTP status non-200 requests are abnormal, so are c value != “0” results.
+
+# Data Structure Parsing Convention
+
+As we will update APIs iteratively to support more functions, for API response data, new fields will be iterated continuously.  
+So as to avoid online server parsing error when we return new data fields, please do the corresponding compatibility.
+
+Did this answer your question?

@@ -1,0 +1,40 @@
+---
+title: "render-how-to-fix-abnormal-shadows-in-rendering"
+description: "Problem"
+---
+
+# Problem
+
+Striped Shadows in Rendering.
+
+![](https://qhstaticssl.kujiale.com/image/png/1753930912959/89A9CE433F3F2D9545B1211251708D6A.png?x-oss-process=image/format,webp)
+
+# Reason
+
+(1) Area light source is a type of light source with a range, but due to the shape of the area light source, when it is close to the model, shadow decomposition occurs, and the illuminated area becomes brighter. The model on the back of the light source is gray due to the lack of light. As shown below
+
+![https://qhstaticssl.kujiale.com/image/png/1703056339110/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_469,h_375/format,webp](https://qhstaticssl.kujiale.com/image/png/1703056339110/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_469,h_375/format,webp)
+
+![](https://qhstaticssl.kujiale.com/image/png/1703056232255/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_589,h_376/format,webp)
+
+When area light source Double sided light is turned on,
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135477877/ED68247170C8444E5AE8858E56BEF397.png), the area light source will appear to emit light from both sides, and the shadow boundary of the light source will become clearer as it gets closer to the model. As shown below
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135477933/8714613D007BAAD633B966E82E374CF4.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1703056717987/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_578,h_358/format,webp)
+
+When the light source is close to the model and double-sided light is on.
+
+# Solution
+
+1. It is necessary to move the area light source with double-sided light as far away from the model as possible, and control the distance. If there are virtual light sources in the scene without corresponding models, the light source will appear abrupt and unreasonable. The function of fill light is to brighten a local area rather than the entire scene.
+2. Do not use two light sources in opposite directions to illuminate the top and bottom of the picture, as this will also cause problems.
+3. You can use fill light from the lighting version.
+
+![](https://qhstaticssl.kujiale.com/image/png/1703057261332/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_502,h_425/format,webp)
+
+![](https://qhstaticssl.kujiale.com/image/png/1703057248447/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_644,h_425/format,webp)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135477953/1A9E5FA2B1A847A7B5266DF529D0CB60.png)

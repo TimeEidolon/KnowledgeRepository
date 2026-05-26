@@ -1,0 +1,30 @@
+---
+title: "草图su模型-模型上传材质丢失预览图白模怎么解决"
+description: "问题"
+---
+
+# 问题
+
+SU模型没有错误提示，但是预览图出现材质丢失
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409251361/DAB7C16C199829437CEC0D04DC67A0E2.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409251362/AE6FCD8CD93BAFFE9875176AEEF9C1EE.png)
+
+# 原因
+
+草图中模型反面，SU在导出模型的形式，OBJ会全部统一成正面，正面没有给到材质，就显示为白色。
+
+# 解决办法
+
+1.在草图大师中查看这个面的材质参数（目前只支持SU自带的材质）
+
+2.点击单色显示，白色是正面，蓝灰色是反面（草图默认颜色，可以更改）
+
+![](https://qhstaticssl.kujiale.com/image/png/1762409315866/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3.双击进入组全选面，右击反转平面
+
+4.反转平面后，全部显示白色，表示模型是正面的，然后点击材质贴图显示，重新给模型附加材质保存上传就可以了
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555052073047/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)

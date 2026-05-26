@@ -1,0 +1,128 @@
+---
+title: "render-ultra-fast-daytime-nighttime-3-0-3-1-update-description"
+description: "Ultra-Fast class added 4 new lighting templates [Ultra-Fast Daytime/Nighttime 3.0/ 3.1]. In order to allow users to better compare the effects, this article wil"
+---
+
+Ultra-Fast class added 4 new lighting templates [Ultra-Fast Daytime/Nighttime 3.0/ 3.1]. In order to allow users to better compare the effects, this article will explain in detail the difference comparison between the Ultra-Fast Daytime/Nighttime 1.0/2.0/2.1/3.0/3.1.
+
+# **For Users**
+
+**All users**
+
+**Sphere of influence：**Manual lights that have been created are not affected by version updates. Automatic lights created after the update in Light version management and manual lights created after the update are rendered using the new light template.
+
+# **Action Steps**
+
+You can experience the new version of light by upgrading the light template to the new version under the light version button in the rendering interface.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743065024720/3A2B0066340BE8CCF6DF55B9872FA9A8.png)
+
+# **Lights**
+
+**1）In versions 2.1, 3.0, 3.1, remove logic optimization**
+
+Some models that bind strange light sources will be removed in order to avoid abnormal light sources in the scene.
+
+| **The strange light source that comes with the model** |
+| --- |
+|  |
+
+**2）Adjust the arrangement of space fill light**
+
+The fill light area becomes larger and the number of pieces decreases. 
+
+| **1.0** | **2.0** | **2.1、3.0、3.1** |
+| --- | --- | --- |
+| In 1.0, the arrangement of the lights is uneven. | There are some optimizations in 2.0, but there are too many. | The fill light area becomes larger and the number of pieces decreases. |
+|  |  |  |
+
+**3）Optimization of Environment Brightness and Window Light Source**
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| **Ultra-Fast Daytime**  **1.0** | In 1.0, the brightness calculation rules are not intelligent, resulting in frequent exposure of Windows. |  |  |
+| **Ultra-Fast Daytime**  **2.0** | Due to the high brightness setting of the exterior scene in 2.0, the front-end preview often has a white situation, and the rendering is also biased. |  |  |
+| **Ultra-Fast Daytime**  **2.1**  **3.0**  **3.1** | 1. Add multiple new exterior textures for day and night scenes.  2. Alleviate the overexposure issue with large windows.  3. The newly added light retains at least one principle to avoid the problem that some Spaces in the scene are too dark.  4. Upgrade the sunlight projection to each room systematically to avoid some spaces not being covered by the sun angle. |  |  |
+
+**4）****Automatic lighting rules**
+
+|  |  |  |
+| --- | --- | --- |
+| **Ultra-Fast Daytime 1.0** | Occasionally the light source appears on the cabinet or wall, lighting calculation is not accurate. |  |
+| **Ultra-Fast Daytime  2.0** | 1. The automatic light source generation method in version 2.0 is more "trilogy" in nature. The extruded light is made as bright as possible, and indoor lights will be added when needed. The long strip-shaped supplementary lighting in the previous version will be deleted and replaced with square-shaped supplementary lighting that is more evenly distributed. The lighting effect is uniform and ensures that all spaces can be illuminated normally.  2. The adjustment of the self-luminous effect: The brightness of self-luminous effect will be affected by exposure control. It will be integrated into the scene as much as possible and there will be no over-brightening problem. |  |
+| **Ultra-Fast Daytime  2.1** | 1. Light color correction has been made, fixing the issue of inaccurate light color temperature in version 2.0.  2. The adjustment of space supplementary lighting levels has been made, with the supplementary lighting area increasing and the number decreasing.  3. The problem of overexposure in large windows has been solved.  4. A new principle of retaining at least one supplementary light has been added to avoid the issue of some spaces being too dark in the scene.  5. The rule for sunlight projection into each room has been upgraded to avoid the problem of some spaces not being covered by the sun angle when automatic sunlight is enabled.  6. The exterior scene effect has been adjusted. In version 2.0, due to the high exterior scene brightness setting, the preview of the exterior scene on the front end often appeared completely white, and the rendering was also overexposed.  7. The height limit of decorative lights has been set. In version 2.1, the height of generated decorative lights is restricted to prevent them from exceeding the floor height.  8. The rule for custom layer board lights has been optimized. The restriction logic in version 2.0 has been removed to solve the problem of some custom layer board lights not being generated. A new standard for judging self-luminous materials has been used, making the judgment more accurate. |  |
+| **Ultra-Fast Daytime  3.0/3.1** | Automatic lighting rules and post-processing parameter upgrades to prevent images from looking gray. |  |
+
+**5）Effect Comparison**
+
+| **Ultra-Fast Daytime 1.0** | **Ultra-Fast Daytime 2.0** |
+| --- | --- |
+|  |  |
+| **Ultra-Fast Daytime 2.1** | **Ultra-Fast Daytime 3.0** |
+|  |  |
+| **Ultra-Fast Daytime 3.1** |  |
+|  |  |
+
+**6）Differences in material effects**
+
+| **Ultra-Fast Daytime 1.0/2.0** | **Ultra-Fast Daytime 2.1** |
+| --- | --- |
+| Some mixed materials, semi-transparent materials, and semi-transparent self-luminous materials are not supported. | 1. Supports partial mixed materials.  2. Supports partial semi-transparent materials.  3. Supports partial semi-transparent self-illuminating materials.  4. Due to technical limitations in version 2.1, lighting models in the model library that include starburst effects (such as downlights and spotlights) will not support this effect. It is recommended to replace these models. |
+|  |  |
+
+# **Rendering Parameter Upgrade**
+
+| **1.0** | **2.0** | **2.1** | **3.0** | **3.1** |
+| --- | --- | --- | --- | --- |
+| Only the **Dazzling** **Parameter** is enabled. | **Add** **[legacy Color Correction]**,Fix the gray problem of some old materials in the realistic series templates. Real time materials will not be modified. | 1. **[legacy Color Correction] Removed** to avoid confusion.  2. **Add [Color Enhancement] and [Light's Ambient Blocking（AO）]**. | 1. Improves overall image quality, enhances material details, and significantly reduces blurriness.  2. **Global GI Upgrade:**Enhances scene clarity and reduces excessive darkness in shadowed areas.  3. **Further Rendering Speed Improvements** to achieve truly ultra-fast rendering.  4. **More Adjustable Parameters Unlocked:** **Environment – Ambient light reflection.** | 1. **Global GI Enhancements:**Increased bounce count and improved shadow details. The same light intensity can now illuminate a larger area.  2. **Post-Processing Optimization:**Default settings now feature enhanced exposure control for better adaptability. |
+
+* **Model problem optimization**
+
+| **Ultra-Fast Daytime 2.1** | **Ultra-Fast Daytime 3.0/3.1** |
+| --- | --- |
+| / | Solve the problem of some models being rendered black due to the model's normal map inversion issue. |
+|  |  |
+
+# **Major updates in version 3.1**
+
+**1）Building on the visual advantages of version 3.0, version 3.1 introduces real-time rendering, significantly enhancing the lighting experience.**
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068676794/EF63861EC3146D318E72192A32D119EA.png)
+
+**2）Entry Update**
+
+Move the manual template to the "real-time Rendering" TAB, Render popup entry location is as follows:
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068653993/EAF9DA6B459E33EF773FA7DC6ABD5564.png)
+
+**3) feature upgrades**
+
+Realistic templates for the first time support LUT filters, depth of field, material replacement and more.
+
+**a. LUT Filters**
+
+Manually open filters → Free to switch between different filters in the public library.
+
+* **Note: You can also upload SRGB mode filters by yourself, currently cube format is supported.**
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068633385/4E7EC4EA67380C60C9EFC77CAF2D8247.gif)
+
+**b. Depth of field**
+
+Manually open the depth of field, by editing the center point and blur can achieve a variety of depth of field effects.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068610920/2ED2BA8979DD11808D59DA3F391DA68A.gif)
+
+**c. Material replacement**
+
+Click material to replace material in the left column, you can also edit the original material properties in the right column.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068596204/796EED5EBB2326D01209A4AF746A4766.gif)
+
+**4）Global lighting upgrade: From version 3.0 onwards, the number of global lighting bounces has been increased, and dark details have been improved**.
+
+Due to the GI upgrade, the same light brightness can illuminate a larger area, as shown in the image below. Since 3.0, the automatic light brightness has been reduced accordingly, and the manual light is also recommended to be moderately reduced within a reasonable range to avoid exposure problems.
+
+| **Before the GI upgrade** | **After the GI upgrade** |
+| --- | --- |
+|  |  |

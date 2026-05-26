@@ -1,0 +1,46 @@
+---
+title: "master-custom-snap-lines"
+description: "Definition**"
+---
+
+**Definition**
+
+Straight snap lines are used to automatically adapt other cabinets to the corner size of corner cabinets; right-angle snap lines are used to automatically adapt mitered cabinets to pillar sizes.
+
+**I.Straight Snap Lines**
+
+Position: In the element library in the left sidebar, click on the straight snap lines, and they will automatically appear in the snap line list in the structure navigation.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853237138/87BD25170F7935EC9FFED28B933D1564.png)
+
+**II.Properties of Straight Snap Lines**
+
+Click on the straight snap line in the snap line list in the structure navigation, and the properties of the snap line will appear in the right sidebar. The properties of the snap line include the starting point, end point, direction, and hide condition.
+
+**Snap lines** are formed by two points on the XY plane (horizontal plane) to create a line. The default height is the height of the model. The face (vertical face) formed by the line perpendicular to the XY plane (horizontal plane) serves as the snap face to adapt to other cabinets. The size of the snap line is the adapted size. The starting point is set to the left or right edge of the model, and the end point is the endpoint of the size to be adapted.
+
+**Snap direction** refers to the direction in which other cabinets adhere to the snap face. The snap direction is divided by the line from the starting point to the end point. Choosing left snap means adhering to the left side of the dividing line, choosing right snap means adhering to the right side of the dividing line, and bidirectional snap means both sides of the snap face can adhere.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853239740/0C832F7E6A0F703A47995C8596EBEF67.png)
+
+Since the snap function for adapting to the size of the model frame is already built into the edges on both sides, adding snap lines to the edges has no effect and cannot be adapted according to the set snap line size.
+
+**III.Right-Angle Snap Lines**
+
+Position: In the element library in the left sidebar, click on the right-angle snap lines, and they will automatically appear in the snap line list in the structure navigation.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853241485/14754DDC04BD6154DB26A06998B12AF1.png)
+
+**IV.Properties of Right-Angle Snap Lines**
+
+Click on the right-angle snap line in the snap line list in the structure navigation, and the properties of the snap line will appear in the right sidebar. The properties of the snap line include the right-angle point, snap line direction, snap line length, and hide condition.
+
+The right-angle point is the coordinate position of the intersection of the miter in the XY plane.
+
+Snap line direction can be X-direction or Y-direction, representing the positive and negative directions of the two snap lines of the right-angle snap line on the XY axis. Adjust the snap line direction to coincide with the two snap lines and the mitered sides.
+
+Snap line length represents the size of the pillar that needs to be adapted by the two snap lines of the right-angle snap line. Generally, it is selected according to the corresponding miter size Parameter on the XY axis.
+
+Hide condition controls whether the right-angle snap line is hidden. Conditional statements can be written to control when it should be hidden.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853244421/CF0EC89DE77697C257C1E48A30328C07.png)

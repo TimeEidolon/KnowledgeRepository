@@ -1,0 +1,80 @@
+---
+title: "advanced-h-frame-modeling"
+description: "I.Creation Position**"
+---
+
+**I.Creation Position**
+
+Custom Furniture —Create Asset—Parametric Model Library— New—
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898955995/A4662AC9B1187CD657DAEB2B7CDD1F00.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898957904/6E9A7B8B5FA6230C2A29792EA395271E.png)
+
+**II. Parameter Configuration**
+
+2.1. Width (W) - Represents the dimension along the X-axis, with value type set to a range (e.g., range 600-1200, current value 800).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898958770/EE3273999D0531126FABD449F1A411D6.png)
+
+2.2. Depth (D) - Represents the dimension along the Y-axis, with value type set to a range (e.g., range 350-800, current value 500).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898959425/E1AB03851533F6D359F1E468F0DBAF83.png)
+
+2.3. Height (H) - Represents the dimension along the Z-axis, with value type set to a range (e.g., range 800-1200, current value 900).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898960054/3EA21F5A1FBFB734CDC7A408BE792675.png)
+
+2.4. Add an advanced parameter named "Inner Width" with reference name W1. Value type is set to a range (e.g., range, minimum value 250, maximum value: #W-100, current value 350). Click on Create.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898960932/5EC5CA9FA9E92AF63324BE55F7D4E271.png)
+
+2.5. Select a default material.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898962518/9F738DF6B34436717EF116C47861D01A.png)
+
+**III. Calling Submodels for Modeling**
+
+3.1. Insert the previously created vertical arc panel from the component library as the middle vertical panel. Set the dimensions and physical properties for the vertical panel:
+
+Width: 18 Depth: #D Height: #H
+
+Position X: #W1 Position Y: 0 Position Z: 0
+
+In the component properties, set the arc radius to 30 (this parameter was added during the modeling of the arc vertical panel).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898963727/3035A701EB9F38F80459C7149813F2C0.png)
+
+3.2. Call the basic flat panel from the semi-finished product library and set its properties:
+
+Width: #W1 Depth: #D Height: 18
+
+Position X: 0 Position Y: 0 Position Z: #H/2-18/2 (centered vertically).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898964929/3BB412F6A5E6239E7E031A3D83EB32A9.png)
+
+3.3. Click on the basic panel and duplicate it as the right layer panel.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898967412/69EDD4B3F959BF5C63704FCE33A82568.png)
+
+3.4. Set the properties:
+
+Width: #W-#W1-18 Depth: #D Height: 18
+
+Position X: #W1+18 Position Y: 0 Position Z: #H-50-18
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898972326/C21A88A2A671A7281E499239519F5D92.png)
+
+**IV. Model Testing**
+
+Enter values within the parameter range (especially the maximum and minimum values) to see if the model changes accordingly. If they match, the model is correct.
+
+(This case requires testing parameters W, D, and H)
+
+**V. Saving to Database**
+
+Click on the file at the top right corner, select Save, choose the subdirectory for saving, give it a name, and click Save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898975269/DA67024ED1162FFC5BABF01C6655437E.png)
+
+In the enterprise backend page, locate the model, select it, and choose to save it to the database.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898976336/B11BCF952DCCE160101B23F805418D4E.png)

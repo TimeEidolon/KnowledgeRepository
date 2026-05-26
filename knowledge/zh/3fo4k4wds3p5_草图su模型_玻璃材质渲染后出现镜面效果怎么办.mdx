@@ -1,0 +1,28 @@
+---
+title: "草图su模型-玻璃材质渲染后出现镜面效果怎么办"
+description: "问题"
+---
+
+# 问题
+
+玻璃材质渲染后出现镜面效果
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308922666/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
+
+# 原因
+
+模型面法线反了，需要反转一下，有的玻璃是单面，反面显示的就是镜面效果，需要加一个面，会显示玻璃效果 
+
+# 解决方法
+
+ 1. 点击单色显示，白色是正面，蓝灰色是反面（草图默认颜色，可以更改）
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308934713/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
+
+2. 双击进入组全选面，右击反转平面
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308950965/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
+
+3 反转平面后，全部显示白色，表示模型是正面的，然后点击材质贴图显示，重新给模型附材质保存上传，就OK了。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308969651/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)

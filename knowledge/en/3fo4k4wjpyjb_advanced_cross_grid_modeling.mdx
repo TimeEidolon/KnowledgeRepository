@@ -1,0 +1,102 @@
+---
+title: "advanced-cross-grid-modeling"
+description: "Definition:**"
+---
+
+**Definition:**
+
+The cross grid is a type of component commonly used in other cabinet models to hold items such as wine bottles.
+
+Let's create a cross grid using 18mm panels, with equal spacing in all four directions.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844643997/3B948C308FF8D88203B564A8F8E5CB12.png)
+
+**I.Creation Position**
+
+Custom Furniture —Create Asset—Parametric Model Library— New—
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844646428/81291E3AF558B1ADC2126359F13521E8.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844649157/DCB36F85572C9847EE48BDC00E8188D3.png)
+
+**II.Parameter Configuration**
+
+2.1 Custom Variables
+
+2.1.1 Width (W): Represents the dimension of the cross grid model in the X-axis direction. The value type can be set as an interval (e.g., interval 136 - 2400, current value 564).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844652222/260791941319928C37A22FCF8ECEEC70.png)
+
+2.1.2 Depth (D): Represents the dimension of the cross grid model in the Y-axis direction. The value type can be set as an interval (e.g., interval 200 - 1200, current value 475).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844654943/0A250030D940829AB00C3FCA98C11089.png)
+
+2.1.3 Height (H): Represents the dimension of the cross grid model in the Z-axis direction. The value type can be set as an interval (e.g., interval 136 - 1200, current value 564).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844658269/E605ACAE04DB9771AA5ACD71FAC57DF8.png)
+
+2.1.4 Material does not need to be changed and represents the use of default material.
+
+2.1.5 Add advanced parameter - Inset Value
+
+Name: Inset Value
+
+Reference Name: D1
+
+Value Type: Interval
+
+Minimum Value: 0
+
+Maximum Value: 200
+
+Current Value: 0
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844660556/E1119E0231A3825CCC4EBD8371F68DB8.png)
+
+2.1.6 Set intermediate variables a and b
+
+Intermediate variables are not displayed in the tool, primarily for ease of modeling and later modification of the model. Here, we focus on setting intermediate variable parameters for horizontal and vertical spacing within the grids.
+
+Horizontal spacing (a): (#W - 18 \* 2) / 3.0
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844664264/2E519A02E1466F4FE8E0D1063B9D411E.png)
+
+Vertical spacing (b): (#H - 18 \* 2) / 3.0
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844667878/C029C06CB5F86E6EA01BCE73B9F73223.png)
+
+2.2 Model Generation Using Submodels
+
+2.2.1 Call the pre-made 18mm vertical panel from the semi-finished product library as the vertical panel of the cross grid. Left-click on the panel and set its physical properties:
+
+Width: 18 Depth: #D - #D1 Height: #H Position X: #a
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844670941/3988388EFF8E84CFCD460F2E98F2FC45.png)
+
+2.2.2 Left-click the vertical panel, right-click to copy, and change the Position X to 2 \* #a + 18.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844674561/A186A6EE7CD9DE4B0F32EE845F545D3D.png)
+
+2.2.3 Call the 18mm flat panel from the semi-finished product library. Left-click on the panel and set its physical properties:
+
+Width: #W Depth: #D - #D1 Height: 18 Position Z: #b
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844679401/C9FB83396C11CD69576AC0F181B37B3C.png)
+
+2.2.4 Left-click the flat panel, right-click to copy, and change the Position Z to 2 \* #b + 18.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844682234/7DB943952AB43FF6EE9329A34D3D23BC.png)
+
+**III.Model Testing**
+
+Input values within the parameter range (especially the maximum and minimum values) and check if the model changes consistently with the values. If they match, then the model is correct.
+
+(For this case, test parameters W, D, and H.)
+
+**IV.Save to the Library**
+
+Click on the file in the top-right corner, select Save, choose the subdirectory, name the model, and click Save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844685973/52D619775A3922079557496CD3644DC9.png)
+
+On the product management page, find the corresponding category for the model. Select the model and choose to save it to the library.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733844689195/32CF0EC96D0D86BF737404F6F637E219.png)

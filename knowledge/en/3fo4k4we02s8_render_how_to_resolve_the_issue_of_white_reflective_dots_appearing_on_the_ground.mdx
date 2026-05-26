@@ -1,0 +1,22 @@
+---
+title: "render-how-to-resolve-the-issue-of-white-reflective-dots-appearing-on-the-ground"
+description: "Problem"
+---
+
+# Problem
+
+Why does the floor still reflect the white dot after check Affect specular.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1602597845002/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_459/format,webp)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135363632/3F4F170CE2B1B18F0A9AD094E40E9969.png)
+
+# Reason
+
+In the above case, the white spot reflected on the floor is not caused by the highlight of the light source but by the luminous material in the downlight model. The luminous material is not a light source (such as an area light or point light) but a material on the model, so it will inevitably be reflected by the floor with reflection and cannot be eliminated.
+
+# Solution
+
+To prevent the floor from reflecting this white luminous material downlight, replace the luminous material of the downlight with a non-luminous material.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135363667/B63CB91BC21338107705B674F83CC66C.png)

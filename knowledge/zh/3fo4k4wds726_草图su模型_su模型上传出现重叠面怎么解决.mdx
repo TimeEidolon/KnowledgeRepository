@@ -1,0 +1,32 @@
+---
+title: "草图su模型-su模型上传出现重叠面怎么解决"
+description: "问题"
+---
+
+# 问题
+
+现象（SU模型上传后，出现重叠面，原SU模型没有重叠面）
+
+SU模型上传coohom后，出现重叠面，如下图所示：
+
+![](https://qhstaticssl.kujiale.com/image/png/1701251575263/2CE61A502A2FE46D4DC1AD3793A92B38.png?x-oss-process=image/resize,m_mfit,w_603,h_462/format,webp)
+
+检查原SU模型长这样：
+
+![](https://qhstaticssl.kujiale.com/image/png/1701251735850/40F6ECDDC3AED20A009661BBA34E7EE7.png?x-oss-process=image/resize,m_mfit,w_608,h_540/format,webp)
+
+产生破面的原因是酷家乐平台会对上传的SU模型进行曲面优化，如果一个复杂的，如回字形，S型边缘的单面优化后可能会出现破面。
+
+比如上图这个模型，应该是边框这个回字形的单面优化后出了问题。
+
+# 解决办法
+
+在原SU模型里加面
+
+回到SU模型，我们在这个回字形面的各个转角处，用铅笔工具划拉，做加面处理。把一个整面拆分能若干个简单的面。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409144058/F9802B5DEEA2D50054F9F16C28DE5656.png)
+
+再次重新上传，问题解决
+
+![](https://qhstaticssl.kujiale.com/image/png/1701252375142/9DF449ECED3EDC52D74DE71ABD29F795.png?x-oss-process=image/resize,m_mfit,w_555,h_399/format,webp)

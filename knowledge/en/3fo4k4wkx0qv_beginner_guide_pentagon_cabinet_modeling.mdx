@@ -1,0 +1,238 @@
+---
+title: "beginner-guide-pentagon-cabinet-modeling"
+description: "Contents**"
+---
+
+**Contents**
+
+**I. Sample Model**
+
+**II. Operation Steps**
+
+**III. Adding pre-made components to assemble the pentagon cabinet**
+
+**IV. Function settings**
+
+**V. Model testing, saving, and initializing.**
+
+1. **Sample Model**
+
+**Sample Model**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900831093/DDF25619805E1452747422A8D8A08A93.png)
+
+**II. Operation Steps**
+
+1.Select the modeling category.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900832948/9D5123C404FAD559C761FEC7FD839016.png)
+
+2.Set parameters for the pentagon cabinet (parameters can be defined within the specified range according to the process).
+
+2.1 Width, depth, and height parameter settings.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900834945/BC04EB6257DE5CA7D41487E0B0986F42.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900836481/B8C3206B3D8B709810081B9870B505DE.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900837564/C7F00F507AFD45708BE1805416203607.png)
+
+3.Advanced parameter settings representing size ranges of corner edges.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900838214/076404365BA0E3C5D2208B2DB6B90AB6.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900839058/BA1EF9CDB73042AF0CD712E96C956FD1.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900840720/B6404027FD8ABB5BB1111A37E50F433F.png)
+
+4.Set intermediate variables "a" to represent the diagonal length and "b" to represent the diagonal angle.
+
+**a：((#W-18-#W1)^2+(#D-18-#D1)^2)^0.5**
+
+**b：#toDegrees(#atan((#D-#D1-18)/(#W-#W1-18)))**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900841420/AB31B11CB17BD8614E926D4B00A657BB.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900842428/58107BF514926DDE5AAFD2AE80AF153A.png)
+
+**III. Adding pre-made components to assemble the pentagon cabinet**
+
+1.Add vertical patterned vertical panel, rename it as "Left Back Panel".
+
+Width: 18
+
+Depth: #D-18
+
+Height: #H
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900843954/468866EFD4AEDA4AA4BD2E3E322A263D.png)
+
+2.Right-click on the Left Back Panel, duplicate the component, rename it as "Right Side Panel," and set the component's position and dimensions.
+
+Width: 18
+
+Depth: #D1
+
+Height: #H
+
+Position X: #W-18
+
+Position Y: 0
+
+Position Z: 0
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900846946/F9A6E154DEFD997A2E55B08F3EA3BA91.png)
+
+3.Add vertical patterned back panel, rename it as "Front Side Panel," and set the component's position and dimensions.
+
+Width: #W1
+
+Depth: 18
+
+Height: #H
+
+Position X: 0
+
+Position Y: -#D+18
+
+Position Z: 0
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900848364/81214E200B180B816C3EF23EA846E379.png)
+
+4.Add vertical patterned back panel, set it as a 9mm thin back panel with 5mm grooves and 20mm distance from the wall. Rename it as "Back Panel" and set the component's position and dimensions. Set toe kick height as a fixed value of 80mm.
+
+Width: #W-36+10
+
+Depth: 9
+
+Height: #H-80-36+10
+
+Position X: 18-5
+
+Position Y: -20
+
+Position Z: 80+18-5
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900849980/316BB1EE219C77C2445A3403A546BF2F.png)
+
+5.Add pentagon-shaped component, rename it as "Top Panel," and set the component's position and dimensions.
+
+Width: #W-36
+
+Depth: #D-18
+
+Height: 18
+
+Position X: 18
+
+Position Y: 0
+
+Position Z: #H-18
+
+Chamfer width: #W1-18
+
+Chamfer depth: #D1
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900853272/7364777DADD7F5CEA4997E095131D4D1.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900855332/6EA8AFEC219DD648A0D68334B518FC48.png)
+
+6.Add pentagon-shaped component, rename it as "Bottom Panel," and set the component's position and dimensions.
+
+Width: #W-36
+
+Depth: #D-18
+
+Height: 18
+
+Position X: 18
+
+Position Y: 0
+
+Position Z: 80
+
+Chamfer width: #W1-18
+
+Chamfer depth: #D1
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900856666/D2D2399DEBAD0128308D299EC4E149EC.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900859610/2AF23BCA0A38450C284D68BEDA143A8C.png)
+
+7.Add horizontal patterned back panel, rename it as "Rear Toe Kick Panel," and set the component's position and dimensions.
+
+Width: #W-36
+
+Depth: 18
+
+Height: 80
+
+Position X: 18
+
+Position Y: -20
+
+Position Z: 0
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900863109/FD405FD1BA604753690F53AB70999CE6.png)
+
+8.Add horizontal patterned back panel, rename it as "Front Toe Kick Panel," and set the component's position and dimensions.
+
+Width: #a (intermediate variable)
+
+Depth: 18
+
+Height: 80
+
+Position X: #W1
+
+Position Y: -#D+18
+
+Position Z: 80
+
+Rotation X: 180
+
+Rotation Y: 0
+
+Rotation Z: #b (intermediate variable)
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900864495/4E6C62E88BF65F2C6A20AFEAF8543385.png)
+
+**IV. Function settings**
+
+Modify upper contour.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900865782/6ABE464DF148D887A8766FFEC560CFAA.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900868272/563BBB90C9B54B9461B7C5BEA5DE97BD.png)
+
+Modify lower contour.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900870894/95A7DCF1F4468F62798EEBE3605AF4CA.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900872723/920F384A8774F98E9E6286AD8F9D7AB2.png)
+
+Add snap line 1.
+
+Start point: (0, -#D)
+
+End point: (#W1, -#D)
+
+Direction: Bidirectional snap (or right snap).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900874694/7D3B3E3CE8BB36D08488520DC1286D51.png)
+
+Add snap line 2.
+
+Start point: (#W, 0)
+
+End point: (#W, -#D1)
+
+Direction: Bidirectional snap (or left snap).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900876579/1C0DC9F8AB78849C37D4C32A46100FAB.png)
+
+Add door opening.
+
+Width: #a
+
+Height: #H-80-36
+
+Position X: #W1
+
+Position Y: -#D+18
+
+Position Z: 80+18
+
+Rotation X: 0
+
+Rotation Y: 0
+
+Rotation Z: #b
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900878853/FF81A6575F5C13002CAB4D0917114AC9.png)
+
+**V. Model testing, saving, and initializing.**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733900881293/4A3BCB5D200E3B9DF0B77EBA852BC947.png)

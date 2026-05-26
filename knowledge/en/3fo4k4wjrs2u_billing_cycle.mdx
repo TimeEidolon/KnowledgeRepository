@@ -1,0 +1,16 @@
+---
+title: "billing-cycle"
+description: "A monthly/yearly subscriptions' billing date is determined by default to be the date the subscription was created."
+---
+
+A monthly/yearly subscriptions' billing date is determined by default to be the date the subscription was created.  
+​  
+For example, a customer with a monthly subscription set to cycle on the 3rd of the month will always be billed on the 3rd.  
+​  
+If a customer makes their first payment on January 3rd, by default the next payment due date would be February 3rd. If payment is not paid on February 3rd, the system will keep try to deduct the money from customer's account till it is successful which this process will be finalised within 7 days. The new benefits will only be credited once a payment successful has been made. The next subscription date would be follow the new payment successful date.
+
+If a month doesn't have such an anchor day, the subscription will be billed on the last day of the month. **For example, a subscription starting on January 31st bills on February 28th (or February 29th in a leap year), then March 31st, April 30th, and so on.  
+​**  
+The same theory applies for yearly subscription with a 7-day grace period.  
+​  
+​

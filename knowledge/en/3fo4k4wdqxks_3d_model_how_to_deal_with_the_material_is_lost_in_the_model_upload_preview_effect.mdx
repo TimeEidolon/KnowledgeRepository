@@ -1,0 +1,143 @@
+---
+title: "3d-model-how-to-deal-with-the-material-is-lost-in-the-model-upload-preview-effect"
+description: "Problem"
+---
+
+# Problem
+
+Material loss in model upload preview
+
+When we waited for the model upload to finish, we saw the model preview's material effect was incorrect.
+
+We wanted the upload preview effect to be like this
+
+![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551427825157/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp)
+
+The reality turned out like this
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385818/70B1CB39DA4B7B8F5C12D30B5D2EA125.png)
+
+Or like this (colorful blocks)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385950/1D99E0AB81BE2543BFBDEB36F9D81BFF.png)
+
+# Reason
+
+The following reasons caused it
+
+1. Uploaded the max file without the texture files  
+2. Texture missing (including path errors and texture name changes)  
+3. Renderer settings (rare, where the renderer has material override set)  
+4. Diffuse level  
+5. Model normals  
+6. Multi-sub materials present in the 3Dmax model source file (blended materials)
+
+# Solutions for Different Reasons
+
+## Uploaded the max file without the texture files
+
+If the model has no textures (materials do not use textures), you can upload the max file alone. If there are textures, then a packaged upload is required (packaging will bundle the textures used in the model).
+
+Steps:
+
+a) First, check the model effect in max to see if it's what we want. If textures are missing, or the path is wrong, or using multi-sub materials, it will appear black in max. Therefore, you cannot package upload yet; check if reasons 2, 5, or 6 are causing this.
+
+b) If the displayed materials are normal, as shown below, you can package and upload the textures together.
+
+c) Archive operation as follows:
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png)
+
+**Archive:** The package function organizes texture files and others into one compressed file, allowing you to open it on another computer with max without losing textures.
+
+d) Upload displays normally after packaging.
+
+## Texture Missing
+
+Check method: Reset the material editor window, then open resource tracking with shift+t.
+
+Resetting the material editor prevents unnecessary material factors from affecting the display of resource tracking
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385907/DB17F7952560997D244E40D758416A30.png)
+
+We can check the status at the back; if files are missing, it will be marked
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385870/D1B89414DB0AC97996373AD24B764981.png)
+
+If missing, reassign textures (suitable for missing textures or name changes)
+
+Steps to reassign textures:
+
+Open the material editor→(material sampling) eyedropper→sample the model part needing new texture setup→click diffuse texture→bitmap→locate the required texture→confirm.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385898/A19425DD102527E64848D141067F1EEB.png)
+
+If only the texture path changed, you can adjust settings in resource tracking
+
+Steps to modify texture paths:
+
+Open resource tracking with Shift+t→path→highlight editable resources→path→set path (best to place textures in one folder)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403413/B81CA7A615A9236F30019CA391EE190F.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png)
+
+Once paths are set, texture status will show **found**
+
+Then proceed with packaging, and upload again
+
+## Renderer Settings
+
+If there are no issues with the model and textures, check the render settings
+
+Go to render settings→V-RAY→Global switches→Override mtl, if checked, uncheck it
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403547/666E711C1F8A319226A50A91844B0FD6.png)
+
+## Diffuse Level
+
+In this situation, the model preview in max is normal.
+
+For diffuse settings, check if the material ball shows the material; double-click the ball to preview
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403519/AF4C2F31F1573208849E88EEB160D7AD.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403546/CF555769A7781772E056D6E7752F8EB8.png)
+
+This is similar to adjusting opacity in Photoshop, rare to adjust.
+
+## Model Normals
+
+For normal issues, let's draw a box; with the same material on two cuboids, I applied a normal to one
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403400/336C303AD0CC3B8CFCB26D604610B016.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403407/739D5BF17520C69E2236283D059DDCA1.png)
+
+After upload, it becomes like this
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403382/2759548BA57E540AA2B1A472A970C609.png)
+
+Solution:
+
+Select the model→click modifier→find normals→check flip normals
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403376/AA941F0DEA5CAD90486FE72EF3888DFF.png)
+
+Convert to editable mesh and it's done.
+
+## Multi-Sub Materials in 3Dmax
+
+If some or all materials appear as vivid blocks or entirely black in the upload preview, it might be due to multi-sub materials in 3Dmax.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403381/6F678E3EC18F13EF1A7C74E13E479703.png)
+
+Open the original 3Dmax file's material editor, use the eyedropper to pick the abnormal part, and check the material type.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408414200/128CDC6876E61C41F5FC514C7F0A253A.png)
+
+If it's "multi-sub/object," you'll need to split the multi-sub materials before uploading.
+
+After splitting, ensure all materials are assigned with VRayMtl texture forms, otherwise, upload may still show black or poor display.

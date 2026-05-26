@@ -1,0 +1,46 @@
+---
+title: "enterprise-three-axis-rotation-support-can-be-disabled-separately"
+description: "Merchants can flexibly configure whether the three axial rotations of the customization tool are open to designers based on their needs. For example, they can r"
+---
+
+Merchants can flexibly configure whether the three axial rotations of the customization tool are open to designers based on their needs. For example, they can restrict Z-axis rotation or prohibit X and Y-axis rotations. This helps limit designers from arbitrarily rotating the model's axis and prevents errors in output or production caused by incorrect orientation due to rotation.
+
+# For users
+
+**Enterprise users** with relevant permissions. If you need it, please contact CSC for consultation.
+
+# Disabling Axial Rotation
+
+## Entrance
+
+Enter the design tool and click on the left sidebar **Advanced Tool—Kitchen & Bath/Closet** to access the tool page.
+
+![](https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+## Effect When Axial Rotation Is Not Disabled
+
+Under normal circumstances, in the customization tool, **3D** **Move & Rotate** controlsand **Rotate** controls allow operation of XYZ three-axis rotation on the model:
+
+![](https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+## Effect After Configuring Axial Rotation Disablement
+
+1) Users can flexibly choose which axes to disable, for example, disabling the Z-axis or disabling the X+Y axes. After configuration: **(Note:  If you need it, please contact CSC for consultation.)**
+
+* The corresponding axis’s angle input box in the parameter panel will be grayed out, with angle changes caused by attachment unaffected.
+* When selecting the model, rotation controls for the corresponding axis will not be displayed, making it impossible to adjust the angle of rotation.
+  + 2D view, 3D view, 3D move & rotate controls, and rotate controls will all be affected together.
+
+**2) Axes that can be disabled and specific effects are shown below:**
+
+| Axial Rotation Disabled | Effects |
+| --- | --- |
+| Disable Z-axis | 1. The model can only rotate along the **X、Y** axis direction. 2. Manual modification of the **Z-**axi**s** angle is not possible. |
+| Disable X, Y-axis | 1. The model can only rotate along the **Z-**axis direction. 2. Manual modification of the **X、Y-**axis angle is not possible. |
+| Disable X, Y, Z-axis | 1. The model can only be moved, not rotated, and all rotation controls will disappear. 2. Manual modification of the **X、 Y、 Z**-axisangle is not possible. |
+
+# Notes
+
+1. When Z-axis rotation is disabled, the ctrl+R shortcut key for triggering Z-axis rotation will not apply to custom models, and long-press rotation in the 2D view (including copying and continuous copying) will not work.
+
+2. Only when XYZ axes are fully disabled will the three-axis rotation control option disappear from the drop-down menu in the 3D view object menu controls.

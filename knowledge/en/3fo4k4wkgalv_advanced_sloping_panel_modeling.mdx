@@ -1,0 +1,108 @@
+---
+title: "advanced-sloping-panel-modeling"
+description: "Example Model"
+---
+
+### Example Model
+
+**I.Creation Position**
+
+Custom Furniture —Create Asset—Parametric Model Library— New—
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886452975/0CA308BFB3DD7F65A4250907BA4D7AF6.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886454005/B8065CC3DC728D6069F5F1727F3ACF9F.png)
+
+**II.Enter Editor - Parameter Configuration**
+
+2.1. Width (W) represents the size along the X-axis. Set the value type as an interval (e.g., interval 50-2400, current value 600).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886455806/4AD5E144A1ACEA2EEE7A77C60DF6D71D.png)
+
+2.2. Depth (D) represents the size along the Y-axis. Set the value type as a range interval (e.g., range interval 50-1200, current value 500).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886456541/27CE0AA61BD58CDE10CB523BAA4B1148.png)
+
+2.3. Height (H) represents the size along the Z-axis. The value type can be set as a range interval (e.g., range interval 30-2400, current value 500) (use parameter H to control the inclination of the panel).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886459086/A9C8FAEB204F37F341BA836E8CF9B65A.png)
+
+2.4. Choose default material - the material reflected by the current model, which can be left unchanged.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886461601/312B6D0581DBA2A7F417D3A05A43ED86.png)
+
+2.5. Add advanced parameters. Name: Panel Thickness. Reference name: HD. Set the value type as optional, and it can be set as single or multiple values (e.g., optional values 18, 25, ..., current value 18). Click create.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886462333/6F7F33470B3ED8B400575D8D1A13D82C.png)
+
+2.6. Set intermediate variables
+
+Intermediate variables are not displayed in the tool. They are mainly used for convenient modeling and modification of the model later on.
+
+Here, intermediate variable parameters are set for panel rotation.
+
+Horizontal distance A: #W - #sin(#toRadians(#toDegrees(#atan(#H/#W)))) \* #HD
+
+Vertical distance B: #H - #sin(#toRadians(90-#toDegrees(#atan(#H/#W)))) \* #HD
+
+**Function application:**
+
+^: Power/exponentiation. Variable 1 or number 1 ^ Variable 2 or number 2. If Variable 2 or number 2 > 1, it is power/exponentiation. If < 1, it is square root. Example: \{#W ^ 2 (square of W); #W ^ 0.5 (square root of W).\}
+
+atan: Arctangent value. atan(tangent value). Calculates the radian value for a given tangent value. Example:\{ atan(1) = 0.785; toDegrees(atan(1)) = 45\}
+
+toDegrees: Convert to degrees. toDegrees(radian value). Degrees = Radians × 180 / Pi (3.1415926). Example: \{toDegrees(0.523) = 30\}
+
+toRadians: Convert to radians. toRadians(degrees value). Radians = Degrees × Pi (3.1415926) / 180. Example: \{toRadians(30) = 0.523\}
+
+sin: Sine value. sin(radian value). Calculates the sine value for a given radian. Convert degrees to radians before calculation. Example: \{sin(toRadians(30)) = 0.5; sin(0.523) = 0.5\}
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886463900/7F82ED6EE726C47C88F9BDB2E464227A.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886464717/BD397D0D696DA9104E421FBAEF77736D.png)
+
+**III.Sloping Panel Modeling**
+
+3.1. Create a flat panel: Select the component library - Set the panel thickness (height: HD).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886466146/55223E6771F04083F2F0770DC7E69CBD.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886467088/FCADF1A0A610EF97668A64BCAC4022C1.png)
+
+3.2. Define points
+
+Point 1: (0, 0)
+
+Point 2: (0, #D)
+
+Point 3: ((#A^2 + #B^2)^0.5, #D)
+
+Point 4: ((#A^2 + #B^2)^0.5, 0)
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886467995/C7E5E6DE1E008CE483A6381E4E6007C0.png)
+
+3.3. Set physical properties
+
+Position X: #W-#A
+
+Rotation Y: -#toDegrees(#atan(#B/#A))
+
+**(Note: By rotating around the X-axis and Z-axis, you can obtain panels in other directions. Feel free to try!)**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886469104/29095829E7BE4F25F30B626903434AD6.png)
+
+3.4. Setting Output Attributes (Click on the blank space - the Output Attributes panel will appear on the right side of the page)
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886471839/87D3DFA92F31CDB57B864004888DD365.png)
+
+The width displayed in the export list corresponds to the dimension of the panel texture in the horizontal direction, the depth corresponds to the dimension of the panel texture in the vertical direction, and the height corresponds to the thickness of the panel.
+
+In the editor, the dimensions of the texture are displayed between the XZ axes, so the width is (#W^2+#H^2)^0.5.
+
+In the editor, the dimensions of the texture in the vertical direction are displayed along the Y-axis, so the depth is #D.
+
+In the editor, the thickness of the panel is displayed as its own thickness, so the height is 18.
+
+**IV.Save to the Library**
+
+4.1. Click on the file in the top right corner, select save, choose the subdirectory to save (under the component library), enter a name, and click save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886474760/0306BD9FBAFA721A48435B5988C4A27D.png)
+
+4.2. On the enterprise's backend page, find the model, select the model for initializing, and wait for the rendering to complete before testing it on the frontend.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733886475963/0544DD7E59AD794013E177763B5CC835.png)

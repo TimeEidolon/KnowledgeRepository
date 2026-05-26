@@ -1,0 +1,142 @@
+---
+title: "beginner-guide-corner-cutting-cabinet-modeling"
+description: "Contents**"
+---
+
+### **Contents**
+
+**I.Precautions**
+
+**II.Creation Location**
+
+**III.Modeling Steps**
+
+**IV.Verification**
+
+**V.Saving and Initializing**
+
+**I.Precautions**
+
+1.1 Right-angled snap line
+
+The right-angled snap line is used to adapt the size of the model to the space in the front-end tool. It needs to be called and edited in the Elements.
+
+1.2 Submodel calling
+
+For modeling under the furniture library, all panels must be called from the submodel library and editing using flat panels from the Elements is not allowed.
+
+1.3 Dimension range at corner cuts
+
+For parameter W1, its dimension range must be carefully considered. The maximum value of W1 must not exceed any possible value for W. Here are two ways to solve this issue. (D1 applies similarly)
+
+a. Represent the maximum value of parameter W1 as a constant, which is smaller than the minimum value set for parameter W.
+
+b. Represent the maximum value of parameter W1 with a formula, for example: #W-100
+
+(Here, we will demonstrate using method b)
+
+**II.Creation Location**
+
+Enterprise Catalog-Custom Products-Product Catalog- Kitchen&Bath, Custom Furniture-Create Asset- Click “Parametric Model Library”- New- Interim Parts- Cupboard panel
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848396338/8C9C306FC2E635B508F9C0D2DDCA337B.png)
+
+New-Furniture-Wardrobe Base Carcass
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848397485/35233AE3B2E88B5DC9DA5E86C7B5067F.png)
+
+**III.Modeling Steps**
+
+Set Custom Parameters:
+
+1. Width (W) - Represents the dimension of the model board in the X-axis direction, i.e., the width of the curved cabinet. The value type is set as optional (e.g., 300, 350, ..., 1000, current value 900) or as an interval (e.g., interval 200-1000, current value 400).
+
+Width (W) - Represents the dimension of the model board in the X-axis direction, i.e., the width of the curved cabinet. The value type is set as optional (e.g., 300, 350, ..., 1000, current value 900) or as an interval (e.g., interval 200-1000, current value 400).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848398073/A2EAB3ECDCD43D7C9BD93BE35A569AF0.png)
+
+1.2 Depth (D) - Represents the dimension of the model in the Y-axis direction. The value type is set as optional (e.g., 300, 350, ..., 1000, current value 900) or as an interval (e.g., interval 200-1000, current value 300).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848398694/563A002A164AD4924436309BBB770744.png)
+
+1.3 Height (H) - Represents the dimension of the model in the Z-axis direction. The value type can be set as a range (e.g., range 500-2400, current value 2000).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848399271/0505AE8C98F4493FF348BC2138D0E9B1.png)
+
+1.4 Add advanced parameter W1.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848400058/1575ACD1C8AB3482D74F298FDE002023.png)
+
+1.5 Add advanced parameter D1.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848401125/706C1E2C8F11E9894CF8FA50D7388B60.png)
+
+Click on the submodel library - Semi-finished Products Library, call the side panel, and set parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848404345/A6E5DC0F067B00E54EFC195DE0E9A75D.png)
+
+Duplicate a side panel and modify the parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848405930/86CBC3C8898E82C293E2A01C39F6158E.png)
+
+Click on the submodel library - Semi-finished Products Library, call the cutting corner flat panel and set parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848407135/EA796C4413160B513DC5DE4CFFBB2657.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848408570/52938F8EEE1506C5F7A651791CAC84F3.png)
+
+Duplicate the cutting corner flat panel and modify the parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848409729/B0019E210B410585F18E7A3BFDA00FA1.png)
+
+Click on the submodel library - Semi-finished Products Library, call the vertical panel and set parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848411872/17214F9AA2B264B965E378D86833957D.png)
+
+Duplicate the side panel and modify the parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848413826/2050868A32CCE4DCC01E081A474F4E7D.png)
+
+Click on the submodel library - Semi-finished Products Library, call the kickboard and set parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848414919/23CE5AA47DD7F4D18AD4C26B49BA8BA3.png)
+
+Duplicate a kickboard and modify the parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848416069/DF5333125FDCC86486D28C5DCA042907.png)
+
+Click on the submodel library - Semi-finished Products Library, call the back panel and set parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848418840/2396ECAC430ADF56A52678D72AB8801D.png)
+
+Contour Boundary Settings
+
+Contour Boundary affects the generation of top and bottom moldings. Generally, the Contour Boundary for irregular cabinets need to be readjusted and set.
+
+Upper Contour Boundary
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848420118/F34D6FE5A3C55E0687ED45B74FDC7B65.png)
+
+Edit the contour line: point 1 (0,0), point 2 (#W-#W1,0), point 3 (#W-#W1,-#D1), point 4 (#W,-#D1), point 5 (#W,-#D), point 6 (0,-#D) - Save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848421119/05A628553619AB292EC691B0FA72A745.png)
+
+Lower Contour Boundary
+
+The contour editing is the same as the upper contour.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848422220/353D2B5867EEE0B16D08D704B7487504.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848423421/F2BE29CA9A70B05C2DF7ABA68DBE4C52.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848426227/4F2F8CD4843ECA15E5655810B94D95BD.png)
+
+Set right-angled snap lines (used to snap and adapt to the dimensions of walls/columns)
+
+Find the right-angled snap line in the Elements and click to modify its attributes.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848429067/7247B20E109ACCE0E575421D9AB2926A.png)
+
+**IV.Verification**
+
+Modify the current values of custom Parameters to test if the model dimensions are correct. Test at least three values: maximum value, minimum value, and a random value within the interval range. After testing, modify the current values to the desired ones and test material replacement by selecting materials. Restore to the default material after testing.
+
+**V.Saving and Initializing**
+
+Click on the file in the top right corner, select "Save", choose the subdirectory to save it in, give it a name, and click "Save".
+
+In the backend page, find the model, select the model, and choose to initialize it.

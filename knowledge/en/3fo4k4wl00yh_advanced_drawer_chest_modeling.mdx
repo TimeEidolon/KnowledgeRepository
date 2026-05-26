@@ -1,0 +1,140 @@
+---
+title: "advanced-drawer-chest-modeling"
+description: "Using the example of a drawer chest with 18mm panels, let's go through the following modeling steps."
+---
+
+Using the example of a drawer chest with 18mm panels, let's go through the following modeling steps.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898537172/12E4D192AB20D9422E33B185C639DE31.png)
+
+1. **Creation Position**
+
+**Creation Position**
+
+Custom Furniture —Create Asset—Parametric Model Library— New—
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898538090/19C6FED10E3784F342977950E01C78B9.png)
+
+**II.Setting Parameters**
+
+2.1 System Parameters:
+
+Change the indentation value to 18 and keep the rest as default.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898539465/3B8BD434F6DE463604C245B8A741F58D.png)
+
+2.2 Custom Parameters
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898540591/B4E305CE451F6B2C2152A68A90F6584E.png)
+
+2.2.1 Width (W) - Represents the size of the model panel in the X-axis direction. Set the value type as a range (e.g., range 260-1180, current value: 450).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898542371/40746B81752DBBC2363065AAB0856C87.png)
+
+2.2.2 Depth (D) - Represents the size of the model in the Y-axis direction. Set the value type as a range (e.g., range 450-900, current value: 450).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898543437/C1EDA5330A6C7F958B412299A1B6DA7D.png)
+
+2.2.3 Height (H) - Represents the size of the closing panel in the Z-axis direction. The value type can be set as a range (e.g., range 80-150, current value: 120).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898544632/0CEB7ACCEB31A6879DAA1D3EBB20C09E.png)
+
+2.2.4 Material - No modification needed, indicating that the drawer chest uses the default material.
+
+2.3 Intermediate Parameters
+
+Intermediate Parameters are used to replace commonly used numbers or formulas in the editor. They are only displayed in the editor and not in the front-end tools.
+
+2.3.1 Gap between Tracks (a) - Represents the space reserved for track installation. Set it to 13 in this case.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898545897/E1CBF15835A3F9256F385F6EF5097CE2.png)
+
+2.3.2 Minimum Empty Space at the Back of the Drawer (b) - Represents the minimum empty space at the back of the drawer. Set it to 30.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898547149/B29CE3C36E01F9EFE98A73538C7C6AA1.png)
+
+2.3.3 Maximum Depth of Drawer Side (c) - Represents the maximum size that can be used for the drawer side panel, usually related to the size of the drawer slide. Set it to 700.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898550220/784C96A8433EA50A938FAA25BB8AE3B0.png)
+
+2.3.4 Drawer Hanging Height (d) - Represents the height of the drawer hanging below. Set it to 20.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898551346/71F1564865D4F8243EE2C1A34A2BD6B8.png)
+
+**III.Importing Submodels**
+
+3.1. Import a finished 18mm side panel (with grain pattern) from the semi-finished library as the left drawer side panel and set its physical attributes. Width: 18, Depth: #min(#c,#floor((#D-#b-#SJ)/50)\*50), Height: #H-40, Position X: #a, Position Y: -#D+#min(#c,#floor((#D-#b-#SJ)/50)\*50)+#SJ, Position Z: 20.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898552525/6745BC8175E14E1A0C4C28D53B3EE95F.png)
+
+3.2. Click on the panel, right-click and select "Copy," then change the Position X to #W-18-#a.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898553679/DBCA72703E7F0EF649AC3E5045931094.png)
+
+3.3. Insert an 18mm back panel and set its physical attributes. Width: #W-#a\*2-18\*2, Depth: 18, Height: #H-40, Position X: #a+18, Position Y: -#D+#min(#c,#floor((#D-#b-#SJ)/50)\*50)+#SJ, Position Z: 20.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898556155/9DB6D6154F3E50B7F89123FA7CEA903E.png)
+
+3.4. Insert a drawer front without handles and set its physical attributes. Width: #W+#ZY+#YY-#FX\*2, Depth: 18, Height: #H+#SY-#FX, Position X: #FX-#ZY, Position Y: -#D+#SJ, Position Z: -#FX.
+
+(Note: The material of the drawer front can be changed by selection and is not limited by the custom column's material.)
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898557318/E6BEE881EBC5299E2BE07D54F14666A8.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898559629/98AF02CD36C254F51A6C68EFAABFEDBE.png)
+
+3.5. Aluminum hanging rod
+
+(There are multiple ways to implement a hanging rod. In this case, we will create a custom-shaped rectangular prism.)
+
+Create a custom-shaped rectangular prism - Edit Contour.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898560786/832D597444DFC089B2CCE312AE7D0445.png)
+
+Keep two points: Point 1 (0,0) and Point 2 (0,16).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898561585/FAAB64C929CE3100414CB9EDB7CDFA0C.png)
+
+Select the line segment between Point 1 and Point 2 and convert it into an arc with a radius of 8.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898562984/560CD23AE1417872BBB0BD35EA7E7F08.png)
+
+Repeat the previous step to convert the other straight line into an arc, creating a circular shape with a radius of 8. Click on "Save."
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898564937/EF3F389AE6F7816B7FE8D5255E01703F.png)
+
+Physical Properties:
+
+Height is #D-32-#SJ-18, position X is #a+18+((#W-2\*#a-2\*18)%80)/2.0+(80-16)/2.0, position Y is -#D+#min(#c,#floor((#D-#b-#SJ)/50)\*50)+#SJ-18, position Z is #H/2.0+16/2.0, rotation X is 90.
+
+Material: Metal material is selected.
+
+Front-end Attribute Usage: The trouser rod belongs to hardware accessories and does not need to be output in the panel list, so the list output is set to No.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898567268/4FF32F7B8B70D91A425C0619168DCAD8.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898569397/5CE0CA941DD274BBE9A2D26253AB065E.png)
+
+Rename the panel as aluminum trouser rod, the next step is to array.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898571805/BF0ED751450898B6F29155E4FE6A57AA.png)
+
+Set Array Rules: Direction is +X, array length is #W-#a\*2-18\*2, step is 80, generate.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898572899/C00BEC04867D8546FEE22B578BFF1369.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898575060/6CF7011C5A1802CEF927E1383A5FB467.png)
+
+3.6. Output Settings
+
+Modify output settings - quote settings, change #D to the depth of the side panel #min(#c,#floor((#D-#b-#SJ)/50)\*50).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898576869/0B23000EB1CA5B63EFAF3408DC4DA7D7.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898580555/49F64413F8E4A4D7A0CA8EC45EB28542.png)
+
+**IV. Test the Model**
+
+Input values within the range of parameters W, D, and H, observe if the model changes correctly. If it does, it means the model is working fine. For example, inputting different values for width will result in a change in the quantity of trouser rods due to the difference in width.
+
+**V. Save to Library**
+
+Click on the file in the upper right corner and choose save, select the subdirectory for saving, name it, and click save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898583331/0259C0410A3487D8BF6A29C824277928.png)
+
+In the product management page, find the corresponding category for the model, select the model, click on "Save to Database", and wait for the model to finish rendering.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898585043/9EAAB30EC3C6E0E04A8E7EF57358E3CE.png)

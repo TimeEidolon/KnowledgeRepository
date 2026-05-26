@@ -1,0 +1,88 @@
+---
+title: "advanced-modeling-of-glass-panel-core-for-concealed-doors"
+description: "Definition: Create a glass panel core that can be used as a replacement, with the option to individually set whether it should be quoted and included in the i"
+---
+
+**Definition: Create a glass panel core that can be used as a replacement, with the option to individually set whether it should be quoted and included in the inventory.**
+
+Note: The modeling process for the glass panel core for whole-house custom furniture is identical to that of sliding doors, with the only difference being the category.
+
+1. **Creation Location**
+
+**Creation Location**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849784772/7F7EB17533534D4E20508EC07CE34AE6.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849786076/D3CB2E605E232A5DA4D34326B98CBD30.png)
+
+**II.Parameter Configuration**
+
+Custom Parameter Settings
+
+(Note: As the door core is a sub-component, its dimensions should closely match the minimum and maximum values based on real-life situations to avoid affecting future applications)
+
+Width (W) - Represents the X-directional size of the door core model, usually defined as a range (e.g., range from 200 to 1200, current value is 450).
+
+Depth (D) - Represents the Y-directional size of the door core model, i.e., the thickness of the core, with a single or multiple selectable value types (e.g., selectable options: 9, current value is 9).
+
+Height (H) - Represents the Z-directional size of the door core model, usually defined as a range (e.g., range from 200 to 2400, current value is 700).
+
+Material (CZ) - Represents the current material of the model, keep the default value.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849788107/1F10E5188A3044672A3C26D80A1FCFE5.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849789624/9CC4434672F593F4DC2FBD0163480CEC.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849791062/D1CB0AC3B8180C5997EFFF33AA105714.png)
+
+**III.Applying Flat Panels and Setting Attributes**
+
+3-1. Select flat panels from the element library.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849792161/7434A86C5723252426A8B44C5044EC27.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849793285/7728038E6A0C3C5B725F618A30CACC29.png)
+
+3-2. Set size attributes and physical properties.
+
+① Size Attributes: Height: #D;
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849794831/324291EF71DABBE9A61CC7FFD366D955.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849796699/D29D50A6AF9B1C8B25533ACD781ADF42.png)
+
+Edit Outline:
+
+① Point 1 (0,0); Point 2 (0,#W); Point 3 (#H,#W); Point 4 (#H,0);
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849799139/16090A54915E6A37C330999A210263EA.png)
+
+② Physical Properties: Rotation X: 90; Rotation Y: -90; Rotation Z: 0;
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849801526/BDC8E525A834586FCAAC901B33FDEBD2.png)
+
+③ Part Attributes: Choose glass material (if there is no glass texture, upload one).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849802861/729589B5BAA9763537941E68BFA5A927.png)
+
+**IV.Quotation and Output Settings**
+
+4-1: Model does not output quotation and inventory.
+
+Select the modules separately and change the attribute "Requires Quote & Inventory Output" to No.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849804084/F0D3C53B4A9D067915F3C3AC1AB8C73B.png)
+
+4-2: Model requires quotation and inventory output.
+
+Default quotation output: Model Width - #W, Model Depth - #D, Model Height - #H;
+
+Change it to: Model Width - #H, Model Depth - #W, Model Height - #D;
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849806025/73239597F5BBB447DF0DBBF25B5DB1A9.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849807863/CAE7EAF88FAF770F4EFAC30FB22F74F9.png)
+
+Note: In the current value state, the default output in the inventory shows the model dimensions as 4509700. After modification, the output dimensions will be 7004509. The Quotation formula for the door core aligns with the inventory output dimensions, with the area calculation formula as #W \* #D.
+
+**V.Model Testing**
+
+Change the current values of W, D, H, and CZ to see if the model changes accordingly and matches the numerical values.
+
+Note: The current model material is set to Fixed-Transparent Glass Material instead of referencing materials, so changing the current value of CZ will not affect the model's current material.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849808947/AFB319ABBD075DE5440EFC3B6E145854.png)
+
+Once everything is confirmed, click on the file selection in the top right corner, choose save, select the sub-directory for saving, name it, and click save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849810030/EBBEB41D41AA3FB5D0BAEF402700246B.png)
+
+Initialize.

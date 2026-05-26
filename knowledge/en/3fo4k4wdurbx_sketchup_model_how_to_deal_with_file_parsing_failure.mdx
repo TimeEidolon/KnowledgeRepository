@@ -1,0 +1,42 @@
+---
+title: "sketchup-model-how-to-deal-with-file-parsing-failure"
+description: "Problem"
+---
+
+# Problem
+
+File parsing failed
+
+# Reason
+
+1. The model is too large, the model has too many faces, needs to be split and uploaded.
+
+2. The scene contains not only the model but also other data. (useless components, layers, materials, styles)
+
+3. There are too many polygon faces, causing the upload calculation of triangular faces to fail, leading to Skp upload parsing failure.
+
+# Solution
+
+1. For models that are too large with too many faces, you need to split the model and upload.
+
+    Some models have many faces, such models need to be split and uploaded, the model below needs to be split because the text on the wall is entirely model-based, with too many faces.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308576937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
+
+2. Scenes with other data besides the model (useless components, layers, materials, styles) can cause model Skp parsing failure and increase model size. Cleaning the scene restores it to normal size.
+
+Method 1: You can select the model and copy (Ctrl+C) and paste (Ctrl+V) it into a new scene, then save and upload.
+
+Method 2: SUAPP plugin—Scene Cleanup Tool, click OK, to remove useless components, layers, materials, and styles from the scene
+
+3. Many polygon faces, causing the upload calculation of triangular faces to fail. When version compatible, without other data in the scene, the polygon faces during upload require model system calculation, leading to model export 3DS format files, then importing back into SketchUp. After exporting the 3DS format file, SketchUp calculates the triangular faces, which helps avoid system calculation time.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308657958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
+
+The specific operation steps are as follows:
+
+File—Export—3D Model; select 3DS format for export, open a new scene, File—Import 3DS format file (the imported model will show triangular faces), save and upload.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1577786818393/9C2588BD6530459A61609F5F77BE31C3.png?x-oss-process=image/resize,m_mfit,w_330/format,webp)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313867922/E73255A995C689EDA162B89CC105DD8D.png)

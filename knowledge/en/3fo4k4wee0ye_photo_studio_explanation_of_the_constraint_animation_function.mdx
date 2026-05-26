@@ -1,0 +1,96 @@
+---
+title: "photo-studio-explanation-of-the-constraint-animation-function"
+description: "This tutorial will explan the constraint animation function to you in detail."
+---
+
+This tutorial will explan the constraint animation function to you in detail.
+
+# **For Users**
+
+All Photo Studio Users (those already proficient in using photo studio keyframe animation and related basic functionality will see better effects with this function)
+
+# **Overview of Constraint Animation Function**
+
+## About Constraints
+
+**What is [Constraint] ?**
+
+It is establishing a **connection** between different model objects. (For convenience of reading: below, we refer to the target object as A and the constraint object as B)
+
+Once a constraint relationship is established between objects A and B, B can be driven to perform corresponding movements through A's motion, without the need to animate B.
+
+**What can [Constraint]  do for us?**
+
+Mastering the constraint function allows you to achieve the following in animation production:
+
+* Reduce repetitive operations and keyframe settings
+* Make animations smoother and more layered
+
+## Definitions and Settings of Three Types of Constraints
+
+In Kujiale photo studio, three types of  [Constraint]  functions have been introduced. Details are as follows:
+
+**(1) Parent-Child Constraint**
+
+Definition: It is as if there is a line between A and B;  B (child) rotates, scales, and moves based on A (parent)'s axis
+
+Application Scenario: Office chair animation video (the wheels only have rotation animation frames; set the body as the parent object so that the wheels move along with the body while rotating themselves)
+
+Setting Entry: The "Hierarchy" operation panel on the left side of the 3D photo studio design interface - drag B to be under A's hierarchy
+
+![](https://qhstaticssl.kujiale.com/image/png/1770014319035/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1770014511240/28147E8A9D68903126C703EB9498C759.gif)
+
+**(2) Follow Constraint**
+
+Definition: B imitates A's behavior and actions
+
+Application Scenario: Other wheels (B) of the office chair follow the wheel (A) that has been animated
+
+Setting Entry: Select constraint object B - right-side operation panel - model - Add Constraint - Follow Constraint - set target A - set scope
+
+![](https://qhstaticssl.kujiale.com/image/png/1770014619963/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1770014942609/85B748DD9CB2E062722F545F922B5A77.gif)
+
+**(3) Constraint Oriented**
+
+Definition: Regardless of the motion of A/B, B always faces A. B will rotate due to A's motion but will not translate due to A's motion
+
+Application Scenario: Camera lens always facing the product direction; camera always facing the object
+
+Setting Entry: Select the constrained object B - right-side operation panel - model - add constraint - Constraint Oriented- set target A - set axis
+
+![](https://qhstaticssl.kujiale.com/image/png/1770014794304/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/gif/1770014927854/04F58D89884C87A4CAE199E8CE7E2C6D.gif)
+
+# Demonstration of Constraint Effects
+
+## Conceptual Demonstration of Three Types of Constraints
+
+For easier understanding: In the image below, the red object is the target object A, and the blue object is the constraint object B
+
+Under different constraint relationships, the blue object will perform corresponding movements due to the movement of the red object:
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| **Actions on Red Object** | **Parent-Child Constraint** | **Follow Constraint** | **Constraint Oriented** |
+| **Displacement** |  |  |  |
+| **Rotation** |  |  |  |
+| **Scaling** |  |  |  |
+|  | Setting a keyframe animation for the red object will make the blue object move based on the axis of the red object (parent) | Setting a keyframe animation for the red object will make the blue object move by its own axis to "imitate" the red object | Setting a keyframe animation on the red object will make the blue object move accordingly to always face the red object when the red object's position changes |
+|  | In all three constraints, B's motion will not affect A's motion | | |
+
+## Instance Demonstration of Three Types of Constraint Animations:
+
+In the image below, the red object is the target object, and the blue object is the constrained object:
+
+|  |  |  |
+| --- | --- | --- |
+| **Parent-Child Constraint Example** | **Follow Constraint Example** | **Aim Constraint Example** |
+|  |  |  |
+| Set the cart as the parent object; in the early stage of the animation, the box follows the cart's motion. Later, a separate motion is given to the box to simulate dynamic sliding, reducing keyframe settings for the blue box. | Set the red rod as the target, and set follow constraint on the blue rod to reduce keyframe settings for the blue rod. | Set the red object as the target, and set aim constraint on the blue object. When setting keyframe animations for either the red or blue object, the blue object always faces the red object. |
+
+#

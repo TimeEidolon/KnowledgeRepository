@@ -1,0 +1,95 @@
+---
+title: "rhino模型上传要求"
+description: "为了便于您更顺畅地在Coohom中上传Rhino模型，本文会为您详细讲解Rhino模型上传要求"
+---
+
+为了便于您更顺畅地在Coohom中上传Rhino模型，本文会为您详细讲解Rhino模型上传要求
+
+# 面向用户
+
+所有用户
+
+# 支持格式
+
+1. Rhino7及更早版本的模型。
+
+2. 支持后缀名.3dm格式模型。
+
+犀牛模型上传可支持保存的3dm格式。
+
+如果想将模型从犀牛导出在3ds Max中修改，可另存为obj。
+
+下文将列出3dm与obj的模型设置：***3dm模型***
+
+# 模型要求
+
+1.模型制作单位为毫米。
+
+2.选择“文件”–“另存为”，保存为.3dm模型。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762310477677/7D6976680C5AC08CF51E8FDC24077CEB.png)
+
+3.材质名称不要有特殊符号。
+
+4.文件名称不要有空格。
+
+# 材质支持情况
+
+| 类别 | 属性 | 是否支持 |
+| --- | --- | --- |
+| **PBR材质** | 基础颜色有色差，勾选金属后，预览图颜色偏差较大 | / |
+| 金属粗糙度不生效 | / |
+| 置换 | × |
+| 发光 | × |
+| **双面** | 双面材质 | × |
+| **发光** | 发光材质，上传为黑色 | × |
+| **图像** | 添加贴图 | √ |
+| 自发光 | √ |
+| 灰度级 | × |
+| Alpha通道 | × |
+| 颜色遮罩 | × |
+| 临界值 | × |
+| 物件透明度 | × |
+| **塑胶** | 颜色 | √ |
+| 预览图是透明效果，与犀牛渲染区别较大 | / |
+| **宝石** | 宝石材质 | √ |
+| **油漆** | 颜色 | √ |
+| 光泽度 | √ |
+| 玻璃 | 玻璃材质 | √ |
+| 颜色 | √ |
+| 清晰度 | √ |
+| 折射率 | √ |
+| 金属 | 金属材质 | √ |
+| 颜色 | √ |
+| 抛光度 | √ |
+| 凹凸贴图 | × |
+
+# 预览效果
+
+Rhino软件内部渲染效果
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762310477664/32E8D64FCE94C06737D6FFFF2FAAA8AD.png)
+
+coohom前端展示效果
+
+![](https://qhstaticssl.kujiale.com/image/png/1664442902724/19DFBAE8C0CA093577BC4261C99DFCD2.png?x-oss-process=image/resize,m_mfit,w_380/format,webp)
+
+coohom渲染效果图
+
+![](https://qhstaticssl.kujiale.com/image/png/1664442916410/348ED5C1F9627AB990C76FD29ABF77E3.png?x-oss-process=image/resize,m_mfit,w_274/format,webp)
+
+# 导出obj模型
+
+1.选择“文件”–“另存为”，保存为.obj模型。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762310477677/E7F5182D93EA3BA58BEFFD6B1BCBAE5C.png)
+
+2.obj导出选项
+
+选择导出多边形网格物件
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762310477689/1A2B304B06F4270F3855BB9DA9182C84.png)
+
+NURBS曲面模型在转换为多边形网格时，可以设置转换精细度。如果模型面数不多，可直接用默认设置；如面数较多，可以酌情删减细分和网格面。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762310477643/81BA5956D5A251BA44DAB0EE4D657DD5.png)

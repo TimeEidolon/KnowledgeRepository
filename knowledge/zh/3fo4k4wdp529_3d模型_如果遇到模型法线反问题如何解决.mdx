@@ -1,0 +1,26 @@
+---
+title: "3d模型-如果遇到模型法线反问题如何解决"
+description: "问题"
+---
+
+# 问题
+
+可能会出现渲染变黑问题
+
+# 自检
+
+目前max有很多检查法线的插件、小工具，可以自行选择
+
+如果没有小工具，那么在max里也可以检查，使用vraylightmtl赋予需要检测的部位，进行渲染，出现黑色的地方就是法线反，正常应该是vraylight的颜色
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png)
+
+使用max自带的编辑法线功能，就可以看到每个点上的法线方向，一般平面（指非弧形）的法线都是如下图的蓝色的，不正常的就是绿色的线。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872076/F3A56EABFC699E6C4341B9B01A3A9E58.png)
+
+# 解决方法
+
+知道哪个位置法线反，就直接检查那个位置，把法线反的地方选中翻转即可。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png)

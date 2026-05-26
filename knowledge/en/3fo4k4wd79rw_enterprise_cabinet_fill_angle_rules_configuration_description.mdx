@@ -1,0 +1,120 @@
+---
+title: "enterprise-cabinet-fill-angle-rules-configuration-description"
+description: "Enterprises can configure the required supplementary angle rules for the cutting angle function on cabinets, and can also choose whether the cutting angle funct"
+---
+
+Enterprises can configure the required supplementary angle rules for the cutting angle function on cabinets, and can also choose whether the cutting angle function is available in the design tool interface. This article will explain in detail how to configure the supplementary angle rules for cabinets.
+
+# For Users
+
+**Enterprise users**. If you have a problem, please contact CSC for consultation.
+
+# Configuration Entrance
+
+1. Enter the **workspace**, select **"Enterprise Catalog - Custom Products - Product Catalog"**, and click **Advanced** in the upper right corner.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756276967747/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. Select **Cabinet Fill Angle Rules** to enter the configuration page.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756277517449/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Chamfer in Tool Display Configuration
+
+1. Select the section **Chamfer in Tool Display Configuration** and click **Edit Configuration**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756278049746/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. You can set whether the cabinet cut entrance is open in the design tool and choose the displayed **Cutting Angle Type**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756278555688/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Cabinet Angle Complement Rules
+
+**Note:** For enterprises that have not configured cabinet angle complement rules, if the tool's entrance is opened, the default angle complement rules will be used automatically.
+
+1. After selecting the section **Cabinet Angle Complement Rules**, choose the **Supplementary Angle****Type**.
+
+2. Click **"Create a Rule"** in the upper right corner.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756278689314/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. Enter the **Supplementary Angle Rule Name**, **Supplementary Angle****Structure Information**, and **Cutting Angle****Position Information** in the panel.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756278847802/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. Each position's supplementary angle rule requires **creation**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756278954404/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Default Supplementary Angle Configuration of Cabinet
+
+1. After selecting the section **Default Supplementary Angle Configuration of Cabinet**, choose the **Supplementary Angle****Type**.
+
+2. Click the upper left corner **"Add a Configuration Entry"**, set the **Cutting Angle****Direction**, **Cutting Angle****Position**, and **Supplementary Angle****Rules**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756279559581/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Cutting Offset Configuration
+
+When there is a discrepancy between the actual cutting size and the expected size after a component cutting action, this configuration can be used for adjustments.
+
+1. After selecting the section **Cutting Offset Configuration**, choose the **Supplementary Angle****Type**.
+
+2. Click **"Add Configuration"** in the upper right corner, **Select Product**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756280396273/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1756282262640/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. Enter the edit cutting offset rules page, click **Adding Cutting Angle Conditions**, select **Cutting Angle****Direction** and **Position**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756282369354/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. Click **Set the Cutting Offset**, fill in the **Offset Value** in the right panel, then click **Sure**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756282463248/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Cutting Avoidance Configuration
+
+When there are components withoutcutting angle(such as drawers, drawer sets, wine racks, etc.) in the cabinet, after a cutting action, the components can avoid within the configuration based on the default avoidance direction.
+
+* As long as the model in the product library calls for a configured avoidance rule product for cutting angle, it will follow this product's default avoidance direction configuration.
+* The backend configuration of the avoidance rule is just a default setting during cutting, and the design tool still supports adjusting the avoidance direction.
+
+1. After selecting the section **Cutting Avoidance Configuration**, click **"Add Configuration"** in the upper right corner, **Select Product**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756283155039/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1756283338623/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. Enter the configuration avoidance rules page, click **Adding Corner Cutting Conditions**, **Select Cutting Angle Direction** and **Position**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756283516741/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. Configure the avoidance rules, select the cutting angle position, and choose the avoidance rule of the product at the cutting position.
+
+* Avoid Pillar - Top Left Cut: Default Forward Avoidance.
+* Avoid Pillar - Lower Right Cut: Default Left Avoidance.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756283947083/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1756283918535/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Complementary Angle Configuration
+
+As long as the **"Complementary Angle Method"** is configured, it is common to both kitchen and closet modules.
+
+1. After selecting the section **Complementary Angle Configuration**, click **"New Angle Supplement Method"** in the upper right corner to configure the complementary angle method.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756284295236/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. Customize the name of the complementary angle method, configure the replacement structure, and the junction relations of the six panels of the cabinet.
+
+![](https://qhstaticssl.kujiale.com/image/png/1756284405945/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| **Example of Complementary Angle Structure Configuration Method** | | | |
+| **Scene** |  |  |  |
+| **Configuration Method**  **Example** | 1. Complementary Angle Method Name: Full Wrap  2. Complementary Angle Method Configuration as follows:  a. Roof: Outer Cover  b. Base Panel: Outer Cover  c. Back Panel: Outer Cover  d. Left Side Panel: Outer Cover  e. Right Side Panel: Outer Cover  f. Front Side Panel: Outer Cover | 1. Complementary Angle Method Name: Half Wrap  2. Complementary Angle Method Configuration as follows:  a. Roof: Embed  b. Base Panel: Outer Cover  c. Back Panel: Outer Cover  d. Left Side Panel: Embed  e. Right Side Panel: Embed  f. Front Side Panel: Embed | 1. Complementary Angle Method Name: No Wrap  2. Complementary Angle Method Configuration as follows:  a. Roof: Embed  b. Base Panel: Embed  c. Back Panel: Outer Cover  d. Left Side Panel: Embed  e. Right Side Panel: Embed  f. Front Side Panel: Embed |

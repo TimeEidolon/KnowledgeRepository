@@ -1,0 +1,98 @@
+---
+title: "cabinet-projection-area-quotation-setting"
+description: "Contents:"
+---
+
+Contents:
+
+I. Case Background
+
+II. Setting Steps
+
+1. **Case Background**
+
+**Case Background**
+
+Example: Cabinet quotation according to the projection area, solid wood priced at 800, paint priced at 600.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907924777/C91F6229C451E36E41FDD8104A50B0C3.png)
+
+When quoting by the projection area of a cabinet, it is necessary to consider whether to set prices for the panel components. If the basic panel component has a price set, the pricing method must be associated with it. If the basic panel component does not have a price set, the associated pricing method defaults to apply to all.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907925878/070878CBD82D0F7887EA4463F9599738.png)
+
+**II. Setting Steps**
+
+**1.Enter the Quotation settings page**
+
+Custom Products-Product Catalog-Advanced-Quote
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907927148/BF3C24CC6673BD8B32CFAF6C627642B3.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907929096/05FDFB09A6EB4128C4EF91C2DED83E22.png)
+
+**2.Creating a new quotation category**
+
+Advanced-Quote-Quotation Category (in the upper right corner).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907930621/8CDFDEC0E4C9BD40E1D0BD39806480C3.png)
+
+Select "Quotation Category", enter the quotation category , and click "+Add Model Quotation Category"; Select "Material Quotation Category", enter the quotation category name, and click "confirm".
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907931683/51A9727E3FDDAC136CBCD08B509706F8.png)
+
+**3.Creating a new quotation rule**
+
+1.Click “Create a New quotation rule” in the upper right corner to pop up the quotation rule setting window.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907932661/8660C767BDF43EF9379938BFA495AB78.png)
+
+2.Define the quotation rules for the panel in the pop-up window. The options marked with “\*” are required fields. Material quotation categories are optional. If the quotation does not need to change according to the material, you can skip this step.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907933608/3079CCA886DFBA04634FB406A62399DB.png)
+
+The final Quotation of the model= unit Quotation \* quantity \* non-standard coefficient + additional fees
+
+The Quotation name refers to the name of the current Quotation rule, which may or may not be the same as the Quotation category name.
+
+The material Quotation category is optional and is used when the model Quotation is related to materials. Otherwise, it can be left blank.
+
+Unit Quotation can be filled with formula or a constant, and supports conditional statements.
+
+Quantity can be filled with formula or a constant. Here, quantity refers to the area of the panel, and it should be noted that the WDH referenced in the Quotation calculation formula corresponds to the output width, depth, and height in the model and not the physical properties of the model's width, depth, and height. The output width, depth, and height can be customized according to actual conditions.
+
+The unit in the editor is MM, so pay attention to unit conversion when using it.
+
+The non-standard coefficient is the coefficient multiplied on the basis of the original Quotation, which defaults to 1 if not filled in.
+
+Additional fees refer to fees added on top of the original Quotation, and can include costs such as labor and technology.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907934699/3A2DBEBC9D71CF08F2D7C4D7FC13B27F.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907936523/57F5933B706C7976ED36DEDEE8977611.png)
+
+**4.Associate Quotation category with corresponding model**
+
+1. Find the panels to be quoted in the merchant backend, mouse over it and click "View" to go to the product information page, then click "Edit" in the upper right corner and select the Quotation category you just set up in the Quotation category column. Click "Save" in the upper right corner. (The Quotation category can be directly associated with the model.)
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907937634/2450D59B1E704F6C62E977C8C6229912.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907940730/27009C59EB36665BF0AA3BEA828826DE.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907942533/6A843FD618C8EE6DF7AB3172A4D03A66.png)
+
+1. Find the panels to be quoted in the merchant backend. If the prices of multiple materials are the same, you can select multiple materials in the same material quote category and click “Batch Edit” to select the corresponding material quote category.
+
+Find the panels to be quoted in the merchant backend. If the prices of multiple materials are the same, you can select multiple materials in the same material quote category and click “Batch Edit” to select the corresponding material quote category.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907943579/63E154D1C5856AA1C09627A46A1C02C7.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907946134/76B5C6A5ECABA98AA6315946A2CA320B.png)
+
+Set the quote category for the painted texture using the same method
+
+**5.Test and download the list**
+
+After setting the quotation, return to the quotation page.
+
+In the customization tool, drag the model with the Quotation category set into the scene, modify the depth, and download the list to see if the Quotation is correct.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907947495/928C1DE8F1BFF1F605DC8F1667B1BD4E.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907951393/53426963C74A4BAE5E88D024A2D13259.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907953533/80AD26F5ED7B74F5EAC59FFB76C06A12.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733907956101/9FF961EA4EE93F5A98B049FF3A27415D.png)
+
+If the dragged-out model has no Quotation, it may be due to the following reasons:
+
+1.There is a buffering time between the front and back end, and it takes some time for the front-end data to synchronize after adding the Quotation category.
+
+2.The dragged-out model is not associated with the model Quotation category.
+
+3.The current material is not associated with the material classification defined in the quote rule, so replace it with a material that has been set with a quote category.

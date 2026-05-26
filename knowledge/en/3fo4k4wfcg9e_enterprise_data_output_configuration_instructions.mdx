@@ -1,0 +1,41 @@
+---
+title: "enterprise-data-output-configuration-instructions"
+description: "Through data output settings, modify the production docking JSON-related output results to meet the requirements of the production backend software docking."
+---
+
+Through data output settings, modify the production docking JSON-related output results to meet the requirements of the production backend software docking.
+
+# For Users
+
+**Enterprise users** with relevant permissions. If you have any needs, please contact CSC for consultation.
+
+# Entrance
+
+In the merchant backend under **Enterprise Catalog - Product Catalog - Advanced - Production Output - Data Output Settings**, configure as needed.
+
+![](https://qhstatic-us-s3.coohom.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png)
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1774420337634/D24BB1296A03084B5DC8F0FAE3A4FB0B.png)
+
+![](https://qhstatic-us-s3.coohom.com/image/png/1774420362310/7A5E1330787A0C31C549509CBF81B3C4.png)
+
+# Data Output Settings
+
+In the data output settings, it includes **Reference Name, Current Value, Field Templates can be Output, Empty Fields, Output Accuracy, Custom Output Field Information, List JSON Output**, and **Other Settings**. Details are as follows:
+
+| Function Item | Function Description | Associated Help Document |
+| --- | --- | --- |
+| Reference Name | Modify the reference name of system variables for models to adapt to backend software. After modification, the variable reference name in parameters will be changed to the modified value. | / |
+| Current Value | Modify the current values of material, style, and contour variables. In the output JSON, quotationValue, originalValue, and value of these variables will be adjusted to configured name/ID/model/product code/custom encoding. | / |
+| Field Templates can be Output | You can configure the field contents of the scheme's JSON output. After modification, when downloading JSON in the tool or using OpenAPI to obtain JSON, file contents will be output based on this configuration. | / |
+| Empty Fields | If you don't want variables with empty values to be output, modify here. Variables with empty values will not appear in JSON after modification. | / |
+| Output Accuracy | Modify the precision of coordinates and size in JSON. Note that this modification does not affect precision display in the tool. | / |
+| Custom Output Field Information | Support adding fields at the solution level and outputting them in Inventory JSON/Solution JSON/API. | / |
+| Other Settings - Docking Allowance | Support setting whether to include docking allowance when outputting generated lines (including corner lines and countertop water barriers). Detailed logic can be found in the help document. | / |
+| Other Settings - Output Line in Segments | Merchants can decide whether lines are processed in segments based on their docking/pricing requirements. Without segmentation, pricing follows the whole line, and profileSegments are not output in JSON. | / |
+| Other Settings - Combination Model Ownership | Merchants can set whether the room ownership of sub-models under combination models follows the combination. This setting only affects pricing and production docking JSON and does not affect the room ownership in drawings or design tools. | / |
+| Other Settings - XML Settings | Support modifying XML LineNo values directly taken from the product number. | / |
+| Other Settings - Boolean Modeling Production Docking | Merchants can enable configuration as needed. After enabling, Boolean modeling applied to models will generate dockable contour data. Currently, only planar panels are supported. Abnormal models and sweep extruded lines are not supported. Errors in the solution may cause JSON generation failure. | [[Enterprise] Boolean Modeling Production Docking Configuration Instructions](https://www.coohom.com/en_US/helpcenter/enterprise-boolean-modeling-production-docking-configuration-instructions?kjl_source=hc) |
+| List JSON Output | Support defining the model variables output in Inventory JSON. After modifications, corresponding variables will be output in the JSON of inventory reports. | / |
+
+The above settings apply globally regardless of the tool line where they are configured.

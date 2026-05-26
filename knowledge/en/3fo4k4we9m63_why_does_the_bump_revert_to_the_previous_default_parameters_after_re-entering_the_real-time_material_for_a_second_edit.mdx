@@ -1,0 +1,12 @@
+---
+title: "why-does-the-bump-revert-to-the-previous-default-parameters-after-re-entering-the-real-time-material-for-a-second-edit"
+description: "Problem"
+---
+
+# Problem
+
+After entering secondary editing for real-time material, the bump will revert to the previous default parameters.
+
+# Solution
+
+The current logic for real-time material backend: bump set to 0 is not saved. If clients require an effect with no bump, they need to upload a white map or set the bump value to 0.1.

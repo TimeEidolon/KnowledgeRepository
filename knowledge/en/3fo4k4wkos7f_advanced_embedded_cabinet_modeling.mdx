@@ -1,0 +1,124 @@
+---
+title: "advanced-embedded-cabinet-modeling"
+description: "Definition**"
+---
+
+**Definition**
+
+Establish the cabinet structure model in the form of components to adapt to the cabinet.
+
+**I. Creation Position**
+
+Custom Furniture—Create Asset—Parametric Model Library— New—
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921294670/5DDA9FE4D9660CC01B658B88CFE4F0A1.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921295653/AB69674FB5344F92C666E7B98D5FF096.png)
+
+**II. Parameter Configuration: Custom Parameters**
+
+Width (W) - Represents the size of the model in the X direction. The value type can be set as optional or within a range (e.g., range 300-1200, current value 450).
+
+Depth (D) - Represents the size of the model in the Y direction. The value type can be set as optional or within a range (e.g., range 200-900, current value 400).
+
+Height (H) - Represents the size of the model in the Z direction. The value type can be set as optional or within a range (e.g., range 300-1200, current value 450).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921299565/8F4CC9F811FB5DDC1EB47AA5A817625C.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921303050/55539CD3BC68BE7F5E2199F12CBCD069.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921305151/9E788D2E49BA48C1DF778E969BE4D41C.png)
+
+Material selection: Choose a default material, representing the color of the embedded decorative cabinet.
+
+Advanced parameter setting - Facilitate the frontend design selection of whether there is a back panel.
+
+Parameter name: "Back Panel," reference name: "beiban," options: "Yes," "No," default: "Yes."
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921306330/6ECBE39D7C9319BD47AB636465A96CA7.png)
+
+**III. Modeling**
+
+Click on the component library - Semi-finished Products Library to call up the pre-made vertical panel.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921309881/3C98D596B4A0B7050AF7E6073AD3F0FD.png)
+
+Double-click on the horizontal and vertical panels in the right structure navigation, change the name to "Left Side panel."
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921311482/05F8E21BE2E216084CE5AD5DBD6C985C.png)
+
+Set the physical properties of this panel:
+
+Width: 18, Depth: #D, Height: #H.
+
+Position X: 0; Position Y: 0; Position Z: 0.
+
+Rotation X: 0; Rotation Y: 0; Rotation Z: 0.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921313524/47CD1321E715F94B9C765E08B45328D6.png)
+
+Right-click on the panel model and choose "Copy," or select the model in the structure navigation and right-click to copy, obtaining a copy named "Right Side panel." Similarly, modify the panel name for the right side.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921314733/E086D9BD68DBC8D892718F1D1F1E734E.png)
+
+Set the physical properties of the right side panel:
+
+Width: 18, Depth: #D, Height: #H.
+
+Position X: #W-18; Position Y: 0; Position Z: 0.
+
+Rotation X: 0; Rotation Y: 0; Rotation Z: 0.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921317651/283A6A042DEC9402B94FC1D061BEF7B8.png)
+
+Click on the Part library - Semi-finished Products Library, and insert a flat panel.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921319851/9E36B37571B888BE316D96D277FB755F.png)
+
+Change the name to "Top panel" and set the physical properties:
+
+Width: #W-18\*2, Depth: #D, Height: 18.
+
+Position X: 18; Position Y: 0; Position Z: #H-18.
+
+Rotation X: 0; Rotation Y: 0; Rotation Z: 0.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921324070/365A08F8E1BB6A8E1B1878BE3B7EEEEC.png)
+
+Copy the top panel and edit the physical properties to obtain the bottom panel.
+
+Width: #W-18\*2, Depth: #D, Height: 18.
+
+Position X: 18; Position Y: 0; Position Z: 0.
+
+Rotation X: 0; Rotation Y: 0; Rotation Z: 0.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921326733/0E1AC3B43BAE9335DFA3D8220F6F53AE.png)
+
+Click on the sub-model library - Semi-finished Products Library, insert a vertical panel, and rename it as "Back Panel."
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921330013/A9414F1812CDEEE646A1488D45D03D42.png)
+
+Set the physical properties of the back panel:
+
+Width: #W-18\*2, Depth: 18, Height: #H-18\*2.
+
+Position X: 18; Position Y: -2; Position Z: 18.
+
+Rotation X: 0; Rotation Y: 0; Rotation Z: 0.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921334276/A1DE8D114330DABEFAE4BE3614287626.png)
+
+Set the hide condition for the back panel:
+
+#beiban=="No"
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921337467/00F469D5EA29B3D2F328D42C36DFB4FC.png)
+
+**IV. Check the model and save it to the library:**
+
+Modify the extreme dimensions of the model and see if the model changes correctly.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921340959/E84F2B152CF36D9CE470A81C1526D6F1.png)
+
+After confirming there are no errors, click on the file in the upper right corner, select "Save," choose the subdirectory for saving, give it a name, and click "Save."
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921344089/DE9AD5AC28E81EA58789506282F0A672.png)
+
+On the backend page, find the model, select it, and click "Initialize" to place it in the library.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733921344882/2E389CF5496B45453D27F4A57F597BE6.png)

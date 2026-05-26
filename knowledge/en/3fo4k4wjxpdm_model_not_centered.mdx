@@ -1,0 +1,143 @@
+---
+title: "model-not-centered"
+description: "Reasons for Model not Centered are:​"
+---
+
+Reasons for Model not Centered are:​
+
+### 1. Redundant elements exist outside the model
+
+*Solution: Delete other redundant elements and only keep necessary ones.*
+
+Open .max file. Right-click your mouse to open the menu list in the viewport. And click **Unfreeze All** and **Unhide All** two options.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853861263/C164EA9129833D65E97F421A53BAC49D.png)
+
+Switch to front view (hotkey F) and press Ctrl+A to select all elements in the viewport. Maximize (hotkey Alt+W) the model. And don’t forget to check the top view (hotkey T).
+
+If the contents in the viewport are as shown below, it seems that there is no other objects exist.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853863817/D6F6207B6BB602555C6DA602D6209C9F.png)
+
+However, if there has other objects, your scene should be like this.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853865324/D2F110DC9E965B58532F26CB4D88C9AE.png)
+
+Then, find the redundant objects and **Delete** them.
+
+Another situation is that there are some tiny elements that we cannot find exist in the model. Under this circumstance, we should select the target model and right click to choose **Freeze Selection**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853866322/F0B43EF0060E960763789F4D79400A5A.png)
+
+After freezing the current selection, Ctrl+A to only select the redundant elements. The previous step has already excluded the target model.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853868131/E7B273956E65766D7D33574DB25697F5.png)
+
+Then, press **Delete**.
+
+​
+
+### 2. Reactors exist in the 3ds Max model
+
+*Solution: Delete reactors (hotkey H).*  
+​
+
+Right click to **Unfreeze All** and **Unhide All**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853869208/45B15D9A5EDC5DA8B8A98B04A5EDAD06.png)
+
+Then, we may see plenty of dots in the scene.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853870387/F9DBE738119F0F2CF88B1BDFCF0A4693.png)
+
+Press hotkey H.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853871187/9C8C78684DB5E2BAD984FA4ABDB4C87C.png)
+
+Toggle off **Shapes** and **Geometry**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853871987/E7F666558A8DD530390E40EE1074CB20.png)
+
+Then, the software only displays other elements and reactors, excluding shapes and geometry.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853872773/5E912211CC1C4B4885A15CB32FD98DA3.png)
+
+Ctrl+A to select all. Press **OK**. Then, **Delete**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853875139/381AA7FFF8C27835371C88F32E120AD9.png)
+
+### 3. The model has no effect elements
+
+*Solution: Press J to select the entire model. Then detach and delete unnecessary elements.*
+
+If the first solution failed for some problems, we should select the model and press J to see whether the model frame tightly wraps the model.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853877261/03AEE45A91D88940BE999B80BB078340.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853877853/045A9026D8C0E862A52AE4ADE0EB9EF2.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853879545/693FC8C9211463ADA472941CFE595D93.png)
+
+The situation shown in the above figures is quite normal. If you are not sure whether the model will be uploaded successfully, click **Reset XForm**.
+
+After you reset, the element will be like this.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853880182/C7D573D188B5493BBEB06FA8CAC86DB3.png)
+
+If the model really has no effect elements, you may see:
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853880974/6A4BCBB09FB508F1DD52B9C2C6BB9B80.png)
+
+To solve this problem, you should select the no effect element first. If there are too many elements in the scene, you can select target elements and right click to **Hide Unselected**. Then, only target elements remaining.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853881703/6A65C21F3E07E7ABD1F04071F41D0030.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853882577/5D711B411019D215676CDC9C6C53BC68.png)
+
+Then, select the object and right click to **Convert to Editable Mesh**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853883602/2327C8504571381E98CAB0A427B648B2.png)
+
+Click **Elements.**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853884391/6BE00A6ABF02073119615A1D674479ED.png)
+
+Then click the object to turn it red.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853886195/ADAA2A8DA8D5C4DA866001C07964E8D6.png)
+
+Finally, click **Detach**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853886959/F17F21C56A735A0791672BE326B73C48.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853887973/7DD0FD9F986262C4724D9AD0A2E35208.png)
+
+Click **Elements** again.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853888692/70B8950495E7EB524B3838FB0F4F8EDE.png)
+
+At this time, do not click the scene! Press **Delete** to remove the no effect element.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853890203/2AFB9B0B044CC7FBF4D7B1A3B2452F8E.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853891609/CBB426152DA5E1921F8D9C21D6FDA8B0.png)
+
+Now, the problem got fixed! Right click to **Unhide All**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853892945/0A3849E364C1160FE55B13EEB88D2CFB.png)
+
+### 4. Commands of world-space modifier
+
+*Solution: Find and delete commands.*
+
+If there is no problems with your model, remember to check the WSM.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853895213/712DAED659D9F8E4CE4CF1F2B84D5E79.png)
+
+World-space modifier has many commands but not all the commands can cause this situation. If you want to figure out whether your model has this problem, you should convert it to editable mesh. If the command did not disappear, please try the following steps (especially Hair and Fur material).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853896586/B4100606932FC058E7C49E4C92B9F535.png)
+
+Find the command in the WSM and right click to choose **Collapse To**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853897595/E6860C4B4B1C6B1CFC585D85236A4278.png)
+
+Click **Yes** in the **Collapse To** window.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853899428/57E45299AD8DCA562B48870A24508474.png)
+
+Then group your model and coordinate values return zero.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853900388/98150488B0C7ACE37AACB382E0429396.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853901531/AD0C175C1FBCCF447790A4522D7E649F.png)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733853902566/ECD8CBEBF613F765A636CF3AFBCF0E40.png)
+
+Archive your file.

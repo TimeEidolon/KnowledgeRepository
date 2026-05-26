@@ -1,0 +1,20 @@
+---
+title: "3d-model-how-to-solve-the-issue-of-material-textures-disappearing-when-using-the-speed-light-template-for-rendering"
+description: "Problem"
+---
+
+# Problem
+
+Using the fast light template to render material maps causes them to disappear
+
+# Self-check
+
+Open the material map you need to check and find that the material is missing the uvwgen key node.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505314313/A7960AF752F1068826068DE8F1A28D1E.png)
+
+# Solution
+
+Re-import this map, change the map to Explicit Map Channel (which is the default)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505314310/771F3F2EE26519CBEFC5BD747B3BB528.png)

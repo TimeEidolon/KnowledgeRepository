@@ -1,0 +1,94 @@
+---
+title: "beginner-guide-arc-kickboard-modeling"
+description: "Contents**"
+---
+
+**Contents**
+
+**I. Definition**
+
+**II. Function Entry**
+
+**III. Configuration Steps**
+
+**I. Definition**
+
+The arc kickboard is one of the components used in modeling arc cabinets.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898424228/C8C6977799A4A28773C362A616BA6246.png)
+
+**II. Function Entry**
+
+Enterprise Catalog-Custom Products-Product Catalog- Kitchen&Bath, Custom Furniture-Create Asset- Click “Parametric Model Library”- New- Interim Parts- Cupboard panel
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898426039/6608B31972784DBC7B04E2DF61182758.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898428502/C2BA3D4C34B1421F7B44FAE54DD1B0DE.png)
+
+**III. Configuration Steps**
+
+1.Width (W) - Represents the size in the X-axis direction. The value type can be set as optional (e.g., optional values 300, 400, 500,..., 2400, current value 600) or a range (e.g., range 300 to 2400, current value 600).
+
+2.Depth (D) - Represents the size in the Y-axis direction. The value type can be set as optional (e.g., optional values 300, 400, 500,..., 1200, current value 500) or a range (e.g., range 300 to 1200, current value 500).
+
+3.Height (H) - Represents the size in the Z-axis direction. The value type can be set as optional (e.g., optional values 30, 40, 50,..., 200, current value 100) or a range (e.g., range 30 to 200, current value 100).
+
+4.Add an advanced parameter named "Arc Radius" with reference name R. The value type can be set as optional (e.g., optional values 10, 20, 30,..., 300, current value 300) or a range (e.g., range 30 to 300, current value 300). Click "Create."
+
+5.Material can be kept as default or modified according to specific requirements.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898430004/D90F56200328DEB820F15E71BD9BC2BE.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898431456/BF44EF7615D5BF61221C62FB195C2782.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898432055/0B9877AB9C65E99CAF9CE33F0C646F48.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898433573/27F4C785362E7BECDD3A1B1DE3742E77.png)
+
+**3.Insert Flat Panel**
+
+1.Insert the flat panel from the element library.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898435979/23A5BE507101A830CD86D4FA4CA6451A.png)
+
+2.Click "Edit Contour" to create points.
+
+Point 1: 0,0
+
+Point 2: 0,18
+
+Point 3: #W-18,18
+
+Point 4: #W-18,#D
+
+Point 5: #W,#D
+
+Point 6: #W,0
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898436830/16ED8E70B709A8E1AC318D9B7C0B6FE7.png)
+
+For Point 3, change the corner type to "Round" with a radius of #R-18.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898438801/80A30B62301D2BA24B1EDBB2EB447B74.png)
+
+For Point 6, change the corner type to "Round" with a radius of #R. Save the changes.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898439828/38EC49F9CD22040E03F1797515DD0B09.png)
+
+Set the height as: #H.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898441557/F7D3090183C6983EB988F2D8934FBBDC.png)
+
+1. **Set Other Attributes**
+
+**Set Other Attributes**
+
+Material Angle: #CZFX (refers to the material angle direction on the top surface of the kickboard, allowing for texture modifications on the front-end).
+
+Side Material Angle: #CBCZFX (refers to the material angle direction on the side surface of the kickboard, allowing for texture modifications on the front-end).
+
+**4.Testing**
+
+Modify the current values of custom variables to test if the model dimensions are correct. Confirm at least three values: maximum value, minimum value, and a random value within the specified range. After testing, revert back to the desired current value and perform material replacement tests using different materials. Once testing is completed, revert back to the default material.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898442606/DAE5F220DC0FB685CAA67452E8A3C55B.png)
+
+**5.Save to Library**
+
+Click the file in the top-right corner, select "Save," choose the subdirectory for saving, provide a name, and click "Save."
+
+In the backend page, locate the model and select it for storage.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733898443603/285C6EA878190E3CF0F798913FB4AFD6.png)

@@ -1,0 +1,88 @@
+---
+title: "photo-studio-supports-multi-dimensional-model-snapping-and-alignment"
+description: "Function Overview**"
+---
+
+# **Function Overview**
+
+* The model alignment and snapping feature includes two main types of operations: alignment (axis point alignment, bounding box alignment) and snapping (bounding box snapping, object surface snapping). It also supports one-click grounding for quick positioning, enabling multi-object calibration and efficient placement. This feature meets various position adjustment needs during scene setup.
+
+# **Function Value**
+
+* Efficiency Improvement: Batch process multiple object positions, reducing 80% of repeated manual adjustments, significantly speeding up scene setup.
+* Accuracy Guarantee: Real-time highlight snapping/alignment prompts reduce position error to millimeter-level, avoiding manual placement deviation issues.
+* Focus on Creativity: Freeing designers from tedious calibration, allowing greater focus on overall scene coordination and creative design, indirectly improving image/video quality.
+
+# **Feature Introduction**
+
+## 1. Model Alignment
+
+* Supports two alignment methods, "Axis Point" or "Bounding Box" to quickly calibrate multiple objects to a unified position baseline.
+* Operation Entry: 3D Shooting Workbench - Press 【Shift】 to select multiple objects to align - Right Panel - 【Objects】-【Alignment】
+
+![](https://qhstaticssl.kujiale.com/image/png/1773626939694/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+**a. Axis Point Alignment**
+
+* Align the X/Y/Z axis points of the targeted models precisely to the corresponding axis coordinates of the reference object, achieving "point-to-point" accuracy.​
+
+* Diagram (Yellow model as the reference object):
+
+|  |  |  |
+| --- | --- | --- |
+| **X-axis Alignment** | **Y-axis Alignment** | **Z-axis Alignment** |
+| Front View | Top View | Front View |
+
+**b. Bounding Box Alignment**
+
+* Based on the reference model's bounding box (the minimum enclosing box in three-dimensional space), supports alignment of minimum values, maximum values, and center points along X/Y/Z axes.
+
+  + For example, along the X-axis, the left side of object A can align with the left side of object B, or the right side of A can align with the left side of B. Perform alignment operations as needed.
+
+* Diagram (Yellow model as the reference object):
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| **X-axis** |  |  |  |  |  |
+| **Y-axis** |  |  |  |  |  |
+| **Z-axis** |  |  |  |  |  |
+
+💡 Reference Object Settings:
+
+* Default Reference Object: When selecting multiple objects, the last selected object is the default reference object.
+
+* Reference Object Adjustment: Hold 【Ctrl】 + Left-click on the target object. When the object displays a blue-green wireframe, it indicates the reference object switch is successful.
+
+## 2. Model Snapping
+
+**a. Bounding Box Snapping**
+
+* Operation Entry: 3D Shooting Workbench - Top Toolbar - 【Snap】-【Bounding Box】
+
+* When moving the model close to other objects' bounding boxes, it automatically snaps.
+* Supports snapping multiple surfaces simultaneously.
+
+* Press 【Ctrl】 and drag the model to cancel bounding box snapping.
+
+**b. Object Surface Snapping**
+
+* When moving the snapping object, the system automatically snaps it to the nearest object surface, with the model rotating along the surface angle for precise attachment.​
+* During snapping, the "snapping surface of the model" and "surface of the target object" are both highlighted in real time, providing a clear prompt for attachment position.
+* Common scenarios:​
+
+  + Wall art → Automatically attaches to the wall;​
+
+* + Pendant lights → Snaps to the ceiling;​
+  + Sofas → Align to the floor;
+  + Decorations → Flexibly snap to tables, countertops, and other surfaces.
+
+## **3. One-Click Grounding**
+
+* Used to quickly align selected models to specific planes in the scene, typically the ground or other baseline planes (such as exhibition platforms, tables, etc.).
+
+* Operation Entry: 3D Shooting Workbench - Select model/object - Toolbar - One-Click Grounding
+* Shortcut Key: G
+
+![](https://qhstaticssl.kujiale.com/image/png/1773626995919/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+⚠️ Note: Models bound with "Parent-child relationships," "Follow constraints," or "Target constraints" cannot use one-click grounding or model alignment.

@@ -1,0 +1,22 @@
+---
+title: "render-how-to-edit-floor-materials-during-real-time-rendering"
+description: "Problem"
+---
+
+# Problem
+
+When entering the real-time rendering feature, the floor material cannot be edited.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134370613/C07E7105CDFD547882D11F7E5A2AA16E.png)
+
+# Reason
+
+When the Finishes is selected as a whole (such as the floor), it actually selects multiple different materials in bulk. You can only replace materials but cannot edit them, so it is impossible to define which one of these materials you want to edit.
+
+# Solution
+
+1. Directly select non-multi-surface materials during the selection phase.
+
+2. If a similar texture effect is necessary, manually copy the single-surface material.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134370509/04335F8661427B14F0042FBDCE0ECC4D.png)

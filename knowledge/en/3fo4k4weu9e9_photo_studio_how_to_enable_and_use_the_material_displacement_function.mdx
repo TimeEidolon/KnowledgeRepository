@@ -1,0 +1,56 @@
+---
+title: "photo-studio-how-to-enable-and-use-the-material-displacement-function"
+description: "Function Overview"
+---
+
+# Function Overview
+
+Displacement is a common feature used to create realistic textures. Unlike bump or normal parallax effects, displacement creates many details by deforming the model, often used to add extra detail effects to low-resolution models. To create details with a displacement map, the model is generally subdivided so that a true topology can be created.
+
+# For Users
+
+All photo studio users
+
+# Material Displacement Feature Entry
+
+## 1. First, you need to turn on the "Rendering Complex Material" switch in the [Post Processing] section
+
+![](https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+Note: Once "Rendering Complex Material" is enabled, the real-time preview response speed will decrease, and rendering time will increase when the displacement feature is applied.
+
+## 2. Then click the target product model, select the corresponding material in the [Model] section, and a "Displacement" feature entry will appear for you to operate as needed.
+
+![](https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+# Introduction to the Use of the Displacement Feature
+
+## 1. Comparison Before and After Adding the Displacement Feature
+
+Before adding displacement:
+
+![](https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+After adding displacement:
+
+![](https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+## 2. The Displacement Feature Requires a Displacement Map to be Effective, for example:
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png)
+
+## 3. The Main Parameters Are: Displacement Strength, Subdivision Level
+
+* Displacement Strength: Controls the strength of the displacement effect
+* Subdivision Level: The level of subdivision of the model corresponding to the displacement material. The same material displacement parameters will have different effects on models with different numbers of polygons. Models with more polygons will have richer displacement details. Additionally, the higher the level, the more detail the displacement effects have.
+
+## 4. After the Displacement Material is Saved, the Subdivision Parameter Will Reset to 1 Next Time It is Called
+
+## 5. Material Displacement Feature Video Tutorial:
+
+![](https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif)
+
+Note:  
+1. Enabling the displacement feature will decrease real-time preview response speed  
+2. After editing the displacement material and saving it to the personal library, you will need to reset the "Subdivision Level" next time it is called  
+3. The level of subdivision depends on the number of polygons in the model. If the model has a large number of polygons, a lower subdivision level setting can achieve a sufficient displacement effect. In theory, the higher the subdivision parameter, the better the displacement effect, but it also greatly increases the risk of rendering failure.

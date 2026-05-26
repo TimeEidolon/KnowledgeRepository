@@ -1,0 +1,238 @@
+---
+title: "beginner-guide-door-frame-and-track-upload-settings"
+description: "Definition"
+---
+
+### Definition
+
+Introduction to contour line operations involved in uploading and creating a parameterized border component for sliding doors:
+
+A single-panel sliding door is primarily composed of a border, door core, and waistline. The construction of the border involves developing the contour sections of each border. This also includes the development of the upper and lower guide rails for the sliding door using similar techniques. Therefore, it is crucial to understand the various parameters of these contour sections.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888528011/ECC2BDDB9ED60628475218A7D8F2ABD5.png)
+
+1. Vertical frame parameter expression and the meaning of notch parameters, as well as considerations when uploading vertical frames
+
+### Vertical frame parameter expression and the meaning of notch parameters, as well as considerations when uploading vertical frames
+
+1. In the example diagram, the vertical frame section is shown. The vertical frame is divided into door core notches and horizontal frame notches.
+
+In the example diagram, the vertical frame section is shown. The vertical frame is divided into door core notches and horizontal frame notches.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888529424/5A93BF107B0449B7582B4060B300B810.png)
+
+1.2 The placement direction of the vertical frame outline on the CAD drawing is as shown in the above figure:
+
+1.3 Door core notch: Used to calculate the dimensions of the door core and define its position.
+
+Horizontal frame notch: Used to calculate the dimensions of the horizontal frame and define its position.
+
+Calling method for the door core notch:
+
+- X-axis direction: `#SK.b1.x`
+
+- Y-axis direction: `#SK.b1.y`
+
+Calling method for the horizontal frame notch:
+
+- X-axis direction: `#SK.b2.x`
+
+- Y-axis direction: `#SK.b2.y`
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888530985/D1BEEE425E647AF83CAE483E03B3F6AF.png)
+
+1.4 In the editor, the parameters representing the size of the vertical frame outline are as follows:
+
+- `#SK.d` represents the thickness of the vertical frame outline.
+
+- `#SK.w` represents the width of the vertical frame outline.
+
+These variables are system defaults and do not require creating new ones.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888531595/C23B0278B6B515543C52D86CA240BBB8.png)
+
+1.5 Upload the vertical frame outline by selecting the completed vertical frame outline file. The method for creating the outline is described in the outline line production requirements.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888532634/3922EED217D72D77E9FDE9A146A51C03.png)
+
+1.6 When uploading the vertical frame, select the line profile as the vertical frame outline. Fill in the corresponding values for the door core notch and horizontal frame notch by measuring them.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888533353/46450E055BC7391E7DF8C9290546BCDE.png)
+
+Door core notch: `#SK.b1.x`, `#SK.b1.y`
+
+Horizontal frame notch: `#SK.b2.x`, `#SK.b2.y`
+
+Note: These parameters represent the actual dimensions measured on the drawing. Different profiles may have different corresponding notch parameters.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888535206/EA2A9672173D73A9DD3357A8C69642B5.png)
+
+1. Description of the upper horizontal frame parameters, the meaning of bayonet parameters, and precautions for uploading the upper horizontal frame
+
+### Description of the upper horizontal frame parameters, the meaning of bayonet parameters, and precautions for uploading the upper horizontal frame
+
+2.1 The upper crossbar only has core checkpoints.
+
+2.2 The placement direction of the upper crossbar outline on the CAD drawing is as shown in the figure
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888536576/D1A1E4BA28F797314D05BA4E7D902814.png)
+
+2.3 Core Checkpoint: It is used to calculate the dimensions of the core and define its position.
+
+The method of calling the core checkpoint is as follows:
+
+In the X-axis direction: #SHK.b1.x
+
+In the Y-axis direction: #SHK.b1.y
+
+2.4 The parameters in the editor representing the size of the upper crossbar outline are as follows:
+
+- #SHK.d represents the thickness of the upper crossbar outline.
+
+- #SHK.w represents the width of the upper crossbar outline.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888537213/FC1116E1C38E378A239E4C0EAFFC297E.png)
+
+2.5 When uploading the upper crossbar contour, select the completed upper crossbar outline (the method of creating the outline is described in the contour production requirements).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888539303/D57484AAC841A70E2367322CAABEC127.png)
+
+2.6 When uploading the upper crossbar, select the line type as "Upper Crossbar contour" and fill in the corresponding checkpoint parameter values by measurement.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888540165/53ED605BF36A240036DD0C525652E765.png)
+
+Checkpoint parameters: #SHK.b1.x, #SHK.b1.y
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888541834/C2179AB0D14144B97C2C7C7C659E6348.png)
+
+1. Description of the lower horizontal frame parameters, meaning of bayonet parameters, precautions when uploading the lower horizontal frame
+
+### Description of the lower horizontal frame parameters, meaning of bayonet parameters, precautions when uploading the lower horizontal frame
+
+3.1 As shown in the example diagram, the lower crossbar section consists only of core checkpoints. The checkpoints are used to calculate the dimensions of the core and define its position. The checkpoint parameters are set on each border of the lower crossbar.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888542419/609EFDA01B0AAD400FF8C35CA301B3B3.png)
+
+3.2 The placement direction of the lower horizontal outline on the CAD drawing is shown in the figure
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888543776/E233E96C6C4668949418750ECF600CC1.png)
+
+3.3 Core Checkpoint: It is used to calculate the dimensions of the core and define its position.
+
+The method of calling the core checkpoint is as follows:
+
+In the X-axis direction: #XHK.b1.x
+
+In the Y-axis direction: #XHK.b1.y
+
+3.4 The parameters in the editor representing the size of the lower crossbar outline are as follows:
+
+- #XHK.d represents the thickness of the lower crossbar outline.
+
+- #XHK.w represents the width of the lower crossbar outline.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888544414/A85AA2E0D88A2C4C993607F56261B835.png)
+
+3.5 When uploading the lower crossbar outline, select the completed lower crossbar outline (the method of creating the outline is described in the outline production requirements).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888546948/23F12CA957C80B08AE37F99AB3C48951.png)
+
+3.6 When uploading the lower crossbar, fill in the corresponding values for the core checkpoint and select the line type as "Lower Crossbar contour."
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888548569/F6680BA21D444D84320D2A3D73C77A52.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888550750/BD32503AFC00D793AD65DF7B45FC831E.png)
+
+Checkpoint parameters: #XHK.b1.x, #XHK.b1.y
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888551337/E9336A5CD505F5ED853152DEC1022D60.png)
+
+1. Description of horizontal frame parameters, meaning of bayonet parameters, precautions when uploading horizontal frame
+
+### Description of horizontal frame parameters, meaning of bayonet parameters, precautions when uploading horizontal frame
+
+4.1 As shown in the example diagram, the middle crossbar section is divided into upper and lower checkpoints. These checkpoints are used to calculate the dimensions of the core and define its position. The checkpoint parameters are set on each border of the middle crossbar.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888551960/4CA630E38163BEBBD8C12E7FDE317EFF.png)
+
+4.2 The placement direction of the outline of the middle horizontal frame on the CAD drawing is shown as follows:
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888552759/1D63C70C2ADD837477C214E8E8641DC8.png)
+
+4.3 Upper and lower checkpoints: Used to calculate the dimensions of the door core and define its position.
+
+The calling method for the upper checkpoint on the transverse frame is as follows:
+
+In the X-axis direction: #ZHK.b1.x
+
+In the Y-axis direction: #ZHK.b1.y
+
+The calling method for the lower checkpoint on the transverse frame is as follows:
+
+In the X-axis direction: #ZHK.b2.x
+
+In the Y-axis direction: #ZHK.b2.y
+
+4.4 Parameters representing the size and shape of the transverse frame outline in the editor:
+
+#ZHK.d represents the thickness of the transverse frame outline,
+
+#ZHK.w represents the width of the transverse frame outline.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888553375/51682F7CDE719946A43BC269086F60DF.png)
+
+4.5 To upload the transverse frame outline, select the completed transverse frame outline (the method for creating the outline is explained in the contour line production requirements).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888554488/167B286BC0AF02FA80D8D6E3AA19AEC0.png)
+
+4.6 When uploading the transverse frame, fill in the corresponding values for the upper and lower checkpoints, and select the line type as "transverse outline."
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888555331/8A7988D2BED80F9A71CB1C86EE3F9482.png)
+
+Upper checkpoint: #ZHK.b1.x, #ZHK.b1.y
+
+Lower checkpoint: #ZHK.b2.x, #ZHK.b2.y
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888556853/2CC999F8459261A949E33B8DCDF9509F.png)
+
+1. Description of upper guide rail parameters, meaning of bayonet parameters, precautions when uploading upper guide rail
+
+### Description of upper guide rail parameters, meaning of bayonet parameters, precautions when uploading upper guide rail
+
+5.1 As shown in the diagram, the upper sliding track has a front checkpoint and a rear checkpoint (checkpoint: determines the position of the sliding door).
+
+5.2 The placement direction of the upper sliding track outline on the CAD drawing is depicted in the diagram on the right.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888558441/5EA8C76B946E2D83DD98E743CF2FAE3D.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888559316/8ED4FD6637F281958056C85D654296B6.png)
+
+5.3 The front and rear checkpoint dimensions in the X direction: Used to allocate space for the positioning of the pulleys. Please fill in the actual dimensions based on the size of the pulleys.
+
+The front and rear checkpoint dimensions in the Y direction: Used to determine the position of the generated sliding door in the depth direction.
+
+5.4 To upload the outline of the upper sliding track, select the completed outline of the upper sliding track (the method for creating the outline is explained in the contour line production requirements).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888560412/FFAD25108CD617E125A5B241448D00A8.png)
+
+5.5 When uploading the upper sliding track, fill in the corresponding values for the front and rear checkpoints, and select the line type as "upper sliding track outline."
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888561363/09AC0F06D45924A7A6B9A8A35EF1F7E5.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888562191/9AA76EFB3339D60547410375B4D0855B.png)
+
+1. Slide rail parameter expression, and the meaning of bayonet parameter, precautions when uploading slide rail
+
+### Slide rail parameter expression, and the meaning of bayonet parameter, precautions when uploading slide rail
+
+6.1 As shown in the diagram, the lower sliding track has a front checkpoint and a rear checkpoint (checkpoint: determines the position of the sliding door).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888562958/A074F334AD3739875EAE074DC0F251D1.png)
+
+6.2 The placement direction of the glide rail outline on the CAD drawing is shown as follows:
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888563941/04AB49794BE4FDC46717ACBABF693C4E.png)
+
+6.3 The front and rear checkpoint dimensions in the X direction: Used to allocate space for the positioning of the pulleys. Please fill in the actual dimensions based on the size of the pulleys.
+
+The front and rear checkpoint dimensions in the Y direction: Used to determine the position of the generated sliding door in the depth direction.
+
+6.4 To upload the outline of the lower sliding track, select the completed outline of the lower sliding track (the method for creating the outline is explained in the contour line production requirements).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733888565021/5BB834CAA53A77A35043A95DE52D8484.png)
+
+6.5 When uploading the lower sliding track, fill in the corresponding values for the front and rear checkpoints, and select the line type as "lower sliding track outline."

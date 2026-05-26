@@ -1,5 +1,5 @@
 ---
-title: "How to upload texture - advanced settings"
+title: "how-to-upload-texture-advanced-settings"
 description: "![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843340449/6D8EA75A56D803425CD494BB51011EC3.png)"
 ---
 
@@ -18,6 +18,7 @@ Please note that by changing displacement maps and refractions, refraction gloss
 **Color Correction**: Basic Color properties of texture you are uploading, including hue,
 
 saturation, brightness, and contrast.
+
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843345213/FFDB938394E9960E2B9B6D04896681D3.png)
 
 **Diffuse Reflection**
@@ -27,6 +28,7 @@ Color: controls the surface color of the material
 Proportion: the mixing ratio of color and texture, the larger the value, the more obvious the texture effect
 
 Diffuse map: use the map to control the corresponding surface color texture in the material
+
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843350210/06FE0AA3E993D14AD4797EC1D5621A58.png)
 
 **Reflection**
@@ -47,6 +49,7 @@ Reflection Map: Use the map to control the gloss of the corresponding pixel posi
 Reflection Glossiness Map: Use the map to control the corresponding surface roughness in the material, black rough, white smooth
 
 Scale: The mixing ratio of the value and the map; is used to control the mixing ratio of the reflection glossiness value and the reflection glossiness map, and it can also be used to control whether all the reflection glossiness map or all values ​​are used. When the value is 1, it is controlled by the texture; when the value is 0, it is controlled by the numerical value; when the value is an intermediate value, the texture and the numerical value are mixed;
+
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843352881/A6A2D6E129214A07693BC5C367F75AB0.png)
 
 **Refraction**
@@ -63,9 +66,10 @@ Refractive index: The index of refraction indicates how light bends as it passes
 Refraction map: Use the map to control the corresponding degree of refraction in the material, black has no refraction effect, and white is glass
 
 Refraction glossiness: The clarity of refraction inside the object, the smaller the value, the more frosted it is; the larger the value, the cleaner and more thorough;
+
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843355927/4BF64F8EF502D5A3B6F7CD4A9ABAC435.png)
 
-**Bump:**Concave-convex ratio: the depth of the concave-convex, the value should not be too large, it is recommended not to exceed the default double
+**Bump:** Concave-convex ratio: the depth of the concave-convex, the value should not be too large, it is recommended not to exceed the default double
 
 **Bump original texture**: white bulge, black depression, you need to pay attention to uploading textures, preferably seamless textures to have better material effects
 
@@ -76,19 +80,15 @@ Fog Offset: Adjust the color depth of colored glass. When the value is negative,
 Fog Multiplier: Adjust the color density of the glass, there are two cases: 1. The value is about 1 when the wave is clear; 2. The value is 0.01 when the color glass is used, and the color density can be adjusted with the smoke offset
 
 Fog Color: glass color, default no color
+
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843358023/44DC2BF4A646C54B5494A0C62A1218EB.png)
-
-<br />
-
 
 ​**Opacity**: The opacity parameter is only controlled by the map. When the map is white, the object is opaque, and the black is fully transparent. The blacker the color, the higher the transparency.
 
-<br />
-
-
-​**Fresnel:**When enabled, the reflection intensity will depend on the viewing angle of the surface, and the reflections at different angles are different; it is usually locked, and the Fresnel of the object can be changed freely after the lock is turned off;
+​**Fresnel:** When enabled, the reflection intensity will depend on the viewing angle of the surface, and the reflections at different angles are different; it is usually locked, and the Fresnel of the object can be changed freely after the lock is turned off;
 
 Fresnel IOR （index of refraction）: Fresnel index of refraction of the surface of an object
+
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843360971/051D13E678F9A11537A1A41CAB488186.png)
 
 **Displacement**: Displacement maps are grayscale textures you map to objects to create true surface relief (elevations and depressions) on an otherwise flat object.
@@ -98,4 +98,5 @@ With Displacement maps, depressions and elevations become part of the geometry o
 Ratio: The replacement ratio should not be too large and can be adjusted according to actual needs
 
 Grayscale image: It can distort the overall outline of the object; unlike bump maps, which need to be rendered at an angle, after adding displacement maps, multi-angle rendering has bump effects
+
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733843364211/217A79470042EB17C73AE5C851B08DEB.png)

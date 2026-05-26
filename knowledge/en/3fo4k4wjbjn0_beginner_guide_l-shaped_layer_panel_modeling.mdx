@@ -1,0 +1,114 @@
+---
+title: "beginner-guide-l-shaped-layer-panel-modeling"
+description: "Contents**"
+---
+
+**Contents**
+
+**I. Definition**
+
+**II. Function Entry**
+
+**III. Operation Steps**
+
+**I. Definition**
+
+L-Shaped Layer Panel is a model component of the L-shaped corner cabinet.
+
+Take the modeling of an 18mm L-Shaped Layer Panel in a wardrobe as an example.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832368075/4DE5C35E543CD599115113172C7E1AFA.png)
+
+**II.Function Entry**
+
+Enterprise Catalog-Custom Products-Product Catalog- Kitchen&Bath, Custom Furniture-Create Asset- Click “Parametric Model Library”- New- Interim Parts- Cupboard panel
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832371543/B4019A8134050116A40B6533648DBC4C.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832373115/619599B387AD1A1414E624AC4D625344.png)
+
+**III. Operation Steps**
+
+Width (W) - Represents the size in the X-axis direction, and the value type can be set as selectable (e.g., selectable values: 300, 400, 500, ..., 2400; current value: 600) or within a range (e.g., range from 300 to 1200; current value: 600).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832374261/C609B18B92543D1F75FA0EAB4DF9EB67.png)
+
+Depth (D) - Represents the size in the Y-axis direction, and the value type can be set as selectable (e.g., selectable values: 300, 400, 500, ..., 1200; current value: 500) or within a range (e.g., range from 300 to 1200; current value: 600).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832375304/FEF79E0DFF80127AF8706C34E2551DF8.png)
+
+Height (H) - Represents the size in the Z-axis direction, and the value type can be set as a range (e.g., range from 10 to 100; current value: 18) or selectable (e.g., selectable value: 18; current value: 18).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832376836/E08F42C2D5508B7F71327C528D598FB7.png)
+
+Add advanced parameter: Name: Left Width, Reference: W1, Value type can be set as selectable (e.g., selectable values: 100, 200, ..., 500; current value: 300) or within a range (e.g., range from minimum value 100 to maximum value: #W-100; current value: 300), click Create.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832379184/37E814A91BCB6150CE4F2B938D66D9E4.png)
+
+Add advanced parameter: Name: Right Depth, Reference: D1, Value type can be set as selectable (e.g., selectable values: 100, 200, ..., 500; current value: 300) or within a range (e.g., range from minimum value 100 to maximum value: #D-100; current value: 300), click Create.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832381014/87727D0A458E22C16AA53A15B57F203D.png)
+
+Material does not need to be modified, indicating that the model uses the default material.
+
+**III.Insertion of Flat Panel Modeling**
+
+Insert the flat panel from the Elements.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832384293/AC793DB7EE92EF3D1FB7AEB094D36131.png)
+
+In the right panel of dimension attributes, set the height as #H.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832386122/21BF959D1E6E3457AFA91F34EB3E5799.png)
+
+Click Edit Contour to draw points.
+
+Point 1: 0,0;
+
+Point 2: 0,#D;
+
+Point 3: #W, #D;
+
+Point 4: #W,#D-#D1;
+
+Point 5: #W1, #D-#D1;
+
+Point 6: #W1,0.
+
+Click Save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832389405/D05E62C06694C4353BB10DA246C4983E.png)
+
+Set other attributes: Material Direction: #CZFX, Side Material Direction: #CBCZFX (If you need to modify these two values, modify them in the system variables).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832391867/3CF2FC81A979E4B8ED23EA1525CF1E08.png)
+
+**Save to Library**
+
+Click on the top-right corner file icon, select Save, choose the subdirectory for saving, give it a name, and click Save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832394914/2F15A93899F393C691CC6402604723C1.png)
+
+Find the model in the backend page, select the model, and choose to save it to the library.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832397344/10F4193712E96D6ACF005138958AB788.png)
+
+**Add Adaptation**
+
+1.Create a new rule for adapting corner layer panels.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832399560/B3F16CC8580021DFE528525C47F644BA.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832403877/ABFE16F4F834822B56FB0868367450F6.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832406634/874CC900E1E9EF632BAD958043C61382.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832408818/C4FCEA9C9F3C36AE2DC3CDB7841CEA58.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832410525/287EA16E98DC78440296FD37D2CC76CF.png)
+
+2.Set adaptation rules (Adaptation rules can only be set for component models).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832412897/90526ED812159B7DF7CA3E77E8534605.png)
+
+3.Click Manage Materials.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832415870/4FE42BC94112B4BAB338C0DC010CE670.png)
+
+4.Click Edit attributes - Select Layer Panel for Adaptation Behavior - Save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832417534/5BB2227DE4F3EFF2FA76ADB0CB37C904.png)
+
+5.Click Save again.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832420151/85FB9ADC8B96FDD1261EDD14DFE7EF12.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832423290/2E324ECD15C51290FD7D3A2635E99A8A.png)

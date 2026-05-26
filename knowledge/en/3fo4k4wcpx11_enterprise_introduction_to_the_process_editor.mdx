@@ -1,0 +1,80 @@
+---
+title: "enterprise-introduction-to-the-process-editor"
+description: "1. Function Introduction"
+---
+
+# 1. Function Introduction
+
+The process editor allows enterprises to freely customize craft rules while minimizing the cost of feature development and program code maintenance.
+
+The process editor, starting with countertop moldings as a pilot, assists in generating class models (including sinks and merged no-handle models), successfully unlocking multiple feature links, and continues to expand its application scenarios and business fields. A brief introduction is provided below~
+
+# 2. Process Generating Capability
+
+Custom script generation is the starting point of the craft editor. The original intention is to address different merchants having different generation demands for countertops, moldings, virtual hardware, etc. We provide a set of "ability to generate rules customized by merchants", allowing the writing of external scripts through the process editor to customize and modify the generation logic, thereby enabling personalized manipulation of the generated model results. Here are some typical case representations:
+
+## Custom Generation of Virtual Hardware
+
+**Common Issues:**
+
+In the fields of countertop moldings and handles, etc., in addition to model entities, it is often necessary to add hardware accessories. What product adds which accessories, how many, and what model are all enterprise calculation rules and are related to production quotation and delivery. Previously, it relied on designers manually adding it on the panel, which is error-prone and increases the design burden, unfavorable for management.
+
+**Feature Advantages:**
+
+To solve similar problems as described above, the process editor can be used to formulate custom rules for the merchant, configure the relationship between the main and auxiliary parts, write scripts, and automatically generate auxiliary accessories when generating model entities.
+
+## Custom Generation Logic
+
+**Common Issues:**
+
+In actual production of countertop moldings, different customers have their production specifications. For instance, how long the line is before it breaks, when to thicken the countertop, partial visible process, etc. These customized process rules will affect the actual effect of the generated model, like some merchants want the countertop flush, some do not, some lines need cutting, and some do not, so we cannot use uniform generation rules to satisfy all business scenarios, especially when there are conflicting rules.
+
+**Feature Advantages:**
+
+To address the similar issues mentioned above, the process editor can be used to adjust the generation logic within a limited scope, allowing the generated model effect to be as the script presets.
+
+# 3. Process Configuration Capability
+
+**Common Issues:**
+
+Large enterprises have strict control over production, with inherent regulations on what can and cannot be done with process. Therefore, they strictly monitor the compliance of the model drawn by designers. If a process cannot be executed, it cannot be drawn. If it can be drawn, it can be produced. Thus, the tool must strongly constrain the designer's design behavior.
+
+**Feature Advantages:**
+
+To solve issues similar to those above, the process editor can preset some conditions to configure the modifiability of front-end parameters, including: display/hide, ash, options, value range.
+
+# 4. Generation Detection Capability
+
+Even though we have applied some entry constraints on designers' operational behavior, the actions of revision and modification may cause the current model not to meet the process requirements. Therefore, it is necessary to detect the model after generation to determine if it is correct according to the previous "process configuration". Alternatively, write scripts to judge the relationship between the generated model and other models (such as between sinks and countertop fasteners), alert designers on the compliance of the current model, and achieve order interception. Unlike rule detection, the process editor has relatively flexible advantages in writing complex geometric calculation scripts and manipulating generated models.
+
+# 5. Reprocessing of Generated Models
+
+## Redefinition of Generated Model Output Parameters
+
+**Common Issues:**
+
+Generated models are a one-time transaction, with the generation script confirmed at generation, and parameter information of the model set once generation is complete. Each generated model is independent. In actual business scenarios, models are interrelated with each other and with the environment. These associations may not be related to design behavior, merely required by enterprises during output and quotation to calculate and record this information for downstream partners. If the information accompanies the model at generation, it cannot change with the environment, requiring the model to add these related information further downstream.
+
+**Feature Advantages:**
+
+To resolve similar issues above, the process editor can be used to write relationship scripts that operate model parameters when outputting data after design completion, supporting addition and modification.
+
+## Redefinition of Generated Model Product Information
+
+**Common Issues:**
+
+Generated class models differ from regular parametric models when creating products: parametric models are specific products established by users through parametric editing based on their needs, while generated class models are pre-scripted by Coohom, belonging to the public library as hidden products. Enterprises cannot customize product information of public library hidden products. Therefore, downstream backend software cannot interface with models through recognizing product codes and such.
+
+**Feature Advantages:**
+
+To resolve this issue, the process editor can be used to write mapping tables (generation parameters corresponding to product codes) and pre-store product codes corresponding to the model during generation, allowing modification of the model’s product code when exporting. Currently, modifiable product information includes: product code, model number.
+
+# 6. New Custom Variable Capability
+
+**Common Issues:**
+
+Generated model scripts being Coohom pre-written scripts do not allow users to customize generation parameters. Yet, users need to add custom variables to express auxiliary information of the generated model, and these variables must be visible, modifiable, and exportable by the frontend designer.
+
+**Feature Advantages:**
+
+To solve this problem, the process editor can be used to add custom parameters to the outline products.

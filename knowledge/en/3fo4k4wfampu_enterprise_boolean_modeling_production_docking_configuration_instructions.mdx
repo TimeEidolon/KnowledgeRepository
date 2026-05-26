@@ -1,0 +1,49 @@
+---
+title: "enterprise-boolean-modeling-production-docking-configuration-instructions"
+description: "The boolean modeling function can be used for tool front-end hardware, panel hole punching, and slotting. If you wish to obtain the results of Boolean modeling"
+---
+
+The boolean modeling function can be used for tool front-end hardware, panel hole punching, and slotting. If you wish to obtain the results of Boolean modeling during production docking, you need to proactively enable the configuration and apply it.
+
+# For Users
+
+**Enterprise users** with relevant permissions. If you have any needs, please contact CSC for consultation.
+
+# Configuring Boolean Modeling Production Docking
+
+Depending on different backend software, various boolean modeling docking logic is required. This article distinguishes between two types: TopSolid and Others.
+
+## TopSolid
+
+In TopSolid native software, it has built-in boolean capabilities, with boolean being the docking model. However, in Kujiale, the boolean model is a derived node and does not belong to the submodel node. Therefore, when docking boolean modeling with TopSolid, you need to apply for a whitelist to adjust the boolean modeling node to the submodel.
+
+|  | Original Structure | Whitelist Docking Structure |
+| --- | --- | --- |
+| JSON Structure | paramModel is at the same level as submodel, boolInterferenceModels. | Merged into submodel, identical to the submodel. |
+
+## Others
+
+For backend software that docks components, the Boolean modeling effects need to be truly applied to the underlying components. By default, only the effects are displayed. To proceed with docking, you must go to the settings.
+
+**1. Configuration Entrance**
+
+In the merchant backend **Enterprise Catalog - Product Catalog - Advanced - Production Output - Data Output Settings - Other Settings,** then turn on the switch for **Boolean Modeling Production Docking** and click **Save**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1774419931584/83D3FA6EB36A0CB293CD7B7021B74E06.png)
+
+![](https://qhstaticssl.kujiale.com/image/png/1774419940627/7AF92D494D8CD8BCFBD674B9CCE768FE.png)
+
+**2. Configuration Effects**
+
+Once the settings are completed, the paramPlankPath on the component will display hole punching and slotting.
+
+**3. Notes**
+
+In specific scenarios, JSON generation failure might occur due to the fact that boolean modeling is unrestricted in front-end tools but has requirements in production docking scenarios. When encountering this issue, you need to delete models that cannot dock to generate JSON successfully.
+
+Includes but is not limited to:
+
+* Sweep lofting models cannot use boolean modeling.
+* Circular arc edges do not support boolean modeling for cutting.

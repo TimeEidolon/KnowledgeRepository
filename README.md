@@ -8,7 +8,8 @@ Coohom product knowledge base built with [Mintlify](https://mintlify.com).
 - `knowledge/en/` — English articles (MDX)
 - `knowledge/zh/` — Chinese articles (MDX)
 - `knowledge/ja/` — Japanese articles (MDX)
-- `scripts/sync_helpcenter.py` — sync articles from Help Center API
+- `main.py` — sync articles from Help Center API (main entry)
+- `scripts/` — sync implementation modules
 
 ## Local preview
 
@@ -34,7 +35,7 @@ Pull articles from Kujiale Help Center and write directly to `knowledge/`:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python scripts/sync_helpcenter.py --days 7
+python main.py --days 7
 ```
 
 Options (same semantics as Java `syncToMarkdown`):

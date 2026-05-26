@@ -1,0 +1,24 @@
+---
+title: "how-to-deal-with-the-uploaded-model-file-is-empty"
+description: "Problem"
+---
+
+# Problem
+
+The uploaded model file is empty, and it is not allowed to upload an empty scene file.
+
+# Reason
+
+1. A higher version of 3D Max was used to create the model; currently, only 2021 is supported.
+
+2. The model has only one material, and the following parameter was selected, which resulted in the exported vrscene turning into a light, without any other model data, thus considered an empty model.
+
+# Solution
+
+1. Deselect
+
+2. Change the model's material to a regular vraymtl
+
+3. Add another non-emitting component
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762397971134/04A94DB8D02C664DF10A99061A38FE8F.png)

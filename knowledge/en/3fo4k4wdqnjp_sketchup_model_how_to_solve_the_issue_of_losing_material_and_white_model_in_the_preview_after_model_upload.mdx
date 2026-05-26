@@ -1,0 +1,30 @@
+---
+title: "sketchup-model-how-to-solve-the-issue-of-losing-material-and-white-model-in-the-preview-after-model-upload"
+description: "Problem"
+---
+
+# Problem
+
+The SU model has no error prompt, but the preview image shows material loss.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409251361/DAB7C16C199829437CEC0D04DC67A0E2.png)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409251362/AE6FCD8CD93BAFFE9875176AEEF9C1EE.png)
+
+# Reason
+
+The reverse side of the model in the sketch, when SU exports the model, OBJ will all unify to the front, and if the front does not have the material, it will display as white.
+
+# Solution
+
+1. View the material parameters of this face in SketchUp (currently only supports SU's built-in materials)
+
+2. Click to display in monochrome, white is the front, blue-gray is the reverse side (default colors of sketch, can be changed)
+
+![](https://qhstaticssl.kujiale.com/image/png/1762409315866/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. Double-click to enter the group, select all faces, right-click to reverse the face
+
+4. After reversing the face, all display as white, indicating the model is front-facing, then click to display material mapping, reattach the material to the model, save, and upload it
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555052073047/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)

@@ -1,0 +1,20 @@
+---
+title: "3d模型-使用极速灯光模板渲染材质贴图会消失怎么解决"
+description: "问题"
+---
+
+# 问题
+
+使用极速灯光模板渲染材质贴图会消失
+
+# 自检
+
+点开需要查看的材质贴图，发现材质缺少uvwgen关键节点。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505314313/A7960AF752F1068826068DE8F1A28D1E.png)
+
+# 解决方法
+
+重新拖入一下这个贴图，修改贴图为 显式贴图通道（默认就是这个）
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505314310/771F3F2EE26519CBEFC5BD747B3BB528.png)

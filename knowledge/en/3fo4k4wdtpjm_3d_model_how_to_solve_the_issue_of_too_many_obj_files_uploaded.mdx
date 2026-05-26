@@ -1,0 +1,36 @@
+---
+title: "3d-model-how-to-solve-the-issue-of-too-many-obj-files-uploaded"
+description: "Problem"
+---
+
+# Problem
+
+The upload prompts that the number of model parts (OBJ) is too many.
+
+# Solution
+
+1. Open the model, press ctrl+a to select all models, and the number of model objects will be displayed under the modifier.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378683/C00C77F8BDFD88F83C07DB394E97FF04.png)
+
+2. After selecting all models, right-click to convert to editable polygon/editable mesh.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378660/3061A1F4E11FD365DF4539223C379D82.png)
+
+3. Click on any object, then in the modifier list, select Attach List; press Ctrl+a to select all and click Attach.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378703/C8C17ED2125E8C8BE6C3587DEE9D95D2.png)
+
+4. After attaching, since there are many materials, an attachment option will appear, click Confirm, and it will become a single model object.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378655/393B27509FDE629EE1C40C7D5E2B2FB8.png)
+
+5. Converting to a single model brings the issue of becoming a multi-sub material.
+
+6. After converting to a multi-sub material, it needs to be split. We have a script for splitting, just run the script. The location may vary by version, select the model.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378677/8C89FD5104F2914D0B23BB1A46BAFC04.png)
+
+7. Running the script will allow the material to split.
+
+Script link: //[qhstaticssl.kujiale.com/application/octetstream/1761725096954/Cannot](http://qhstaticssl.kujiale.com/application/octetstream/1761725096954/Cannot) split the model according to material ID..ms

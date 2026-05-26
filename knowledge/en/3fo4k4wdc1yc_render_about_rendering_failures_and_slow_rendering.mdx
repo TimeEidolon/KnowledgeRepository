@@ -1,0 +1,44 @@
+---
+title: "render-about-rendering-failures-and-slow-rendering"
+description: "Problem"
+---
+
+# Problem
+
+What to do if rendering is slow  
+If you encounter slow rendering situations, including:
+
+Always showing queuing   
+Showing [get renderings at 8:00 tomorrow]  
+Rendering, but rendering time is long  
+Please troubleshoot in the following order.
+
+# Solution
+
+## 1.  Showing [In Queue]
+
+Weekdays around 11 AM and 2-6 PM are peak rendering hours. (Based on Beijing time)
+
+During peak rendering hours, the server load is high. You can try the following methods to speed it up:  
+Render 1-2 images at a time, do not add multiple images at once, as rendering has a personal queue. A personal queue limits the number of simultaneous renders for one person. Adding 1-2 images won't go into the personal queue, but adding more will definitely trigger the personal queue, causing all tasks to queue.
+
+## 2. Showing [Rendering], but rendering time is long
+
+High rendering parameters will cause slow rendering speeds. It is recommended to check
+
+the plan is too large, too many models, or too high a number of model faces
+
+whether there are overly complex materials in the plan, such as jade, candles, stone, etc.
+
+Whether [Specular reflection] is selected (The Specular reflection switch essentially avoids rendering occlusion. As much data as there is in the plan, as much data will be rendered)  
+Whether there are overly complex materials in the plan, such as jade, candles, stone, etc. After selecting these materials, check whether [Render Complex Materials] is selected (Enabling the render complex material switch will render the displacement properties of the material. If a large number of displacement materials are used in the user plan, enabling the complex material switch will increase the rendering pressure on the engine)  
+Whether [Light leakage repair] is selected  
+Whether [Reduce noise] is selected (Part of the light settings in the old version have)
+
+## 3. Showing [get renderings at 8:00 tomorrow]
+
+Creating 8k render images, 16k, 32k panoramic images, 8k bird's eye view, HQ720p, HQ1080p, Ultimate 1080p, and other high-resolution photos or videos requires waiting for nighttime idle time rendering.
+
+## 4. Is it a high-resolution render image
+
+Rendering images with a resolution of 12k and above take up more machine resources, making the queue more crowded during peak hours. You can render lower resolution clarity first.

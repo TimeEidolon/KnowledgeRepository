@@ -1,0 +1,72 @@
+---
+title: "obj-file-too-large"
+description: "The error saying “*OBJ file should not exceed 100MB”* means that the model size is too big after objects are exported. In addition to the objects, the model tha"
+---
+
+The error saying “*OBJ file should not exceed 100MB”* means that the model size is too big after objects are exported. In addition to the objects, the model that has been exported still has material attributes.
+
+But we cannot modify the material attributes, so the first choice is to change model attributes, that is, to change the number of model polys. Currently, Coohom platform supports 80w polys to the maximum. However, some clients gave feedback that the model with 79w polys also failed to upload, which may caused by the material attributes. Under this circumstance, we can optimize polys or compress the file before uploading.
+
+### Solutions:
+
+1. Use **Optimize** functionality (3ds Max 2012 or above).
+
+Ctrl + A to select the model and right click to choose **Convert to Editable Mesh**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893413649/40985DA0C655AF2625EF56E410CE8FCC.png)
+
+Press 7 to check model polys, and apparently 200w+ exceeds our limit of 80w. So, we have to reduce the number of polys.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893414241/21739CA740A2F0E19244C7AEBD0B4B92.png)
+
+First, find out where the polys are denser. If you decrease the polys in somewhere the polys are lesser, this action may cause unexpected problems to your model.
+
+Press F3 to display the wireframe. Click **Detach** to separate some crowded polys from the model.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893417320/45799C4B2AE7F008C64E3CED1D92E618.png)
+
+Click **Optimize** in the **Modifier List**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893418776/538DD5FDDA7221CB59E1EA46FEA877DF.png)
+
+We find that the number of polys have been decreased already but still surpass 80w. Now, we can: 1. modify **Face Thresh**; 2. select other locations with dense wireframes for optimization.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893421500/34B24832C284585A01322AD9397E6009.png)
+
+**Convert to Editable Mesh After Reducing Polys**
+
+Reducing too many polys will destroy your model. More polys within the limit will be better for the model effect.
+
+If you have set the UV mapping before reducing polys, remember to reset it.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893422156/422018008FDE487763D43781FF984B13.png)
+
+2. Use **ProOptimizer** (only supports 3ds Max 2016 or above).
+
+Select the location you want to modify and click **ProOptimizer** in the **Modifier List**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893423056/5D5FD22DA6105C30470C05066ED1A391.png)
+
+Click **Calculate**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893423981/EBF47A99E3014EA4E95F8F5D6FF7C087.png)
+
+When the calculation is done, click **Vertex %** to optimize and we can see the comparison before and after the optimization on the left side. If the model has textures, you can click **Keep Textures**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893425054/27DF0B1BDAD86C0CD6B6043913E7E8FA.png)
+
+Now, the number of polys is already below 80w. It’s time to upload!
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893425838/E1B04D93E89662DA1F4B672DC2BF2C38.png)
+
+Click **Customize** ＞ **Files** ＞ **Compress on Save**.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893426812/DE96B7EF1368923BAA3F0C662F75D274.png)
+
+**Archive** your file.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893427923/C083BFDA3C8E6F1095159742D79E7FC5.png)
+
+Finally, upload your model to Coohom platform.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733893429904/E72A57958B274ED0654335B8D56E618A.png)

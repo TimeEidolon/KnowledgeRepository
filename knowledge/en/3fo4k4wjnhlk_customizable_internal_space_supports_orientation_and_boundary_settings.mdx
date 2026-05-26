@@ -1,0 +1,36 @@
+---
+title: "customizable-internal-space-supports-orientation-and-boundary-settings"
+description: "Contents:"
+---
+
+Contents:
+
+I. Target Audience
+
+II. Configuration Method
+
+III. Configuration Effects
+
+**I. Target Audience:**
+
+Enterprise account with configuration permissions in the merchant backend. Please contact the merchant for permission to enter.
+
+**II. Configuration Method:**
+
+1.Default orientation of internal space
+
+2.Boundary adaptation of internal space
+
+**III. Configuration Effects:**
+
+The **default orientation** of the internal space can be used to configure the direction of the internal space recognition of the cabinet, making it easier for components to be dragged into the cabinet with the front face oriented towards the default orientation set for the cabinet.
+
+**Configuration of boundary adaptation of internal space:**
+
+Example: "Top board sinks 1mm" and the door panel needs to adapt to ignore the sinking value of 1mm.
+
+Backend settings: 1. Create a custom internal space with the width and height of the door panel's outer cover --> 2. Modify the boundary adaptation to prioritize the internal space.
+
+**Effect of configuration of boundary adaptation of internal space:**
+
+When dragging the door panel, the mouse points to the top edge of the internal space, at which point the door panel can adapt to the height, ignoring the sinking value of 1mm and fitting the size according to the customized internal space boundary. If the mouse points to a non-internal space border position when dragging the door panel, the internal space is adapted according to the tool logic.
