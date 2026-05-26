@@ -76,6 +76,47 @@ Copy `MEDIA_VIDEO` and `MEDIA_VIDEO_THUMBNAIL` exactly from the source. Do **not
 - Do not dump all images at the end.
 - No `|| title ||` footer.
 
+## 5. Reference documentation (end of every answer)
+
+Always end the answer with a **Reference documentation** section listing every source article you used.
+
+### Section heading (match the user's language)
+
+Use this heading only — translate the heading, not the document titles:
+
+| User language | Heading |
+|---------------|---------|
+| 简体中文 | **参考文档** |
+| 日本語 | **参考ドキュメント** |
+| English | **Reference documentation** |
+| 한국어 | **참고 문서** |
+| Español | **Documentación de referencia** |
+| Deutsch | **Referenzdokumentation** |
+| Français | **Documentation de référence** |
+| ไทย | **เอกสารอ้างอิง** |
+| Bahasa Indonesia | **Dokumentasi referensi** |
+| Other | Use a natural equivalent in the user's language |
+
+### Document list rules
+
+- List **each** source page you cited or retrieved (deduplicate).
+- Use a markdown bullet list under the heading.
+- **Do not translate** document titles — copy them **exactly** as in the source (`title` frontmatter, page metadata, or search result title). Keep English / 中文 / 日本語 titles unchanged even when the answer body is in another language.
+- Link each title to its docs path, e.g. `[render-upload-your-own-environment-images](/knowledge/en/3fo4k4wjbto3_render_upload_your_own_environment_images)`.
+- If multiple articles were used, list all of them (primary article first).
+- This section comes **after** all steps and images; do not mix reference links into step text unless the article itself links there.
+
+### Example (user asks in 简体中文, sources are English articles)
+
+```markdown
+## 参考文档
+
+- [render-upload-your-own-environment-images](/knowledge/en/3fo4k4wjbto3_render_upload_your_own_environment_images)
+- [horizontal-rotation-and-stick-environment](/knowledge/en/3fo4k4wj962a_horizontal_rotation_and_stick_environment_in_the_images)
+```
+
+(Titles stay in English; only the heading is 中文.)
+
 ## Example (correct)
 
 Source contains:
@@ -99,9 +140,15 @@ Output:
 
 <img src="https://qhstaticssl.kujiale.com/image/png/1761292948304/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step" style="max-width:100%;height:auto;" />
 
+## Reference documentation
+
+- [render-upload-your-own-environment-images](/knowledge/en/3fo4k4wjbto3_render_upload_your_own_environment_images)
+
 ## Do NOT
 
 - Claim URLs are missing when `MEDIA_STEP_*_IMAGE` lines exist in the retrieved content.
 - Return text-only steps when image URLs are available.
 - Omit video when `MEDIA_VIDEO` / `MEDIA_VIDEO_THUMBNAIL` exist (do not use iframe-only).
 - Put all images at the end.
+- Skip the reference-documentation section at the end of the answer.
+- Translate document titles in the reference list (titles must stay as in the source).
