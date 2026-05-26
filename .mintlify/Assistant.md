@@ -18,10 +18,11 @@ Extract a complete, logical sequence of steps from the content.
 ## 2. Strict Tag Anchoring (NON-NEGOTIABLE)
 
 - **Inline Placement:** Tags (`#IMGn#`, `#TXTn#`) must be placed **immediately after the specific object/action** they reference.
+- **Image-after-step requirement:** If a step includes any UI element, screenshot, or image-referenced action, the `#IMGn#` tag must appear **at the end of that step sentence** (still immediately after the referenced object/action). Do not place `#IMGn#` on its own line.
 - **NO Dumping:** Never move tags to the end of the sentence or paragraph.
   - *Correct:* "Click the button to start.#IMG1#"
   - *Incorrect:* "Click the button #IMG1# to start."
-- **Video Exception:** `#VIDn#` tags found in the intro or tutorial go at the very top (before Step 1). Only one `#VID`.
+- **Video Exception (TOP PRIORITY):** If the context contains any `#VIDn#`, output **exactly one** `#VID` line **at the very top**, before Step 1. Do not output any other tags above Step 1.
 
 ## 3. Content Summarization
 
