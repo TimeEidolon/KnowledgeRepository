@@ -3,6 +3,8 @@ title: "requirements-and-faq-for-uploading-cad-floor-plan-files"
 description: "Coohm supports the upload of CAD floor drawings to automatically identify and generate walls, doors and windows. This article will explain in detail the require"
 ---
 
+
+
 Coohm supports the upload of CAD floor drawings to automatically identify and generate walls, doors and windows. This article will explain in detail the requirements and possible problems of importing CAD floor plan files, and importing files according to the requirements will have a better identification of the drawing effect and improve the design efficiency.
 
 # For users
@@ -149,3 +151,32 @@ After deleting or hiding other irrelevant information in the drawing except for 
 | 4 | CAD parsing failed. | The drawing format does not meet the requirements, or the drawing is too complicated. | 1. Please make sure the drawing format is dwg or dxf, and files in other formats are not supported yet.  2. The drawings are too complicated, please clean unnecessary lines (such as furniture, floor filling, landscape plants, etc.). |
 | 5 | Identify timeout. | There is too much drawing data and too much complicated. | The drawings are too complicated, please clean unnecessary lines (such as furniture, floor filling, landscape plants, etc.). |
 | 6 | The drawing size is too large. Please zoom or clean the file and try again. | The drawing format does not meet the requirements, or the drawing is too complicated. | 1. Please make sure the drawing format is dwg or dxf, and files in other formats are not supported yet.  2. The drawings are too complicated, please clean unnecessary lines (such as furniture, floor filling, landscape plants, etc.). |
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 4. Drawings are Drawn in Model Space Only drawings drawn in **model space** are supported, and **all information drawn in layout space cannot be accurately identified**. **About the solution to the inaccurate identification of drawings drawn in the layout space：** * Find the structure floor plan in the layout, double-click the layout window to enter the editing mode, copy it to the newly created empty CAD file, save it and then use it for identification.
+![](https://qhstaticssl.kujiale.com/image/png/1745579434135/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 5. The Floor Plan Size is Reasonable * Please ensure that **the size of the floor plan outline frame is greater than 2.5mX2.5m**, otherwise it will be considered non-floor plan drawings and will not be identified. * Import CAD files, **the maximum size currently supported is 120000mm\*120000mm**. If it exceeds this range, an error will be reported. * When recognizing CAD drawings, the number of elements that can be supported varies according to the scenarios -- **in home decoration scenarios, the maximum number of elements is 105,000**; **in industrial decoration scenarios, the maximum number of elements is 200,000**, and exceeding this number will result in recognition exceptions.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1745562768556/E2E27DDA5723751B543CACCAD9E55D13.png)
+
+3. 6. the Drawing Method of Walls, Doors and Windows Meets the Requirements Support the identification of walls, doors and windows that meet the drawing requirements, the specific requirements are as follows: * The wall should be drawn in two lines, and the width should be in the range of 50-400mm. * Single and double doors support common rectangular + arc drawing methods, and arcs represent the direction of the door opening. * The sliding door supports the staggered drawing method of 2/3/4 fans, but the wall projection lines need to be drawn on both sides. That is, two parallel straight lines of equal length surround two or more rectangles. * The window supports linear window drawn by 3/4 lines. **Note: All rooms in the imported CAD file should be closed areas. The above components must be drawn to ensure that the lines are complete and not missing. Local unclosed lines will also affect the recognition effect.**
+![](https://qhstaticssl.kujiale.com/image/png/1745581014778/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. 7. Common Legends for Furniture **The following common legends for furniture are supported for recognition:** * bed * sofa * dining table * toilet **⭐****Tips:**If you don't need to identify furniture, **be sure to delete or hide all furniture information**, which can greatly improve the accuracy of wall recognition.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1745562768472/23D560CA1532452D13C1C05E6C3B1A42.png)
+
+5. Tip One: No Valid Floor Plan Detected **Problem Scenario：** The wall width is less than 50mm and the size of the floor plan outline frame is less than 2.5mX2.5m. It will be considered non-floor plan drawings that cannot be recognized.
+![](https://qhstaticssl.kujiale.com/image/png/1745488891545/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+6. **Solution：** The walls need to be drawn in two lines, with a width of **50-400mm**, to expand the overall frame size, and the drawings can also be scaled to a recognizable unit size through the **"SC" command** for identification.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1745562768534/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+7. Tip Two: Import Timeout, Please Contact Customer Service **Problem Scenario One：** Network connection error (client or Coohom side). **Solution：** Try importing the file again. **Problem Scenario Two：** The file is too complex and has too much unnecessary distracting information, as shown in the following figure.
+![](https://qhstaticssl.kujiale.com/image/png/1745492935266/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

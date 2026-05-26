@@ -3,6 +3,8 @@ title: "bom-disassembly-applet-settings-configuration-v1-0-0"
 description: "Process Configuration**"
 ---
 
+
+
 **Process Configuration**
 
 **1、Configuration Introduction**
@@ -346,3 +348,75 @@ After completing the information filling for section 4.1, we also need to provid
 ### **5、Edge Banding Configuration**
 
 In the disassembly Assistant, the edge banding docking method and component docking standard use the same approach. The **name** is filled in as "Used in Disassembly Assistant" and corresponds to the displayed name of the edge banding for the corresponding panel. The **value** is determined by the ET output values of the four edges of the board, and the **thickness** is based on the actual edge thickness value. This final calculation is included in the production data.
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **1.1.1 Introduction** ① Location of applet configuration settings
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839926518/85B025B9D0F70AFC0CD1BBC37E7C5790.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839928912/FAF153F9434AD04506AC223E0B31A543.png)
+
+2. **1.1.2 Configuration Relationship Introduction**
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839931402/8E9B0A92855E7FFE85BC0CA04B0FD357.png)
+
+3. **1.2.1 Position** Click on "Modify" to enter the configuration.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839933829/02BFCDBAF3A76DECB4D28DAD8EA54F1C.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839936142/C0514F3465DF4F3245B66378C2DD4745.png)
+
+4. **1.2.2 Fittings List** This is primarily used to configure hardware names, display hardware models in the applet, include hardware data in the material list, and provide various other capabilities required in the industry. For more details, please refer to the content in the table below. **Content List** **Fill in Content** **Function Details** Fittings Fill in connection name The final name will be output as the hardware name in the material list, and it will be called in the hardware hole layout rule to establish the association with the hardware. Hardware Fill in the hardware ID In Coohom, each model will have a unique ID that can be associated here. The applet will eventually call this model for display, and it has specific requirements for the modeling coordinates of hardware models. **Note① ：**This hardware is only used for disassambly applet display and does not serve as any data or information processing output. **Note②** ：In this table, the ID column for hardware must not contain duplicate values. Virtual Hardware Fill in the virtual hardware ID In Coohom, each virtual hardware has a unique ID that can be associated here. If this field is filled in applet, it will be recognized as an input and used to calculate the quantity for output.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839939710/3636D7B4F832F66E7447535733C25490.png)
+
+5. **Note**：In this table, the ID column for virtual hardware must not contain duplicate values. Reduce size Enter reduced size It is generally used for movable layer boards and glass layer boards. If you input "1" in this field, when generating the cutting list data, the system will deduct the specified reduction value from the four edges of the connected panels. The reduction value will not be applied to edges that do not have connections.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839941969/4CCF8AA3DF1C00FB0359E145AFF3ABDE.png)
+
+6. Configuration： In the hole layout rules, the name preceding the EC value must be identical to the hardware name in the component positioning list. Otherwise, it will become invalid.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839944278/DC8899EEBA1E52119FB991C4F04E9ACA.png)
+
+7. Additional Quantity Fill in additional quantity ratio In the industry, there are cases where extra hardware fittings are added during distribution. You can simply enter the corresponding ratio here. For example, if you want to add one extra for every 10 hardware fittings, you can directly write "10". In the final materials list output, for every 10 hardware fittings, one extra will be added. If there were initially 100 fittings, the output will be 110. Adhesive Filling coefficient As shown in the figure, the number of adhesive is filled in 1, and the number of three-in-one in the final hardware single will output the corresponding multiple of adhesive
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839947103/CB66E4BA89D5F8148D623BF684F832EF.png)
+
+8. **1.2.3 Fittings Information Setting** ①Description This position is primarily used for adjusting various types of hardware in the display position within the model, along with additional depth for specific types. Note：Additional depth for specific types refers to the values mentioned above, such as 2 (square groove) and 3 (circular groove) scenes, which can be viewed based on the hardware groove in section 1.3This position is primarily used for adjusting various types of hardware in the display position within the model, along with additional depth for specific types. ② Position XYZ
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839950153/12626ED38177A3373307AD572F50D50E.png)
+
+9. * As shown in the above image, there are specific requirements for the coordinates when creating our models from 3dMax. During the three-in-one installation, the white pre-embedded component is placed above the side panel, while the black connecting rod is installed above the horizontal board. Therefore, the center point needs to be set as the origin between the black and white components in 3dMax. As shown in the above image, there are specific requirements for the coordinates when creating our models from 3dMax. During the three-in-one installation, the white pre-embedded component is placed above the side panel, while the black connecting rod is installed above the horizontal board. Therefore, the center point needs to be set as the origin between the black and white components in 3dMax. * We have completed the above tasks, including model upload, ID filling, and specifying the type. However, for certain hardware components such as two-in-one or movable shelf pins, they are not located at the center of the side panel during installation process. Despite this, when we upload the model, it already has an origin point defined. Therefore, we need to make some position adjustments for these types of hardware components, as shown in the image: We have completed the above tasks, including model upload, ID filling, and specifying the type. However, for certain hardware components such as two-in-one or movable shelf pins, they are not located at the center of the side panel during installation process. Despite this, when we upload the model, it already has an origin point defined. Therefore, we need to make some position adjustments for these types of hardware components, as shown in the image:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839954452/7ED1F9CD169A54EF42B0CE27EC4A021A.png)
+
+10. **1.2.4.1 Description**
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839957253/476E37055B581ABB52E44CE566927538.png)
+
+11. **1.2.4.2 Connecting Hardware Definition** * Connection Fittings Definition Connection Fittings Definition
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839959106/97A5B2A17B40E91CB496974438CB7C0B.png)
+
+12. **1.2.4.3 Offset in the thickness direction of the Z component for side holes.** l In the industry, cabinet panels are generally classified into specifications with thicknesses of 18mm, 25mm, and 36mm. In production, different manufacturers have their own process requirements. For example, for a 25mm thick panel, a three-in-one connection may require a 9mm hole offset, while some 25mm panels may require centered drilling. Therefore, in such cases, it is necessary to make adjustments for connection hardware based on different panel thicknesses. For more detailed information, please refer to: **① Common Situation** **a.** For 18mm thick panels, the standard practice is to drill holes in an evenly distributed manner, which is the most common and standardized process in the industry. **b.** For 25mm thick panels they can be categorized based on different requirements: l - Centered drilling: With centered drilling, the side holes are typically located at the center position of the panel thickness. The depth of the lock pin hole is generally (thickness/2) + 4.5.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839962568/7F78BBDBBD48E94605B488E86D49FDF0.png)
+
+13. * Drilling with a 9mm hole offset: A 9mm hole offset means that, with the exit face as the reference, a side hole is drilled at a position 9mm below. The depth of the lock pin hole remains the same as that for the 18mm thick panels, which is approximately 9 + 4.5. Drilling with a 9mm hole offset: A 9mm hole offset means that, with the exit face as the reference, a side hole is drilled at a position 9mm below. The depth of the lock pin hole remains the same as that for the 18mm thick panels, which is approximately 9 + 4.5.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839966766/0FC537F3D771073DEA8FDB0102F8FB94.png)
+
+14. **c.** The same principles of 36mm and 25mm thick panels. When drilling with centered holes, the depth of the lock pin hole is approximately around 22mm. Note: Regardless of the position of the side holes on the active panel, the hole positions on the passive panel need to be perfectly aligned with the center of the side holes on the active component. Therefore, it is necessary to configure the settings in the applet program according to the specific process requirements. The following are the specific configuration settings: **② Hole Position Setting** **a.** Hardware Common Setting
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839970484/EB845635CAFC77A383D621A415852B80.png)
+
+15. **1.2.4.4 Offset In Y Direction For Side Holes** **① Commen Situation** Some hardware fitting in certain structures require multiple holes on the same surface. It can be analyzed as a side hole on the active panel, but the passive panel is composed of two holes, then it can be disassembled as: Panel A： One side hole with a diameter of 10 and a depth of 36. Panel B with two holes： ① Diameter: 12, Depth: 9 ② Diameter: 10, Depth: 9 The center-to-center distance between these two holes is 8.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839973962/C6D783525B393DFD7563C1C0B7859222.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839975925/EC017C72A792C3FD12441622DDE1EDA7.png)
+
+16. **② Holes Position** According to the above, we need to configure this fitting as:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839979011/433D21F63FE6C195E36AE72701E8689A.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839981532/166D5B905FA8E816AD258BAA1B1DE5C0.png)
+
+17. **1.3.2 Hardware Slot Configuration** ① Upload a 3D model that will generate collision surfaces during the design proces； ② In applet configuration, fill in the Product ID of the 3D model to ensure that the hardware slot matches the actual specifications of the hardware； ③ Define the data type for the hardware slot. Use type 1 for connecting hardware, type 2 for rectangular slots, type 3 for circular slots, type 4 for irregular slots, and type 5 for hidden component slots. Fill in the corresponding type value based on the required slot shape； ④ In the fitting information settings on the right side, fill in the corresponding hardware slot depth in the Z position；
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839983847/FEE1101497C5CD15E575F95F023E6B02.png)
+
+18. **4、Hidden Condition Output** Hidden parts in the BOM disassembly, the overall implementation is as follows:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839986459/E72D75784FC86BC96C162C6C28133A9A.png)
+
+19. **1.4.1 Hardware Fitting Information** * In the disassembly configuration, the hardware type is fixed as 5, then the system will write the accessory according to the standard defined by the hidden part when writing data. In the disassembly configuration, the hardware type is fixed as 5, then the system will write the accessory according to the standard defined by the hidden part when writing data. * The fitting name will be written into the BOM according to the previously filled. The fitting name will be written into the BOM according to the previously filled.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839988699/4DEFE0290E886F284B83F442FE8002C1.png)
+
+20. **1.4.2 Fitting Slots Definition** After completing the information filling for section 4.1, we also need to provide the ecological software with information about the hidden slot. This information includes the slot width, slot depth, slotting direction on either A or B panel, and the slot length from start to finish.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733839991183/6BC69071F5F15B0F1409FF39418F7837.png)
+
+</Visibility>

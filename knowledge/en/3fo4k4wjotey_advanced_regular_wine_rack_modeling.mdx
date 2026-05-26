@@ -3,6 +3,8 @@ title: "advanced-regular-wine-rack-modeling"
 description: "Method 1**"
 ---
 
+
+
 **Method 1**
 
 **Definition: A wine rack is a shelf for storing wine.**
@@ -214,3 +216,108 @@ Click on the file in the upper-right corner and choose "Save", select the subdir
 In the corresponding category on the product management page, find the model, select it, and click "Store" to wait for the model rendering to be completed.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848263223/44DCBD2847634A1C8AFE6D79C74AECE9.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **Method 1** **Definition: A wine rack is a shelf for storing wine.** The modeling operations will be explained using the wine rack shown in the following diagram (Panel thickness: 18mm).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848198442/01E0E84A42B74A5FDCD33014E0F50C3F.png)
+
+2. **I. Creation Position** Custom Furniture—Create Asset—Parametric Model Library— New—
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848200904/9B5EA1C3EE2C4B5F00FC66CABE135DEC.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848203039/16DB769569E5404064355AFE33DB1DA4.png)
+
+3. **II. Parameter Configuration** Width (W) - Represents the size of the model Panel in the X-axis direction. Value type: interval, minimum value: 136, maximum value: 1200, current value: 600.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848204151/656DC9F501366F0B97E6CE60868D4F6D.png)
+
+4. Depth (D) - Represents the size of the model in the Y-axis direction. Value type: interval (e.g., interval 200-1200, current value: 320).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848206746/CDEA11E95665B79C339199BADE8E5C93.png)
+
+5. Height (H) - Represents the size of the closing Panel in the Z-axis direction. Value type: interval (e.g., interval 136-1200, current value: 600).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848207881/847C16AF7948C39726503F43C2CDC8F6.png)
+
+6. Material selection - Choose a default material.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848210792/6387E5CBBC16DD8A8F77F3A22D07BF2B.png)
+
+7. Add advanced parameters (1) Grid internal space - Reference name: NK, value type: interval, minimum value: 80, maximum value: 150, current value: 100.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848213001/CA9B2E1822C3C69DB98F06CEF75EB9A8.png)
+
+8. (2) Inset - Reference name: D1, value type: interval, minimum value: 0, maximum value: 200, current value: 20.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848214151/45390EF3A06AADE8836EA51EE091DBF8.png)
+
+9. **III. Create Grid** Element Library - Grid
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848216790/C152C2FF4EDE520DE62FD9D4BE33D927.png)
+
+10. **IV. Set Grid Physical Properties** Physical properties: Width: #W, Depth: #H, Height: #D-#D1, Panel thickness: 18, Position Z: #H, Rotation X: 90 Other properties: Network length: #NK
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848218590/EBC8CA6F6C13BFF3D4CB574F2C84033A.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848220172/3DDE18CEF51B9148B7E09298EA907D25.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848221645/EA9CBFA250FA70F9CBD353D7D55F6CF8.png)
+
+11. **V. Test the Model** Input values within the range of intervals for parameters W, D, H, D1, and NK, including the minimum and maximum values. Observe if the model changes correctly. If it does, it means the model is fine. **VI. Save to the library** Click on the file selection in the upper right corner, choose "Save," select the desired subdirectory, name the file, and click "Save."
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848223422/0A2CAFB763E30E9F48EBB5CD764641CD.png)
+
+12. In the product management page, find the corresponding category for the model, select the model, and click "Save to library." Wait for the model to finish rendering.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848225015/472AF2642C44E5C8BC3CAE37CAE9736A.png)
+
+13. **Method 2** The modeling operations will be explained using the wine rack shown in the following diagram (Panel thickness: 18mm).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848226107/00C039C973A1E1B48E0A05822F2D6393.png)
+
+14. **I. Creation Position** Custom Furniture—Create Asset—Parametric Model Library— New—
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848228118/2EE0D9919BD82C70166C0EF57ADE1A1E.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848229078/C09D295905B04BAF163963433CE92C98.png)
+
+15. **II. Parameter Configuration** Custom parameter Settings Width (W) - Represents the size of the model Panel in the X-axis direction. Value type: interval, minimum value: 136, maximum value: 1200, current value: 700.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848231942/5A4A9E55D29720A0B3180163B8C79743.png)
+
+16. Depth (D) - Represents the size of the model in the Y-axis direction. Value type: interval (e.g., interval 200-1200, current value: 320).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848233881/862B89D15B18D1F00BD74E5D736FF157.png)
+
+17. Height (H) - Represents the size of the closing Panel in the Z-axis direction. Value type: interval (e.g., interval 136-1200, current value: 700).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848236543/1A2C15EA2241BD9411A3C2BACD1AE74F.png)
+
+18. Material - No modification required, indicating the default material used in the model. Add advanced parameters (1) Grid internal space - Reference name: NK, value type: interval, minimum value: 80, maximum value: 150, current value: 100.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848237879/87599D7781BC5614E10F9F3D83E6013B.png)
+
+19. (2) Inset - Reference name: D1, value type: interval, minimum value: 0, maximum value: 200, current value: 20.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848239055/FE5B340CE8952B9D5B8A2ECC611DE776.png)
+
+20. (3) Add intermediate parameter Reference name: a, Parameter type: float, Current value: (#NK^2\*2)^0.5/2+(18^2\*2)^0.5/2 Description: Excess part of the wine rack
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848240938/9F4C7C788EEF6317F2E95F4621E30991.png)
+
+21. Parameter Explanation: Grid internal space (NK)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848243271/6F031A6BCD46219F64328AC59C43CCC5.png)
+
+22. This modeling method uses 4 grids to create a symmetrical wine rack model. To ensure symmetry, there will be an excess part in the wine rack. The size of this excess part is represented using an intermediate parameter 'a' calculated as follows:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848244763/12C2F5FBF4EFD0759589B2839D4219AC.png)
+
+23. Image (1)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848246786/501795BE6E509B691CCED1BA5C970377.png)
+
+24. Image (2) Image1 shows the front view of the lower-left corner and upper-right corner models after completion. From the image, it can be seen that the red lines indicate the parts where the grid exceeds half of the width. The length in this area is set as the intermediate parameter 'a', calculated as shown in Image 2. The length to be calculated is the sum of parts 1 and 2, which is equal to half the length of parts 3 and 4. In the image, all the triangles are right triangles, and based on the Pythagorean theorem, the length of part 3 is ((#NK^2)\*2)^0.5, and the length of part 4 is ((18^2)\*2)^0.5. Therefore, the length of 'a' is equal to (3 + 4)/2 = ((#NK^2)\*2)^0.5/2 + ((18^2)\*2)^0.5/2. **III. Creating the Grid** 3.1 Element Library - Grid
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848249580/28057F1AFAE22FDB7102CC8C096D342E.png)
+
+25. Set the properties of the grid: Dimension properties: Width: #W/2+#a, Depth: #H/2+#a, Height: #D-#D1, Thickness: 18, Physical properties: Position X: #W/2+#a, Position Y: 0, Position Z: 0, Rotation X: 90, Rotation Y: 180, Rotation Z: 0 Other properties: Grid length: #NK
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848252068/CDBE4BA3B962A20B2300A360A30F65FD.png)
+
+26. 3.2 Right-click on the Panel component to make a copy.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848253234/C4300D28864506A22E8734112952A322.png)
+
+27. Set the properties of the second grid: Dimension properties: Width: #W/2+#a, Depth: #H/2+#a, Height: #D-#D1, Thickness: 18, Physical properties: Position X: #W/2-#a, Position Y: -#D+#D1, Position Z: 0, Rotation X: 90, Rotation Y: 180, Rotation Z: 180
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848256246/4FFA0A1CF2A07B724AB1B00982374751.png)
+
+28. 3.3 Right-click on the Panel component to make a copy. Set the properties of the third grid: Dimension properties: Width: #W/2+#a, Depth: #H/2+#a, Height: #D-#D1, Thickness: 18, Physical properties: Position X: #W/2+#a, Position Y: -#D+#D1, Position Z: #H, Rotation X: -90, Rotation Y: 180, Rotation Z: 0
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848258588/AAD622E3ACC9DF3052C3D180C7DB4A97.png)
+
+29. 3.4 Right-click on the Panel component to make a copy. Set the properties of the fourth grid: Dimension properties: Width: #W/2+#a, Depth: #H/2+#a, Height: #D-#D1, Thickness: 18, Physical properties: Position X: #W/2-#a, Position Y: 0, Position Z: #H, Rotation X: 90, Rotation Y: 0, Rotation Z: 0
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848260883/580D4A933AA88BE5AA9AF3796C16EA9C.png)
+
+30. **IV. Testing the Model** Enter values within the range of parameters W, D, H, D1, and NK and observe if the model changes correctly. If it does, it indicates that the model is working fine. **V. Saving to the Library** Click on the file in the upper-right corner and choose "Save", select the subdirectory for saving, name it, and click "Save".
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848262202/A08A7472707EDDC4C0F7D1CE7BE5A328.png)
+
+31. In the corresponding category on the product management page, find the model, select it, and click "Store" to wait for the model rendering to be completed.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733848263223/44DCBD2847634A1C8AFE6D79C74AECE9.png)
+
+</Visibility>

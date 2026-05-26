@@ -3,6 +3,8 @@ title: "渲染-渲染出现不正常阴影怎么办"
 description: "问题"
 ---
 
+
+
 # 问题
 
 渲染出现条状阴影
@@ -38,3 +40,35 @@ description: "问题"
 ![](https://qhstaticssl.kujiale.com/image/png/1703057248447/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_644,h_425/format,webp)
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135477953/1A9E5FA2B1A847A7B5266DF529D0CB60.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 问题 渲染出现条状阴影
+![](https://qhstaticssl.kujiale.com/image/png/1753930912959/89A9CE433F3F2D9545B1211251708D6A.png?x-oss-process=image/format,webp)
+
+2. 产生原因 （1）面光源，是一个范围性光源，但是由于面光源存在形状，所以在贴近模型时，会出现阴影分解，接受照射的区域变亮。光源背面的模型因为没有光照，所以是灰色。如下图 ![https://qhstaticssl.kujiale.com/image/png/1703056339110/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_469,h_375/format,webp](https://qhstaticssl.kujiale.com/image/png/1703056339110/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_469,h_375/format,webp)
+![](https://qhstaticssl.kujiale.com/image/png/1703056232255/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_589,h_376/format,webp)
+
+3. 在开启面光源双面光时，
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135477877/ED68247170C8444E5AE8858E56BEF397.png)
+
+4. Step 4
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135477933/8714613D007BAAD633B966E82E374CF4.png)
+
+5. Step 5
+![](https://qhstaticssl.kujiale.com/image/png/1703056717987/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_578,h_358/format,webp)
+
+6. 解决办法 1. 需要将开启双面光的面光源尽量远离模型，需要控制距离，方案中存在虚拟光源且没有对应的模型呼应时，光源会显得突兀且不合理，补光的作用是提亮局部而不是提亮整个场景。 2. 不要使用两个方向相反的光源互相照亮画面上方和下方，这样也同样会出现问题。 3. 可以采用灯光模板中的补光。
+![](https://qhstaticssl.kujiale.com/image/png/1703057261332/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_502,h_425/format,webp)
+
+7. Step 7
+![](https://qhstaticssl.kujiale.com/image/png/1703057248447/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_644,h_425/format,webp)
+
+8. Step 8
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135477953/1A9E5FA2B1A847A7B5266DF529D0CB60.png)
+
+</Visibility>

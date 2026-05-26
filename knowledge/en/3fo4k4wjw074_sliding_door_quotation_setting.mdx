@@ -3,6 +3,8 @@ title: "sliding-door-quotation-setting"
 description: "Contents：**"
 ---
 
+
+
 **Contents：**
 
 1. Enter the quotation setting page
@@ -78,3 +80,27 @@ If the dragged-out model has no quotation, it may be due to the following reason
 1.There is a buffering time between the front and back end, and it takes some time for the front-end data to synchronize after adding the quotation category.
 
 2.The dragged-out model is not associated with the model quotation category.
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **Contents：** 1. Enter the quotation setting page 2. Create a new quotation category 3. Create a new quotation rule 4. Associate the quotation category with the corresponding model 5. Test and download the list Enter the quotation setting page Create a new quotation category Create a new quotation rule Associate the quotation category with the corresponding model Test and download the list **Example: Quote the sliding doors by area, with a unit price of 1000 per square meter for model XX.** **1.Enter the Quotation settings page** Custom Products-Product Catalog-Advanced-Quote
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841098093/AAFDD3D16D020290460D070242FB2E0D.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841100934/18411B877ABB5A4B00E7B8B3B1978C1F.png)
+
+2. **2.Creating a new quotation category** Advanced-Quote-Quotation Category (in the upper right corner). Select "Quotation Category", enter the quotation category , and click "+Add Model Quotation Category"; Select "Material Quotation Category", enter the quotation category name, and click "confirm".
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841102806/9D83C9249E031C50F47D266FAFDDAC89.png)
+
+3. **3.Creating a new quotation rule** 1.Click “Create a New quotation rule” in the upper right corner to pop up the quotation rule setting window.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841106092/BAE881305B6B9D2811E4B2F98119D40A.png)
+
+4. 2.Define the quotation rules for the panel in the pop-up window. The options marked with “\*” are required fields. Material quotation categories are optional. If the quotation does not need to change according to the material, you can skip this step.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841109023/A30EB8AA6A2ED73137E3C7BA21BFA0D5.png)
+
+5. The final Quotation of the model= unit Quotation \* quantity \* non-standard coefficient + additional fees The Quotation name refers to the name of the current Quotation rule, which may or may not be the same as the Quotation category name. The material Quotation category is optional and is used when the model Quotation is related to materials. Otherwise, it can be left blank. Unit Quotation can be filled with formula or a constant, and supports conditional statements. Quantity can be filled with formula or a constant. Here, quantity refers to the area of the board, and it should be noted that the WDH referenced in the quotation calculation formula corresponds to the output width, depth, and height in the model and not the physical properties of the model's width, depth, and height. The output width, depth, and height can be customized according to actual conditions. The unit in the editor is MM, so pay attention to unit conversion when using it. The non-standard coefficient is the coefficient multiplied on the basis of the original quotation, which defaults to 1 if not filled in. Additional fees refer to fees added on top of the original quotation, and can include costs such as labor and technology. **4.Associate Quotation category with corresponding model** Find the model to be quoted in the merchant backend, mouse over it and click the model to go to the product information page, then click "Edit" in the upper right corner and select the quotation category you just set up in the quotation category column. Click "Save" in the upper right corner. (The quotation category can be directly associated with the model.)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/jpeg/1733841111529/24042CA336DAAFD68BDA2B28F1C178DD.jpeg)
+
+</Visibility>

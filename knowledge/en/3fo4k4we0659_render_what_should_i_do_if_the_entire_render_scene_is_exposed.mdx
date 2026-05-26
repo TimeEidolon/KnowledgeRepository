@@ -3,6 +3,8 @@ title: "render-what-should-i-do-if-the-entire-render-scene-is-exposed"
 description: "Problem"
 ---
 
+
+
 # Problem
 
 The rendering appears completely overexposed, with only some dark doors and windows visible, and everything else being white.
@@ -24,3 +26,23 @@ When troubleshooting such large-scale exposure, since it is impossible to determ
 After identifying the cause, simply replace the ceiling material to return to normal.
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Problem The rendering appears completely overexposed, with only some dark doors and windows visible, and everything else being white.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197221/AEE83D82AC205027D21AF8BEBB5252AB.png)
+
+2. Solution When troubleshooting such large-scale exposure, since it is impossible to determine which light source is problematic from the image, it is necessary to use the Auto exposure to locate the light source causing the exposure. 1. Open the Automatic exposure of the version(only available in lighting version below 3.0). For manual lighting, use the effect settings for manual lighting. (The Extremely fast rendering does not have this parameter, and when problems occur with the Extremely fast rendering, it is unlikely to result in a completely white situation.)
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png)
+
+3. 2. At this point, it can be seen that the material at the ceiling position in the image lacks contrast and shadows, and is very different from the ordinary wall material. It can be determined that this is a self-luminous material with very high brightness, causing the entire image to be overexposed.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png)
+
+4. After identifying the cause, simply replace the ceiling material to return to normal.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png)
+
+</Visibility>

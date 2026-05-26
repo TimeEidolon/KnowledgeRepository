@@ -3,6 +3,8 @@ title: "beginner-guide-parameter-explanation-and-usage"
 description: "Contents**"
 ---
 
+
+
 **Contents**
 
 I. System Parameterss
@@ -62,3 +64,21 @@ Intermediate Parameters are used for modeling convenience and are not visible in
 Report Parameters can read the attribute values of sub-components as the current value of the report parameter. When the quotation, model, code, or other non-editor settings of the model need to change based on the attributes of sub-models, report parameters can read the attributes of sub-models and serve as the basis for changes in quotation, model, code, etc. The image below demonstrates reading the name of the door core through a report parameter.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849586442/CFCB7B38C038D383A04EC141B05C658B.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **Contents** I. System Parameterss II. Custom Parameters III. Intermediate Parameters IV. Report Parameters **I. System Parameters** System Parameters: Parameters in the front-end tool that control different functionalities based on predefined values for different categories. These parameters can be modified and edited in the front-end tool. System Parameters vary across different categories. Some categories may not have system Parameters. For example, the system parameters for cabinet category include "height from ground" while the door panel category has parameters like "door opening direction," "handle position," and "handle orientation." The space combination category does not have any system parameters. The image below shows the system parameters for the door panel category.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849580884/EA8EBFAD9240A1F1D48D32E1A960764E.png)
+
+2. **II. Custom Parameters** 2.1 Meaning of Custom Parameters Custom Parameters: Parameters used to control model dimensions, materials, and structure. Each category has four default system parameters: width, depth, height, and material. W corresponds to the X-axis dimension in the coordinate system, D corresponds to the Y-axis dimension, and H corresponds to the Z-axis dimension. These relationships remain unchanged regardless of the model’s rotation. CZ corresponds to the default material of the model, which can be selected from the uploaded materials. Each parameter has two attributes: name and reference name. The reference name is used during modeling, while the name is displayed in the front-end tool. **2.2 Advanced Parameters** **Additional Parameters:** By clicking the "+" sign next to custom parameters, additional parameters can be added independently. These parameters are displayed under the advanced parameters section in the front-end tool. **Name:** The name of the parameter, a combination of letters, numbers, or words alone. **Reference Name:** The name used during modeling, must consist of letters or a combination of letters and numbers, with the first character being a letter. **Parameter Type:** Float - represents continuous values with decimal points; Text - textual content. **Data Type:** Range - a range consisting of minimum and maximum values that the parameter value must fall within; Options - predefined values from which the parameter can be chosen in the front-end tool's drop-down menu. **Hidden Condition:** Specifies the conditions under which the parameter is hidden in the tool. **Modifiable:** Determines if the parameter can be modified in the tool. If set to "No," the parameter will be grayed out and cannot be modified. **Option Values:** Several commonly used values recommended and displayed as a dropdown selection in the front-end tool. **Current Value:** The default value, which must be within the specified parameter range or one of the selectable options.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849584049/9292891E335D9DEA75174A63DB59A26B.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849585184/14E82D6CDDE22E57D6E61061D14E2EFB.png)
+
+3. **III. Intermediate Parameters** Intermediate Parameters are used for modeling convenience and are not visible in the front-end tool. They are mainly used for process parameters. For example, using an intermediate Parameter to represent the indentation value of the back panel allows easy modification of this parameter by directly editing and saving it in the editor's sidebar. Without intermediate Parameters, each individual board related to the back panel process would need to be modified and saved separately, causing additional operations. **IV. Report Parameters** Report Parameters can read the attribute values of sub-components as the current value of the report parameter. When the quotation, model, code, or other non-editor settings of the model need to change based on the attributes of sub-models, report parameters can read the attributes of sub-models and serve as the basis for changes in quotation, model, code, etc. The image below demonstrates reading the name of the door core through a report parameter.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733849586442/CFCB7B38C038D383A04EC141B05C658B.png)
+
+</Visibility>

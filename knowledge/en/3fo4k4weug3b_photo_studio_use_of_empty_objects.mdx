@@ -3,6 +3,8 @@ title: "photo-studio-use-of-empty-objects"
 description: "This tutorial will explain the use of empty objects to you in detail."
 ---
 
+
+
 This tutorial will explain the use of empty objects to you in detail.
 
 # For Users
@@ -26,3 +28,14 @@ Function:
   + Empty objects are often used to establish constraint relationships. For example, an object can be constrained to an empty object, allowing control of the empty object's movement to indirectly control the movement of the constrained object. Since empty objects have no geometry, they do not directly affect the final visual result during rendering. This means they can be freely used in a scene to construct scene structures and control animations without the concern of appearing in renderings. For instance, using a "target" constraint to ensure a model's part always points to the position of an empty object.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1772614583968/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Direct Addition of "Empty Object" Supported in Canvas Concept: An empty object is a special object type that has no actual geometry in a 3D scene and is not directly rendered or displayed. It can be seen as an invisible model or a reference coordinate point. Function: * Object Management + Empty objects are very useful in hierarchy structures. They can serve as parent objects for other objects, facilitating the organization and management of multiple objects within a scene. For example, when creating a complex animation scene with multiple models, lights, and cameras, an empty object can be created to group related objects, establishing a logically clear hierarchical relationship. * PSR Transformation Operations Transmission (Batch Operations & Group Management) + The transformation attributes of empty objects (such as position, rotation, and scale) affect all their child objects. This makes it easier to apply uniform transformation operations to a group of objects. For instance, to perform a global rotation or move operation on a set of scattered models, these models can be set as child objects of an empty object, and only the empty object needs to be rotated or moved, with its child objects transforming in the same way, greatly enhancing operational efficiency. * Animation Driven + Empty objects are often used to establish constraint relationships. For example, an object can be constrained to an empty object, allowing control of the empty object's movement to indirectly control the movement of the constrained object. Since empty objects have no geometry, they do not directly affect the final visual result during rendering. This means they can be freely used in a scene to construct scene structures and control animations without the concern of appearing in renderings. For instance, using a "target" constraint to ensure a model's part always points to the position of an empty object.
+![](https://qhstaticssl.kujiale.com/image/png/1772614583968/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

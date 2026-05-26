@@ -3,6 +3,8 @@ title: "coohom-amazon-modeling-standards-3ds-max"
 description: "1.1.** **Models must comply with the Coohom upload standards.**"
 ---
 
+
+
 ### **1.1.** **Models must comply with the Coohom upload standards.**
 
 ### **1.2.** **Model Size**
@@ -108,3 +110,47 @@ The texture file pixel should be within ***4096\*4096****, and not lower than* *
 #### **4.** **Model Upload**
 
 The model location should be selected according to the actual situation of the product model (ground, ceiling, wall model). [Image]
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **1.4.** **UV** The model UV should be within the range of 0-1, and the unfolding size should be determined by the size and detail level of the model part, and should be distributed reasonably. The UV rotation direction must match the actual application, and there should be no texture confusion. The arrangement example is shown below;
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245062211/3E121190D35515E9B42E7BB26A2E4875)
+
+2. **2.2.** **Switch State** Regardless of the open and closed state of the product in the main image, it is recommended to keep the model closed, with power cords and other items placed at the back of the product (example shown in below);
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245062768/1F00B5D25113B4A5B6C829570C377B6A)
+
+3. hidden and not affecting the model shape or Bounding Box; indicator lights should be kept off (example shown in below).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245063094/4D28EBCB471E4A7BE004D2A0C06D6228)
+
+4. Step 4
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245063443/11502A0384F95657F148645A9B1738A0)
+
+5. Step 5
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245064105/3FE02AABBA993FBD7A163FE4378FA5E3)
+
+6. Step 6
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245064478/CC6A55AD5C039E75FBE689C7819433CB)
+
+7. **2.7.** **Details** All external details of the product that can be seen must be displayed in the 3D model, including buttons, fabric folds, product gaps, fine metal accessories, various material details. The sewing method of the fabric, the arrangement of the nails, the connection method of the components, the splicing method of the combination, including all functional hardware elements (such as screws, nuts, bolts, buttons, hinges, pins, brackets, supports) that can be seen on the main detail page, should be correctly modeled, as shown in below.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245065042/29A6D0395A68360A63452D1BD61D6250)
+
+8. Step 8
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245065548/D9A97A69078BB1E56B8F9ACAD2A99282)
+
+9. Step 9
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245065987/E16496F1EC6C8435701E952462C4EB01)
+
+10. **2.8.** **Content Exclusivity** If there is an inconsistency in the content between the main image on the product detail page and other images, model according to the main image (example shown in below).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245066481/C2D61385CBC7469678E901A4F2013769)
+
+11. **3.2.** **Supported Material Range:** **VRay Standard Material (VRayMtl)** Supported Material Nodes: Opacity, Refraction, Diffuse, Bump, Reflection, Reflect Glossiness, Fresnel, Fresnel IOR Lock, Fresnel IOR, Refraction IOR All the above material nodes only support texture/color form (as shown in below), if connected to other program textures, there will be a loss of effect.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245066858/E9A1B3DE36CCD91B1B71DBD0CE530378)
+
+12. **VRay Blend Material (VRayBlendMtl)**
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745245067130/1579FC6ECBC805532657268526E45872)
+
+</Visibility>

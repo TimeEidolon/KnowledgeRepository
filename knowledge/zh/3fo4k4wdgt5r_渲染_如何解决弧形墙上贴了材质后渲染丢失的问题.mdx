@@ -3,6 +3,8 @@ title: "渲染-如何解决弧形墙上贴了材质后渲染丢失的问题"
 description: "问题"
 ---
 
+
+
 # 问题
 
 给弧形墙附上了材质之后，3D显示正常，但是渲染却不显示材质
@@ -26,3 +28,20 @@ description: "问题"
 # 解决方法
 
 清除集成墙板材质，换成普通的木饰面板材质或者其他贴图类材质再去渲染即可正常
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 问题 给弧形墙附上了材质之后，3D显示正常，但是渲染却不显示材质 正常附上了材质
+![](https://qhstaticssl.kujiale.com/image/png/1655809870226/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_347/format,webp)
+
+2. 渲染不显示，且附材质的面丢失了：
+![](https://qhstaticssl.kujiale.com/image/png/1655809902117/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_447/format,webp)
+
+3. 原因 如果进硬装材质编辑的话，你就会看到这样一个提示，抱歉，包含柱面的面方案暂不支持集成墙板。 弧形墙属于柱面，就是弧形面目前暂不支持放置集成墙板这个特殊材质
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134822826/DE81FE9FC608B45DD783CA2B957EBED8.png)
+
+</Visibility>

@@ -3,6 +3,8 @@ title: "new-conditional-formula"
 description: "I.Usage Scenario**"
 ---
 
+
+
 **I.Usage Scenario**
 
 When using material packages or style packages or outline packages, in some cases, the package scope needs to change according to other variables. For example, when the thickness of the board changes, the selected material package will also change accordingly. Before this feature was introduced, it was necessary to create multiple panels of different thicknesses and set different material packages for each panel. After this feature was introduced, only one panel needs to be created, and the corresponding material package can be set according to the thickness parameter.
@@ -44,3 +46,23 @@ Figure 1-3 Component Properties: Material-Condition
 ![](https://qhstaticssl.kujiale.com/image/png/1749116267277/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
 Figure 1-4 Example of how to use the condition editor
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **I.Usage Scenario** When using material packages or style packages or outline packages, in some cases, the package scope needs to change according to other variables. For example, when the thickness of the board changes, the selected material package will also change accordingly. Before this feature was introduced, it was necessary to create multiple panels of different thicknesses and set different material packages for each panel. After this feature was introduced, only one panel needs to be created, and the corresponding material package can be set according to the thickness parameter. **II.Function introduction** 1. The range of packages (material packages/style packages/outline packages, etc.) can change according to changes in other variables. 2. The current value of material/style/outline can be determined by an expression, not just by referencing a variable. **III.Specific operations** 1. There are three ways to call up this tool: ① In the material "value type" selection, select "optional" and add the dropdown option "conditional". After selection, you can set the conditional expression of the package range, as shown in Figure 1-1.
+![](https://qhstaticssl.kujiale.com/image/png/1749115935347/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. Figure 1-1 Value type: optional-condition ② In the material "value type" selection, select "formula/compound formula" and add the dropdown option "conditional". After selection, you can set the conditional expression of the current value, as shown in Figure 1-2.
+![](https://qhstaticssl.kujiale.com/image/png/1749115967955/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. Figure 1-2 Value type: formula/compound formula-condition ③ In the component properties, the material/style/outline variable adds the dropdown option "condition". After selection, you can set the conditional expression of the current value, as shown in Figure 1-3.
+![](https://qhstaticssl.kujiale.com/image/png/1749116237680/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. Figure 1-3 Component Properties: Material-Condition 2. Editing mode (taking different optional material ranges corresponding to the thickness of the board as an example) is shown in Figure 1-4. The operation can be divided into three steps: * Add conditions and select the corresponding material package/outline package/style package under this condition. The position of the condition can be adjusted by dragging. * Click Calculate result to verify the calculation result under the current condition. * Select the current value of the corresponding material package/outline package/style package under the current condition.
+![](https://qhstaticssl.kujiale.com/image/png/1749116267277/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

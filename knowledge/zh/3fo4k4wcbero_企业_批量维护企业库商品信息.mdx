@@ -3,6 +3,8 @@ title: "企业-批量维护企业库商品信息"
 description: "企业库商品的导入和导出功能，可实现企业商品的批量汇总、统计和修改。此功能允许您一次添加或编辑多个产品的详细信息，您不仅可以通过模板中现有的字段编辑产品详细信息，还可以添加自定义字段并在其中填写详细信息。本文会为您详细讲解如何批量维护企业库商品信息"
 ---
 
+
+
 企业库商品的导入和导出功能，可实现企业商品的批量汇总、统计和修改。此功能允许您一次添加或编辑多个产品的详细信息，您不仅可以通过模板中现有的字段编辑产品详细信息，还可以添加自定义字段并在其中填写详细信息。本文会为您详细讲解如何批量维护企业库商品信息
 
 # 面向用户
@@ -71,3 +73,47 @@ description: "企业库商品的导入和导出功能，可实现企业商品的
 3. 导入成功后，您可以回到**导入＆导出**页面，在页面的下面部分，您将找到最近导入的历史记录以及结果
 
 ![](https://qhstaticssl.kujiale.com/image/png/1752140842505/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 入口 进入**工作台**，选择**“企业库 - 商品”**，点击**导入＆导出**
+![](https://qhstaticssl.kujiale.com/image/png/1752138412766/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 导出商品 商品导出可实现对企业库内商品信息的批量输出 1. 在**导入＆导出**页面，点击**导出**
+![](https://qhstaticssl.kujiale.com/image/png/1752137578824/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. 2. 在弹窗中，选择**类目**后，点击**下一步**
+![](https://qhstaticssl.kujiale.com/image/png/1752137753081/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. 3. 选择**导出属性**，默认导出商品ID，其他属性由用户自主选择，如需实现批量修改某个商品字段的，需将该字段导出，选择完成后，点击**生成表格**
+![](https://qhstaticssl.kujiale.com/image/png/1752138020141/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. 4. 等待表格生成成功后，点击**下载**
+![](https://qhstaticssl.kujiale.com/image/png/1752138471867/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+6. 5. 将下载的Excel表格打开，补充相应表格内容 **注意：** * 我们使用产品 “ID” 来识别产品。此列在我们的后端自动生成，并将自动显示在此模板中。请不要删除或修改此列 * 仅识别产品详情页面中当前可用的字段
+![](https://qhstaticssl.kujiale.com/image/png/1752138513449/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+7. Step 7
+![](https://qhstaticssl.kujiale.com/image/png/1752138801297/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+8. 添加自定义字段 如果您想添加自定义字段，选择**“企业库 - 商品信息 - 商品字段管理 - 自定义字段”**，点击**创建自定义字段**去添加自定义字段，自定义字段将添加到**导出属性**中，选择该属性后会新增到导出的Excel表格
+![](https://qhstaticssl.kujiale.com/image/png/1752140181468/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+![](https://qhstaticssl.kujiale.com/image/png/1752140617349/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+![](https://qhstaticssl.kujiale.com/image/png/1752140520196/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+9. 导入商品 商品导入可实现对企业库内商品信息的批量修改 **前提条件：**使用商品导出功能，下载原始商品信息EXCEL表格**（该表格需包含需要修改的商品，并确认需要批量修改的字段在导出字段中）**，在EXCEL中批量修改字段，**详细可见上文导出商品操作步骤** 1. 导出的表格信息修改完成后，回到**导入＆导出**页面，点击**“导入商品信息”**，在弹出的文件夹选框中选择修改好的表格，点击**打开**
+![](https://qhstaticssl.kujiale.com/image/png/1752139032141/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+![](https://qhstaticssl.kujiale.com/image/png/1752139125958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+10. 2. 显示**已完成导入**后，企业库内商品信息即批量修改成功 * **注意：导入失败会显示有几条导入错误或不完整的项目，可以下载错误信息进行查看**
+![](https://qhstaticssl.kujiale.com/image/png/1752139417358/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+11. 3. 导入成功后，您可以回到**导入＆导出**页面，在页面的下面部分，您将找到最近导入的历史记录以及结果
+![](https://qhstaticssl.kujiale.com/image/png/1752140842505/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

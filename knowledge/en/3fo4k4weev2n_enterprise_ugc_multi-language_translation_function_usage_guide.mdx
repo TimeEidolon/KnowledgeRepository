@@ -3,6 +3,8 @@ title: "enterprise-ugc-multi-language-translation-function-usage-guide"
 description: "\"UGC Multi-Language Translation Feature\" is primarily used for translating UGC texts in corporate databases, such as product descriptions, parametric models, an"
 ---
 
+
+
 "UGC Multi-Language Translation Feature" is primarily used for translating UGC texts in corporate databases, such as product descriptions, parametric models, and other data. These UGC texts are customized by various enterprise users, characterized by their individuality and professionalism, and adhere to respective industry standards. Therefore, automatic machine translation is not suitable for handling such texts. To balance efficiency and accuracy, the translation of UGC texts is carried out by enterprise users themselves.
 
 Translation entries are categorized by resource type and stored in Excel files. Through operations such as exporting, importing, and publishing, translation content is input and updated. To ensure the accuracy of online data, translations imported through the operation will remain in draft mode until they are published in the online environment.
@@ -105,3 +107,32 @@ Such practices help minimize permission conflicts and improve efficiency.
 2. Currently, the translation languages are supported in 5 languages, including English, Traditional Chinese, Thai, Hindi, and Korean. Additional languages can be added as needed. If a company requests new translation languages, it can contact enterprise operations for supplementary requests.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1773198344800/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Multi-Language Configurator **1. Entrance:** In the merchant backend, click **Enterprise Catalog → Product Info → Multilingual Management**.
+![](https://qhstaticssl.kujiale.com/image/png/1769652974606/D9263848ACCFD4C0FE8CB20C81429C6C.png)
+
+2. 2. The **Multilingual Management** page contains three tabs, organized from left to right: **Translation Management, Operation History,** and **Release Record**. Their functionalities are as follows: * **Translation Management:** Used to export and import translation texts by resource type. * **Operation History:** A log of export and import operations performed by users. * **Release Record:** Logs the time, status, and details of translation publication.
+![](https://qhstaticssl.kujiale.com/image/png/1769653182372/398FC4028428F9A59CC366AB77B1FABB.png)
+
+3. 3. The **Publish Translation** button located at the top right of the page is used to publish imported translations.
+![](https://qhstaticssl.kujiale.com/image/png/1769653191825/52ADD05631B0B4C5E9CDAE90E855F1D3.png)
+
+4. 4. Currently, the fields to be translated are categorized into 12 resource types. Each resource type includes the following translation fields: | Resource | Fields | Example | | --- | --- | --- | | Commodity | Commodit Name/Model/Product Code/Product Dimensions/Material/  Description/Custom Field Value/Base Material |  | | Folders | Folder Name |  | | Custom Libraries | Custom Library Name | | Brand Series | Brand Name/Series Name |  | | Custom Labeels | Tag Group Name/Tag Value |  | | Custom Fields- Structure | Field Name/Text Field Value (Unlimited Type Only)/Link Field Text Value |  | | Parametric Model | Parametric Model |  | | Product Packages | Range Name |  | | Style Template | Template Name/Description |  | | Style Template Tags | Tag Group Name/Tag Value |  | | Global Variables | Global Parameter |  | | Variable System | Variable System |  | Note: The above resources support both own and licensed models. 5. Below is the recommended workflow for a Multi-Language Configurator using this feature: Example: Suppose a Multi-Language Configurator needs to translate product data Step one: In the Merchant Backend, click **Enterprise Catalog → Product Info → Multilingual Management**, select the type of field to be translated, and then click **Export**. In the drop-down interface, select the products to be translated and confirm the target translation language. Finally, click **Export**.
+![](https://qhstaticssl.kujiale.com/image/png/1769654886764/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. Step 5
+![](https://qhstaticssl.kujiale.com/image/png/1773198318780/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+6. Step two: In **Operation History**, **locate** the export record anddownload the Excel file. Step three: The Multi-Language Configurator translates andfills the table based on the Excel file format and saves it upon completion. Step four: **Translation Management → Commodity→ Import**. The configurator selects the Excel file containing the translatable entries and **Import** it, completing the import process.
+![](https://qhstaticssl.kujiale.com/image/png/1769655668202/5E8E333FA1E0363A83BCBF88D1A2E825.png)
+
+7. Notes 1. Multi-Language Reviewers and Multi-Language Viewer Users can both view translation content within the Kujiale design tool. The main distinction between them lies in: * **Reviewer:** Views the draft version of translations, which may not yet be finalized and subject to adjustments. * **Viewer User:** Views the official online version of translations, which are finalized and ready for usage. If a single account holds both permissions, the tool prioritizes showing draft data when reviewing translations. In this case, Viewer User permissions will be overridden. Thus, when assigning permissions, the following principles should be followed: * **Clarify Responsibilities:** Understand the specific duties associated with each account. * **Allocate Permissions Appropriately:** Ensure that each user accesses data relevant to their assigned responsibilities. Such practices help minimize permission conflicts and improve efficiency. 2. Currently, the translation languages are supported in 5 languages, including English, Traditional Chinese, Thai, Hindi, and Korean. Additional languages can be added as needed. If a company requests new translation languages, it can contact enterprise operations for supplementary requests.
+![](https://qhstaticssl.kujiale.com/image/png/1773198344800/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

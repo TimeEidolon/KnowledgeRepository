@@ -3,6 +3,8 @@ title: "panel-quotation-setting"
 description: "Definition of panel quotation"
 ---
 
+
+
 Definition of panel quotation
 
 The result of the width \* depth \* unit price of the panel.
@@ -96,3 +98,57 @@ If there is no quotation for the dragged model, it may be due to the following r
 **2.The dragged model is not associated with the model quotation category.**
 
 **3.The current material is not associated with the material category defined in the quotation rule. Please replace it with a material that has a quotation category set.**
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Product Catalog-Advanced-Quote
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850653976/578AACA685128B9B1340B02BFBCCBB42.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850655100/12728AD67453645159A8A001BFD1F304.png)
+
+2. **Creating a new quotation category** Advanced-Quote-Quotation Category (in the upper right corner). Select "Quotation Category", enter the quotation category , and click "+Add Model Quotation Category"; Select "Material Quotation Category", enter the quotation category name, and click "confirm". If there are several different material prices, please create several quotation categories.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850657735/0A52C205C5ED9A61AC0229B206E2B039.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850659454/0D035F9697EFA50D0178CFA14A577B3B.png)
+
+3. **Creating a new quotation rule** 1.Click “Create a New quotation rule” in the upper right corner to pop up the quotation rule setting window.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850660497/1DCD8FBDA3EA04BFC4DFDECA6CD71543.png)
+
+4. 2.Define the quotation rules for the panel in the pop-up window. The options marked with “\*” are required fields. Material quotation categories are optional. If the quotation does not need to change according to the material, you can skip this step. In this example, there are two material quotation categories. In practice, you should create a quotation rule for each type of material quotation.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850662601/58565E9AA71BBFBD2681AFB0FE2412D0.png)
+
+5. Follow the steps above to define the quotation rules for the painted panel.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850663439/9B74581FC292CA89E9AAAF27BED4D5D1.png)
+
+6. The final price of the model = unit price \* quantity \* non-standard coefficient + additional fees. The quotation name refers to the name of the current quotation rule and can be different from the quotation category name. Material quotation categories are optional. If the model quotation is related to the material, the rules should be set separately for each material. Otherwise, it is not necessary to select. Unit price can be filled with a formula or a constant, and supports conditional judgments. Quantity can be filled with a formula or a constant. Here, quantity refers to the area of the panel. It is important to note that in the quotation calculation formula, WDH corresponds to the output width, output depth, and output height in the model, not the physical attributes of the model's width, depth, and height. The output width, depth, and height can be customized based on the actual situation, so we need to modify the output properties of the panel in different directions. In this way, we only need to make one set of quotation rules. The unit in the editor is MM, so please pay attention to unit conversion when using it. The non-standard coefficient refers to the coefficient multiplied on the basis of the original, and the default is 1 if not filled. Additional fees refer to additional costs added on top of the original ones, which can include costs such as processes and labor. It is recommended to write the plate thickness in the output height, the size of the grain direction in the output width, and the size of the vertical grain direction in the output depth (just like the correct physical properties of a rectangular solid).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850664567/FC68541486A36F0B3C13F0401B749AF5.png)
+
+7. Here are some examples of the quotation output settings for commonly used panels:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850666599/84FCF9DB2797ACE57770697B6C82CCDD.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850667184/6860D4EBD4A4CF262C3AA8D3D4FF7C62.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850667746/1623C01800A9C43918F7BB4246931611.png)
+
+8. Associating material and model with quotation categories 1. Find the panel to be priced in the backend, hover over it and click the panel to go to the product information page, click "Edit" in the upper right corner, select the quotation category set just now in the quotation category column, and click "Save" . Find the panel to be priced in the backend, hover over it and click the panel to go to the product information page, click "Edit" in the upper right corner, select the quotation category set just now in the quotation category column, and click "Save" .
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850668778/C60376AE368055842FDD76BA4A390B18.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850670070/F39FA99D4A03ACEF0BC0AC981AAF8135.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850671046/2BF2CB35013C56E4931DF63E72A47D1B.png)
+
+9. 1. In the backend, find the material to be priced. If multiple materials have the same price, multiple materials in the same category can be selected for batch editing. Choose the corresponding material quotation category. In the backend, find the material to be priced. If multiple materials have the same price, multiple materials in the same category can be selected for batch editing. Choose the corresponding material quotation category.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850672860/EE9BC8A251F59864836C56F81205C05C.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850673835/A3E0B652D83B68B7E4ADAE61B85B3624.png)
+
+10. Follow the same method to set the quotation category for the painted texture.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850675208/1C4FC5F0F1464553BE701706AEDC7EDE.png)
+
+11. **Testing and downloading the list** After setting the quotation, please go back to the quotation page.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850676559/3FCFC6FCB13E7885CB93FB9269EE7EB3.png)
+
+12. In the customization tool, drag the panel with the quotation category set into the scene, modify the size and material, and download the list to check if the quotation is correct.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850677754/A4BFA930AE55BA2727C7DD98E2B4E941.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850680528/423E666041C5E77FA76E7F36FC2F25E3.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850682967/55316DD18592AEC71E802FCB1B8E7ABD.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733850685238/483837EFFB98AF1DF08B1DA616C3B8A1.png)
+
+</Visibility>

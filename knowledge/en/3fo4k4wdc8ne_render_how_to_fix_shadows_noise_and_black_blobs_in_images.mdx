@@ -3,6 +3,8 @@ title: "render-how-to-fix-shadows,-noise,-and-black-blobs-in-images"
 description: "Problem 1"
 ---
 
+
+
 # Problem 1
 
 As shown in the following images, part of the red line in Image One is a shadow; there is an anomaly on the surface of the model in Image Two; spots appear on the ceiling in Image Three, which we refer to as overlapping surfaces (noise/shadows/black spots).
@@ -44,3 +46,23 @@ The image is very clean, but noise appears on a local material, as shown below.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png)
 
 2. Increase the brightness of the light.
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Reason 1 The overlapping of two surfaces of the model will result in the situations shown below. 1. In the first image, you can see that there is no object in the sky area, but a similar situation occurs. This is because there is a piece of transparent glass in the same position, and when rendering, the surfaces of the glass and the ceiling overlap, resulting in the situation shown below. 2. This situation often occurs in custom panels or cabinets because the model had overlapping surfaces during modeling, leading to shadows when rendering. 3. When the light source and the model overlap, especially when the ceiling height and the surface light source height overlap, rendering will result in the situation shown below, with the ceiling disappearing.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png)
+
+2. Step 2
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1762250106400/95698113CFD6B560B9927D05D92771D5.png)
+
+3. Reason 2 1. An option in the parameters of the uploaded model is set below 1, leading to the situation shown below. If it is a public library material, then there is a problem with the uploaded material. 2. The light is too dim.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png)
+
+4. Solution 2 1. If it is the material you uploaded, simply adjust the blur value in the material properties to the default value of 1 in Max, then re-upload. If it is a public library material, it is recommended to replace it with another material or upload a new one.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png)
+
+</Visibility>

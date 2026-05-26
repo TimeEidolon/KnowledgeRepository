@@ -3,6 +3,8 @@ title: "render-how-to-fix-overly-strong-weak-material-texture"
 description: "Problem"
 ---
 
+
+
 # Problem
 
 When adjusting the rendering effect, it was found that after adjusting the bump parameters, the graininess became too strong.
@@ -19,3 +21,17 @@ When adjusting the rendering effect, it was found that after adjusting the bump 
 3. Light source adjustment: Properly adjusting the number and position of light sources may affect the material's performance, alleviating graininess.  
   
 4. Rendering settings: Check the rendering settings to ensure that there is no excessive sharpening or other post-processing affecting the material performance.
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Solution 1. Reduce bump scale: You can try further fine-tuning in material editing during real-time rendering, customizing the adjustment of the bump scale of the normal map.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134893640/8F3BDF68BFFEDA2569C8E146AD480476.png)
+
+2. 2. Adjust materials: Sometimes, the graininess may be related to the material itself. Try changing the material or adjusting other material properties, such as reflection glossiness or Reflection.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134893531/3A64130960B7E4E7C452D6827CA04E17.png)
+
+</Visibility>

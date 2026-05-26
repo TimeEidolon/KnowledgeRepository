@@ -3,6 +3,8 @@ title: "全屋定制-3dgs导入真实场景功能指南"
 description: "无需手动绘制，一键解锁实景还原与创意设计！该功能支持上传真实场景图片、全景图、3dgs文件，自动识别并生成户型，后续可在工具内自由二次设计，完成后一键渲染全新效果图。更灵活的是，识别生成户型时，用户可自主选择是否清除软装及定制家具：若选择不清除，可精准还原上传图片中的真实场景布局；若选择清除，则生成纯净户型基底，灵活适"
 ---
 
+
+
 无需手动绘制，一键解锁实景还原与创意设计！该功能支持上传真实场景图片、全景图、3dgs文件，自动识别并生成户型，后续可在工具内自由二次设计，完成后一键渲染全新效果图。更灵活的是，识别生成户型时，用户可自主选择是否清除软装及定制家具：若选择不清除，可精准还原上传图片中的真实场景布局；若选择清除，则生成纯净户型基底，灵活适配各类设计改造需求，助力用户高效开启设计工作
 
 # 面向用户
@@ -143,3 +145,80 @@ description: "无需手动绘制，一键解锁实景还原与创意设计！该
 3. 渲染完成查看渲效果图
 
 ![](https://qhstaticssl.kujiale.com/image/png/1775627971960/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 入口 1. 在设计工具中，点击左侧栏的**房间—实景导入**
+![](https://qhstaticssl.kujiale.com/image/png/1770715605631/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. 2. 3DGS 导入有两种模式：**上传图片**和**上传3Dgs文件**
+![](https://qhstaticssl.kujiale.com/image/png/1775630980904/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. 生成点云 1. 在3D实景导入页面，可以**上传普通图/全景图**，你可以通过**点击上传**，在弹出的面板选择要上传的图片，然后点击**打开（**也可以直接拖拽图片至此处上传）
+![](https://qhstaticssl.kujiale.com/image/png/1770716400211/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. * **若是没有合适的图片/全景图，可以选择下方推荐的示例**
+![](https://qhstaticssl.kujiale.com/image/png/1770715665707/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. * **上传普通图和全景图的格式要求如下表：** **a.普通图：** | 条件 | 范围 | 推荐 | | --- | --- | --- | | 像素范围 | 480\*480以上 | 2K | | 文件大小 | 无要求 | 1~5MB | | 格式 | jpg、jpeg、png、webp | 均可 | | 拍摄要求 | 相机高度：1.3米~1.6米  相机朝向：拍摄位置背靠空间的一面墙，相机朝向与对面墙垂直，平视角拍摄 | 相机高度：1.4米（根据现场不同高度能够拍摄到的内容灵活调整） | **b.全景图：** | 条件 | 范围 | 推荐 | | --- | --- | --- | | 像素范围 | 1440\*720以上 | 3000\*1500 | | 比例要求 | 2：1 | 2：1 | | 文件大小 | 无要求 | 1~5MB | | 格式 | jpg、jpeg、png、webp | 均可 | | 拍摄要求 | **必须是鱼眼全景图（专业全景图拍摄设备，非手机全景图）**  相机高度：1.3米~1.6米  相机朝向：拍摄位置尽量靠近空间中心，相机朝向与任意墙垂直，平视角拍摄 | 相机高度：1.4米  （根据现场不同高度、不同相机位置能够拍摄到的内容灵活调整） | 2. 上传成功后，会自动判断是全景图还是单图（如有错误可手动修改），然后根据需要选择是否清理软装和定制（示例为关闭），设置完成后，点击**开始创建** * 关闭自动清理软装和定制柜选项后生成的全景图中会保留原有的软装和定制柜
+![](https://qhstaticssl.kujiale.com/image/png/1770716686625/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+6. 3. 识别户型生成点云，如下图所示：
+![](https://qhstaticssl.kujiale.com/image/gif/1770720366538/6B3D8A0BC48B0B54AA4504EF77BF8392.gif)
+
+7. 4. 生成点云后，可以在顶部设置**层高**，同时需要确认**xy平面**下的户型方向是否正确，如果不正确，可以使用右下角旋转轴及顶部的**旋转**工具进行调整
+![](https://qhstaticssl.kujiale.com/image/png/1770717271234/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+8. Step 8
+![](https://qhstaticssl.kujiale.com/image/gif/1770720460491/DCE71965D19C1438840BBBDE410C6B53.gif)
+
+9. 5. 调整完成后，点击**开启设计**
+![](https://qhstaticssl.kujiale.com/image/png/1770717306283/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+10. 放置模型素材 在设计工具中，可以看到生成的户型，选择需要的软装模型和定制家具放置户型中 * 点云存在破洞属于正常现象，最终渲染效果将呈现高清实景
+![](https://qhstaticssl.kujiale.com/image/png/1770722220577/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+11. Step 11
+![](https://qhstaticssl.kujiale.com/image/png/1770779361048/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+12. 渲染出图 1. 素材放置完成后，点击进入**渲染**
+![](https://qhstaticssl.kujiale.com/image/png/1770779436392/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+13. 2. 渲染时，普通图和全景图会自动运用最佳视角，然后在左侧模板选择需要的**清晰度**以及**专属灯光模板**，点击**生成**（渲染时会做AI增强，为保障渲染质量，渲染的普通图不要超过4K，渲染的全景图不要超过5K）
+![](https://qhstaticssl.kujiale.com/image/png/1770779602808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+14. * 注意：渲染普通图与全景图时，2D 视角会显示绿色椭圆最佳拍摄区域，相机在该区域内可自由调整，均能渲染出高质量的效果图
+![](https://qhstaticssl.kujiale.com/image/png/1770779470380/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+15. 3. 渲染完成后，可以点击右上角的**图册**查看效果
+![](https://qhstaticssl.kujiale.com/image/png/1770779749913/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+16. Step 16
+![](https://qhstaticssl.kujiale.com/image/gif/1770792831952/BDD03DBD7B143CFD44CBE3156FF860F8.gif)
+
+17. 生成点云 1. 在实景导入页面，点击**上传3DGS文件**，然后在弹出的面板选择需要的文件，点击**打开**
+![](https://qhstaticssl.kujiale.com/image/png/1775628458074/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+18. 2. 识别户型生成点云，生成点云户型后，您可借助界面右下角的旋转轴，配合顶部工具栏中的**旋转、剖切、顶底**等工具，对点云户型的位置、角度与显示范围进行精准调整
+![](https://qhstaticssl.kujiale.com/yuntai/image/gif/1775628636655/6FB51597E71C9383060A677E01A2CC95.gif)
+
+19. 3. 调整完成，点击**开启设计**
+![](https://qhstaticssl.kujiale.com/image/png/1775619573994/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+20. 放置模型素材 根据需要在户型中放置合适的家具素材（如：装饰画、窗帘、窗、定制柜等）
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1775628636395/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+21. 渲染出图 1. 素材放置完成后，点击进入**渲染**
+![](https://qhstaticssl.kujiale.com/image/png/1775616378112/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+22. 2. 进入渲染页面，先在顶部选择渲染类型（支持普通图、全景图），然后调整至合适的视角，接下来在左侧模板选择需要的**清晰度**以及**专属灯光模板**，点击**立即渲染** * 注意：渲染时会做AI增强，为保障渲染质量，渲染的普通图不要超过4K，渲染的全景图不要超过6K
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1775628636577/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+23. 3. 渲染完成查看渲效果图
+![](https://qhstaticssl.kujiale.com/image/png/1775627971960/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

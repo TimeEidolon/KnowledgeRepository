@@ -48,6 +48,14 @@ Options (same semantics as Java `syncToMarkdown`):
 | `--no-update-nav` | — | Skip regenerating `docs.json` |
 | `--json` | — | Print result JSON |
 
+After syncing, articles include a hidden `Assistant step guide` block (for AI indexing) with step text and image URLs. To refresh it on existing files:
+
+```bash
+python scripts/enrich_agent_media.py
+```
+
+**Important:** After changing content or `.mintlify/Assistant.md`, push to Git and wait for Mintlify to redeploy so the AI assistant re-indexes.
+
 ## AI tools
 
 ```bash

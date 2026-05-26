@@ -3,6 +3,8 @@ title: "advanced-bottle-tray-modeling"
 description: "I.Case Presentation**"
 ---
 
+
+
 **I.Case Presentation**
 
 We will model a standard bottle tray as an example (with a fixed height of 82, and specific arc sizes - a small arc in the front with a radius of 20 and a larger arc in the back with a radius of 40).
@@ -180,3 +182,107 @@ Click on the file icon in the upper right corner, select "Save," choose the desi
 On the product management page, find the corresponding category for the model. Check the model and click on "Store" to wait for the model rendering to complete.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841715536/7995F79FA111268524784D85955D393C.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **I.Case Presentation** We will model a standard bottle tray as an example (with a fixed height of 82, and specific arc sizes - a small arc in the front with a radius of 20 and a larger arc in the back with a radius of 40).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841613804/4D1E19184B7D2BDE918071C2CC1B5EF8.png)
+
+2. **II.Operation Steps** **Firstly, save the components of this model separately in the semi-finished products library.** The composition of the parts is as follows: (Components 1 and 3: flat panels, Component 2: flat panel with defined points + array)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841615827/1838D3531E12F214659DA5CF6080C00A.png)
+
+3. 1.1. Create Location: Custom Furniture —Create Asset—Parametric Model Library— New—
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841619080/FC33852DEA8E0A2198423F336A1153A0.png)
+
+4. 1.2. Set Parameters Width: Value Type: Range, Maximum Value: 250, Minimum Value: 1800, Current Value: 600 Depth: Value Type: Optional, Options: 18, Current Value: 18 Height: Value Type: Optional, Options: 82, Current Value: 82
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841624065/AA19479AD9683EF9DC38A63E0A5AB887.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841626645/A32C36952E37D2C0EFAD8190B3FED251.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841631028/1CF5411525A737B8D05EABE97ED54FD4.png)
+
+5. Add Advanced Parameter Name: Arc Radius, Reference Name: #R, Value Type: Range, Minimum Value: 20, Maximum Value: 40, Current Value: 20 - Create
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841634493/4B1B22BE4A9852491139895AA8433A48.png)
+
+6. 1.3. Create Flat Panel
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841637141/3366AFA9A140B48D748D3584EC79BEF7.png)
+
+7. Edit Contour Point 1 (0, 0), Point 2 (0, #R+1), Point 3 ((106-2\*#R)/2.0, #R+1), Point 4 ((106-2\*#R)/2.0+2\*#R, #R+1), Point 5 (106, #R+1), Point 6 (106, 0)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841638747/0B39D9342AD253709179760A1B026C1E.png)
+
+8. Select the line segment from Point 3 to Point 4, convert the straight line into an arc with a radius of #R
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841640697/D8DF79D70CD2CB9D2EE0720A778A1608.png)
+
+9. Set physical properties of the flat panel: Position X: (#W%106)/2.0 , Position Z: 82 , Rotation X: 90
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841643569/A46900B6799F92AA54DE53CBA45DF479.png)
+
+10. Array Click on the flat panel, right-click and select Array.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841646036/D61FAD93507EA765995FD198E03E5CB2.png)
+
+11. Set Array Rules: Direction: +X, Array Length: #W-#W%106, Array Type: Step: 106, Select Generate
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841648184/66D5A230B4146F79456D17E67E92BF7A.png)
+
+12. 1.4. Create Flat Panels on Both Sides
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841649822/4EDF91D7372C9D17D2C141EFFE8906D2.png)
+
+13. 1.4.1 Edit Contour Point 1 (0, 0), Point 2 (0, #R+1), Point 3 ((#W%106)/2, #R+1), Point 4 ((#W%106)/2, 0)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841652789/6E3D4E231D7215C89E3276EA7256421A.png)
+
+14. 1.4.2 Set Physical Properties: Position Z: #H, Rotation X: 90 Hidden Condition: (#W%106)==0
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841656517/121DC8ABE1996020D2275AC9FFF435C6.png)
+
+15. 1.4.3 Click on Flat Panel 2, right-click and select Copy, set Position X as: #W-(#W%106)/2.0
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841659604/2110644AB362FC203B45BB821966F4CD.png)
+
+16. 1.4.4 Create another flat panel, edit Contour Point 1 (0, 0), Point 2 (0, 82-#R-1), Point 3 (#W, 82-#R-1), Point 4 (#W, 0)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841662676/642ABBAB9ED24E1C97046118A35FEB26.png)
+
+17. 1.4.5 Set Physical Properties: Position Z: 82-#R-1, Rotation X: 90
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841665452/42EC6E90F5499E4602484674098EB6CF.png)
+
+18. 1.4.6 Unified Texturing If there are obvious texture boundaries in the model, you can use the unified texturing function. Unified Texturing: Recognize models in the scene as a whole and apply new textures.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841669164/27108560250EB4817F793F7DD46D0DDF.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841671493/9F22DDB4225A10B877513683DEBD5EB1.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841674512/FF2A77A1A46917F6FF5E0FA942F6D225.png)
+
+19. 1.5. Save Click on the file in the upper right corner and select Save.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841678605/9385AD6ADB5F20BEE9A15EB9360129E9.png)
+
+20. Select category, name it as "Part 1," click Save.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841681080/F19AD8B991453FCF67F7D030588B5F8A.png)
+
+21. Initialize it: Find the corresponding model in the product management page, select it, click Store, and wait for the model to finish rendering.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841683559/ED1B58B43049D0CCA7B5B13A3DBFFA85.png)
+
+22. **II.Bottle Tray Location Creation** Custom Furniture —Create Asset—Parametric Model Library— New—
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841686257/E99CA97B9D636BE2365DEA817A6B5BA1.png)
+
+23. 2.1. Set Parameters Custom Variable Settings
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841689981/B802BFED0AEC163139AD3FB03797C88F.png)
+
+24. 2.1.1 Width (W): Represents the size of the model panel in the X-axis direction. Value Type: Range (e.g., Range 250-1800, Current Value: 600).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841691759/CBBEE521D00045B49358B1898B946BAF.png)
+
+25. 2.1.2 Depth (D): Represents the size of the model in the Y-axis direction. Value Type: Optional (e.g., Optional Range 300-450, Current Value: 330).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841692958/4E0B0AEC6E89C6E4D758490760EA4E00.png)
+
+26. 2.1.3 Height (H): Represents the size of the model in the Z-axis direction. Value Type: Optional (e.g., Optional 82, Current Value: 82).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841694964/074A7AAE3E99B5714CB719E5ED3829CA.png)
+
+27. 2.1.4. The material does not need to be modified, indicating that the model uses the default material. When used, it will change according to the default material of the scene. **III.Importing Submodels** Call the just completed submodel - Part 1 from the semi-finished library and set the physical attributes: Width: #W, Position Y: -#D+30+18\*2+200, Arc Radius: 40
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841699012/A8D15E984025742B9C43703D5E25E0AC.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841702547/0A0DBC7FB483C5886EFF75A202173AB7.png)
+
+28. Click on Part 1, right-click and select "Copy", then modify the Position Y to -#D+30+18 and the Arc Radius to 20.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841705476/474477BC91BD6ACB747F7E3ED8E3EB95.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841708752/985567A0E877026FA9AA6F6A5D84941D.png)
+
+29. **IV.Testing the Model** Enter numerical values within the range of parameters W and D, including the maximum and minimum values. Observe if the model changes accordingly with the numerical values. If everything appears normal, it indicates that the model is functioning correctly. **V.Saving to the Library** Click on the file icon in the upper right corner, select "Save," choose the desired subdirectory, name the file, and click on "Save."
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841712110/1E8DFFB4635443D3700676C969DA7F6B.png)
+
+30. On the product management page, find the corresponding category for the model. Check the model and click on "Store" to wait for the model rendering to complete.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733841715536/7995F79FA111268524784D85955D393C.png)
+
+</Visibility>

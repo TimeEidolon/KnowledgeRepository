@@ -3,6 +3,8 @@ title: "モデルバージョン管理：公開と取り下げ"
 description: "モデルの公開と取り下げ"
 ---
 
+
+
 # モデルの公開と取り下げ
 
 　前回のチュートリアルでモデルバージョン機能の紹介と一般設定を説明しました。
@@ -146,3 +148,71 @@ description: "モデルの公開と取り下げ"
 **③終了：**計画の実行をやめる。
 
 **④削除：**計画を削除する（リストから消えます）
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 1. テストせずモデル公開 すべてのモデルに対し、テストする必要が全くなく、直接公開する場合、「詳細設定」→「モデルバージョン管理」→「一般設定」でモデルテスト・公開プロセスをOFFにしてください。 他のモデルはテストする必要がありますが、あるモデルだけテストする必要がなく、直接公開したい場合、エディタで「保存と入庫」またはライブラリ管理画面で「入庫」ボタンを押す際、「テスト段階をスキップ」をクリックしてください。
+![](https://qhstaticssl.kujiale.com/image/png/1769066605779/8D18A6339E1908E4EC9FA35EC690D987.png)
+
+2. そうするとモデルが直接公開されます。
+![](https://qhstaticssl.kujiale.com/image/png/1769066667337/1F5CCBFCA85DCA5162C18B9B57F4EC94.png)
+
+3. ２、テスト中のモデルを公開 テスト段階に入ったモデルは、テストを終了し、公開する場合、エディタで「ファイル」→「モデルバージョン」で公開作業を行います。 該当モデルバージョンを見つけ、操作欄で「公開」ボタンをクリックしてください。
+![](https://qhstaticssl.kujiale.com/image/png/1769066818973/0CDCF6DFD46BC47B8DFA365A63D7C6A9.png)
+
+4. Step 4
+![](https://qhstaticssl.kujiale.com/image/png/1769066902143/B7CA2CFB3841D43F8F878E411478C4FC.png)
+
+5. モデルがテスト終了し、公開されます。
+![](https://qhstaticssl.kujiale.com/image/png/1769066916348/4E54B47C3D3098173C7EEFAB16B1E7FD.png)
+
+6. ３、テスト中のモデルを取り下げ エディタ「ファイル」→「モデルバージョン」でテスト中のモデルを取り下げすることができます。
+![](https://qhstaticssl.kujiale.com/image/png/1769070589746/95FA6ED94935900DC399A7A40FCB9B31.png)
+
+7. ４、公開済のモデルを取り下げ 公開済のモデルを取り下げするには、「ファイル」→「モデルバージョン」で当該モデルを「取り下げ」操作します。
+![](https://qhstaticssl.kujiale.com/image/png/1769071415427/BBA7F46E5B4D8D1DEFB92AD46ACD5F2B.png)
+
+8. Step 8
+![](https://qhstaticssl.kujiale.com/image/png/1769071464992/5A40BF3364F5D4EA22CCFA74DB68679B.png)
+
+9. 取り下げ後、モデル状態が「取り下げ済」となり、デザインツールで現在公開済モデルの中に一番最新のバージョンが表示されます。
+![](https://qhstaticssl.kujiale.com/image/png/1769071516447/E23BFCAD098D75310F965F078683E44B.png)
+
+10. デザインツールでもう一度モデルをドラッグすると、16：26に入庫した黒いモデルになりました。
+![](https://qhstaticssl.kujiale.com/image/png/1769071598239/828EFDFF653901651B4A7AEA43840394.png)
+
+11. ５、やり直し モデルの公開済・取り下げ済・テスト中にも関わらず、過去のバージョンに戻してやり直すことができます。
+![](https://qhstaticssl.kujiale.com/image/png/1770029475597/CD4A1372D008680B44882B69111CA28D.png)
+
+12. 二、複数モデルの一括公開・取り下げ バックエンドで公開・取り下げ計画を作成することによって、複数モデルの一括公開・取り下げすることができます。 **１．入口** 「詳細設定」→「モデルバージョン管理」→「公開/取り下げ計画管理」をクリックしてください。 公開・取り下げ計画の管理画面に入ります。
+![](https://qhstaticssl.kujiale.com/image/png/1770026468591/9CDE54C8E8D4364D1AC31DF4057535AE.png)
+
+13. **２．計画の新規作成** 右上の青いボタン「計画新規作成」をクリックし、公開/取り下げ計画を選びます。
+![](https://qhstaticssl.kujiale.com/image/png/1770026560667/66EE42AD6667D99648E10C40FE5AE7DB.png)
+
+14. **３．一括公開（取り下げ）** 「計画新規作成」→「モデル一括公開（取り下げ）」をクリックしてください。
+![](https://qhstaticssl.kujiale.com/image/png/1770026789091/B06DA17470D65A368DE8E7A156AABF0D.png)
+
+15. **①モデルカテゴリ：**カスタム製品ライブラリと同じフォルダ構造となっています。モデルを探すのが便利 **②モデル表示画面：**フォルダ内保存されている公開（取り下げ）できるモデルがすべて表示されています。 作成時間とバージョン説明はエディタ内の設定と同様。 **③最新バージョン表示：**複数のバージョンがある場合、一番新しく保存されてるバージョンの上に 「最新バージョン」の青い文字が提示されます。 **④モデル状態：**現在のモデル状態が表示されます。 操作したいモデルを選択し、一番下の「次のステップ」をクリック。
+![](https://qhstaticssl.kujiale.com/image/png/1770027067487/0156E9EC5CB060CD5553276649D48BCE.png)
+
+16. **４．計画発効時間を設定** モデルを決めた後、計画の基本情報を入力ください。
+![](https://qhstaticssl.kujiale.com/image/png/1770027311557/78973EB591383E30720D4FEF5144739B.png)
+
+17. **①計画名：**30文字以内のタイトルを入力してください。 **②計画発効時間：**すぐ実行するか、将来の時間を設定することができます。 **③時間設定：**手動で発行時間を設定する場合、具体的な実行時間を選択してください。 設定が終わりましたら、「保存」ボタンをクリックしてください。
+![](https://qhstaticssl.kujiale.com/image/png/1770027333407/7AF1E79610C846A7E0EDA97E4FB0FD54.png)
+
+18. **５．計画の変更・削除** 作成後の計画は、メイン画面で表示されます。
+![](https://qhstaticssl.kujiale.com/image/png/1770027609621/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+19. モデルバージョン数 数字の隣の「ページ」ボタンをクリックすると、計画の詳細（実行モデルの詳細）を見えます。
+![](https://qhstaticssl.kujiale.com/image/png/1770027807065/95233B4B654185C8719D1A12EEEAF841.png)
+
+20. Step 20
+![](https://qhstaticssl.kujiale.com/image/png/1770027837525/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

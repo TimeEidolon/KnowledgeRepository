@@ -3,6 +3,8 @@ title: "enterprise-model-upload-errors"
 description: "Some errors may occur when we try to upload 3D models. For example, the material fails to display or turns into black or some other strange color. Just like the"
 ---
 
+
+
 Some errors may occur when we try to upload 3D models. For example, the material fails to display or turns into black or some other strange color. Just like the situation in the sreenshot below.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/jpeg/1733885770710/5F37B6325AB7D728D380837037D7D549.jpeg)![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885771543/B7B26CB29D5FFC759E70CE9BC073E1E7.png)
@@ -123,3 +125,61 @@ And what we need to do is to split all the Multi/sub Object Materials on 3D MAX.
 Here is the tutorial:
 
 **[Model Material Failed to Display - Multi/sub Object Material](https://www.coohom.com/en_US/helpcenter/article/model-material-failed-to-display-multi-sub-object-material?kjl_source=hc)**
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Some errors may occur when we try to upload 3D models. For example, the material fails to display or turns into black or some other strange color. Just like the situation in the sreenshot below.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/jpeg/1733885770710/5F37B6325AB7D728D380837037D7D549.jpeg)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885771543/B7B26CB29D5FFC759E70CE9BC073E1E7.png)
+
+2. Reasons & Solutions: 1. **Mapping is missing** (very common) *Solution: Reset material editor slots.* ​ ​**Reset Material Editor Slots** to prevent unnecessary materials from affecting the **Asset Tracking**.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885772566/C3492C5A7B55E9D3F2560CC7D26333C8.png)
+
+3. Press Shift+T to open **Asset Tracking** and check which files are missing.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885773538/88FB976203E3683C3FBC325A3F513FF1.png)
+
+4. Select one blank multi-layer. Then, click **Eyedropper** tool to copy the material of the model. We find that the multi-layer does not display any materials. Click **M** button after **Diffuse** and open the target mapping in **Bitmap**.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885774558/E4BD4D744B9D87A81349494934949469.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885775530/5447CA18EE253BDE45B2A5639AA3CF19.png)
+
+5. If you only want to adjust the path or the material name, you may change them in **Asset Tracking** directly. Shift+T to open **Asset Tracking** ＞ **Set Path...** ＞ find your mapping ＞ **Use Path** ＞ **Convert to Editable Mesh** ＞ **Archive**.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885778278/8FBB55E37278D97C7655072CB55639FD.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885779162/7524301F4463E32C2C594CAA39943CE5.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885781144/68DF043B595B4FC7A282FD6856E93FA8.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885782099/FC65D80DC7B1FE6AD1357E20BBA0A9CF.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885784122/8CE5D4E724C799A5EACD7FD982D3867B.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885786125/A7A77E828173C9C26279EE468C3C3E11.png)
+
+6. 2. Uploaded .max file without mapping If the model does not need the mapping, you can just ignore it. But, if the mapping is needed, you should archive and upload the mapping with .max file together. Open .max file to review your model. If the mapping is missing or path goes wrong, there will be no material mappings. Find the target mapping and save it in the same folder with the .max file.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885786942/F661FE5019B2C85103AB31A3E635C49D.png)
+
+7. 3. Model’s normals have been flipped We may encounter the preview problem as below after uploading the model successfully. This is caused by the normals in the model. ​
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885787800/843A312203E34363474A8269E4DC3E4F.png)
+
+8. *Solution*: select the model ＞ **Convert to Editable Poly** ＞ **Polygon** ＞ choose the normals in the model ＞ **Flip Normals**.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885789543/09FCDD84D50D5E634D6B3CED5DFDF03B.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885791893/94A0646185D1407001DE943BA715DDAA.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885794337/B28D51C70CAFAD0C63D24ED28653A5F3.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885796696/8F536B5A5EA0C508919EDCD05B8E221B.png)
+
+9. 4. Diffuse ratio *Solution: Readjust the diffuse ratio.* Models with this problem may be demonstrated correctly during the preview step in the 3ds Max. Under this circumstance, we can check that whether the multi-layer displays the material. Double click the multi-layer to preview. If the diffuse value is 10, just as shown below, the material might not be shown.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885797758/1EE21FBDDB6F33C87111AA48C08C3318.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885799836/E8009A680AA14B24284E6881358875E8.png)
+
+10. ​**5. Render settings** In this case, there are no problems with the model and mapping. You need to check your render settings. **Render** ＞ **V-Ray** ＞ **Global switches** ＞ **Override mtl** ＞ toggle off.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885801652/A6B72717125B703337EA937212692F1A.png)
+
+11. **Render** ＞ **V-Ray** ＞ **Color mapping** ＞ **Gamma** (adjust Gamma to 2.2).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885802495/DC118729AD14EA2BDB07F5967D781ADC.png)
+
+12. 6**.** Multi/sub Object Material If the upload preview looks like below:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885803925/3D1735F82E7BE08D7E2740F6AA46875B.png)
+
+13. Most of the time, a colorful part show on preview refer to a Multi/sub Object Material on 3D MAX. Like below:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733885805964/4C93EBE1AAF2AAA895749F2967A1BEA6.png)
+
+</Visibility>

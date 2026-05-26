@@ -3,6 +3,8 @@ title: "3d模型-如果出现鱼眼玻璃，球面玻璃怎么解决"
 description: "问题"
 ---
 
+
+
 # 问题
 
 上传的模型出现鱼眼玻璃或球面玻璃（一般由于单面玻璃）
@@ -26,3 +28,23 @@ description: "问题"
 将材质属性里的折射率改为1.0
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534462/F24580C8AFAC55D41E99354B69657401.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 自检 查看使用玻璃材质（材质里是否开启了refract属性）的模型部件，是否是个立方体（即拥有长宽高属性）
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534467/47999879BC99A5AB5EACAF3DACD62FCD.png)
+
+2. 给个hdri，直接渲染，观察效果
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534496/D5D49F3EA7029D97C088FA3F79FB19CC.png)
+
+3. 解决方法 将模型部件给一个 壳 命令
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534450/D138A59A7A7C068AC00E6A534DEF5F07.png)
+
+4. 将材质属性里的折射率改为1.0
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534462/F24580C8AFAC55D41E99354B69657401.png)
+
+</Visibility>

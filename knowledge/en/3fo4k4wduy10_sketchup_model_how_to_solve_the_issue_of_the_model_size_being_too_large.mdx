@@ -3,6 +3,8 @@ title: "sketchup-model-how-to-solve-the-issue-of-the-model-size-being-too-large"
 description: "Problem"
 ---
 
+
+
 # Problem
 
 Upload error message: "Model size too large, none of the dimensions can exceed 30,000 millimeters."
@@ -46,3 +48,14 @@ If you want to use a model larger than 30 meters, don't worry! The model can be 
 Method one: Select the model and copy (**Ctrl+C**) it into a new scene and paste (**Ctrl+V**), then save.
 
 Method two: SUAPP plugin — Clean Scene Tool, click OK to remove unused components from the scene.
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Solution 1. Open the model in SketchUp, press Ctrl+A to select the entire model and use the tape measure tool to measure the model size. After selecting the tape measure tool, move the mouse close to any edge of the model to activate the auto snap point. Click the left mouse button, then move in the corresponding direction, and a dotted line will follow the cursor. Stop moving to see the distance just moved next to the cursor. Or click two points directly to see the distance between them in the lower left corner. As shown in the image: ![0015a0c55f37eb6bb3ca9b0002a3200](https://qhstaticssl.kujiale.com/yuntai/image/png/1551349274047/114F8614C58655393DF4B5DCF6BC7DDD.png?x-oss-process=image/format,webp) If the model's displayed units are not millimeters (mm), open the "Window" menu at the top -- "Model Info" -- "Units" -- set it to mm. After knowing the model size, scale the model in SketchUp. Press Ctrl+A, select the "Scale Tool," click any endpoint of the model to scale proportionally, the lower left corner shows the scaling ratio, ensure the longest side is less than 30,000 millimeters. ![0015a0c5ba537dd81bfe34ff3b23d1f](https://qhstaticssl.kujiale.com/yuntai/image/png/1551349275186/6EE236125401ECCAE8BCE1C22E54E8BF.png?x-oss-process=image/format,webp) 2. If there are other models in SketchUp besides the main model Open the model in SketchUp: Edit – Unhide – All, then delete (Delete key) unnecessary scenes, leaving only the needed model.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313581331/8FC568051A84925D1726E26FF0EA2BCA.png)
+
+</Visibility>

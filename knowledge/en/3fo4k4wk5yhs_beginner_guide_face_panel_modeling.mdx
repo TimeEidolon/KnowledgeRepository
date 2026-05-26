@@ -3,6 +3,8 @@ title: "beginner-guide-face-panel-modeling"
 description: "Contents**"
 ---
 
+
+
 **Contents**
 
 **I.Function Entry**
@@ -78,3 +80,48 @@ Saving: Move the mouse to the corresponding position in the upper right corner o
 In the backend page, find the model, select the model, and choose to initialize it.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851424813/75AEBC74FE9BB537A5025BA9CFF63088.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **Contents** **I.Function Entry** **II.Parameter Configuration** **III.Insertion of Flat Panel Modeling** **IV.Model Testing, Saving, and Initializing** **Definition: Face Panel is one of the basic panels that make up the cabinet model.**
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851407497/4A475E8BE61320A57824C4B5F468894B.png)
+
+2. 1. **Function Entry** **Function Entry** Enterprise Catalog-Custom Products-Product Catalog- Kitchen&Bath, Custom Furniture-Create Asset- Click “Parametric Model Library”- New- Interim Parts- Cupboard panel
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851409149/06B6FA839AA579F69EB7DC2CDA96F24D.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851410015/46DDB2104029457A23DC213619C25EC9.png)
+
+3. **II.Parameter Configuration** Width W - represents the dimension in the X-axis direction, and the value type is usually set as a range (example: range of 10-2400, current value: 600). Depth D - represents the dimension in the Y-axis direction, and the value type can be set as a range or optional. The optional values can be single or multiple (example: single optional value of 18, current value: 18). Height H - represents the dimension in the Z-axis direction, and the value type is usually a range (example: range of 10-1200, current value: 500).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851410585/3623CC8EABFA088C1D5B474395914F62.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851411967/BAE511C04B17BFE03C29890762867383.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851412567/F0EC0F51DDC48443F134820A7401AD18.png)
+
+4. Keep the material default, or modify it according to actual needs. Set output dimensions: In the bill of materials, the dimensions required for the vertical panel are #W\*#H\*#D (e.g., 70050018). Therefore, the output dimensions should be set as follows: Output width: #W, Output depth: #H, Output height: #D.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851413185/F60B5CED37C527CA3B150836B82B1A9F.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851413928/4DCC1BA971D1924D9BE0B16C27DC3A11.png)
+
+5. **III.Insertion of Flat Panel Modeling** Insert the flat panel from the Elements.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851416305/3BB6B7CA42FB3C852365168F91C57C1A.png)
+
+6. In the right-side size attributes column, set the height as: #D, and click [Edit Contour].
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851417072/EE324F14CE13DFC4046114616D36FCED.png)
+
+7. Delete the default four points, redraw the points, and then [Save]. Point 1: 0,0; Point 2: 0,#H; Point 3: #W,#H; Point 4: #W,0.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851419542/073AE9D7DBF11E7D618B56BECFFC2786.png)
+
+8. Modify physical attributes: Rotate X: 90, Position Y: -#D.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851420595/C5D86B285D584C6771ABB7F5B9F1C10F.png)
+
+9. **IV.Model Testing, Saving, and Initializing** Testing: Change the current values of model parameters #W, #D, #H, #CZ, and observe if the model changes correctly. Once confirmed, proceed to save.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851421677/29B726A591F0BCBEB222AC85D47F4B3C.png)
+
+10. Saving: Move the mouse to the corresponding position in the upper right corner of the page, select Save, choose the subdirectory for saving, give it a name, and click Save.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851423846/FA86E9C6C40EE0CA473E8F69C6B9F38B.png)
+
+11. In the backend page, find the model, select the model, and choose to initialize it.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851424813/75AEBC74FE9BB537A5025BA9CFF63088.png)
+
+</Visibility>

@@ -3,6 +3,8 @@ title: "渲染-如何解决渲染后图片有阴影-有噪点和黑色斑块"
 description: "问题1"
 ---
 
+
+
 # 问题1
 
 如下图中图一红线的部分为阴影；图二模型表面存在异常；图三吊顶上出现斑块，这个我们称之为重面（噪点/阴影/黑色斑块）
@@ -46,3 +48,26 @@ description: "问题1"
 2. 提高光线的亮度
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 解决方法1 1. 如果是图一中的情况，只需要删除自由造影的重叠面，即可，如果还是不能解决问题，可以尝试清空吊顶设计来解决。 2. 把模型中重叠的面删除，如果是定制柜体的模型，可以尝试在资源列表中找到重叠的板件，删除即可。 3. 调整下面光源的高度，让吊顶高度和面光源不重叠。
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png)
+
+2. Step 2
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226684/C03DE640394871C9C421A056F4924976.png)
+
+3. Step 3
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226679/CFB1D9851719E84B886ED393E7C7E059.png)
+
+4. 解法2 1.如果是自己上传的材质，只需要在max中将材质属性中的模糊值，调整为默认值1，然后重新上传即可，如果是公库的素材，推荐换一个素材或者使用新材质上传自己重新上传一个材质即可
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png)
+
+5. 2. 提高光线的亮度
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png)
+
+</Visibility>

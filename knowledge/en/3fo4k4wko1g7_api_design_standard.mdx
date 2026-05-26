@@ -3,6 +3,8 @@ title: "api-design-standard"
 description: "API Design Standard"
 ---
 
+
+
 API Design Standard
 
 To provide simple, extensible and consistent Open APIs, we design them with some design standards.  
@@ -57,3 +59,23 @@ As we will update APIs iteratively to support more functions, for API response d
 So as to avoid online server parsing error when we return new data fields, please do the corresponding compatibility.
 
 Did this answer your question?
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. API Prefix We have made the restriction that all Open APIs of the same version shall have the same API prefix. And in API definition API prefix will be used to maintain consistent meaning.
+![](https://qhstatic-us-s3.coohom.com/image/png/1749115660333/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. Standard Field The standard field maintains the fields we use uniformly in the API entry, and we only use the same field in similar scenarios. Four standard fields have been defined in document **Authentication**, which are not explained here.
+![](https://qhstatic-us-s3.coohom.com/image/png/1749115310978/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. Outer Unified Data Structure All APIs respond in the form of JSON, and the outer data structure is unified as follows
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1749115691586/53D1F60400EA97E9BE984BE9FB4BD3C8.png)
+
+4. List Unified Data Structure In most scenarios where a list of resources is requested, we use this data structure to encapsulate it. It is next to the outer data structure, and is a specification for the value of d:
+![](https://qhstatic-us-s3.coohom.com/image/png/1749115747373/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

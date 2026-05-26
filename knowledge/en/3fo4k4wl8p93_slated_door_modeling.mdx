@@ -3,6 +3,8 @@ title: "slated-door-modeling"
 description: "Slated Door Modeling**"
 ---
 
+
+
 **Slated Door Modeling**
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931452962/430DC0C7BBCFCC15E191055A52EB4223.png)
@@ -82,3 +84,53 @@ Input values within the range of parameters W, D, and H, observe if the model ch
 **Ⅴ. Save to Library**
 
 Click on the file in the upper right corner and choose save, select the subdirectory for saving, name it, and click save.
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **Slated Door Modeling**
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931452962/430DC0C7BBCFCC15E191055A52EB4223.png)
+
+2. **Ⅰ.Upload molding contour** Click create asset and upload molding contour DXF file.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931456342/F91D9BCF88FAF58C3D53C3CCA5E4CEC4.png)
+
+3. Edit classify information and save in correspond folder.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931457959/9E2AF7467F369D83993A842A511653A1.png)
+
+4. **Ⅱ.****Creation Position** Custom Furniture —Create Asset—Parametric Model Library—New—Internal Parts—Door
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931459799/FF7B67BF798EDEDD962C78B15B8D0582.png)
+
+5. **Ⅲ****.Setting Parameters** 3.1 Basic Parameters:
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931462522/C89B3118099092FB880E709A77968557.png)
+
+6. 3.1.1 Width (W) - Represents the size of the model panel in the X-axis direction. Set the value type as a range (e.g., range 70-1200, current value: 500).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931463484/F2A728D1C33EE1324246DD8306CF199C.png)
+
+7. 3.1.2 Depth (D) - Represents the size of the model panel in the Y-axis direction. Set the value type as a options (e.g., optional 18, current value: 18).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931464978/C8B88E0BB43EAFFD8BDAC5035EFE039F.png)
+
+8. 3.1.3 Height (H) - Represents the size of the model panel in the Z-axis direction. Set the value type as a range (e.g., range 300-2400, current value: 600).
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931467475/17A96C5E62BD5FF24EAC1DCDD243AA07.png)
+
+9. 3.1.4 Material - No modification needed, indicating that the Door uses the default material. **Ⅳ.Importing Submodels** 4.1 Develop panel Choose develop from elements and modify basic properties,select a molding from folder and set RotateX to -90 and Rotate Z to -90.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931470199/77BD12733C21E00116B1BDFA5B358CD8.png)
+
+10. Edit its path:point 2(0,#H)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931473359/FA899946153E760B1DEE361C2A04AD11.png)
+
+11. 4.2 Array panel Copy one more develop panel for backup. Right click and array the first panel
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931475161/2AE1B44752BA995A2B0A83EE848E7A6C.png)
+
+12. Set array attributes, Array direction: +Z; Array length: #W; step size:70
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931478249/7596C630E66936BF2D329E6E9ED3ECF9.png)
+
+13. Modify the other panel’s dimension,set truncated height to: #W%70 (% means returns the remainder after (integer) division),set Position X to #W-#W%70.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931479552/93270691611C57F42D5AC0255998BA88.png)
+
+14. Now it completed.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733931482159/38FDC66B47366D2D1B8EF49D4B91F23B.png)
+
+</Visibility>

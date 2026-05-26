@@ -3,6 +3,8 @@ title: "beginner-guide-decoration-uploading"
 description: "1. Definition"
 ---
 
+
+
 1. Definition
 
 ### Definition
@@ -86,3 +88,31 @@ Go to the 3D model upload page and click "+ Add File". Find the 3D model file th
 4.最后选择饰品保存的所属类目，点击完成上传。饰品选柜体模式库下的子类目，你保存的类目选择决定你的模型的工具里能否显示和在哪个模式使用，只有保存在柜体模式库下才能在工具里的柜体模式中拖出来使用；如果没有选择类目、半成品库或者选择了柜体模式库的总类目而不是子类目都不会在工具中显示。
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854182120/57A3F878708B06D356F66B76815ED76B.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Requirements for Accessory 3D Models * The max file should not contain any extra models; it should only have the model that needs to be uploaded (having extra models may result in upload failure). * The model should be centered in 3D MAX. * The max file size should be smaller than 100MB. * The number of model polygons (polys) should not exceed 800,000 (convert all to editable mesh and press '7' to check). * The model dimensions should be in millimeters (mm) (set path: Custom Menu - Unit Setup). * The size of models within the scene should not exceed 10 meters. * Texture formats supported are jpg, png, and tif; color mode should be RGB and texture file size should not exceed 5000 pixels. The max file should not contain any extra models; it should only have the model that needs to be uploaded (having extra models may result in upload failure). The model should be centered in 3D MAX. The max file size should be smaller than 100MB. The number of model polygons (polys) should not exceed 800,000 (convert all to editable mesh and press '7' to check). The model dimensions should be in millimeters (mm) (set path: Custom Menu - Unit Setup). The size of models within the scene should not exceed 10 meters. Texture formats supported are jpg, png, and tif; color mode should be RGB and texture file size should not exceed 5000 pixels. 1. Introduction to Upload Rendering Category Introduction to Upload Rendering Category * **Decorative display:** This category is used for directly dragging and placing models from the left sidebar while using the tool. It includes objects such as hangers, racks, stacked clothes, jewelry, shoes, hats, bags, stationery, teaware, wine accessories, cushions, etc. * **Handles:** This category is specifically for uploading handles (note the margin parameters for handles, if not filled, default parameters of 30, 30 will be used). * **Semi-finished models:** Models uploaded under this category are not displayed directly on the front end; they are used in the editor for modeling. In theory, all models needed in the editor except handles should be uploaded under this category. Please note that models uploaded under the semi-finished models category will lose the materials assigned in 3D MAX and need to be re-assigned materials in the editor. If you want to preserve the materials of the 3D model, do not upload it under this category. **Decorative display:** This category is used for directly dragging and placing models from the left sidebar while using the tool. It includes objects such as hangers, racks, stacked clothes, jewelry, shoes, hats, bags, stationery, teaware, wine accessories, cushions, etc. **Handles:** This category is specifically for uploading handles (note the margin parameters for handles, if not filled, default parameters of 30, 30 will be used). **Semi-finished models:** Models uploaded under this category are not displayed directly on the front end; they are used in the editor for modeling. In theory, all models needed in the editor except handles should be uploaded under this category. Please note that models uploaded under the semi-finished models category will lose the materials assigned in 3D MAX and need to be re-assigned materials in the editor. If you want to preserve the materials of the 3D model, do not upload it under this category. Other rendering categories have the same purpose as their respective category names. Simply upload the model that corresponds to the category name and its functionality.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854174447/C1BE537E34AE41DFD7B4667A2F9C39E4.png)
+
+2. 1. Upload Process Upload Process 1. Enterprise Backend - Product Management - Product Management - K&B / Custom Furniture - Upload Materials - 3D Models Enterprise Backend - Product Management - Product Management - K&B / Custom Furniture - Upload Materials - 3D Models
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854175425/924206853239961B3A4F404AC80E9F7F.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854176321/E6DFF6528DA4B8CA8AE5407EA23EC41B.png)
+
+3. 1. Go to the 3D model upload page and click "+ Add File". Find the 3D model file that you want to upload, enter the material name (the name will automatically be selected as the 3D file name, but you can also modify it) and choose the rendering category. Rendering the 3D model takes some time, so you need to wait until it shows "Processing Successful" in the blank box below before you can upload it. Go to the 3D model upload page and click "+ Add File". Find the 3D model file that you want to upload, enter the material name (the name will automatically be selected as the 3D file name, but you can also modify it) and choose the rendering category. Rendering the 3D model takes some time, so you need to wait until it shows "Processing Successful" in the blank box below before you can upload it.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854177918/3572BB3BD38973BCBD4B02A3C63BADF8.png)
+
+4. 3. For the rendering category of accessories, choose "Decorative Display". You can select specific subcategories under "Decorative Display". The wardrobe display requires selecting a placement position to achieve the positioning of accessories when dragging them out in the tool. In the case of hanging accessories, you also need to write anchor point coordinates. By default, the anchor point for hanging is set at the center point of the top surface. When using it, objects will snap to the anchor point. You can set it according to your actual needs. The setting principle is to center the model in MAX and then adjust the position of the axis. The corresponding XYZ axis values are the anchor point coordinates. **Horizontal Placement:** Accessories dragged out are meant to be placed horizontally on the floor or on the model (shelves), such as stationery, books, wine accessories, etc. **Hanging:** Accessories dragged out are meant to be hung below the model (shelves, clothes hangers, etc.), such as hanging clothes. **Wall-mounted:** Accessories dragged out are meant to be mounted on the wall or on the model, such as hanging paintings, mirrors, etc.
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854178671/2994CE172867E34E1C1F1D5AC465A145.png)
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854180055/0FA248E3FE3AFDD12402BCF679EF6FAB.png)
+
+5. 饰品的摆放位置还可以在商家后台中找到饰品位置，点击饰品后的编辑详情里的编辑属性中修改
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854181264/726E24E39BED87474E9FA9AFB4AC0806.png)
+
+6. 4.最后选择饰品保存的所属类目，点击完成上传。饰品选柜体模式库下的子类目，你保存的类目选择决定你的模型的工具里能否显示和在哪个模式使用，只有保存在柜体模式库下才能在工具里的柜体模式中拖出来使用；如果没有选择类目、半成品库或者选择了柜体模式库的总类目而不是子类目都不会在工具中显示。
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854182120/57A3F878708B06D356F66B76815ED76B.png)
+
+</Visibility>

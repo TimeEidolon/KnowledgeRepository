@@ -3,6 +3,8 @@ title: "construction-drawing-common-issue-incomplete-content-display"
 description: "Overview**"
 ---
 
+
+
 #### **Overview**
 
 In the generated construction drawing, due to various reasons, some models may not be displayed in the views. You can try the following methods to resolve this:
@@ -75,3 +77,41 @@ When models are more than 5 meters away from the house, they will be filtered by
 **Tips:**
 
 If the models you uploaded in the "Custom Modeling" feature are too complex, the conversion speed to flat legends may be slow or even fail. It is recommended to optimize the models or use models from the material library.
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. **Solutions** **I.****The models are placed in the scheme, but they are not displayed as legends in the construction drawing module. What should I do?** First, confirm that you have placed models. If so, it may be because the scheme was created earlier. You need to click the "Synchronize System Configuration" button (some vendors may have "Update/Switch Construction Drawing Template" instead) in the "Settings" module at the top right corner of the construction drawing page to update. If you have placed legends, please refer to question six: "I placed legends in 'Layout', but they are not displayed in 'Construction Drawing'. What should I do?"
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810768681/D98206C4183B414CFE41AB2B90064A67.png)
+
+2. **II.If the system prompts 'Legend generation failed,' what should I do?**
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810797340/4ECDF22ADC09B878C30A00EEE0A51FFC.png)
+
+3. 1. Choose 'Retry' and wait for 10 seconds. 2. If 'Retry' still fails, you can exit the construction drawing tool and try replacing it with a similar model. **III.Some models are not displayed in the layout view. What should I do?** We can attempt to recover them by using the "Unshown Model" detection feature within the "Check" function.
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810825936/70A6876507E7DACEEA6DB85A7DE01BE2.png)
+
+4. **IV.In the elevation view, some models are not displayed. What should I do?** Check if the elevation view boundary frame encompasses all the models you want to display. 1. The dining table model on the right side of the elevation view boundary frame is not displayed. You can adjust the elevation view boundary frame in the left-right direction.
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810851104/6C53D04381873FB63326753A058A3637.png)
+
+5. 1. The dining table model in the front of the elevation view boundary frame is not displayed. You can adjust the elevation view boundary frame in the front-back direction.
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810876572/DAB9E6D363529E9FD6C027B614C9ED8F.png)
+
+6. 1. The overhead lightbox model is not displayed. You can adjust the clipping range in the elevation view.
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810912479/0F3435D4AF924B043E4C03D809222F22.png)
+
+7. 1. **In the elevation view, the walls on both sides of the space are not displayed. What should I do?** Enter the "Elevation Index" view, click on the "Elevation Settings" function at the top of the page, and toggle the "Include Walls in Elevation" switch.
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810941266/4B0EFA6E8AD77781D835F05FBD50188D.png)
+
+8. **VI.I placed legends in "Layout", but they are not displayed in "Construction Drawing". What should I do?** The reason is that "Construction Drawing" can only recognize models and cannot recognize legends. You can click on the user avatar in the upper right corner of the page, go to "Preferences", and change "Layout Legend Mode" to "Automatically Place Models". This way, when you place legends, the system will automatically convert them into models, and they will be displayed correctly.
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810969471/0A721123CD373C7F47878D71AA6FDBFA.png)
+
+9. **VII.I placed models outside the house, but they are not displayed in the construction drawing. What should I do?** When models are more than 5 meters away from the house, they will be filtered by the system. You can choose to move the models closer, or you can create an "External Area" to encapsulate the models. 1. Move the models closer.
+![](https://qhstatic-us-s3.coohom.com/image/png/1747810993508/EB01FC688EA3770DEA4015C69F9B7C75.png)
+
+10. 1. Create an "External Area" to encapsulate the models, then enter the construction drawing tool and click on "Synchronize System Configuration" in the upper right corner.
+![](https://qhstaticssl.kujiale.com/image/png/1747811019513/0AD942786EF9D89198E9231B3F3FBE2F.png)
+
+</Visibility>

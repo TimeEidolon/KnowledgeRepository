@@ -3,6 +3,8 @@ title: "enterprise-batch-maintain-custom-product-catalog-information"
 description: "The import and export functions of the custom product catalog allow for batch summarization, statistics, and modification of custom products. This article will"
 ---
 
+
+
 The import and export functions of the custom product catalog allow for batch summarization, statistics, and modification of custom products. This article will explain in detail how to batch maintain product information in the custom product catalog.
 
 # For Users
@@ -65,3 +67,41 @@ Product import allows for the batch modification of product information in the c
 * **Note:** If the product contains editable fields, the values in the EXCEL table will overwrite the current product field values (including null values). If the product does not include the field, the field operation will be skipped.
 
 ![](https://qhstaticssl.kujiale.com/image/png/1752145036949/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Entrance Enter the **Workspace**, select **"Enterprise Catalog - Custom Products"**, and click **Import＆Export.**
+![](https://qhstaticssl.kujiale.com/image/png/1752142520302/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. Export Custom Products Product export allows for the batch output of product information in the custom product catalog. 1. On the **Import＆Export** page, click **Export Product.**
+![](https://qhstaticssl.kujiale.com/image/png/1752142695041/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+3. 2. In the pop-up window, select a **Category** and then click **Next.**
+![](https://qhstaticssl.kujiale.com/image/png/1752142771588/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. 3. Select **Export Property**. The product ID is exported by default, and other properties are selected by the user. If you want to batch modify a product field, you need to export that field. After selection, click **Export the Table.**
+![](https://qhstaticssl.kujiale.com/image/png/1752142825221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. 4. After the table is successfully generated, click **Download Spreadsheet.**
+![](https://qhstaticssl.kujiale.com/image/png/1752144183554/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+6. 5. Unzip the downloaded local package. The unzipped file is an Excel table starting with **"tempExcel"**. Open it.
+![](https://qhstaticssl.kujiale.com/image/png/1752144269062/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+7. Step 7
+![](https://qhstaticssl.kujiale.com/image/png/1752144519173/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+8. 6. Supplement the table content. Only tables with a header containing **“(Editable)”** field list can have their information supplemented or modified. Other content cannot be modified. **Note:** * Currently, only the **“Description” field** supports line breaks. If the information is long, it is recommended to place it in this field and use Enter to separate lines. * Even with **“(Editable)” fields**, you can still leave the content blank and only supplement the necessary information.
+![](https://qhstaticssl.kujiale.com/image/png/1752144674339/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+9. Import Custom Products Product import allows for the batch modification of product information in the custom product catalog. **Prerequisites:** Use the product export function to download the original product information EXCEL table **(this table must include the products to be modified, and confirm that the fields to be batch modified are in the export fields)**. Modify the fields in EXCEL in batches. **See the product export operation steps above for details.** 1. After modifying the exported table information, return to the **Import＆Export** page, click **"Import Product"**, select the modified table in the pop-up folder selection box, and click **Open.**
+![](https://qhstaticssl.kujiale.com/image/png/1752144909982/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+10. 2. Once the import operation status shows **Succeeded**, the system will automatically generate an import record, displaying the number of successfully operated products. * **Note:** If the product contains editable fields, the values in the EXCEL table will overwrite the current product field values (including null values). If the product does not include the field, the field operation will be skipped.
+![](https://qhstaticssl.kujiale.com/image/png/1752145036949/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+</Visibility>

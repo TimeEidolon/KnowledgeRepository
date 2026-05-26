@@ -3,6 +3,8 @@ title: "enterprise-general-quotation-configuration-description"
 description: "General Quotation is a service for product pricing capabilities, offering more comprehensive and open pricing setup capabilities compared to the original custom"
 ---
 
+
+
 General Quotation is a service for product pricing capabilities, offering more comprehensive and open pricing setup capabilities compared to the original custom quotation capabilities.
 
 * Supports pricing for public catalog models and circulation models.
@@ -303,3 +305,119 @@ Step Four: The contents of the additional quotation for the entire order will be
 # Design Tool Interface
 
 For specific operations related to general quotation on the design tool, see tutorial document: **[Click to View](https://www.coohom.com/en_US/helpcenter/enterprise-instructions-for-using-the-general-quotation-tool?kjl_source=hc)**
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 1. General Quotation Entrance Step One: Enter the **Workspace** and select **"Enterprise Catalog - Custom Products - Product Catalog - Advanced".**
+![](https://qhstaticssl.kujiale.com/image/png/1758622489120/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+2. Step Two: In advanced configuration, select **"General Quotation".**
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759041496522/C709A4E4F6A47B36A86D49088F73D677.png)
+
+3. 2. Quote Configuration Entrance Enter the General Quotation, select **"General Quotation - Quote Configuration"**, open **"Enable general quote configuration"**, once enabled, the general quotation configuration will be used for quotation calculation, including finished and custom products.
+![](https://qhstaticssl.kujiale.com/image/png/1764746914201/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+4. 3. Universal Quotation Cross-Enterprise Quotation Application Configuration Entrance Select **"General Quotation - Quote Configuration"**, choose **"Public Treasury/Supply Chain Library"**, upon enabling the corresponding configuration, after designing in the corresponding library, quotation can be made and reference to external public library or supply chain library quotation systems can be selected.
+![](https://qhstaticssl.kujiale.com/image/png/1764746951998/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+5. 4. Unified Control of Quantity/Amount Precision Select **"General Quotation - Quote Configuration"**, then click the dropdown arrow for **the unified control of quantity/amount precision** option. You can choose **0, 0.0, 0.00, 0.000, or Unlimited**. Once configured, calculations in the front-end design tool will be rounded according to the selected precision.
+![](https://qhstaticssl.kujiale.com/image/png/1764746989821/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+6. 5. Compatible Custom Quotation 1.0 Go to the merchant backend and select **“General Quotation - Quotation Configuration.”** Turn on the “Compatible Custom Quotation 1.0” switch. After enabling it, you can choose to use the old version of the custom quotation in the tool’s frontend
+![](https://qhstaticssl.kujiale.com/image/png/1764742885351/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+7. 1. Add a Quote Classification First step: Click **Add New Group**, name the group.
+![](https://qhstaticssl.kujiale.com/image/png/1758711448776/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+8. Second step: Click **"Create a Quote Category"** in the new group bar, complete the creation and naming of the quote classification under the group. * Category naming should be set based on the company's pricing, like classifying by a enterprise's price directory such as cabinet panels, doors, vacuum accessories, sliding doors, wall protection, hardware parts and lights, wooden doors, kitchen cabinets, kitchen cabinet parts, etc.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759041496519/C709A4E4F6A47B36A86D49088F73D677.png)
+
+9. 2. Associate a Quote Classification The quote classification applied to the price list needs to be maintained in the price list, after maintenance, and the relationship with the measurement quotation category can be viewed in the "Associated Price List" of the quantity quotation classification. * Specific operations regarding maintenance and association of the price list can be found in the price list and quotation system section of this tutorial.
+![](https://qhstaticssl.kujiale.com/image/png/1758797464717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+10. 3. Category filter Settings In the quotation category settings, users can define classification filter conditions. In the filter conditions, we support basic information of the material, custom fields (original product 1.0, model information of the enterprise product catalog), and are also compatible with the basic field information of product 2.0. In the category filter conditions, click the plus sign to create a condition group, and under the condition group, you can continue to create conditions or condition groups, up to three levels can be created, and multiple conditions can be set and defined to relate as “or” and “and”. Among them, custom material fields and model variables support referencing product custom fields and modeling parameters, with variable-to-variable correspondence defined by reference name.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759041496499/C709A4E4F6A47B36A86D49088F73D677.png)
+
+11. Step 11
+![](https://qhstaticssl.kujiale.com/image/png/1758797860762/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+12. 1. Create Price List Select **"General Quotation - Price List"**, click **"Create a Price List"** at the top right corner.
+![](https://qhstaticssl.kujiale.com/image/png/1758713006847/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+13. 2. Set Price List Set the **basic information, quantity rules, price information, and supplementary quotation rules** for the new price list. Below is an introduction to the four core components of the price list: |  |  |  | | --- | --- | --- | | 1 | **Basic Information** | Define the name of the price list, associated quote category, effective tool, effective product catalog, and supplementary remarks. The effective tool will affect the products entering the current price list. For instance, if a product is in multiple tools, and the price list specifies that only closet products will be calculated, then the same kitchen＆bathroom product will not be calculated. | | 2 | **Quantity Rules** | Define the quantity rules and units for the quoted items here, supporting definition through expressions. | | 3 | **Price Rules** | Set attributes affecting prices in advance, these attributes will define the price. You can also define multiple prices for the same conditions, such as retail price, wholesale price, and cost price. | | 4 | **Supplementary Quotation Rules** | Used to maintain other factors affecting price beyond the "price details" basic unit price, such as surcharges and coefficients. You can define trigger conditions and affected objects to impact prices. If multiple conditions are met, additional charges are accumulated, and coefficients are multiplied. | **a. Quantity Rules Detailed Description**
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759048049970/C709A4E4F6A47B36A86D49088F73D677.png)
+
+14. **① Default Logic When Not Maintained** When there is no data in the calculation details, it is processed by the number of items (where virtual hardware is calculated by the quantity presented in the project), using the unit of the item (item catalog unit overrides company product catalog unit). **② Formula Compilation** Use formulas to define quantity calculation rules, supporting different calculation results through conditional expressions. * Sample calculation formula for cabinet projection area: #W\*#H/1000000 **③ Unit Settings** Support user-specified units or custom ones. * Specified Unit: All results will be output using this unit. * Custom: Supports defining output units via expressions to accommodate different scenarios where units may vary. Note that the output unit value should be the unit ID, matching the following unit ID relationships: |  | **Unit ID** | **KEY** |  | **Unit ID** | **KEY** |  | **Unit ID** | **KEY** | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | 0 | Unit(s) | COUNT | 12 | Linear Meter(s) | YAN\_METER | 45 | A pair | DUI | | 1 | Meters | METER | 13 | Stick(s) | ZHI | 46 | A handful | BA | | 2 | Square Meter(s) | SQUARE\_METER | 14 | Box(es) | XIANG | 1000 | Inch | INCH | | 3 | Cubic | CUBIC\_METER | 15 | Unit(s) | TAI | 1001 | Foot | FEET | | 4 | Slice(s) | PIAN | 16 | Strip(s) | TIAO | 1002 | Square Inch | SQUARE\_INCH | | 5 | Set(s) | TAO | 17 | Block(s) | KUAI | 1003 | Square Foot | SQUARE\_FOOT | | 6 | Group(s) | ZU | 18 | Stick(s) | GEN | 1004 | Cubic Inch | CUBIC\_INCH | | 7 | Barrel(s) | TONG | 19 | Unit(s) | FU | 1005 | Cubic Foot | CUBIC\_FOOT | | 8 | Piece(s) | JIAN | 20 | Millimetre | MILLIMETER | 2001 | Rule | RULE | | 9 | Unit(s) | TANG | 26 | Sash | FAN | 2002 | Ping | PING | | 10 | Roll(s) | JUAN | 36 | A pair | PAIR | 2003 | Shi | SHI | | 11 | Unit(s) | ZHANG | 37 | Piece | ZHI\_ZHI |  |  |  | **b. Price Rules Detailed Description** Factors influencing the quoted amount include material, substrate, and board thickness. There are two output amounts. Maintenance can be performed according to the following steps: Step 1: Click **"Manage Quote Properties"**, in the quote properties management, **add influencing variables for quote amount**: material serial number, material substrate, board thickness.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759038907306/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+15. Step 2: Select **"New Properties"**, define the property name (for list view), attribute classification (obtain corresponding data source according to attribute characteristics), field type (define it as string/numeric/boolean, different types participate in different conditional judgments), reference name (input reference name for model variables etc.), expression. **Note: When choosing an expression, the # variable and condition judgment sentence can be used to define which variable to use, for example, to choose the larger variable value between W and H: #W>#H ? W:H.**
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759048050009/C709A4E4F6A47B36A86D49088F73D677.png)
+
+16. Step 3: Click **"Manage Price Categories"**, set the existing price items: **Factory Settlement Price, National Retail Price.**
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759038907509/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+17. Step 17
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759048049998/C709A4E4F6A47B36A86D49088F73D677.png)
+
+18. Step 4: Set detailed price rules. If no conditions are input, it means not participating in condition judgment. Judgment is performed sequentially from top to bottom until the condition is met or executed completely. If not successfully matched, the amount is 0. * Condition items support basic condition judgment, options must be separated by commas in the list. * Amount supports inputting numbers or expressions. For some simple judgments, expressions can be directly used on amounts for judgment. * Support importing or exporting required quote rules. Maintenance should be completed before importing. Before maintenance, complete column maintenance for quote attributes and unit price categories. After maintenance, click [Export Price Rules] to obtain the original file template and fill column content in excel, then import into the system. + **Note: Before importing the template, check the accuracy of the import file. Import and save only after verification, otherwise importing a new template will overwrite the old template and the old template data will be lost.**
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759038907294/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+19. **c. Supplementary Quotation Rules Detailed Description** For some general quote influencing factors, they can be explained in supplementary quote rules, such as irregular price increases or oversized coefficients. Examples are as follows: 1. Membrane pressed flat door (SYMX101) 2400≤H≤2700mm requires special customization, factory price increases by 80 yuan/m2 per square. 2. An additional process fee of 10 yuan/per piece for door panel opening with embedded handle groove. For the content in the examples, supplementary quote rules can be applied: * **Note: During quote calculation, meeting any record will be executed, meeting multiple records results in multiplication of unit price coefficients, accumulation of unit price additions, and total price additions.**
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759048050036/C709A4E4F6A47B36A86D49088F73D677.png)
+
+20. 3. View Price List After the price list is created, you can **view details, edit, and delete** in the price list.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759038907290/2D37C2734C50A6837B78ACB4959B66FF.png)
+
+21. 1. Create Quotation System To create a quotation system, you can choose to **Create a New Quotation System**, and set up the basic information yourself, or choose **Create Template**, to quickly copy from externally available standard templates, synchronizing the quantity estimation and quotation classification, price list, and quotation system during the copy, reducing maintenance costs. a. **Create a New Quotation System** Step One: Select **"General Quotation - Quotation System"**, click **"Create a Quotation System - New"** on the top right.
+![](https://qhstaticssl.kujiale.com/image/png/1758713160421/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+22. Step Two: Enter the price system settings interface, set **System Name, Effective Time, Effective Tool Line.** * **Set as Default Quotation System:** Once set, this system will serve as the default quotation applied on the front-end, with only one default value per enterprise tool line. * **Effective Time:** After publication, the quotation system must be used within the effective time, allowing managers to set influence times in the background for periodic effectiveness. * **Effective Tool Line:** After setting the tool line, the quotation system will be isolated according to the tool line, only displayed in the effective tool line.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759050137703/C709A4E4F6A47B36A86D49088F73D677.png)
+
+23. b. **Select Create Template** Step One: Select **"General Quotation - Quotation System"**, click **"Create a Quotation System - Select Create Template"** on the top right.
+![](https://qhstaticssl.kujiale.com/image/png/1758713283909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+24. Step Two: Choose a template from the quotation system template library and click **Use.**
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759050137742/C709A4E4F6A47B36A86D49088F73D677.png)
+
+25. Step Three: Modify **System Name, Effective Time, Effective Tool Line** based on the template's basic information, and click **Keep** after adjustments.
+![](https://qhstaticssl.kujiale.com/image/png/1758713442044/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+26. 2. Associate Price List Step One: Click **"Add a New Associated Price List"**, the quotation system allows association with multiple price lists, users can add maintained price lists as needed.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759050137732/C709A4E4F6A47B36A86D49088F73D677.png)
+
+27. Step Two: When adding, select the published price list and define the unit price category applied by the quotation system (the cost price will be output by default, the unit price category affects which specific amount the output unit price takes), applicable where different people require different unit prices.
+![](https://qhstaticssl.kujiale.com/image/png/1758713627866/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+28. Step Three: After completing the association, as pricing categories use rule matching, a model may match multiple successfully, so users need to define priority relationships among price lists. During conflicts, the system will use the price list with higher priority.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759050137686/C709A4E4F6A47B36A86D49088F73D677.png)
+
+29. 3. Release Quotation System After completing the above settings, releasing operations need to be done in the list. Once completed, the quotation system can be used for quoting at the front-end design tool.
+![](https://qhstaticssl.kujiale.com/image/png/1758713763570/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+30. 4. Quotation System is Assigned by Role Users can set role visibility for the quotation system. Once set, only personnel within the role range can use the corresponding quotation system at the front-end design tool. Step One: Click the quotation system to be set, then click **Edit** on the top-right of the pop-up page.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759050137772/C709A4E4F6A47B36A86D49088F73D677.png)
+
+31. Step 31
+![](https://qhstaticssl.kujiale.com/image/png/1758713858238/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+32. Step Two: Click **Edit** following the role range and choose the corresponding role in the pop-up panel, then click **OK.**
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759050137705/C709A4E4F6A47B36A86D49088F73D677.png)
+
+33. Step Three: Click **Keep** on the top-right (after setting, only personnel within the role range can use the corresponding quotation system at the front-end design tool).
+![](https://qhstaticssl.kujiale.com/image/png/1758713969180/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+34. Additional Quotation of the Entire Order When there are scenarios of quoting by order in the enterprise, you can use the **Additional Quotation of the Entire Order** feature to supplement the quotation. Take as an example the scenario of gifting a drawer for every 2.5 square meters, with any excess charged at 40 yuan per piece. In this scenario, we need to define the quotation system for gifting drawers when the square area in the scheme reaches multiples of 2.5, thus we can achieve the statistics of the square area and drawer count of the entire scheme via **Aggregation Rules**. Step One: Enter aggregation rules, where you can summarize and statistically any scheme dimensional data, click **Creating Aggregation Rules** on the top right, **to define summary fields**.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759050137767/C709A4E4F6A47B36A86D49088F73D677.png)
+
+35. Step Two: Define aggregation rules, selecting according to need **to statistically according to model dimension or scheme dimension**, if selecting **model dimension, you need to define the scope (filter rules), filter rules can refer to quotation classification**. After completing the model filtering, you can further define statistical variables, for instance, summarize cabinet linear meter, cabinet area summation, etc., or define the expression value as #quantity, indicating a quantity summation. In this scenario, we can define Area for cabinet total area, and counta for drawer quantity.
+![](https://qhstaticssl.kujiale.com/image/png/1758714104691/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+
+36. Step Three: After completion, go to the quotation system, use the defined aggregation variables, select applicable entire order/model objects, and define calculation formula. * **Entire Order Objects:** Can be used for scenarios like additional drawer charging numbers, packaging, transportation, etc. * **Model Objects:** Can be used for specific model coefficient products or price increments. In the earlier case, we can define the trigger condition as [#counta-#floor(#Area/2.5)>0 ], with total price increment as [40\*#counta-#floor(#Area/2.5) ], thus achieving the demand for drawer excess quotation.
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1759050137745/C709A4E4F6A47B36A86D49088F73D677.png)
+
+</Visibility>

@@ -164,6 +164,116 @@ def escape_mdx_operators(text: str) -> str:
     return text
 
 
+IMAGE_MD_RE = re.compile(r"!\[\]\((https?://[^)\s]+)\)")
+VIDEO_MD_RE = re.compile(
+    r"(?:🎥\s*)?\[Video URL\]\((https?://[^)]+)\)|"
+    r"https?://(?:www\.)?youtube\.com/watch\?v=([\w-]{6,})|"
+    r"https?://youtu\.be/([\w-]{6,})",
+    re.IGNORECASE,
+)
+AGENT_VISIBILITY_RE = re.compile(
+    r"\n*<Visibility for=\"agents\">.*?</Visibility>\s*",
+    re.DOTALL,
+)
+
+
+def youtube_embed_html(url: str) -> str:
+    match = VIDEO_MD_RE.search(url)
+    video_id = None
+    if match:
+        video_id = match.group(2) or match.group(3)
+    if not video_id and "youtube.com/embed/" in url:
+        video_id = url.rsplit("/", 1)[-1].split("?", 1)[0]
+    if video_id:
+        return (
+            f'<iframe width="100%" height="400" '
+            f'src="https://www.youtube.com/embed/{video_id}" '
+            f'title="Video" frameborder="0" '
+            f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
+            f'gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        )
+    return f"[Video]({url})"
+
+
+def extract_intro_video(body: str) -> str | None:
+    for line in body.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if "🎥" in stripped or "video" in stripped.lower() or "youtube" in stripped.lower():
+            match = VIDEO_MD_RE.search(stripped)
+            if match:
+                url = match.group(1) or (
+                    f"https://www.youtube.com/watch?v={match.group(2) or match.group(3)}"
+                )
+                return youtube_embed_html(url)
+    return None
+
+
+def extract_step_media_pairs(body: str) -> list[tuple[str, list[str]]]:
+    """Map preceding text to image URLs in document order."""
+    steps: list[tuple[str, list[str]]] = []
+    buffer: list[str] = []
+
+    for line in body.splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith("<"):
+            continue
+        if stripped.startswith("## Assistant step guide"):
+            break
+        images = IMAGE_MD_RE.findall(stripped)
+        if images:
+            text = " ".join(buffer).strip()
+            text = re.sub(r"^#+\s*", "", text).strip()
+            if not text:
+                text = f"Step {len(steps) + 1}"
+            steps.append((text, images))
+            buffer = []
+            continue
+        if stripped.startswith("#"):
+            buffer = [stripped.lstrip("#").strip()]
+        elif not stripped.startswith("🎥"):
+            buffer.append(stripped)
+
+    return steps
+
+
+def build_agent_media_block(body: str) -> str:
+    """Hidden block indexed for AI assistant with step text + image URLs."""
+    clean = AGENT_VISIBILITY_RE.sub("\n", body).strip()
+    steps = extract_step_media_pairs(clean)
+    intro_video = extract_intro_video(clean)
+    if not steps and not intro_video:
+        return ""
+
+    parts = [
+        '<Visibility for="agents">',
+        "",
+        "## Assistant step guide",
+        "",
+        "Include every image below in your answer. For each step, output the step line, "
+        "then `![](IMAGE_URL)` on the next line using the exact URL.",
+        "",
+    ]
+    if intro_video:
+        parts.extend([intro_video, ""])
+    for index, (text, urls) in enumerate(steps, start=1):
+        parts.append(f"{index}. {text}")
+        for url in urls:
+            parts.append(f"![]({url})")
+        parts.append("")
+    parts.append("</Visibility>")
+    return "\n".join(parts)
+
+
+def attach_agent_media_block(body: str) -> str:
+    block = build_agent_media_block(body)
+    if not block:
+        return body
+    base = AGENT_VISIBILITY_RE.sub("\n", body).rstrip()
+    return f"{base}\n\n{block}\n"
+
+
 def prepare_mdx_body(markdown: str) -> str:
     body = convert_underline_headings(markdown)
     body = fix_angle_bracket_urls(body)
@@ -187,7 +297,7 @@ def write_mdx(
     body: str,
 ) -> tuple[str, str, str]:
     """Write knowledge/{lang}/{slug}.mdx. Returns (category, page_path, title)."""
-    prepared = prepare_mdx_body(body)
+    prepared = attach_agent_media_block(prepare_mdx_body(body))
     desc = description_from_body(prepared, title)
     dest_dir = KNOWLEDGE_ROOT / lang
     dest_dir.mkdir(parents=True, exist_ok=True)

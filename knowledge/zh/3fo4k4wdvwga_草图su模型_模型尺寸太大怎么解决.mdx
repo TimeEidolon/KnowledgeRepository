@@ -3,6 +3,8 @@ title: "草图su模型-模型尺寸太大怎么解决"
 description: "问题"
 ---
 
+
+
 # 问题
 
 上传错误提示：“模型尺寸太大，长宽高任一不能超过30,000毫米”
@@ -46,3 +48,14 @@ description: "问题"
 方法一;可以选中模型复制(**Ctrl+C**)到新建场景粘贴(**Ctrl+V**)里面，然后保存。
 
 方法二：SUAPP插件——清理场景工具，点击确定，可以清理掉场景中无用的组件。
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 解决方法 1.在草图大师中打开模型，按下ctrl+A全选整个模型，用卷尺工具测量模型大小。 点选卷尺工具之后，鼠标靠近模型任意边会出现自动捕捉点。单击鼠标左键，然后往对应方向移动，会有一条虚线跟着光标移动，停止移动就会在光标旁看到刚刚移动的距离。或者直接单击两点，左下角可以看两点的距离。如图： ![0015a0c55f37eb6bb3ca9b0002a3200](https://qhstaticssl.kujiale.com/yuntai/image/png/1551349274047/114F8614C58655393DF4B5DCF6BC7DDD.png?x-oss-process=image/format,webp) 如果模型显示的单位不是毫米（mm），可以打开最上方的“窗口”--“模型信息”--“单位”–设置为mm。 知道模型尺寸后在草图大师中缩放一下。 先按一下ctrl+A，选择"缩放工具"，点模型的任意一个端点就可以等比例缩放，左下角是缩放比例，满足最长边小于30,000毫米就好。 ![0015a0c5ba537dd81bfe34ff3b23d1f](https://qhstaticssl.kujiale.com/yuntai/image/png/1551349275186/6EE236125401ECCAE8BCE1C22E54E8BF.png?x-oss-process=image/format,webp) 2.如果sketchup中除了本身模型还有其他的模型 草图大师中打开模型：编辑–取消隐藏–全部，然后删除（delete键）不需要的场景，只剩下需要的模型。
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313581331/8FC568051A84925D1726E26FF0EA2BCA.png)
+
+</Visibility>

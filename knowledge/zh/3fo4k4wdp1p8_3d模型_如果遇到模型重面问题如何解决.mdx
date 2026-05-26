@@ -3,6 +3,8 @@ title: "3d模型-如果遇到模型重面问题如何解决"
 description: "问题"
 ---
 
+
+
 # 问题
 
 纹理混乱，渲染视频会闪烁抖动
@@ -22,3 +24,17 @@ description: "问题"
 把重面部分选中删除就好
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. 自检 目前max有很多检查重面的插件、小工具，可以自行选择。 如果没有小工具，那么在max里也可以检查。 使用vraylightmtl，在light color节点连vraydirt，将该材质赋予需要检测的部位，进行渲染。出现灰色的地方就是重面，正常应该是vraylight的颜色
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png)
+
+2. 解决方法 把重面部分选中删除就好
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png)
+
+</Visibility>

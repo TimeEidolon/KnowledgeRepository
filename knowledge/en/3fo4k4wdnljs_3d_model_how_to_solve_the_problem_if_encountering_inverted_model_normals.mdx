@@ -3,6 +3,8 @@ title: "3d-model-how-to-solve-the-problem-if-encountering-inverted-model-normals
 description: "Problem"
 ---
 
+
+
 # Problem
 
 A rendering might appear black.
@@ -24,3 +26,20 @@ Using max's built-in normal editing feature, you can see the normal direction on
 Once you identify the position with reversed normals, directly inspect that position, select the reversed normals, and flip them.
 
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png)
+
+<Visibility for="agents">
+
+## Assistant step guide
+
+Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+
+1. Self-check Currently, max offers many plugins and small tools for checking normals that you can choose from. If there are no small tools, you can also check within max. Use vraylightmtl for the part that needs checking and render it. The areas appearing black indicate reversed normals, while the correct color should be that of vraylight.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png)
+
+2. Using max's built-in normal editing feature, you can see the normal direction on each point. Typically, normals for planes (non-arc) are blue as shown in the image, while incorrect ones are green lines.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872076/F3A56EABFC699E6C4341B9B01A3A9E58.png)
+
+3. Solution Once you identify the position with reversed normals, directly inspect that position, select the reversed normals, and flip them.
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png)
+
+</Visibility>
