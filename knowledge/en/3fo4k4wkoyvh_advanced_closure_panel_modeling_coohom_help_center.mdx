@@ -3,9 +3,78 @@ title: "advanced-closure-panel-modeling-|-coohom-help-center"
 description: "Definition**"
 ---
 
-
-
 **Definition**
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+**Definition** Used for the joint between the cabinet and the wall.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920429828/F1D217F87A2F8DEB7EBC851B42997B24.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920429828/F1D217F87A2F8DEB7EBC851B42997B24.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+**I.Creation Location** Custom Furniture Customization—Create Asset—Parametric Model Library— New—
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920432605/E887A170639BF48C2E2DA8129647A225.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920432605/E887A170639BF48C2E2DA8129647A225.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+**II.Setting Parameters** Custom Variable Settings
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920434005/D09C21CEA0E45D510A12C94D643AB75B.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920434005/D09C21CEA0E45D510A12C94D643AB75B.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+Width (W) - Represents the size of the model in the X-axis direction, with value type set as optional (e.g., optional 18, current value is 18).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920436730/C9D3D80C2A08962777572923376F3933.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920436730/C9D3D80C2A08962777572923376F3933.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+Depth (D) - Represents the size of the model in the Y-axis direction, including the air space behind it, with value type set as a range (e.g., range 150-1200, current value is 550).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920438634/7654EC8FC6064F16386DF7302480EAD8.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920438634/7654EC8FC6064F16386DF7302480EAD8.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+Height (H) - Represents the size of the model in the Z-axis direction, with value type set as a range (e.g., range 300-2400, current value is 2000).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920441237/BBFE2F06E3BAE35669F7350D13B118E1.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920441237/BBFE2F06E3BAE35669F7350D13B118E1.png" alt="Step 6" style="max-width:100%;height:auto;" />
+
+### Step 7
+Material does not need modification and represents the model using default material. When used, the material changes based on the default material of the scene. **III.Calling the Submodel** Call an 18mm vertical panel from the semi-finished product library.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920443936/CA9EA607283E08142B822D2A2A51EF39.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920443936/CA9EA607283E08142B822D2A2A51EF39.png" alt="Step 7" style="max-width:100%;height:auto;" />
+
+### Step 8
+**IV.Setting Parameters** Modify the physical attributes of the Panel: Width set as a fixed value of 18, Depth set as a fixed value of 100, Height as #H. Position Y set as -#D+100.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920447076/395B9EE77AF2C95A057C5CB81D113D84.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920447076/395B9EE77AF2C95A057C5CB81D113D84.png" alt="Step 8" style="max-width:100%;height:auto;" />
+
+### Step 9
+**V.Testing the Model** Enter values within the range of parameters W and H and observe if the model changes consistently with the input values. If they match, it indicates that the model is correct. **VI.Output Attribute Settings** Output Width: (#H - size in the direction of the grain) Output Depth: (size in the direction perpendicular to the grain) 100 Output Height: (Panel Thickness)
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920449170/4E33461C848A23BF8ABD0B2175B486FD.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920449170/4E33461C848A23BF8ABD0B2175B486FD.png" alt="Step 9" style="max-width:100%;height:auto;" />
+
+### Step 10
+**VII.Saving to the Library** Click on the file in the upper right corner and select Save. Choose the subdirectory for saving, give it a name, and click Save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920450434/7DCE7243AD46704032D2AD8F89493B9C.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920450434/7DCE7243AD46704032D2AD8F89493B9C.png" alt="Step 10" style="max-width:100%;height:auto;" />
+
+### Step 11
+In the corresponding category of the page, find the model, select it, and click initialize. Wait for the model rendering to complete.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920451256/408B48C04702DD820F175F3A5F5BCEB0.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920451256/408B48C04702DD820F175F3A5F5BCEB0.png" alt="Step 11" style="max-width:100%;height:auto;" />
+
 
 Used for the joint between the cabinet and the wall.
 
@@ -74,44 +143,3 @@ Click on the file in the upper right corner and select Save. Choose the subdirec
 In the corresponding category of the page, find the model, select it, and click initialize. Wait for the model rendering to complete.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920451256/408B48C04702DD820F175F3A5F5BCEB0.png)
-
-<Visibility for="agents">
-
-## Assistant step guide
-
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
-
-1. **Definition** Used for the joint between the cabinet and the wall.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920429828/F1D217F87A2F8DEB7EBC851B42997B24.png)
-
-2. **I.Creation Location** Custom Furniture Customization—Create Asset—Parametric Model Library— New—
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920432605/E887A170639BF48C2E2DA8129647A225.png)
-
-3. **II.Setting Parameters** Custom Variable Settings
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920434005/D09C21CEA0E45D510A12C94D643AB75B.png)
-
-4. Width (W) - Represents the size of the model in the X-axis direction, with value type set as optional (e.g., optional 18, current value is 18).
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920436730/C9D3D80C2A08962777572923376F3933.png)
-
-5. Depth (D) - Represents the size of the model in the Y-axis direction, including the air space behind it, with value type set as a range (e.g., range 150-1200, current value is 550).
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920438634/7654EC8FC6064F16386DF7302480EAD8.png)
-
-6. Height (H) - Represents the size of the model in the Z-axis direction, with value type set as a range (e.g., range 300-2400, current value is 2000).
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920441237/BBFE2F06E3BAE35669F7350D13B118E1.png)
-
-7. Material does not need modification and represents the model using default material. When used, the material changes based on the default material of the scene. **III.Calling the Submodel** Call an 18mm vertical panel from the semi-finished product library.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920443936/CA9EA607283E08142B822D2A2A51EF39.png)
-
-8. **IV.Setting Parameters** Modify the physical attributes of the Panel: Width set as a fixed value of 18, Depth set as a fixed value of 100, Height as #H. Position Y set as -#D+100.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920447076/395B9EE77AF2C95A057C5CB81D113D84.png)
-
-9. **V.Testing the Model** Enter values within the range of parameters W and H and observe if the model changes consistently with the input values. If they match, it indicates that the model is correct. **VI.Output Attribute Settings** Output Width: (#H - size in the direction of the grain) Output Depth: (size in the direction perpendicular to the grain) 100 Output Height: (Panel Thickness)
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920449170/4E33461C848A23BF8ABD0B2175B486FD.png)
-
-10. **VII.Saving to the Library** Click on the file in the upper right corner and select Save. Choose the subdirectory for saving, give it a name, and click Save.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920450434/7DCE7243AD46704032D2AD8F89493B9C.png)
-
-11. In the corresponding category of the page, find the model, select it, and click initialize. Wait for the model rendering to complete.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920451256/408B48C04702DD820F175F3A5F5BCEB0.png)
-
-</Visibility>

@@ -3,9 +3,45 @@ title: "在谷歌浏览器中保存har文件-记录"
 description: "功能简介"
 ---
 
-
-
 # 功能简介
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+准备一个干净的新打开的Google Chrome 无痕浏览环境：
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473512/B9416EF9C8DFCAE0AE1F40690AC1E8CA.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473512/B9416EF9C8DFCAE0AE1F40690AC1E8CA.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+按 F12键（Win）或者 Option + Command + I 键（Mac） 开启当前Tab的 DevTools
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473526/41751468A2F5E8B698F8603FF4F53A84.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473526/41751468A2F5E8B698F8603FF4F53A84.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+在浏览器地址栏中输入想要记录的页面，例如 www.coohom.com， 等待页面加载完毕， DevTools侧在Network栏目观察不再有变化
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473528/3FB2C9EF1D8118FA75D6572C7430FB5F.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473528/3FB2C9EF1D8118FA75D6572C7430FB5F.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+找到并点击 "Export HAR (...." 按钮，并选择保存地点
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473540/2A4F6B071F27F43B65D4200C552741A9.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473540/2A4F6B071F27F43B65D4200C552741A9.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473555/F1B5D5B389EEF4A48EE45E5D714CD39F.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473555/F1B5D5B389EEF4A48EE45E5D714CD39F.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+找到保存的HAR文件，并传输给Coohom客服或者技术支持同事，后续会交给测试研发进行进一步分析 * 具体操作可见视频教程： [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_c6830e62_630f_4450_1752634288148.mp4)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473520/97B272B3A71A63AE276EFE7FC6D5F3F6.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473520/97B272B3A71A63AE276EFE7FC6D5F3F6.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
 
 **为什么需要保存HAR记录？**
 
@@ -52,22 +88,31 @@ HAR（HTTP档案格式）是一种以JSON格式存档的文件格式，用于记
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. 在谷歌浏览器中保存HAR记录 1. 准备一个干净的新打开的Google Chrome 无痕浏览环境：
+1. 准备一个干净的新打开的Google Chrome 无痕浏览环境：
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473512/B9416EF9C8DFCAE0AE1F40690AC1E8CA.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473512/B9416EF9C8DFCAE0AE1F40690AC1E8CA.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-2. 2. 按 F12键（Win）或者 Option + Command + I 键（Mac） 开启当前Tab的 DevTools
+2. 按 F12键（Win）或者 Option + Command + I 键（Mac） 开启当前Tab的 DevTools
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473526/41751468A2F5E8B698F8603FF4F53A84.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473526/41751468A2F5E8B698F8603FF4F53A84.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-3. 3. 在浏览器地址栏中输入想要记录的页面，例如 www.coohom.com， 等待页面加载完毕， DevTools侧在Network栏目观察不再有变化
+3. 在浏览器地址栏中输入想要记录的页面，例如 www.coohom.com， 等待页面加载完毕， DevTools侧在Network栏目观察不再有变化
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473528/3FB2C9EF1D8118FA75D6572C7430FB5F.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473528/3FB2C9EF1D8118FA75D6572C7430FB5F.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-4. 4. 找到并点击 "Export HAR (...." 按钮，并选择保存地点
+4. 找到并点击 "Export HAR (...." 按钮，并选择保存地点
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473540/2A4F6B071F27F43B65D4200C552741A9.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473540/2A4F6B071F27F43B65D4200C552741A9.png" alt="Step 4" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473555/F1B5D5B389EEF4A48EE45E5D714CD39F.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473555/F1B5D5B389EEF4A48EE45E5D714CD39F.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-5. 5. 找到保存的HAR文件，并传输给Coohom客服或者技术支持同事，后续会交给测试研发进行进一步分析
+5. 找到保存的HAR文件，并传输给Coohom客服或者技术支持同事，后续会交给测试研发进行进一步分析 * 具体操作可见视频教程： [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_c6830e62_630f_4450_1752634288148.mp4)
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473520/97B272B3A71A63AE276EFE7FC6D5F3F6.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751880473520/97B272B3A71A63AE276EFE7FC6D5F3F6.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
 </Visibility>

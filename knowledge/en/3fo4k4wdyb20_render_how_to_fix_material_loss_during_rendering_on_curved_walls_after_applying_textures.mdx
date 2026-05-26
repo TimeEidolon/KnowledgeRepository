@@ -3,9 +3,30 @@ title: "render-how-to-fix-material-loss-during-rendering-on-curved-walls-after-a
 description: "Problem"
 ---
 
-
-
 # Problem
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+Problem After attaching material to the curved wall, the 3D display is normal, but the render does not show the material. The material was attached normally.
+
+![](https://qhstaticssl.kujiale.com/image/png/1655809870226/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_347/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1655809870226/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_347/format,webp" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+The render does not display, and the face with material has disappeared.
+
+![](https://qhstaticssl.kujiale.com/image/png/1655809902117/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_447/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1655809902117/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_447/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+Reason If you go to the hard material editing, you will see a message like this, Unable to save, The face containing cylinders does not support the integrated panel. The curved wall is considered a cylindrical surface, so the curved surface currently does not support placing integrated panels of this special material.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134822826/DE81FE9FC608B45DD783CA2B957EBED8.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134822826/DE81FE9FC608B45DD783CA2B957EBED8.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
 
 After attaching material to the curved wall, the 3D display is normal, but the render does not show the material.
 
@@ -33,15 +54,13 @@ Clear the integrated wall panel material, replace it with a regular wood veneer 
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. Problem After attaching material to the curved wall, the 3D display is normal, but the render does not show the material. The material was attached normally.
-![](https://qhstaticssl.kujiale.com/image/png/1655809870226/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_347/format,webp)
-
-2. The render does not display, and the face with material has disappeared.
-![](https://qhstaticssl.kujiale.com/image/png/1655809902117/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_447/format,webp)
-
-3. Reason If you go to the hard material editing, you will see a message like this, Unable to save, The face containing cylinders does not support the integrated panel. The curved wall is considered a cylindrical surface, so the curved surface currently does not support placing integrated panels of this special material.
+1. Reason If you go to the hard material editing, you will see a message like this, Unable to save, The face containing cylinders does not support the integrated panel. The curved wall is considered a cylindrical surface, so the curved surface currently does not support placing integrated panels of this special material.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134822826/DE81FE9FC608B45DD783CA2B957EBED8.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134822826/DE81FE9FC608B45DD783CA2B957EBED8.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 </Visibility>

@@ -3,9 +3,39 @@ title: "render-how-to-deal-with-missing-models-after-rendering"
 description: "Problem 1"
 ---
 
-
-
 # Problem 1
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+Try to check Specular reflection and see if the model appears.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129686/43CA0DD4D29E9746780423E087DAED30.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129686/43CA0DD4D29E9746780423E087DAED30.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+For occasional issues, users can switch the lighting version and try rendering again.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129865/5A47D33F7E8EB4D20677C90BF71F6D24.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129865/5A47D33F7E8EB4D20677C90BF71F6D24.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+Check if some parts of the model are hidden. There was originally a door, but after rendering, only a doorway is visible. During rendering, the single-room rendering option was selected, so the model from the adjoining room is not visible. Switching to full house mode rendering will display it normally. The originally placed door has disappeared. ![image-202302181712252.png](https://qhstaticssl.kujiale.com/image/png/1761814359861/D4D1942F0834CCEB3CB690BED057B098.png) The overlapping of wall structures at the door location is causing the issue; removing the overlapping walls can resolve it.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129771/5B9F919A2496BAEA21E7EEFADBADEB3F.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129771/5B9F919A2496BAEA21E7EEFADBADEB3F.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129738/910FF4C51982E2D833EF3BFBDF2C1358.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129738/910FF4C51982E2D833EF3BFBDF2C1358.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129684/1CA14CF2BB877EC2DE5C3CD3FA9985A8.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129684/1CA14CF2BB877EC2DE5C3CD3FA9985A8.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/png/1761814382913/1100306906D11CB4420D189FD738238A.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761814382913/1100306906D11CB4420D189FD738238A.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
 
 The originally existing model disappears after rendering.
 
@@ -51,24 +81,27 @@ The overlapping of wall structures at the door location is causing the issue; re
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. Solution 1 1. Try to check Specular reflection and see if the model appears.
+1. Try to check Specular reflection and see if the model appears.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129686/43CA0DD4D29E9746780423E087DAED30.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129686/43CA0DD4D29E9746780423E087DAED30.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-2. 2. For occasional issues, users can switch the lighting version and try rendering again.
+2. For occasional issues, users can switch the lighting version and try rendering again.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129865/5A47D33F7E8EB4D20677C90BF71F6D24.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129865/5A47D33F7E8EB4D20677C90BF71F6D24.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-3. 3. Check if some parts of the model are hidden.
+3. Check if some parts of the model are hidden. There was originally a door, but after rendering, only a doorway is visible. During rendering, the single-room rendering option was selected, so the model from the adjoining room is not visible. Switching to full house mode rendering will display it normally. The originally placed door has disappeared. ![image-202302181712252.png](https://qhstaticssl.kujiale.com/image/png/1761814359861/D4D1942F0834CCEB3CB690BED057B098.png) The overlapping of wall structures at the door location is causing the issue; removing the overlapping walls can resolve it.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129771/5B9F919A2496BAEA21E7EEFADBADEB3F.png)
-
-4. Problem 2 There was originally a door, but after rendering, only a doorway is visible.
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129771/5B9F919A2496BAEA21E7EEFADBADEB3F.png" alt="Step 3" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129738/910FF4C51982E2D833EF3BFBDF2C1358.png)
-
-5. Problem 3 The originally placed door has disappeared.
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129738/910FF4C51982E2D833EF3BFBDF2C1358.png" alt="Step 3" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129684/1CA14CF2BB877EC2DE5C3CD3FA9985A8.png)
-
-6. ![image-202302181712252.png](https://qhstaticssl.kujiale.com/image/png/1761814359861/D4D1942F0834CCEB3CB690BED057B098.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761814129684/1CA14CF2BB877EC2DE5C3CD3FA9985A8.png" alt="Step 3" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/png/1761814382913/1100306906D11CB4420D189FD738238A.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761814382913/1100306906D11CB4420D189FD738238A.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 </Visibility>

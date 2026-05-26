@@ -3,9 +3,42 @@ title: "requirements-for-uploading-copy-images-to-generate-floor-plans"
 description: "Coohom supports uploading floor plan images, automatically recognizing and generating walls and windows. This article will explain in detail the requirements fo"
 ---
 
-
-
 Coohom supports uploading floor plan images, automatically recognizing and generating walls and windows. This article will explain in detail the requirements for uploading copy images to generate floor plans. Following these requirements will improve the recognition of drawings and increase design efficiency.
+
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+2. Walls as Double-Line Structure In the uploaded drawings, walls must use a double-line structure, meaning the walls are drawn with two parallel lines, making it easier to recognize the wall area.
+
+![](https://qhstaticssl.kujiale.com/image/png/1760516214035/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760516214035/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+5. Hand Drawings Not Supported Hand drawings cannot be uploaded, as their lines and proportions may lack standardization, making accurate recognition difficult.
+
+![](https://qhstaticssl.kujiale.com/image/png/1760515608894/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760515608894/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+6. On-Site Photos Not Supported On-site photos of the actual house, such as walls, floors, and ceilings, cannot be uploaded as they do not clearly show the overall floor plan structure and cannot be used for tracing recognition.
+
+![](https://qhstaticssl.kujiale.com/image/png/1760515683086/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760515683086/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+7. Secondary Photographed Images Not Supported It is recommended to upload the original drawings first, as secondary photographed images often result in image distortion and perspective deviations, leading to failed recognition.
+
+![](https://qhstaticssl.kujiale.com/image/png/1760515851106/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760515851106/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+8. Image Elements are Clearly Visible, Avoid Low Resolution Images Uploaded images should have clear and visible elements, avoiding low-resolution images. If the image is blurry, it will not be possible to recognize key information like lines and dimensions in the drawings.
+
+![](https://qhstaticssl.kujiale.com/image/png/1760515965441/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760515965441/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
 # For Users
 
@@ -69,21 +102,29 @@ Uploaded images should have clear and visible elements, avoiding low-resolution 
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
 1. 2. Walls as Double-Line Structure In the uploaded drawings, walls must use a double-line structure, meaning the walls are drawn with two parallel lines, making it easier to recognize the wall area.
 ![](https://qhstaticssl.kujiale.com/image/png/1760516214035/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760516214035/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 2. 5. Hand Drawings Not Supported Hand drawings cannot be uploaded, as their lines and proportions may lack standardization, making accurate recognition difficult.
 ![](https://qhstaticssl.kujiale.com/image/png/1760515608894/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760515608894/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 3. 6. On-Site Photos Not Supported On-site photos of the actual house, such as walls, floors, and ceilings, cannot be uploaded as they do not clearly show the overall floor plan structure and cannot be used for tracing recognition.
 ![](https://qhstaticssl.kujiale.com/image/png/1760515683086/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760515683086/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 4. 7. Secondary Photographed Images Not Supported It is recommended to upload the original drawings first, as secondary photographed images often result in image distortion and perspective deviations, leading to failed recognition.
 ![](https://qhstaticssl.kujiale.com/image/png/1760515851106/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760515851106/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 5. 8. Image Elements are Clearly Visible, Avoid Low Resolution Images Uploaded images should have clear and visible elements, avoiding low-resolution images. If the image is blurry, it will not be possible to recognize key information like lines and dimensions in the drawings.
 ![](https://qhstaticssl.kujiale.com/image/png/1760515965441/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1760515965441/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
 </Visibility>

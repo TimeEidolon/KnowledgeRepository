@@ -3,9 +3,36 @@ title: "3d-model-how-to-solve-fisheye-glass,-spherical-glass"
 description: "Problem"
 ---
 
-
-
 # Problem
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+Self-check Check if the model parts using glass material (whether the refract attribute is enabled in the material) are cubic (i.e., have length, width, and height properties)
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534467/47999879BC99A5AB5EACAF3DACD62FCD.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534467/47999879BC99A5AB5EACAF3DACD62FCD.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+Provide an hdri, render directly, observe the effect
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534496/D5D49F3EA7029D97C088FA3F79FB19CC.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534496/D5D49F3EA7029D97C088FA3F79FB19CC.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+Solution Apply a shell command to the model parts
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534450/D138A59A7A7C068AC00E6A534DEF5F07.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534450/D138A59A7A7C068AC00E6A534DEF5F07.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+Change the refractive index in the material properties to 1.0
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534462/F24580C8AFAC55D41E99354B69657401.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534462/F24580C8AFAC55D41E99354B69657401.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
 
 The uploaded model shows fisheye or spherical glass (usually due to single-sided glass)
 
@@ -33,18 +60,25 @@ Change the refractive index in the material properties to 1.0
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
 1. Self-check Check if the model parts using glass material (whether the refract attribute is enabled in the material) are cubic (i.e., have length, width, and height properties)
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534467/47999879BC99A5AB5EACAF3DACD62FCD.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534467/47999879BC99A5AB5EACAF3DACD62FCD.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 2. Provide an hdri, render directly, observe the effect
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534496/D5D49F3EA7029D97C088FA3F79FB19CC.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534496/D5D49F3EA7029D97C088FA3F79FB19CC.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 3. Solution Apply a shell command to the model parts
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534450/D138A59A7A7C068AC00E6A534DEF5F07.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534450/D138A59A7A7C068AC00E6A534DEF5F07.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 4. Change the refractive index in the material properties to 1.0
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534462/F24580C8AFAC55D41E99354B69657401.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505534462/F24580C8AFAC55D41E99354B69657401.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 </Visibility>

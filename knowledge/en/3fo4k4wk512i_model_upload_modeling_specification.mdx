@@ -3,9 +3,36 @@ title: "model-upload-modeling-specification"
 description: "I. Model acquisition**"
 ---
 
-
-
 ### **I. Model acquisition**
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+Modeling (high fidelity, fewer problems);
+
+### Step 2
+Downloading from the internet (large differences in modeling, more problems). Modeling (high fidelity, fewer problems); Downloading from the internet (large differences in modeling, more problems). (Recommend saving as 3dmax file version earlier than 2021) It supports compressed Max archives, individual max files (without texture), and skp models. 1: Supports VRay materials; Supports emissive materials and VRay lights, but when using VRay lights, make sure they are necessary for the product (light fixtures, lightboxes, etc.), but auxiliary lighting used for rendering needs to be deleted. 2: Materials not currently supported: ①: Multidimensional sub-materials are not currently supported and need to be split before use; During modeling, attach all parts with the same material together and attach them to the same texture for material ball attachment. ②: Vray fur materials are currently not supported; For fur materials, products with fur attributes should be converted to polygons within a face count range. ③: Color correction and gradient materials are currently not supported; ④: Displacement materials are currently not supported; ⑤: Other plugin materials that are not Vray, such as Corona, FinalRender, are currently not supported. ⑥: Composite materials are currently not supported. The unit must be millimeters, and objects in the scene should be controlled within 30 meters \* 30 meters. Location setting: Custom - Unit Setting Setting requirements: Display unit ratio (metric); the system unit ratio must be set to millimeters. Within 200M. (when the file is too large, the upload time will increase accordingly, and it will cause lag when used in the DIY interface. It is recommended to control it around 150M). Within 2 million polygons (after conversion to editable polygons; models with excessively large files or polygon counts may result in long upload times or failure) Polygon count data viewing: Shortcut key 7 Within 200 objects (when all are exploded). Only keep the required model itself, delete lights, cameras, auxiliary objects, etc. If the light fixture needs to have a light source, it can be uploaded together (after unfreezing everything and unchecking all the hide options).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851246510/31F2576A86EAA0D83901B19FA4A390B5.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851246510/31F2576A86EAA0D83901B19FA4A390B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 1
+Texture file size should be within 5M.
+
+### Step 2
+Texture file pixels should be within 5000.
+
+### Step 3
+Textures should use .jpg, .png, or .tga with RGB color mode.
+
+### Step 4
+Please do not use gradient, color correction, or other texture modification commands in the 3d max material editor. Texture file size should be within 5M. Texture file pixels should be within 5000. Textures should use .jpg, .png, or .tga with RGB color mode. Please do not use gradient, color correction, or other texture modification commands in the 3d max material editor. Max files should be set to 2.2. (1) Only one max source file can be included in a compressed package. (2) The compressed package cannot have an unzip password. (3) The max source file cannot be a damaged file and can be opened using 3dsmax. (4) The max source file cannot contain ALC, ALC2, CRP, ADSL third-party scripts. (5) The max source file must contain models and cannot upload an empty scene. (6) The max source file exported object must be less than 200.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851247563/133A3C4A0F393BB915E239FE439F8EBC.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851247563/133A3C4A0F393BB915E239FE439F8EBC.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
 
 1. Modeling (high fidelity, fewer problems);
 2. Downloading from the internet (large differences in modeling, more problems).
@@ -106,17 +133,3 @@ Max files should be set to 2.2.
 (5) The max source file must contain models and cannot upload an empty scene.
 
 (6) The max source file exported object must be less than 200.
-
-<Visibility for="agents">
-
-## Assistant step guide
-
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
-
-1. **IV.Model size** The unit must be millimeters, and objects in the scene should be controlled within 30 meters \* 30 meters. Location setting: Custom - Unit Setting
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851246510/31F2576A86EAA0D83901B19FA4A390B5.png)
-
-2. **IX.Texture requirements** 1. Texture file size should be within 5M. 2. Texture file pixels should be within 5000. 3. Textures should use .jpg, .png, or .tga with RGB color mode. 4. Please do not use gradient, color correction, or other texture modification commands in the 3d max material editor. Texture file size should be within 5M. Texture file pixels should be within 5000. Textures should use .jpg, .png, or .tga with RGB color mode. Please do not use gradient, color correction, or other texture modification commands in the 3d max material editor.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851247563/133A3C4A0F393BB915E239FE439F8EBC.png)
-
-</Visibility>

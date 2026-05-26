@@ -3,9 +3,63 @@ title: "企业-批量维护定制商品库信息"
 description: "定制商品库的导入和导出功能，可实现定制商品的批量汇总、统计和修改，本文会为您详细讲解如何批量维护定制商品库里的商品信息"
 ---
 
-
-
 定制商品库的导入和导出功能，可实现定制商品的批量汇总、统计和修改，本文会为您详细讲解如何批量维护定制商品库里的商品信息
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+在**导入导出**页面，点击**导出商品**
+
+![](https://qhstaticssl.kujiale.com/image/png/1752132582233/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752132582233/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+在弹窗中，选择**类目**后，点击**下一步**
+
+![](https://qhstaticssl.kujiale.com/image/png/1752133993702/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752133993702/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+选择**导出属性**，默认导出商品ID，其他属性由用户自主选择，如需实现批量修改某个商品字段的，需将该字段导出，选择完成后，点击**导出表格**
+
+![](https://qhstaticssl.kujiale.com/image/png/1752134098151/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134098151/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+等待表格生成成功后，点击**下载表格**
+
+![](https://qhstaticssl.kujiale.com/image/png/1752134206796/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134206796/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+将下载到本地的压缩包解压，解压后的文件是以**“tempExcel”**开头的Excel表格，将其打开
+
+![](https://qhstaticssl.kujiale.com/image/png/1752134251238/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134251238/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/png/1752134346857/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134346857/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+补充相应表格内容，表头仅含**“（可编辑）”**字段列表的表格可以补充、修改信息，其它内容不能修改 **注意：** * 目前只有**“描述”字段**支持换行，如果信息较长，建议放在这个字段中，按回车分行 * 即使有**“（可编辑）”字段**，仍可以保持内容空白，只补充需要的信息即可 商品导入可实现对定制商品库内商品信息的批量修改 **前提条件：**使用商品导出功能，下载原始商品信息EXCEL表格**（该表格需包含需要修改的商品，并确认需要批量修改的字段在导出字段中）**，在EXCEL中批量修改字段，**详细可见上文导出商品操作步骤**
+
+![](https://qhstaticssl.kujiale.com/image/png/1752134499748/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134499748/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 6" style="max-width:100%;height:auto;" />
+
+### Step 1
+导出的表格信息修改完成后，回到**导入导出**页面，点击**“导入商品”**，在弹出的文件夹选框中选择修改好的表格，点击**打开**
+
+![](https://qhstaticssl.kujiale.com/image/png/1752134727860/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134727860/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+导入的操作状态显示**成功**后，系统会自动生成一条导入记录，展示成功操作的商品数 * **注意：**如商品包含可修改的字段，则EXCEL表格中的值会覆盖当前商品字段值（包括空值）。如商品不包含该字段，则跳过该条字段操作
+
+![](https://qhstaticssl.kujiale.com/image/png/1752135678624/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752135678624/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
 
 # 面向用户
 
@@ -72,36 +126,43 @@ description: "定制商品库的导入和导出功能，可实现定制商品的
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. 入口 进入**工作台**，选择**“企业库 - 定制商品库”**，点击**导入导出**
-![](https://qhstaticssl.kujiale.com/image/png/1752131993388/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-
-2. 导出定制商品 商品导出可实现对定制商品库内商品信息的批量输出 1. 在**导入导出**页面，点击**导出商品**
+1. 在**导入导出**页面，点击**导出商品**
 ![](https://qhstaticssl.kujiale.com/image/png/1752132582233/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752132582233/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-3. 2. 在弹窗中，选择**类目**后，点击**下一步**
+2. 在弹窗中，选择**类目**后，点击**下一步**
 ![](https://qhstaticssl.kujiale.com/image/png/1752133993702/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752133993702/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-4. 3. 选择**导出属性**，默认导出商品ID，其他属性由用户自主选择，如需实现批量修改某个商品字段的，需将该字段导出，选择完成后，点击**导出表格**
+3. 选择**导出属性**，默认导出商品ID，其他属性由用户自主选择，如需实现批量修改某个商品字段的，需将该字段导出，选择完成后，点击**导出表格**
 ![](https://qhstaticssl.kujiale.com/image/png/1752134098151/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134098151/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-5. 4. 等待表格生成成功后，点击**下载表格**
+4. 等待表格生成成功后，点击**下载表格**
 ![](https://qhstaticssl.kujiale.com/image/png/1752134206796/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134206796/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-6. 5. 将下载到本地的压缩包解压，解压后的文件是以**“tempExcel”**开头的Excel表格，将其打开
+5. 将下载到本地的压缩包解压，解压后的文件是以**“tempExcel”**开头的Excel表格，将其打开
 ![](https://qhstaticssl.kujiale.com/image/png/1752134251238/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-
-7. Step 7
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134251238/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/png/1752134346857/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134346857/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
-8. 6. 补充相应表格内容，表头仅含**“（可编辑）”**字段列表的表格可以补充、修改信息，其它内容不能修改 **注意：** * 目前只有**“描述”字段**支持换行，如果信息较长，建议放在这个字段中，按回车分行 * 即使有**“（可编辑）”字段**，仍可以保持内容空白，只补充需要的信息即可
+6. 补充相应表格内容，表头仅含**“（可编辑）”**字段列表的表格可以补充、修改信息，其它内容不能修改 **注意：** * 目前只有**“描述”字段**支持换行，如果信息较长，建议放在这个字段中，按回车分行 * 即使有**“（可编辑）”字段**，仍可以保持内容空白，只补充需要的信息即可 商品导入可实现对定制商品库内商品信息的批量修改 **前提条件：**使用商品导出功能，下载原始商品信息EXCEL表格**（该表格需包含需要修改的商品，并确认需要批量修改的字段在导出字段中）**，在EXCEL中批量修改字段，**详细可见上文导出商品操作步骤**
 ![](https://qhstaticssl.kujiale.com/image/png/1752134499748/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134499748/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 6" style="max-width:100%;height:auto;" />
 
-9. 导入定制商品 商品导入可实现对定制商品库内商品信息的批量修改 **前提条件：**使用商品导出功能，下载原始商品信息EXCEL表格**（该表格需包含需要修改的商品，并确认需要批量修改的字段在导出字段中）**，在EXCEL中批量修改字段，**详细可见上文导出商品操作步骤** 1. 导出的表格信息修改完成后，回到**导入导出**页面，点击**“导入商品”**，在弹出的文件夹选框中选择修改好的表格，点击**打开**
+1. 导出的表格信息修改完成后，回到**导入导出**页面，点击**“导入商品”**，在弹出的文件夹选框中选择修改好的表格，点击**打开**
 ![](https://qhstaticssl.kujiale.com/image/png/1752134727860/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752134727860/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-10. 2. 导入的操作状态显示**成功**后，系统会自动生成一条导入记录，展示成功操作的商品数 * **注意：**如商品包含可修改的字段，则EXCEL表格中的值会覆盖当前商品字段值（包括空值）。如商品不包含该字段，则跳过该条字段操作
+2. 导入的操作状态显示**成功**后，系统会自动生成一条导入记录，展示成功操作的商品数 * **注意：**如商品包含可修改的字段，则EXCEL表格中的值会覆盖当前商品字段值（包括空值）。如商品不包含该字段，则跳过该条字段操作
 ![](https://qhstaticssl.kujiale.com/image/png/1752135678624/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1752135678624/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 </Visibility>

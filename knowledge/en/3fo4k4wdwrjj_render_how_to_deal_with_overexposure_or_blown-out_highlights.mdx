@@ -3,9 +3,36 @@ title: "render-how-to-deal-with-overexposure-or-blown-out-highlights"
 description: "Problem"
 ---
 
-
-
 # Problem
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+First, check all the lights in the scene (including sunlight) to see if there are too many or if they are too bright. You can try deleting them all and then rendering again.
+
+### Step 2
+If deleting them results in a normal exposure, it means the lights are causing the overexposure, and you can adjust the Brightness settings.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+If it's still overexposed (abnormal) after deleting all the lights, adjust the camera position to render from multiple angles and check for missing walls, ceilings, or floors (hard installations).
+
+### Step 4
+If no Finishes are missing, you can try enabling Specular reflection rendering to see if it normalizes.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 1
+Adjust the 【Environment】under 【Ambient LightBrightness】. If overexposed, reduce the value; if too dark, increase the value.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
 
 The render is overexposed, with white walls or bright reflective areas losing detail, resulting in a glaring appearance.
 
@@ -37,18 +64,25 @@ The render is overexposed, with white walls or bright reflective areas losing de
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. Problem The render is overexposed, with white walls or bright reflective areas losing detail, resulting in a glaring appearance.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066482/A30CBE9AE45C2648BB72D48390C212C7.png)
+1. First, check all the lights in the scene (including sunlight) to see if there are too many or if they are too bright. You can try deleting them all and then rendering again.
 
-2. Indoor Scene 1. First, check all the lights in the scene (including sunlight) to see if there are too many or if they are too bright. You can try deleting them all and then rendering again. 2. If deleting them results in a normal exposure, it means the lights are causing the overexposure, and you can adjust the Brightness settings.
+2. If deleting them results in a normal exposure, it means the lights are causing the overexposure, and you can adjust the Brightness settings.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-3. 3. If it's still overexposed (abnormal) after deleting all the lights, adjust the camera position to render from multiple angles and check for missing walls, ceilings, or floors (hard installations). 4. If no Finishes are missing, you can try enabling Specular reflection rendering to see if it normalizes.
+3. If it's still overexposed (abnormal) after deleting all the lights, adjust the camera position to render from multiple angles and check for missing walls, ceilings, or floors (hard installations).
+
+4. If no Finishes are missing, you can try enabling Specular reflection rendering to see if it normalizes.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-4. Outdoor or Near Outdoor Scenes (Balcony, Window Edge) 1. Adjust the 【Environment】under 【Ambient LightBrightness】. If overexposed, reduce the value; if too dark, increase the value.
+1. Adjust the 【Environment】under 【Ambient LightBrightness】. If overexposed, reduce the value; if too dark, increase the value.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 </Visibility>

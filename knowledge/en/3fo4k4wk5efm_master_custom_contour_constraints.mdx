@@ -3,9 +3,24 @@ title: "master-custom-contour-constraints"
 description: "I. Explanation of Custom Contours**"
 ---
 
-
-
 **I. Explanation of Custom Contours**
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+The properties of the model's outer frame include physical attributes and other attributes. The physical attributes include the position (XYZ) of the contour in the coordinate axis and its type (top contour, bottom contour, top sink contour, bottom sink contour), which are automatically filled in by the system (usually no modifications are needed for most models). The properties of the model's outer frame include physical attributes and other attributes. The physical attributes include the position (XYZ) of the contour in the coordinate axis and its type (top contour, bottom contour, top sink contour, bottom sink contour), which are automatically filled in by the system (usually no modifications are needed for most models). 2.Contour types: The top contour is used to generate the top line or countertop, while the bottom contour is used to generate lighting lines or kickboard lines. The top sink contour and bottom sink contour are used to customize the hole shape of irregular sink countertops by adding contours to sinks in the editor. If no contour is set, the default hole shape will be a rectangle based on the sink model. In the frontend tool, if the sink installation method is "top mount," the hole will be shaped according to the top sink contour; if the sink installation method is "undermount" or "integral," the hole will be shaped according to the bottom sink contour. Note: Adding hole contours to non-sink models will not create holes and will not take effect. 3.The other attributes are anchor points used to edit the contour shape. Clicking on "edit contour" allows you to define the contour shape by drawing points to form a shape. The system automatically draws the rectangular contour of the model's outer frame (no modifications are needed for regular rectangular cabinets, but for arched cabinets, corner cabinets, etc., adjustments may be necessary). You can modify the contour shape by changing the coordinates of points and adding or removing points. The buttons on the right side allow you to insert and delete points, and the button below adds endpoint points.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851107565/CF6D2959D79A2FC03369B65CA52350F8.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851107565/CF6D2959D79A2FC03369B65CA52350F8.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851109937/82A402C64DCD390E12923B02356FEA51.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851109937/82A402C64DCD390E12923B02356FEA51.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851112806/851DFB219435D544C21B2A2830BDD010.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851112806/851DFB219435D544C21B2A2830BDD010.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
 
 Whenever a new model is created in the editor, two blue rectangular surfaces are automatically added as custom contours.
 
@@ -40,25 +55,3 @@ The properties of the model's outer frame include physical attributes and other 
 3.The other attributes are anchor points used to edit the contour shape. Clicking on "edit contour" allows you to define the contour shape by drawing points to form a shape. The system automatically draws the rectangular contour of the model's outer frame (no modifications are needed for regular rectangular cabinets, but for arched cabinets, corner cabinets, etc., adjustments may be necessary). You can modify the contour shape by changing the coordinates of points and adding or removing points. The buttons on the right side allow you to insert and delete points, and the button below adds endpoint points.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851107565/CF6D2959D79A2FC03369B65CA52350F8.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851109937/82A402C64DCD390E12923B02356FEA51.png) ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851112806/851DFB219435D544C21B2A2830BDD010.png)
-
-<Visibility for="agents">
-
-## Assistant step guide
-
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
-
-1. **I. Explanation of Custom Contours** Whenever a new model is created in the editor, two blue rectangular surfaces are automatically added as custom contours.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851103799/05406096848AFF471CF9CDA9AF05F042.png)
-
-2. **II. Purpose of Custom Contours** Usage: Applied to cabinet models to generate lines according to predefined contour areas. **III. Difference between Custom Contours and Non-Custom Contours** Difference: Without custom contours, lines are generated based on the maximum contour area of the cabinet. With custom contours, lines are generated according to the defined contour area. **IV. Position of Custom Contours** Position: The two default contours provided by the system can be found in the contour line list in the right-side structure navigation. Custom contours can also be added in the contour lines section of the left-side element library (generally not required to add them manually).
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851105044/54FEC3A5ACA4A2227941E0ED2F2ED0F1.png)
-
-3. **V. Properties of Custom Contours** By left-clicking on a contour constraint in the structure navigation, contour properties will be displayed on the right side.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851106429/D6F8E090EE62B61EDFC505920489650E.png)
-
-4. 1. The properties of the model's outer frame include physical attributes and other attributes. The physical attributes include the position (XYZ) of the contour in the coordinate axis and its type (top contour, bottom contour, top sink contour, bottom sink contour), which are automatically filled in by the system (usually no modifications are needed for most models). The properties of the model's outer frame include physical attributes and other attributes. The physical attributes include the position (XYZ) of the contour in the coordinate axis and its type (top contour, bottom contour, top sink contour, bottom sink contour), which are automatically filled in by the system (usually no modifications are needed for most models). 2.Contour types: The top contour is used to generate the top line or countertop, while the bottom contour is used to generate lighting lines or kickboard lines. The top sink contour and bottom sink contour are used to customize the hole shape of irregular sink countertops by adding contours to sinks in the editor. If no contour is set, the default hole shape will be a rectangle based on the sink model. In the frontend tool, if the sink installation method is "top mount," the hole will be shaped according to the top sink contour; if the sink installation method is "undermount" or "integral," the hole will be shaped according to the bottom sink contour. Note: Adding hole contours to non-sink models will not create holes and will not take effect. 3.The other attributes are anchor points used to edit the contour shape. Clicking on "edit contour" allows you to define the contour shape by drawing points to form a shape. The system automatically draws the rectangular contour of the model's outer frame (no modifications are needed for regular rectangular cabinets, but for arched cabinets, corner cabinets, etc., adjustments may be necessary). You can modify the contour shape by changing the coordinates of points and adding or removing points. The buttons on the right side allow you to insert and delete points, and the button below adds endpoint points.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851107565/CF6D2959D79A2FC03369B65CA52350F8.png)
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851109937/82A402C64DCD390E12923B02356FEA51.png)
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733851112806/851DFB219435D544C21B2A2830BDD010.png)
-
-</Visibility>

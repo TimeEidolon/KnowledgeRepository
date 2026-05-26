@@ -3,9 +3,24 @@ title: "3d-model-how-to-solve-the-problem-of-overlapping-faces-if-encountered"
 description: "Problem"
 ---
 
-
-
 # Problem
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+Self-check Currently, max offers many plugins and small tools for checking overlapping faces, which can be chosen as needed. If there are no small tools, you can still check within max. Use vraylightmtl and connect vraydirt to the light color node. Assign this material to the parts that need testing and render. Gray areas indicate overlapping faces; they should normally be the color of vraylight.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+Solution Simply select and delete the overlapping parts.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
 
 Texture chaos, rendered video flickers and jitters
 
@@ -29,12 +44,17 @@ Simply select and delete the overlapping parts.
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
 1. Self-check Currently, max offers many plugins and small tools for checking overlapping faces, which can be chosen as needed. If there are no small tools, you can still check within max. Use vraylightmtl and connect vraydirt to the light color node. Assign this material to the parts that need testing and render. Gray areas indicate overlapping faces; they should normally be the color of vraylight.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 2. Solution Simply select and delete the overlapping parts.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 </Visibility>

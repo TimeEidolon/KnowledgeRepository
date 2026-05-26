@@ -175,6 +175,11 @@ AGENT_VISIBILITY_RE = re.compile(
     r"\n*<Visibility for=\"agents\">.*?</Visibility>\s*",
     re.DOTALL,
 )
+VISIBLE_GUIDE_RE = re.compile(
+    r"\n*## Steps with screenshots\n.*?(?=\n# [^#]|\n<Visibility|\Z)",
+    re.DOTALL,
+)
+NUMBERED_STEP_RE = re.compile(r"^(\d+)\.\s+(.+)$")
 
 
 def youtube_embed_html(url: str) -> str:
@@ -210,38 +215,132 @@ def extract_intro_video(body: str) -> str | None:
     return None
 
 
-def extract_step_media_pairs(body: str) -> list[tuple[str, list[str]]]:
-    """Map preceding text to image URLs in document order."""
-    steps: list[tuple[str, list[str]]] = []
-    buffer: list[str] = []
+def _strip_generated_sections(body: str) -> str:
+    body = AGENT_VISIBILITY_RE.sub("\n", body)
+    body = VISIBLE_GUIDE_RE.sub("\n", body)
+    return body.strip()
 
-    for line in body.splitlines():
+
+def extract_numbered_steps_with_images(body: str) -> list[tuple[int, str, list[str]]]:
+    """Parse `1.` numbered steps and attach following image URLs."""
+    clean = _strip_generated_sections(body)
+    steps: list[tuple[int, str, list[str]]] = []
+    current_num: int | None = None
+    current_text: list[str] = []
+    pending_images: list[str] = []
+
+    def flush_step() -> None:
+        nonlocal current_num, current_text, pending_images
+        if current_num is None:
+            pending_images = []
+            return
+        text = " ".join(current_text).strip()
+        text = re.sub(r"\s+", " ", text)
+        steps.append(
+            (
+                current_num,
+                text or f"Step {current_num}",
+                list(pending_images),
+            )
+        )
+        current_num = None
+        current_text = []
+        pending_images = []
+
+    for line in clean.splitlines():
         stripped = line.strip()
         if not stripped or stripped.startswith("<"):
             continue
-        if stripped.startswith("## Assistant step guide"):
+        if stripped.startswith("## Assistant step guide") or stripped.startswith(
+            "## Steps with screenshots"
+        ):
             break
+
+        if re.match(r"^#{1,2}\s+\S", stripped) and not stripped.startswith("###"):
+            flush_step()
+            current_num = None
+            current_text = []
+            pending_images = []
+            continue
+
+        numbered = NUMBERED_STEP_RE.match(stripped)
+        if numbered:
+            flush_step()
+            current_num = int(numbered.group(1))
+            current_text = [numbered.group(2).strip()]
+            continue
+
         images = IMAGE_MD_RE.findall(stripped)
         if images:
-            text = " ".join(buffer).strip()
-            text = re.sub(r"^#+\s*", "", text).strip()
-            if not text:
-                text = f"Step {len(steps) + 1}"
-            steps.append((text, images))
+            if current_num is not None:
+                pending_images.extend(images)
+            elif steps:
+                last_num, last_text, last_images = steps[-1]
+                steps[-1] = (last_num, last_text, last_images + images)
+            continue
+
+        if current_num is not None and not stripped.startswith("#"):
+            if not stripped.startswith("🎥"):
+                current_text.append(stripped)
+
+    flush_step()
+
+    if steps:
+        return steps
+
+    # Fallback: heading/buffer pairing for pages without numbered lists.
+    fallback: list[tuple[int, str, list[str]]] = []
+    buffer: list[str] = []
+    for line in clean.splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith("<"):
+            continue
+        images = IMAGE_MD_RE.findall(stripped)
+        if images:
+            text = " ".join(buffer).strip() or f"Step {len(fallback) + 1}"
+            fallback.append((len(fallback) + 1, text, images))
             buffer = []
             continue
         if stripped.startswith("#"):
             buffer = [stripped.lstrip("#").strip()]
         elif not stripped.startswith("🎥"):
             buffer.append(stripped)
+    return fallback
 
-    return steps
+
+def extract_step_media_pairs(body: str) -> list[tuple[str, list[str]]]:
+    return [(text, urls) for _, text, urls in extract_numbered_steps_with_images(body)]
+
+
+def build_visible_step_guide(body: str) -> str:
+    """Visible section with steps + images for humans and AI indexing."""
+    steps = extract_numbered_steps_with_images(body)
+    if not steps or not any(urls for _, _, urls in steps):
+        return ""
+
+    lines = [
+        "## Steps with screenshots",
+        "",
+        "Each step below includes the screenshot used in this article.",
+        "",
+    ]
+    for num, text, urls in steps:
+        lines.append(f"### Step {num}")
+        lines.append(text)
+        lines.append("")
+        for url in urls:
+            lines.append(f"![]({url})")
+            lines.append(
+                f'<img src="{url}" alt="Step {num}" style="max-width:100%;height:auto;" />'
+            )
+            lines.append("")
+    return "\n".join(lines).strip()
 
 
 def build_agent_media_block(body: str) -> str:
     """Hidden block indexed for AI assistant with step text + image URLs."""
-    clean = AGENT_VISIBILITY_RE.sub("\n", body).strip()
-    steps = extract_step_media_pairs(clean)
+    clean = _strip_generated_sections(body)
+    steps = extract_numbered_steps_with_images(clean)
     intro_video = extract_intro_video(clean)
     if not steps and not intro_video:
         return ""
@@ -251,27 +350,62 @@ def build_agent_media_block(body: str) -> str:
         "",
         "## Assistant step guide",
         "",
-        "Include every image below in your answer. For each step, output the step line, "
-        "then `![](IMAGE_URL)` on the next line using the exact URL.",
+        "MANDATORY for the assistant response:",
+        "- Copy each numbered step below.",
+        "- After each step, output HTML: "
+        '`<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`',
+        "- Use the exact image URL from this section. Do not omit images.",
         "",
     ]
     if intro_video:
         parts.extend([intro_video, ""])
-    for index, (text, urls) in enumerate(steps, start=1):
-        parts.append(f"{index}. {text}")
+    for num, text, urls in steps:
+        parts.append(f"{num}. {text}")
         for url in urls:
             parts.append(f"![]({url})")
+            parts.append(
+                f'<img src="{url}" alt="Step {num}" style="max-width:100%;height:auto;" />'
+            )
         parts.append("")
     parts.append("</Visibility>")
     return "\n".join(parts)
 
 
-def attach_agent_media_block(body: str) -> str:
-    block = build_agent_media_block(body)
-    if not block:
+def _insert_visible_guide(body: str, guide: str) -> str:
+    if not guide:
         return body
-    base = AGENT_VISIBILITY_RE.sub("\n", body).rstrip()
-    return f"{base}\n\n{block}\n"
+    lines = body.splitlines()
+    insert_at = 0
+    for index, line in enumerate(lines):
+        stripped = line.strip()
+        if "🎥" in stripped or "youtube.com" in stripped.lower():
+            insert_at = index + 1
+            break
+        if stripped.startswith("# For Users") or stripped.startswith("# Entrance"):
+            insert_at = index
+            break
+    if insert_at == 0:
+        for index, line in enumerate(lines):
+            if line.strip() and not line.strip().startswith("---"):
+                insert_at = index + 1
+                break
+    new_lines = lines[:insert_at] + ["", guide, ""] + lines[insert_at:]
+    return "\n".join(new_lines)
+
+
+def enrich_article_body(body: str) -> str:
+    base = _strip_generated_sections(body)
+    guide = build_visible_step_guide(base)
+    if guide:
+        base = _insert_visible_guide(base, guide)
+    block = build_agent_media_block(base)
+    if block:
+        base = f"{base.rstrip()}\n\n{block}\n"
+    return base
+
+
+def attach_agent_media_block(body: str) -> str:
+    return enrich_article_body(body)
 
 
 def prepare_mdx_body(markdown: str) -> str:
@@ -297,7 +431,7 @@ def write_mdx(
     body: str,
 ) -> tuple[str, str, str]:
     """Write knowledge/{lang}/{slug}.mdx. Returns (category, page_path, title)."""
-    prepared = attach_agent_media_block(prepare_mdx_body(body))
+    prepared = enrich_article_body(prepare_mdx_body(body))
     desc = description_from_body(prepared, title)
     dest_dir = KNOWLEDGE_ROOT / lang
     dest_dir.mkdir(parents=True, exist_ok=True)

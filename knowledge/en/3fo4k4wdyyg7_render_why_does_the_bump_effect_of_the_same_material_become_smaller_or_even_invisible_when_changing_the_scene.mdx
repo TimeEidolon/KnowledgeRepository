@@ -3,9 +3,21 @@ title: "render-why-does-the-bump-effect-of-the-same-material-become-smaller-or-e
 description: "Problem"
 ---
 
-
-
 # Problem
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+The bump effect changes with the lighting, and it may disappear when the lighting is weak because the bump effect is sensitive to changes in light. As shown in the image below.
+
+### Step 2
+The effects within the green box and the red box in the image are completely different, but it is indeed the same material. This is because different lighting conditions produce different effects. When dealing with a bump texture (such as diatom mud), use spotlights or downlights to enhance the bump effect as much as possible, or increase the light and shadow contrast. This will make the light and dark sides of the bump effect more three-dimensional.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
+
 
 The same material (such as diatom mud with bump map) renders correctly in Scene A, but the rendering effect changes when switched to Scene B.
 
@@ -24,9 +36,15 @@ When dealing with a bump texture (such as diatom mud), use spotlights or downlig
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. Reason 1. The bump effect changes with the lighting, and it may disappear when the lighting is weak because the bump effect is sensitive to changes in light. As shown in the image below. 2. The effects within the green box and the red box in the image are completely different, but it is indeed the same material. This is because different lighting conditions produce different effects.
+1. The bump effect changes with the lighting, and it may disappear when the lighting is weak because the bump effect is sensitive to changes in light. As shown in the image below.
+
+2. The effects within the green box and the red box in the image are completely different, but it is indeed the same material. This is because different lighting conditions produce different effects. When dealing with a bump texture (such as diatom mud), use spotlights or downlights to enhance the bump effect as much as possible, or increase the light and shadow contrast. This will make the light and dark sides of the bump effect more three-dimensional.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
 
 </Visibility>

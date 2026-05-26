@@ -3,9 +3,84 @@ title: "advanced-method-for-adding-door-panel-to-cabinet-models"
 description: "Definition: Back-end editor method for adding door panels**"
 ---
 
-
-
 **Definition: Back-end editor method for adding door panels**
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+**Definition: Back-end editor method for adding door panels** Using the following cabinet as an example, we will explain how to set up door panels in the editor. (Cabinet is a single-column cabinet with a width range of 300-600 and a height range of 1200-2400. The upper and lower internal heights of the cabinet are evenly divided. The cabinet panel has a thickness of 18mm, the toe kick height is H1, and the door gap is 1.5mm.)
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920286935/810682F1EBAF12E549D49DC211265C64.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920286935/810682F1EBAF12E549D49DC211265C64.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920288886/DE1529CDE77F285B9F759F91D7AB3976.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920288886/DE1529CDE77F285B9F759F91D7AB3976.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+**Operation Steps** Open the cabinet to which you want to add door panels. Custom Furniture Customization—Create Asset—Parametric Model Library— New—
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920289924/1D988720F743004A795217FE0345B3AE.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920289924/1D988720F743004A795217FE0345B3AE.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+Access the Element Library for the door opening.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920290804/A32AB33C2D2D46B0F4A4BEE60A3681A5.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920290804/A32AB33C2D2D46B0F4A4BEE60A3681A5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+Edit the size properties and physical properties of the door opening (the door opening size represents the dimensions of the content placed). Door Opening 1: Width: #W-182 Height: (#H-#TH-183)/2 Position X: 18 Position Y: -#D Position Z: #TH+18
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920293207/07B52F892B7C913A0F8FB9F90C25C915.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920293207/07B52F892B7C913A0F8FB9F90C25C915.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+Door Opening 2: Width: #W-18\*2 Height: (#H-#TH-183)/2 Position X: 18 Position Y: -#D Position Z: #H-(#H-#TH-18\*3)/2-18
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920294857/24DE5DFA9B7590F6379CC63DFAACB2C1.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920294857/24DE5DFA9B7590F6379CC63DFAACB2C1.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+Insert the door panel submodel. Left-opening upper door: Select the door panel from the Element Library (e.g., flat door panel with handle) and import it into the editor. The door panel is initially positioned at the origin and renamed as "Left-opening upper door". Click on "Link Setting" - "Door Opening Linking" - "Match Door" and select the flat door panel.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920295984/CB351CACB137691A56B4D8E429E49961.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920295984/CB351CACB137691A56B4D8E429E49961.png" alt="Step 6" style="max-width:100%;height:auto;" />
+
+### Step 7
+Adjust the door panel system properties: Door Opening Direction: Left Handle Position: Bottom Right overlaying Method: Full overlay overlaying Value: 18mm Gap Value: 1.5mm Door Panel Type: Door Panel No other changes need to be made.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920298347/C9A219706D1EE3738179C86D26B692D0.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920298347/C9A219706D1EE3738179C86D26B692D0.png" alt="Step 7" style="max-width:100%;height:auto;" />
+
+### Step 8
+Left-opening lower door: Copy the left-opening upper door and rename it as "Left-opening lower door". Click on "Link Setting" - "Door Opening Linking" - "Match Door" and select the flat door panel.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920300989/D07AAA4722F118157580380418012EBF.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920300989/D07AAA4722F118157580380418012EBF.png" alt="Step 8" style="max-width:100%;height:auto;" />
+
+### Step 9
+Adjust the door panel system properties: Door Opening Direction: Left Handle Position: Top Right overlaying Method: Full overlay overlaying Value: 18mm Gap Value: 1.5mm Door Panel Type: Door Panel No other changes need to be made.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920303919/764FE97C67ABF1A05A462070C3EDB95E.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920303919/764FE97C67ABF1A05A462070C3EDB95E.png" alt="Step 9" style="max-width:100%;height:auto;" />
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920305263/4F2B9C86E463D70CB0D9C26C9A7E4FA7.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920305263/4F2B9C86E463D70CB0D9C26C9A7E4FA7.png" alt="Step 9" style="max-width:100%;height:auto;" />
+
+### Step 10
+Test the model. Enter values within the range of parameters W, D, and H, including their minimum and maximum values. Observe if the door panels change accordingly with the input values. If everything functions correctly, it indicates there are no issues. Save or Save As - Import to Library Save: Click on the file in the top right corner, select "Save", and confirm (to overwrite the existing model; if you don't want to overwrite the original model, choose "Save As" and then import to the library).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920308431/C52463F713417BAE99CF4E75DB70009D.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920308431/C52463F713417BAE99CF4E75DB70009D.png" alt="Step 10" style="max-width:100%;height:auto;" />
+
+### Step 11
+In the corresponding category, locate the model, select it, and click "Import to Library". Wait for the model rendering to complete.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920310656/282B654BD63FA1A731FF5B4F3C3F6F28.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920310656/282B654BD63FA1A731FF5B4F3C3F6F28.png" alt="Step 11" style="max-width:100%;height:auto;" />
+
 
 Using the following cabinet as an example, we will explain how to set up door panels in the editor.
 
@@ -116,46 +191,3 @@ Save: Click on the file in the top right corner, select "Save", and confirm (to 
 In the corresponding category, locate the model, select it, and click "Import to Library". Wait for the model rendering to complete.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920310656/282B654BD63FA1A731FF5B4F3C3F6F28.png)
-
-<Visibility for="agents">
-
-## Assistant step guide
-
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
-
-1. **Definition: Back-end editor method for adding door panels** Using the following cabinet as an example, we will explain how to set up door panels in the editor. (Cabinet is a single-column cabinet with a width range of 300-600 and a height range of 1200-2400. The upper and lower internal heights of the cabinet are evenly divided. The cabinet panel has a thickness of 18mm, the toe kick height is H1, and the door gap is 1.5mm.)
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920286935/810682F1EBAF12E549D49DC211265C64.png)
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920288886/DE1529CDE77F285B9F759F91D7AB3976.png)
-
-2. **Operation Steps** Open the cabinet to which you want to add door panels. Custom Furniture Customization—Create Asset—Parametric Model Library— New—
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920289924/1D988720F743004A795217FE0345B3AE.png)
-
-3. Access the Element Library for the door opening.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920290804/A32AB33C2D2D46B0F4A4BEE60A3681A5.png)
-
-4. Edit the size properties and physical properties of the door opening (the door opening size represents the dimensions of the content placed). Door Opening 1: Width: #W-182 Height: (#H-#TH-183)/2 Position X: 18 Position Y: -#D Position Z: #TH+18
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920293207/07B52F892B7C913A0F8FB9F90C25C915.png)
-
-5. Door Opening 2: Width: #W-18\*2 Height: (#H-#TH-183)/2 Position X: 18 Position Y: -#D Position Z: #H-(#H-#TH-18\*3)/2-18
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920294857/24DE5DFA9B7590F6379CC63DFAACB2C1.png)
-
-6. Insert the door panel submodel. Left-opening upper door: Select the door panel from the Element Library (e.g., flat door panel with handle) and import it into the editor. The door panel is initially positioned at the origin and renamed as "Left-opening upper door". Click on "Link Setting" - "Door Opening Linking" - "Match Door" and select the flat door panel.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920295984/CB351CACB137691A56B4D8E429E49961.png)
-
-7. Adjust the door panel system properties: Door Opening Direction: Left Handle Position: Bottom Right overlaying Method: Full overlay overlaying Value: 18mm Gap Value: 1.5mm Door Panel Type: Door Panel No other changes need to be made.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920298347/C9A219706D1EE3738179C86D26B692D0.png)
-
-8. Left-opening lower door: Copy the left-opening upper door and rename it as "Left-opening lower door". Click on "Link Setting" - "Door Opening Linking" - "Match Door" and select the flat door panel.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920300989/D07AAA4722F118157580380418012EBF.png)
-
-9. Adjust the door panel system properties: Door Opening Direction: Left Handle Position: Top Right overlaying Method: Full overlay overlaying Value: 18mm Gap Value: 1.5mm Door Panel Type: Door Panel No other changes need to be made.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920303919/764FE97C67ABF1A05A462070C3EDB95E.png)
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920305263/4F2B9C86E463D70CB0D9C26C9A7E4FA7.png)
-
-10. Test the model. Enter values within the range of parameters W, D, and H, including their minimum and maximum values. Observe if the door panels change accordingly with the input values. If everything functions correctly, it indicates there are no issues. Save or Save As - Import to Library Save: Click on the file in the top right corner, select "Save", and confirm (to overwrite the existing model; if you don't want to overwrite the original model, choose "Save As" and then import to the library).
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920308431/C52463F713417BAE99CF4E75DB70009D.png)
-
-11. In the corresponding category, locate the model, select it, and click "Import to Library". Wait for the model rendering to complete.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733920310656/282B654BD63FA1A731FF5B4F3C3F6F28.png)
-
-</Visibility>

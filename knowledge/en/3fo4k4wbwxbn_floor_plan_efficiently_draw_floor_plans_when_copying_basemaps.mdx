@@ -3,8 +3,6 @@ title: "floor-plan-efficiently-draw-floor-plans-when-copying-basemaps"
 description: "When importing CAD or copy drawings, the basemap and floor plan may overlap, making the screen cluttered. The floor plan tool allows you to adjust the opacity o"
 ---
 
-
-
 When importing CAD or copy drawings, the basemap and floor plan may overlap, making the screen cluttered. The floor plan tool allows you to adjust the opacity of the floor plan and toggle the visibility of the basemap to reduce drawing workload and improve efficiency. The shortcut operations are as follows:
 
 * press and hold Y to hide the floor plan. (it will reappear when you release Y)
@@ -13,6 +11,56 @@ When importing CAD or copy drawings, the basemap and floor plan may overlap, mak
 ⭐Before reading the article, it's recommended to watch the video tutorial first to get started quickly~
 
 🎥 [Video URL](https://www.youtube.com/watch?v=xYpCJAPAZzc)
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+After importing the drawing into the tool, the opacity of the floor plan will be automatically adjusted, which is convenient for copying with reference to the basemap. * Opacity will also affect the display of the project in 3D mode, so the walls and floors will also have a transparent effect in 3D mode.
+
+![](https://qhstaticssl.kujiale.com/image/png/1750239950160/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750239950160/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/png/1750240116775/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750240116775/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+You can directly drag the slider on the right properties panel or the "floor navigation" at the bottom to adjust the opacity of the floor plan. * **Note: The properties panel on the right needs to be seen when the object is not selected in the canvas.** * When adjusting the opacity of the floor plan on the right, the default is to be adjusted together. You can manually unlock the association and adjust the wall and floor respectively.
+
+![](https://qhstaticssl.kujiale.com/image/png/1750240165490/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750240165490/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/png/1750240587482/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750240587482/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+During the copying process, you can press and hold the shortcut Y to hide the floor plan temporarily to facilitate copying the basemap.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1750241339199/9BB82AF14844C706179DEBAF82205243.gif)
+<img src="https://qhstaticssl.kujiale.com/image/gif/1750241339199/9BB82AF14844C706179DEBAF82205243.gif" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+There are also two methods to hide the basemap more conveniently, so that the part of the floor plan can be easily confirmed. ① Click the selection box of **"Basemap Display"** in the right panel to operate the hidden basemap. ② Press the shortcut P to operate the hidden basemap. (it can take effect during the wall drawing process) * Shortcuts support customization. + Select the **shortcuts and mouse** under the avatar in the upper right corner, and modify the shortcut in the pop-up window in **"Object Operations - Show/Hide Basemap"**.
+
+![](https://qhstaticssl.kujiale.com/image/gif/1750241454496/218B3E2CCA62C6EC03DC32EBED117FF8.gif)
+<img src="https://qhstaticssl.kujiale.com/image/gif/1750241454496/218B3E2CCA62C6EC03DC32EBED117FF8.gif" alt="Step 4" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/gif/1750241642755/046EE598386EF7FFDBC111F3EA7B7D8A.gif)
+<img src="https://qhstaticssl.kujiale.com/image/gif/1750241642755/046EE598386EF7FFDBC111F3EA7B7D8A.gif" alt="Step 4" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/png/1750242035364/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750242035364/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/png/1750242125548/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750242125548/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 1
+If the ground is missing or has a transparent effect, you need to pay attention to check whether the transparency parameters of the wall and floor are correctly set.
+
+### Step 2
+The basemap display entrance of the property panel on the right will only be displayed when there is a basemap in the project, and it will not be visible when there is no basemap.
+
 
 # For Users
 
@@ -69,35 +117,41 @@ All users
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/xYpCJAPAZzc" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-1. Function Description 1. After importing the drawing into the tool, the opacity of the floor plan will be automatically adjusted, which is convenient for copying with reference to the basemap.
+1. After importing the drawing into the tool, the opacity of the floor plan will be automatically adjusted, which is convenient for copying with reference to the basemap. * Opacity will also affect the display of the project in 3D mode, so the walls and floors will also have a transparent effect in 3D mode.
 ![](https://qhstaticssl.kujiale.com/image/png/1750239950160/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-
-2. * Opacity will also affect the display of the project in 3D mode, so the walls and floors will also have a transparent effect in 3D mode.
+<img src="https://qhstaticssl.kujiale.com/image/png/1750239950160/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/png/1750240116775/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750240116775/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-3. 2. You can directly drag the slider on the right properties panel or the "floor navigation" at the bottom to adjust the opacity of the floor plan. * **Note: The properties panel on the right needs to be seen when the object is not selected in the canvas.**
+2. You can directly drag the slider on the right properties panel or the "floor navigation" at the bottom to adjust the opacity of the floor plan. * **Note: The properties panel on the right needs to be seen when the object is not selected in the canvas.** * When adjusting the opacity of the floor plan on the right, the default is to be adjusted together. You can manually unlock the association and adjust the wall and floor respectively.
 ![](https://qhstaticssl.kujiale.com/image/png/1750240165490/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-
-4. * When adjusting the opacity of the floor plan on the right, the default is to be adjusted together. You can manually unlock the association and adjust the wall and floor respectively.
+<img src="https://qhstaticssl.kujiale.com/image/png/1750240165490/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/png/1750240587482/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750240587482/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-5. 3. During the copying process, you can press and hold the shortcut Y to hide the floor plan temporarily to facilitate copying the basemap.
+3. During the copying process, you can press and hold the shortcut Y to hide the floor plan temporarily to facilitate copying the basemap.
 ![](https://qhstaticssl.kujiale.com/image/gif/1750241339199/9BB82AF14844C706179DEBAF82205243.gif)
+<img src="https://qhstaticssl.kujiale.com/image/gif/1750241339199/9BB82AF14844C706179DEBAF82205243.gif" alt="Step 3" style="max-width:100%;height:auto;" />
 
-6. 4. There are also two methods to hide the basemap more conveniently, so that the part of the floor plan can be easily confirmed. ① Click the selection box of **"Basemap Display"** in the right panel to operate the hidden basemap.
+4. There are also two methods to hide the basemap more conveniently, so that the part of the floor plan can be easily confirmed. ① Click the selection box of **"Basemap Display"** in the right panel to operate the hidden basemap. ② Press the shortcut P to operate the hidden basemap. (it can take effect during the wall drawing process) * Shortcuts support customization. + Select the **shortcuts and mouse** under the avatar in the upper right corner, and modify the shortcut in the pop-up window in **"Object Operations - Show/Hide Basemap"**.
 ![](https://qhstaticssl.kujiale.com/image/gif/1750241454496/218B3E2CCA62C6EC03DC32EBED117FF8.gif)
-
-7. ② Press the shortcut P to operate the hidden basemap. (it can take effect during the wall drawing process)
+<img src="https://qhstaticssl.kujiale.com/image/gif/1750241454496/218B3E2CCA62C6EC03DC32EBED117FF8.gif" alt="Step 4" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/gif/1750241642755/046EE598386EF7FFDBC111F3EA7B7D8A.gif)
-
-8. * Shortcuts support customization. + Select the **shortcuts and mouse** under the avatar in the upper right corner, and modify the shortcut in the pop-up window in **"Object Operations - Show/Hide Basemap"**.
+<img src="https://qhstaticssl.kujiale.com/image/gif/1750241642755/046EE598386EF7FFDBC111F3EA7B7D8A.gif" alt="Step 4" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/png/1750242035364/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-
-9. Step 9
+<img src="https://qhstaticssl.kujiale.com/image/png/1750242035364/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/png/1750242125548/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750242125548/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+1. If the ground is missing or has a transparent effect, you need to pay attention to check whether the transparency parameters of the wall and floor are correctly set.
+
+2. The basemap display entrance of the property panel on the right will only be displayed when there is a basemap in the project, and it will not be visible when there is no basemap.
 
 </Visibility>

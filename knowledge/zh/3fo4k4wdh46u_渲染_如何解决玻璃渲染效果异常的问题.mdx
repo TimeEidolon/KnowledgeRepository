@@ -3,9 +3,66 @@ title: "渲染-如何解决玻璃渲染效果异常的问题"
 description: "问题1"
 ---
 
-
-
 # 问题1
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+问题1 透过玻璃渲染，对面的模型变形或错位了。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541251/8241CF39580F155402F1F1D3CC414414.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541251/8241CF39580F155402F1F1D3CC414414.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+解决方法1 替换下玻璃材质，可以自己上传一个折射率较低的玻璃材质使用。（比如折射率为0或1）
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541276/2C34C469CC3233F71F1B45ACDE429D8A.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541276/2C34C469CC3233F71F1B45ACDE429D8A.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+Step 3
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541188/14FC70E8E6FB470271E2EBEC8474F82C.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541188/14FC70E8E6FB470271E2EBEC8474F82C.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+问题2 玻璃位置渲染球面、镜面。
+
+![](https://qhstaticssl.kujiale.com/image/png/1670326218720/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1670326218720/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+解决方法2 替换为公库的塑料pvc材质或自己上传一个0折射的玻璃材质，若是自己建模上传的模型，可改为双面玻璃建模后再重新上传。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541196/A00F17A987570BAA814C7E8A9F33B048.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541196/A00F17A987570BAA814C7E8A9F33B048.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+Step 6
+
+![](https://qhstaticssl.kujiale.com/image/png/1670326318304/1223B8D9DF8F6B67847407BD17015ED1.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1670326318304/1223B8D9DF8F6B67847407BD17015ED1.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 6" style="max-width:100%;height:auto;" />
+
+### Step 7
+问题3 玻璃渲染出图后，透明度低。
+
+![](https://qhstaticssl.kujiale.com/image/png/1670326251855/6CBF0E66193C3B8ADCCE4D0CD43CC2BE.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1670326251855/6CBF0E66193C3B8ADCCE4D0CD43CC2BE.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 7" style="max-width:100%;height:auto;" />
+
+### Step 8
+解决方法3 进行材质替换，可以用普通玻璃或塑料pvc。
+
+![](https://qhstaticssl.kujiale.com/image/png/1670326356791/6D35163E40B25A9FAF3BD24BF63C6D9C.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1670326356791/6D35163E40B25A9FAF3BD24BF63C6D9C.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 8" style="max-width:100%;height:auto;" />
+
+### Step 9
+问题4 模型uv混乱。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541295/148040F0984B2CE96ABD4BF0ADC4A94D.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541295/148040F0984B2CE96ABD4BF0ADC4A94D.png" alt="Step 9" style="max-width:100%;height:auto;" />
+
 
 透过玻璃渲染，对面的模型变形或错位了。
 
@@ -59,33 +116,41 @@ description: "问题1"
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. 问题1 透过玻璃渲染，对面的模型变形或错位了。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541251/8241CF39580F155402F1F1D3CC414414.png)
-
-2. 解决方法1 替换下玻璃材质，可以自己上传一个折射率较低的玻璃材质使用。（比如折射率为0或1）
+1. 解决方法1 替换下玻璃材质，可以自己上传一个折射率较低的玻璃材质使用。（比如折射率为0或1）
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541276/2C34C469CC3233F71F1B45ACDE429D8A.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541276/2C34C469CC3233F71F1B45ACDE429D8A.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-3. Step 3
+2. Step 2
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541188/14FC70E8E6FB470271E2EBEC8474F82C.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541188/14FC70E8E6FB470271E2EBEC8474F82C.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-4. 问题2 玻璃位置渲染球面、镜面。
+3. 问题2 玻璃位置渲染球面、镜面。
 ![](https://qhstaticssl.kujiale.com/image/png/1670326218720/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1670326218720/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 3" style="max-width:100%;height:auto;" />
 
-5. 解决方法2 替换为公库的塑料pvc材质或自己上传一个0折射的玻璃材质，若是自己建模上传的模型，可改为双面玻璃建模后再重新上传。
+4. 解决方法2 替换为公库的塑料pvc材质或自己上传一个0折射的玻璃材质，若是自己建模上传的模型，可改为双面玻璃建模后再重新上传。
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541196/A00F17A987570BAA814C7E8A9F33B048.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541196/A00F17A987570BAA814C7E8A9F33B048.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-6. Step 6
+5. Step 5
 ![](https://qhstaticssl.kujiale.com/image/png/1670326318304/1223B8D9DF8F6B67847407BD17015ED1.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1670326318304/1223B8D9DF8F6B67847407BD17015ED1.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 5" style="max-width:100%;height:auto;" />
 
-7. 问题3 玻璃渲染出图后，透明度低。
+6. 问题3 玻璃渲染出图后，透明度低。
 ![](https://qhstaticssl.kujiale.com/image/png/1670326251855/6CBF0E66193C3B8ADCCE4D0CD43CC2BE.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1670326251855/6CBF0E66193C3B8ADCCE4D0CD43CC2BE.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 6" style="max-width:100%;height:auto;" />
 
-8. 解决方法3 进行材质替换，可以用普通玻璃或塑料pvc。
+7. 解决方法3 进行材质替换，可以用普通玻璃或塑料pvc。
 ![](https://qhstaticssl.kujiale.com/image/png/1670326356791/6D35163E40B25A9FAF3BD24BF63C6D9C.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1670326356791/6D35163E40B25A9FAF3BD24BF63C6D9C.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 7" style="max-width:100%;height:auto;" />
 
-9. 问题4 模型uv混乱。
+8. 问题4 模型uv混乱。
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541295/148040F0984B2CE96ABD4BF0ADC4A94D.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134541295/148040F0984B2CE96ABD4BF0ADC4A94D.png" alt="Step 8" style="max-width:100%;height:auto;" />
 
 </Visibility>

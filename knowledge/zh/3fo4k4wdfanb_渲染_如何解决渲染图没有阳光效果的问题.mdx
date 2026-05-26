@@ -3,9 +3,36 @@ title: "渲染-如何解决渲染图没有阳光效果的问题"
 description: "问题"
 ---
 
-
-
 # 问题
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+问题 渲染的效果图中门窗位置没有阳光效果
+
+![](https://qhstaticssl.kujiale.com/image/png/1666956285159/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
+<img src="https://qhstaticssl.kujiale.com/image/png/1666956285159/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_800/format,webp" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+解决方法 1.开启阳光再渲染
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136013/D06E825CD0DD01A2372D219348410AC4.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136013/D06E825CD0DD01A2372D219348410AC4.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+2.选中门窗模型，进入材质替换，将玻璃位置替换为公库的普通玻璃/清玻璃材质
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136167/67B39D8A85EED9F77A1BF638AF8EB84B.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136167/67B39D8A85EED9F77A1BF638AF8EB84B.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+3.调整阳光的俯仰角及方位角，让阳光能投射至窗户的位置
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136004/DA88F3016CB72D96F7D525B0CD8909FB.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136004/DA88F3016CB72D96F7D525B0CD8909FB.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
 
 渲染的效果图中门窗位置没有阳光效果
 
@@ -31,18 +58,21 @@ description: "问题"
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. 问题 渲染的效果图中门窗位置没有阳光效果
-![](https://qhstaticssl.kujiale.com/image/png/1666956285159/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_800/format,webp)
-
-2. 解决方法 1.开启阳光再渲染
+1. 解决方法 1.开启阳光再渲染
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136013/D06E825CD0DD01A2372D219348410AC4.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136013/D06E825CD0DD01A2372D219348410AC4.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-3. 2.选中门窗模型，进入材质替换，将玻璃位置替换为公库的普通玻璃/清玻璃材质
+2. 2.选中门窗模型，进入材质替换，将玻璃位置替换为公库的普通玻璃/清玻璃材质
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136167/67B39D8A85EED9F77A1BF638AF8EB84B.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136167/67B39D8A85EED9F77A1BF638AF8EB84B.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-4. 3.调整阳光的俯仰角及方位角，让阳光能投射至窗户的位置
+3. 3.调整阳光的俯仰角及方位角，让阳光能投射至窗户的位置
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136004/DA88F3016CB72D96F7D525B0CD8909FB.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136136004/DA88F3016CB72D96F7D525B0CD8909FB.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 </Visibility>

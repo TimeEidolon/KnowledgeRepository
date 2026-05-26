@@ -3,9 +3,54 @@ title: "enterprise-imperial-unit-configuration-instructions"
 description: "When configuring and calculating quotes, users can choose imperial units and complete calculations."
 ---
 
-
-
 When configuring and calculating quotes, users can choose imperial units and complete calculations.
+
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+On the **General Quotatian** page, select **Price List**, then click **Edit** after quoting.
+
+![](https://qhstaticssl.kujiale.com/image/png/1765506784508/D6328CB7A1A0F89A1ABFE3B81DD62197.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765506784508/D6328CB7A1A0F89A1ABFE3B81DD62197.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+Click **Manage Quote Properties**. In the quote property panel, change "**Field Type**" to "**Inch**". Keep other properties consistent with standard configuration, then click **Keep**.
+
+![](https://qhstaticssl.kujiale.com/image/png/1765510693065/8D3822CD872136C040A1D8ED26229455.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765510693065/8D3822CD872136C040A1D8ED26229455.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/png/1765510683105/F4ECB64A06DEBBEE9C89343C592D363A.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765510683105/F4ECB64A06DEBBEE9C89343C592D363A.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+During quote rule setup, input formats for imperial units can be entered for quantity comparison. * Invalid input formats include: 1.1", 1/32", etc. Note: When in use, consider the conversion relationship and use "approximately equal". Approximately equal will judge if the error between two data points is within 0.01mm range. If yes, the equation holds.
+
+![](https://qhstaticssl.kujiale.com/image/png/1765510672610/8540669BA69831E29E68450A87C92B1B.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765510672610/8540669BA69831E29E68450A87C92B1B.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+After setup, click **Release** in the top-right corner. In quantity or supplementary rules, expressions can only be used for input. If you want to compare a variable with an imperial result, enter the following to determine: * Method 1: #W > 42.5in ? 100 : 90—Ensure no space between the number and "in". * Method 2: #W > 42 1/2in ? 100:90. * Method 3: #W> 3ft6.5in ? 100:90—Ensure no space. * Method 4: #W>3ft6 1/2in ? 100:90.
+
+![](https://qhstaticssl.kujiale.com/image/png/1765510117813/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765510117813/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 1
+In the customization tool, click the top **Drawings & Schedules**, then select **Custom Furniture Quotes** **-Kitchen & Bath/Closet/Doors & Windows** (example: **Kitchen & Bath**).
+
+![](https://qhstaticssl.kujiale.com/image/png/1765507498341/030F445FBBFB063CC05E037326C91157.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765507498341/030F445FBBFB063CC05E037326C91157.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+In the pop-up panel, select **Quotation System**, then click **Generate**. After generation, click **View** to see the detailed budget list.
+
+![](https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+![](https://qhstaticssl.kujiale.com/image/png/1765507524826/22051F4D588A7DF5A798C3372F5E8196.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765507524826/22051F4D588A7DF5A798C3372F5E8196.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 # For Users
 
@@ -64,30 +109,37 @@ In quantity or supplementary rules, expressions can only be used for input. If y
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. Backend Configuration Use the property of imperial units in the **General Quotatian - Price List** details for price design. * **General Quotatian** detailed operations can be found in the online document: [Click to view](https://www.coohom.com/en_US/helpcenter/enterprise-general-quotation-configuration-description?hl=en&kjl_source=hc) 1. On the **General Quotatian** page, select **Price List**, then click **Edit** after quoting.
+1. On the **General Quotatian** page, select **Price List**, then click **Edit** after quoting.
 ![](https://qhstaticssl.kujiale.com/image/png/1765506784508/D6328CB7A1A0F89A1ABFE3B81DD62197.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765506784508/D6328CB7A1A0F89A1ABFE3B81DD62197.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-2. 2. Click **Manage Quote Properties**. In the quote property panel, change "**Field Type**" to "**Inch**". Keep other properties consistent with standard configuration, then click **Keep**.
+2. Click **Manage Quote Properties**. In the quote property panel, change "**Field Type**" to "**Inch**". Keep other properties consistent with standard configuration, then click **Keep**.
 ![](https://qhstaticssl.kujiale.com/image/png/1765510693065/8D3822CD872136C040A1D8ED26229455.png)
-
-3. Step 3
+<img src="https://qhstaticssl.kujiale.com/image/png/1765510693065/8D3822CD872136C040A1D8ED26229455.png" alt="Step 2" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/png/1765510683105/F4ECB64A06DEBBEE9C89343C592D363A.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765510683105/F4ECB64A06DEBBEE9C89343C592D363A.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-4. 3. During quote rule setup, input formats for imperial units can be entered for quantity comparison.
+3. During quote rule setup, input formats for imperial units can be entered for quantity comparison. * Invalid input formats include: 1.1", 1/32", etc. Note: When in use, consider the conversion relationship and use "approximately equal". Approximately equal will judge if the error between two data points is within 0.01mm range. If yes, the equation holds.
 ![](https://qhstaticssl.kujiale.com/image/png/1765510672610/8540669BA69831E29E68450A87C92B1B.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765510672610/8540669BA69831E29E68450A87C92B1B.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-5. * Invalid input formats include: 1.1", 1/32", etc. Note: When in use, consider the conversion relationship and use "approximately equal". Approximately equal will judge if the error between two data points is within 0.01mm range. If yes, the equation holds. 4. After setup, click **Release** in the top-right corner.
+4. After setup, click **Release** in the top-right corner. In quantity or supplementary rules, expressions can only be used for input. If you want to compare a variable with an imperial result, enter the following to determine: * Method 1: #W > 42.5in ? 100 : 90—Ensure no space between the number and "in". * Method 2: #W > 42 1/2in ? 100:90. * Method 3: #W> 3ft6.5in ? 100:90—Ensure no space. * Method 4: #W>3ft6 1/2in ? 100:90.
 ![](https://qhstaticssl.kujiale.com/image/png/1765510117813/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765510117813/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-6. Application in Tool Terminal 1. In the customization tool, click the top **Drawings & Schedules**, then select **Custom Furniture Quotes** **-Kitchen & Bath/Closet/Doors & Windows** (example: **Kitchen & Bath**).
+1. In the customization tool, click the top **Drawings & Schedules**, then select **Custom Furniture Quotes** **-Kitchen & Bath/Closet/Doors & Windows** (example: **Kitchen & Bath**).
 ![](https://qhstaticssl.kujiale.com/image/png/1765507498341/030F445FBBFB063CC05E037326C91157.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765507498341/030F445FBBFB063CC05E037326C91157.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-7. 2. In the pop-up panel, select **Quotation System**, then click **Generate**. After generation, click **View** to see the detailed budget list.
+2. In the pop-up panel, select **Quotation System**, then click **Generate**. After generation, click **View** to see the detailed budget list.
 ![](https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-
-8. Step 8
+<img src="https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 ![](https://qhstaticssl.kujiale.com/image/png/1765507524826/22051F4D588A7DF5A798C3372F5E8196.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1765507524826/22051F4D588A7DF5A798C3372F5E8196.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 </Visibility>

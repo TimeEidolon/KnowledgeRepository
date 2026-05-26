@@ -3,9 +3,36 @@ title: "渲染-为什么同一个模型，不同的位置渲染颜色不同"
 description: "问题"
 ---
 
-
-
 # 问题
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+问题 图中的柜门拉手在浅色门板和深色门板上渲染出来颜色不一样。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1599831443047/D323A3D37306C9D5828CD183A04C77AC.jpg?x-oss-process=image/resize,m_mfit,w_880/format,webp)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1599831443047/D323A3D37306C9D5828CD183A04C77AC.jpg?x-oss-process=image/resize,m_mfit,w_880/format,webp" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+原因 通过PS吸取图中两个位置拉手的颜色可以发现，其实颜色是差不多的，这其实是一个经典的视觉错觉案例，
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762133909404/5DB1D9BE4A032F799835C93F3D254C8E.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762133909404/5DB1D9BE4A032F799835C93F3D254C8E.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+Step 3
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762133909365/CAD8E57CA7C4AFC5E28997465476491D.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762133909365/CAD8E57CA7C4AFC5E28997465476491D.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+这其实是一个经典的视觉错觉案例，如下图，图中A和B的颜色是否一样？答案是一样的。
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1599831668250/B7433092DD83FA454B6799266D9448E8.png?x-oss-process=image/resize,m_mfit,w_343/format,webp)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1599831668250/B7433092DD83FA454B6799266D9448E8.png?x-oss-process=image/resize,m_mfit,w_343/format,webp" alt="Step 4" style="max-width:100%;height:auto;" />
+
 
 图中的柜门拉手在浅色门板和深色门板上渲染出来颜色不一样。
 
@@ -33,18 +60,21 @@ description: "问题"
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. 问题 图中的柜门拉手在浅色门板和深色门板上渲染出来颜色不一样。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1599831443047/D323A3D37306C9D5828CD183A04C77AC.jpg?x-oss-process=image/resize,m_mfit,w_880/format,webp)
-
-2. 原因 通过PS吸取图中两个位置拉手的颜色可以发现，其实颜色是差不多的，这其实是一个经典的视觉错觉案例，
+1. 原因 通过PS吸取图中两个位置拉手的颜色可以发现，其实颜色是差不多的，这其实是一个经典的视觉错觉案例，
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762133909404/5DB1D9BE4A032F799835C93F3D254C8E.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762133909404/5DB1D9BE4A032F799835C93F3D254C8E.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-3. Step 3
+2. Step 2
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762133909365/CAD8E57CA7C4AFC5E28997465476491D.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762133909365/CAD8E57CA7C4AFC5E28997465476491D.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-4. 这其实是一个经典的视觉错觉案例，如下图，图中A和B的颜色是否一样？答案是一样的。
+3. 这其实是一个经典的视觉错觉案例，如下图，图中A和B的颜色是否一样？答案是一样的。
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1599831668250/B7433092DD83FA454B6799266D9448E8.png?x-oss-process=image/resize,m_mfit,w_343/format,webp)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1599831668250/B7433092DD83FA454B6799266D9448E8.png?x-oss-process=image/resize,m_mfit,w_343/format,webp" alt="Step 3" style="max-width:100%;height:auto;" />
 
 </Visibility>

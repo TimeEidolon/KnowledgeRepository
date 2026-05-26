@@ -3,9 +3,105 @@ title: "advanced-flat-lintel-panel-modeling"
 description: "Use an example of an 18mm Flat Lintel Panel as a reference for modeling."
 ---
 
-
-
 Use an example of an 18mm Flat Lintel Panel as a reference for modeling.
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+Use an example of an 18mm Flat Lintel Panel as a reference for modeling.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854982723/8EA62B81456816AF8CF1F75CBB09FCCF.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854982723/8EA62B81456816AF8CF1F75CBB09FCCF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+**I.Creation Location** Custom Furniture—Create Asset—Parametric Model Library— New—
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854985500/225168DF1DD393E1B38E6CDE2150EAE9.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854985500/225168DF1DD393E1B38E6CDE2150EAE9.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854987756/074C1201D22C4D43ED7292DA8CAA176F.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854987756/074C1201D22C4D43ED7292DA8CAA176F.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+**II.Parameter configuration** **Custom parameters** 2.1. Width (W) - Represents the size of the panel in the X-axis direction. Value type is set as a range (e.g., range of 100 to 2400, current value is 800).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854989286/2670FC7E6A9BB72206E30EB087C0B8F9.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854989286/2670FC7E6A9BB72206E30EB087C0B8F9.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+2.2. Depth (D) - Represents the size of the panel in the Y-axis direction. Value type is set as optional (e.g., optional values of 18, current value is 18).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854990383/E2790D143FEC4CFE13D4EE877F576C52.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854990383/E2790D143FEC4CFE13D4EE877F576C52.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+2.3. Height (H) - Represents the size of the panel in the Z-axis direction. Value type is set as a range or optional (e.g., range of 60 to 200, current value is 120).
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854992532/4FEAB66475A22C8820D40E505ABAC7A5.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854992532/4FEAB66475A22C8820D40E505ABAC7A5.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+2.4. Material does not need to be changed; it indicates that the default material will be used. (Note: The parameter ranges mentioned above can be adjusted according to actual manufacturing requirements and are not fixed.) **III.Calling the flat panel** Component library - Parametric model - Flat panel
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854994633/BB49D38C7631D06322D8EF1D6BB735B2.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854994633/BB49D38C7631D06322D8EF1D6BB735B2.png" alt="Step 6" style="max-width:100%;height:auto;" />
+
+### Step 7
+**IV. Setting properties of the flat panel** 4.1. Dimension property settings: The physical properties of the flat panel component are achieved by referencing parameters. Click the left mouse button to select the flat panel component, and in the top-right corner, the dimension property setting option for flat panel component-1 appears. Height: #D
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854997342/EB751202C60030F66356F230C420446A.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854997342/EB751202C60030F66356F230C420446A.png" alt="Step 7" style="max-width:100%;height:auto;" />
+
+### Step 8
+4.2. Editing the contour: (Clockwise points, with the canvas horizontal direction representing the texture direction of the panel) Point 1: 0,0 Point 2: 0,#H Point 3: #W,#H Point 4: #W,0
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854998295/D9EBDB444792700CCC02E3A5073E9617.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854998295/D9EBDB444792700CCC02E3A5073E9617.png" alt="Step 8" style="max-width:100%;height:auto;" />
+
+### Step 9
+4.3. Physical property settings: (Rotate and adjust the position to place the model within the frame) Rotation X: 90 Position Z: #H
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854999390/C65FFEF94A2D4D05AAEE0E17446A7319.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854999390/C65FFEF94A2D4D05AAEE0E17446A7319.png" alt="Step 9" style="max-width:100%;height:auto;" />
+
+### Step 10
+4.4. System parameter settings Currently, when dragged out for use in the tool, the default is fully covered, so the overlaying method is set to fully covered. Top overlay method - Full cover, bottom overlay method - Embedded, left overlay method - Full cover, right overlay method - Full cover Top overlay - 18, bottom overlay - 0, left overlay - 18, right overlay - 18
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855000509/5EAF0BA19B1120F66516296331990AC6.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855000509/5EAF0BA19B1120F66516296331990AC6.png" alt="Step 10" style="max-width:100%;height:auto;" />
+
+### Step 11
+**V.Setting output properties**
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855002406/2BE8DFB88D8F9FFD3C928F742DBE49EA.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855002406/2BE8DFB88D8F9FFD3C928F742DBE49EA.png" alt="Step 11" style="max-width:100%;height:auto;" />
+
+### Step 12
+In the export list, width corresponds to the size of the panel in the direction of the grain, depth corresponds to the size of the panel in the vertical texture direction, and height corresponds to the thickness of the panel. In the editor, the size displayed in the texture direction is the X-axis, so the corresponding output width is #W. In the editor, the size displayed in the vertical texture direction is the Z-axis, so the corresponding output depth is #H. In the editor, the size displayed in the panel thickness direction is the Y-axis, so the corresponding output height is #D.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855004866/71C5AD38BECFC512B1A70E245ED054BE.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855004866/71C5AD38BECFC512B1A70E245ED054BE.png" alt="Step 12" style="max-width:100%;height:auto;" />
+
+### Step 13
+**VI.Model testing** Input optional values or values within the range to observe if the model changes consistently with the parameter changes. If they match, it indicates that the model is correct. The more complex the model, the more comprehensive the testing should be.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855005937/28B7C7A65575F5D42D25BEDC31274A10.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855005937/28B7C7A65575F5D42D25BEDC31274A10.png" alt="Step 13" style="max-width:100%;height:auto;" />
+
+### Step 14
+**VII.Saving to the library** Click the file icon in the top-right corner, select Save, choose the subdirectory for saving, name it, and click Save.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855007359/D0031C7B41E387447EA20585AE8BE4A6.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855007359/D0031C7B41E387447EA20585AE8BE4A6.png" alt="Step 14" style="max-width:100%;height:auto;" />
+
+### Step 15
+In the page under the corresponding category, find the model, select it, and click Store to wait for rendering to complete.
+
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855008358/53221F40CD151F7C3EE14805AA2A6F7B.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855008358/53221F40CD151F7C3EE14805AA2A6F7B.png" alt="Step 15" style="max-width:100%;height:auto;" />
+
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854982723/8EA62B81456816AF8CF1F75CBB09FCCF.png)
 
@@ -104,57 +200,3 @@ Click the file icon in the top-right corner, select Save, choose the subdirector
 In the page under the corresponding category, find the model, select it, and click Store to wait for rendering to complete.
 
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855008358/53221F40CD151F7C3EE14805AA2A6F7B.png)
-
-<Visibility for="agents">
-
-## Assistant step guide
-
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
-
-1. Use an example of an 18mm Flat Lintel Panel as a reference for modeling.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854982723/8EA62B81456816AF8CF1F75CBB09FCCF.png)
-
-2. **I.Creation Location** Custom Furniture—Create Asset—Parametric Model Library— New—
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854985500/225168DF1DD393E1B38E6CDE2150EAE9.png)
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854987756/074C1201D22C4D43ED7292DA8CAA176F.png)
-
-3. **II.Parameter configuration** **Custom parameters** 2.1. Width (W) - Represents the size of the panel in the X-axis direction. Value type is set as a range (e.g., range of 100 to 2400, current value is 800).
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854989286/2670FC7E6A9BB72206E30EB087C0B8F9.png)
-
-4. 2.2. Depth (D) - Represents the size of the panel in the Y-axis direction. Value type is set as optional (e.g., optional values of 18, current value is 18).
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854990383/E2790D143FEC4CFE13D4EE877F576C52.png)
-
-5. 2.3. Height (H) - Represents the size of the panel in the Z-axis direction. Value type is set as a range or optional (e.g., range of 60 to 200, current value is 120).
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854992532/4FEAB66475A22C8820D40E505ABAC7A5.png)
-
-6. 2.4. Material does not need to be changed; it indicates that the default material will be used. (Note: The parameter ranges mentioned above can be adjusted according to actual manufacturing requirements and are not fixed.) **III.Calling the flat panel** Component library - Parametric model - Flat panel
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854994633/BB49D38C7631D06322D8EF1D6BB735B2.png)
-
-7. **IV. Setting properties of the flat panel** 4.1. Dimension property settings: The physical properties of the flat panel component are achieved by referencing parameters. Click the left mouse button to select the flat panel component, and in the top-right corner, the dimension property setting option for flat panel component-1 appears. Height: #D
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854997342/EB751202C60030F66356F230C420446A.png)
-
-8. 4.2. Editing the contour: (Clockwise points, with the canvas horizontal direction representing the texture direction of the panel) Point 1: 0,0 Point 2: 0,#H Point 3: #W,#H Point 4: #W,0
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854998295/D9EBDB444792700CCC02E3A5073E9617.png)
-
-9. 4.3. Physical property settings: (Rotate and adjust the position to place the model within the frame) Rotation X: 90 Position Z: #H
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733854999390/C65FFEF94A2D4D05AAEE0E17446A7319.png)
-
-10. 4.4. System parameter settings Currently, when dragged out for use in the tool, the default is fully covered, so the overlaying method is set to fully covered. Top overlay method - Full cover, bottom overlay method - Embedded, left overlay method - Full cover, right overlay method - Full cover Top overlay - 18, bottom overlay - 0, left overlay - 18, right overlay - 18
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855000509/5EAF0BA19B1120F66516296331990AC6.png)
-
-11. **V.Setting output properties**
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855002406/2BE8DFB88D8F9FFD3C928F742DBE49EA.png)
-
-12. In the export list, width corresponds to the size of the panel in the direction of the grain, depth corresponds to the size of the panel in the vertical texture direction, and height corresponds to the thickness of the panel. In the editor, the size displayed in the texture direction is the X-axis, so the corresponding output width is #W. In the editor, the size displayed in the vertical texture direction is the Z-axis, so the corresponding output depth is #H. In the editor, the size displayed in the panel thickness direction is the Y-axis, so the corresponding output height is #D.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855004866/71C5AD38BECFC512B1A70E245ED054BE.png)
-
-13. **VI.Model testing** Input optional values or values within the range to observe if the model changes consistently with the parameter changes. If they match, it indicates that the model is correct. The more complex the model, the more comprehensive the testing should be.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855005937/28B7C7A65575F5D42D25BEDC31274A10.png)
-
-14. **VII.Saving to the library** Click the file icon in the top-right corner, select Save, choose the subdirectory for saving, name it, and click Save.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855007359/D0031C7B41E387447EA20585AE8BE4A6.png)
-
-15. In the page under the corresponding category, find the model, select it, and click Store to wait for rendering to complete.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733855008358/53221F40CD151F7C3EE14805AA2A6F7B.png)
-
-</Visibility>

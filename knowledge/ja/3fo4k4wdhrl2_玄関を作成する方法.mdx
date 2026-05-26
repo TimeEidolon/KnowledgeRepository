@@ -3,9 +3,294 @@ title: "玄関を作成する方法"
 description: "日本では特殊の玄関構造があります。今回は玄関について作成方法を紹介させていただきます。"
 ---
 
-
-
 日本では特殊の玄関構造があります。今回は玄関について作成方法を紹介させていただきます。
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+１．部屋を分割する 玄関部には上がり框などがあるため、壁がありません。Coohomでは部屋が囲まれたスペースを１つの部屋だと認識されるため、まず、囲まれたスペースの中から、玄関部分を分割する必要があります。 今回このような玄関部を描きます。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761729575726/162E0EA3E9CED22778E29A9B1CD89DEC.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761729575726/162E0EA3E9CED22778E29A9B1CD89DEC.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+図面から見ると、玄関とホール、玄関とSCの間壁がないため、Coohomで部屋を描くと、玄関＋ホール＋SCは一つ囲まれたスペース、いわゆる一つの部屋になります。 ①図面に従って囲まれたスペースを描きます。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761730082769/B7085DC4939732F1E544656546BE95BF.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761730082769/B7085DC4939732F1E544656546BE95BF.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+②ツールバーで「領域を描画」隣の△をクリックし、「部屋を分割する」の**「天井、壁、地面」**をクリック。 （今回、玄関を部屋として床、天井、壁全部分割するため「部屋、壁、地面」を選択しますが、地面だけを分割したい場合「地面のみ」をクリック、部屋ではなく構造だけ分割する場合「構造を分割する」の「地面」や「上面」を選択）
+
+![](https://qhstaticssl.kujiale.com/image/png/1761792140857/59C1282556AA387BBCF37E6F88E1F398.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761792140857/59C1282556AA387BBCF37E6F88E1F398.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+③部屋分割線を入力 ツールバーで直線、長方形、円形など様々な形状を描くことができます。今回玄関とSCの間一本、玄関とホールの間一本の線を入力すれば完了です。 起点１クリック、次の点１クリック、CADのように連続描画することができます。描画が終わりましたら、マウスの右ボタンまたはEscキーで作業終了です。すべての入力が終わりましたら、右上の「終了」ボタンをクリックしてください。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761792754335/14078A8CA9D3C1D4C3AB6F1F35C10FA8.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761792754335/14078A8CA9D3C1D4C3AB6F1F35C10FA8.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+そうすると部屋が３つに分けられました。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761792929371/C017EB24B7CE9F145496A03B7DACDBB4.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761792929371/C017EB24B7CE9F145496A03B7DACDBB4.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+２．構造スラブを下げる ①床を下げたい部屋に１クリック。 ②右側の基本パラメータに「構造スラブダウン」項目があります。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761793520076/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761793520076/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 6" style="max-width:100%;height:auto;" />
+
+### Step 7
+③数値を入力（★注意：ダウンの数値を入力するため、ここは**正値を入力**してください） 150ｍｍ下げたい場合、右側の入力欄に「150」を入力してEnter。 入力後、プレビューでスラブダウンを確認できます。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761793679428/85EB1B5F9FFAAB2F0106EB4C50D5BB13.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761793679428/85EB1B5F9FFAAB2F0106EB4C50D5BB13.png" alt="Step 7" style="max-width:100%;height:auto;" />
+
+### Step 8
+３．構造を確認する すべての入力が終わりましたら、３Dモードに切り替え、床ダウン部分を確認。 玄関とホールの間、段差ができました。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761793899758/7AF06E8B35756FCA3DA64B71107066F2.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761793899758/7AF06E8B35756FCA3DA64B71107066F2.png" alt="Step 8" style="max-width:100%;height:auto;" />
+
+### Step 9
+１．壁分割 玄関まわりの壁は、玄関まわりの上がり框または巾木で二つに分けられています。上の部分は室内壁と一緒壁紙などが多い。一方、下の部分は床のマテリアルと同じタイル貼りの方が多いです。そうすると、一面の壁で２つのマテリアルを貼り付ける必要があります。 ①壁のマテリアルを設置。 玄関とSC部に好きなマテリアル（壁紙など）を貼り付け。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761803457681/F967640C22819AA007361FFDF3CBD964.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761803457681/F967640C22819AA007361FFDF3CBD964.png" alt="Step 9" style="max-width:100%;height:auto;" />
+
+### Step 10
+②設置したい壁をクリックして、**「壁の編集」**に入る。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761804771422/12C7D2F37324F6CCD9673AAD0CA3FFD8.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761804771422/12C7D2F37324F6CCD9673AAD0CA3FFD8.png" alt="Step 10" style="max-width:100%;height:auto;" />
+
+### Step 11
+③マテリアル分割の境界線を引く。 玄関部に構造スラブダウンがあったため、壁の編集に入ったら、ダウン部の基準線（灰色の線）があります。直線ツールを使って描画するとき自動的にスナップされます。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761804986888/A9750ECB401137BDCD79C5603447DCE9.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761804986888/A9750ECB401137BDCD79C5603447DCE9.png" alt="Step 11" style="max-width:100%;height:auto;" />
+
+### Step 12
+Step 12
+
+![](https://qhstaticssl.kujiale.com/image/png/1761805095970/C17A4037476ACD950B6D74E7AE49C6E5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761805095970/C17A4037476ACD950B6D74E7AE49C6E5.png" alt="Step 12" style="max-width:100%;height:auto;" />
+
+### Step 13
+そうすると、壁が二つに分けられています。 ③マテリアル貼り付け ツールバーの素材ブラシで床のタイル素材を吸って、壁の下部に貼り付ける。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761809990320/D80419D50913E7259D03D2C7F4BCD0B9.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761809990320/D80419D50913E7259D03D2C7F4BCD0B9.png" alt="Step 13" style="max-width:100%;height:auto;" />
+
+### Step 14
+④テンプレートとして保存 玄関まわり全ての壁は同じ設定になった場合、作業手間を省くように、今回の設定をテンプレートとして保存します。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761812709001/36E5AC8D44F10C7641285EF27CCC4142.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761812709001/36E5AC8D44F10C7641285EF27CCC4142.png" alt="Step 14" style="max-width:100%;height:auto;" />
+
+### Step 15
+部屋タイプを選択し、テンプレート名を入力して完了。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761812749146/64D74F527A182A8FEBEB5F6A8EC3A6CB.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761812749146/64D74F527A182A8FEBEB5F6A8EC3A6CB.png" alt="Step 15" style="max-width:100%;height:auto;" />
+
+### Step 16
+設定が終わりましたら、「保存」をクリックして画面を閉じます。 ⑤他の壁も同じ設定 他の壁も同じく150のところで境界線を入れ、下部はタイル貼りにします。 壁編集画面に入り、右上の「テンプレート範囲を手動選択」をクリック
+
+![](https://qhstaticssl.kujiale.com/image/png/1761810179422/21889028793B1C449F64345DEB6F5685.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761810179422/21889028793B1C449F64345DEB6F5685.png" alt="Step 16" style="max-width:100%;height:auto;" />
+
+### Step 17
+左のリストからテンプレートを選択、真ん中の「適用」をクリック。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761812836360/968A223ED9452DC9F65B6AF663FFFE53.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761812836360/968A223ED9452DC9F65B6AF663FFFE53.png" alt="Step 17" style="max-width:100%;height:auto;" />
+
+### Step 18
+テンプレートの壁形状と修正したい壁形状と違う場合、ツールバーの「自動一致」ボタンをクリック→壁をクリック→「完了ボタン」。そうしたら、自動的にテンプレートの設定が適用されました。マテリアルもきちんと反映されました。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761812903374/BE3059A4F025F72151B4BFBCB9AAC3C5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761812903374/BE3059A4F025F72151B4BFBCB9AAC3C5.png" alt="Step 18" style="max-width:100%;height:auto;" />
+
+### Step 19
+他の壁も順次設定します。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761813349291/93762335173A6F03C443A47B651F7908.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761813349291/93762335173A6F03C443A47B651F7908.png" alt="Step 19" style="max-width:100%;height:auto;" />
+
+### Step 20
+⑥段差部マテリアル設置 素材ブラシを使って段差部もマテリアルを貼り付けます。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761813498085/394848EB3AA7211E733BD126BB5C6166.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761813498085/394848EB3AA7211E733BD126BB5C6166.png" alt="Step 20" style="max-width:100%;height:auto;" />
+
+### Step 21
+⑦マテリアルを繋ぐ 部屋が玄関とSCがありますが、実際施工時、タイルを連続して貼ることがほとんどです。現在の設定だと、タイルが部屋に分けられ、連続されていません。マテリアルを連続させる（タイルの目地を合わせる）必要があります。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761816055838/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816055838/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 21" style="max-width:100%;height:auto;" />
+
+### Step 22
+左側パネルの**「材料とコンポネント」**をクリックしてください。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761816178402/F68ADDBA4160CE596F088E420C22BC32.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816178402/F68ADDBA4160CE596F088E420C22BC32.png" alt="Step 22" style="max-width:100%;height:auto;" />
+
+### Step 23
+部屋の床面をクリックして、ツールバーで３番目のボタン「マテリアル連続」をクリックしてください。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761816365068/C7D850645645A19D8930789CD98A77EA.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816365068/C7D850645645A19D8930789CD98A77EA.png" alt="Step 23" style="max-width:100%;height:auto;" />
+
+### Step 24
+連続する面を選択してください。 （★要注意：多数の面を選択する場合、必ず飛ばずにつながっている面を選択するしてください。そうではないと面が選択されません。） 床の面を選択してもよいし、もしカマチ部分も連続貼りの場合、その部分も一緒に選択。 （選択済の面で小さい青い点がついています。）
+
+![](https://qhstaticssl.kujiale.com/image/png/1761816485360/5B5E802F32766BEFAC020FEAA516A75D.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816485360/5B5E802F32766BEFAC020FEAA516A75D.png" alt="Step 24" style="max-width:100%;height:auto;" />
+
+### Step 25
+選択が終わりましたら、「OK」ボタンをクリック。 そうするとすべての面のタイル目地がつながっています。右上の保存ボタンをクリックし、画面を閉じます。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761816607474/C9974CCD272F1E61779551D070F3F4C1.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816607474/C9974CCD272F1E61779551D070F3F4C1.png" alt="Step 25" style="max-width:100%;height:auto;" />
+
+### Step 26
+２．上がりかまちの配置 日本の玄関まわりで上がり框が配置されています。ここでは上がり框の配置を紹介させていただきます。 上がりかまちは部屋サイズに合わせてサイズを変更する必要があるため、「カスタイムデザイン」での部材を利用して配置します。 ①左側パネル「カスタムデザイン」→「家具カスタム」に入ります。 「ライブラリ」に入り、上がり框を選択します。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761907794301/C1FEB5603993B45601EC0423774E164E.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761907794301/C1FEB5603993B45601EC0423774E164E.png" alt="Step 26" style="max-width:100%;height:auto;" />
+
+### Step 27
+②画面を２Dモードに切り替え、上がり框をドラッグして配置。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761818913085/D67BDF48DCAB4A2CE5EC2EA0201771FD.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761818913085/D67BDF48DCAB4A2CE5EC2EA0201771FD.png" alt="Step 27" style="max-width:100%;height:auto;" />
+
+### Step 28
+③サイズ調整 右側の「基本パラメータ」でサイズを調整します。 上がり框は、地面に着くことではなく、地面から浮いているイメージが多いため、「配置高さ」で地面から離れる数値も入力します。（今回は段差150mm、框の高さが100のため、地面から離れは50となります）
+
+![](https://qhstaticssl.kujiale.com/image/png/1761821157571/A75006AD32ABA383937CAF32375AD8C6.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761821157571/A75006AD32ABA383937CAF32375AD8C6.png" alt="Step 28" style="max-width:100%;height:auto;" />
+
+### Step 29
+部屋の形状に従って上がりかまちを配置します。 **★TIPS：「精確レイアウト」機能を使ってより便利でモデル配置！** **「精確レイアウト」機能についてはこちらで：[「精確レイアウト」機能の紹介](https://www.coohom.com/jp/helpcenter/%E3%80%8C%E7%B2%BE%E7%A2%BA%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E3%80%8D%E6%A9%9F%E8%83%BD%E3%81%AE%E7%B4%B9%E4%BB%8B)**
+
+![](https://qhstaticssl.kujiale.com/image/png/1761879406379/E9CC77DAD3F109E8E0F7032A7E38C277.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761879406379/E9CC77DAD3F109E8E0F7032A7E38C277.png" alt="Step 29" style="max-width:100%;height:auto;" />
+
+### Step 30
+配置が終わりましたら３Dモードでレンダリング効果を確認。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761879537815/3E0E4C8FAE20A88F70AC313C94E6E67A.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761879537815/3E0E4C8FAE20A88F70AC313C94E6E67A.png" alt="Step 30" style="max-width:100%;height:auto;" />
+
+### Step 31
+１＞框がある場合 ①左側パネルの「材料とコンポーネント」に入ります モールディング→巾木を選択
+
+![](https://qhstaticssl.kujiale.com/image/png/1761879756829/AFC69C9D73BC429EA528349EF141C5CF.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761879756829/AFC69C9D73BC429EA528349EF141C5CF.png" alt="Step 31" style="max-width:100%;height:auto;" />
+
+### Step 32
+②好きな巾木を選んで、室内空間を１クリックしたら自動的に配置されます。 （１本だけ配置したい場合CTRLキーを押しながら配置させます） まず室内部の巾木を配置します。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761879858110/7FEB45A4D5C062093D3D1153EC6F2A7D.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761879858110/7FEB45A4D5C062093D3D1153EC6F2A7D.png" alt="Step 32" style="max-width:100%;height:auto;" />
+
+### Step 33
+③玄関部の壁をクリックし、「壁の編集」に入ります。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761881428294/BFD4DCCEB656F9F23196CDEF4391EC4D.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761881428294/BFD4DCCEB656F9F23196CDEF4391EC4D.png" alt="Step 33" style="max-width:100%;height:auto;" />
+
+### Step 34
+④左側で先室内で使った巾木をピックアップ。 （事前「お気になり」に保存されたら探すのが便利）
+
+![](https://qhstaticssl.kujiale.com/image/png/1761881610976/2F1AE5B9E5C0DE846F4985BA4549AAC9.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761881610976/2F1AE5B9E5C0DE846F4985BA4549AAC9.png" alt="Step 34" style="max-width:100%;height:auto;" />
+
+### Step 35
+⑤素材をクリックし、Ctrlキーを押したままで、壁の境界線の部分で１クリック。 （Ctrlキーが押さないと、巾木が４方向配置されますので、Ctrlキーで１本だけ配置することが可能）
+
+![](https://qhstaticssl.kujiale.com/image/png/1761881722227/A38DAB8977A908D0B9DD53DBE402271E.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761881722227/A38DAB8977A908D0B9DD53DBE402271E.png" alt="Step 35" style="max-width:100%;height:auto;" />
+
+### Step 36
+保存して閉じます。巾木が室内部と連続して配置されました。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761881824119/4B1688B4AFB65175301A06C07FAE3C0C.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761881824119/4B1688B4AFB65175301A06C07FAE3C0C.png" alt="Step 36" style="max-width:100%;height:auto;" />
+
+### Step 37
+すべての設定が終わりましたら、好きなマテリアルに入れ替えたり調整したりして完了です。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761892923265/165D6437527CB52A41459FB3CF287964.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761892923265/165D6437527CB52A41459FB3CF287964.png" alt="Step 37" style="max-width:100%;height:auto;" />
+
+### Step 38
+レンダリング効果をこちらになります。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761893079445/36E119FBB91CA0E39D7877A69CDDCFDF.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761893079445/36E119FBB91CA0E39D7877A69CDDCFDF.png" alt="Step 38" style="max-width:100%;height:auto;" />
+
+### Step 39
+２＞框がない場合 段差部のみ框があって、他のスペースで巾木のみ設置されるケースもあります。ここで巾木の設置方法を紹介いたします。 ①「材料とコンポネント」に入り、室内部に通常通り巾木を設置します。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761894920913/38FE84DDB371FC20F89179E45B839B89.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761894920913/38FE84DDB371FC20F89179E45B839B89.png" alt="Step 39" style="max-width:100%;height:auto;" />
+
+### Step 40
+②玄関部の壁をクリックして「壁の編集」に入ります。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761894952724/19BC41430DECC3310B6AE127CA61EC60.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761894952724/19BC41430DECC3310B6AE127CA61EC60.png" alt="Step 40" style="max-width:100%;height:auto;" />
+
+### Step 41
+壁の編集に入ると、壁に150㎜のところで灰色の基準線があります。こちらは室内レベル（F.L＋０）を示す構造スラブダウンの境界線です。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761895008253/F1F561FFA2DD734AF3FC8AC966DF7696.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895008253/F1F561FFA2DD734AF3FC8AC966DF7696.png" alt="Step 41" style="max-width:100%;height:auto;" />
+
+### Step 42
+③框の断面を描きます。 框は横に設置されているため、この壁に断面があります。今回は奥行40mmの框のため、40×150の長方形を描画します。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761895060117/D0E70E17AEA3D0798F955F93697F5C70.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895060117/D0E70E17AEA3D0798F955F93697F5C70.png" alt="Step 42" style="max-width:100%;height:auto;" />
+
+### Step 43
+④繋がる辺で巾木を設置 「お気になり」で使った巾木を拾って、Ctrlキーを押しながら、巾木が繋がる辺と壁の底辺をクリック（上４０㎜の辺、右の辺、壁の底辺） 設置時、設置する面で青いラインが出ますので、これで設置方向を確認できます。（マウスを上下または左右移動することによって設置方向が変わります）
+
+![](https://qhstaticssl.kujiale.com/image/png/1761895810673/4D231E829787B109714054E1C6568350.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895810673/4D231E829787B109714054E1C6568350.png" alt="Step 43" style="max-width:100%;height:auto;" />
+
+### Step 44
+そうすると自動的に巾木が繋がります。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761895608582/721E662910B465F21E7C19F07DC5C06B.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895608582/721E662910B465F21E7C19F07DC5C06B.png" alt="Step 44" style="max-width:100%;height:auto;" />
+
+### Step 45
+⑤反対の壁でも同じ設定にします。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761895848989/14F25EC24863BEA5A746D25FE7DF4557.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895848989/14F25EC24863BEA5A746D25FE7DF4557.png" alt="Step 45" style="max-width:100%;height:auto;" />
+
+### Step 46
+⑥残りの壁を設定します。 玄関ドアがある壁とSCの壁は、通常通りの設置方法で巾木を設置します。
+
+![](https://qhstaticssl.kujiale.com/image/png/1761896028995/C5CFF6B59368673BC5E13ED4C08EDDED.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761896028995/C5CFF6B59368673BC5E13ED4C08EDDED.png" alt="Step 46" style="max-width:100%;height:auto;" />
+
+### Step 47
+Step 47
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761896293186/6B22BEFA5B6148F10561681409383E64.jpg)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761896293186/6B22BEFA5B6148F10561681409383E64.jpg" alt="Step 47" style="max-width:100%;height:auto;" />
+
 
 　　内容は以下の部分に分けられています。
 
@@ -331,147 +616,197 @@ description: "日本では特殊の玄関構造があります。今回は玄関
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
 1. １．部屋を分割する 玄関部には上がり框などがあるため、壁がありません。Coohomでは部屋が囲まれたスペースを１つの部屋だと認識されるため、まず、囲まれたスペースの中から、玄関部分を分割する必要があります。 今回このような玄関部を描きます。
 ![](https://qhstaticssl.kujiale.com/image/png/1761729575726/162E0EA3E9CED22778E29A9B1CD89DEC.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761729575726/162E0EA3E9CED22778E29A9B1CD89DEC.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 2. 図面から見ると、玄関とホール、玄関とSCの間壁がないため、Coohomで部屋を描くと、玄関＋ホール＋SCは一つ囲まれたスペース、いわゆる一つの部屋になります。 ①図面に従って囲まれたスペースを描きます。
 ![](https://qhstaticssl.kujiale.com/image/png/1761730082769/B7085DC4939732F1E544656546BE95BF.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761730082769/B7085DC4939732F1E544656546BE95BF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 3. ②ツールバーで「領域を描画」隣の△をクリックし、「部屋を分割する」の**「天井、壁、地面」**をクリック。 （今回、玄関を部屋として床、天井、壁全部分割するため「部屋、壁、地面」を選択しますが、地面だけを分割したい場合「地面のみ」をクリック、部屋ではなく構造だけ分割する場合「構造を分割する」の「地面」や「上面」を選択）
 ![](https://qhstaticssl.kujiale.com/image/png/1761792140857/59C1282556AA387BBCF37E6F88E1F398.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761792140857/59C1282556AA387BBCF37E6F88E1F398.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 4. ③部屋分割線を入力 ツールバーで直線、長方形、円形など様々な形状を描くことができます。今回玄関とSCの間一本、玄関とホールの間一本の線を入力すれば完了です。 起点１クリック、次の点１クリック、CADのように連続描画することができます。描画が終わりましたら、マウスの右ボタンまたはEscキーで作業終了です。すべての入力が終わりましたら、右上の「終了」ボタンをクリックしてください。
 ![](https://qhstaticssl.kujiale.com/image/png/1761792754335/14078A8CA9D3C1D4C3AB6F1F35C10FA8.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761792754335/14078A8CA9D3C1D4C3AB6F1F35C10FA8.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 5. そうすると部屋が３つに分けられました。
 ![](https://qhstaticssl.kujiale.com/image/png/1761792929371/C017EB24B7CE9F145496A03B7DACDBB4.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761792929371/C017EB24B7CE9F145496A03B7DACDBB4.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
 6. ２．構造スラブを下げる ①床を下げたい部屋に１クリック。 ②右側の基本パラメータに「構造スラブダウン」項目があります。
 ![](https://qhstaticssl.kujiale.com/image/png/1761793520076/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761793520076/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 6" style="max-width:100%;height:auto;" />
 
 7. ③数値を入力（★注意：ダウンの数値を入力するため、ここは**正値を入力**してください） 150ｍｍ下げたい場合、右側の入力欄に「150」を入力してEnter。 入力後、プレビューでスラブダウンを確認できます。
 ![](https://qhstaticssl.kujiale.com/image/png/1761793679428/85EB1B5F9FFAAB2F0106EB4C50D5BB13.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761793679428/85EB1B5F9FFAAB2F0106EB4C50D5BB13.png" alt="Step 7" style="max-width:100%;height:auto;" />
 
 8. ３．構造を確認する すべての入力が終わりましたら、３Dモードに切り替え、床ダウン部分を確認。 玄関とホールの間、段差ができました。
 ![](https://qhstaticssl.kujiale.com/image/png/1761793899758/7AF06E8B35756FCA3DA64B71107066F2.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761793899758/7AF06E8B35756FCA3DA64B71107066F2.png" alt="Step 8" style="max-width:100%;height:auto;" />
 
 9. １．壁分割 玄関まわりの壁は、玄関まわりの上がり框または巾木で二つに分けられています。上の部分は室内壁と一緒壁紙などが多い。一方、下の部分は床のマテリアルと同じタイル貼りの方が多いです。そうすると、一面の壁で２つのマテリアルを貼り付ける必要があります。 ①壁のマテリアルを設置。 玄関とSC部に好きなマテリアル（壁紙など）を貼り付け。
 ![](https://qhstaticssl.kujiale.com/image/png/1761803457681/F967640C22819AA007361FFDF3CBD964.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761803457681/F967640C22819AA007361FFDF3CBD964.png" alt="Step 9" style="max-width:100%;height:auto;" />
 
 10. ②設置したい壁をクリックして、**「壁の編集」**に入る。
 ![](https://qhstaticssl.kujiale.com/image/png/1761804771422/12C7D2F37324F6CCD9673AAD0CA3FFD8.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761804771422/12C7D2F37324F6CCD9673AAD0CA3FFD8.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
 11. ③マテリアル分割の境界線を引く。 玄関部に構造スラブダウンがあったため、壁の編集に入ったら、ダウン部の基準線（灰色の線）があります。直線ツールを使って描画するとき自動的にスナップされます。
 ![](https://qhstaticssl.kujiale.com/image/png/1761804986888/A9750ECB401137BDCD79C5603447DCE9.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761804986888/A9750ECB401137BDCD79C5603447DCE9.png" alt="Step 11" style="max-width:100%;height:auto;" />
 
 12. Step 12
 ![](https://qhstaticssl.kujiale.com/image/png/1761805095970/C17A4037476ACD950B6D74E7AE49C6E5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761805095970/C17A4037476ACD950B6D74E7AE49C6E5.png" alt="Step 12" style="max-width:100%;height:auto;" />
 
 13. そうすると、壁が二つに分けられています。 ③マテリアル貼り付け ツールバーの素材ブラシで床のタイル素材を吸って、壁の下部に貼り付ける。
 ![](https://qhstaticssl.kujiale.com/image/png/1761809990320/D80419D50913E7259D03D2C7F4BCD0B9.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761809990320/D80419D50913E7259D03D2C7F4BCD0B9.png" alt="Step 13" style="max-width:100%;height:auto;" />
 
 14. ④テンプレートとして保存 玄関まわり全ての壁は同じ設定になった場合、作業手間を省くように、今回の設定をテンプレートとして保存します。
 ![](https://qhstaticssl.kujiale.com/image/png/1761812709001/36E5AC8D44F10C7641285EF27CCC4142.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761812709001/36E5AC8D44F10C7641285EF27CCC4142.png" alt="Step 14" style="max-width:100%;height:auto;" />
 
 15. 部屋タイプを選択し、テンプレート名を入力して完了。
 ![](https://qhstaticssl.kujiale.com/image/png/1761812749146/64D74F527A182A8FEBEB5F6A8EC3A6CB.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761812749146/64D74F527A182A8FEBEB5F6A8EC3A6CB.png" alt="Step 15" style="max-width:100%;height:auto;" />
 
 16. 設定が終わりましたら、「保存」をクリックして画面を閉じます。 ⑤他の壁も同じ設定 他の壁も同じく150のところで境界線を入れ、下部はタイル貼りにします。 壁編集画面に入り、右上の「テンプレート範囲を手動選択」をクリック
 ![](https://qhstaticssl.kujiale.com/image/png/1761810179422/21889028793B1C449F64345DEB6F5685.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761810179422/21889028793B1C449F64345DEB6F5685.png" alt="Step 16" style="max-width:100%;height:auto;" />
 
 17. 左のリストからテンプレートを選択、真ん中の「適用」をクリック。
 ![](https://qhstaticssl.kujiale.com/image/png/1761812836360/968A223ED9452DC9F65B6AF663FFFE53.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761812836360/968A223ED9452DC9F65B6AF663FFFE53.png" alt="Step 17" style="max-width:100%;height:auto;" />
 
 18. テンプレートの壁形状と修正したい壁形状と違う場合、ツールバーの「自動一致」ボタンをクリック→壁をクリック→「完了ボタン」。そうしたら、自動的にテンプレートの設定が適用されました。マテリアルもきちんと反映されました。
 ![](https://qhstaticssl.kujiale.com/image/png/1761812903374/BE3059A4F025F72151B4BFBCB9AAC3C5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761812903374/BE3059A4F025F72151B4BFBCB9AAC3C5.png" alt="Step 18" style="max-width:100%;height:auto;" />
 
 19. 他の壁も順次設定します。
 ![](https://qhstaticssl.kujiale.com/image/png/1761813349291/93762335173A6F03C443A47B651F7908.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761813349291/93762335173A6F03C443A47B651F7908.png" alt="Step 19" style="max-width:100%;height:auto;" />
 
 20. ⑥段差部マテリアル設置 素材ブラシを使って段差部もマテリアルを貼り付けます。
 ![](https://qhstaticssl.kujiale.com/image/png/1761813498085/394848EB3AA7211E733BD126BB5C6166.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761813498085/394848EB3AA7211E733BD126BB5C6166.png" alt="Step 20" style="max-width:100%;height:auto;" />
 
 21. ⑦マテリアルを繋ぐ 部屋が玄関とSCがありますが、実際施工時、タイルを連続して貼ることがほとんどです。現在の設定だと、タイルが部屋に分けられ、連続されていません。マテリアルを連続させる（タイルの目地を合わせる）必要があります。
 ![](https://qhstaticssl.kujiale.com/image/png/1761816055838/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816055838/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 21" style="max-width:100%;height:auto;" />
 
 22. 左側パネルの**「材料とコンポネント」**をクリックしてください。
 ![](https://qhstaticssl.kujiale.com/image/png/1761816178402/F68ADDBA4160CE596F088E420C22BC32.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816178402/F68ADDBA4160CE596F088E420C22BC32.png" alt="Step 22" style="max-width:100%;height:auto;" />
 
 23. 部屋の床面をクリックして、ツールバーで３番目のボタン「マテリアル連続」をクリックしてください。
 ![](https://qhstaticssl.kujiale.com/image/png/1761816365068/C7D850645645A19D8930789CD98A77EA.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816365068/C7D850645645A19D8930789CD98A77EA.png" alt="Step 23" style="max-width:100%;height:auto;" />
 
 24. 連続する面を選択してください。 （★要注意：多数の面を選択する場合、必ず飛ばずにつながっている面を選択するしてください。そうではないと面が選択されません。） 床の面を選択してもよいし、もしカマチ部分も連続貼りの場合、その部分も一緒に選択。 （選択済の面で小さい青い点がついています。）
 ![](https://qhstaticssl.kujiale.com/image/png/1761816485360/5B5E802F32766BEFAC020FEAA516A75D.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816485360/5B5E802F32766BEFAC020FEAA516A75D.png" alt="Step 24" style="max-width:100%;height:auto;" />
 
 25. 選択が終わりましたら、「OK」ボタンをクリック。 そうするとすべての面のタイル目地がつながっています。右上の保存ボタンをクリックし、画面を閉じます。
 ![](https://qhstaticssl.kujiale.com/image/png/1761816607474/C9974CCD272F1E61779551D070F3F4C1.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761816607474/C9974CCD272F1E61779551D070F3F4C1.png" alt="Step 25" style="max-width:100%;height:auto;" />
 
 26. ２．上がりかまちの配置 日本の玄関まわりで上がり框が配置されています。ここでは上がり框の配置を紹介させていただきます。 上がりかまちは部屋サイズに合わせてサイズを変更する必要があるため、「カスタイムデザイン」での部材を利用して配置します。 ①左側パネル「カスタムデザイン」→「家具カスタム」に入ります。 「ライブラリ」に入り、上がり框を選択します。
 ![](https://qhstaticssl.kujiale.com/image/png/1761907794301/C1FEB5603993B45601EC0423774E164E.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761907794301/C1FEB5603993B45601EC0423774E164E.png" alt="Step 26" style="max-width:100%;height:auto;" />
 
 27. ②画面を２Dモードに切り替え、上がり框をドラッグして配置。
 ![](https://qhstaticssl.kujiale.com/image/png/1761818913085/D67BDF48DCAB4A2CE5EC2EA0201771FD.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761818913085/D67BDF48DCAB4A2CE5EC2EA0201771FD.png" alt="Step 27" style="max-width:100%;height:auto;" />
 
 28. ③サイズ調整 右側の「基本パラメータ」でサイズを調整します。 上がり框は、地面に着くことではなく、地面から浮いているイメージが多いため、「配置高さ」で地面から離れる数値も入力します。（今回は段差150mm、框の高さが100のため、地面から離れは50となります）
 ![](https://qhstaticssl.kujiale.com/image/png/1761821157571/A75006AD32ABA383937CAF32375AD8C6.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761821157571/A75006AD32ABA383937CAF32375AD8C6.png" alt="Step 28" style="max-width:100%;height:auto;" />
 
 29. 部屋の形状に従って上がりかまちを配置します。 **★TIPS：「精確レイアウト」機能を使ってより便利でモデル配置！** **「精確レイアウト」機能についてはこちらで：[「精確レイアウト」機能の紹介](https://www.coohom.com/jp/helpcenter/%E3%80%8C%E7%B2%BE%E7%A2%BA%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E3%80%8D%E6%A9%9F%E8%83%BD%E3%81%AE%E7%B4%B9%E4%BB%8B)**
 ![](https://qhstaticssl.kujiale.com/image/png/1761879406379/E9CC77DAD3F109E8E0F7032A7E38C277.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761879406379/E9CC77DAD3F109E8E0F7032A7E38C277.png" alt="Step 29" style="max-width:100%;height:auto;" />
 
 30. 配置が終わりましたら３Dモードでレンダリング効果を確認。
 ![](https://qhstaticssl.kujiale.com/image/png/1761879537815/3E0E4C8FAE20A88F70AC313C94E6E67A.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761879537815/3E0E4C8FAE20A88F70AC313C94E6E67A.png" alt="Step 30" style="max-width:100%;height:auto;" />
 
 31. １＞框がある場合 ①左側パネルの「材料とコンポーネント」に入ります モールディング→巾木を選択
 ![](https://qhstaticssl.kujiale.com/image/png/1761879756829/AFC69C9D73BC429EA528349EF141C5CF.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761879756829/AFC69C9D73BC429EA528349EF141C5CF.png" alt="Step 31" style="max-width:100%;height:auto;" />
 
 32. ②好きな巾木を選んで、室内空間を１クリックしたら自動的に配置されます。 （１本だけ配置したい場合CTRLキーを押しながら配置させます） まず室内部の巾木を配置します。
 ![](https://qhstaticssl.kujiale.com/image/png/1761879858110/7FEB45A4D5C062093D3D1153EC6F2A7D.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761879858110/7FEB45A4D5C062093D3D1153EC6F2A7D.png" alt="Step 32" style="max-width:100%;height:auto;" />
 
 33. ③玄関部の壁をクリックし、「壁の編集」に入ります。
 ![](https://qhstaticssl.kujiale.com/image/png/1761881428294/BFD4DCCEB656F9F23196CDEF4391EC4D.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761881428294/BFD4DCCEB656F9F23196CDEF4391EC4D.png" alt="Step 33" style="max-width:100%;height:auto;" />
 
 34. ④左側で先室内で使った巾木をピックアップ。 （事前「お気になり」に保存されたら探すのが便利）
 ![](https://qhstaticssl.kujiale.com/image/png/1761881610976/2F1AE5B9E5C0DE846F4985BA4549AAC9.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761881610976/2F1AE5B9E5C0DE846F4985BA4549AAC9.png" alt="Step 34" style="max-width:100%;height:auto;" />
 
 35. ⑤素材をクリックし、Ctrlキーを押したままで、壁の境界線の部分で１クリック。 （Ctrlキーが押さないと、巾木が４方向配置されますので、Ctrlキーで１本だけ配置することが可能）
 ![](https://qhstaticssl.kujiale.com/image/png/1761881722227/A38DAB8977A908D0B9DD53DBE402271E.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761881722227/A38DAB8977A908D0B9DD53DBE402271E.png" alt="Step 35" style="max-width:100%;height:auto;" />
 
 36. 保存して閉じます。巾木が室内部と連続して配置されました。
 ![](https://qhstaticssl.kujiale.com/image/png/1761881824119/4B1688B4AFB65175301A06C07FAE3C0C.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761881824119/4B1688B4AFB65175301A06C07FAE3C0C.png" alt="Step 36" style="max-width:100%;height:auto;" />
 
 37. すべての設定が終わりましたら、好きなマテリアルに入れ替えたり調整したりして完了です。
 ![](https://qhstaticssl.kujiale.com/image/png/1761892923265/165D6437527CB52A41459FB3CF287964.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761892923265/165D6437527CB52A41459FB3CF287964.png" alt="Step 37" style="max-width:100%;height:auto;" />
 
 38. レンダリング効果をこちらになります。
 ![](https://qhstaticssl.kujiale.com/image/png/1761893079445/36E119FBB91CA0E39D7877A69CDDCFDF.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761893079445/36E119FBB91CA0E39D7877A69CDDCFDF.png" alt="Step 38" style="max-width:100%;height:auto;" />
 
 39. ２＞框がない場合 段差部のみ框があって、他のスペースで巾木のみ設置されるケースもあります。ここで巾木の設置方法を紹介いたします。 ①「材料とコンポネント」に入り、室内部に通常通り巾木を設置します。
 ![](https://qhstaticssl.kujiale.com/image/png/1761894920913/38FE84DDB371FC20F89179E45B839B89.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761894920913/38FE84DDB371FC20F89179E45B839B89.png" alt="Step 39" style="max-width:100%;height:auto;" />
 
 40. ②玄関部の壁をクリックして「壁の編集」に入ります。
 ![](https://qhstaticssl.kujiale.com/image/png/1761894952724/19BC41430DECC3310B6AE127CA61EC60.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761894952724/19BC41430DECC3310B6AE127CA61EC60.png" alt="Step 40" style="max-width:100%;height:auto;" />
 
 41. 壁の編集に入ると、壁に150㎜のところで灰色の基準線があります。こちらは室内レベル（F.L＋０）を示す構造スラブダウンの境界線です。
 ![](https://qhstaticssl.kujiale.com/image/png/1761895008253/F1F561FFA2DD734AF3FC8AC966DF7696.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895008253/F1F561FFA2DD734AF3FC8AC966DF7696.png" alt="Step 41" style="max-width:100%;height:auto;" />
 
 42. ③框の断面を描きます。 框は横に設置されているため、この壁に断面があります。今回は奥行40mmの框のため、40×150の長方形を描画します。
 ![](https://qhstaticssl.kujiale.com/image/png/1761895060117/D0E70E17AEA3D0798F955F93697F5C70.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895060117/D0E70E17AEA3D0798F955F93697F5C70.png" alt="Step 42" style="max-width:100%;height:auto;" />
 
 43. ④繋がる辺で巾木を設置 「お気になり」で使った巾木を拾って、Ctrlキーを押しながら、巾木が繋がる辺と壁の底辺をクリック（上４０㎜の辺、右の辺、壁の底辺） 設置時、設置する面で青いラインが出ますので、これで設置方向を確認できます。（マウスを上下または左右移動することによって設置方向が変わります）
 ![](https://qhstaticssl.kujiale.com/image/png/1761895810673/4D231E829787B109714054E1C6568350.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895810673/4D231E829787B109714054E1C6568350.png" alt="Step 43" style="max-width:100%;height:auto;" />
 
 44. そうすると自動的に巾木が繋がります。
 ![](https://qhstaticssl.kujiale.com/image/png/1761895608582/721E662910B465F21E7C19F07DC5C06B.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895608582/721E662910B465F21E7C19F07DC5C06B.png" alt="Step 44" style="max-width:100%;height:auto;" />
 
 45. ⑤反対の壁でも同じ設定にします。
 ![](https://qhstaticssl.kujiale.com/image/png/1761895848989/14F25EC24863BEA5A746D25FE7DF4557.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761895848989/14F25EC24863BEA5A746D25FE7DF4557.png" alt="Step 45" style="max-width:100%;height:auto;" />
 
 46. ⑥残りの壁を設定します。 玄関ドアがある壁とSCの壁は、通常通りの設置方法で巾木を設置します。
 ![](https://qhstaticssl.kujiale.com/image/png/1761896028995/C5CFF6B59368673BC5E13ED4C08EDDED.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1761896028995/C5CFF6B59368673BC5E13ED4C08EDDED.png" alt="Step 46" style="max-width:100%;height:auto;" />
 
 47. Step 47
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761896293186/6B22BEFA5B6148F10561681409383E64.jpg)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1761896293186/6B22BEFA5B6148F10561681409383E64.jpg" alt="Step 47" style="max-width:100%;height:auto;" />
 
 </Visibility>

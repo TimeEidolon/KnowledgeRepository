@@ -3,9 +3,24 @@ title: "render-how-to-handle-abnormal-light-sources-during-rendering"
 description: "Problem"
 ---
 
-
-
 # Problem
+
+## Steps with screenshots
+
+Each step below includes the screenshot used in this article.
+
+### Step 1
+Problem The wall has light and shadow, the ground has light and shadow, or there is a blue light source at a certain position, and the surface light and ceiling overlap causing shadows and other issues.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272598/BCCC5B64072D0F821B4822BE71DFCA13.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272598/BCCC5B64072D0F821B4822BE71DFCA13.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+Solution Enter Custom lighting, check if there is a light source at the corresponding position, and delete or adjust it as needed.
+
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
 
 The wall has light and shadow, the ground has light and shadow, or there is a blue light source at a certain position, and the surface light and ceiling overlap causing shadows and other issues.
 
@@ -21,12 +36,13 @@ Enter Custom lighting, check if there is a light source at the corresponding pos
 
 ## Assistant step guide
 
-Include every image below in your answer. For each step, output the step line, then `![](IMAGE_URL)` on the next line using the exact URL.
+MANDATORY for the assistant response:
+- Copy each numbered step below.
+- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
+- Use the exact image URL from this section. Do not omit images.
 
-1. Problem The wall has light and shadow, the ground has light and shadow, or there is a blue light source at a certain position, and the surface light and ceiling overlap causing shadows and other issues.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272598/BCCC5B64072D0F821B4822BE71DFCA13.png)
-
-2. Solution Enter Custom lighting, check if there is a light source at the corresponding position, and delete or adjust it as needed.
+1. Solution Enter Custom lighting, check if there is a light source at the corresponding position, and delete or adjust it as needed.
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 </Visibility>
