@@ -7,23 +7,22 @@ description: "功能简介**"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 **详细说明** 1.提交方案到企业库的入口：棚拍工作台-我的方案-选择目标方案-“...”-投稿至企业库-选择对应的分组-点击“确定”即可
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769583566647/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1769583566647/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1769583566647/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 2.提交完成之后，该企业所有的棚拍账号都能在棚拍工作台-企业影棚库 看到并使用该方案/影棚
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769583608472/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1769583608472/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1769583608472/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-* **功能背景：**一些棚拍用户提到：希望团队里一起在用棚拍的小伙伴，可以把自己找到的比较好的棚以及做的比较好的方案可以共享出来，让整个企业在用棚拍的小伙伴都能看到并且可以复制使用
-* **企业影棚库：**一个体系内的所有棚拍账号都可以把自己中意的方案提交到企业库，便于大家查看、复制
 
 # **面向用户**
 
@@ -43,17 +42,17 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. **详细说明** 1.提交方案到企业库的入口：棚拍工作台-我的方案-选择目标方案-“...”-投稿至企业库-选择对应的分组-点击“确定”即可
-![](https://qhstaticssl.kujiale.com/image/png/1769583566647/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769583566647/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 2.提交完成之后，该企业所有的棚拍账号都能在棚拍工作台-企业影棚库 看到并使用该方案/影棚
-![](https://qhstaticssl.kujiale.com/image/png/1769583608472/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769583608472/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: **详细说明** 1.提交方案到企业库的入口：棚拍工作台-我的方案-选择目标方案-“...”-投稿至企业库-选择对应的分组-点击“确定”即可
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769583566647/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: 2.提交完成之后，该企业所有的棚拍账号都能在棚拍工作台-企业影棚库 看到并使用该方案/影棚
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769583608472/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

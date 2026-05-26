@@ -7,16 +7,14 @@ This article will explain in detail how to solve the problem of project deletion
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-If you want to recover deleted project you can send your coohom account email and the project name to customer support **live chat** or send email to **support@coohom.com** to raise a recovery process.
-
-### Step 2
 After customer support team receive recover project request it usually takes 1-2 working days to be recovred.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1748246348499/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1748246348499/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1748246348499/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1748246348499/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 
 # For users
@@ -35,15 +33,14 @@ All users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. If you want to recover deleted project you can send your coohom account email and the project name to customer support **live chat** or send email to **support@coohom.com** to raise a recovery process.
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. After customer support team receive recover project request it usually takes 1-2 working days to be recovred.
-![](https://qhstaticssl.kujiale.com/image/png/1748246348499/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1748246348499/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: After customer support team receive recover project request it usually takes 1-2 working days to be recovred.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1748246348499/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

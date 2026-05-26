@@ -7,22 +7,29 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-The max model itself exceeds 30 meters, and the model size needs to be adjusted to below 30 meters.
+Solution To solve this problem, you need to measure the scene by pressing ctrl+A and then perform the following operations to check if the unit setting is in millimeters.
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260028/6EAEF2F423704269121670F369BB2F58.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260028/6EAEF2F423704269121670F369BB2F58.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260028/6EAEF2F423704269121670F369BB2F58.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-In max, there are other models besides the main model Right-click the scene to unhide all, thaw all, and then select the unnecessary items and click confirm to delete them.
+Screenshot 2
 
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260043/86444CE6E661C698E50A6BA713E3901D.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260043/86444CE6E661C698E50A6BA713E3901D.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260004/D525AE80222107952A080B768F7ECA77.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260004/D525AE80222107952A080B768F7ECA77.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260004/D525AE80222107952A080B768F7ECA77.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
-The model does not exceed 30 meters, and there are no other models. It is possible that other data exists in max. You can select the model, save the selected model separately, and then reopen it. The model is actually intended to exceed 30 meters because in coohom it can be magnified twofold, allowing it to be expanded beyond 30 meters when used after import.
+In max, there are other models besides the main model Right-click the scene to unhide all, thaw all, and then select the unnecessary items and click confirm to delete them.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260043/86444CE6E661C698E50A6BA713E3901D.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260043/86444CE6E661C698E50A6BA713E3901D.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260043/86444CE6E661C698E50A6BA713E3901D.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-When uploading 3Dmax models, the following error message appears: "Model size too large," and the model needs to be reduced.
 
 # Solution
 
@@ -50,17 +57,20 @@ The model is actually intended to exceed 30 meters because in coohom it can be m
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. The max model itself exceeds 30 meters, and the model size needs to be adjusted to below 30 meters.
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. In max, there are other models besides the main model Right-click the scene to unhide all, thaw all, and then select the unnecessary items and click confirm to delete them.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260043/86444CE6E661C698E50A6BA713E3901D.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260043/86444CE6E661C698E50A6BA713E3901D.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Solution To solve this problem, you need to measure the scene by pressing ctrl+A and then perform the following operations to check if the unit setting is in millimeters.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260028/6EAEF2F423704269121670F369BB2F58.png
 
-3. The model does not exceed 30 meters, and there are no other models. It is possible that other data exists in max. You can select the model, save the selected model separately, and then reopen it. The model is actually intended to exceed 30 meters because in coohom it can be magnified twofold, allowing it to be expanded beyond 30 meters when used after import.
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260004/D525AE80222107952A080B768F7ECA77.png
+
+MEDIA_STEP_3_TEXT: In max, there are other models besides the main model Right-click the scene to unhide all, thaw all, and then select the unnecessary items and click confirm to delete them.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313260043/86444CE6E661C698E50A6BA713E3901D.png
 
 </Visibility>

@@ -7,22 +7,22 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 解决方法 对于obj解析失败常见的原因是模型没有转换可编辑网格。
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119387/A0E427CB293631ED043FEA4F498466F9.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119387/A0E427CB293631ED043FEA4F498466F9.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119387/A0E427CB293631ED043FEA4F498466F9.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Step 2
+Screenshot 2
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119396/6628C0BF1613F63B2D9901AF89E81C3C.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119396/6628C0BF1613F63B2D9901AF89E81C3C.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119396/6628C0BF1613F63B2D9901AF89E81C3C.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-obj文件解释失败
 
 # 解决方法
 
@@ -38,17 +38,17 @@ obj文件解释失败
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 解决方法 对于obj解析失败常见的原因是模型没有转换可编辑网格。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119387/A0E427CB293631ED043FEA4F498466F9.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119387/A0E427CB293631ED043FEA4F498466F9.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Step 2
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119396/6628C0BF1613F63B2D9901AF89E81C3C.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119396/6628C0BF1613F63B2D9901AF89E81C3C.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 解决方法 对于obj解析失败常见的原因是模型没有转换可编辑网格。
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119387/A0E427CB293631ED043FEA4F498466F9.png
+
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313119396/6628C0BF1613F63B2D9901AF89E81C3C.png
 
 </Visibility>

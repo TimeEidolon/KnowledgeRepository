@@ -7,35 +7,36 @@ API Design Standard
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 API Prefix We have made the restriction that all Open APIs of the same version shall have the same API prefix. And in API definition API prefix will be used to maintain consistent meaning.
 
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115660333/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstatic-us-s3.coohom.com/image/png/1749115660333/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstatic-us-s3.coohom.com/image/png/1749115660333/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 Standard Field The standard field maintains the fields we use uniformly in the API entry, and we only use the same field in similar scenarios. Four standard fields have been defined in document **Authentication**, which are not explained here.
 
+MEDIA_STEP_2_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115310978/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstatic-us-s3.coohom.com/image/png/1749115310978/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstatic-us-s3.coohom.com/image/png/1749115310978/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 Outer Unified Data Structure All APIs respond in the form of JSON, and the outer data structure is unified as follows
 
+MEDIA_STEP_3_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1749115691586/53D1F60400EA97E9BE984BE9FB4BD3C8.png
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1749115691586/53D1F60400EA97E9BE984BE9FB4BD3C8.png)
 <img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1749115691586/53D1F60400EA97E9BE984BE9FB4BD3C8.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 List Unified Data Structure In most scenarios where a list of resources is requested, we use this data structure to encapsulate it. It is next to the outer data structure, and is a specification for the value of d:
 
+MEDIA_STEP_4_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115747373/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstatic-us-s3.coohom.com/image/png/1749115747373/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstatic-us-s3.coohom.com/image/png/1749115747373/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-
-To provide simple, extensible and consistent Open APIs, we design them with some design standards.  
-From input to output, we have made some restrictions to achieve consistent user experience.
 
 # Host
 
@@ -91,25 +92,23 @@ Did this answer your question?
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. API Prefix We have made the restriction that all Open APIs of the same version shall have the same API prefix. And in API definition API prefix will be used to maintain consistent meaning.
-![](https://qhstatic-us-s3.coohom.com/image/png/1749115660333/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstatic-us-s3.coohom.com/image/png/1749115660333/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Standard Field The standard field maintains the fields we use uniformly in the API entry, and we only use the same field in similar scenarios. Four standard fields have been defined in document **Authentication**, which are not explained here.
-![](https://qhstatic-us-s3.coohom.com/image/png/1749115310978/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstatic-us-s3.coohom.com/image/png/1749115310978/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: API Prefix We have made the restriction that all Open APIs of the same version shall have the same API prefix. And in API definition API prefix will be used to maintain consistent meaning.
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115660333/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. Outer Unified Data Structure All APIs respond in the form of JSON, and the outer data structure is unified as follows
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1749115691586/53D1F60400EA97E9BE984BE9FB4BD3C8.png)
-<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1749115691586/53D1F60400EA97E9BE984BE9FB4BD3C8.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Standard Field The standard field maintains the fields we use uniformly in the API entry, and we only use the same field in similar scenarios. Four standard fields have been defined in document **Authentication**, which are not explained here.
+MEDIA_STEP_2_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115310978/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. List Unified Data Structure In most scenarios where a list of resources is requested, we use this data structure to encapsulate it. It is next to the outer data structure, and is a specification for the value of d:
-![](https://qhstatic-us-s3.coohom.com/image/png/1749115747373/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstatic-us-s3.coohom.com/image/png/1749115747373/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Outer Unified Data Structure All APIs respond in the form of JSON, and the outer data structure is unified as follows
+MEDIA_STEP_3_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1749115691586/53D1F60400EA97E9BE984BE9FB4BD3C8.png
+
+MEDIA_STEP_4_TEXT: List Unified Data Structure In most scenarios where a list of resources is requested, we use this data structure to encapsulate it. It is next to the outer data structure, and is a specification for the value of d:
+MEDIA_STEP_4_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115747373/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

@@ -8,23 +8,26 @@ Through data output settings, modify the production docking JSON-related output 
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Entrance In the merchant backend under **Enterprise Catalog - Product Catalog - Advanced - Production Output - Data Output Settings**, configure as needed.
 
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png
 ![](https://qhstatic-us-s3.coohom.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png)
 <img src="https://qhstatic-us-s3.coohom.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Step 2
+Screenshot 2
 
+MEDIA_STEP_2_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1774420337634/D24BB1296A03084B5DC8F0FAE3A4FB0B.png
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1774420337634/D24BB1296A03084B5DC8F0FAE3A4FB0B.png)
 <img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1774420337634/D24BB1296A03084B5DC8F0FAE3A4FB0B.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
-Step 3
+Screenshot 3
 
+MEDIA_STEP_3_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1774420362310/7A5E1330787A0C31C549509CBF81B3C4.png
 ![](https://qhstatic-us-s3.coohom.com/image/png/1774420362310/7A5E1330787A0C31C549509CBF81B3C4.png)
 <img src="https://qhstatic-us-s3.coohom.com/image/png/1774420362310/7A5E1330787A0C31C549509CBF81B3C4.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
@@ -67,21 +70,20 @@ The above settings apply globally regardless of the tool line where they are con
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Entrance In the merchant backend under **Enterprise Catalog - Product Catalog - Advanced - Production Output - Data Output Settings**, configure as needed.
-![](https://qhstatic-us-s3.coohom.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png)
-<img src="https://qhstatic-us-s3.coohom.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Step 2
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1774420337634/D24BB1296A03084B5DC8F0FAE3A4FB0B.png)
-<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1774420337634/D24BB1296A03084B5DC8F0FAE3A4FB0B.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Entrance In the merchant backend under **Enterprise Catalog - Product Catalog - Advanced - Production Output - Data Output Settings**, configure as needed.
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png
 
-3. Step 3
-![](https://qhstatic-us-s3.coohom.com/image/png/1774420362310/7A5E1330787A0C31C549509CBF81B3C4.png)
-<img src="https://qhstatic-us-s3.coohom.com/image/png/1774420362310/7A5E1330787A0C31C549509CBF81B3C4.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1774420337634/D24BB1296A03084B5DC8F0FAE3A4FB0B.png
+
+MEDIA_STEP_3_TEXT: Screenshot 3
+MEDIA_STEP_3_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1774420362310/7A5E1330787A0C31C549509CBF81B3C4.png
 
 </Visibility>

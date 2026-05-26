@@ -7,29 +7,34 @@ description: "在偏好设置中可以设置在替换材质和样式时，素材
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 在定制工具中，把鼠标放置右上角的头像，点击**偏好设置**
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 在弹出的面板点击**定制**，将**风格替换素材库目录设置为展开**模式，然后点击右上角的**关闭**
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211607/F850F34963848B049B559FA2FE8076A2.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211607/F850F34963848B049B559FA2FE8076A2.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211607/F850F34963848B049B559FA2FE8076A2.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 设置完成后，选择模型，然后在右侧参数面板**风格替换**中进行材质或样式的替换时，素材库目录为**展开**状态 * 注意：在偏好设置中设置完成后，再次新建方案时素材库目录默认保持展开状态；若是你手动点击**收起素材库目录**，那么在下次打开方案时为收起的状态
 
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211516/C44501AD9CF345D00E2122D53B1FE611.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211516/C44501AD9CF345D00E2122D53B1FE611.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211516/C44501AD9CF345D00E2122D53B1FE611.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_3_IMAGE_3: https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
@@ -62,25 +67,22 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 在定制工具中，把鼠标放置右上角的头像，点击**偏好设置**
-![](https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 在弹出的面板点击**定制**，将**风格替换素材库目录设置为展开**模式，然后点击右上角的**关闭**
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211607/F850F34963848B049B559FA2FE8076A2.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211607/F850F34963848B049B559FA2FE8076A2.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 在定制工具中，把鼠标放置右上角的头像，点击**偏好设置**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png
 
-3. 设置完成后，选择模型，然后在右侧参数面板**风格替换**中进行材质或样式的替换时，素材库目录为**展开**状态 * 注意：在偏好设置中设置完成后，再次新建方案时素材库目录默认保持展开状态；若是你手动点击**收起素材库目录**，那么在下次打开方案时为收起的状态
-![](https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211516/C44501AD9CF345D00E2122D53B1FE611.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211516/C44501AD9CF345D00E2122D53B1FE611.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 在弹出的面板点击**定制**，将**风格替换素材库目录设置为展开**模式，然后点击右上角的**关闭**
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211607/F850F34963848B049B559FA2FE8076A2.png
+
+MEDIA_STEP_3_TEXT: 设置完成后，选择模型，然后在右侧参数面板**风格替换**中进行材质或样式的替换时，素材库目录为**展开**状态 * 注意：在偏好设置中设置完成后，再次新建方案时素材库目录默认保持展开状态；若是你手动点击**收起素材库目录**，那么在下次打开方案时为收起的状态
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1774939211516/C44501AD9CF345D00E2122D53B1FE611.png
+MEDIA_STEP_3_IMAGE_3: https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png
 
 </Visibility>

@@ -7,24 +7,23 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 由于阳光照射下产生的阴影，可以调节阴影柔和度，数值越大阴影边缘越柔和。 2.在灯光模板中，使用面积更大的光源（例如面光源）会使阴影更加的柔和自然 3.推荐使用最新灯光模板，可以输出更自然的灯光
 
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959114/852DB08411120674B0649707C1F842DF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959114/852DB08411120674B0649707C1F842DF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959114/852DB08411120674B0649707C1F842DF.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959110/299064F71AF542EFBE52BB11D1DDB87E.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959110/299064F71AF542EFBE52BB11D1DDB87E.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959110/299064F71AF542EFBE52BB11D1DDB87E.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_3: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959138/7BD1BF14468054DCDC3CE455D4E2E4F3.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959138/7BD1BF14468054DCDC3CE455D4E2E4F3.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959138/7BD1BF14468054DCDC3CE455D4E2E4F3.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-阴影边缘过于锐利、黑度太高，导致空间层次突兀。
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959103/A45F5AEAA47C6969E56239E26A2157F2.png)
 
 # 解决方法
 
@@ -44,17 +43,16 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 由于阳光照射下产生的阴影，可以调节阴影柔和度，数值越大阴影边缘越柔和。 2.在灯光模板中，使用面积更大的光源（例如面光源）会使阴影更加的柔和自然 3.推荐使用最新灯光模板，可以输出更自然的灯光
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959114/852DB08411120674B0649707C1F842DF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959114/852DB08411120674B0649707C1F842DF.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959110/299064F71AF542EFBE52BB11D1DDB87E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959110/299064F71AF542EFBE52BB11D1DDB87E.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959138/7BD1BF14468054DCDC3CE455D4E2E4F3.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959138/7BD1BF14468054DCDC3CE455D4E2E4F3.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: 由于阳光照射下产生的阴影，可以调节阴影柔和度，数值越大阴影边缘越柔和。 2.在灯光模板中，使用面积更大的光源（例如面光源）会使阴影更加的柔和自然 3.推荐使用最新灯光模板，可以输出更自然的灯光
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959114/852DB08411120674B0649707C1F842DF.png
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959110/299064F71AF542EFBE52BB11D1DDB87E.png
+MEDIA_STEP_1_IMAGE_3: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135959138/7BD1BF14468054DCDC3CE455D4E2E4F3.png
 
 </Visibility>

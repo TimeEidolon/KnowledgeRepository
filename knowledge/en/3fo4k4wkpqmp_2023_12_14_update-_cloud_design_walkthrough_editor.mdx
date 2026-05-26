@@ -7,30 +7,15 @@ description: "【Cloud Design】Rename AI Template to AI"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-**Overall** No changes to the functionality, rename the entry from 'AI Template' to 'AI'
-
-![](https://qhstaticssl.kujiale.com/image/png/1749019688015/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749019688015/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
 **Steps** * Turn on the【Scenes on Same Screen】
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749019796801/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749019796801/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749019796801/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1749019796801/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-## **Aim User**
-
-Enterprise
-
-## **Overall**
-
-No changes to the functionality, rename the entry from 'AI Template' to 'AI'
-
-![](https://qhstaticssl.kujiale.com/image/png/1749019688015/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
 # **【Cloud Design】Partial Button Name Adjustments**
 
@@ -76,13 +61,14 @@ Enterprise
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. **Steps** * Turn on the【Scenes on Same Screen】
-![](https://qhstaticssl.kujiale.com/image/png/1749019796801/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749019796801/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: **Steps** * Turn on the【Scenes on Same Screen】
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749019796801/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

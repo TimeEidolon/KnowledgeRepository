@@ -11,31 +11,36 @@ description: "在定制工具中，可使用定制样式刷快速替换门板样
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=s493t42\_dvY
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/s493t42" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 进入定制工具线，选择顶部工具栏中的**“工具 -** **定制样式刷”**（快捷键为N）
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749022857983/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749022857983/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1749022857983/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-将定制样式刷放在想要复制的门板样式上吸取，再粘贴到其他门板上即可，具体操作如下： **注意：**
+**吸取范围：必须与吸取对象相同真分类模型（材质包，样式包，尺寸范围）** * 门板使用样式刷的时候，可以把门板上的把手样式也刷取到目标门板上，演示如下：
 
-### Step 1
-**吸取模型的真分类属于掩门/移门门芯/腰线，则可成功吸取样式及材质**
-
-### Step 2
-**吸取范围：必须与吸取对象相同真分类模型（材质包，样式包，尺寸范围）** * 门板使用样式刷的时候，可以把门板上的把手样式也刷取到目标门板上，演示如下： **Q：使用定制样式刷时始终提示【当前对象样式范围受限，替换失败】怎么解决？** **A：将对应工具线下的尺寸限制关闭即可**
-
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/gif/1749022990685/F0A51C03C70FFC20F9CC8B06CE52EBF0.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1749022990685/F0A51C03C70FFC20F9CC8B06CE52EBF0.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1749022990685/F0A51C03C70FFC20F9CC8B06CE52EBF0.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1749023029721/95A8CC3702F54B0F17EAF53FFA64EFD6.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1749023029721/95A8CC3702F54B0F17EAF53FFA64EFD6.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1749023029721/95A8CC3702F54B0F17EAF53FFA64EFD6.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
+### Step 3
+常见问题 **Q：使用定制样式刷时始终提示【当前对象样式范围受限，替换失败】怎么解决？** **A：将对应工具线下的尺寸限制关闭即可**
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749023111050/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749023111050/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749023111050/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1749023111050/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 
 # 面向用户
@@ -73,27 +78,24 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=s493t42\_dvY
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/s493t42" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-1. 进入定制工具线，选择顶部工具栏中的**“工具 -** **定制样式刷”**（快捷键为N）
-![](https://qhstaticssl.kujiale.com/image/png/1749022857983/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749022857983/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 进入定制工具线，选择顶部工具栏中的**“工具 -** **定制样式刷”**（快捷键为N）
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749022857983/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-2. 将定制样式刷放在想要复制的门板样式上吸取，再粘贴到其他门板上即可，具体操作如下： **注意：**
+MEDIA_STEP_2_TEXT: **吸取范围：必须与吸取对象相同真分类模型（材质包，样式包，尺寸范围）** * 门板使用样式刷的时候，可以把门板上的把手样式也刷取到目标门板上，演示如下：
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/gif/1749022990685/F0A51C03C70FFC20F9CC8B06CE52EBF0.gif
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1749023029721/95A8CC3702F54B0F17EAF53FFA64EFD6.gif
 
-1. **吸取模型的真分类属于掩门/移门门芯/腰线，则可成功吸取样式及材质**
-
-2. **吸取范围：必须与吸取对象相同真分类模型（材质包，样式包，尺寸范围）** * 门板使用样式刷的时候，可以把门板上的把手样式也刷取到目标门板上，演示如下： **Q：使用定制样式刷时始终提示【当前对象样式范围受限，替换失败】怎么解决？** **A：将对应工具线下的尺寸限制关闭即可**
-![](https://qhstaticssl.kujiale.com/image/gif/1749022990685/F0A51C03C70FFC20F9CC8B06CE52EBF0.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1749022990685/F0A51C03C70FFC20F9CC8B06CE52EBF0.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1749023029721/95A8CC3702F54B0F17EAF53FFA64EFD6.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1749023029721/95A8CC3702F54B0F17EAF53FFA64EFD6.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1749023111050/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749023111050/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 常见问题 **Q：使用定制样式刷时始终提示【当前对象样式范围受限，替换失败】怎么解决？** **A：将对应工具线下的尺寸限制关闭即可**
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749023111050/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

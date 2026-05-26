@@ -7,36 +7,29 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-问题 渲染图出现画面完全曝光，只剩下部分深色门窗可见，其余全是白色
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197221/AEE83D82AC205027D21AF8BEBB5252AB.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197221/AEE83D82AC205027D21AF8BEBB5252AB.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
 解决方法 在排查这种大面积曝光的时候，由于无法从画面判断是哪个光源出现问题，所以需要使用自动曝光参数，来定位曝光的光源。 1.打开模板的自动曝光参数（灯光模板3.0以下才有），手动灯光就使用在手动灯光的效果设置中开启。（极速模板没有此参数，且极速模板出现问题时，大概率不会出现全白的情况。）
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-### Step 3
+### Step 2
 2.这时可以看到，图中吊顶位置的材质，没有明暗对比，没有阴影，与普通墙面材质差别很大，可以判断这是一个自发光材质。且亮度很高，导致画面出现全曝光的情况。
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-### Step 4
+### Step 3
 找出原因后，只需要替换顶面材质即可正常。
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-
-渲染图出现画面完全曝光，只剩下部分深色门窗可见，其余全是白色
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197221/AEE83D82AC205027D21AF8BEBB5252AB.png)
 
 # 解决方法
 
@@ -58,21 +51,20 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 解决方法 在排查这种大面积曝光的时候，由于无法从画面判断是哪个光源出现问题，所以需要使用自动曝光参数，来定位曝光的光源。 1.打开模板的自动曝光参数（灯光模板3.0以下才有），手动灯光就使用在手动灯光的效果设置中开启。（极速模板没有此参数，且极速模板出现问题时，大概率不会出现全白的情况。）
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 2.这时可以看到，图中吊顶位置的材质，没有明暗对比，没有阴影，与普通墙面材质差别很大，可以判断这是一个自发光材质。且亮度很高，导致画面出现全曝光的情况。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 解决方法 在排查这种大面积曝光的时候，由于无法从画面判断是哪个光源出现问题，所以需要使用自动曝光参数，来定位曝光的光源。 1.打开模板的自动曝光参数（灯光模板3.0以下才有），手动灯光就使用在手动灯光的效果设置中开启。（极速模板没有此参数，且极速模板出现问题时，大概率不会出现全白的情况。）
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png
 
-3. 找出原因后，只需要替换顶面材质即可正常。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 2.这时可以看到，图中吊顶位置的材质，没有明暗对比，没有阴影，与普通墙面材质差别很大，可以判断这是一个自发光材质。且亮度很高，导致画面出现全曝光的情况。
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png
+
+MEDIA_STEP_3_TEXT: 找出原因后，只需要替换顶面材质即可正常。
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png
 
 </Visibility>

@@ -7,72 +7,27 @@ description: "![](https://qhstaticssl.kujiale.com/image/png/1751015341346/A8CEBA
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Step 1
+Screenshot 1
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751015341346/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751015341346/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751015341346/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-2. 操作手順 **ステップ1：**「フロアプラン」をクリックして、「ドア開口」からの「特殊な形状のドア開口部」をクリックします。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747129815968/D56EFB3E41263C2232CADBA1E7ACF7DA.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747129815968/D56EFB3E41263C2232CADBA1E7ACF7DA.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
-**ステップ2：** 壁を選択し、「確認」ボタンをクリックします。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747129914509/79337E8C0C75FAD7DCF8B078D0C47C67.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747129914509/79337E8C0C75FAD7DCF8B078D0C47C67.gif" alt="Step 3" style="max-width:100%;height:auto;" />
-
-### Step 4
-**ステップ3：** 「長方形」アイコンをクリックし、壁に長方形を描きます。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747130003317/6878B879A213E2177E3FD988B22B8310.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747130003317/6878B879A213E2177E3FD988B22B8310.gif" alt="Step 4" style="max-width:100%;height:auto;" />
-
-### Step 5
-**ステップ4：** 「面取り」アイコンからの「外側の丸みを帯びた角」アイコンをクリックし、Shiftキーを押しながら両側のパスを選択し、数値欄に面取り値を入力します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747130302495/262223D3365A54B14E84152596C94955.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747130302495/262223D3365A54B14E84152596C94955.gif" alt="Step 5" style="max-width:100%;height:auto;" />
-
-
-## 1. 機能概要
-
-キッチンの入口などに角に丸みのある開口部を設けることで、やわらかな曲線の丸みを帯びた優しいふんわりとした空間に仕上げます。このチュートリアルは、角に丸みのある開口部を作成するをご説明します。
-
-## 2. 操作手順
-
-**ステップ1：**「フロアプラン」をクリックして、「ドア開口」からの「特殊な形状のドア開口部」をクリックします。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747129815968/D56EFB3E41263C2232CADBA1E7ACF7DA.gif)
-
-**ステップ2：** 壁を選択し、「確認」ボタンをクリックします。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747129914509/79337E8C0C75FAD7DCF8B078D0C47C67.gif)
-
-**ステップ3：** 「長方形」アイコンをクリックし、壁に長方形を描きます。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747130003317/6878B879A213E2177E3FD988B22B8310.gif)
-
-**ステップ4：** 「面取り」アイコンからの「外側の丸みを帯びた角」アイコンをクリックし、Shiftキーを押しながら両側のパスを選択し、数値欄に面取り値を入力します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747130302495/262223D3365A54B14E84152596C94955.gif)
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Step 1
-![](https://qhstaticssl.kujiale.com/image/png/1751015341346/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751015341346/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Screenshot 1
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751015341346/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

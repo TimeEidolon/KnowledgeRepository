@@ -7,6 +7,53 @@ description: "Function Overview"
 
 Displacement is a common feature used to create realistic textures. Unlike bump or normal parallax effects, displacement creates many details by deforming the model, often used to add extra detail effects to low-resolution models. To create details with a displacement map, the model is generally subdivided so that a true topology can be created.
 
+
+## Steps with screenshots
+
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+### Step 1
+1. First, you need to turn on the "Rendering Complex Material" switch in the [Post Processing] section
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+2. Then click the target product model, select the corresponding material in the [Model] section, and a "Displacement" feature entry will appear for you to operate as needed.
+
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
+1. Comparison Before and After Adding the Displacement Feature Before adding displacement:
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+After adding displacement:
+
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+2. The Displacement Feature Requires a Displacement Map to be Effective, for example:
+
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+5. Material Displacement Feature Video Tutorial:
+
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif
+![](https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif)
+<img src="https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif" alt="Step 6" style="max-width:100%;height:auto;" />
+
 # For Users
 
 All photo studio users
@@ -59,15 +106,29 @@ Note:
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Enabling the displacement feature will decrease real-time preview response speed
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. After editing the displacement material and saving it to the personal library, you will need to reset the "Subdivision Level" next time it is called
+MEDIA_STEP_1_TEXT: 1. First, you need to turn on the "Rendering Complex Material" switch in the [Post Processing] section
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. The level of subdivision depends on the number of polygons in the model. If the model has a large number of polygons, a lower subdivision level setting can achieve a sufficient displacement effect. In theory, the higher the subdivision parameter, the better the displacement effect, but it also greatly increases the risk of rendering failure.
+MEDIA_STEP_2_TEXT: 2. Then click the target product model, select the corresponding material in the [Model] section, and a "Displacement" feature entry will appear for you to operate as needed.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_3_TEXT: 1. Comparison Before and After Adding the Displacement Feature Before adding displacement:
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_4_TEXT: After adding displacement:
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_5_TEXT: 2. The Displacement Feature Requires a Displacement Map to be Effective, for example:
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png
+
+MEDIA_STEP_6_TEXT: 5. Material Displacement Feature Video Tutorial:
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif
 
 </Visibility>

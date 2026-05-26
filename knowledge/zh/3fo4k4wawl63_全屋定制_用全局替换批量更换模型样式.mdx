@@ -7,22 +7,28 @@ description: "全局替换支持场景内所有定制模型进行材质、样式
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-进入全屋定制设计，选择**厨房/衣帽间**
+选择顶层工具栏中的**全局编辑-全局替换**工具
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753855055463/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1753855055463/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1753855055463/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-选择顶层工具栏中的**全局编辑-全局替换**工具 选中柜体，右侧参数面板选择需要替换的材质、五金等即可完成全局替换 * **素材库面板如何快速搜索素材等详细操作，可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/kitchen-closet-use-style-panel-to-replace-the-material-and-style-of-models?kjl_source=hc)** * 操作演示如下：
+全局替换 选中柜体，右侧参数面板选择需要替换的材质、五金等即可完成全局替换 * **素材库面板如何快速搜索素材等详细操作，可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/kitchen-closet-use-style-panel-to-replace-the-material-and-style-of-models?kjl_source=hc)**
 
-![](https://qhstaticssl.kujiale.com/image/png/1753855055463/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753855055463/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753855196941/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1753855196941/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1753855196941/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+### Step 3
+* 操作演示如下：
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1753856375350/DF3697E881C01E9486D2DF7BFCCBC4C5.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1753856375350/DF3697E881C01E9486D2DF7BFCCBC4C5.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1753856375350/DF3697E881C01E9486D2DF7BFCCBC4C5.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/gif/1753856375350/DF3697E881C01E9486D2DF7BFCCBC4C5.gif" alt="Step 3" style="max-width:100%;height:auto;" />
 
 
 # 面向用户
@@ -53,19 +59,20 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 进入全屋定制设计，选择**厨房/衣帽间**
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 选择顶层工具栏中的**全局编辑-全局替换**工具 选中柜体，右侧参数面板选择需要替换的材质、五金等即可完成全局替换 * **素材库面板如何快速搜索素材等详细操作，可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/kitchen-closet-use-style-panel-to-replace-the-material-and-style-of-models?kjl_source=hc)** * 操作演示如下：
-![](https://qhstaticssl.kujiale.com/image/png/1753855055463/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753855055463/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1753855196941/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753855196941/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1753856375350/DF3697E881C01E9486D2DF7BFCCBC4C5.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1753856375350/DF3697E881C01E9486D2DF7BFCCBC4C5.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 选择顶层工具栏中的**全局编辑-全局替换**工具
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753855055463/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: 全局替换 选中柜体，右侧参数面板选择需要替换的材质、五金等即可完成全局替换 * **素材库面板如何快速搜索素材等详细操作，可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/kitchen-closet-use-style-panel-to-replace-the-material-and-style-of-models?kjl_source=hc)**
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753855196941/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_3_TEXT: * 操作演示如下：
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1753856375350/DF3697E881C01E9486D2DF7BFCCBC4C5.gif
 
 </Visibility>

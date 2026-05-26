@@ -7,54 +7,27 @@ description: "![](https://qhstaticssl.kujiale.com/image/png/1751020143369/A8CEBA
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Step 1
+Screenshot 1
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751020143369/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751020143369/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751020143369/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-２．操作手順 **ステップ1：** 画面上部の「レンダリング」アイコンをクリックします。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749717895524/5A7150A3FEA2365E0AE0399C7550B41D.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1749717895524/5A7150A3FEA2365E0AE0399C7550B41D.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
-**ステップ2：** 「外景」からお好みのテンプレートを選択します。カーソルを外部環境テンプレートに合わせると、パラメータバーが表示されます。
-
-![](https://qhstaticssl.kujiale.com/image/png/1749719135283/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749719135283/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
-
-
-（このレンダリング画像は、解像度が4Kの静止画です。）
-
-## １．機能概要
-
-レンダリングの際、外部環境テンプレートの各種パラメータを調整することで、シーン全体の光の雰囲気や反射効果を最適化できます。
-
-## ２．操作手順
-
-**ステップ1：** 画面上部の「レンダリング」アイコンをクリックします。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749717895524/5A7150A3FEA2365E0AE0399C7550B41D.gif)
-
-**ステップ2：** 「外景」からお好みのテンプレートを選択します。カーソルを外部環境テンプレートに合わせると、パラメータバーが表示されます。
-
-![](https://qhstaticssl.kujiale.com/image/png/1749719135283/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Step 1
-![](https://qhstaticssl.kujiale.com/image/png/1751020143369/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751020143369/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Screenshot 1
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751020143369/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

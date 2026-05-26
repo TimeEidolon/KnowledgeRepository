@@ -7,46 +7,50 @@ description: "功能简介"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 1. 首先需要在【后处理】栏开启「渲染复杂材质」的开关
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 2. 然后点击目标商品模型，在【模型】栏选择对应材质，会出现「置换」的功能入口，按需操作即可
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 1. 添加置换功能的前后对比 添加置换前：
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 添加置换后：
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 ### Step 5
 2. 置换功能需要置换贴图才会有效果，例如：
 
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
 ### Step 6
 5. 材质置换功能视频操作教程：
 
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif" alt="Step 6" style="max-width:100%;height:auto;" />
 
-
-置换是用于创建逼真纹理常见的功能，相比于凹凸或者法线的视差效果置换则是通过模型发生形变来创建很多的细节，多用于低分辨率的模型增加额外的细节效果。使用置换贴图为了能够创建细节，模型一般会被细分，这样真的拓扑结构才能够被创建
 
 # 面向用户
 
@@ -100,33 +104,29 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 1. 首先需要在【后处理】栏开启「渲染复杂材质」的开关
-![](https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 2. 然后点击目标商品模型，在【模型】栏选择对应材质，会出现「置换」的功能入口，按需操作即可
-![](https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 1. 首先需要在【后处理】栏开启「渲染复杂材质」的开关
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614887790/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. 1. 添加置换功能的前后对比 添加置换前：
-![](https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 2. 然后点击目标商品模型，在【模型】栏选择对应材质，会出现「置换」的功能入口，按需操作即可
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772614998808/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. 添加置换后：
-![](https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 1. 添加置换功能的前后对比 添加置换前：
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772616091285/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-5. 2. 置换功能需要置换贴图才会有效果，例如：
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png" alt="Step 5" style="max-width:100%;height:auto;" />
+MEDIA_STEP_4_TEXT: 添加置换后：
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1772616102221/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-6. 5. 材质置换功能视频操作教程：
-![](https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif" alt="Step 6" style="max-width:100%;height:auto;" />
+MEDIA_STEP_5_TEXT: 2. 置换功能需要置换贴图才会有效果，例如：
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1721876225891/3DC79FA4BC3543C5A029579AF1242B0C.png
+
+MEDIA_STEP_6_TEXT: 5. 材质置换功能视频操作教程：
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1772616006830/859403326A1173AFA541E708B5A09D5D.gif
 
 </Visibility>

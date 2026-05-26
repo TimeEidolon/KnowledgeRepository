@@ -7,30 +7,22 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-问题 相同素材在同一空间内渲染的效果不一致？如下图
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464746/82436C230B591C202486104AFE27AC5E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464746/82436C230B591C202486104AFE27AC5E.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
 原因 出现这个问题的大多是卫生间等封闭小空间，这些空间都有一定的特性，空间小，没有窗户或者窗户较小，这种场景大多数需要射灯或者补灯来照亮，射灯等光源的特性决定了他对正下方的影响要大于侧面，所以对地面的影响会大于对墙面的影响，这就会造成地面的材质出现比墙面材质较浅的效果，造成视觉上的颜色不一致。这也是现实中真实存在的一种效果。
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-### Step 3
-Step 3
+### Step 2
+Screenshot 2
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464694/414170A4978FA380F02043710B516A9B.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464694/414170A4978FA380F02043710B516A9B.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464694/414170A4978FA380F02043710B516A9B.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464694/414170A4978FA380F02043710B516A9B.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-相同素材在同一空间内渲染的效果不一致？如下图
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464746/82436C230B591C202486104AFE27AC5E.png)
 
 # 原因
 
@@ -46,17 +38,17 @@ Step 3
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 原因 出现这个问题的大多是卫生间等封闭小空间，这些空间都有一定的特性，空间小，没有窗户或者窗户较小，这种场景大多数需要射灯或者补灯来照亮，射灯等光源的特性决定了他对正下方的影响要大于侧面，所以对地面的影响会大于对墙面的影响，这就会造成地面的材质出现比墙面材质较浅的效果，造成视觉上的颜色不一致。这也是现实中真实存在的一种效果。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Step 2
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464694/414170A4978FA380F02043710B516A9B.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464694/414170A4978FA380F02043710B516A9B.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 原因 出现这个问题的大多是卫生间等封闭小空间，这些空间都有一定的特性，空间小，没有窗户或者窗户较小，这种场景大多数需要射灯或者补灯来照亮，射灯等光源的特性决定了他对正下方的影响要大于侧面，所以对地面的影响会大于对墙面的影响，这就会造成地面的材质出现比墙面材质较浅的效果，造成视觉上的颜色不一致。这也是现实中真实存在的一种效果。
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464729/DE93CAF1494B85FEF9F0D7116A94387E.png
+
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762134464694/414170A4978FA380F02043710B516A9B.png
 
 </Visibility>

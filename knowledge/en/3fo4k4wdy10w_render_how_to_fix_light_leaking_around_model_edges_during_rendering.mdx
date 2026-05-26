@@ -7,21 +7,15 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Check if there are openings or gaps between walls in the imported model.
-
-### Step 2
 Open the light leakage repair in the lighting version.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-Abnormal light strips or bright edges appear at corners, floor seams, or ceiling edges.
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031450/43CA081BC2833BA37D008814AE7F1E1C.png)
 
 # Solution
 
@@ -35,15 +29,14 @@ Abnormal light strips or bright edges appear at corners, floor seams, or ceiling
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Check if there are openings or gaps between walls in the imported model.
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Open the light leakage repair in the lighting version.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Open the light leakage repair in the lighting version.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png
 
 </Visibility>

@@ -11,17 +11,23 @@ The model can be fuzzy stretched in six directions, which is suitable for design
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=zOQs56MC7K4
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/zOQs56MC7K4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 Scale 1、Switch to **Select cabinet**. 2、Select the cabinet, select **Scale** in theswitch control.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737029441149/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1737029441149/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1737029441149/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 3、By dragging the direction arrow, the model can be extended, reduced or enlarged in the direction of the selected arrow. 4、When the mouse is stretched to the boundary of other models or walls, there will be an adsorption alignment effect.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1737029808586/BE392B1686CB6768370F96A339DFE625.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1737029808586/BE392B1686CB6768370F96A339DFE625.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1737029808586/BE392B1686CB6768370F96A339DFE625.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
@@ -48,19 +54,20 @@ All users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=zOQs56MC7K4
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/zOQs56MC7K4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-1. Scale 1、Switch to **Select cabinet**. 2、Select the cabinet, select **Scale** in theswitch control.
-![](https://qhstaticssl.kujiale.com/image/png/1737029441149/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1737029441149/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Scale 1、Switch to **Select cabinet**. 2、Select the cabinet, select **Scale** in theswitch control.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737029441149/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-2. 3、By dragging the direction arrow, the model can be extended, reduced or enlarged in the direction of the selected arrow. 4、When the mouse is stretched to the boundary of other models or walls, there will be an adsorption alignment effect.
-![](https://qhstaticssl.kujiale.com/image/gif/1737029808586/BE392B1686CB6768370F96A339DFE625.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1737029808586/BE392B1686CB6768370F96A339DFE625.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 3、By dragging the direction arrow, the model can be extended, reduced or enlarged in the direction of the selected arrow. 4、When the mouse is stretched to the boundary of other models or walls, there will be an adsorption alignment effect.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1737029808586/BE392B1686CB6768370F96A339DFE625.gif
 
 </Visibility>

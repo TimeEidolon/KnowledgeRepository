@@ -7,17 +7,19 @@ description: "商家用户可以根据需要灵活配置定制工具的三个轴
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 入口 进入设计工具，点击左侧栏的**行业库—厨卫/全屋家具定制**进入工具页面
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 未禁用轴向工具端效果 正常情况下，在定制工具中，**移动旋转控件和三轴旋转控件**可以操作对模型进行XYZ三个轴向旋转：
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
@@ -66,17 +68,17 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 入口 进入设计工具，点击左侧栏的**行业库—厨卫/全屋家具定制**进入工具页面
-![](https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 未禁用轴向工具端效果 正常情况下，在定制工具中，**移动旋转控件和三轴旋转控件**可以操作对模型进行XYZ三个轴向旋转：
-![](https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 入口 进入设计工具，点击左侧栏的**行业库—厨卫/全屋家具定制**进入工具页面
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: 未禁用轴向工具端效果 正常情况下，在定制工具中，**移动旋转控件和三轴旋转控件**可以操作对模型进行XYZ三个轴向旋转：
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

@@ -7,36 +7,29 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-First, check all the lights in the scene (including sunlight) to see if there are too many or if they are too bright. You can try deleting them all and then rendering again.
-
-### Step 2
 If deleting them results in a normal exposure, it means the lights are causing the overexposure, and you can adjust the Brightness settings.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-### Step 3
-If it's still overexposed (abnormal) after deleting all the lights, adjust the camera position to render from multiple angles and check for missing walls, ceilings, or floors (hard installations).
-
-### Step 4
+### Step 2
 If no Finishes are missing, you can try enabling Specular reflection rendering to see if it normalizes.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-### Step 1
+### Step 3
 Adjust the 【Environment】under 【Ambient LightBrightness】. If overexposed, reduce the value; if too dark, increase the value.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-
-The render is overexposed, with white walls or bright reflective areas losing detail, resulting in a glaring appearance.
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066482/A30CBE9AE45C2648BB72D48390C212C7.png)
 
 # Solution
 
@@ -64,25 +57,20 @@ The render is overexposed, with white walls or bright reflective areas losing de
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. First, check all the lights in the scene (including sunlight) to see if there are too many or if they are too bright. You can try deleting them all and then rendering again.
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. If deleting them results in a normal exposure, it means the lights are causing the overexposure, and you can adjust the Brightness settings.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: If deleting them results in a normal exposure, it means the lights are causing the overexposure, and you can adjust the Brightness settings.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066436/1DEC84D75788641443FAEE07A481D4C3.png
 
-3. If it's still overexposed (abnormal) after deleting all the lights, adjust the camera position to render from multiple angles and check for missing walls, ceilings, or floors (hard installations).
+MEDIA_STEP_2_TEXT: If no Finishes are missing, you can try enabling Specular reflection rendering to see if it normalizes.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png
 
-4. If no Finishes are missing, you can try enabling Specular reflection rendering to see if it normalizes.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066388/0D535192DA1267857807512F8AD559EF.png" alt="Step 4" style="max-width:100%;height:auto;" />
-
-1. Adjust the 【Environment】under 【Ambient LightBrightness】. If overexposed, reduce the value; if too dark, increase the value.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Adjust the 【Environment】under 【Ambient LightBrightness】. If overexposed, reduce the value; if too dark, increase the value.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136066438/6D268EB7E9438124EA15ABBE3FCA42DF.png
 
 </Visibility>

@@ -7,24 +7,15 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Problem The wall has light and shadow, the ground has light and shadow, or there is a blue light source at a certain position, and the surface light and ceiling overlap causing shadows and other issues.
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272598/BCCC5B64072D0F821B4822BE71DFCA13.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272598/BCCC5B64072D0F821B4822BE71DFCA13.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
 Solution Enter Custom lighting, check if there is a light source at the corresponding position, and delete or adjust it as needed.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-The wall has light and shadow, the ground has light and shadow, or there is a blue light source at a certain position, and the surface light and ceiling overlap causing shadows and other issues.
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272598/BCCC5B64072D0F821B4822BE71DFCA13.png)
 
 # Solution
 
@@ -36,13 +27,14 @@ Enter Custom lighting, check if there is a light source at the corresponding pos
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Solution Enter Custom lighting, check if there is a light source at the corresponding position, and delete or adjust it as needed.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Solution Enter Custom lighting, check if there is a light source at the corresponding position, and delete or adjust it as needed.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135272610/150BB9B2F596979081B2932B95D1688E.png
 
 </Visibility>

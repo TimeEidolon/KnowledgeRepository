@@ -7,28 +7,29 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 自检 目前max有很多检查法线的插件、小工具，可以自行选择 如果没有小工具，那么在max里也可以检查，使用vraylightmtl赋予需要检测的部位，进行渲染，出现黑色的地方就是法线反，正常应该是vraylight的颜色
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 使用max自带的编辑法线功能，就可以看到每个点上的法线方向，一般平面（指非弧形）的法线都是如下图的蓝色的，不正常的就是绿色的线。
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872076/F3A56EABFC699E6C4341B9B01A3A9E58.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872076/F3A56EABFC699E6C4341B9B01A3A9E58.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872076/F3A56EABFC699E6C4341B9B01A3A9E58.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 解决方法 知道哪个位置法线反，就直接检查那个位置，把法线反的地方选中翻转即可。
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-
-可能会出现渲染变黑问题
 
 # 自检
 
@@ -52,21 +53,20 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 自检 目前max有很多检查法线的插件、小工具，可以自行选择 如果没有小工具，那么在max里也可以检查，使用vraylightmtl赋予需要检测的部位，进行渲染，出现黑色的地方就是法线反，正常应该是vraylight的颜色
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 使用max自带的编辑法线功能，就可以看到每个点上的法线方向，一般平面（指非弧形）的法线都是如下图的蓝色的，不正常的就是绿色的线。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872076/F3A56EABFC699E6C4341B9B01A3A9E58.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872076/F3A56EABFC699E6C4341B9B01A3A9E58.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 自检 目前max有很多检查法线的插件、小工具，可以自行选择 如果没有小工具，那么在max里也可以检查，使用vraylightmtl赋予需要检测的部位，进行渲染，出现黑色的地方就是法线反，正常应该是vraylight的颜色
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872046/BDE8ED1075B023E7ED7172A486C86283.png
 
-3. 解决方法 知道哪个位置法线反，就直接检查那个位置，把法线反的地方选中翻转即可。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 使用max自带的编辑法线功能，就可以看到每个点上的法线方向，一般平面（指非弧形）的法线都是如下图的蓝色的，不正常的就是绿色的线。
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872076/F3A56EABFC699E6C4341B9B01A3A9E58.png
+
+MEDIA_STEP_3_TEXT: 解决方法 知道哪个位置法线反，就直接检查那个位置，把法线反的地方选中翻转即可。
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504872081/00C9C06E74F27C37919BC54D90281B29.png
 
 </Visibility>

@@ -7,22 +7,42 @@ description: "在户型图纸工具中，可以通过更换配色组合和修改
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-单击顶部工具栏中的**标注**或**双击平面图纸**进入标注模式
+入口 进入室内设计，选择**图纸 - 户型图纸**
 
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895603/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895603/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750907140388/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1750907140388/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1750907140388/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-选择标注对象
+更换配色组合 在左侧配色栏中更换配色组合
+
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895743/2D37C2734C50A6837B78ACB4959B66FF.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895743/2D37C2734C50A6837B78ACB4959B66FF.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895743/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
+Screenshot 3
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1734517873094/75DAEA62CE4A113479AA882BE6A4873D.gif
+![](https://qhstaticssl.kujiale.com/image/gif/1734517873094/75DAEA62CE4A113479AA882BE6A4873D.gif)
+<img src="https://qhstaticssl.kujiale.com/image/gif/1734517873094/75DAEA62CE4A113479AA882BE6A4873D.gif" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
+单击顶部工具栏中的**标注**或**双击平面图纸**进入标注模式
+
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895603/2D37C2734C50A6837B78ACB4959B66FF.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895603/2D37C2734C50A6837B78ACB4959B66FF.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895603/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
 在右侧参数面板中修改对象样式
 
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/image/png/1734520130909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1734520130909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1734520130909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1734520130909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
 
 # 面向用户
@@ -59,19 +79,26 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 单击顶部工具栏中的**标注**或**双击平面图纸**进入标注模式
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895603/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895603/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 选择标注对象
+MEDIA_STEP_1_TEXT: 入口 进入室内设计，选择**图纸 - 户型图纸**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750907140388/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. 在右侧参数面板中修改对象样式
-![](https://qhstaticssl.kujiale.com/image/png/1734520130909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1734520130909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 更换配色组合 在左侧配色栏中更换配色组合
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895743/2D37C2734C50A6837B78ACB4959B66FF.png
+
+MEDIA_STEP_3_TEXT: Screenshot 3
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1734517873094/75DAEA62CE4A113479AA882BE6A4873D.gif
+
+MEDIA_STEP_4_TEXT: 单击顶部工具栏中的**标注**或**双击平面图纸**进入标注模式
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1734575895603/2D37C2734C50A6837B78ACB4959B66FF.png
+
+MEDIA_STEP_5_TEXT: 在右侧参数面板中修改对象样式
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/image/png/1734520130909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

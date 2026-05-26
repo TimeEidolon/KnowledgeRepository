@@ -8,31 +8,35 @@ In the interior design environment, selecting the cabinet allows you to modify t
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Select **"Advanced tool - Kitchen ＆ Bath"**, to enter the interior design tool page.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762487366786/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1762487366786/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1762487366786/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-### Step 1
+### Step 2
 Select one or more cabinets, click the **Style** option in the parameter bar on the right, then click the replacement button for **Body Material**.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511610/36A7EEB304196EFAEAB0EEF7579653AA.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511610/36A7EEB304196EFAEAB0EEF7579653AA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511610/36A7EEB304196EFAEAB0EEF7579653AA.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-In the popped-up **Body Material** panel, click the **Public Catalog** at the top, then select the desired material from the resources below and click to apply the modification successfully.
-
-![](https://qhstaticssl.kujiale.com/image/png/1762497641827/153B34DC5080F27B4DE852C6AB783D6A.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1762497641827/153B34DC5080F27B4DE852C6AB783D6A.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511610/36A7EEB304196EFAEAB0EEF7579653AA.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
+In the popped-up **Body Material** panel, click the **Public Catalog** at the top, then select the desired material from the resources below and click to apply the modification successfully.
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762497641827/153B34DC5080F27B4DE852C6AB783D6A.png
+![](https://qhstaticssl.kujiale.com/image/png/1762497641827/153B34DC5080F27B4DE852C6AB783D6A.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1762497641827/153B34DC5080F27B4DE852C6AB783D6A.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
 Click the replacement button for **Door Material**, then in the popped-up **Door Material** panel, click the **Public Catalog** at the top, select the desired material from the resources below, and click to modify. At this point, the cabinet's material modification is complete.
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511717/AE8A2347CF2ED8055181D9BA7BC2CCDA.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511717/AE8A2347CF2ED8055181D9BA7BC2CCDA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511717/AE8A2347CF2ED8055181D9BA7BC2CCDA.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511717/AE8A2347CF2ED8055181D9BA7BC2CCDA.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 # For Users
 
@@ -62,25 +66,23 @@ All Users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Select **"Advanced tool - Kitchen ＆ Bath"**, to enter the interior design tool page.
-![](https://qhstaticssl.kujiale.com/image/png/1762487366786/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1762487366786/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-1. Select one or more cabinets, click the **Style** option in the parameter bar on the right, then click the replacement button for **Body Material**.
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511610/36A7EEB304196EFAEAB0EEF7579653AA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511610/36A7EEB304196EFAEAB0EEF7579653AA.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Select **"Advanced tool - Kitchen ＆ Bath"**, to enter the interior design tool page.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762487366786/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-2. In the popped-up **Body Material** panel, click the **Public Catalog** at the top, then select the desired material from the resources below and click to apply the modification successfully.
-![](https://qhstaticssl.kujiale.com/image/png/1762497641827/153B34DC5080F27B4DE852C6AB783D6A.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1762497641827/153B34DC5080F27B4DE852C6AB783D6A.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Select one or more cabinets, click the **Style** option in the parameter bar on the right, then click the replacement button for **Body Material**.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511610/36A7EEB304196EFAEAB0EEF7579653AA.png
 
-3. Click the replacement button for **Door Material**, then in the popped-up **Door Material** panel, click the **Public Catalog** at the top, select the desired material from the resources below, and click to modify. At this point, the cabinet's material modification is complete.
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511717/AE8A2347CF2ED8055181D9BA7BC2CCDA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511717/AE8A2347CF2ED8055181D9BA7BC2CCDA.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: In the popped-up **Body Material** panel, click the **Public Catalog** at the top, then select the desired material from the resources below and click to apply the modification successfully.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762497641827/153B34DC5080F27B4DE852C6AB783D6A.png
+
+MEDIA_STEP_4_TEXT: Click the replacement button for **Door Material**, then in the popped-up **Door Material** panel, click the **Public Catalog** at the top, select the desired material from the resources below, and click to modify. At this point, the cabinet's material modification is complete.
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1762502511717/AE8A2347CF2ED8055181D9BA7BC2CCDA.png
 
 </Visibility>

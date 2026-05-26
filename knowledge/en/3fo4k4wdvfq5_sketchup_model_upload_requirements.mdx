@@ -8,40 +8,21 @@ In order to facilitate smoother uploading of SketchUp models in Coohom, this art
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Models from version 2024 and earlier
+Model Requirements 3D "File"--"Export"–"3D Model", choose obj format, check if the exported obj file exceeds 3 million faces, as shown:
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524484/9A165AB0735BAB5E728EDFDD012C2BEA.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524484/9A165AB0735BAB5E728EDFDD012C2BEA.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524484/9A165AB0735BAB5E728EDFDD012C2BEA.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-***SKP*** file uploads, support for packaged uploads 3D "File"--"Export"–"3D Model", choose obj format, check if the exported obj file exceeds 3 million faces, as shown:
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524484/9A165AB0735BAB5E728EDFDD012C2BEA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524484/9A165AB0735BAB5E728EDFDD012C2BEA.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 1
 Units should be in millimeters or inches. (Units can be set to mm in SketchUp through "Window"-"Model Info"-"Units")
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524466/940DF5A2F079E67020F45AE98DECC519.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524466/940DF5A2F079E67020F45AE98DECC519.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524466/940DF5A2F079E67020F45AE98DECC519.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-Model file and object size should both be less than 200MB. (How to check actual object size: export obj format file from the model file)
-
-### Step 3
-Each side length of the model must not exceed 30 meters.
-
-### Step 4
-Texture formats supported are .jpg and .png. The image mode must be RGB, and texture file pixels must not exceed 5,000.
-
-### Step 5
-Material names should not have special symbols, and only default SketchUp materials are supported, not V-Ray or other plugin materials.
-
-### Step 6
-Model view should be set to front view.
-
-### Step 7
-The file name of the su model must not contain spaces.
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524466/940DF5A2F079E67020F45AE98DECC519.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 # For Users
 
@@ -79,31 +60,17 @@ All users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Models from version 2024 and earlier
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. ***SKP*** file uploads, support for packaged uploads 3D "File"--"Export"–"3D Model", choose obj format, check if the exported obj file exceeds 3 million faces, as shown:
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524484/9A165AB0735BAB5E728EDFDD012C2BEA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524484/9A165AB0735BAB5E728EDFDD012C2BEA.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Model Requirements 3D "File"--"Export"–"3D Model", choose obj format, check if the exported obj file exceeds 3 million faces, as shown:
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524484/9A165AB0735BAB5E728EDFDD012C2BEA.png
 
-1. Units should be in millimeters or inches. (Units can be set to mm in SketchUp through "Window"-"Model Info"-"Units")
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524466/940DF5A2F079E67020F45AE98DECC519.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524466/940DF5A2F079E67020F45AE98DECC519.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-2. Model file and object size should both be less than 200MB. (How to check actual object size: export obj format file from the model file)
-
-3. Each side length of the model must not exceed 30 meters.
-
-4. Texture formats supported are .jpg and .png. The image mode must be RGB, and texture file pixels must not exceed 5,000.
-
-5. Material names should not have special symbols, and only default SketchUp materials are supported, not V-Ray or other plugin materials.
-
-6. Model view should be set to front view.
-
-7. The file name of the su model must not contain spaces.
+MEDIA_STEP_2_TEXT: Units should be in millimeters or inches. (Units can be set to mm in SketchUp through "Window"-"Model Info"-"Units")
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762308524466/940DF5A2F079E67020F45AE98DECC519.png
 
 </Visibility>

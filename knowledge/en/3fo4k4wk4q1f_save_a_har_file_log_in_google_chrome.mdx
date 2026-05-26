@@ -18,38 +18,44 @@ HAR (HTTP Archive format) is a JSON-formatted archive file format that logs a we
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Prepare a clean and newly opened Google Chrome private browsing environment:
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882082603/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751882082603/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751882082603/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 Open the DevTools panel by pressing **F12****(Windows)** or **Option + Command + I****(Mac)** in the current browser tab.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882136936/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751882136936/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751882136936/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 Enter the page URL (e.g., [www.coohom.com](http://www.coohom.com/)) in the address bar. Once the page has fully loaded, confirm that no new network activity is occurring in the **Network** tab of DevTools.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882217575/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751882217575/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751882217575/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 Locate the **"Export HAR"**button in the DevTools Network tab (usually represented as "Export HAR with content"), click it, and select a folder to save the HAR file locally.
 
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1752634561389/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1752634561389/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1752634561389/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1751882416350/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751882416350/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751882416350/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 ### Step 5
 Locate the HAR file you just saved, and share it with Coohom support. We will pass it on to our testing and development team for further investigation. * For specific operations, you can see the video tutorial: [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_c6830e62_630f_4450_1752634288148.mp4) ​
 
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882508665/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751882508665/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751882508665/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
@@ -92,31 +98,27 @@ All users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Prepare a clean and newly opened Google Chrome private browsing environment:
-![](https://qhstaticssl.kujiale.com/image/png/1751882082603/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751882082603/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Open the DevTools panel by pressing **F12****(Windows)** or **Option + Command + I****(Mac)** in the current browser tab.
-![](https://qhstaticssl.kujiale.com/image/png/1751882136936/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751882136936/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Prepare a clean and newly opened Google Chrome private browsing environment:
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882082603/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. Enter the page URL (e.g., [www.coohom.com](http://www.coohom.com/)) in the address bar. Once the page has fully loaded, confirm that no new network activity is occurring in the **Network** tab of DevTools.
-![](https://qhstaticssl.kujiale.com/image/png/1751882217575/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751882217575/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Open the DevTools panel by pressing **F12****(Windows)** or **Option + Command + I****(Mac)** in the current browser tab.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882136936/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. Locate the **"Export HAR"**button in the DevTools Network tab (usually represented as "Export HAR with content"), click it, and select a folder to save the HAR file locally.
-![](https://qhstaticssl.kujiale.com/image/png/1752634561389/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1752634561389/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1751882416350/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751882416350/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Enter the page URL (e.g., [www.coohom.com](http://www.coohom.com/)) in the address bar. Once the page has fully loaded, confirm that no new network activity is occurring in the **Network** tab of DevTools.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882217575/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-5. Locate the HAR file you just saved, and share it with Coohom support. We will pass it on to our testing and development team for further investigation. * For specific operations, you can see the video tutorial: [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_c6830e62_630f_4450_1752634288148.mp4) ​
-![](https://qhstaticssl.kujiale.com/image/png/1751882508665/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751882508665/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
+MEDIA_STEP_4_TEXT: Locate the **"Export HAR"**button in the DevTools Network tab (usually represented as "Export HAR with content"), click it, and select a folder to save the HAR file locally.
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1752634561389/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1751882416350/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_5_TEXT: Locate the HAR file you just saved, and share it with Coohom support. We will pass it on to our testing and development team for further investigation. * For specific operations, you can see the video tutorial: [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_c6830e62_630f_4450_1752634288148.mp4) ​
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882508665/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

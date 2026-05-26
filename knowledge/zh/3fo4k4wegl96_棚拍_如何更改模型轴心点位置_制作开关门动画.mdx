@@ -7,24 +7,15 @@ description: "功能简介**"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-新增编辑轴心点功能，用户可以根据自身需要对方案内的模型轴心点进行移动
+操作入口 展开层级面板——右键点击想要编辑的模型/组合——【轴心】
 
-### Step 2
-支持两种轴心点复位方式：轴心居中到对象、对象居中到轴心
-
-### Step 3
-基于轴心点编辑功能，可以做出更加丰富的模型展示动画，如开关门动画 展开层级面板——右键点击想要编辑的模型/组合——【轴心】 所有酷家乐电商棚拍用户 **1.轴心点编辑** 通过轴心点编辑功能，用户可以根据自身需要，对模型轴心点进行移动，后续模型的旋转、缩放都将基于新轴心点进行 编辑完成后，点击Esc键可退出轴心点编辑工具 **2.轴心点复位**：轴心点复位可以将模型轴心点重置到初始位置，复位方式有两种： * 轴心居中到对象：点击后，轴心点复位，模型现有位置不会改变 * 对象居中到轴心：点击后，模型复位，轴心点现有位置不会改变 **1.轴心点编辑与视频制作**：通过轴心点编辑，用户可以尝试更加丰富的模型展示动画，如开关门动作 **注意：制作视频时，如需编辑模型轴心点，请在记录关键帧或预设动画之前进行；如果编辑对象已有关键帧数据，修改轴心点数据会清空当前的关键帧** [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/college/1721806204421_L1d0s144b28endpo7viwiuwldqwlufx7ifksq8.mp4) **2.模型拆分与轴心点编辑：** 在进行模型拆分后，如果没有选择模型分解，则轴心点位置保持不变 在进行模型拆分后，如果进行了模型分解，则分解出来的组合模型轴心点位置不变，解组后的单体模型轴心点复位到模型中心点 **3.轴心点编辑数据保存：**保存方案时，会记录已经编辑过的轴心点信息 **注意：模型轴心点编辑后另存/收藏后拖到方案使用，轴心点会恢复默认位置** **历史方案的模型轴心点保持原状：修改模型轴心点会改变已创建的视频方案数据，所以历史方案的模型轴心点不会更新（仍保持在模型底部），新方案和新加入画布的模型轴心点会默认在模型的中心位置**
-
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769511637168/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1769511637168/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769511637168/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1769511637168/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-1. 新增编辑轴心点功能，用户可以根据自身需要对方案内的模型轴心点进行移动
-2. 支持两种轴心点复位方式：轴心居中到对象、对象居中到轴心
-3. 基于轴心点编辑功能，可以做出更加丰富的模型展示动画，如开关门动画
 
 # 操作入口
 
@@ -76,13 +67,14 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 操作入口 展开层级面板——右键点击想要编辑的模型/组合——【轴心】
-![](https://qhstaticssl.kujiale.com/image/png/1769511637168/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769511637168/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: 操作入口 展开层级面板——右键点击想要编辑的模型/组合——【轴心】
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769511637168/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

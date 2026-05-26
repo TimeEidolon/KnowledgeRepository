@@ -13,33 +13,27 @@ We are thrilled to announce some exciting updates regarding our ongoing online w
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Dear Coohom Users, We are thrilled to announce some exciting updates regarding our ongoing online webinars designed specifically for our valued users like you! At Coohom, we continuously strive to enhance your experience and empower you with the latest tools and knowledge to elevate your design projects.
 
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733932315378/2072900CCA866C2DB4B61C2FC6A1A933.png
 ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733932315378/2072900CCA866C2DB4B61C2FC6A1A933.png)
 <img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733932315378/2072900CCA866C2DB4B61C2FC6A1A933.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-
-Don’t miss out on these informative sessions that will not only boost your skills but also help you connect with other Coohom users around the globe. Stay tuned for announcements about specific dates and topics coming soon!
-
-Please feel free to communicate with our trainer online to share your concerns or ideas.
-
-Happy Designing,  
-The Coohom Team
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Dear Coohom Users, We are thrilled to announce some exciting updates regarding our ongoing online webinars designed specifically for our valued users like you! At Coohom, we continuously strive to enhance your experience and empower you with the latest tools and knowledge to elevate your design projects.
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733932315378/2072900CCA866C2DB4B61C2FC6A1A933.png)
-<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733932315378/2072900CCA866C2DB4B61C2FC6A1A933.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Dear Coohom Users, We are thrilled to announce some exciting updates regarding our ongoing online webinars designed specifically for our valued users like you! At Coohom, we continuously strive to enhance your experience and empower you with the latest tools and knowledge to elevate your design projects.
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733932315378/2072900CCA866C2DB4B61C2FC6A1A933.png
 
 </Visibility>

@@ -11,22 +11,43 @@ In the floor plan tool, you can set room properties, such as room type, name, an
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=3mKmlluR6jg
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/3mKmlluR6jg" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
-Select a room, click **Room Type** in the right-side properties panel, and choose the desired type. * You can also use the search tool for quick access. Enter keywords to find and select the desired room type with one click. Click on a room and input the desired name in the **Room Name** field located in the right-side attribute panel, then confirm. Click the room, and in the right-side properties panel under the **Room Ceiling** section, choose either **With Ceiling** or **No Ceiling** as needed. * **Note:** Each room can be set to with ceiling or no ceiling in the right-side panel. When the room type is set to terrace or outdoors, it defaults to no ceiling.
+Entrance In the 2D view, select a room, and the related properties settings will be displayed on the right-side panel.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773298616156/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1773298616156/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1773298616156/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+Select a room, click **Room Type** in the right-side properties panel, and choose the desired type. * You can also use the search tool for quick access. Enter keywords to find and select the desired room type with one click.
+
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557938/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557938/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557938/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557938/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1773299310119/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1773299310119/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773299310119/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1773299310119/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+### Step 3
+Customize Room Name Click on a room and input the desired name in the **Room Name** field located in the right-side attribute panel, then confirm.
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557864/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557864/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557864/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557864/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+### Step 4
+Set Room Ceiling Click the room, and in the right-side properties panel under the **Room Ceiling** section, choose either **With Ceiling** or **No Ceiling** as needed.
+
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773299564357/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1773299564357/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773299564357/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1773299564357/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 
 # For Users
@@ -67,21 +88,27 @@ Click the room, and in the right-side properties panel under the **Room Ceiling*
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=3mKmlluR6jg
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/3mKmlluR6jg" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-1. Select a room, click **Room Type** in the right-side properties panel, and choose the desired type. * You can also use the search tool for quick access. Enter keywords to find and select the desired room type with one click. Click on a room and input the desired name in the **Room Name** field located in the right-side attribute panel, then confirm. Click the room, and in the right-side properties panel under the **Room Ceiling** section, choose either **With Ceiling** or **No Ceiling** as needed. * **Note:** Each room can be set to with ceiling or no ceiling in the right-side panel. When the room type is set to terrace or outdoors, it defaults to no ceiling.
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557938/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557938/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1773299310119/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773299310119/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557864/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557864/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1773299564357/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773299564357/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Entrance In the 2D view, select a room, and the related properties settings will be displayed on the right-side panel.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773298616156/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: Select a room, click **Room Type** in the right-side properties panel, and choose the desired type. * You can also use the search tool for quick access. Enter keywords to find and select the desired room type with one click.
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557938/2D37C2734C50A6837B78ACB4959B66FF.png
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1773299310119/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_3_TEXT: Customize Room Name Click on a room and input the desired name in the **Room Name** field located in the right-side attribute panel, then confirm.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1773301557864/2D37C2734C50A6837B78ACB4959B66FF.png
+
+MEDIA_STEP_4_TEXT: Set Room Ceiling Click the room, and in the right-side properties panel under the **Room Ceiling** section, choose either **With Ceiling** or **No Ceiling** as needed.
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773299564357/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

@@ -7,22 +7,22 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 解决方法 开启降噪功能 1、进入工具--渲染–选择最新灯光版本（3.0以上），可以通过灯光模板管理选择3.0以上的版本直接渲染，参数里默认开启降噪，从源头解决噪点问题
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423588/0AAB006B80093E7E5B964C9140F10B37.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423588/0AAB006B80093E7E5B964C9140F10B37.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423588/0AAB006B80093E7E5B964C9140F10B37.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 2、若使用的是室内白天/夜晚老版本（3.0以下），点击“效果设置”勾选“降噪”功能，发起渲染待渲染完成后即可解决问题
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423591/C1A539A6475B2F4202895C9EE2DF7FE3.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423591/C1A539A6475B2F4202895C9EE2DF7FE3.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423591/C1A539A6475B2F4202895C9EE2DF7FE3.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-有时候渲染效果图出现光点、斑点、颗粒状物体、磨砂感等问题。
 
 # 解决方法
 
@@ -40,17 +40,17 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 解决方法 开启降噪功能 1、进入工具--渲染–选择最新灯光版本（3.0以上），可以通过灯光模板管理选择3.0以上的版本直接渲染，参数里默认开启降噪，从源头解决噪点问题
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423588/0AAB006B80093E7E5B964C9140F10B37.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423588/0AAB006B80093E7E5B964C9140F10B37.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 2、若使用的是室内白天/夜晚老版本（3.0以下），点击“效果设置”勾选“降噪”功能，发起渲染待渲染完成后即可解决问题
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423591/C1A539A6475B2F4202895C9EE2DF7FE3.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423591/C1A539A6475B2F4202895C9EE2DF7FE3.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 解决方法 开启降噪功能 1、进入工具--渲染–选择最新灯光版本（3.0以上），可以通过灯光模板管理选择3.0以上的版本直接渲染，参数里默认开启降噪，从源头解决噪点问题
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423588/0AAB006B80093E7E5B964C9140F10B37.png
+
+MEDIA_STEP_2_TEXT: 2、若使用的是室内白天/夜晚老版本（3.0以下），点击“效果设置”勾选“降噪”功能，发起渲染待渲染完成后即可解决问题
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135423591/C1A539A6475B2F4202895C9EE2DF7FE3.png
 
 </Visibility>

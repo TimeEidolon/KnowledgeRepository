@@ -7,25 +7,36 @@ description: "For Users"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Upload the SKP file to your personal library. custom modeling tool is supported. Once in the custom modeling tool, you can delete, stretch, deform, and perform other operations on various parts of the model.([SKP file upload requirements](https://www.coohom.com/helpcenter/sketchup-model-upload-requirements?kjl_source=hc))
+Problem Users have discovered that certain models support custom modeling tool.
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764731807796/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1764731807796/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1764731807796/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Some public library models support custom modeling tool. Convert model to "Editable model" Converting to editable model is an irreversible process and will lose the product data of the model, but after conversion, multiple edits can be made on the style After entering the free editing page, you can perform deletion, stretching, deformation, and other operations on various parts of the model.
+Usage Convert model to "Editable model" Converting to editable model is an irreversible process and will lose the product data of the model, but after conversion, multiple edits can be made on the style
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764211474381/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764211474381/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764211474381/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+### Step 3
+Screenshot 5
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764211805820/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764211805820/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764211805820/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1764211805820/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+### Step 4
+After entering the free editing page, you can perform deletion, stretching, deformation, and other operations on various parts of the model.
+
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764214232946/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764214232946/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764214232946/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1764214232946/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-
-All Users
 
 # Problem
 
@@ -59,19 +70,23 @@ After entering the free editing page, you can perform deletion, stretching, defo
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Upload the SKP file to your personal library. custom modeling tool is supported. Once in the custom modeling tool, you can delete, stretch, deform, and perform other operations on various parts of the model.([SKP file upload requirements](https://www.coohom.com/helpcenter/sketchup-model-upload-requirements?kjl_source=hc))
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Some public library models support custom modeling tool. Convert model to "Editable model" Converting to editable model is an irreversible process and will lose the product data of the model, but after conversion, multiple edits can be made on the style After entering the free editing page, you can perform deletion, stretching, deformation, and other operations on various parts of the model.
-![](https://qhstaticssl.kujiale.com/image/png/1764211474381/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764211474381/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1764211805820/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764211805820/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1764214232946/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764214232946/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Problem Users have discovered that certain models support custom modeling tool.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764731807796/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: Usage Convert model to "Editable model" Converting to editable model is an irreversible process and will lose the product data of the model, but after conversion, multiple edits can be made on the style
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764211474381/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_3_TEXT: Screenshot 5
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764211805820/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_4_TEXT: After entering the free editing page, you can perform deletion, stretching, deformation, and other operations on various parts of the model.
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764214232946/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

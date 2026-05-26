@@ -7,23 +7,26 @@ description: "布尔造型功能可用于工具前端五金、板件挖洞开槽
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 其他 对于元件对接的后端软件，需要将布尔造型的效果真实作用在底层元件上，默认情况下只显示效果，要勇于对接时，需前往设置 **1. 配置入口** 在商家后台**企业库 - 定制商品库 - 高级配置 - 下单输出 - 数据输出设置 - 其它设置，**然后打开**布尔造型生产对接**的开关，点击**保存**
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Step 2
+Screenshot 2
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419931584/83D3FA6EB36A0CB293CD7B7021B74E06.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774419931584/83D3FA6EB36A0CB293CD7B7021B74E06.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774419931584/83D3FA6EB36A0CB293CD7B7021B74E06.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
-Step 3
+Screenshot 3
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419940627/7AF92D494D8CD8BCFBD674B9CCE768FE.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774419940627/7AF92D494D8CD8BCFBD674B9CCE768FE.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774419940627/7AF92D494D8CD8BCFBD674B9CCE768FE.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
@@ -75,21 +78,20 @@ TopSolid原生软件中，本身具备布尔的能力，布尔即为对接模型
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 其他 对于元件对接的后端软件，需要将布尔造型的效果真实作用在底层元件上，默认情况下只显示效果，要勇于对接时，需前往设置 **1. 配置入口** 在商家后台**企业库 - 定制商品库 - 高级配置 - 下单输出 - 数据输出设置 - 其它设置，**然后打开**布尔造型生产对接**的开关，点击**保存**
-![](https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Step 2
-![](https://qhstaticssl.kujiale.com/image/png/1774419931584/83D3FA6EB36A0CB293CD7B7021B74E06.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774419931584/83D3FA6EB36A0CB293CD7B7021B74E06.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 其他 对于元件对接的后端软件，需要将布尔造型的效果真实作用在底层元件上，默认情况下只显示效果，要勇于对接时，需前往设置 **1. 配置入口** 在商家后台**企业库 - 定制商品库 - 高级配置 - 下单输出 - 数据输出设置 - 其它设置，**然后打开**布尔造型生产对接**的开关，点击**保存**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419897753/D066A972C390A9FF144F7756C85F7787.png
 
-3. Step 3
-![](https://qhstaticssl.kujiale.com/image/png/1774419940627/7AF92D494D8CD8BCFBD674B9CCE768FE.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774419940627/7AF92D494D8CD8BCFBD674B9CCE768FE.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419931584/83D3FA6EB36A0CB293CD7B7021B74E06.png
+
+MEDIA_STEP_3_TEXT: Screenshot 3
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774419940627/7AF92D494D8CD8BCFBD674B9CCE768FE.png
 
 </Visibility>

@@ -14,17 +14,19 @@ Let's take stone as an example to understand the editable items of materials.
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Basic Parameters
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769566588049/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1769566588049/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1769566588049/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 Texture Parameter Adjustment Click the plus sign to upload a texture. Here we use a fabric texture as the texture to demonstrate texture rotation and hue change effects. It also supports adjusting texture scaling, offset, VR color, saturation, advanced gamma contrast, brightness, advanced brightness, and diffuse attenuation parameter adjustments.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1769508664188/C8E90843204A4A30DC003ADB1E758AF0.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1769508664188/C8E90843204A4A30DC003ADB1E758AF0.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1769508664188/C8E90843204A4A30DC003ADB1E758AF0.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
@@ -81,17 +83,17 @@ It also supports adjusting texture scaling, offset, VR color, saturation, advanc
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Basic Parameters
-![](https://qhstaticssl.kujiale.com/image/png/1769566588049/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769566588049/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Texture Parameter Adjustment Click the plus sign to upload a texture. Here we use a fabric texture as the texture to demonstrate texture rotation and hue change effects. It also supports adjusting texture scaling, offset, VR color, saturation, advanced gamma contrast, brightness, advanced brightness, and diffuse attenuation parameter adjustments.
-![](https://qhstaticssl.kujiale.com/image/gif/1769508664188/C8E90843204A4A30DC003ADB1E758AF0.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1769508664188/C8E90843204A4A30DC003ADB1E758AF0.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Basic Parameters
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769566588049/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: Texture Parameter Adjustment Click the plus sign to upload a texture. Here we use a fabric texture as the texture to demonstrate texture rotation and hue change effects. It also supports adjusting texture scaling, offset, VR color, saturation, advanced gamma contrast, brightness, advanced brightness, and diffuse attenuation parameter adjustments.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1769508664188/C8E90843204A4A30DC003ADB1E758AF0.gif
 
 </Visibility>

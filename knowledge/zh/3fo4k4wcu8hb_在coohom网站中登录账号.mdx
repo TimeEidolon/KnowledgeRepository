@@ -7,32 +7,37 @@ description: "在使用Coohom进行设计前，顺利登录账号是重要的第
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 进入[Coohom网站](https://www.coohom.com?kjl_source=hc)，点击首页右上角的**登录**按钮
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753424540097/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1753424540097/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1753424540097/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 登录账号前，您需要先**勾选**授权[隐私政策](https://www.coohom.com/pub/market/portal/c/privacy-policy?kjl_source=hc)和[使用条款](https://www.coohom.com/pub/market/portal/c/user-agreement)
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629835/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629835/2D37C2734C50A6837B78ACB4959B66FF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629835/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 勾选授权后，输入您注册的邮箱和密码即可，还可以使用Facebook、Google 或 Twitter 账户登录 * 如果登录时忘记密码或想要修改您的登录密码，具体操作可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/change-your-account-password-in-coohom?kjl_source=hc)
 
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1753425404861/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1753425404861/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1753425404861/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629860/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629860/2D37C2734C50A6837B78ACB4959B66FF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629860/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 输入账号及密码后，点击**继续**，便成功进入工作台页面了
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753427707213/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1753427707213/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1753427707213/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -67,27 +72,24 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 进入[Coohom网站](https://www.coohom.com?kjl_source=hc)，点击首页右上角的**登录**按钮
-![](https://qhstaticssl.kujiale.com/image/png/1753424540097/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753424540097/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 登录账号前，您需要先**勾选**授权[隐私政策](https://www.coohom.com/pub/market/portal/c/privacy-policy?kjl_source=hc)和[使用条款](https://www.coohom.com/pub/market/portal/c/user-agreement)
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629835/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629835/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 进入[Coohom网站](https://www.coohom.com?kjl_source=hc)，点击首页右上角的**登录**按钮
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753424540097/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. 勾选授权后，输入您注册的邮箱和密码即可，还可以使用Facebook、Google 或 Twitter 账户登录 * 如果登录时忘记密码或想要修改您的登录密码，具体操作可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/change-your-account-password-in-coohom?kjl_source=hc)
-![](https://qhstaticssl.kujiale.com/image/png/1753425404861/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753425404861/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629860/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629860/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 登录账号前，您需要先**勾选**授权[隐私政策](https://www.coohom.com/pub/market/portal/c/privacy-policy?kjl_source=hc)和[使用条款](https://www.coohom.com/pub/market/portal/c/user-agreement)
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629835/2D37C2734C50A6837B78ACB4959B66FF.png
 
-4. 输入账号及密码后，点击**继续**，便成功进入工作台页面了
-![](https://qhstaticssl.kujiale.com/image/png/1753427707213/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753427707213/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 勾选授权后，输入您注册的邮箱和密码即可，还可以使用Facebook、Google 或 Twitter 账户登录 * 如果登录时忘记密码或想要修改您的登录密码，具体操作可见教程文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/change-your-account-password-in-coohom?kjl_source=hc)
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1753425404861/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1753427629860/2D37C2734C50A6837B78ACB4959B66FF.png
+
+MEDIA_STEP_4_TEXT: 输入账号及密码后，点击**继续**，便成功进入工作台页面了
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753427707213/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

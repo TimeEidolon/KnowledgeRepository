@@ -7,22 +7,22 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 自检 目前max有很多检查重面的插件、小工具，可以自行选择。 如果没有小工具，那么在max里也可以检查。 使用vraylightmtl，在light color节点连vraydirt，将该材质赋予需要检测的部位，进行渲染。出现灰色的地方就是重面，正常应该是vraylight的颜色
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 解决方法 把重面部分选中删除就好
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-纹理混乱，渲染视频会闪烁抖动
 
 # 自检
 
@@ -44,17 +44,17 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 自检 目前max有很多检查重面的插件、小工具，可以自行选择。 如果没有小工具，那么在max里也可以检查。 使用vraylightmtl，在light color节点连vraydirt，将该材质赋予需要检测的部位，进行渲染。出现灰色的地方就是重面，正常应该是vraylight的颜色
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 解决方法 把重面部分选中删除就好
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 自检 目前max有很多检查重面的插件、小工具，可以自行选择。 如果没有小工具，那么在max里也可以检查。 使用vraylightmtl，在light color节点连vraydirt，将该材质赋予需要检测的部位，进行渲染。出现灰色的地方就是重面，正常应该是vraylight的颜色
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660502/F6BBBB4748F3DB2EF422E4EC4DD83573.png
+
+MEDIA_STEP_2_TEXT: 解决方法 把重面部分选中删除就好
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762504660484/FE8B981F4212383A82118DB8CBB37187.png
 
 </Visibility>

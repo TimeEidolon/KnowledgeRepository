@@ -11,35 +11,45 @@ description: "在户型工具中使用导入前处理功能，可以一站式解
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=\_LtTVgDxCOc
+
+[Video](https://www.youtube.com/watch?v=\_LtTVgDxCOc)
 
 ### Step 1
 在户型工具中点击**导入图纸**，图纸加载成功后，AI会自动识别图片是否需要处理，点击**确定**会自动进行处理 * 您也可以点击**导入前处理**按钮，可一键清除水印、底纹、褶皱并消除透视形变，点击后自动开始处理
 
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png
 ![](https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1773131721761/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1773131721761/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1773131721761/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 等待处理完成，左侧为处理前的原图，右侧为处理后的图，左右两张图可以分别用**鼠标滚轮**缩放，用**鼠标中键**拖动，然后根据需要勾选要使用的图 * 选择**使用原图时**，使用的是处理前的原图纸；选择**使用处理结果**，则使用处理后的图纸
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773130898787/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1773130898787/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1773130898787/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 移动比例尺至墙面，然后输入实际长度
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773130993312/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1773130993312/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1773130993312/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 点击右下角的**导入**，稍等片刻户型就生成成功了
 
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1773131360411/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1773131360411/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1773131360411/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1773131643549/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1773131643549/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1773131643549/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -78,31 +88,28 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=\_LtTVgDxCOc
 [Video](https://www.youtube.com/watch?v=\_LtTVgDxCOc)
 
-1. 在户型工具中点击**导入图纸**，图纸加载成功后，AI会自动识别图片是否需要处理，点击**确定**会自动进行处理 * 您也可以点击**导入前处理**按钮，可一键清除水印、底纹、褶皱并消除透视形变，点击后自动开始处理
-![](https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1773131721761/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773131721761/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 在户型工具中点击**导入图纸**，图纸加载成功后，AI会自动识别图片是否需要处理，点击**确定**会自动进行处理 * 您也可以点击**导入前处理**按钮，可一键清除水印、底纹、褶皱并消除透视形变，点击后自动开始处理
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1778224459023/9A5EA73C16A8ED9BB761A7BC754F9BA3.png
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1773131721761/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-2. 等待处理完成，左侧为处理前的原图，右侧为处理后的图，左右两张图可以分别用**鼠标滚轮**缩放，用**鼠标中键**拖动，然后根据需要勾选要使用的图 * 选择**使用原图时**，使用的是处理前的原图纸；选择**使用处理结果**，则使用处理后的图纸
-![](https://qhstaticssl.kujiale.com/image/png/1773130898787/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773130898787/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 等待处理完成，左侧为处理前的原图，右侧为处理后的图，左右两张图可以分别用**鼠标滚轮**缩放，用**鼠标中键**拖动，然后根据需要勾选要使用的图 * 选择**使用原图时**，使用的是处理前的原图纸；选择**使用处理结果**，则使用处理后的图纸
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773130898787/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. 移动比例尺至墙面，然后输入实际长度
-![](https://qhstaticssl.kujiale.com/image/png/1773130993312/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773130993312/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 移动比例尺至墙面，然后输入实际长度
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1773130993312/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. 点击右下角的**导入**，稍等片刻户型就生成成功了
-![](https://qhstaticssl.kujiale.com/image/png/1773131360411/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773131360411/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1773131643549/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1773131643549/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_4_TEXT: 点击右下角的**导入**，稍等片刻户型就生成成功了
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1773131360411/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1773131643549/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

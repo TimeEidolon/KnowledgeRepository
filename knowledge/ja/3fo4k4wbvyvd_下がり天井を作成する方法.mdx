@@ -7,54 +7,27 @@ description: "![](https://qhstaticssl.kujiale.com/image/png/1746006222728/A8CEBA
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Step 1
+Screenshot 1
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1746006222728/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1746006222728/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1746006222728/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-２．操作手順 **ステップ1：** 画面上部のツールバーから「矩形」アイコンをクリックし、四角形を描画します。
-
-![](https://qhstaticssl.kujiale.com/image/png/1745915542151/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1745915542151/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
-**ステップ2：** 作成した四角形の右下に表示される「押し出し」で立ち上がり寸法を入力し、Enterキーで確定します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1745981455689/39EFB8180AE55585EEBF41EBA6E41E1C.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1745981455689/39EFB8180AE55585EEBF41EBA6E41E1C.gif" alt="Step 3" style="max-width:100%;height:auto;" />
-
-
-## １．機能概要
-
-空間にメリハリをつけたり、他のエリアと視覚的に区切る方法として、天井の一部を低くデザインする「下がり天井」がよく用いられます。このチュートリアルでは、天井に下がり天井を作成する方法をご紹介します。
-
-## ２．操作手順
-
-**ステップ1：**  
-画面上部のツールバーから「矩形」アイコンをクリックし、四角形を描画します。
-
-![](https://qhstaticssl.kujiale.com/image/png/1745915542151/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-
-**ステップ2：**  
-作成した四角形の右下に表示される「押し出し」で立ち上がり寸法を入力し、Enterキーで確定します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1745981455689/39EFB8180AE55585EEBF41EBA6E41E1C.gif)
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Step 1
-![](https://qhstaticssl.kujiale.com/image/png/1746006222728/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1746006222728/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Screenshot 1
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1746006222728/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

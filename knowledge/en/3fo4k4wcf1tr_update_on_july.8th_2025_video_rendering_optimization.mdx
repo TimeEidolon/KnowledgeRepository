@@ -17,6 +17,25 @@ The video rendering method adapts to the selected lighting template, with resolu
 
 **![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058831/6D18299F18874012AD6483269D5F4948.gif)**
 
+
+## Steps with screenshots
+
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+### Step 1
+Optimized Improvements **1. Engine Upgrade** Video rendering has been upgraded. When using lighting from Fast & Interior Series 3.0 and above, fast rendering now supports more types of dynamic models and newly added materials, including translucent, overlay, and blended materials.
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058819/0BB7DA08FED6DC84C3E8D24BB4EAFCD1.gif
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058819/0BB7DA08FED6DC84C3E8D24BB4EAFCD1.gif)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058819/0BB7DA08FED6DC84C3E8D24BB4EAFCD1.gif" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+**2. Consistent Effects between Video and Image** The video rendering method adapts to the selected lighting template, with resolution adjusting automatically to ensure the video lighting can be consistent with that of still images.
+
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058831/6D18299F18874012AD6483269D5F4948.gif
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058831/6D18299F18874012AD6483269D5F4948.gif)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058831/6D18299F18874012AD6483269D5F4948.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+
 # For Users
 
 All Users
@@ -54,13 +73,17 @@ All Users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. **The available video resolutions have been updated:** the original resolutions are still available, but are now linked to the selected lighting template to ensure more consistent visual effects.
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. The video templates will also automatically match the rendering style based on the selected lighting template. This feature will be gradually rolled out. | **Lighting Template** | **Specific Lighting Templates** | **Supported Resolutions** | | --- | --- | --- | | **All Fast & Indoor Series v3.0 and above** **Version selection location:** | Ultra-Fast Daytime & Nighttime 1.0, 2.0, 2.1, 3.0, 3.1 Indoor Daytime & Nighttime 3.0, 3.1 | **Rendered the same day:** 480P, 720P, 1080P **Video:** **Video templates:** | | **Realistic & Equilibrium** | Indoor Daytime & Nighttime 1.0, 2.0, 2.1 Realistic Outdoor Day & Night\ Cool Daylight\ Outdoor\ Fresh\ Natural Daylight & Nightlight 3.0\ Warm Daylight | **Rendered the same day:** 480P（6fps） **Rendered within 24 hours:** HQ720P, HQ1080P **Video:** **Video templates:** | **For users of [Ultra-Fast & Realistic v3.0 and above] lighting templates:** **Q1:** When I'm using the **[Ultra-Fast & Realistic v3.0 and above]** lighting template, and I noticed that **[HQ720P & HQ1080P]** are no longer available for rendering. But I think the video quality was better with those—what should I do? **A1:** If you prefer the video quality of the previous versions, we recommend using the **[Realistic & Equilibrium]** lighting templates. The rendered videos will match the visual quality you're used to. **For users of [Realistic & Equilibrium] lighting templates:** **Q1:** When I used the **[Realistic & Equilibrium]** lighting templates, but I can no longer render 720P or 1080P videos on the same day. What should I do? **A1:** The parameter settings of these lighting templates do require longer rendering times, so videos can only be delivered overnight. If you wish to receive the video on the same day, we recommend switching to **[Ultra-Fast & Realistic v3.0 and above]** lighting templates. **Q2:** When I'm rendering a 480P video using the **[Realistic & Equilibrium]** lighting template, and the video seems choppy. Is this a bug? **A2:** 480P is used as a preview tier. To ensure videos are rendered within the same day, it's rendered at a low frame rate. However, when upgraded to higher resolutions, normal frame rates will be guaranteed.
+MEDIA_STEP_1_TEXT: Optimized Improvements **1. Engine Upgrade** Video rendering has been upgraded. When using lighting from Fast & Interior Series 3.0 and above, fast rendering now supports more types of dynamic models and newly added materials, including translucent, overlay, and blended materials.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058819/0BB7DA08FED6DC84C3E8D24BB4EAFCD1.gif
+
+MEDIA_STEP_2_TEXT: **2. Consistent Effects between Video and Image** The video rendering method adapts to the selected lighting template, with resolution adjusting automatically to ensure the video lighting can be consistent with that of still images.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1751872058831/6D18299F18874012AD6483269D5F4948.gif
 
 </Visibility>

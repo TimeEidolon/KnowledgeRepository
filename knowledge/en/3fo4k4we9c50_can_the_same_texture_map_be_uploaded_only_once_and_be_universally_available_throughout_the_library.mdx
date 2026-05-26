@@ -7,16 +7,15 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Solution The texture can be uploaded to the basic material library, and after preprocessing, it can be published. At this stage, it can support use across multiple industry lines (model/material, kitchen& bath, Closet, Doors&Windows, Custom modeling). When edited or modified a second time, all libraries will be synchronized for adjustments.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763346064157/DE217597E5A88BDEC2B02234ACA2D03B.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763346064157/DE217597E5A88BDEC2B02234ACA2D03B.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1763346064157/DE217597E5A88BDEC2B02234ACA2D03B.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-Can a material with the same design be universally applied across the library by uploading it once?
 
 # Solution
 
@@ -28,13 +27,14 @@ The texture can be uploaded to the basic material library, and after preprocessi
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Solution The texture can be uploaded to the basic material library, and after preprocessing, it can be published. At this stage, it can support use across multiple industry lines (model/material, kitchen& bath, Closet, Doors&Windows, Custom modeling). When edited or modified a second time, all libraries will be synchronized for adjustments.
-![](https://qhstaticssl.kujiale.com/image/png/1763346064157/DE217597E5A88BDEC2B02234ACA2D03B.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763346064157/DE217597E5A88BDEC2B02234ACA2D03B.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Solution The texture can be uploaded to the basic material library, and after preprocessing, it can be published. At this stage, it can support use across multiple industry lines (model/material, kitchen& bath, Closet, Doors&Windows, Custom modeling). When edited or modified a second time, all libraries will be synchronized for adjustments.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763346064157/DE217597E5A88BDEC2B02234ACA2D03B.png
 
 </Visibility>

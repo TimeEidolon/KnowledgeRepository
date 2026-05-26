@@ -8,32 +8,37 @@ Before designing with Coohom, successfully login your account is an important fi
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Go to the [Coohom](https://www.coohom.com?kjl_source=hc) and click the **Login** button at the top right corner of the homepage.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753426586731/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1753426586731/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1753426586731/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 Before logging in your account, you need to first **check** the authorization of the [Privacy Policy](https://www.coohom.com/pub/market/portal/c/privacy-policy) and [Terms of Use](https://www.coohom.com/pub/market/portal/c/user-agreement?kjl_source=hc).
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518053/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518053/2D37C2734C50A6837B78ACB4959B66FF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518053/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 After checking authorization, enter your registered email and password, or you can log in using Facebook, Google, or Twitter accounts. * If you forget your password or want to change your login password, see the tutorial document: [Click to view](https://www.coohom.com/en_US/helpcenter/change-your-account-password-in-coohom?hl=en&kjl_source=hc)
 
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1753426993999/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1753426993999/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1753426993999/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518019/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518019/2D37C2734C50A6837B78ACB4959B66FF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518019/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 After entering your account and password, click **Continue** to successfully enter the workspace page.
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753427074442/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1753427074442/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1753427074442/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -67,27 +72,24 @@ All users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Go to the [Coohom](https://www.coohom.com?kjl_source=hc) and click the **Login** button at the top right corner of the homepage.
-![](https://qhstaticssl.kujiale.com/image/png/1753426586731/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753426586731/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Before logging in your account, you need to first **check** the authorization of the [Privacy Policy](https://www.coohom.com/pub/market/portal/c/privacy-policy) and [Terms of Use](https://www.coohom.com/pub/market/portal/c/user-agreement?kjl_source=hc).
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518053/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518053/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Go to the [Coohom](https://www.coohom.com?kjl_source=hc) and click the **Login** button at the top right corner of the homepage.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753426586731/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. After checking authorization, enter your registered email and password, or you can log in using Facebook, Google, or Twitter accounts. * If you forget your password or want to change your login password, see the tutorial document: [Click to view](https://www.coohom.com/en_US/helpcenter/change-your-account-password-in-coohom?hl=en&kjl_source=hc)
-![](https://qhstaticssl.kujiale.com/image/png/1753426993999/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753426993999/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518019/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518019/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Before logging in your account, you need to first **check** the authorization of the [Privacy Policy](https://www.coohom.com/pub/market/portal/c/privacy-policy) and [Terms of Use](https://www.coohom.com/pub/market/portal/c/user-agreement?kjl_source=hc).
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518053/2D37C2734C50A6837B78ACB4959B66FF.png
 
-4. After entering your account and password, click **Continue** to successfully enter the workspace page.
-![](https://qhstaticssl.kujiale.com/image/png/1753427074442/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753427074442/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: After checking authorization, enter your registered email and password, or you can log in using Facebook, Google, or Twitter accounts. * If you forget your password or want to change your login password, see the tutorial document: [Click to view](https://www.coohom.com/en_US/helpcenter/change-your-account-password-in-coohom?hl=en&kjl_source=hc)
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1753426993999/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1753427518019/2D37C2734C50A6837B78ACB4959B66FF.png
+
+MEDIA_STEP_4_TEXT: After entering your account and password, click **Continue** to successfully enter the workspace page.
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753427074442/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

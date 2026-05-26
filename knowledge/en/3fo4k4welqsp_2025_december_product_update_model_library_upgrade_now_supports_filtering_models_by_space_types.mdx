@@ -7,38 +7,36 @@ This Floor Plan Design, Kitchen & Closet and other tools bring new functions, we
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Key Update Details **[Model Materials] The model library has been upgraded to support filtering models by space types, [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/model-materials-guide-for-using-the-model-library?kjl_source=hc)** The new model library has clear section divisions, including personal resource management, premium model recommendations, and precise category navigation, making every model search and use easy and efficient.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1768199875077/57332ED30DA651CA1B698BBF9BD047E4.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1768199875077/57332ED30DA651CA1B698BBF9BD047E4.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1768199875077/57332ED30DA651CA1B698BBF9BD047E4.gif" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 **[Drawing Design] New drawing view tool added to construction drawings, [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/construction-drawings-guide-for-operating-the-drawing-view-tool?kjl_source=hc)** With the drawing view tool, you can design the layout while observing the automatically generated styles and annotations in real-time, support switching between different view nodes for comprehensive inspection and effect evaluation, and conveniently adjust the design for output at any time.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1768200417580/517F866F25FEDDEA41AED698B1C9D351.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1768200417580/517F866F25FEDDEA41AED698B1C9D351.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1768200417580/517F866F25FEDDEA41AED698B1C9D351.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 Key Update Details **[Custom Quotation] Support for selecting imperial units and completing calculations when configuring and calculating quotes (Available to some users), [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/enterprise-imperial-unit-configuration-instructions?kjl_source=hc)** When configuring and calculating quotes, users can choose imperial units and complete calculations.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1765510564865/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1765510564865/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1765510564865/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
-Step 4
+Screenshot 4
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-
-Function update reading instructions:
-
-* Some functions are gradually being opened, and will be marked in the article as "Available to some users, gradually opening up".
-* Some functions can only be used by users with relevant permissions, and will be marked in the article as "Available to some users".
-* For enterprise functions, please contact the corresponding CSC for consultation.
 
 # 1. Functions for All Users
 
@@ -115,25 +113,23 @@ When configuring and calculating quotes, users can choose imperial units and com
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Key Update Details **[Model Materials] The model library has been upgraded to support filtering models by space types, [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/model-materials-guide-for-using-the-model-library?kjl_source=hc)** The new model library has clear section divisions, including personal resource management, premium model recommendations, and precise category navigation, making every model search and use easy and efficient.
-![](https://qhstaticssl.kujiale.com/image/gif/1768199875077/57332ED30DA651CA1B698BBF9BD047E4.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1768199875077/57332ED30DA651CA1B698BBF9BD047E4.gif" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. **[Drawing Design] New drawing view tool added to construction drawings, [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/construction-drawings-guide-for-operating-the-drawing-view-tool?kjl_source=hc)** With the drawing view tool, you can design the layout while observing the automatically generated styles and annotations in real-time, support switching between different view nodes for comprehensive inspection and effect evaluation, and conveniently adjust the design for output at any time.
-![](https://qhstaticssl.kujiale.com/image/gif/1768200417580/517F866F25FEDDEA41AED698B1C9D351.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1768200417580/517F866F25FEDDEA41AED698B1C9D351.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Key Update Details **[Model Materials] The model library has been upgraded to support filtering models by space types, [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/model-materials-guide-for-using-the-model-library?kjl_source=hc)** The new model library has clear section divisions, including personal resource management, premium model recommendations, and precise category navigation, making every model search and use easy and efficient.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1768199875077/57332ED30DA651CA1B698BBF9BD047E4.gif
 
-3. Key Update Details **[Custom Quotation] Support for selecting imperial units and completing calculations when configuring and calculating quotes (Available to some users), [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/enterprise-imperial-unit-configuration-instructions?kjl_source=hc)** When configuring and calculating quotes, users can choose imperial units and complete calculations.
-![](https://qhstaticssl.kujiale.com/image/png/1765510564865/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1765510564865/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: **[Drawing Design] New drawing view tool added to construction drawings, [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/construction-drawings-guide-for-operating-the-drawing-view-tool?kjl_source=hc)** With the drawing view tool, you can design the layout while observing the automatically generated styles and annotations in real-time, support switching between different view nodes for comprehensive inspection and effect evaluation, and conveniently adjust the design for output at any time.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1768200417580/517F866F25FEDDEA41AED698B1C9D351.gif
 
-4. Step 4
-![](https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Key Update Details **[Custom Quotation] Support for selecting imperial units and completing calculations when configuring and calculating quotes (Available to some users), [Click here for details and learn how to use](https://www.coohom.com/en_US/helpcenter/enterprise-imperial-unit-configuration-instructions?kjl_source=hc)** When configuring and calculating quotes, users can choose imperial units and complete calculations.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1765510564865/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_4_TEXT: Screenshot 4
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1765507572303/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

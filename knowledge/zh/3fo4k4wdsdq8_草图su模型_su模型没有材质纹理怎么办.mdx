@@ -7,24 +7,22 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 双击进入群组，选中要附材质的面
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933772/DCC2E97C656435823AF9F8ACF461AABD.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933772/DCC2E97C656435823AF9F8ACF461AABD.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933772/DCC2E97C656435823AF9F8ACF461AABD.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 工具栏选择材质 材料面板中选择要用的材质付给选中的模型，保存上传。注意啦：一定要进入到群组里选中面附材质
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933777/47ECC6E8112DDC4974692902270EA0F6.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933777/47ECC6E8112DDC4974692902270EA0F6.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933777/47ECC6E8112DDC4974692902270EA0F6.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-草图中文件正常显示，上传SU模型没有材质纹理，只有贴图颜色
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933836/023091D0B1202E3D557E879E63E36F15.png)
 
 # 解决办法
 
@@ -44,17 +42,17 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 双击进入群组，选中要附材质的面
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933772/DCC2E97C656435823AF9F8ACF461AABD.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933772/DCC2E97C656435823AF9F8ACF461AABD.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 工具栏选择材质 材料面板中选择要用的材质付给选中的模型，保存上传。注意啦：一定要进入到群组里选中面附材质
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933777/47ECC6E8112DDC4974692902270EA0F6.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933777/47ECC6E8112DDC4974692902270EA0F6.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 双击进入群组，选中要附材质的面
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933772/DCC2E97C656435823AF9F8ACF461AABD.png
+
+MEDIA_STEP_2_TEXT: 工具栏选择材质 材料面板中选择要用的材质付给选中的模型，保存上传。注意啦：一定要进入到群组里选中面附材质
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408933777/47ECC6E8112DDC4974692902270EA0F6.png
 
 </Visibility>

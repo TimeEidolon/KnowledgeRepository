@@ -7,16 +7,15 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Self-check Click to view the material subdivision node (usually the default subdivision in vray is 8).
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505193465/653C214BFF82E15D27C649D975C8091F.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505193465/653C214BFF82E15D27C649D975C8091F.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505193465/653C214BFF82E15D27C649D975C8091F.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-Low subdivision of material results in low rendering quality; high subdivision of material leads to prolonged rendering time, possibly causing timeout issues.
 
 # Self-check
 
@@ -32,13 +31,14 @@ As shown in the image above, modify it yourself.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Self-check Click to view the material subdivision node (usually the default subdivision in vray is 8).
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505193465/653C214BFF82E15D27C649D975C8091F.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505193465/653C214BFF82E15D27C649D975C8091F.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Self-check Click to view the material subdivision node (usually the default subdivision in vray is 8).
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505193465/653C214BFF82E15D27C649D975C8091F.png
 
 </Visibility>

@@ -7,22 +7,22 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Solution Enter the rendering-material resource manager and find the non-gamma 2.2 map, then enter the material editor, or directly enter the material editor-slate material editor, find the non-gamma 2.2 map, open it, change to "Override-2.2" and save (overwrite the original map)
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/BF34A45BFE23DF2032305A4F848821C2.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/BF34A45BFE23DF2032305A4F848821C2.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/BF34A45BFE23DF2032305A4F848821C2.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Step 2
+Screenshot 2
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/01AE371639644186CC2D26A8248D66C6.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/01AE371639644186CC2D26A8248D66C6.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/01AE371639644186CC2D26A8248D66C6.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-How to solve the color discrepancy after model upload
 
 # Solution
 
@@ -36,17 +36,17 @@ Enter the rendering-material resource manager and find the non-gamma 2.2 map, th
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Solution Enter the rendering-material resource manager and find the non-gamma 2.2 map, then enter the material editor, or directly enter the material editor-slate material editor, find the non-gamma 2.2 map, open it, change to "Override-2.2" and save (overwrite the original map)
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/BF34A45BFE23DF2032305A4F848821C2.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/BF34A45BFE23DF2032305A4F848821C2.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Step 2
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/01AE371639644186CC2D26A8248D66C6.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/01AE371639644186CC2D26A8248D66C6.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Solution Enter the rendering-material resource manager and find the non-gamma 2.2 map, then enter the material editor, or directly enter the material editor-slate material editor, find the non-gamma 2.2 map, open it, change to "Override-2.2" and save (overwrite the original map)
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/BF34A45BFE23DF2032305A4F848821C2.png
+
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762505728051/01AE371639644186CC2D26A8248D66C6.png
 
 </Visibility>

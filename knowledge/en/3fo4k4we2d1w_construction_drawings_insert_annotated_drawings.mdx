@@ -8,29 +8,37 @@ Users can display the annotated drawings generated for customized furniture with
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-First, prepare a project that has already generated customized annotated drawings. * For detailed steps to generate annotated drawings, refer to the online documentation: [Click here](https://www.coohom.com/en_US/helpcenter/article/custom-furniture-drawings-generate-annotation-drawings?kjl_source=hc)
+Entrance Click **Drawings** in the left sidebar, then select **Construction Drawings.**
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230181426/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1764230181426/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1764230181426/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 Go to design tool, select **Drawings** in the left sidebar, and click to enter the **Construction Drawings**page.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 Click **Drawings Layout** at the top, then select the desired drawings from the sheets list in the left sidebar.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 Click **Insert - Picture** on the right, then select the suitable drawings and drag them to a proper position within the layout. After completing the addition, you can **Download** it as needed.
 
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -68,25 +76,24 @@ Click **Drawings** in the left sidebar, then select **Construction Drawings.**
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. First, prepare a project that has already generated customized annotated drawings. * For detailed steps to generate annotated drawings, refer to the online documentation: [Click here](https://www.coohom.com/en_US/helpcenter/article/custom-furniture-drawings-generate-annotation-drawings?kjl_source=hc)
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Go to design tool, select **Drawings** in the left sidebar, and click to enter the **Construction Drawings**page.
-![](https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Entrance Click **Drawings** in the left sidebar, then select **Construction Drawings.**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230181426/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. Click **Drawings Layout** at the top, then select the desired drawings from the sheets list in the left sidebar.
-![](https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Go to design tool, select **Drawings** in the left sidebar, and click to enter the **Construction Drawings**page.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. Click **Insert - Picture** on the right, then select the suitable drawings and drag them to a proper position within the layout. After completing the addition, you can **Download** it as needed.
-![](https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Click **Drawings Layout** at the top, then select the desired drawings from the sheets list in the left sidebar.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_4_TEXT: Click **Insert - Picture** on the right, then select the suitable drawings and drag them to a proper position within the layout. After completing the addition, you can **Download** it as needed.
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

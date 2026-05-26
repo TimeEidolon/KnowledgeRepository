@@ -7,57 +7,27 @@ description: "![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/17338322331
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Go to **Settings** > **Customization.**
+Screenshot 1
 
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745243130334/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745243130334/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-Click on the Update button. Go to **Settings** > **Customization.** Click on the Update button.
-
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832234981/159D12AF93D9B7D2A5495672AD6E9E31.png)
-<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832234981/159D12AF93D9B7D2A5495672AD6E9E31.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832237222/B12EECB5D4DA11B26FE28702D656C730.png)
-<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832237222/B12EECB5D4DA11B26FE28702D656C730.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
-To upload own watermark, please upgrade to [Pro account](https://www.coohom.com/pricing) if you are not.
-
-
-### **Coohom Pro users are able to upload own watermark now!**
-
-Please follow the steps below:
-
-1. Go to **Settings** > **Customization.**
-
-   ![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1745243130334/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-2. Click on the Update button.
-
-Go to **Settings** > **Customization.**
-
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832234981/159D12AF93D9B7D2A5495672AD6E9E31.png)
-
-Click on the Update button.
-
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832237222/B12EECB5D4DA11B26FE28702D656C730.png)
-
-3. To upload own watermark, please upgrade to [Pro account](https://www.coohom.com/pricing) if you are not.
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832233162/A628B19F32906F7F98A4E89C90ADF71E.png
+![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832233162/A628B19F32906F7F98A4E89C90ADF71E.png)
+<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832233162/A628B19F32906F7F98A4E89C90ADF71E.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Step 1
-![](https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832233162/A628B19F32906F7F98A4E89C90ADF71E.png)
-<img src="https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832233162/A628B19F32906F7F98A4E89C90ADF71E.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Screenshot 1
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/yuntai/image/png/1733832233162/A628B19F32906F7F98A4E89C90ADF71E.png
 
 </Visibility>

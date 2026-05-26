@@ -7,32 +7,39 @@ Face Editor is essentially a series of editing and 'paving' on the face. Functio
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Once you click on a wall/floor/ceiling in 3D model, you will see Face Editor in the floating bar.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749456992587/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749456992587/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1749456992587/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 When you go to Material&Component. Click on a wall/floor/ceiling in 3D model, you will see Face Edit in the floating bar. 3.Click on a wall/floor/ceiling in 3D model, you will see Wall Editor/Floor Editor/ Ceiling Editor in the floating bar. Click on it. Then you will see Face Editor. These are three different ways, but to do the same edit: Face Editor. We can modify different faces of the room here. **Note: To go back to Face Editor from Floor Plan, follow Step Two and Step Three mentioned above.**
 
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1749457057503/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749457057503/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1749457057503/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1749457075937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749457075937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1749457075937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_3: https://qhstaticssl.kujiale.com/image/png/1749457091909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749457091909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1749457091909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_4: https://qhstaticssl.kujiale.com/image/png/1749457107880/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749457107880/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1749457107880/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_5: https://qhstaticssl.kujiale.com/image/png/1749457122717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749457122717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1749457122717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_6: https://qhstaticssl.kujiale.com/image/png/1749457137962/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1749457137962/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1749457137962/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
@@ -74,27 +81,22 @@ We can modify different faces of the room here.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Once you click on a wall/floor/ceiling in 3D model, you will see Face Editor in the floating bar.
-![](https://qhstaticssl.kujiale.com/image/png/1749456992587/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749456992587/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. When you go to Material&Component. Click on a wall/floor/ceiling in 3D model, you will see Face Edit in the floating bar. 3.Click on a wall/floor/ceiling in 3D model, you will see Wall Editor/Floor Editor/ Ceiling Editor in the floating bar. Click on it. Then you will see Face Editor. These are three different ways, but to do the same edit: Face Editor. We can modify different faces of the room here. **Note: To go back to Face Editor from Floor Plan, follow Step Two and Step Three mentioned above.**
-![](https://qhstaticssl.kujiale.com/image/png/1749457057503/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749457057503/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1749457075937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749457075937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1749457091909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749457091909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1749457107880/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749457107880/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1749457122717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749457122717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1749457137962/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1749457137962/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Once you click on a wall/floor/ceiling in 3D model, you will see Face Editor in the floating bar.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1749456992587/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: When you go to Material&Component. Click on a wall/floor/ceiling in 3D model, you will see Face Edit in the floating bar. 3.Click on a wall/floor/ceiling in 3D model, you will see Wall Editor/Floor Editor/ Ceiling Editor in the floating bar. Click on it. Then you will see Face Editor. These are three different ways, but to do the same edit: Face Editor. We can modify different faces of the room here. **Note: To go back to Face Editor from Floor Plan, follow Step Two and Step Three mentioned above.**
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1749457057503/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1749457075937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_2_IMAGE_3: https://qhstaticssl.kujiale.com/image/png/1749457091909/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_2_IMAGE_4: https://qhstaticssl.kujiale.com/image/png/1749457107880/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_2_IMAGE_5: https://qhstaticssl.kujiale.com/image/png/1749457122717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_2_IMAGE_6: https://qhstaticssl.kujiale.com/image/png/1749457137962/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

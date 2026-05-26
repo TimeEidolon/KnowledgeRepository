@@ -7,59 +7,27 @@ description: "![](https://qhstaticssl.kujiale.com/image/png/1744870646091/A8CEBA
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Step 1
+Screenshot 1
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744870646091/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1744870646091/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1744870646091/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-1. 機能概要 このチュートリアルでは、壁にニッチ（壁面収納や装飾スペース）を素早く作成する方法をご紹介します。 操作ルート： 「フロアプラン」メニュー→「壁開口」→ 壁をクリックして配置 → 右側パネルでサイズなどを調整
-
-![](https://qhstaticssl.kujiale.com/image/png/1744870968347/E50A5531CFA1D63ABEEB29C639E7547C.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744870968347/E50A5531CFA1D63ABEEB29C639E7547C.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
-2. 操作手順
-
-![](https://qhstaticssl.kujiale.com/image/gif/1744874129847/CD6DAA33C692F5BF52B1D987D60AB6A7.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744874129847/CD6DAA33C692F5BF52B1D987D60AB6A7.gif" alt="Step 3" style="max-width:100%;height:auto;" />
-
-### Step 4
-Step 4
-
-![](https://qhstaticssl.kujiale.com/image/png/1744874169816/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744874169816/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-
-
-## 1. 機能概要
-
-このチュートリアルでは、壁にニッチ（壁面収納や装飾スペース）を素早く作成する方法をご紹介します。
-
-操作ルート：  
-「フロアプラン」メニュー→「壁開口」→ 壁をクリックして配置 → 右側パネルでサイズなどを調整
-
-![](https://qhstaticssl.kujiale.com/image/png/1744870968347/E50A5531CFA1D63ABEEB29C639E7547C.png)
-
-## 2. 操作手順
-
-![](https://qhstaticssl.kujiale.com/image/gif/1744874129847/CD6DAA33C692F5BF52B1D987D60AB6A7.gif)
-
-![](https://qhstaticssl.kujiale.com/image/png/1744874169816/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Step 1
-![](https://qhstaticssl.kujiale.com/image/png/1744870646091/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744870646091/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Screenshot 1
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744870646091/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

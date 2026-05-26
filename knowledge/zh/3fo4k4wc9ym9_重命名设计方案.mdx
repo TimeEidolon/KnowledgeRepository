@@ -7,31 +7,36 @@ description: "在Coohom中，有两种方式可以重命名设计方案名称，
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 进入**工作台-方案**，选择需要重命名的方案，点击**重命名**，重命名方案即可
 
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1752566304523/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1752566304523/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1752566304523/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700213/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700213/2D37C2734C50A6837B78ACB4959B66FF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700213/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-### Step 1
+### Step 2
 选择需要重命名的方案，点击**方案详情**
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1752566462773/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1752566462773/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1752566462773/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1752566462773/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-### Step 2
+### Step 3
 点击右上角的...标志，选择**编辑项目信息**，重命名方案即可
 
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700178/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700178/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700178/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700178/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1752566569516/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1752566569516/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1752566569516/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1752566569516/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 
 # 面向用户
@@ -64,25 +69,22 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 进入**工作台-方案**，选择需要重命名的方案，点击**重命名**，重命名方案即可
-![](https://qhstaticssl.kujiale.com/image/png/1752566304523/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1752566304523/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700213/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700213/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-1. 选择需要重命名的方案，点击**方案详情**
-![](https://qhstaticssl.kujiale.com/image/png/1752566462773/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1752566462773/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 进入**工作台-方案**，选择需要重命名的方案，点击**重命名**，重命名方案即可
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1752566304523/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700213/2D37C2734C50A6837B78ACB4959B66FF.png
 
-2. 点击右上角的...标志，选择**编辑项目信息**，重命名方案即可
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700178/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700178/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1752566569516/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1752566569516/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 选择需要重命名的方案，点击**方案详情**
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1752566462773/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_3_TEXT: 点击右上角的...标志，选择**编辑项目信息**，重命名方案即可
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/png/1752567700178/2D37C2734C50A6837B78ACB4959B66FF.png
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1752566569516/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

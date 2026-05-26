@@ -11,29 +11,31 @@ description: "在户型工具中，可以在楼层参考中设置显示上层或
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=qw7eef5wAHI
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/qw7eef5wAHI" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
-切换为**2D模式**
-
-### Step 2
 点击小眼睛按钮，**楼层参考**中选择**上层**或**下层**，选择后会显示对应的楼层户型作为参照
 
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1747971489475/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1747971489475/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1747971489475/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1747971489475/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1747971654150/50B51378A88D5E0934DD2BC484112F99.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1747971654150/50B51378A88D5E0934DD2BC484112F99.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747971654150/50B51378A88D5E0934DD2BC484112F99.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 1
-切换为**2D模式**
+<img src="https://qhstaticssl.kujiale.com/image/gif/1747971654150/50B51378A88D5E0934DD2BC484112F99.gif" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 点击小眼睛按钮，**楼层参考**中选择**隐藏参考**，选择后会隐藏其他的楼层户型
 
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1747971720527/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1747971720527/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1747971720527/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1747971822294/942D92F284C465B894CD2B8179C66B8F.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1747971822294/942D92F284C465B894CD2B8179C66B8F.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1747971822294/942D92F284C465B894CD2B8179C66B8F.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
@@ -62,27 +64,22 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=qw7eef5wAHI
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/qw7eef5wAHI" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-1. 切换为**2D模式**
+MEDIA_STEP_1_TEXT: 点击小眼睛按钮，**楼层参考**中选择**上层**或**下层**，选择后会显示对应的楼层户型作为参照
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1747971489475/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1747971654150/50B51378A88D5E0934DD2BC484112F99.gif
 
-2. 点击小眼睛按钮，**楼层参考**中选择**上层**或**下层**，选择后会显示对应的楼层户型作为参照
-![](https://qhstaticssl.kujiale.com/image/png/1747971489475/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1747971489475/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1747971654150/50B51378A88D5E0934DD2BC484112F99.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747971654150/50B51378A88D5E0934DD2BC484112F99.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-
-1. 切换为**2D模式**
-
-2. 点击小眼睛按钮，**楼层参考**中选择**隐藏参考**，选择后会隐藏其他的楼层户型
-![](https://qhstaticssl.kujiale.com/image/png/1747971720527/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1747971720527/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1747971822294/942D92F284C465B894CD2B8179C66B8F.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747971822294/942D92F284C465B894CD2B8179C66B8F.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 点击小眼睛按钮，**楼层参考**中选择**隐藏参考**，选择后会隐藏其他的楼层户型
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1747971720527/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1747971822294/942D92F284C465B894CD2B8179C66B8F.gif
 
 </Visibility>

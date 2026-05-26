@@ -7,24 +7,15 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Problem Two recessed lights are not shining, while other lights are displaying normally.
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712628/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712628/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
 Solution The recessed lights are embedded into the ceiling; adjust the position of the recessed lights to fix the issue.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712590/8930A5C65CDA4F41382139D3E47C1E18.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712590/8930A5C65CDA4F41382139D3E47C1E18.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712590/8930A5C65CDA4F41382139D3E47C1E18.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712590/8930A5C65CDA4F41382139D3E47C1E18.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-Two recessed lights are not shining, while other lights are displaying normally.
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712628/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
 # Solution
 
@@ -36,13 +27,14 @@ The recessed lights are embedded into the ceiling; adjust the position of the re
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Solution The recessed lights are embedded into the ceiling; adjust the position of the recessed lights to fix the issue.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712590/8930A5C65CDA4F41382139D3E47C1E18.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712590/8930A5C65CDA4F41382139D3E47C1E18.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Solution The recessed lights are embedded into the ceiling; adjust the position of the recessed lights to fix the issue.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135712590/8930A5C65CDA4F41382139D3E47C1E18.png
 
 </Visibility>

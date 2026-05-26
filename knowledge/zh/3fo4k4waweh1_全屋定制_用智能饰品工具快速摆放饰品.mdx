@@ -7,31 +7,25 @@ description: "柜子设计完成后，可以使用智能饰品功能一键摆放
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-进入全屋定制设计，选择**厨房/衣帽间**
-
-### Step 2
 选择顶层工具栏中的**智能饰品**
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744289503504/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1744289503504/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744289503504/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 1
-选中需要摆放饰品的柜子
+<img src="https://qhstaticssl.kujiale.com/image/png/1744289503504/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-从智能饰品面板中选择对应的定制工具线
-
-### Step 3
 选择适合的饰品模板，点击**应用**
 
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1744289756911/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1744289756911/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744289756911/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1744289756911/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1744289870831/1266B81F2435A0B8241F4B1592A677EC.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1744289870831/1266B81F2435A0B8241F4B1592A677EC.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744289870831/1266B81F2435A0B8241F4B1592A677EC.gif" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/gif/1744289870831/1266B81F2435A0B8241F4B1592A677EC.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
 
 # 面向用户
@@ -60,25 +54,18 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 进入全屋定制设计，选择**厨房/衣帽间**
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 选择顶层工具栏中的**智能饰品**
-![](https://qhstaticssl.kujiale.com/image/png/1744289503504/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744289503504/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 选择顶层工具栏中的**智能饰品**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744289503504/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-1. 选中需要摆放饰品的柜子
-
-2. 从智能饰品面板中选择对应的定制工具线
-
-3. 选择适合的饰品模板，点击**应用**
-![](https://qhstaticssl.kujiale.com/image/png/1744289756911/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744289756911/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1744289870831/1266B81F2435A0B8241F4B1592A677EC.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744289870831/1266B81F2435A0B8241F4B1592A677EC.gif" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 选择适合的饰品模板，点击**应用**
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1744289756911/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1744289870831/1266B81F2435A0B8241F4B1592A677EC.gif
 
 </Visibility>

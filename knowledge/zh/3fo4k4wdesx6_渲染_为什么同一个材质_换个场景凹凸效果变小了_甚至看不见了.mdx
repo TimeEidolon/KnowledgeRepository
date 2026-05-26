@@ -7,19 +7,15 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-凹凸效果会随着灯光变化后发生变化，甚至出现灯光较弱的时候凹凸效果全没有的情况，因为凹凸效果本身就对灯光的变化较为敏感。如下图
+图中绿色框中的效果和红色框中的效果完全不一样，但确实是同一个材质，这就是在不同灯光下，会产生不同的效果。
 
-### Step 2
-图中绿色框中的效果和红色框中的效果完全不一样，但确实是同一个材质，这就是在不同灯光下，会产生不同的效果。 在有凹凸材质（硅藻泥等）的情况下，需要体现凹凸的效果的，尽量使用射灯或者筒灯来表现效果，或者光影对比加强些，这样凹凸效果的明暗面就会更立体。
-
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-同一个材质（硅藻泥等带有凹凸贴图的材质），在A场景中渲染结果是对的，但是换到B场景中渲染效果就发生了变化。
 
 # 原因
 
@@ -36,15 +32,14 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 凹凸效果会随着灯光变化后发生变化，甚至出现灯光较弱的时候凹凸效果全没有的情况，因为凹凸效果本身就对灯光的变化较为敏感。如下图
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 图中绿色框中的效果和红色框中的效果完全不一样，但确实是同一个材质，这就是在不同灯光下，会产生不同的效果。 在有凹凸材质（硅藻泥等）的情况下，需要体现凹凸的效果的，尽量使用射灯或者筒灯来表现效果，或者光影对比加强些，这样凹凸效果的明暗面就会更立体。
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 图中绿色框中的效果和红色框中的效果完全不一样，但确实是同一个材质，这就是在不同灯光下，会产生不同的效果。
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1595988779909/BE1C91BDE5E7808DA7DB4118C508129F.png?x-oss-process=image/resize,m_mfit,w_488/format,webp
 
 </Visibility>

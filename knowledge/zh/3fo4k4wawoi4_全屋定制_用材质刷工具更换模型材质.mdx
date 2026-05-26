@@ -7,22 +7,28 @@ description: "材质刷可以复制模型材质赋予到另一个模型上，实
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-进入全屋定制设计，选择**厨房/衣帽间**
+选择顶层工具栏中的**工具-材质刷**
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744288310105/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1744288310105/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1744288310105/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-选择顶层工具栏中的**工具-材质刷** 将材质刷放在模型上吸取材质样式，找到需要替换材质的模型部件，点击一刷，材质一键被应用 在设计工具内，可实现通用的材质样式之间互刷，以下模型材质可进行互刷： * 定制家具，定制橱柜，定制门窗，软装家具，其他配件（硬装铺贴暂不支持）
+材质刷 将材质刷放在模型上吸取材质样式，找到需要替换材质的模型部件，点击一刷，材质一键被应用
 
-![](https://qhstaticssl.kujiale.com/image/png/1744288310105/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744288310105/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1744288510545/35EB604C3752D40D8BFB9F2F21996F46.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1744288510545/35EB604C3752D40D8BFB9F2F21996F46.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1744288510545/35EB604C3752D40D8BFB9F2F21996F46.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
+### Step 3
+材质刷支持跨工具线互刷 在设计工具内，可实现通用的材质样式之间互刷，以下模型材质可进行互刷： * 定制家具，定制橱柜，定制门窗，软装家具，其他配件（硬装铺贴暂不支持）
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1744288728857/35EB604C3752D40D8BFB9F2F21996F46.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1744288728857/35EB604C3752D40D8BFB9F2F21996F46.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744288728857/35EB604C3752D40D8BFB9F2F21996F46.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/gif/1744288728857/35EB604C3752D40D8BFB9F2F21996F46.gif" alt="Step 3" style="max-width:100%;height:auto;" />
 
 
 # 面向用户
@@ -55,19 +61,20 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 进入全屋定制设计，选择**厨房/衣帽间**
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 选择顶层工具栏中的**工具-材质刷** 将材质刷放在模型上吸取材质样式，找到需要替换材质的模型部件，点击一刷，材质一键被应用 在设计工具内，可实现通用的材质样式之间互刷，以下模型材质可进行互刷： * 定制家具，定制橱柜，定制门窗，软装家具，其他配件（硬装铺贴暂不支持）
-![](https://qhstaticssl.kujiale.com/image/png/1744288310105/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744288310105/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1744288510545/35EB604C3752D40D8BFB9F2F21996F46.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744288510545/35EB604C3752D40D8BFB9F2F21996F46.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1744288728857/35EB604C3752D40D8BFB9F2F21996F46.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744288728857/35EB604C3752D40D8BFB9F2F21996F46.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 选择顶层工具栏中的**工具-材质刷**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744288310105/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: 材质刷 将材质刷放在模型上吸取材质样式，找到需要替换材质的模型部件，点击一刷，材质一键被应用
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1744288510545/35EB604C3752D40D8BFB9F2F21996F46.gif
+
+MEDIA_STEP_3_TEXT: 材质刷支持跨工具线互刷 在设计工具内，可实现通用的材质样式之间互刷，以下模型材质可进行互刷： * 定制家具，定制橱柜，定制门窗，软装家具，其他配件（硬装铺贴暂不支持）
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1744288728857/35EB604C3752D40D8BFB9F2F21996F46.gif
 
 </Visibility>

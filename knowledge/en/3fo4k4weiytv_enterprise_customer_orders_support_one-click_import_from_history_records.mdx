@@ -8,25 +8,35 @@ For customized order scenarios for long-term cooperative customers, considering 
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Click **Create Customer Order**, then click **Import From History** on the pop-up page.
+Entrance In the customization tool, hover your mouse over the top **Create Review Form**, then click **Create Customer Order**.
 
-![](https://qhstaticssl.kujiale.com/image/png/1769501623502/1D3442FD1627A8BBBD0FC568C9B5461D.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769501623502/1D3442FD1627A8BBBD0FC568C9B5461D.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769501601618/30A8A3363E0048907252F2B44103E8DD.png
+![](https://qhstaticssl.kujiale.com/image/png/1769501601618/30A8A3363E0048907252F2B44103E8DD.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1769501601618/30A8A3363E0048907252F2B44103E8DD.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-On the import page, you can browse all historical customer orders. You can select one order data to import, and the new order form will automatically populate all the field values from the old order. * For example, if I have a long-term customer, each time I create a new order, I must write his information again. Now, I only need to select his previous order to directly import it, avoiding repetitive form filling.
+Click **Create Customer Order**, then click **Import From History** on the pop-up page.
 
-![](https://qhstaticssl.kujiale.com/image/png/1769507259007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769507259007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769501623502/1D3442FD1627A8BBBD0FC568C9B5461D.png
+![](https://qhstaticssl.kujiale.com/image/png/1769501623502/1D3442FD1627A8BBBD0FC568C9B5461D.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1769501623502/1D3442FD1627A8BBBD0FC568C9B5461D.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
+On the import page, you can browse all historical customer orders. You can select one order data to import, and the new order form will automatically populate all the field values from the old order. * For example, if I have a long-term customer, each time I create a new order, I must write his information again. Now, I only need to select his previous order to directly import it, avoiding repetitive form filling.
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769507259007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1769507259007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1769507259007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+
+### Step 4
 After importing, you can see that the form automatically populates all the values from the old order, and all fields support importing (Note: The new order and the selected imported old order have no actual connection; the import function is only to help the user quickly fill out information). * After importing, you can modify field values again and proceed to save and create a new order.
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769501538519/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1769501538519/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769501538519/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1769501538519/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 # For Users
 
@@ -61,21 +71,23 @@ will automatically populate all the field values from the old order.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Click **Create Customer Order**, then click **Import From History** on the pop-up page.
-![](https://qhstaticssl.kujiale.com/image/png/1769501623502/1D3442FD1627A8BBBD0FC568C9B5461D.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769501623502/1D3442FD1627A8BBBD0FC568C9B5461D.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. On the import page, you can browse all historical customer orders. You can select one order data to import, and the new order form will automatically populate all the field values from the old order. * For example, if I have a long-term customer, each time I create a new order, I must write his information again. Now, I only need to select his previous order to directly import it, avoiding repetitive form filling.
-![](https://qhstaticssl.kujiale.com/image/png/1769507259007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769507259007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Entrance In the customization tool, hover your mouse over the top **Create Review Form**, then click **Create Customer Order**.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769501601618/30A8A3363E0048907252F2B44103E8DD.png
 
-3. After importing, you can see that the form automatically populates all the values from the old order, and all fields support importing (Note: The new order and the selected imported old order have no actual connection; the import function is only to help the user quickly fill out information). * After importing, you can modify field values again and proceed to save and create a new order.
-![](https://qhstaticssl.kujiale.com/image/png/1769501538519/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1769501538519/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Click **Create Customer Order**, then click **Import From History** on the pop-up page.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769501623502/1D3442FD1627A8BBBD0FC568C9B5461D.png
+
+MEDIA_STEP_3_TEXT: On the import page, you can browse all historical customer orders. You can select one order data to import, and the new order form will automatically populate all the field values from the old order. * For example, if I have a long-term customer, each time I create a new order, I must write his information again. Now, I only need to select his previous order to directly import it, avoiding repetitive form filling.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769507259007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_4_TEXT: After importing, you can see that the form automatically populates all the values from the old order, and all fields support importing (Note: The new order and the selected imported old order have no actual connection; the import function is only to help the user quickly fill out information). * After importing, you can modify field values again and proceed to save and create a new order.
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769501538519/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

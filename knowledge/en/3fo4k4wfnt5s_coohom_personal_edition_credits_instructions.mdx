@@ -8,29 +8,33 @@ Credits are Coohom's exclusive consumption unit for AI features, used to exchang
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Entrance On the Workspace page, click on your avatar to view your current credit balance, and click the **Credits** to check detailed usage records.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779448025035/63970253C29ACE46417E4B08E7975E9C.png
 ![](https://qhstaticssl.kujiale.com/image/png/1779448025035/63970253C29ACE46417E4B08E7975E9C.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1779448025035/63970253C29ACE46417E4B08E7975E9C.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Step 2
+Screenshot 2
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209808/BB8D7B8F030947723BB8C67710326C20.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209808/BB8D7B8F030947723BB8C67710326C20.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209808/BB8D7B8F030947723BB8C67710326C20.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 Purchase Credits On the credits detail page, click **Top Up Credits**, then purchase as needed on the recharge page (Elite team members will be supported for purchase at a later stage).
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1778211861320/2CBA59A688EDE16E011841B168BC4D1A.png
 ![](https://qhstaticssl.kujiale.com/image/png/1778211861320/2CBA59A688EDE16E011841B168BC4D1A.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1778211861320/2CBA59A688EDE16E011841B168BC4D1A.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
-Step 4
+Screenshot 4
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209850/A5E5CCCA38886840B360AFB4F804B56A.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209850/A5E5CCCA38886840B360AFB4F804B56A.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209850/A5E5CCCA38886840B360AFB4F804B56A.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -84,25 +88,23 @@ There are three ways for individual users to obtain credits:
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Entrance On the Workspace page, click on your avatar to view your current credit balance, and click the **Credits** to check detailed usage records.
-![](https://qhstaticssl.kujiale.com/image/png/1779448025035/63970253C29ACE46417E4B08E7975E9C.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1779448025035/63970253C29ACE46417E4B08E7975E9C.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Step 2
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209808/BB8D7B8F030947723BB8C67710326C20.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209808/BB8D7B8F030947723BB8C67710326C20.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Entrance On the Workspace page, click on your avatar to view your current credit balance, and click the **Credits** to check detailed usage records.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779448025035/63970253C29ACE46417E4B08E7975E9C.png
 
-3. Purchase Credits On the credits detail page, click **Top Up Credits**, then purchase as needed on the recharge page (Elite team members will be supported for purchase at a later stage).
-![](https://qhstaticssl.kujiale.com/image/png/1778211861320/2CBA59A688EDE16E011841B168BC4D1A.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1778211861320/2CBA59A688EDE16E011841B168BC4D1A.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209808/BB8D7B8F030947723BB8C67710326C20.png
 
-4. Step 4
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209850/A5E5CCCA38886840B360AFB4F804B56A.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209850/A5E5CCCA38886840B360AFB4F804B56A.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Purchase Credits On the credits detail page, click **Top Up Credits**, then purchase as needed on the recharge page (Elite team members will be supported for purchase at a later stage).
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1778211861320/2CBA59A688EDE16E011841B168BC4D1A.png
+
+MEDIA_STEP_4_TEXT: Screenshot 4
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1778211209850/A5E5CCCA38886840B360AFB4F804B56A.png
 
 </Visibility>

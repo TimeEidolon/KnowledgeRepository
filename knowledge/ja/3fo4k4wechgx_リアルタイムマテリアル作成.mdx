@@ -7,103 +7,236 @@ description: "企業ライブラリ→「マテリアル」でのマテリアル
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-青い正方形をドラックして範囲を選択
+１．入口 企業ライブラリに入り、「製品」→「マテリアル」をクリックし、右上の「マテリアル新規作成」をクリックしてください。
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762919030762/8FDCF84D12ABF75A56424D8709A60EFC.png
+![](https://qhstaticssl.kujiale.com/image/png/1762919030762/8FDCF84D12ABF75A56424D8709A60EFC.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1762919030762/8FDCF84D12ABF75A56424D8709A60EFC.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-輝度均一化を設定
+リアルタイムマテリアルエディタに入ります。
+
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762930064447/53AD9B85228B90A7A1B47C5B9A7427BA.png
+![](https://qhstaticssl.kujiale.com/image/png/1762930064447/53AD9B85228B90A7A1B47C5B9A7427BA.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1762930064447/53AD9B85228B90A7A1B47C5B9A7427BA.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
-クリックして画像をプレビュー
+左側のテンプレートパネルで作成したいテンプレートを選択 * マテリアルテンプレート：公共テンプレート * 企業テンプレート：以前作成され、企業アカウントに保存された企業用のマテリアルテンプレート 例えば、今回はキャビネット用のマテリアルを作成します。 反射がない木目化粧板のマテリアルを作ります。 「マテリアルテンプレート」で「パネル」をクリックし、「木目化粧板（艶無し）」をクリックしてください。
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763012891320/2AA7CBA3ABF3B3DE805E1CB0A9F211C2.png
+![](https://qhstaticssl.kujiale.com/image/png/1763012891320/2AA7CBA3ABF3B3DE805E1CB0A9F211C2.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1763012891320/2AA7CBA3ABF3B3DE805E1CB0A9F211C2.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
-設定完了 ③効果パラメーター調整 効果パラメーターは以下となります： 拡散反射： 効果欄で「マップ」と「色」があります。 マップの場合、テクスチャにVRカラーに加えて拡散反射を調整します。 色の場合、色のみの調整となります**（テクスチャが消えます）** 効果を決定後、VRカラーを決めます。 RBGの入力、色彩パネルでのクリック、またスポイトツールで画面上の色を吸い取ります。 反射： 効果で「マップ」と「色」があります。 マップで調整する場合、数値で明るさをコントロールします。色で調整する場合、マテリアルに色の反射光が追加されます。黒に設定すると、反射がありません。白に設定すると、反射が非常に強くなります。 マップをアップロードすることによって反射模様も設定できます。 反射光沢：艶度を調整するパラメーターです。数値が大きくなればなるほど、光沢度が高くなります。 マップの設定することにより、反射光沢に模様にも設定できます。 バンプ：マテリアルの凹凸感を調整すます。 数値が大きくなればなるほど、テクスチャの凹凸感が強くなります。 フレネル： オンにする場合、反射強度は角度によって変わりますが、オフの場合全ての角度からの同じ反射効果があります。 屈折率の数値が高くなればなるほど、反射強度が強くなります。 マテリアル設定後、パラメーターパネルの左側にある画面でレンダリング効果を確認することができます。 ①レンダリングシーン変更 レンダリングシーンを変更事ができます。「レンダリングシーン変更」ボッタンをクリックして、好きなシーンを選択することができます。 例えば、壁紙の場合「壁」、キャビネット本体用マテリアルの場合「パネル」を選択したら、より臨場感があるレンダリング効果を得られます。 変更後右下の「レンダリング」ボタンをクリックし、再レンダリングが行います。 ②レンダリング保存 ２番名の保存ボタンでレンダリング画像を保存します。 ③画像表示 右下の拡大鏡マークで画像を拡大して表示します。 下の＋ーマークで画像を拡大・縮小。 右側の「設定」ボッタンでエディタ全体の表示設定を行います。 ①バンプマップ同期 オンにすると、現在使用されたマップにより自動的にバンプ効果（テクスチャの凹凸感）が生成されます。 オンにしても、バンプパラメーターでさらなる調整をすることができます。 ②画像解像度 現在エディタで表示されたマテリアルの画質を設定します。 1024と2048があります。 高い解像度はよりよいレンダリング効果を得られます。一方、低い解像度はスピード優先のため、操作がスムーズになります。 ③環境光設定 HDRでエディタ全体の環境光を設定します。「明るい」と「ソフト」２種類があります。 比較は以下となります。 ④アンビエンド輝度 数値で空間全体照度を調整します。 ①保存 現在作成中のマテリアルを保存したい場合、一番下真ん中の「保存」ボタンでマテリアルを保存します。 必要な情報を記入した上、「保存」ボタンをクリック。 ②一括保存 現在作成中のマテリアルのカテゴリ・パラメーターを複数のローカルマテリアルに適用したく、保存したい場合、「一括保存」機能を使用します。 すべての画像は**現在のテンプレートカテゴリになり、現在パラメーター設定（反射数値など）で処理されますので**ご注意ください。 ③テンプレートとして保存 次回また同じパラメータのマテリアルを使用して微調整をしたい場合、作成中のマテリアルを企業テンプレートとして保存できます。 保存後、左側の「企業テンプレート」で表示されます。 マウスをカバー図の上に置き、上の「i」マークで拡大図が表示されます。 下の「…」で名前変更・移動・削除できます。 下の「フォルダ新規作成」で新しいフォルダを作成できます。 フォルダ右下の「…」でフォルダ名変更・削除できます。 ④リソース管理 エディタでアップロードされたマテリアルは「リソース管理」で表示されます。 ドラッグしてそのまま修正することができます。 右側の「クリーンアップ」ボタンでリソース管理内のテクスチャが全て消去されます。 企業ライブラリに保存されたマテリアルには影響がありません。
+そうすると、真ん中の球モデルでテンプレートのマテリアルが表示されます。
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763013060951/299C12259108B95E6807419DF1FEBF4C.png
+![](https://qhstaticssl.kujiale.com/image/png/1763013060951/299C12259108B95E6807419DF1FEBF4C.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1763013060951/299C12259108B95E6807419DF1FEBF4C.png" alt="Step 4" style="max-width:100%;height:auto;" />
+
+### Step 5
+（２）表示調整 もし球モデルは見にくくと感じ、他の表示状態を変更したい場合、左下の「球モデル」のところをクリックし、プルダウンの選択肢で他の表示方法を選択してください。 球モデル以外、以下の表示方法があります： * パネルモデル * 正方形モデル * 布モデル
+
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763013643522/886AC6685EAA611CBF3394FFE02E2C56.png
+![](https://qhstaticssl.kujiale.com/image/png/1763013643522/886AC6685EAA611CBF3394FFE02E2C56.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1763013643522/886AC6685EAA611CBF3394FFE02E2C56.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+（３）パラメーター調整 右側のパネルでマテリアルのパラメーターを調整します。 ①サイズ調整 WとHに入力して、マテリアルのサイズを決めます。 真ん中の🔗モダンをクリックし、固定比率＆固定比率解除を選べます。
+
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763013918744/81407DBC83EC8A51B5A2EB05E3EF6A07.png
+![](https://qhstaticssl.kujiale.com/image/png/1763013918744/81407DBC83EC8A51B5A2EB05E3EF6A07.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1763013918744/81407DBC83EC8A51B5A2EB05E3EF6A07.png" alt="Step 6" style="max-width:100%;height:auto;" />
+
+### Step 7
+※サイズについて： 内装（フローリング、壁紙）とカスタムモデル（オーダー家具）の場合、リアルサイズの入力をおすすめです。例えば、実際生産時パネル一枚が910ｍｍ\*1800ｍｍの場合、Ｗ：900　Ｈ：1800の入力がおすすめです。 デコレーション系モデル（ソファ、カーテン）の場合、モデルのUVマッピング比率によるサイズです。 ②マップ（画像）調整 画像の右側にマップ調整ボッタンがあります。
+
+MEDIA_STEP_7_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763018246371/497E37ACAD7764EE04F1FC74E1C56F57.png
+![](https://qhstaticssl.kujiale.com/image/png/1763018246371/497E37ACAD7764EE04F1FC74E1C56F57.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1763018246371/497E37ACAD7764EE04F1FC74E1C56F57.png" alt="Step 7" style="max-width:100%;height:auto;" />
+
+### Step 8
+置換：現在のマップを他のマップに置換ます。（システムにあるマップと企業ライブラリにアップロードされたマップを置き換えます） 「置換」ボタンをクリックしてマップを選択すると、表示画面に置換後のマテリアルに変わります。
+
+MEDIA_STEP_8_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763018415703/E2975724C0662BC1CE32EDD71CCB8058.png
+![](https://qhstaticssl.kujiale.com/image/png/1763018415703/E2975724C0662BC1CE32EDD71CCB8058.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1763018415703/E2975724C0662BC1CE32EDD71CCB8058.png" alt="Step 8" style="max-width:100%;height:auto;" />
+
+### Step 9
+アップロード：ローカルにあるマップ（マテリアル画像）をその場でアップロードして置換。 リセット：「置換」や「アップロード」での操作をすべてリセットします。 シームレス処理：パネル材など画像を貼り付ける時、隙間が出ないようにシームレス処理を行います。
+
+MEDIA_STEP_9_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763018695544/914F9CF5380598D08EA2AF314378A97A.png
+![](https://qhstaticssl.kujiale.com/image/png/1763018695544/914F9CF5380598D08EA2AF314378A97A.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1763018695544/914F9CF5380598D08EA2AF314378A97A.png" alt="Step 9" style="max-width:100%;height:auto;" />
+
+### Step 10
+設定完了 ③効果パラメーター調整 効果パラメーターは以下となります： 拡散反射： 効果欄で「マップ」と「色」があります。 マップの場合、テクスチャにVRカラーに加えて拡散反射を調整します。 色の場合、色のみの調整となります**（テクスチャが消えます）** 効果を決定後、VRカラーを決めます。 RBGの入力、色彩パネルでのクリック、またスポイトツールで画面上の色を吸い取ります。 反射： 効果で「マップ」と「色」があります。 マップで調整する場合、数値で明るさをコントロールします。色で調整する場合、マテリアルに色の反射光が追加されます。黒に設定すると、反射がありません。白に設定すると、反射が非常に強くなります。 マップをアップロードすることによって反射模様も設定できます。 反射光沢：艶度を調整するパラメーターです。数値が大きくなればなるほど、光沢度が高くなります。 マップの設定することにより、反射光沢に模様にも設定できます。 バンプ：マテリアルの凹凸感を調整すます。 数値が大きくなればなるほど、テクスチャの凹凸感が強くなります。 フレネル： オンにする場合、反射強度は角度によって変わりますが、オフの場合全ての角度からの同じ反射効果があります。 屈折率の数値が高くなればなるほど、反射強度が強くなります。
+
+MEDIA_STEP_10_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1763018861224/22B7535F0A4606A1CCA3F6FECAF0E8C6.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763018861224/22B7535F0A4606A1CCA3F6FECAF0E8C6.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763018861224/22B7535F0A4606A1CCA3F6FECAF0E8C6.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763018861224/22B7535F0A4606A1CCA3F6FECAF0E8C6.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_10_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1763019665315/A07F3D4FD90D299A4FA9A3891A4ACC96.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763019665315/A07F3D4FD90D299A4FA9A3891A4ACC96.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763019665315/A07F3D4FD90D299A4FA9A3891A4ACC96.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763019665315/A07F3D4FD90D299A4FA9A3891A4ACC96.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_10_IMAGE_3: https://qhstaticssl.kujiale.com/image/png/1763019791674/D41918DCE06FF26FA6D5F77D664C8615.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763019791674/D41918DCE06FF26FA6D5F77D664C8615.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763019791674/D41918DCE06FF26FA6D5F77D664C8615.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763019791674/D41918DCE06FF26FA6D5F77D664C8615.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_10_IMAGE_4: https://qhstaticssl.kujiale.com/image/png/1763021649116/96821C9B9D7CA2A3D3D8DE5AE166464F.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763021649116/96821C9B9D7CA2A3D3D8DE5AE166464F.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763021649116/96821C9B9D7CA2A3D3D8DE5AE166464F.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763021649116/96821C9B9D7CA2A3D3D8DE5AE166464F.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_10_IMAGE_5: https://qhstaticssl.kujiale.com/image/png/1763022238394/5E249030347534F7C368C51FA70B490F.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763022238394/5E249030347534F7C368C51FA70B490F.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763022238394/5E249030347534F7C368C51FA70B490F.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763022238394/5E249030347534F7C368C51FA70B490F.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_10_IMAGE_6: https://qhstaticssl.kujiale.com/image/png/1763021746086/92547778A94289EC8107F83C624250CF.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763021746086/92547778A94289EC8107F83C624250CF.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763021746086/92547778A94289EC8107F83C624250CF.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763021746086/92547778A94289EC8107F83C624250CF.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_10_IMAGE_7: https://qhstaticssl.kujiale.com/image/png/1763022114307/A00B2BCEDCF91455802F3A74E999BEBB.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763022114307/A00B2BCEDCF91455802F3A74E999BEBB.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763022114307/A00B2BCEDCF91455802F3A74E999BEBB.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763022114307/A00B2BCEDCF91455802F3A74E999BEBB.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_10_IMAGE_8: https://qhstaticssl.kujiale.com/image/png/1763021827478/74A61F575573189C3F8BC88D5EA88022.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763021827478/74A61F575573189C3F8BC88D5EA88022.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763021827478/74A61F575573189C3F8BC88D5EA88022.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763021827478/74A61F575573189C3F8BC88D5EA88022.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_10_IMAGE_9: https://qhstaticssl.kujiale.com/image/png/1763022355148/DC1FD46DE0024CA21D52A7761CDD2E93.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763022355148/DC1FD46DE0024CA21D52A7761CDD2E93.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763022355148/DC1FD46DE0024CA21D52A7761CDD2E93.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763022355148/DC1FD46DE0024CA21D52A7761CDD2E93.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+### Step 11
+（４）レンダリング効果確認 マテリアル設定後、パラメーターパネルの左側にある画面でレンダリング効果を確認することができます。
+
+MEDIA_STEP_11_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763022554976/734EC9319247C7D84372F7C552D2F5D5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763022554976/734EC9319247C7D84372F7C552D2F5D5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763022554976/734EC9319247C7D84372F7C552D2F5D5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763022554976/734EC9319247C7D84372F7C552D2F5D5.png" alt="Step 11" style="max-width:100%;height:auto;" />
 
+### Step 12
+①レンダリングシーン変更 レンダリングシーンを変更事ができます。「レンダリングシーン変更」ボッタンをクリックして、好きなシーンを選択することができます。 例えば、壁紙の場合「壁」、キャビネット本体用マテリアルの場合「パネル」を選択したら、より臨場感があるレンダリング効果を得られます。 変更後右下の「レンダリング」ボタンをクリックし、再レンダリングが行います。 ②レンダリング保存 ２番名の保存ボタンでレンダリング画像を保存します。
+
+MEDIA_STEP_12_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763026965507/B30A9EFF6B8F9E5B5D1A0324146D5EAF.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763026965507/B30A9EFF6B8F9E5B5D1A0324146D5EAF.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763026965507/B30A9EFF6B8F9E5B5D1A0324146D5EAF.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763026965507/B30A9EFF6B8F9E5B5D1A0324146D5EAF.png" alt="Step 12" style="max-width:100%;height:auto;" />
 
+### Step 13
+③画像表示 右下の拡大鏡マークで画像を拡大して表示します。 下の＋ーマークで画像を拡大・縮小。
+
+MEDIA_STEP_13_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027026713/79EA393CD515768F2698CABA841B6034.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763027026713/79EA393CD515768F2698CABA841B6034.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027026713/79EA393CD515768F2698CABA841B6034.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763027026713/79EA393CD515768F2698CABA841B6034.png" alt="Step 13" style="max-width:100%;height:auto;" />
 
+### Step 14
+３.　エディタ設定 右側の「設定」ボッタンでエディタ全体の表示設定を行います。
+
+MEDIA_STEP_14_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763034727056/FDAF11030EAFD3A466D4EA4165BBDBF1.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763034727056/FDAF11030EAFD3A466D4EA4165BBDBF1.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763034727056/FDAF11030EAFD3A466D4EA4165BBDBF1.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763034727056/FDAF11030EAFD3A466D4EA4165BBDBF1.png" alt="Step 14" style="max-width:100%;height:auto;" />
 
+### Step 15
+①バンプマップ同期 オンにすると、現在使用されたマップにより自動的にバンプ効果（テクスチャの凹凸感）が生成されます。 オンにしても、バンプパラメーターでさらなる調整をすることができます。
+
+MEDIA_STEP_15_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763034911374/C91EA5BB1423B8CEC72AE9A3B19447EF.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763034911374/C91EA5BB1423B8CEC72AE9A3B19447EF.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763034911374/C91EA5BB1423B8CEC72AE9A3B19447EF.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763034911374/C91EA5BB1423B8CEC72AE9A3B19447EF.png" alt="Step 15" style="max-width:100%;height:auto;" />
 
+### Step 16
+②画像解像度 現在エディタで表示されたマテリアルの画質を設定します。 1024と2048があります。 高い解像度はよりよいレンダリング効果を得られます。一方、低い解像度はスピード優先のため、操作がスムーズになります。
+
+MEDIA_STEP_16_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763035085266/992E88EE7301B871A4B8A8DAFFFD90D3.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763035085266/992E88EE7301B871A4B8A8DAFFFD90D3.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763035085266/992E88EE7301B871A4B8A8DAFFFD90D3.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763035085266/992E88EE7301B871A4B8A8DAFFFD90D3.png" alt="Step 16" style="max-width:100%;height:auto;" />
 
+### Step 17
+③環境光設定 HDRでエディタ全体の環境光を設定します。「明るい」と「ソフト」２種類があります。 比較は以下となります。
+
+MEDIA_STEP_17_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763035284630/0E1346CBE78562302058880F31C54EE4.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763035284630/0E1346CBE78562302058880F31C54EE4.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763035284630/0E1346CBE78562302058880F31C54EE4.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763035284630/0E1346CBE78562302058880F31C54EE4.png" alt="Step 17" style="max-width:100%;height:auto;" />
 
+### Step 18
+Screenshot 21
+
+MEDIA_STEP_18_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763035333802/3B6B2FAD0D43E3CAEF7B56424CE7A743.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763035333802/3B6B2FAD0D43E3CAEF7B56424CE7A743.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763035333802/3B6B2FAD0D43E3CAEF7B56424CE7A743.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763035333802/3B6B2FAD0D43E3CAEF7B56424CE7A743.png" alt="Step 18" style="max-width:100%;height:auto;" />
 
+### Step 19
+④アンビエンド輝度 数値で空間全体照度を調整します。
+
+MEDIA_STEP_19_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763035684183/34A9A31F1247ACE959C51DF88C015AA5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763035684183/34A9A31F1247ACE959C51DF88C015AA5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763035684183/34A9A31F1247ACE959C51DF88C015AA5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763035684183/34A9A31F1247ACE959C51DF88C015AA5.png" alt="Step 19" style="max-width:100%;height:auto;" />
 
+### Step 20
+４．マテリアル管理 ①保存 現在作成中のマテリアルを保存したい場合、一番下真ん中の「保存」ボタンでマテリアルを保存します。
+
+MEDIA_STEP_20_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027129387/8C15C20C95CD18AC926333AFCA9B2148.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763027129387/8C15C20C95CD18AC926333AFCA9B2148.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027129387/8C15C20C95CD18AC926333AFCA9B2148.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763027129387/8C15C20C95CD18AC926333AFCA9B2148.png" alt="Step 20" style="max-width:100%;height:auto;" />
 
+### Step 21
+必要な情報を記入した上、「保存」ボタンをクリック。
+
+MEDIA_STEP_21_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027154985/1CC41193CC69E3BCA8C93CFC65F46CD3.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763027154985/1CC41193CC69E3BCA8C93CFC65F46CD3.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027154985/1CC41193CC69E3BCA8C93CFC65F46CD3.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763027154985/1CC41193CC69E3BCA8C93CFC65F46CD3.png" alt="Step 21" style="max-width:100%;height:auto;" />
 
+### Step 22
+②一括保存 現在作成中のマテリアルのカテゴリ・パラメーターを複数のローカルマテリアルに適用したく、保存したい場合、「一括保存」機能を使用します。
+
+MEDIA_STEP_22_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027203831/0C9447C837C79D9315E8ACD8408EB9DD.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763027203831/0C9447C837C79D9315E8ACD8408EB9DD.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027203831/0C9447C837C79D9315E8ACD8408EB9DD.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763027203831/0C9447C837C79D9315E8ACD8408EB9DD.png" alt="Step 22" style="max-width:100%;height:auto;" />
 
+### Step 23
+すべての画像は**現在のテンプレートカテゴリになり、現在パラメーター設定（反射数値など）で処理されますので**ご注意ください。
+
+MEDIA_STEP_23_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027598037/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763027598037/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027598037/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763027598037/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 23" style="max-width:100%;height:auto;" />
 
+### Step 24
+③テンプレートとして保存 次回また同じパラメータのマテリアルを使用して微調整をしたい場合、作成中のマテリアルを企業テンプレートとして保存できます。
+
+MEDIA_STEP_24_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027822033/6A7908EE523C5B3D3B36FAD45FA5DEE2.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763027822033/6A7908EE523C5B3D3B36FAD45FA5DEE2.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027822033/6A7908EE523C5B3D3B36FAD45FA5DEE2.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763027822033/6A7908EE523C5B3D3B36FAD45FA5DEE2.png" alt="Step 24" style="max-width:100%;height:auto;" />
 
+### Step 25
+保存後、左側の「企業テンプレート」で表示されます。
+
+MEDIA_STEP_25_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027927487/D19A06982B07E69F104387E8068A1632.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763027927487/D19A06982B07E69F104387E8068A1632.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027927487/D19A06982B07E69F104387E8068A1632.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763027927487/D19A06982B07E69F104387E8068A1632.png" alt="Step 25" style="max-width:100%;height:auto;" />
 
+### Step 26
+マウスをカバー図の上に置き、上の「i」マークで拡大図が表示されます。 下の「…」で名前変更・移動・削除できます。
+
+MEDIA_STEP_26_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763028710260/72F8D6C66EA283AC47A11C952667523F.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763028710260/72F8D6C66EA283AC47A11C952667523F.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763028710260/72F8D6C66EA283AC47A11C952667523F.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763028710260/72F8D6C66EA283AC47A11C952667523F.png" alt="Step 26" style="max-width:100%;height:auto;" />
 
+### Step 27
+下の「フォルダ新規作成」で新しいフォルダを作成できます。
+
+MEDIA_STEP_27_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027996595/123CCA5168536A1BA2D0988389C76EFB.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763027996595/123CCA5168536A1BA2D0988389C76EFB.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027996595/123CCA5168536A1BA2D0988389C76EFB.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763027996595/123CCA5168536A1BA2D0988389C76EFB.png" alt="Step 27" style="max-width:100%;height:auto;" />
 
+### Step 28
+フォルダ右下の「…」でフォルダ名変更・削除できます。 ④リソース管理 エディタでアップロードされたマテリアルは「リソース管理」で表示されます。 ドラッグしてそのまま修正することができます。
+
+MEDIA_STEP_28_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763033461618/57074694651A6A9BBB11584746A7C3D9.png
 ![](https://qhstaticssl.kujiale.com/image/png/1763033461618/57074694651A6A9BBB11584746A7C3D9.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763033461618/57074694651A6A9BBB11584746A7C3D9.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/png/1763033461618/57074694651A6A9BBB11584746A7C3D9.png" alt="Step 28" style="max-width:100%;height:auto;" />
 
-
-　ここで「リアルタイムマテリアル」の作成方法を紹介します。
 
 # １．入口
 
@@ -391,71 +524,103 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 青い正方形をドラックして範囲を選択
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 輝度均一化を設定
+MEDIA_STEP_1_TEXT: １．入口 企業ライブラリに入り、「製品」→「マテリアル」をクリックし、右上の「マテリアル新規作成」をクリックしてください。
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762919030762/8FDCF84D12ABF75A56424D8709A60EFC.png
 
-3. クリックして画像をプレビュー
+MEDIA_STEP_2_TEXT: リアルタイムマテリアルエディタに入ります。
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1762930064447/53AD9B85228B90A7A1B47C5B9A7427BA.png
 
-4. 設定完了 ③効果パラメーター調整 効果パラメーターは以下となります： 拡散反射： 効果欄で「マップ」と「色」があります。 マップの場合、テクスチャにVRカラーに加えて拡散反射を調整します。 色の場合、色のみの調整となります**（テクスチャが消えます）** 効果を決定後、VRカラーを決めます。 RBGの入力、色彩パネルでのクリック、またスポイトツールで画面上の色を吸い取ります。 反射： 効果で「マップ」と「色」があります。 マップで調整する場合、数値で明るさをコントロールします。色で調整する場合、マテリアルに色の反射光が追加されます。黒に設定すると、反射がありません。白に設定すると、反射が非常に強くなります。 マップをアップロードすることによって反射模様も設定できます。 反射光沢：艶度を調整するパラメーターです。数値が大きくなればなるほど、光沢度が高くなります。 マップの設定することにより、反射光沢に模様にも設定できます。 バンプ：マテリアルの凹凸感を調整すます。 数値が大きくなればなるほど、テクスチャの凹凸感が強くなります。 フレネル： オンにする場合、反射強度は角度によって変わりますが、オフの場合全ての角度からの同じ反射効果があります。 屈折率の数値が高くなればなるほど、反射強度が強くなります。 マテリアル設定後、パラメーターパネルの左側にある画面でレンダリング効果を確認することができます。 ①レンダリングシーン変更 レンダリングシーンを変更事ができます。「レンダリングシーン変更」ボッタンをクリックして、好きなシーンを選択することができます。 例えば、壁紙の場合「壁」、キャビネット本体用マテリアルの場合「パネル」を選択したら、より臨場感があるレンダリング効果を得られます。 変更後右下の「レンダリング」ボタンをクリックし、再レンダリングが行います。 ②レンダリング保存 ２番名の保存ボタンでレンダリング画像を保存します。 ③画像表示 右下の拡大鏡マークで画像を拡大して表示します。 下の＋ーマークで画像を拡大・縮小。 右側の「設定」ボッタンでエディタ全体の表示設定を行います。 ①バンプマップ同期 オンにすると、現在使用されたマップにより自動的にバンプ効果（テクスチャの凹凸感）が生成されます。 オンにしても、バンプパラメーターでさらなる調整をすることができます。 ②画像解像度 現在エディタで表示されたマテリアルの画質を設定します。 1024と2048があります。 高い解像度はよりよいレンダリング効果を得られます。一方、低い解像度はスピード優先のため、操作がスムーズになります。 ③環境光設定 HDRでエディタ全体の環境光を設定します。「明るい」と「ソフト」２種類があります。 比較は以下となります。 ④アンビエンド輝度 数値で空間全体照度を調整します。 ①保存 現在作成中のマテリアルを保存したい場合、一番下真ん中の「保存」ボタンでマテリアルを保存します。 必要な情報を記入した上、「保存」ボタンをクリック。 ②一括保存 現在作成中のマテリアルのカテゴリ・パラメーターを複数のローカルマテリアルに適用したく、保存したい場合、「一括保存」機能を使用します。 すべての画像は**現在のテンプレートカテゴリになり、現在パラメーター設定（反射数値など）で処理されますので**ご注意ください。 ③テンプレートとして保存 次回また同じパラメータのマテリアルを使用して微調整をしたい場合、作成中のマテリアルを企業テンプレートとして保存できます。 保存後、左側の「企業テンプレート」で表示されます。 マウスをカバー図の上に置き、上の「i」マークで拡大図が表示されます。 下の「…」で名前変更・移動・削除できます。 下の「フォルダ新規作成」で新しいフォルダを作成できます。 フォルダ右下の「…」でフォルダ名変更・削除できます。 ④リソース管理 エディタでアップロードされたマテリアルは「リソース管理」で表示されます。 ドラッグしてそのまま修正することができます。 右側の「クリーンアップ」ボタンでリソース管理内のテクスチャが全て消去されます。 企業ライブラリに保存されたマテリアルには影響がありません。
-![](https://qhstaticssl.kujiale.com/image/png/1763018861224/22B7535F0A4606A1CCA3F6FECAF0E8C6.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763018861224/22B7535F0A4606A1CCA3F6FECAF0E8C6.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763019665315/A07F3D4FD90D299A4FA9A3891A4ACC96.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763019665315/A07F3D4FD90D299A4FA9A3891A4ACC96.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763019791674/D41918DCE06FF26FA6D5F77D664C8615.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763019791674/D41918DCE06FF26FA6D5F77D664C8615.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763021649116/96821C9B9D7CA2A3D3D8DE5AE166464F.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763021649116/96821C9B9D7CA2A3D3D8DE5AE166464F.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763022238394/5E249030347534F7C368C51FA70B490F.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763022238394/5E249030347534F7C368C51FA70B490F.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763021746086/92547778A94289EC8107F83C624250CF.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763021746086/92547778A94289EC8107F83C624250CF.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763022114307/A00B2BCEDCF91455802F3A74E999BEBB.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763022114307/A00B2BCEDCF91455802F3A74E999BEBB.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763021827478/74A61F575573189C3F8BC88D5EA88022.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763021827478/74A61F575573189C3F8BC88D5EA88022.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763022355148/DC1FD46DE0024CA21D52A7761CDD2E93.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763022355148/DC1FD46DE0024CA21D52A7761CDD2E93.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763022554976/734EC9319247C7D84372F7C552D2F5D5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763022554976/734EC9319247C7D84372F7C552D2F5D5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763026965507/B30A9EFF6B8F9E5B5D1A0324146D5EAF.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763026965507/B30A9EFF6B8F9E5B5D1A0324146D5EAF.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763027026713/79EA393CD515768F2698CABA841B6034.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027026713/79EA393CD515768F2698CABA841B6034.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763034727056/FDAF11030EAFD3A466D4EA4165BBDBF1.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763034727056/FDAF11030EAFD3A466D4EA4165BBDBF1.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763034911374/C91EA5BB1423B8CEC72AE9A3B19447EF.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763034911374/C91EA5BB1423B8CEC72AE9A3B19447EF.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763035085266/992E88EE7301B871A4B8A8DAFFFD90D3.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763035085266/992E88EE7301B871A4B8A8DAFFFD90D3.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763035284630/0E1346CBE78562302058880F31C54EE4.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763035284630/0E1346CBE78562302058880F31C54EE4.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763035333802/3B6B2FAD0D43E3CAEF7B56424CE7A743.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763035333802/3B6B2FAD0D43E3CAEF7B56424CE7A743.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763035684183/34A9A31F1247ACE959C51DF88C015AA5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763035684183/34A9A31F1247ACE959C51DF88C015AA5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763027129387/8C15C20C95CD18AC926333AFCA9B2148.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027129387/8C15C20C95CD18AC926333AFCA9B2148.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763027154985/1CC41193CC69E3BCA8C93CFC65F46CD3.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027154985/1CC41193CC69E3BCA8C93CFC65F46CD3.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763027203831/0C9447C837C79D9315E8ACD8408EB9DD.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027203831/0C9447C837C79D9315E8ACD8408EB9DD.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763027598037/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027598037/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763027822033/6A7908EE523C5B3D3B36FAD45FA5DEE2.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027822033/6A7908EE523C5B3D3B36FAD45FA5DEE2.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763027927487/D19A06982B07E69F104387E8068A1632.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027927487/D19A06982B07E69F104387E8068A1632.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763028710260/72F8D6C66EA283AC47A11C952667523F.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763028710260/72F8D6C66EA283AC47A11C952667523F.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763027996595/123CCA5168536A1BA2D0988389C76EFB.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763027996595/123CCA5168536A1BA2D0988389C76EFB.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1763033461618/57074694651A6A9BBB11584746A7C3D9.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1763033461618/57074694651A6A9BBB11584746A7C3D9.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 左側のテンプレートパネルで作成したいテンプレートを選択 * マテリアルテンプレート：公共テンプレート * 企業テンプレート：以前作成され、企業アカウントに保存された企業用のマテリアルテンプレート 例えば、今回はキャビネット用のマテリアルを作成します。 反射がない木目化粧板のマテリアルを作ります。 「マテリアルテンプレート」で「パネル」をクリックし、「木目化粧板（艶無し）」をクリックしてください。
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763012891320/2AA7CBA3ABF3B3DE805E1CB0A9F211C2.png
+
+MEDIA_STEP_4_TEXT: そうすると、真ん中の球モデルでテンプレートのマテリアルが表示されます。
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763013060951/299C12259108B95E6807419DF1FEBF4C.png
+
+MEDIA_STEP_5_TEXT: （２）表示調整 もし球モデルは見にくくと感じ、他の表示状態を変更したい場合、左下の「球モデル」のところをクリックし、プルダウンの選択肢で他の表示方法を選択してください。 球モデル以外、以下の表示方法があります： * パネルモデル * 正方形モデル * 布モデル
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763013643522/886AC6685EAA611CBF3394FFE02E2C56.png
+
+MEDIA_STEP_6_TEXT: （３）パラメーター調整 右側のパネルでマテリアルのパラメーターを調整します。 ①サイズ調整 WとHに入力して、マテリアルのサイズを決めます。 真ん中の🔗モダンをクリックし、固定比率＆固定比率解除を選べます。
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763013918744/81407DBC83EC8A51B5A2EB05E3EF6A07.png
+
+MEDIA_STEP_7_TEXT: ※サイズについて： 内装（フローリング、壁紙）とカスタムモデル（オーダー家具）の場合、リアルサイズの入力をおすすめです。例えば、実際生産時パネル一枚が910ｍｍ\*1800ｍｍの場合、Ｗ：900　Ｈ：1800の入力がおすすめです。 デコレーション系モデル（ソファ、カーテン）の場合、モデルのUVマッピング比率によるサイズです。 ②マップ（画像）調整 画像の右側にマップ調整ボッタンがあります。
+MEDIA_STEP_7_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763018246371/497E37ACAD7764EE04F1FC74E1C56F57.png
+
+MEDIA_STEP_8_TEXT: 置換：現在のマップを他のマップに置換ます。（システムにあるマップと企業ライブラリにアップロードされたマップを置き換えます） 「置換」ボタンをクリックしてマップを選択すると、表示画面に置換後のマテリアルに変わります。
+MEDIA_STEP_8_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763018415703/E2975724C0662BC1CE32EDD71CCB8058.png
+
+MEDIA_STEP_9_TEXT: アップロード：ローカルにあるマップ（マテリアル画像）をその場でアップロードして置換。 リセット：「置換」や「アップロード」での操作をすべてリセットします。 シームレス処理：パネル材など画像を貼り付ける時、隙間が出ないようにシームレス処理を行います。
+MEDIA_STEP_9_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763018695544/914F9CF5380598D08EA2AF314378A97A.png
+
+MEDIA_STEP_10_TEXT: 設定完了 ③効果パラメーター調整 効果パラメーターは以下となります： 拡散反射： 効果欄で「マップ」と「色」があります。 マップの場合、テクスチャにVRカラーに加えて拡散反射を調整します。 色の場合、色のみの調整となります**（テクスチャが消えます）** 効果を決定後、VRカラーを決めます。 RBGの入力、色彩パネルでのクリック、またスポイトツールで画面上の色を吸い取ります。 反射： 効果で「マップ」と「色」があります。 マップで調整する場合、数値で明るさをコントロールします。色で調整する場合、マテリアルに色の反射光が追加されます。黒に設定すると、反射がありません。白に設定すると、反射が非常に強くなります。 マップをアップロードすることによって反射模様も設定できます。 反射光沢：艶度を調整するパラメーターです。数値が大きくなればなるほど、光沢度が高くなります。 マップの設定することにより、反射光沢に模様にも設定できます。 バンプ：マテリアルの凹凸感を調整すます。 数値が大きくなればなるほど、テクスチャの凹凸感が強くなります。 フレネル： オンにする場合、反射強度は角度によって変わりますが、オフの場合全ての角度からの同じ反射効果があります。 屈折率の数値が高くなればなるほど、反射強度が強くなります。
+MEDIA_STEP_10_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1763018861224/22B7535F0A4606A1CCA3F6FECAF0E8C6.png
+MEDIA_STEP_10_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1763019665315/A07F3D4FD90D299A4FA9A3891A4ACC96.png
+MEDIA_STEP_10_IMAGE_3: https://qhstaticssl.kujiale.com/image/png/1763019791674/D41918DCE06FF26FA6D5F77D664C8615.png
+MEDIA_STEP_10_IMAGE_4: https://qhstaticssl.kujiale.com/image/png/1763021649116/96821C9B9D7CA2A3D3D8DE5AE166464F.png
+MEDIA_STEP_10_IMAGE_5: https://qhstaticssl.kujiale.com/image/png/1763022238394/5E249030347534F7C368C51FA70B490F.png
+MEDIA_STEP_10_IMAGE_6: https://qhstaticssl.kujiale.com/image/png/1763021746086/92547778A94289EC8107F83C624250CF.png
+MEDIA_STEP_10_IMAGE_7: https://qhstaticssl.kujiale.com/image/png/1763022114307/A00B2BCEDCF91455802F3A74E999BEBB.png
+MEDIA_STEP_10_IMAGE_8: https://qhstaticssl.kujiale.com/image/png/1763021827478/74A61F575573189C3F8BC88D5EA88022.png
+MEDIA_STEP_10_IMAGE_9: https://qhstaticssl.kujiale.com/image/png/1763022355148/DC1FD46DE0024CA21D52A7761CDD2E93.png
+
+MEDIA_STEP_11_TEXT: （４）レンダリング効果確認 マテリアル設定後、パラメーターパネルの左側にある画面でレンダリング効果を確認することができます。
+MEDIA_STEP_11_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763022554976/734EC9319247C7D84372F7C552D2F5D5.png
+
+MEDIA_STEP_12_TEXT: ①レンダリングシーン変更 レンダリングシーンを変更事ができます。「レンダリングシーン変更」ボッタンをクリックして、好きなシーンを選択することができます。 例えば、壁紙の場合「壁」、キャビネット本体用マテリアルの場合「パネル」を選択したら、より臨場感があるレンダリング効果を得られます。 変更後右下の「レンダリング」ボタンをクリックし、再レンダリングが行います。 ②レンダリング保存 ２番名の保存ボタンでレンダリング画像を保存します。
+MEDIA_STEP_12_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763026965507/B30A9EFF6B8F9E5B5D1A0324146D5EAF.png
+
+MEDIA_STEP_13_TEXT: ③画像表示 右下の拡大鏡マークで画像を拡大して表示します。 下の＋ーマークで画像を拡大・縮小。
+MEDIA_STEP_13_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027026713/79EA393CD515768F2698CABA841B6034.png
+
+MEDIA_STEP_14_TEXT: ３.　エディタ設定 右側の「設定」ボッタンでエディタ全体の表示設定を行います。
+MEDIA_STEP_14_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763034727056/FDAF11030EAFD3A466D4EA4165BBDBF1.png
+
+MEDIA_STEP_15_TEXT: ①バンプマップ同期 オンにすると、現在使用されたマップにより自動的にバンプ効果（テクスチャの凹凸感）が生成されます。 オンにしても、バンプパラメーターでさらなる調整をすることができます。
+MEDIA_STEP_15_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763034911374/C91EA5BB1423B8CEC72AE9A3B19447EF.png
+
+MEDIA_STEP_16_TEXT: ②画像解像度 現在エディタで表示されたマテリアルの画質を設定します。 1024と2048があります。 高い解像度はよりよいレンダリング効果を得られます。一方、低い解像度はスピード優先のため、操作がスムーズになります。
+MEDIA_STEP_16_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763035085266/992E88EE7301B871A4B8A8DAFFFD90D3.png
+
+MEDIA_STEP_17_TEXT: ③環境光設定 HDRでエディタ全体の環境光を設定します。「明るい」と「ソフト」２種類があります。 比較は以下となります。
+MEDIA_STEP_17_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763035284630/0E1346CBE78562302058880F31C54EE4.png
+
+MEDIA_STEP_18_TEXT: Screenshot 21
+MEDIA_STEP_18_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763035333802/3B6B2FAD0D43E3CAEF7B56424CE7A743.png
+
+MEDIA_STEP_19_TEXT: ④アンビエンド輝度 数値で空間全体照度を調整します。
+MEDIA_STEP_19_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763035684183/34A9A31F1247ACE959C51DF88C015AA5.png
+
+MEDIA_STEP_20_TEXT: ４．マテリアル管理 ①保存 現在作成中のマテリアルを保存したい場合、一番下真ん中の「保存」ボタンでマテリアルを保存します。
+MEDIA_STEP_20_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027129387/8C15C20C95CD18AC926333AFCA9B2148.png
+
+MEDIA_STEP_21_TEXT: 必要な情報を記入した上、「保存」ボタンをクリック。
+MEDIA_STEP_21_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027154985/1CC41193CC69E3BCA8C93CFC65F46CD3.png
+
+MEDIA_STEP_22_TEXT: ②一括保存 現在作成中のマテリアルのカテゴリ・パラメーターを複数のローカルマテリアルに適用したく、保存したい場合、「一括保存」機能を使用します。
+MEDIA_STEP_22_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027203831/0C9447C837C79D9315E8ACD8408EB9DD.png
+
+MEDIA_STEP_23_TEXT: すべての画像は**現在のテンプレートカテゴリになり、現在パラメーター設定（反射数値など）で処理されますので**ご注意ください。
+MEDIA_STEP_23_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027598037/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_24_TEXT: ③テンプレートとして保存 次回また同じパラメータのマテリアルを使用して微調整をしたい場合、作成中のマテリアルを企業テンプレートとして保存できます。
+MEDIA_STEP_24_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027822033/6A7908EE523C5B3D3B36FAD45FA5DEE2.png
+
+MEDIA_STEP_25_TEXT: 保存後、左側の「企業テンプレート」で表示されます。
+MEDIA_STEP_25_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027927487/D19A06982B07E69F104387E8068A1632.png
+
+MEDIA_STEP_26_TEXT: マウスをカバー図の上に置き、上の「i」マークで拡大図が表示されます。 下の「…」で名前変更・移動・削除できます。
+MEDIA_STEP_26_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763028710260/72F8D6C66EA283AC47A11C952667523F.png
+
+MEDIA_STEP_27_TEXT: 下の「フォルダ新規作成」で新しいフォルダを作成できます。
+MEDIA_STEP_27_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763027996595/123CCA5168536A1BA2D0988389C76EFB.png
+
+MEDIA_STEP_28_TEXT: フォルダ右下の「…」でフォルダ名変更・削除できます。 ④リソース管理 エディタでアップロードされたマテリアルは「リソース管理」で表示されます。 ドラッグしてそのまま修正することができます。
+MEDIA_STEP_28_IMAGE: https://qhstaticssl.kujiale.com/image/png/1763033461618/57074694651A6A9BBB11584746A7C3D9.png
 
 </Visibility>

@@ -4,6 +4,18 @@ description: "Coohom is powerful in 3d design and can provide a wonderful render
 ---
 
 Coohom is powerful in 3d design and can provide a wonderful rendering experience.  
+
+## Steps with screenshots
+
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+### Step 1
+Workflow We are now happy to announce that we have made a successful integration with the company [postofixe](https://www.postofixe.com/). Here is how to achieve the whole integration. (You can ***right-click the picture*** to open a new page to view the large one.)
+
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115093892/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstatic-us-s3.coohom.com/image/png/1749115093892/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstatic-us-s3.coohom.com/image/png/1749115093892/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
 Now you may build your own electronic commerce website with all these exciting features simply by integrating Coohom Open API.  
 After that, customers can design with your goods, do the rendering to see what it looks like, then purchase what he wants.  
 And everything happens on your website!
@@ -72,21 +84,14 @@ Did this answer your question?
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. a visitor comes to website and registers with name, email
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. associate the visitor with Coohom by SSO API
-
-3. the registered user chooses a sample design which is made early by company designers
-
-4. the user gets his own design by copying what he has chosen
-
-5. the user modifies design with putting company goods
-
-6. the user finishes and goes to cart and checkout In this part, everything happens on your website. You should have the ability to store key information of visitors in case they return in the future. In this part, it is your back end side to perform requests. You can make a Coohom SSO API request to associate your user with Coohom. Each one will be mapped to a unique user in Coohom. And you should promise that each user uses the same information as the first time calling SSO API all the time. The token SSO API returns will be used later, and it will expire in several days. If that happens you need to make an SSO API again to get a new one. You must make some sample designs in Coohom before you finally launch the function. And you can get sample designs by Project List API. It is a design id that matters in the API response. When a registered user chooses a sample design, you can get the design id of that sample. Then you should copy this chosen design by Project Copy API. Note that the design id of the new project will be included in API response. This part is a little complex. And it is your front end side that should make requests. You should make a redirect to the Coohom DIY tool page by Redirect API. In this case, the user will be redirected to a Coohom page which is generally [https://www.coohom.com/pub/tool/yundesign/cloud?designid=xxx&redirecturl=yyy](https://www.coohom.com/pub/tool/yundesign/cloud?designid=xxx&redirecturl=yyy). So you will put what you have got in Part 4 in design, and your cart page URL in redirect URL to ensure that when the customer exits he will come back to your website with proper information. ​***Note that you should URL encode your cart page URL, as well as the whole Coohom tool page URL.*** And token you have got in Part 2 can be used to perform the redirect. After the customer finishes, you can get all he has put in design by BOM APIs. You should initialize, check, synchronize, and check again BOM to get the BOM result. SKU is included in the result so you can pass them to the electronic commerce plugin and charge your customer with correct information. Did this answer your question?
+MEDIA_STEP_1_TEXT: Workflow We are now happy to announce that we have made a successful integration with the company [postofixe](https://www.postofixe.com/). Here is how to achieve the whole integration. (You can ***right-click the picture*** to open a new page to view the large one.)
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1749115093892/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

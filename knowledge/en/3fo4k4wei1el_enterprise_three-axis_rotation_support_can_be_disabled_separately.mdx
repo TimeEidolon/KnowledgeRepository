@@ -5,6 +5,25 @@ description: "Merchants can flexibly configure whether the three axial rotations
 
 Merchants can flexibly configure whether the three axial rotations of the customization tool are open to designers based on their needs. For example, they can restrict Z-axis rotation or prohibit X and Y-axis rotations. This helps limit designers from arbitrarily rotating the model's axis and prevents errors in output or production caused by incorrect orientation due to rotation.
 
+## Steps with screenshots
+
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+### Step 1
+Entrance Enter the design tool and click on the left sidebar **Advanced Tool—Kitchen & Bath/Closet** to access the tool page.
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
+Effect When Axial Rotation Is Not Disabled Under normal circumstances, in the customization tool, **3D** **Move & Rotate** controlsand **Rotate** controls allow operation of XYZ three-axis rotation on the model:
+
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+
 # For users
 
 **Enterprise users** with relevant permissions. If you need it, please contact CSC for consultation.
@@ -49,13 +68,17 @@ Under normal circumstances, in the customization tool, **3D** **Move & Rotate** 
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. When Z-axis rotation is disabled, the ctrl+R shortcut key for triggering Z-axis rotation will not apply to custom models, and long-press rotation in the 2D view (including copying and continuous copying) will not work.
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Only when XYZ axes are fully disabled will the three-axis rotation control option disappear from the drop-down menu in the 3D view object menu controls.
+MEDIA_STEP_1_TEXT: Entrance Enter the design tool and click on the left sidebar **Advanced Tool—Kitchen & Bath/Closet** to access the tool page.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769418993835/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: Effect When Axial Rotation Is Not Disabled Under normal circumstances, in the customization tool, **3D** **Move & Rotate** controlsand **Rotate** controls allow operation of XYZ three-axis rotation on the model:
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1769415231148/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

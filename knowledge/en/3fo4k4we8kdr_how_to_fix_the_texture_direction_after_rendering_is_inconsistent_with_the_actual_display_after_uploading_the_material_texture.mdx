@@ -7,22 +7,22 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Solution Use PS to perform secondary adjustments on the texture, because the original image used a preview tool for rotation, and coohom does not support this rotation method.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025180/5BC3038DBB48D33695101A565582E2B4.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025180/5BC3038DBB48D33695101A565582E2B4.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025180/5BC3038DBB48D33695101A565582E2B4.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Step 2
+Screenshot 2
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025251/11AFB9FB093F01300806566E9380FCAD.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025251/11AFB9FB093F01300806566E9380FCAD.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025251/11AFB9FB093F01300806566E9380FCAD.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-After uploading the material texture, how can the inconsistent rendering texture direction be resolved?
 
 # Solution
 
@@ -36,17 +36,17 @@ Use PS to perform secondary adjustments on the texture, because the original ima
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Solution Use PS to perform secondary adjustments on the texture, because the original image used a preview tool for rotation, and coohom does not support this rotation method.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025180/5BC3038DBB48D33695101A565582E2B4.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025180/5BC3038DBB48D33695101A565582E2B4.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Step 2
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025251/11AFB9FB093F01300806566E9380FCAD.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025251/11AFB9FB093F01300806566E9380FCAD.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Solution Use PS to perform secondary adjustments on the texture, because the original image used a preview tool for rotation, and coohom does not support this rotation method.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025180/5BC3038DBB48D33695101A565582E2B4.png
+
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1763099025251/11AFB9FB093F01300806566E9380FCAD.png
 
 </Visibility>

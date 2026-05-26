@@ -7,70 +7,92 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-There are other elements outside the model. (The model we want to upload) Solution: Find and delete other elements, keeping only the necessary materials.
+Solution The solutions all require finding and deleting extra elements. Next, we'll teach you how to find these extra elements. Step 1: Right-click in the Max viewport to open the menu bar, and execute "Unhide All" and "Unfreeze All" commands respectively
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497306/06022F319ADCF3AD511DEBA5B4A5EBB6.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497306/06022F319ADCF3AD511DEBA5B4A5EBB6.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497306/06022F319ADCF3AD511DEBA5B4A5EBB6.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-The model has ineffective elements. (Referring to splines attached to the model that are not directly visible) Solution: Press the J key to box select the model, view, then separate and delete.
+Step 2: Select the front view 【Shortcut key F】 then press Ctrl + A to select all, then click maximize view. Check the top view as well 【Shortcut key T】
+
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497294/52E2693BCD826B6BB7F2AF547BCCDF57.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497294/52E2693BCD826B6BB7F2AF547BCCDF57.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497294/52E2693BCD826B6BB7F2AF547BCCDF57.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
-Modifier world space command. (e.g., Hair command)
+Screenshot 3
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497278/A4139D2A01A1E199F4C87B5E6187D577.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497278/A4139D2A01A1E199F4C87B5E6187D577.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497278/A4139D2A01A1E199F4C87B5E6187D577.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
-Auxiliary objects Solution: Click and select by name to choose and delete. The solutions all require finding and deleting extra elements. Next, we'll teach you how to find these extra elements. Step 1: Right-click in the Max viewport to open the menu bar, and execute "Unhide All" and "Unfreeze All" commands respectively Step 2: Select the front view 【Shortcut key F】 then press Ctrl + A to select all, then click maximize view. Check the top view as well 【Shortcut key T】 If the view only shows the model, it means there are no other materials, as shown below if there are other materials. Select and delete them when found. Of course, there might be small materials that cannot be viewed, in which case, select our required model, right-click the view, and choose "Freeze Selection". After freezing, select all with Ctrl + A. This way, our necessary model cannot be selected, and only redundant materials are selected, then press Delete. For ineffective elements, the above method sometimes cannot solve them. Proceed to the next step for inspection. Select the model, press J to display the outline, and check if the outline tightly encloses the model. ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343899841/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) This situation is normal if enclosed. If not sure, you can ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343900231/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) Click Use Utilities→Reset XForm→Reset Selected The characteristic of ineffective elements is as shown below ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343901533/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343901937/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) Solution is to convert to an editable mesh first After selecting elements, click the needed part, separate and then press Delete After checking again, it's normal ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343904680/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) If you don't find this problem throughout the model, you need to check if any modifiers have been applied Many modifier commands are not all prone to this, to check models with this problem, the command doesn't disappear after converting to an editable mesh, such as common ones like hair material, etc. The last one is auxiliary objects This deletion method is select by name Click to turn off geometry and graphics, which show the model parts. After turning off, what is displayed are other elements outside the model including auxiliary objects. Select All CTRL + A, click OK, Select and Delete.
+If the view only shows the model, it means there are no other materials, as shown below if there are other materials. Select and delete them when found. Of course, there might be small materials that cannot be viewed, in which case, select our required model, right-click the view, and choose "Freeze Selection".
 
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497306/06022F319ADCF3AD511DEBA5B4A5EBB6.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497306/06022F319ADCF3AD511DEBA5B4A5EBB6.png" alt="Step 4" style="max-width:100%;height:auto;" />
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497294/52E2693BCD826B6BB7F2AF547BCCDF57.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497294/52E2693BCD826B6BB7F2AF547BCCDF57.png" alt="Step 4" style="max-width:100%;height:auto;" />
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497278/A4139D2A01A1E199F4C87B5E6187D577.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497278/A4139D2A01A1E199F4C87B5E6187D577.png" alt="Step 4" style="max-width:100%;height:auto;" />
-
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497248/6BD8243C2F4E5F2A85863444FA4634CF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497248/6BD8243C2F4E5F2A85863444FA4634CF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497248/6BD8243C2F4E5F2A85863444FA4634CF.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
+### Step 5
+For ineffective elements, the above method sometimes cannot solve them. Proceed to the next step for inspection. Select the model, press J to display the outline, and check if the outline tightly encloses the model. ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343899841/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) This situation is normal if enclosed. If not sure, you can ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343900231/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) Click Use Utilities→Reset XForm→Reset Selected
+
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497198/11E50AA5AD993EDB49A8195680303285.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497198/11E50AA5AD993EDB49A8195680303285.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497198/11E50AA5AD993EDB49A8195680303285.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497198/11E50AA5AD993EDB49A8195680303285.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
+### Step 6
+The characteristic of ineffective elements is as shown below ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343901533/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343901937/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) Solution is to convert to an editable mesh first
+
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497187/72E684C9FB746309639AD70729B56267.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497187/72E684C9FB746309639AD70729B56267.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497187/72E684C9FB746309639AD70729B56267.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497187/72E684C9FB746309639AD70729B56267.png" alt="Step 6" style="max-width:100%;height:auto;" />
 
+### Step 7
+After selecting elements, click the needed part, separate and then press Delete
+
+MEDIA_STEP_7_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497195/CDBB28CBC58BBEACF9C01D653CBC48EA.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497195/CDBB28CBC58BBEACF9C01D653CBC48EA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497195/CDBB28CBC58BBEACF9C01D653CBC48EA.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497195/CDBB28CBC58BBEACF9C01D653CBC48EA.png" alt="Step 7" style="max-width:100%;height:auto;" />
 
+### Step 8
+Screenshot 8
+
+MEDIA_STEP_8_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497201/C80278E2E8E3051C52454E01FADD1A81.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497201/C80278E2E8E3051C52454E01FADD1A81.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497201/C80278E2E8E3051C52454E01FADD1A81.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497201/C80278E2E8E3051C52454E01FADD1A81.png" alt="Step 8" style="max-width:100%;height:auto;" />
 
+### Step 9
+After checking again, it's normal ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343904680/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) If you don't find this problem throughout the model, you need to check if any modifiers have been applied
+
+MEDIA_STEP_9_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497184/AA36E104A90616FA7A4BA9420A311305.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497184/AA36E104A90616FA7A4BA9420A311305.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497184/AA36E104A90616FA7A4BA9420A311305.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497184/AA36E104A90616FA7A4BA9420A311305.png" alt="Step 9" style="max-width:100%;height:auto;" />
 
+### Step 10
+Many modifier commands are not all prone to this, to check models with this problem, the command doesn't disappear after converting to an editable mesh, such as common ones like hair material, etc. The last one is auxiliary objects
+
+MEDIA_STEP_10_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497317/5590FEC35DC889E8B07E4BFDBA7A024C.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497317/5590FEC35DC889E8B07E4BFDBA7A024C.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497317/5590FEC35DC889E8B07E4BFDBA7A024C.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497317/5590FEC35DC889E8B07E4BFDBA7A024C.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
+### Step 11
+This deletion method is select by name
+
+MEDIA_STEP_11_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497169/00CC3779D599C6EB1AC9B703F46C309E.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497169/00CC3779D599C6EB1AC9B703F46C309E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497169/00CC3779D599C6EB1AC9B703F46C309E.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497169/00CC3779D599C6EB1AC9B703F46C309E.png" alt="Step 11" style="max-width:100%;height:auto;" />
 
+### Step 12
+Click to turn off geometry and graphics, which show the model parts. After turning off, what is displayed are other elements outside the model including auxiliary objects. Select All CTRL + A, click OK,
+
+MEDIA_STEP_12_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497171/96418FCC9278C4B6BBDE7EE8E3572457.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497171/96418FCC9278C4B6BBDE7EE8E3572457.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497171/96418FCC9278C4B6BBDE7EE8E3572457.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497171/96418FCC9278C4B6BBDE7EE8E3572457.png" alt="Step 12" style="max-width:100%;height:auto;" />
 
-
-1. There are other elements outside the model. (The model we want to upload)
-
-Solution: Find and delete other elements, keeping only the necessary materials.
-
-2. The model has ineffective elements. (Referring to splines attached to the model that are not directly visible)
-
-Solution: Press the J key to box select the model, view, then separate and delete.
-
-3. Modifier world space command. (e.g., Hair command)
-
-4. Auxiliary objects
-
-Solution: Click and select by name to choose and delete.
 
 # Solution
 
@@ -156,57 +178,47 @@ Select and Delete.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Solution The solutions all require finding and deleting extra elements. Next, we'll teach you how to find these extra elements. Step 1: Right-click in the Max viewport to open the menu bar, and execute "Unhide All" and "Unfreeze All" commands respectively
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497306/06022F319ADCF3AD511DEBA5B4A5EBB6.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497306/06022F319ADCF3AD511DEBA5B4A5EBB6.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Step 2: Select the front view 【Shortcut key F】 then press Ctrl + A to select all, then click maximize view. Check the top view as well 【Shortcut key T】
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497294/52E2693BCD826B6BB7F2AF547BCCDF57.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497294/52E2693BCD826B6BB7F2AF547BCCDF57.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Solution The solutions all require finding and deleting extra elements. Next, we'll teach you how to find these extra elements. Step 1: Right-click in the Max viewport to open the menu bar, and execute "Unhide All" and "Unfreeze All" commands respectively
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497306/06022F319ADCF3AD511DEBA5B4A5EBB6.png
 
-3. Step 3
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497278/A4139D2A01A1E199F4C87B5E6187D577.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497278/A4139D2A01A1E199F4C87B5E6187D577.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Step 2: Select the front view 【Shortcut key F】 then press Ctrl + A to select all, then click maximize view. Check the top view as well 【Shortcut key T】
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497294/52E2693BCD826B6BB7F2AF547BCCDF57.png
 
-4. If the view only shows the model, it means there are no other materials, as shown below if there are other materials. Select and delete them when found. Of course, there might be small materials that cannot be viewed, in which case, select our required model, right-click the view, and choose "Freeze Selection".
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497248/6BD8243C2F4E5F2A85863444FA4634CF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497248/6BD8243C2F4E5F2A85863444FA4634CF.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Screenshot 3
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497278/A4139D2A01A1E199F4C87B5E6187D577.png
 
-5. After freezing, select all with Ctrl + A. This way, our necessary model cannot be selected, and only redundant materials are selected, then press Delete. For ineffective elements, the above method sometimes cannot solve them. Proceed to the next step for inspection. Select the model, press J to display the outline, and check if the outline tightly encloses the model. ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343899841/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) This situation is normal if enclosed. If not sure, you can ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343900231/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) Click Use Utilities→Reset XForm→Reset Selected
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497198/11E50AA5AD993EDB49A8195680303285.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497198/11E50AA5AD993EDB49A8195680303285.png" alt="Step 5" style="max-width:100%;height:auto;" />
+MEDIA_STEP_4_TEXT: If the view only shows the model, it means there are no other materials, as shown below if there are other materials. Select and delete them when found. Of course, there might be small materials that cannot be viewed, in which case, select our required model, right-click the view, and choose "Freeze Selection".
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497248/6BD8243C2F4E5F2A85863444FA4634CF.png
 
-6. The characteristic of ineffective elements is as shown below ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343901533/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343901937/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) Solution is to convert to an editable mesh first
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497187/72E684C9FB746309639AD70729B56267.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497187/72E684C9FB746309639AD70729B56267.png" alt="Step 6" style="max-width:100%;height:auto;" />
+MEDIA_STEP_5_TEXT: For ineffective elements, the above method sometimes cannot solve them. Proceed to the next step for inspection. Select the model, press J to display the outline, and check if the outline tightly encloses the model. ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343899841/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) This situation is normal if enclosed. If not sure, you can ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343900231/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) Click Use Utilities→Reset XForm→Reset Selected
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497198/11E50AA5AD993EDB49A8195680303285.png
 
-7. After selecting elements, click the needed part, separate and then press Delete
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497195/CDBB28CBC58BBEACF9C01D653CBC48EA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497195/CDBB28CBC58BBEACF9C01D653CBC48EA.png" alt="Step 7" style="max-width:100%;height:auto;" />
+MEDIA_STEP_6_TEXT: The characteristic of ineffective elements is as shown below ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343901533/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343901937/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) Solution is to convert to an editable mesh first
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497187/72E684C9FB746309639AD70729B56267.png
 
-8. Step 8
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497201/C80278E2E8E3051C52454E01FADD1A81.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497201/C80278E2E8E3051C52454E01FADD1A81.png" alt="Step 8" style="max-width:100%;height:auto;" />
+MEDIA_STEP_7_TEXT: After selecting elements, click the needed part, separate and then press Delete
+MEDIA_STEP_7_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497195/CDBB28CBC58BBEACF9C01D653CBC48EA.png
 
-9. After checking again, it's normal ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343904680/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) If you don't find this problem throughout the model, you need to check if any modifiers have been applied
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497184/AA36E104A90616FA7A4BA9420A311305.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497184/AA36E104A90616FA7A4BA9420A311305.png" alt="Step 9" style="max-width:100%;height:auto;" />
+MEDIA_STEP_8_TEXT: Screenshot 8
+MEDIA_STEP_8_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497201/C80278E2E8E3051C52454E01FADD1A81.png
 
-10. Many modifier commands are not all prone to this, to check models with this problem, the command doesn't disappear after converting to an editable mesh, such as common ones like hair material, etc. The last one is auxiliary objects
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497317/5590FEC35DC889E8B07E4BFDBA7A024C.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497317/5590FEC35DC889E8B07E4BFDBA7A024C.png" alt="Step 10" style="max-width:100%;height:auto;" />
+MEDIA_STEP_9_TEXT: After checking again, it's normal ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551343904680/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) If you don't find this problem throughout the model, you need to check if any modifiers have been applied
+MEDIA_STEP_9_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497184/AA36E104A90616FA7A4BA9420A311305.png
 
-11. This deletion method is select by name
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497169/00CC3779D599C6EB1AC9B703F46C309E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497169/00CC3779D599C6EB1AC9B703F46C309E.png" alt="Step 11" style="max-width:100%;height:auto;" />
+MEDIA_STEP_10_TEXT: Many modifier commands are not all prone to this, to check models with this problem, the command doesn't disappear after converting to an editable mesh, such as common ones like hair material, etc. The last one is auxiliary objects
+MEDIA_STEP_10_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497317/5590FEC35DC889E8B07E4BFDBA7A024C.png
 
-12. Click to turn off geometry and graphics, which show the model parts. After turning off, what is displayed are other elements outside the model including auxiliary objects. Select All CTRL + A, click OK,
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497171/96418FCC9278C4B6BBDE7EE8E3572457.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497171/96418FCC9278C4B6BBDE7EE8E3572457.png" alt="Step 12" style="max-width:100%;height:auto;" />
+MEDIA_STEP_11_TEXT: This deletion method is select by name
+MEDIA_STEP_11_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497169/00CC3779D599C6EB1AC9B703F46C309E.png
+
+MEDIA_STEP_12_TEXT: Click to turn off geometry and graphics, which show the model parts. After turning off, what is displayed are other elements outside the model including auxiliary objects. Select All CTRL + A, click OK,
+MEDIA_STEP_12_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762409497171/96418FCC9278C4B6BBDE7EE8E3572457.png
 
 </Visibility>

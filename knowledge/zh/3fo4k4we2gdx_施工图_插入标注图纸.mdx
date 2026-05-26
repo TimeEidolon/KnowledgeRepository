@@ -7,29 +7,37 @@ description: "用户可以把定制家具生成的标注图放在施工图中显
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-首先要准备一个已经生成过**定制标注图纸**的方案 * 生成标注图纸的详细操作可见线上文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/%E5%AE%9A%E5%88%B6%E5%9B%BE%E7%BA%B8-%E7%94%9F%E6%88%90%E6%A0%87%E6%B3%A8%E5%9B%BE%E7%BA%B8?kjl_source=hc)
+入口 点击左侧栏的**图纸**，选择**施工图纸**
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230181426/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1764230181426/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1764230181426/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 进入设计工具，选择左侧栏的**图纸**，点击进入**施工图编辑**页面
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 点击顶部的**布局图纸**，在左侧栏目录中选择需要的图纸
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 点击右侧的**插入-图片**，然后选择合适的图纸拖拽至布局中合适位置即可，添加完成后可根据需要进行下载
 
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -68,25 +76,24 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 首先要准备一个已经生成过**定制标注图纸**的方案 * 生成标注图纸的详细操作可见线上文档：[点击查看](https://www.coohom.com/zh_CN/helpcenter/%E5%AE%9A%E5%88%B6%E5%9B%BE%E7%BA%B8-%E7%94%9F%E6%88%90%E6%A0%87%E6%B3%A8%E5%9B%BE%E7%BA%B8?kjl_source=hc)
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 进入设计工具，选择左侧栏的**图纸**，点击进入**施工图编辑**页面
-![](https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 入口 点击左侧栏的**图纸**，选择**施工图纸**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230181426/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. 点击顶部的**布局图纸**，在左侧栏目录中选择需要的图纸
-![](https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 进入设计工具，选择左侧栏的**图纸**，点击进入**施工图编辑**页面
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230154675/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. 点击右侧的**插入-图片**，然后选择合适的图纸拖拽至布局中合适位置即可，添加完成后可根据需要进行下载
-![](https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 点击顶部的**布局图纸**，在左侧栏目录中选择需要的图纸
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1764230306220/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_4_TEXT: 点击右侧的**插入-图片**，然后选择合适的图纸拖拽至布局中合适位置即可，添加完成后可根据需要进行下载
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1764230477183/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1764230575018/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

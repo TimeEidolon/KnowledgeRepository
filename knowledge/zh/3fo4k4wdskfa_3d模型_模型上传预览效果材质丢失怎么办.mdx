@@ -7,132 +7,120 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-问题 模型上传预览效果材质丢失 我们在上传时候等了模型上传完成却看到模型预览的材质效果不对。 我们想要的上传预览效果是这种 ![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551427825157/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp) 现实却成了这种
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385818/70B1CB39DA4B7B8F5C12D30B5D2EA125.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385818/70B1CB39DA4B7B8F5C12D30B5D2EA125.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-或者这种（色彩斑斓的色块）
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385950/1D99E0AB81BE2543BFBDEB36F9D81BFF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385950/1D99E0AB81BE2543BFBDEB36F9D81BFF.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
 直接上传了max文件没有上传贴图文件 如果模型没有贴图（材质没有用到贴图），可以只单独上传max文件，如果有贴图的就需要进行归档上传（归档会把模型中用到的贴图一起打包）。 操作步骤如下： a）先看一下在max中模型的效果是不是我们想要的，如果贴图丢失或者贴图路径错误或者使用了多维子材质，在max中就会呈现黑色。则还不能归档上传，需要查看是否是原因2、5、6导致的。 b） 如果显示材质是正常的，如下图，则可以进行归档，把贴图一起打包上传。 c） 归档操作如下：
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-### Step 4
+### Step 2
 贴图丢失 检查方式：重置材质编辑器窗口，再shift+t打开资源追踪。 重置材质编辑器是为了防止不需要的材质因素影响资源追踪的显示
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385907/DB17F7952560997D244E40D758416A30.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385907/DB17F7952560997D244E40D758416A30.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385907/DB17F7952560997D244E40D758416A30.png" alt="Step 4" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385907/DB17F7952560997D244E40D758416A30.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-### Step 5
+### Step 3
 我们可以看下后面的状态，如果有文件丢失会有标注
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385870/D1B89414DB0AC97996373AD24B764981.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385870/D1B89414DB0AC97996373AD24B764981.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385870/D1B89414DB0AC97996373AD24B764981.png" alt="Step 5" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385870/D1B89414DB0AC97996373AD24B764981.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-### Step 6
+### Step 4
 如果确认丢失就需要重新贴图（这种适用于贴图丢失或者更换名称） 重新贴材质步骤： 打开材质编辑器→（材质吸取）吸管→吸取需要从新设置贴图的模型部分→点击漫反射贴图→位图→找到需要的贴图→确认。
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385898/A19425DD102527E64848D141067F1EEB.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385898/A19425DD102527E64848D141067F1EEB.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385898/A19425DD102527E64848D141067F1EEB.png" alt="Step 6" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385898/A19425DD102527E64848D141067F1EEB.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
-### Step 7
+### Step 5
 如果只是贴图路径修改了那么我们可以在资源追中里进行设置调整 贴图路径修改步骤： Shift+t 打开资源追踪→路径→高亮显示可编辑的资源→路径→设置路径（最好是把贴图放在一个文件夹里）
 
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403413/B81CA7A615A9236F30019CA391EE190F.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403413/B81CA7A615A9236F30019CA391EE190F.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403413/B81CA7A615A9236F30019CA391EE190F.png" alt="Step 7" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403413/B81CA7A615A9236F30019CA391EE190F.png" alt="Step 5" style="max-width:100%;height:auto;" />
+
+### Step 6
+Screenshot 6
+
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png" alt="Step 6" style="max-width:100%;height:auto;" />
+
+### Step 7
+Screenshot 7
+
+MEDIA_STEP_7_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png" alt="Step 7" style="max-width:100%;height:auto;" />
 
 ### Step 8
-Step 8
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png" alt="Step 8" style="max-width:100%;height:auto;" />
-
-### Step 9
-Step 9
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png" alt="Step 9" style="max-width:100%;height:auto;" />
-
-### Step 10
 渲染器设置（比较少见，在渲染器里设置了覆盖材质） 模型和贴图没有任何问题，可以检查一下渲染设置 点击渲染设置→V-RAY→全局开关（Global switches）→覆盖材质（Override mtl）如果勾选需要去掉→就好了
 
+MEDIA_STEP_8_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403547/666E711C1F8A319226A50A91844B0FD6.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403547/666E711C1F8A319226A50A91844B0FD6.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403547/666E711C1F8A319226A50A91844B0FD6.png" alt="Step 10" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403547/666E711C1F8A319226A50A91844B0FD6.png" alt="Step 8" style="max-width:100%;height:auto;" />
 
-### Step 11
+### Step 9
 漫反射比例值 这种情况模型在max里预览显示是正常的。 漫反射的设置这种情况我们可以观察材质球是否显示材质，双击材质球可以出现预览
 
+MEDIA_STEP_9_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403519/AF4C2F31F1573208849E88EEB160D7AD.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403519/AF4C2F31F1573208849E88EEB160D7AD.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403519/AF4C2F31F1573208849E88EEB160D7AD.png" alt="Step 11" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403519/AF4C2F31F1573208849E88EEB160D7AD.png" alt="Step 9" style="max-width:100%;height:auto;" />
 
-### Step 12
-Step 12
+### Step 10
+Screenshot 10
 
+MEDIA_STEP_10_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403546/CF555769A7781772E056D6E7752F8EB8.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403546/CF555769A7781772E056D6E7752F8EB8.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403546/CF555769A7781772E056D6E7752F8EB8.png" alt="Step 12" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403546/CF555769A7781772E056D6E7752F8EB8.png" alt="Step 10" style="max-width:100%;height:auto;" />
 
-### Step 13
+### Step 11
 模型法线 关于法线问题，我们自己画个box来看，两个相同材质的长方体，其中一个我给个法线
 
+MEDIA_STEP_11_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403400/336C303AD0CC3B8CFCB26D604610B016.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403400/336C303AD0CC3B8CFCB26D604610B016.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403400/336C303AD0CC3B8CFCB26D604610B016.png" alt="Step 13" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403400/336C303AD0CC3B8CFCB26D604610B016.png" alt="Step 11" style="max-width:100%;height:auto;" />
 
-### Step 14
-Step 14
+### Step 12
+Screenshot 12
 
+MEDIA_STEP_12_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403407/739D5BF17520C69E2236283D059DDCA1.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403407/739D5BF17520C69E2236283D059DDCA1.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403407/739D5BF17520C69E2236283D059DDCA1.png" alt="Step 14" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403407/739D5BF17520C69E2236283D059DDCA1.png" alt="Step 12" style="max-width:100%;height:auto;" />
 
-### Step 15
+### Step 13
 上传后就变成了这样
 
+MEDIA_STEP_13_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403382/2759548BA57E540AA2B1A472A970C609.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403382/2759548BA57E540AA2B1A472A970C609.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403382/2759548BA57E540AA2B1A472A970C609.png" alt="Step 15" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403382/2759548BA57E540AA2B1A472A970C609.png" alt="Step 13" style="max-width:100%;height:auto;" />
 
-### Step 16
+### Step 14
 修改办法： 选中模型→点击修改器→找到法线→勾选反转法线
 
+MEDIA_STEP_14_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403376/AA941F0DEA5CAD90486FE72EF3888DFF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403376/AA941F0DEA5CAD90486FE72EF3888DFF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403376/AA941F0DEA5CAD90486FE72EF3888DFF.png" alt="Step 16" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403376/AA941F0DEA5CAD90486FE72EF3888DFF.png" alt="Step 14" style="max-width:100%;height:auto;" />
 
-### Step 17
+### Step 15
 模型法线3Dmax模型源文件里含多维子材质（混合材质） 如果遇到上传界面预览效果里部分或全部材质为色彩艳丽的色块或全黑，还有可能是这些材质在3Dmax里是多维子材质。
 
+MEDIA_STEP_15_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403381/6F678E3EC18F13EF1A7C74E13E479703.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403381/6F678E3EC18F13EF1A7C74E13E479703.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403381/6F678E3EC18F13EF1A7C74E13E479703.png" alt="Step 17" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403381/6F678E3EC18F13EF1A7C74E13E479703.png" alt="Step 15" style="max-width:100%;height:auto;" />
 
-### Step 18
+### Step 16
 打开模型的原始3Dmax文件的材质编辑器，用吸管吸取显示异常的部分，检查材质的类型。
 
+MEDIA_STEP_16_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408414200/128CDC6876E61C41F5FC514C7F0A253A.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408414200/128CDC6876E61C41F5FC514C7F0A253A.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408414200/128CDC6876E61C41F5FC514C7F0A253A.png" alt="Step 18" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408414200/128CDC6876E61C41F5FC514C7F0A253A.png" alt="Step 16" style="max-width:100%;height:auto;" />
 
-
-模型上传预览效果材质丢失
-
-我们在上传时候等了模型上传完成却看到模型预览的材质效果不对。
-
-我们想要的上传预览效果是这种
-
-![image.png](https://qhstaticssl.kujiale.com/yuntai/application/octetstream/1551427825157/9F9003EE72EDB4FF06D34A0A448CBB0B.png?x-oss-process=image/format,webp)
-
-现实却成了这种
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385818/70B1CB39DA4B7B8F5C12D30B5D2EA125.png)
-
-或者这种（色彩斑斓的色块）
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385950/1D99E0AB81BE2543BFBDEB36F9D81BFF.png)
 
 # 原因
 
@@ -259,73 +247,59 @@ Shift+t 打开资源追踪→路径→高亮显示可编辑的资源→路径→
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 直接上传了max文件没有上传贴图文件 如果模型没有贴图（材质没有用到贴图），可以只单独上传max文件，如果有贴图的就需要进行归档上传（归档会把模型中用到的贴图一起打包）。 操作步骤如下： a）先看一下在max中模型的效果是不是我们想要的，如果贴图丢失或者贴图路径错误或者使用了多维子材质，在max中就会呈现黑色。则还不能归档上传，需要查看是否是原因2、5、6导致的。 b） 如果显示材质是正常的，如下图，则可以进行归档，把贴图一起打包上传。 c） 归档操作如下：
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 贴图丢失 检查方式：重置材质编辑器窗口，再shift+t打开资源追踪。 重置材质编辑器是为了防止不需要的材质因素影响资源追踪的显示
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385907/DB17F7952560997D244E40D758416A30.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385907/DB17F7952560997D244E40D758416A30.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 直接上传了max文件没有上传贴图文件 如果模型没有贴图（材质没有用到贴图），可以只单独上传max文件，如果有贴图的就需要进行归档上传（归档会把模型中用到的贴图一起打包）。 操作步骤如下： a）先看一下在max中模型的效果是不是我们想要的，如果贴图丢失或者贴图路径错误或者使用了多维子材质，在max中就会呈现黑色。则还不能归档上传，需要查看是否是原因2、5、6导致的。 b） 如果显示材质是正常的，如下图，则可以进行归档，把贴图一起打包上传。 c） 归档操作如下：
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385912/6EE6667C02946DDA75EC16B44DAA51AD.png
 
-3. 我们可以看下后面的状态，如果有文件丢失会有标注
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385870/D1B89414DB0AC97996373AD24B764981.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385870/D1B89414DB0AC97996373AD24B764981.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 贴图丢失 检查方式：重置材质编辑器窗口，再shift+t打开资源追踪。 重置材质编辑器是为了防止不需要的材质因素影响资源追踪的显示
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385907/DB17F7952560997D244E40D758416A30.png
 
-4. 如果确认丢失就需要重新贴图（这种适用于贴图丢失或者更换名称） 重新贴材质步骤： 打开材质编辑器→（材质吸取）吸管→吸取需要从新设置贴图的模型部分→点击漫反射贴图→位图→找到需要的贴图→确认。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385898/A19425DD102527E64848D141067F1EEB.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385898/A19425DD102527E64848D141067F1EEB.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 我们可以看下后面的状态，如果有文件丢失会有标注
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385870/D1B89414DB0AC97996373AD24B764981.png
 
-5. 如果只是贴图路径修改了那么我们可以在资源追中里进行设置调整 贴图路径修改步骤： Shift+t 打开资源追踪→路径→高亮显示可编辑的资源→路径→设置路径（最好是把贴图放在一个文件夹里）
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403413/B81CA7A615A9236F30019CA391EE190F.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403413/B81CA7A615A9236F30019CA391EE190F.png" alt="Step 5" style="max-width:100%;height:auto;" />
+MEDIA_STEP_4_TEXT: 如果确认丢失就需要重新贴图（这种适用于贴图丢失或者更换名称） 重新贴材质步骤： 打开材质编辑器→（材质吸取）吸管→吸取需要从新设置贴图的模型部分→点击漫反射贴图→位图→找到需要的贴图→确认。
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408385898/A19425DD102527E64848D141067F1EEB.png
 
-6. Step 6
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png" alt="Step 6" style="max-width:100%;height:auto;" />
+MEDIA_STEP_5_TEXT: 如果只是贴图路径修改了那么我们可以在资源追中里进行设置调整 贴图路径修改步骤： Shift+t 打开资源追踪→路径→高亮显示可编辑的资源→路径→设置路径（最好是把贴图放在一个文件夹里）
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403413/B81CA7A615A9236F30019CA391EE190F.png
 
-7. Step 7
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png" alt="Step 7" style="max-width:100%;height:auto;" />
+MEDIA_STEP_6_TEXT: Screenshot 6
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403362/C0530569033EA222FBB6D8EBF003CB1A.png
 
-8. 渲染器设置（比较少见，在渲染器里设置了覆盖材质） 模型和贴图没有任何问题，可以检查一下渲染设置 点击渲染设置→V-RAY→全局开关（Global switches）→覆盖材质（Override mtl）如果勾选需要去掉→就好了
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403547/666E711C1F8A319226A50A91844B0FD6.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403547/666E711C1F8A319226A50A91844B0FD6.png" alt="Step 8" style="max-width:100%;height:auto;" />
+MEDIA_STEP_7_TEXT: Screenshot 7
+MEDIA_STEP_7_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403430/33A12E37B0E14BBB5655DF3485896DDD.png
 
-9. 漫反射比例值 这种情况模型在max里预览显示是正常的。 漫反射的设置这种情况我们可以观察材质球是否显示材质，双击材质球可以出现预览
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403519/AF4C2F31F1573208849E88EEB160D7AD.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403519/AF4C2F31F1573208849E88EEB160D7AD.png" alt="Step 9" style="max-width:100%;height:auto;" />
+MEDIA_STEP_8_TEXT: 渲染器设置（比较少见，在渲染器里设置了覆盖材质） 模型和贴图没有任何问题，可以检查一下渲染设置 点击渲染设置→V-RAY→全局开关（Global switches）→覆盖材质（Override mtl）如果勾选需要去掉→就好了
+MEDIA_STEP_8_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403547/666E711C1F8A319226A50A91844B0FD6.png
 
-10. Step 10
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403546/CF555769A7781772E056D6E7752F8EB8.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403546/CF555769A7781772E056D6E7752F8EB8.png" alt="Step 10" style="max-width:100%;height:auto;" />
+MEDIA_STEP_9_TEXT: 漫反射比例值 这种情况模型在max里预览显示是正常的。 漫反射的设置这种情况我们可以观察材质球是否显示材质，双击材质球可以出现预览
+MEDIA_STEP_9_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403519/AF4C2F31F1573208849E88EEB160D7AD.png
 
-11. 模型法线 关于法线问题，我们自己画个box来看，两个相同材质的长方体，其中一个我给个法线
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403400/336C303AD0CC3B8CFCB26D604610B016.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403400/336C303AD0CC3B8CFCB26D604610B016.png" alt="Step 11" style="max-width:100%;height:auto;" />
+MEDIA_STEP_10_TEXT: Screenshot 10
+MEDIA_STEP_10_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403546/CF555769A7781772E056D6E7752F8EB8.png
 
-12. Step 12
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403407/739D5BF17520C69E2236283D059DDCA1.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403407/739D5BF17520C69E2236283D059DDCA1.png" alt="Step 12" style="max-width:100%;height:auto;" />
+MEDIA_STEP_11_TEXT: 模型法线 关于法线问题，我们自己画个box来看，两个相同材质的长方体，其中一个我给个法线
+MEDIA_STEP_11_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403400/336C303AD0CC3B8CFCB26D604610B016.png
 
-13. 上传后就变成了这样
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403382/2759548BA57E540AA2B1A472A970C609.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403382/2759548BA57E540AA2B1A472A970C609.png" alt="Step 13" style="max-width:100%;height:auto;" />
+MEDIA_STEP_12_TEXT: Screenshot 12
+MEDIA_STEP_12_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403407/739D5BF17520C69E2236283D059DDCA1.png
 
-14. 修改办法： 选中模型→点击修改器→找到法线→勾选反转法线
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403376/AA941F0DEA5CAD90486FE72EF3888DFF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403376/AA941F0DEA5CAD90486FE72EF3888DFF.png" alt="Step 14" style="max-width:100%;height:auto;" />
+MEDIA_STEP_13_TEXT: 上传后就变成了这样
+MEDIA_STEP_13_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403382/2759548BA57E540AA2B1A472A970C609.png
 
-15. 模型法线3Dmax模型源文件里含多维子材质（混合材质） 如果遇到上传界面预览效果里部分或全部材质为色彩艳丽的色块或全黑，还有可能是这些材质在3Dmax里是多维子材质。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403381/6F678E3EC18F13EF1A7C74E13E479703.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403381/6F678E3EC18F13EF1A7C74E13E479703.png" alt="Step 15" style="max-width:100%;height:auto;" />
+MEDIA_STEP_14_TEXT: 修改办法： 选中模型→点击修改器→找到法线→勾选反转法线
+MEDIA_STEP_14_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403376/AA941F0DEA5CAD90486FE72EF3888DFF.png
 
-16. 打开模型的原始3Dmax文件的材质编辑器，用吸管吸取显示异常的部分，检查材质的类型。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408414200/128CDC6876E61C41F5FC514C7F0A253A.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408414200/128CDC6876E61C41F5FC514C7F0A253A.png" alt="Step 16" style="max-width:100%;height:auto;" />
+MEDIA_STEP_15_TEXT: 模型法线3Dmax模型源文件里含多维子材质（混合材质） 如果遇到上传界面预览效果里部分或全部材质为色彩艳丽的色块或全黑，还有可能是这些材质在3Dmax里是多维子材质。
+MEDIA_STEP_15_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408403381/6F678E3EC18F13EF1A7C74E13E479703.png
+
+MEDIA_STEP_16_TEXT: 打开模型的原始3Dmax文件的材质编辑器，用吸管吸取显示异常的部分，检查材质的类型。
+MEDIA_STEP_16_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762408414200/128CDC6876E61C41F5FC514C7F0A253A.png
 
 </Visibility>

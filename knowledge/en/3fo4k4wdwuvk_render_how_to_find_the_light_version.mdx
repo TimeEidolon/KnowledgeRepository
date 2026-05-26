@@ -7,26 +7,29 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Can't find a specific light version?
+Solution In general, you can find light version here.
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632506/03E477D2E02134A2C2065840077CE396.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632506/03E477D2E02134A2C2065840077CE396.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632506/03E477D2E02134A2C2065840077CE396.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Where to switch between different light versions? In general, you can find light version here. Light Version Management If the version you want is not in the previous step, click Light Version Management to find other version in this series. Click Apply to set your favorite version to "Current". Note, there are multiple series of light templates, such as Ultra-Fast Daylight, Ultra-Fast Nightlight, Realistic Indoor Daytime, Realistic Indoor Nighttime, etc. For each series, you need to click the version you like to set it as "Current".
+Light Version Management If the version you want is not in the previous step, click Light Version Management to find other version in this series. Click Apply to set your favorite version to "Current".
 
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632506/03E477D2E02134A2C2065840077CE396.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632506/03E477D2E02134A2C2065840077CE396.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632467/92246DD73DF82C1991A7BED67E9F7F1F.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632467/92246DD73DF82C1991A7BED67E9F7F1F.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632467/92246DD73DF82C1991A7BED67E9F7F1F.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+### Step 3
+Note, there are multiple series of light templates, such as Ultra-Fast Daylight, Ultra-Fast Nightlight, Realistic Indoor Daytime, Realistic Indoor Nighttime, etc. For each series, you need to click the version you like to set it as "Current".
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632501/FADE53058254C89119C0A72350334B24.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632501/FADE53058254C89119C0A72350334B24.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632501/FADE53058254C89119C0A72350334B24.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632501/FADE53058254C89119C0A72350334B24.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-
-1. Can't find a specific light version?
-2. Where to switch between different light versions?
 
 # Solution
 
@@ -48,21 +51,20 @@ Note, there are multiple series of light templates, such as Ultra-Fast Daylight,
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Solution In general, you can find light version here.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632506/03E477D2E02134A2C2065840077CE396.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632506/03E477D2E02134A2C2065840077CE396.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Light Version Management If the version you want is not in the previous step, click Light Version Management to find other version in this series. Click Apply to set your favorite version to "Current".
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632467/92246DD73DF82C1991A7BED67E9F7F1F.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632467/92246DD73DF82C1991A7BED67E9F7F1F.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Solution In general, you can find light version here.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632506/03E477D2E02134A2C2065840077CE396.png
 
-3. Note, there are multiple series of light templates, such as Ultra-Fast Daylight, Ultra-Fast Nightlight, Realistic Indoor Daytime, Realistic Indoor Nighttime, etc. For each series, you need to click the version you like to set it as "Current".
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632501/FADE53058254C89119C0A72350334B24.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632501/FADE53058254C89119C0A72350334B24.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Light Version Management If the version you want is not in the previous step, click Light Version Management to find other version in this series. Click Apply to set your favorite version to "Current".
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632467/92246DD73DF82C1991A7BED67E9F7F1F.png
+
+MEDIA_STEP_3_TEXT: Note, there are multiple series of light templates, such as Ultra-Fast Daylight, Ultra-Fast Nightlight, Realistic Indoor Daytime, Realistic Indoor Nighttime, etc. For each series, you need to click the version you like to set it as "Current".
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135632501/FADE53058254C89119C0A72350334B24.png
 
 </Visibility>

@@ -8,29 +8,33 @@ This article explains the location of the render tool entrance, so that you can 
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Render Entrance Enter the **workspace** and select the **Create New Project** in the upper right corner.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779343695360/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1779343695360/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1779343695360/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 After entering the interior design interface, click **Render**.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750323386552/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750323386552/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750323386552/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 The render tool can produce a variety of renderings: **perspective view, 360° walkthrough, top view, video and real-time rendering**.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750323459839/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750323459839/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750323459839/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 Directly enter the render interface, or select the type of rendering you need, then you can start rendering~
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750324523449/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750324523449/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750324523449/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -60,25 +64,23 @@ Directly enter the render interface, or select the type of rendering you need, t
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Render Entrance Enter the **workspace** and select the **Create New Project** in the upper right corner.
-![](https://qhstaticssl.kujiale.com/image/png/1779343695360/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1779343695360/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. After entering the interior design interface, click **Render**.
-![](https://qhstaticssl.kujiale.com/image/png/1750323386552/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750323386552/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Render Entrance Enter the **workspace** and select the **Create New Project** in the upper right corner.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779343695360/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. The render tool can produce a variety of renderings: **perspective view, 360° walkthrough, top view, video and real-time rendering**.
-![](https://qhstaticssl.kujiale.com/image/png/1750323459839/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750323459839/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: After entering the interior design interface, click **Render**.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750323386552/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. Directly enter the render interface, or select the type of rendering you need, then you can start rendering~
-![](https://qhstaticssl.kujiale.com/image/png/1750324523449/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750324523449/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: The render tool can produce a variety of renderings: **perspective view, 360° walkthrough, top view, video and real-time rendering**.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750323459839/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_4_TEXT: Directly enter the render interface, or select the type of rendering you need, then you can start rendering~
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750324523449/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

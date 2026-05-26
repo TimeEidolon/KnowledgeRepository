@@ -7,24 +7,23 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 首先检查模型单位，上传模型要求单位为毫米，尺寸错误会导致上传尺寸错误。 “窗口”-“模型信息”-“单位设置”，把单位设为mm 2.如果单位为正常的，使用卷尺工具测量模型尺寸，查看模型尺寸大小，工具栏选择卷尺工具。 3.选中模型，选择"缩放工具"，点模型的任意一个端点就可以等比例缩放，左下角是缩放比例，可以直接输入想要缩放的数据。
 
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779775/940DF5A2F079E67020F45AE98DECC519.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779775/940DF5A2F079E67020F45AE98DECC519.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779775/940DF5A2F079E67020F45AE98DECC519.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779770/F0892333DBAA1FD1FEA99D47BEC5A34D.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779770/F0892333DBAA1FD1FEA99D47BEC5A34D.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779770/F0892333DBAA1FD1FEA99D47BEC5A34D.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_3: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779785/CC510B4711A6605C67D8D39943D3990D.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779785/CC510B4711A6605C67D8D39943D3990D.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779785/CC510B4711A6605C67D8D39943D3990D.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-上传错误提示：渲染图模型不在中心点
-
-因模型上传尺寸太小，模型上传完渲染位置不对
 
 # 解决办法
 
@@ -46,17 +45,16 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 首先检查模型单位，上传模型要求单位为毫米，尺寸错误会导致上传尺寸错误。 “窗口”-“模型信息”-“单位设置”，把单位设为mm 2.如果单位为正常的，使用卷尺工具测量模型尺寸，查看模型尺寸大小，工具栏选择卷尺工具。 3.选中模型，选择"缩放工具"，点模型的任意一个端点就可以等比例缩放，左下角是缩放比例，可以直接输入想要缩放的数据。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779775/940DF5A2F079E67020F45AE98DECC519.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779775/940DF5A2F079E67020F45AE98DECC519.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779770/F0892333DBAA1FD1FEA99D47BEC5A34D.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779770/F0892333DBAA1FD1FEA99D47BEC5A34D.png" alt="Step 1" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779785/CC510B4711A6605C67D8D39943D3990D.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779785/CC510B4711A6605C67D8D39943D3990D.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: 首先检查模型单位，上传模型要求单位为毫米，尺寸错误会导致上传尺寸错误。 “窗口”-“模型信息”-“单位设置”，把单位设为mm 2.如果单位为正常的，使用卷尺工具测量模型尺寸，查看模型尺寸大小，工具栏选择卷尺工具。 3.选中模型，选择"缩放工具"，点模型的任意一个端点就可以等比例缩放，左下角是缩放比例，可以直接输入想要缩放的数据。
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779775/940DF5A2F079E67020F45AE98DECC519.png
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779770/F0892333DBAA1FD1FEA99D47BEC5A34D.png
+MEDIA_STEP_1_IMAGE_3: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313779785/CC510B4711A6605C67D8D39943D3990D.png
 
 </Visibility>

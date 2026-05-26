@@ -7,56 +7,27 @@ description: "![](https://qhstaticssl.kujiale.com/image/png/1751013225104/A8CEBA
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Step 1
+Screenshot 1
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751013225104/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751013225104/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751013225104/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-２．操作手順 **ステップ1：** 「矩形」アイコンをクリックして長方形を描画し、長方形下部の「押し出し」欄に数値を入力して段差のあるデザインを作成します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747621162795/61140B3FDD94F8FE5E8536B8E5C6DF55.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747621162795/61140B3FDD94F8FE5E8536B8E5C6DF55.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
-**ステップ2：** 長方形のエッジをクリックし、「内部収縮ランプストリップ」と「外付けライトストリップ」は、いずれか一方のみを選びます。下部で明るさや色を調整できます。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747621604259/9B77D0CF6BF7242F97E1F7B6D582E022.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747621604259/9B77D0CF6BF7242F97E1F7B6D582E022.gif" alt="Step 3" style="max-width:100%;height:auto;" />
-
-
-（このレンダリング画像は、解像度が4Kの静止画です。）
-
-## １．機能概要
-
-ウォールウォッシャーライトは光を壁に向かって広い角度で投射することで、壁一面を明るく照らし出し、壁自体を「発光面」のように感じさせることができ、空間演出の幅が大きく広がります。このチュートリアルは、ウォールウォッシャーライトを設置する方法を説明します。
-
-## ２．操作手順
-
-**ステップ1：**  
-「矩形」アイコンをクリックして長方形を描画し、長方形下部の「押し出し」欄に数値を入力して段差のあるデザインを作成します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747621162795/61140B3FDD94F8FE5E8536B8E5C6DF55.gif)
-
-**ステップ2：**  
-長方形のエッジをクリックし、「内部収縮ランプストリップ」と「外付けライトストリップ」は、いずれか一方のみを選びます。下部で明るさや色を調整できます。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747621604259/9B77D0CF6BF7242F97E1F7B6D582E022.gif)
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Step 1
-![](https://qhstaticssl.kujiale.com/image/png/1751013225104/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751013225104/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Screenshot 1
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751013225104/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

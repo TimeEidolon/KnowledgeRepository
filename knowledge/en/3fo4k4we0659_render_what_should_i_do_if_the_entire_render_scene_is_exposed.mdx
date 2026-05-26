@@ -7,27 +7,26 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Open the Automatic exposure of the version(only available in lighting version below 3.0). For manual lighting, use the effect settings for manual lighting. (The Extremely fast rendering does not have this parameter, and when problems occur with the Extremely fast rendering, it is unlikely to result in a completely white situation.)
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 At this point, it can be seen that the material at the ceiling position in the image lacks contrast and shadows, and is very different from the ordinary wall material. It can be determined that this is a self-luminous material with very high brightness, causing the entire image to be overexposed. After identifying the cause, simply replace the ceiling material to return to normal.
 
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-The rendering appears completely overexposed, with only some dark doors and windows visible, and everything else being white.
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197221/AEE83D82AC205027D21AF8BEBB5252AB.png)
 
 # Solution
 
@@ -49,19 +48,18 @@ After identifying the cause, simply replace the ceiling material to return to no
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Open the Automatic exposure of the version(only available in lighting version below 3.0). For manual lighting, use the effect settings for manual lighting. (The Extremely fast rendering does not have this parameter, and when problems occur with the Extremely fast rendering, it is unlikely to result in a completely white situation.)
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. At this point, it can be seen that the material at the ceiling position in the image lacks contrast and shadows, and is very different from the ordinary wall material. It can be determined that this is a self-luminous material with very high brightness, causing the entire image to be overexposed. After identifying the cause, simply replace the ceiling material to return to normal.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Open the Automatic exposure of the version(only available in lighting version below 3.0). For manual lighting, use the effect settings for manual lighting. (The Extremely fast rendering does not have this parameter, and when problems occur with the Extremely fast rendering, it is unlikely to result in a completely white situation.)
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197230/3482C6FCC67B70AFA2D773739D68EA77.png
+
+MEDIA_STEP_2_TEXT: At this point, it can be seen that the material at the ceiling position in the image lacks contrast and shadows, and is very different from the ordinary wall material. It can be determined that this is a self-luminous material with very high brightness, causing the entire image to be overexposed. After identifying the cause, simply replace the ceiling material to return to normal.
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197278/3C7684F2C91D3F8BAF859A6365C0B6FF.png
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135197312/B5E526C569FDA09449D67DA26DBD477F.png
 
 </Visibility>

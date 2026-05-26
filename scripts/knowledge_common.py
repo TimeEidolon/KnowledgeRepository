@@ -200,7 +200,7 @@ def youtube_embed_html(url: str) -> str:
     return f"[Video]({url})"
 
 
-def extract_intro_video(body: str) -> str | None:
+def extract_intro_video_url(body: str) -> str | None:
     for line in body.splitlines():
         stripped = line.strip()
         if not stripped:
@@ -208,11 +208,26 @@ def extract_intro_video(body: str) -> str | None:
         if "🎥" in stripped or "video" in stripped.lower() or "youtube" in stripped.lower():
             match = VIDEO_MD_RE.search(stripped)
             if match:
-                url = match.group(1) or (
+                return match.group(1) or (
                     f"https://www.youtube.com/watch?v={match.group(2) or match.group(3)}"
                 )
-                return youtube_embed_html(url)
+    embed = re.search(r"youtube\.com/embed/([\w-]{6,})", body)
+    if embed:
+        return f"https://www.youtube.com/watch?v={embed.group(1)}"
     return None
+
+
+def extract_intro_video(body: str) -> str | None:
+    url = extract_intro_video_url(body)
+    return youtube_embed_html(url) if url else None
+
+
+def steps_with_media(
+    steps: list[tuple[int, str, list[str]]],
+) -> list[tuple[int, str, list[str]]]:
+    """Keep only steps that have screenshots; renumber sequentially."""
+    with_images = [(text, urls) for _, text, urls in steps if urls]
+    return [(index, text, urls) for index, (text, urls) in enumerate(with_images, start=1)]
 
 
 def _strip_generated_sections(body: str) -> str:
@@ -228,6 +243,7 @@ def extract_numbered_steps_with_images(body: str) -> list[tuple[int, str, list[s
     current_num: int | None = None
     current_text: list[str] = []
     pending_images: list[str] = []
+    buffer: list[str] = []
 
     def flush_step() -> None:
         nonlocal current_num, current_text, pending_images
@@ -261,6 +277,7 @@ def extract_numbered_steps_with_images(body: str) -> list[tuple[int, str, list[s
             current_num = None
             current_text = []
             pending_images = []
+            buffer = [stripped.lstrip("#").strip()]
             continue
 
         numbered = NUMBERED_STEP_RE.match(stripped)
@@ -268,20 +285,27 @@ def extract_numbered_steps_with_images(body: str) -> list[tuple[int, str, list[s
             flush_step()
             current_num = int(numbered.group(1))
             current_text = [numbered.group(2).strip()]
+            buffer = []
             continue
 
         images = IMAGE_MD_RE.findall(stripped)
         if images:
             if current_num is not None:
                 pending_images.extend(images)
-            elif steps:
-                last_num, last_text, last_images = steps[-1]
-                steps[-1] = (last_num, last_text, last_images + images)
+            else:
+                text = " ".join(buffer).strip() or f"Screenshot {len(steps) + 1}"
+                steps.append((len(steps) + 1, text, images))
+                buffer = []
             continue
 
         if current_num is not None and not stripped.startswith("#"):
             if not stripped.startswith("🎥"):
                 current_text.append(stripped)
+            continue
+
+        buffer.append(stripped)
+        if len(buffer) > 6:
+            buffer = buffer[-6:]
 
     flush_step()
 
@@ -314,21 +338,33 @@ def extract_step_media_pairs(body: str) -> list[tuple[str, list[str]]]:
 
 def build_visible_step_guide(body: str) -> str:
     """Visible section with steps + images for humans and AI indexing."""
-    steps = extract_numbered_steps_with_images(body)
-    if not steps or not any(urls for _, _, urls in steps):
+    steps = steps_with_media(extract_numbered_steps_with_images(body))
+    if not steps:
         return ""
 
+    video_url = extract_intro_video_url(_strip_generated_sections(body))
     lines = [
         "## Steps with screenshots",
         "",
-        "Each step below includes the screenshot used in this article.",
+        "Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.",
         "",
     ]
+    if video_url:
+        lines.extend(
+            [
+                f"MEDIA_VIDEO: {video_url}",
+                "",
+                extract_intro_video(body) or "",
+                "",
+            ]
+        )
     for num, text, urls in steps:
         lines.append(f"### Step {num}")
         lines.append(text)
         lines.append("")
-        for url in urls:
+        for index, url in enumerate(urls, start=1):
+            suffix = "" if len(urls) == 1 else f"_{index}"
+            lines.append(f"MEDIA_STEP_{num}_IMAGE{suffix}: {url}")
             lines.append(f"![]({url})")
             lines.append(
                 f'<img src="{url}" alt="Step {num}" style="max-width:100%;height:auto;" />'
@@ -338,11 +374,11 @@ def build_visible_step_guide(body: str) -> str:
 
 
 def build_agent_media_block(body: str) -> str:
-    """Hidden block indexed for AI assistant with step text + image URLs."""
+    """Hidden block indexed for AI assistant with plain-text media URLs."""
     clean = _strip_generated_sections(body)
-    steps = extract_numbered_steps_with_images(clean)
-    intro_video = extract_intro_video(clean)
-    if not steps and not intro_video:
+    steps = steps_with_media(extract_numbered_steps_with_images(clean))
+    video_url = extract_intro_video_url(clean)
+    if not steps and not video_url:
         return ""
 
     parts = [
@@ -350,22 +386,25 @@ def build_agent_media_block(body: str) -> str:
         "",
         "## Assistant step guide",
         "",
-        "MANDATORY for the assistant response:",
-        "- Copy each numbered step below.",
-        "- After each step, output HTML: "
-        '`<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`',
-        "- Use the exact image URL from this section. Do not omit images.",
+        "Mintlify assistant tools may strip markdown images. Always use the plain",
+        "MEDIA_* lines below (they contain full https:// URLs).",
+        "",
+        "For each MEDIA_STEP_N_TEXT, output the step, then embed every matching",
+        "MEDIA_STEP_N_IMAGE URL using:",
+        '`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`',
         "",
     ]
-    if intro_video:
-        parts.extend([intro_video, ""])
+    if video_url:
+        parts.append(f"MEDIA_VIDEO: {video_url}")
+        embed = youtube_embed_html(video_url)
+        if embed:
+            parts.append(embed)
+        parts.append("")
     for num, text, urls in steps:
-        parts.append(f"{num}. {text}")
-        for url in urls:
-            parts.append(f"![]({url})")
-            parts.append(
-                f'<img src="{url}" alt="Step {num}" style="max-width:100%;height:auto;" />'
-            )
+        parts.append(f"MEDIA_STEP_{num}_TEXT: {text}")
+        for index, url in enumerate(urls, start=1):
+            suffix = "" if len(urls) == 1 else f"_{index}"
+            parts.append(f"MEDIA_STEP_{num}_IMAGE{suffix}: {url}")
         parts.append("")
     parts.append("</Visibility>")
     return "\n".join(parts)

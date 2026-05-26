@@ -7,24 +7,15 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-问题 墙角、地缝或天花边缘出现异常光条或亮边。
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031450/43CA081BC2833BA37D008814AE7F1E1C.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031450/43CA081BC2833BA37D008814AE7F1E1C.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
 解决方法 1.检查导入的模型是否存在开口或墙体间隙。 2.打开灯光模板中的漏光修复。
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-墙角、地缝或天花边缘出现异常光条或亮边。
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031450/43CA081BC2833BA37D008814AE7F1E1C.png)
 
 # 解决方法
 
@@ -38,13 +29,14 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 解决方法 1.检查导入的模型是否存在开口或墙体间隙。 2.打开灯光模板中的漏光修复。
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: 解决方法 1.检查导入的模型是否存在开口或墙体间隙。 2.打开灯光模板中的漏光修复。
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136031416/DAA19F2E6CD423718B5AFF13A6B650A3.png
 
 </Visibility>

@@ -7,65 +7,27 @@ description: "![](https://qhstaticssl.kujiale.com/image/png/1751015074413/A8CEBA
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Step 1
+Screenshot 1
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751015074413/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751015074413/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751015074413/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-２．操作手順 **ステップ1：** 「材料とコンポーネント」をクリックします。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749101640622/7FA4416C204215CCD03A7FBF569314DB.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1749101640622/7FA4416C204215CCD03A7FBF569314DB.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
-**ステップ2：** 「素材」　→「モールディング」から「巾木」をクリックし、好みの巾木を選択します。「デフォルトの配置」をチェックします。CTRLキーを押しながらパスを選択し、巾木を配置します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749104253631/C4C448870153CB9D17E64BD212C9BF46.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1749104253631/C4C448870153CB9D17E64BD212C9BF46.gif" alt="Step 3" style="max-width:100%;height:auto;" />
-
-### Step 4
-**ステップ3：** 配置した巾木をクリックし、左側に表示される「ライン設定」から「二级梁燈光」をチェックします。明るさや光の色、「燈光位置」で位置を調整し、「保存」をクリックして設定を完了します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749104571700/7DB82F8F52F0DC8041C3026FA0431E90.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1749104571700/7DB82F8F52F0DC8041C3026FA0431E90.gif" alt="Step 4" style="max-width:100%;height:auto;" />
-
-
-（このレンダリング画像は、解像度が4Kの静止画です。）
-
-## １．機能概要
-
-間接照明付きの巾木は、空間全体に柔らかな光の広がりを与え、落ち着いた雰囲気を演出できます。明るさは控えめながらも、夜間の足元照明としても効果的です。  
-本チュートリアルでは、間接照明付きの巾木を配置する方法をご説明します。
-
-## ２．操作手順
-
-**ステップ1：** 「材料とコンポーネント」をクリックします。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749101640622/7FA4416C204215CCD03A7FBF569314DB.gif)
-
-**ステップ2：** 「素材」　→「モールディング」から「巾木」をクリックし、好みの巾木を選択します。「デフォルトの配置」をチェックします。CTRLキーを押しながらパスを選択し、巾木を配置します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749104253631/C4C448870153CB9D17E64BD212C9BF46.gif)
-
-**ステップ3：** 配置した巾木をクリックし、左側に表示される「ライン設定」から「二级梁燈光」をチェックします。明るさや光の色、「燈光位置」で位置を調整し、「保存」をクリックして設定を完了します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749104571700/7DB82F8F52F0DC8041C3026FA0431E90.gif)
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Step 1
-![](https://qhstaticssl.kujiale.com/image/png/1751015074413/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751015074413/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Screenshot 1
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751015074413/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

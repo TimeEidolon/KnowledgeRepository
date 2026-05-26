@@ -7,38 +7,44 @@ description: "本文对如何在施工图中设置英制单位进行详细讲解
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 进入室内设计，将鼠标移动至右上角头像处，选择**偏好设置**
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750820288717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750820288717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750820288717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 在偏好设置中，选择**通用-单位**，将界面单位修改为“英尺”
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750820367782/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750820367782/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750820367782/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 选择**图纸 - 施工图纸**，进入施工图纸界面
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750733097795/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750733097795/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750733097795/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 设置完成后，施工图纸中的房间面积、尺寸和周长的单位均更改为英制单位
 
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1750821993488/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750821993488/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750821993488/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1750822092601/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750822092601/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750822092601/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 ### Step 5
 布局图纸中的视图比例也显示为英制单位
 
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750822252114/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1750822252114/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1750822252114/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
@@ -73,31 +79,27 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 进入室内设计，将鼠标移动至右上角头像处，选择**偏好设置**
-![](https://qhstaticssl.kujiale.com/image/png/1750820288717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750820288717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 在偏好设置中，选择**通用-单位**，将界面单位修改为“英尺”
-![](https://qhstaticssl.kujiale.com/image/png/1750820367782/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750820367782/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 进入室内设计，将鼠标移动至右上角头像处，选择**偏好设置**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750820288717/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. 选择**图纸 - 施工图纸**，进入施工图纸界面
-![](https://qhstaticssl.kujiale.com/image/png/1750733097795/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750733097795/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: 在偏好设置中，选择**通用-单位**，将界面单位修改为“英尺”
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750820367782/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. 设置完成后，施工图纸中的房间面积、尺寸和周长的单位均更改为英制单位
-![](https://qhstaticssl.kujiale.com/image/png/1750821993488/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750821993488/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1750822092601/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750822092601/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 选择**图纸 - 施工图纸**，进入施工图纸界面
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750733097795/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-5. 布局图纸中的视图比例也显示为英制单位
-![](https://qhstaticssl.kujiale.com/image/png/1750822252114/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1750822252114/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 5" style="max-width:100%;height:auto;" />
+MEDIA_STEP_4_TEXT: 设置完成后，施工图纸中的房间面积、尺寸和周长的单位均更改为英制单位
+MEDIA_STEP_4_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1750821993488/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_4_IMAGE_2: https://qhstaticssl.kujiale.com/image/png/1750822092601/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_5_TEXT: 布局图纸中的视图比例也显示为英制单位
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/image/png/1750822252114/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

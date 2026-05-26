@@ -8,29 +8,34 @@ In the preferences, you can set the material library to be in an expanded state 
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 In the customization tool, hover the mouse over the profile icon in the upper right corner, and click **Preferences.**
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 In the pop-up panel, click **Customize**, set the **Style Replacement Material Library Directory** to the **Expand** mode, and then click the **Close** button in the upper right corner.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987335/C7E82B630764733B1C3B29B498E0E7E1.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987335/C7E82B630764733B1C3B29B498E0E7E1.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987335/C7E82B630764733B1C3B29B498E0E7E1.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 After completing the setup, select a model, and when replacing materials or styles in the **Style** section of the parameter panel on the right, the material library directory will be in the **Expand** state. * Note: After setting it up in preferences, the material library directory will remain expanded by default when creating new projects. However, if you manual click **Collapse Categories Under Model Catalogs**, it will remain collapsed the next time you open a project.
 
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987330/6694343553A6E96E125777BE8BBF777B.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987330/6694343553A6E96E125777BE8BBF777B.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987330/6694343553A6E96E125777BE8BBF777B.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_3_IMAGE_3: https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png
 ![](https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
@@ -62,25 +67,22 @@ All users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. In the customization tool, hover the mouse over the profile icon in the upper right corner, and click **Preferences.**
-![](https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. In the pop-up panel, click **Customize**, set the **Style Replacement Material Library Directory** to the **Expand** mode, and then click the **Close** button in the upper right corner.
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987335/C7E82B630764733B1C3B29B498E0E7E1.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987335/C7E82B630764733B1C3B29B498E0E7E1.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: In the customization tool, hover the mouse over the profile icon in the upper right corner, and click **Preferences.**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1774923818214/82663AB520D14CF08A34B954E27E2CAF.png
 
-3. After completing the setup, select a model, and when replacing materials or styles in the **Style** section of the parameter panel on the right, the material library directory will be in the **Expand** state. * Note: After setting it up in preferences, the material library directory will remain expanded by default when creating new projects. However, if you manual click **Collapse Categories Under Model Catalogs**, it will remain collapsed the next time you open a project.
-![](https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987330/6694343553A6E96E125777BE8BBF777B.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987330/6694343553A6E96E125777BE8BBF777B.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: In the pop-up panel, click **Customize**, set the **Style Replacement Material Library Directory** to the **Expand** mode, and then click the **Close** button in the upper right corner.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987335/C7E82B630764733B1C3B29B498E0E7E1.png
+
+MEDIA_STEP_3_TEXT: After completing the setup, select a model, and when replacing materials or styles in the **Style** section of the parameter panel on the right, the material library directory will be in the **Expand** state. * Note: After setting it up in preferences, the material library directory will remain expanded by default when creating new projects. However, if you manual click **Collapse Categories Under Model Catalogs**, it will remain collapsed the next time you open a project.
+MEDIA_STEP_3_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1774923849238/82EABF784593AB943AE0EBB7E8ADA674.png
+MEDIA_STEP_3_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1774938987330/6694343553A6E96E125777BE8BBF777B.png
+MEDIA_STEP_3_IMAGE_3: https://qhstaticssl.kujiale.com/image/png/1774923871404/6364E175E12410CD3CC5A40D0A9BF660.png
 
 </Visibility>

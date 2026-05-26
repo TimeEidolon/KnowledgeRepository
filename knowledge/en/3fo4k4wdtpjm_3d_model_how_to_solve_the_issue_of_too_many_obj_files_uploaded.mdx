@@ -7,46 +7,43 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Open the model, press ctrl+a to select all models, and the number of model objects will be displayed under the modifier.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378683/C00C77F8BDFD88F83C07DB394E97FF04.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378683/C00C77F8BDFD88F83C07DB394E97FF04.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378683/C00C77F8BDFD88F83C07DB394E97FF04.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 After selecting all models, right-click to convert to editable polygon/editable mesh.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378660/3061A1F4E11FD365DF4539223C379D82.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378660/3061A1F4E11FD365DF4539223C379D82.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378660/3061A1F4E11FD365DF4539223C379D82.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 Click on any object, then in the modifier list, select Attach List; press Ctrl+a to select all and click Attach.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378703/C8C17ED2125E8C8BE6C3587DEE9D95D2.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378703/C8C17ED2125E8C8BE6C3587DEE9D95D2.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378703/C8C17ED2125E8C8BE6C3587DEE9D95D2.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 After attaching, since there are many materials, an attachment option will appear, click Confirm, and it will become a single model object.
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378655/393B27509FDE629EE1C40C7D5E2B2FB8.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378655/393B27509FDE629EE1C40C7D5E2B2FB8.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378655/393B27509FDE629EE1C40C7D5E2B2FB8.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
 ### Step 5
-Converting to a single model brings the issue of becoming a multi-sub material.
-
-### Step 6
 After converting to a multi-sub material, it needs to be split. We have a script for splitting, just run the script. The location may vary by version, select the model.
 
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378677/8C89FD5104F2914D0B23BB1A46BAFC04.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378677/8C89FD5104F2914D0B23BB1A46BAFC04.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378677/8C89FD5104F2914D0B23BB1A46BAFC04.png" alt="Step 6" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378677/8C89FD5104F2914D0B23BB1A46BAFC04.png" alt="Step 5" style="max-width:100%;height:auto;" />
 
-### Step 7
-Running the script will allow the material to split. Script link: //[qhstaticssl.kujiale.com/application/octetstream/1761725096954/Cannot](http://qhstaticssl.kujiale.com/application/octetstream/1761725096954/Cannot) split the model according to material ID..ms
-
-
-The upload prompts that the number of model parts (OBJ) is too many.
 
 # Solution
 
@@ -80,33 +77,26 @@ Script link: //[qhstaticssl.kujiale.com/application/octetstream/1761725096954/Ca
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Open the model, press ctrl+a to select all models, and the number of model objects will be displayed under the modifier.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378683/C00C77F8BDFD88F83C07DB394E97FF04.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378683/C00C77F8BDFD88F83C07DB394E97FF04.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. After selecting all models, right-click to convert to editable polygon/editable mesh.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378660/3061A1F4E11FD365DF4539223C379D82.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378660/3061A1F4E11FD365DF4539223C379D82.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Open the model, press ctrl+a to select all models, and the number of model objects will be displayed under the modifier.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378683/C00C77F8BDFD88F83C07DB394E97FF04.png
 
-3. Click on any object, then in the modifier list, select Attach List; press Ctrl+a to select all and click Attach.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378703/C8C17ED2125E8C8BE6C3587DEE9D95D2.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378703/C8C17ED2125E8C8BE6C3587DEE9D95D2.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: After selecting all models, right-click to convert to editable polygon/editable mesh.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378660/3061A1F4E11FD365DF4539223C379D82.png
 
-4. After attaching, since there are many materials, an attachment option will appear, click Confirm, and it will become a single model object.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378655/393B27509FDE629EE1C40C7D5E2B2FB8.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378655/393B27509FDE629EE1C40C7D5E2B2FB8.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Click on any object, then in the modifier list, select Attach List; press Ctrl+a to select all and click Attach.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378703/C8C17ED2125E8C8BE6C3587DEE9D95D2.png
 
-5. Converting to a single model brings the issue of becoming a multi-sub material.
+MEDIA_STEP_4_TEXT: After attaching, since there are many materials, an attachment option will appear, click Confirm, and it will become a single model object.
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378655/393B27509FDE629EE1C40C7D5E2B2FB8.png
 
-6. After converting to a multi-sub material, it needs to be split. We have a script for splitting, just run the script. The location may vary by version, select the model.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378677/8C89FD5104F2914D0B23BB1A46BAFC04.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378677/8C89FD5104F2914D0B23BB1A46BAFC04.png" alt="Step 6" style="max-width:100%;height:auto;" />
-
-7. Running the script will allow the material to split. Script link: //[qhstaticssl.kujiale.com/application/octetstream/1761725096954/Cannot](http://qhstaticssl.kujiale.com/application/octetstream/1761725096954/Cannot) split the model according to material ID..ms
+MEDIA_STEP_5_TEXT: After converting to a multi-sub material, it needs to be split. We have a script for splitting, just run the script. The location may vary by version, select the model.
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313378677/8C89FD5104F2914D0B23BB1A46BAFC04.png
 
 </Visibility>

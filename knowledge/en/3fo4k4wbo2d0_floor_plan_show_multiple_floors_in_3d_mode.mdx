@@ -11,23 +11,31 @@ In the floor plan tool, you can show all floors or a single floor of a villa on 
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=22Dpa83A8O4
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/22Dpa83A8O4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
-Switch to **3D mode**.
+Click the **floor navigation**, select **show all floors**. * **Note: Show and hide a single or all floors, and other floors except the current floor only support preview, not edit.**
+
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1747893823632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1747893823632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1747893823632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1747894357368/10CB6F18489D13C410D507C1CA06CD49.gif
+![](https://qhstaticssl.kujiale.com/image/gif/1747894357368/10CB6F18489D13C410D507C1CA06CD49.gif)
+<img src="https://qhstaticssl.kujiale.com/image/gif/1747894357368/10CB6F18489D13C410D507C1CA06CD49.gif" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Click the **floor navigation**, select **show all floors**. * **Note: Show and hide a single or all floors, and other floors except the current floor only support preview, not edit.** Set the **other floors opacity** to view effect, you can preview all floors as a whole, or you can click the small eye button to preview two floors individually.
+Show a Single Floor Set the **other floors opacity** to view effect, you can preview all floors as a whole, or you can click the small eye button to preview two floors individually.
 
-![](https://qhstaticssl.kujiale.com/image/png/1747893823632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1747893823632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747894357368/10CB6F18489D13C410D507C1CA06CD49.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747894357368/10CB6F18489D13C410D507C1CA06CD49.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1747894515994/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1747894515994/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1747894515994/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1747894721571/3514A4A5553E6385693D4BEF1825C107.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1747894721571/3514A4A5553E6385693D4BEF1825C107.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1747894721571/3514A4A5553E6385693D4BEF1825C107.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
@@ -56,23 +64,22 @@ Set the **other floors opacity** to view effect, you can preview all floors as a
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=22Dpa83A8O4
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/22Dpa83A8O4" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-1. Switch to **3D mode**.
+MEDIA_STEP_1_TEXT: Click the **floor navigation**, select **show all floors**. * **Note: Show and hide a single or all floors, and other floors except the current floor only support preview, not edit.**
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1747893823632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1747894357368/10CB6F18489D13C410D507C1CA06CD49.gif
 
-2. Click the **floor navigation**, select **show all floors**. * **Note: Show and hide a single or all floors, and other floors except the current floor only support preview, not edit.** Set the **other floors opacity** to view effect, you can preview all floors as a whole, or you can click the small eye button to preview two floors individually.
-![](https://qhstaticssl.kujiale.com/image/png/1747893823632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1747893823632/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1747894357368/10CB6F18489D13C410D507C1CA06CD49.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747894357368/10CB6F18489D13C410D507C1CA06CD49.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1747894515994/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1747894515994/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1747894721571/3514A4A5553E6385693D4BEF1825C107.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747894721571/3514A4A5553E6385693D4BEF1825C107.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Show a Single Floor Set the **other floors opacity** to view effect, you can preview all floors as a whole, or you can click the small eye button to preview two floors individually.
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/image/png/1747894515994/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/image/gif/1747894721571/3514A4A5553E6385693D4BEF1825C107.gif
 
 </Visibility>

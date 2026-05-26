@@ -8,22 +8,28 @@ The material brush can copy the model material and assign it to another model to
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Enter the kitchen & closet design and choose the **kitchen/Closet**.
+Select the **Toolkit-Material brush** from the top toolbar
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744340814007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1744340814007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1744340814007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Select the **Toolkit-Material brush** from the top toolbar Place the **Material brush** on the model to absorb the material style, find the model part that needs to replace the material, click the brush, and the material will be applied with one click. In the design tool, common material styles can be brushed together. The following model materials can be brushed together: * custom furniture, custom cabinets, custom doors and windows, soft decoration, and other accessories (hardware decoration is not supported at the moment)
+Material Brush Place the **Material brush** on the model to absorb the material style, find the model part that needs to replace the material, click the brush, and the material will be applied with one click.
 
-![](https://qhstaticssl.kujiale.com/image/png/1744340814007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744340814007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1744342698947/800C0EF917DF818A941E2F90615289FE.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1744342698947/800C0EF917DF818A941E2F90615289FE.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1744342698947/800C0EF917DF818A941E2F90615289FE.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
+### Step 3
+Material Brush Supports Cross-Tool Brushing In the design tool, common material styles can be brushed together. The following model materials can be brushed together: * custom furniture, custom cabinets, custom doors and windows, soft decoration, and other accessories (hardware decoration is not supported at the moment)
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1744342780834/F94655DC3EAA9C60728B7F4624B9F9DC.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1744342780834/F94655DC3EAA9C60728B7F4624B9F9DC.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744342780834/F94655DC3EAA9C60728B7F4624B9F9DC.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/gif/1744342780834/F94655DC3EAA9C60728B7F4624B9F9DC.gif" alt="Step 3" style="max-width:100%;height:auto;" />
 
 # For Users
 
@@ -55,19 +61,20 @@ In the design tool, common material styles can be brushed together. The followin
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Enter the kitchen & closet design and choose the **kitchen/Closet**.
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Select the **Toolkit-Material brush** from the top toolbar Place the **Material brush** on the model to absorb the material style, find the model part that needs to replace the material, click the brush, and the material will be applied with one click. In the design tool, common material styles can be brushed together. The following model materials can be brushed together: * custom furniture, custom cabinets, custom doors and windows, soft decoration, and other accessories (hardware decoration is not supported at the moment)
-![](https://qhstaticssl.kujiale.com/image/png/1744340814007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744340814007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1744342698947/800C0EF917DF818A941E2F90615289FE.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744342698947/800C0EF917DF818A941E2F90615289FE.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1744342780834/F94655DC3EAA9C60728B7F4624B9F9DC.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1744342780834/F94655DC3EAA9C60728B7F4624B9F9DC.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Select the **Toolkit-Material brush** from the top toolbar
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744340814007/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: Material Brush Place the **Material brush** on the model to absorb the material style, find the model part that needs to replace the material, click the brush, and the material will be applied with one click.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1744342698947/800C0EF917DF818A941E2F90615289FE.gif
+
+MEDIA_STEP_3_TEXT: Material Brush Supports Cross-Tool Brushing In the design tool, common material styles can be brushed together. The following model materials can be brushed together: * custom furniture, custom cabinets, custom doors and windows, soft decoration, and other accessories (hardware decoration is not supported at the moment)
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1744342780834/F94655DC3EAA9C60728B7F4624B9F9DC.gif
 
 </Visibility>

@@ -7,62 +7,27 @@ description: "![](https://qhstaticssl.kujiale.com/image/png/1751015680507/A8CEBA
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Step 1
+Screenshot 1
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751015680507/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751015680507/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751015680507/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
-２．操作手順 **ステップ1：**壁をクリックして、「壁の編集」をクリックして編集モードに切り替えます。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747214030593/7B56C21BDA5372AB78EBEBEFEF1EDA2B.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1747214030593/7B56C21BDA5372AB78EBEBEFEF1EDA2B.gif" alt="Step 2" style="max-width:100%;height:auto;" />
-
-### Step 3
-**ステップ2：**左側の「材料」→「壁の装飾」で「壁紙」を選び、壁をクリックして配置します。また、「壁飾り」でお好みの部材を選んで、壁をクリックして配置します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749528197005/11DBDF4931E1DF4B97A34B9A1A48C9E4.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1749528197005/11DBDF4931E1DF4B97A34B9A1A48C9E4.gif" alt="Step 3" style="max-width:100%;height:auto;" />
-
-### Step 4
-**ステップ3：**部材をクリックすると、数値を入力して壁の四辺からの距離を設定できます。表示された「ツールバー」では、回転・反転・整列・高精度な移動・コピー・お気に入り登録・削除などの操作が行えます。左側では、ドラッグ操作または数値の直接入力によりサイズや角度、床からの高さを調整できます。
-
-![](https://qhstaticssl.kujiale.com/image/png/1747214555062/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1747214555062/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
-
-
-## １．機能紹介
-
-このチュートリアルは、壁に部材を配置し、位置やサイズ、角度を調整する方法をご説明します。
-
-## ２．操作手順
-
-**ステップ1：**壁をクリックして、「壁の編集」をクリックして編集モードに切り替えます。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1747214030593/7B56C21BDA5372AB78EBEBEFEF1EDA2B.gif)
-
-**ステップ2：**左側の「材料」→「壁の装飾」で「壁紙」を選び、壁をクリックして配置します。また、「壁飾り」でお好みの部材を選んで、壁をクリックして配置します。
-
-![](https://qhstaticssl.kujiale.com/image/gif/1749528197005/11DBDF4931E1DF4B97A34B9A1A48C9E4.gif)
-
-**ステップ3：**部材をクリックすると、数値を入力して壁の四辺からの距離を設定できます。表示された「ツールバー」では、回転・反転・整列・高精度な移動・コピー・お気に入り登録・削除などの操作が行えます。左側では、ドラッグ操作または数値の直接入力によりサイズや角度、床からの高さを調整できます。
-
-![](https://qhstaticssl.kujiale.com/image/png/1747214555062/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 
 <Visibility for="agents">
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Step 1
-![](https://qhstaticssl.kujiale.com/image/png/1751015680507/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751015680507/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Screenshot 1
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751015680507/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

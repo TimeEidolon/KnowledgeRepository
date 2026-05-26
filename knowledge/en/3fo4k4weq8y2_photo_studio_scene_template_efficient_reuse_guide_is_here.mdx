@@ -18,17 +18,19 @@ description: "Function Background"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 1. How to Use * Feature Access: In the hierarchy panel, select the target object and right-click to choose "Save as Scene Template", enter a template name and select a storage folder. Confirm to complete the save.
 
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1773627590022/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstatic-us-s3.coohom.com/image/png/1773627590022/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstatic-us-s3.coohom.com/image/png/1773627590022/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 * **Template Activation:** In the left "Enterprise Library" panel - "Scene Template" - select any template and place it in a suitable position within the scene
 
+MEDIA_STEP_2_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1773989909755/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstatic-us-s3.coohom.com/image/png/1773989909755/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstatic-us-s3.coohom.com/image/png/1773989909755/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
@@ -63,17 +65,17 @@ Designed for paid enterprise customers in Photo Studios, main accounts, and sub-
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 1. How to Use * Feature Access: In the hierarchy panel, select the target object and right-click to choose "Save as Scene Template", enter a template name and select a storage folder. Confirm to complete the save.
-![](https://qhstatic-us-s3.coohom.com/image/png/1773627590022/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstatic-us-s3.coohom.com/image/png/1773627590022/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. * **Template Activation:** In the left "Enterprise Library" panel - "Scene Template" - select any template and place it in a suitable position within the scene
-![](https://qhstatic-us-s3.coohom.com/image/png/1773989909755/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstatic-us-s3.coohom.com/image/png/1773989909755/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 1. How to Use * Feature Access: In the hierarchy panel, select the target object and right-click to choose "Save as Scene Template", enter a template name and select a storage folder. Confirm to complete the save.
+MEDIA_STEP_1_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1773627590022/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: * **Template Activation:** In the left "Enterprise Library" panel - "Scene Template" - select any template and place it in a suitable position within the scene
+MEDIA_STEP_2_IMAGE: https://qhstatic-us-s3.coohom.com/image/png/1773989909755/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

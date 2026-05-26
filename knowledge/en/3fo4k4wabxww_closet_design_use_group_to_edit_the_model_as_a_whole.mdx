@@ -11,29 +11,37 @@ Designers can group and ungroup cabinet models designed by combining multiple ca
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Q4uOHPMHVnE
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Q4uOHPMHVnE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Step 1
 Group 1、After **holding shift** to select multiple cabinets, the **Group** button will appear in the floating toolbar. Click **Group** to complete the combination of multiple models. * **Win shortcut key: Ctrl+G** (release the shift key and press Ctrl+G) * **Mac shortcut key: Command+G**
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737431832864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1737431832864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1737431832864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Step 2
+Screenshot 2
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1737432034066/205426BC10D5EBA143BF32355AEEBB52.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1737432034066/205426BC10D5EBA143BF32355AEEBB52.gif)
 <img src="https://qhstaticssl.kujiale.com/image/gif/1737432034066/205426BC10D5EBA143BF32355AEEBB52.gif" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 2、After grouping, pay attention to standardizing the name of the combination cabinet (space name + cabinet name, such as: master bedroom wardrobe), and pay attention to check whether the size of the combination cabinet meets the installation site size.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737432210240/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1737432210240/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1737432210240/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 Ungroup Select the model to be ungrouped, and the **Ungroup** button will appear in the floating toolbar. Click **Ungroup** to complete the model ungrouping. * **Win shortcut key: Ctrl+Shift+G** * **Mac shortcut key: Command+Shift+G**
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737438686020/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1737438686020/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1737438686020/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -70,27 +78,26 @@ Select the model to be ungrouped, and the **Ungroup** button will appear in the 
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_VIDEO: https://www.youtube.com/watch?v=Q4uOHPMHVnE
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Q4uOHPMHVnE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-1. Group 1、After **holding shift** to select multiple cabinets, the **Group** button will appear in the floating toolbar. Click **Group** to complete the combination of multiple models. * **Win shortcut key: Ctrl+G** (release the shift key and press Ctrl+G) * **Mac shortcut key: Command+G**
-![](https://qhstaticssl.kujiale.com/image/png/1737431832864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1737431832864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Group 1、After **holding shift** to select multiple cabinets, the **Group** button will appear in the floating toolbar. Click **Group** to complete the combination of multiple models. * **Win shortcut key: Ctrl+G** (release the shift key and press Ctrl+G) * **Mac shortcut key: Command+G**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737431832864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-2. Step 2
-![](https://qhstaticssl.kujiale.com/image/gif/1737432034066/205426BC10D5EBA143BF32355AEEBB52.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1737432034066/205426BC10D5EBA143BF32355AEEBB52.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Screenshot 2
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1737432034066/205426BC10D5EBA143BF32355AEEBB52.gif
 
-3. 2、After grouping, pay attention to standardizing the name of the combination cabinet (space name + cabinet name, such as: master bedroom wardrobe), and pay attention to check whether the size of the combination cabinet meets the installation site size.
-![](https://qhstaticssl.kujiale.com/image/png/1737432210240/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1737432210240/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 2、After grouping, pay attention to standardizing the name of the combination cabinet (space name + cabinet name, such as: master bedroom wardrobe), and pay attention to check whether the size of the combination cabinet meets the installation site size.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737432210240/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-4. Ungroup Select the model to be ungrouped, and the **Ungroup** button will appear in the floating toolbar. Click **Ungroup** to complete the model ungrouping. * **Win shortcut key: Ctrl+Shift+G** * **Mac shortcut key: Command+Shift+G**
-![](https://qhstaticssl.kujiale.com/image/png/1737438686020/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1737438686020/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_4_TEXT: Ungroup Select the model to be ungrouped, and the **Ungroup** button will appear in the floating toolbar. Click **Ungroup** to complete the model ungrouping. * **Win shortcut key: Ctrl+Shift+G** * **Mac shortcut key: Command+Shift+G**
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/image/png/1737438686020/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

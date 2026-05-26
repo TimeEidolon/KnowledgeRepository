@@ -8,22 +8,28 @@ description: "Global style** supports one-click replacement of materials, styles
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Enter the kitchen & closet design and choose the **kitchen/Closet**.
+Select the **Global Edit -** **Global Style** from the top toolbar.
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753857579198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+![](https://qhstaticssl.kujiale.com/image/png/1753857579198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
+<img src="https://qhstaticssl.kujiale.com/image/png/1753857579198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-Select the **Global Edit -** **Global Style** from the top toolbar. Select the cabinet, and select the material and hardware to be replaced in the parameter panel on the right to complete the global style. * **Detailed instructions on how to quickly search for models in the model catalog panel can be found in the tutorial document: [Click to view](https://www.coohom.com/en_US/helpcenter/kitchen-closet-use-style-panel-to-replace-the-material-and-style-of-models?hl=en&kjl_source=hc)** * The operation demonstration is as follows:
+**Global Style** Select the cabinet, and select the material and hardware to be replaced in the parameter panel on the right to complete the global style. * **Detailed instructions on how to quickly search for models in the model catalog panel can be found in the tutorial document: [Click to view](https://www.coohom.com/en_US/helpcenter/kitchen-closet-use-style-panel-to-replace-the-material-and-style-of-models?hl=en&kjl_source=hc)**
 
-![](https://qhstaticssl.kujiale.com/image/png/1753857579198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753857579198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753858002573/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1753858002573/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1753858002573/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
+### Step 3
+* The operation demonstration is as follows:
+
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1753858421304/E72A8098B233C359392418FA245559D0.gif
 ![](https://qhstaticssl.kujiale.com/image/gif/1753858421304/E72A8098B233C359392418FA245559D0.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1753858421304/E72A8098B233C359392418FA245559D0.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/image/gif/1753858421304/E72A8098B233C359392418FA245559D0.gif" alt="Step 3" style="max-width:100%;height:auto;" />
 
 # For Users
 
@@ -53,19 +59,20 @@ Select the cabinet, and select the material and hardware to be replaced in the p
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Enter the kitchen & closet design and choose the **kitchen/Closet**.
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Select the **Global Edit -** **Global Style** from the top toolbar. Select the cabinet, and select the material and hardware to be replaced in the parameter panel on the right to complete the global style. * **Detailed instructions on how to quickly search for models in the model catalog panel can be found in the tutorial document: [Click to view](https://www.coohom.com/en_US/helpcenter/kitchen-closet-use-style-panel-to-replace-the-material-and-style-of-models?hl=en&kjl_source=hc)** * The operation demonstration is as follows:
-![](https://qhstaticssl.kujiale.com/image/png/1753857579198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753857579198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/png/1753858002573/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1753858002573/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/image/gif/1753858421304/E72A8098B233C359392418FA245559D0.gif)
-<img src="https://qhstaticssl.kujiale.com/image/gif/1753858421304/E72A8098B233C359392418FA245559D0.gif" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Select the **Global Edit -** **Global Style** from the top toolbar.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753857579198/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: **Global Style** Select the cabinet, and select the material and hardware to be replaced in the parameter panel on the right to complete the global style. * **Detailed instructions on how to quickly search for models in the model catalog panel can be found in the tutorial document: [Click to view](https://www.coohom.com/en_US/helpcenter/kitchen-closet-use-style-panel-to-replace-the-material-and-style-of-models?hl=en&kjl_source=hc)**
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1753858002573/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_3_TEXT: * The operation demonstration is as follows:
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/gif/1753858421304/E72A8098B233C359392418FA245559D0.gif
 
 </Visibility>

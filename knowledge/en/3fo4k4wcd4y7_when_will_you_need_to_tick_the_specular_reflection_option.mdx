@@ -12,29 +12,33 @@ In this article, we will introduce the occasions when you will need to use the *
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Dear Coohomers, In this article, we will introduce the occasions when you will need to use the **Specular Reflection** function.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882043864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751882043864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751882043864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 Applied occasions * When you are using a decoration mirror in your design, you need to tick this option in order to make the mirror show the reflected designs correctly. * When you finish the rendering to find that some designs are missing in certain unexpected angles, you may tick this option to avoid this. * When you need to render the design part that is inside the glass windows/doors, you will need to tick this option to avoid incomplete display of all designs.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815762/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815762/2D37C2734C50A6837B78ACB4959B66FF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815762/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
-Step 3
+Screenshot 3
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882692403/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1751882692403/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1751882692403/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
-Step 4
+Screenshot 4
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815822/2D37C2734C50A6837B78ACB4959B66FF.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815822/2D37C2734C50A6837B78ACB4959B66FF.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815822/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 4" style="max-width:100%;height:auto;" />
 
@@ -58,25 +62,23 @@ All users
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Dear Coohomers, In this article, we will introduce the occasions when you will need to use the **Specular Reflection** function.
-![](https://qhstaticssl.kujiale.com/image/png/1751882043864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751882043864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Applied occasions * When you are using a decoration mirror in your design, you need to tick this option in order to make the mirror show the reflected designs correctly. * When you finish the rendering to find that some designs are missing in certain unexpected angles, you may tick this option to avoid this. * When you need to render the design part that is inside the glass windows/doors, you will need to tick this option to avoid incomplete display of all designs.
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815762/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815762/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Dear Coohomers, In this article, we will introduce the occasions when you will need to use the **Specular Reflection** function.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882043864/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
-3. Step 3
-![](https://qhstaticssl.kujiale.com/image/png/1751882692403/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1751882692403/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Applied occasions * When you are using a decoration mirror in your design, you need to tick this option in order to make the mirror show the reflected designs correctly. * When you finish the rendering to find that some designs are missing in certain unexpected angles, you may tick this option to avoid this. * When you need to render the design part that is inside the glass windows/doors, you will need to tick this option to avoid incomplete display of all designs.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815762/2D37C2734C50A6837B78ACB4959B66FF.png
 
-4. Step 4
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815822/2D37C2734C50A6837B78ACB4959B66FF.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815822/2D37C2734C50A6837B78ACB4959B66FF.png" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: Screenshot 3
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/image/png/1751882692403/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_4_TEXT: Screenshot 4
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1751938815822/2D37C2734C50A6837B78ACB4959B66FF.png
 
 </Visibility>

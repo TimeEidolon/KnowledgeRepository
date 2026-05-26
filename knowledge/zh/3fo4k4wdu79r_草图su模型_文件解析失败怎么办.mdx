@@ -7,22 +7,30 @@ description: "问题"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
-### Step 3
+### Step 1
+解决方法 1、 模型太大，面数太多的，需要拆分模型上传 有的模型面数很多，这种需要拆分模型上传，下图的模型就是因为墙上的文字全是模型，面数太多，这种模型需要拆分上传。
+
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308576937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
+![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308576937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308576937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 1" style="max-width:100%;height:auto;" />
+
+### Step 2
 多边形面多，上传计算三角面多，导致上传Skp解析失败 版本符合，场景中没有其他数据，多边形面多，上传模型系统计算模型三角面，多边形面多会导致上传计算错误，需要把模型导出3DS格式的文件，再导入到草图里，保存上传，导出的3DS格式文件草图里计算好了三角面，导进来以后是已三角面形式存在，上传免去系统计算时间。 具体操作步骤如下： 文件——导出——三维模型；导出类型选择3DS格式，打开一个新的场景，文件——导入3DS格式文件（导入的模型会三角面显示），保存上传。
 
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308657958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308657958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308657958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308657958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1577786818393/9C2588BD6530459A61609F5F77BE31C3.png?x-oss-process=image/resize,m_mfit,w_330/format,webp
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1577786818393/9C2588BD6530459A61609F5F77BE31C3.png?x-oss-process=image/resize,m_mfit,w_330/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1577786818393/9C2588BD6530459A61609F5F77BE31C3.png?x-oss-process=image/resize,m_mfit,w_330/format,webp" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1577786818393/9C2588BD6530459A61609F5F77BE31C3.png?x-oss-process=image/resize,m_mfit,w_330/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_2_IMAGE_3: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313867922/E73255A995C689EDA162B89CC105DD8D.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313867922/E73255A995C689EDA162B89CC105DD8D.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313867922/E73255A995C689EDA162B89CC105DD8D.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313867922/E73255A995C689EDA162B89CC105DD8D.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
-
-文件解析失败
 
 # 原因
 
@@ -62,17 +70,19 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-3. 多边形面多，上传计算三角面多，导致上传Skp解析失败 版本符合，场景中没有其他数据，多边形面多，上传模型系统计算模型三角面，多边形面多会导致上传计算错误，需要把模型导出3DS格式的文件，再导入到草图里，保存上传，导出的3DS格式文件草图里计算好了三角面，导进来以后是已三角面形式存在，上传免去系统计算时间。 具体操作步骤如下： 文件——导出——三维模型；导出类型选择3DS格式，打开一个新的场景，文件——导入3DS格式文件（导入的模型会三角面显示），保存上传。
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308657958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308657958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1577786818393/9C2588BD6530459A61609F5F77BE31C3.png?x-oss-process=image/resize,m_mfit,w_330/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1577786818393/9C2588BD6530459A61609F5F77BE31C3.png?x-oss-process=image/resize,m_mfit,w_330/format,webp" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313867922/E73255A995C689EDA162B89CC105DD8D.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313867922/E73255A995C689EDA162B89CC105DD8D.png" alt="Step 3" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: 解决方法 1、 模型太大，面数太多的，需要拆分模型上传 有的模型面数很多，这种需要拆分模型上传，下图的模型就是因为墙上的文字全是模型，面数太多，这种模型需要拆分上传。
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308576937/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
+
+MEDIA_STEP_2_TEXT: 多边形面多，上传计算三角面多，导致上传Skp解析失败 版本符合，场景中没有其他数据，多边形面多，上传模型系统计算模型三角面，多边形面多会导致上传计算错误，需要把模型导出3DS格式的文件，再导入到草图里，保存上传，导出的3DS格式文件草图里计算好了三角面，导进来以后是已三角面形式存在，上传免去系统计算时间。 具体操作步骤如下： 文件——导出——三维模型；导出类型选择3DS格式，打开一个新的场景，文件——导入3DS格式文件（导入的模型会三角面显示），保存上传。
+MEDIA_STEP_2_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308657958/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
+MEDIA_STEP_2_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/png/1577786818393/9C2588BD6530459A61609F5F77BE31C3.png?x-oss-process=image/resize,m_mfit,w_330/format,webp
+MEDIA_STEP_2_IMAGE_3: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762313867922/E73255A995C689EDA162B89CC105DD8D.png
 
 </Visibility>

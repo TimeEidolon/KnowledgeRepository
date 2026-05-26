@@ -7,17 +7,19 @@ description: "在全屋定制设计过程中，图纸设计是连接创意与实
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 进入**工作台**，选择**厨房和衣橱设计**
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779701521850/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1779701521850/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1779701521850/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
-进入全屋定制设计后，选择**图纸** 编辑视图是通过BIM技术将设计方案的各个面转为图纸的视图，并支持修改这些视图内容，如标注添加等功能操作 * **与编辑视图相关的具体操作，可见教程文档：[编辑视图](https://www.kujiale.com/zh_CN/helpcenter/article/%E5%85%A8%E5%B1%8B%E5%AE%9A%E5%88%B6-%E7%BC%96%E8%BE%91%E8%A7%86%E5%9B%BE%E4%BB%8B%E7%BB%8D?kjl_source=hc)** [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_dce212a0_4d95_4655_1744885467940.mp4) 布局图纸是将编辑完成的视图在图框内进行整理，从而输出完整全套施工图的工具 * **与布局图纸相关的具体操作，可见教程文档：[布局图纸](https://www.kujiale.com/zh_CN/helpcenter/article/%E5%85%A8%E5%B1%8B%E5%AE%9A%E5%88%B6-%E5%B8%83%E5%B1%80%E5%9B%BE%E7%BA%B8%E4%BB%8B%E7%BB%8D?kjl_source=hc)** [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_7d99d22a_bb0c_4dd4_1744885921287.mp4)
+进入全屋定制设计后，选择**图纸**
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744884831764/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 ![](https://qhstaticssl.kujiale.com/image/png/1744884831764/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
 <img src="https://qhstaticssl.kujiale.com/image/png/1744884831764/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
@@ -58,17 +60,17 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 进入**工作台**，选择**厨房和衣橱设计**
-![](https://qhstaticssl.kujiale.com/image/png/1779701521850/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1779701521850/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 进入全屋定制设计后，选择**图纸** 编辑视图是通过BIM技术将设计方案的各个面转为图纸的视图，并支持修改这些视图内容，如标注添加等功能操作 * **与编辑视图相关的具体操作，可见教程文档：[编辑视图](https://www.kujiale.com/zh_CN/helpcenter/article/%E5%85%A8%E5%B1%8B%E5%AE%9A%E5%88%B6-%E7%BC%96%E8%BE%91%E8%A7%86%E5%9B%BE%E4%BB%8B%E7%BB%8D?kjl_source=hc)** [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_dce212a0_4d95_4655_1744885467940.mp4) 布局图纸是将编辑完成的视图在图框内进行整理，从而输出完整全套施工图的工具 * **与布局图纸相关的具体操作，可见教程文档：[布局图纸](https://www.kujiale.com/zh_CN/helpcenter/article/%E5%85%A8%E5%B1%8B%E5%AE%9A%E5%88%B6-%E5%B8%83%E5%B1%80%E5%9B%BE%E7%BA%B8%E4%BB%8B%E7%BB%8D?kjl_source=hc)** [![ ](//qhstaticssl.kujiale.com/newt/1144/image/png/1549879747859/B0556275535F7BF4FEF2DCC4F752A054.png)](https://qhstaticva-cos.kujiale.com/media/yun/help/video/UID_7d99d22a_bb0c_4dd4_1744885921287.mp4)
-![](https://qhstaticssl.kujiale.com/image/png/1744884831764/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png)
-<img src="https://qhstaticssl.kujiale.com/image/png/1744884831764/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: 进入**工作台**，选择**厨房和衣橱设计**
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/image/png/1779701521850/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
+
+MEDIA_STEP_2_TEXT: 进入全屋定制设计后，选择**图纸**
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/image/png/1744884831764/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png
 
 </Visibility>

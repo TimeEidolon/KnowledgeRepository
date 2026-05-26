@@ -7,24 +7,15 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-Problem When rendering materials with reflective effects such as wood grain or paint, unknown spots of light often appear on the material, as shown in the white parts of the image below.
-
-![](https://qhstaticssl.kujiale.com/image/png/1703059097048/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_880,h_490/format,webp)
-<img src="https://qhstaticssl.kujiale.com/image/png/1703059097048/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_880,h_490/format,webp" alt="Step 1" style="max-width:100%;height:auto;" />
-
-### Step 2
 Reason This is due to the reflective effect of the material. The spots of light in the image are caused by reflections from the exterior view outside the window behind the camera. If the wood grain material in the image is replaced with a mirror surface material, the spots of light can be seen more clearly, as shown in the image below.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135152985/C6E7E1500FA37712765D69E791D81228.jpg
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135152985/C6E7E1500FA37712765D69E791D81228.jpg)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135152985/C6E7E1500FA37712765D69E791D81228.jpg" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135152985/C6E7E1500FA37712765D69E791D81228.jpg" alt="Step 1" style="max-width:100%;height:auto;" />
 
-
-When rendering materials with reflective effects such as wood grain or paint, unknown spots of light often appear on the material, as shown in the white parts of the image below.
-
-![](https://qhstaticssl.kujiale.com/image/png/1703059097048/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/resize,m_mfit,w_880,h_490/format,webp)
 
 # Reason
 
@@ -36,13 +27,14 @@ This is due to the reflective effect of the material. The spots of light in the 
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Reason This is due to the reflective effect of the material. The spots of light in the image are caused by reflections from the exterior view outside the window behind the camera. If the wood grain material in the image is replaced with a mirror surface material, the spots of light can be seen more clearly, as shown in the image below.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135152985/C6E7E1500FA37712765D69E791D81228.jpg)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135152985/C6E7E1500FA37712765D69E791D81228.jpg" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
+
+MEDIA_STEP_1_TEXT: Reason This is due to the reflective effect of the material. The spots of light in the image are caused by reflections from the exterior view outside the window behind the camera. If the wood grain material in the image is replaced with a mirror surface material, the spots of light can be seen more clearly, as shown in the image below.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762135152985/C6E7E1500FA37712765D69E791D81228.jpg
 
 </Visibility>

@@ -7,30 +7,29 @@ description: "Problem"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 Click monochrome display, white is the front, and blue-gray is the back (default sketch color, can be changed).
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308934713/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308934713/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308934713/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 Double-click to enter the group, select all faces, right-click to reverse the plane.
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308950965/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308950965/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308950965/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 After reversing the plane, everything appears white, indicating the model is facing the right way. Then, click material mapping display, reapply the material to the model and save/upload, and it's OK.
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308969651/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
 ![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308969651/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308969651/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 3" style="max-width:100%;height:auto;" />
 
-
-Mirror effect appears after rendering glass material
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308922666/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
 
 # Reason
 
@@ -54,21 +53,20 @@ The model's face normals are reversed and need to be flipped. Some glass is sing
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. Click monochrome display, white is the front, and blue-gray is the back (default sketch color, can be changed).
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308934713/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308934713/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. Double-click to enter the group, select all faces, right-click to reverse the plane.
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308950965/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308950965/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: Click monochrome display, white is the front, and blue-gray is the back (default sketch color, can be changed).
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308934713/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
 
-3. After reversing the plane, everything appears white, indicating the model is facing the right way. Then, click material mapping display, reapply the material to the model and save/upload, and it's OK.
-![](https://qhstaticssl.kujiale.com/yuntai/image/png/1555308969651/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/png/1555308969651/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: Double-click to enter the group, select all faces, right-click to reverse the plane.
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308950965/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
+
+MEDIA_STEP_3_TEXT: After reversing the plane, everything appears white, indicating the model is facing the right way. Then, click material mapping display, reapply the material to the model and save/upload, and it's OK.
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/png/1555308969651/A8CEBABD0663ECBAEEE7516DF7A7D2B5.png?x-oss-process=image/format,webp
 
 </Visibility>

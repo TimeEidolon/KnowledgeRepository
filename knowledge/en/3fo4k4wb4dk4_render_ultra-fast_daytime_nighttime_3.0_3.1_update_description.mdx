@@ -7,41 +7,47 @@ Ultra-Fast class added 4 new lighting templates [Ultra-Fast Daytime/Nighttime 3.
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
 **Action Steps** You can experience the new version of light by upgrading the light template to the new version under the light version button in the rendering interface.
 
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743065024720/3A2B0066340BE8CCF6DF55B9872FA9A8.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743065024720/3A2B0066340BE8CCF6DF55B9872FA9A8.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743065024720/3A2B0066340BE8CCF6DF55B9872FA9A8.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
 **Major updates in version 3.1** **1）Building on the visual advantages of version 3.0, version 3.1 introduces real-time rendering, significantly enhancing the lighting experience.**
 
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068676794/EF63861EC3146D318E72192A32D119EA.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068676794/EF63861EC3146D318E72192A32D119EA.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068676794/EF63861EC3146D318E72192A32D119EA.png" alt="Step 2" style="max-width:100%;height:auto;" />
 
 ### Step 3
 **2）Entry Update** Move the manual template to the "real-time Rendering" TAB, Render popup entry location is as follows:
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068653993/EAF9DA6B459E33EF773FA7DC6ABD5564.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068653993/EAF9DA6B459E33EF773FA7DC6ABD5564.png)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068653993/EAF9DA6B459E33EF773FA7DC6ABD5564.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
 ### Step 4
 **3) feature upgrades** Realistic templates for the first time support LUT filters, depth of field, material replacement and more. **a. LUT Filters** Manually open filters → Free to switch between different filters in the public library. * **Note: You can also upload SRGB mode filters by yourself, currently cube format is supported.**
 
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068633385/4E7EC4EA67380C60C9EFC77CAF2D8247.gif
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068633385/4E7EC4EA67380C60C9EFC77CAF2D8247.gif)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068633385/4E7EC4EA67380C60C9EFC77CAF2D8247.gif" alt="Step 4" style="max-width:100%;height:auto;" />
 
 ### Step 5
 **b. Depth of field** Manually open the depth of field, by editing the center point and blur can achieve a variety of depth of field effects.
 
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068610920/2ED2BA8979DD11808D59DA3F391DA68A.gif
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068610920/2ED2BA8979DD11808D59DA3F391DA68A.gif)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068610920/2ED2BA8979DD11808D59DA3F391DA68A.gif" alt="Step 5" style="max-width:100%;height:auto;" />
 
 ### Step 6
 **c. Material replacement** Click material to replace material in the left column, you can also edit the original material properties in the right column.
 
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068596204/796EED5EBB2326D01209A4AF746A4766.gif
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068596204/796EED5EBB2326D01209A4AF746A4766.gif)
 <img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068596204/796EED5EBB2326D01209A4AF746A4766.gif" alt="Step 6" style="max-width:100%;height:auto;" />
 
@@ -172,33 +178,29 @@ Due to the GI upgrade, the same light brightness can illuminate a larger area, a
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. **Action Steps** You can experience the new version of light by upgrading the light template to the new version under the light version button in the rendering interface.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743065024720/3A2B0066340BE8CCF6DF55B9872FA9A8.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743065024720/3A2B0066340BE8CCF6DF55B9872FA9A8.png" alt="Step 1" style="max-width:100%;height:auto;" />
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. **Major updates in version 3.1** **1）Building on the visual advantages of version 3.0, version 3.1 introduces real-time rendering, significantly enhancing the lighting experience.**
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068676794/EF63861EC3146D318E72192A32D119EA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068676794/EF63861EC3146D318E72192A32D119EA.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_1_TEXT: **Action Steps** You can experience the new version of light by upgrading the light template to the new version under the light version button in the rendering interface.
+MEDIA_STEP_1_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743065024720/3A2B0066340BE8CCF6DF55B9872FA9A8.png
 
-3. **2）Entry Update** Move the manual template to the "real-time Rendering" TAB, Render popup entry location is as follows:
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068653993/EAF9DA6B459E33EF773FA7DC6ABD5564.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068653993/EAF9DA6B459E33EF773FA7DC6ABD5564.png" alt="Step 3" style="max-width:100%;height:auto;" />
+MEDIA_STEP_2_TEXT: **Major updates in version 3.1** **1）Building on the visual advantages of version 3.0, version 3.1 introduces real-time rendering, significantly enhancing the lighting experience.**
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068676794/EF63861EC3146D318E72192A32D119EA.png
 
-4. **3) feature upgrades** Realistic templates for the first time support LUT filters, depth of field, material replacement and more. **a. LUT Filters** Manually open filters → Free to switch between different filters in the public library. * **Note: You can also upload SRGB mode filters by yourself, currently cube format is supported.**
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068633385/4E7EC4EA67380C60C9EFC77CAF2D8247.gif)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068633385/4E7EC4EA67380C60C9EFC77CAF2D8247.gif" alt="Step 4" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: **2）Entry Update** Move the manual template to the "real-time Rendering" TAB, Render popup entry location is as follows:
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068653993/EAF9DA6B459E33EF773FA7DC6ABD5564.png
 
-5. **b. Depth of field** Manually open the depth of field, by editing the center point and blur can achieve a variety of depth of field effects.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068610920/2ED2BA8979DD11808D59DA3F391DA68A.gif)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068610920/2ED2BA8979DD11808D59DA3F391DA68A.gif" alt="Step 5" style="max-width:100%;height:auto;" />
+MEDIA_STEP_4_TEXT: **3) feature upgrades** Realistic templates for the first time support LUT filters, depth of field, material replacement and more. **a. LUT Filters** Manually open filters → Free to switch between different filters in the public library. * **Note: You can also upload SRGB mode filters by yourself, currently cube format is supported.**
+MEDIA_STEP_4_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068633385/4E7EC4EA67380C60C9EFC77CAF2D8247.gif
 
-6. **c. Material replacement** Click material to replace material in the left column, you can also edit the original material properties in the right column.
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068596204/796EED5EBB2326D01209A4AF746A4766.gif)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068596204/796EED5EBB2326D01209A4AF746A4766.gif" alt="Step 6" style="max-width:100%;height:auto;" />
+MEDIA_STEP_5_TEXT: **b. Depth of field** Manually open the depth of field, by editing the center point and blur can achieve a variety of depth of field effects.
+MEDIA_STEP_5_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068610920/2ED2BA8979DD11808D59DA3F391DA68A.gif
+
+MEDIA_STEP_6_TEXT: **c. Material replacement** Click material to replace material in the left column, you can also edit the original material properties in the right column.
+MEDIA_STEP_6_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1743068596204/796EED5EBB2326D01209A4AF746A4766.gif
 
 </Visibility>

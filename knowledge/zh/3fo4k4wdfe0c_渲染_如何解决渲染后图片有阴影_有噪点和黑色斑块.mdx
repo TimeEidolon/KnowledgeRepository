@@ -7,46 +7,37 @@ description: "问题1"
 
 ## Steps with screenshots
 
-Each step below includes the screenshot used in this article.
+Each step includes plain MEDIA_* URLs (for AI tools) plus rendered images.
 
 ### Step 1
-在第一张图中，可以看到，天空的位置并没有物体，但是也出现类似的情况，这是由于在相同位置有一块透明的玻璃，这样渲染的时候，玻璃的面和吊顶的面发生重叠，就会出现下图中的情况。
+调整下面光源的高度，让吊顶高度和面光源不重叠。
 
-### Step 2
-在一些定制板材或者柜子中经常出现下图中的情况，这是由于模型在建模的时候就出现了两个面重叠的情况，所以在渲染的时候会出现有阴影的情况。
-
-### Step 3
-由于光源和模型之间发生重叠，当吊顶高度和面光源高度重叠的时候，渲染就会出现下图中的情况，吊顶会丢失。
-
-### Step 1
-如果是图一中的情况，只需要删除自由造影的重叠面，即可，如果还是不能解决问题，可以尝试清空吊顶设计来解决。
-
-### Step 2
-把模型中重叠的面删除，如果是定制柜体的模型，可以尝试在资源列表中找到重叠的板件，删除即可。
-
-### Step 3
-调整下面光源的高度，让吊顶高度和面光源不重叠。 画面很干净，但是局部某一个材质出现噪点，如下图 1.上传的模型附带的参数中有一个选项设置为低于1，就会出现下图中的情况，如果是公库的材质，那么就是上传的素材有问题， 2.照射的光线过暗 1.如果是自己上传的材质，只需要在max中将材质属性中的模糊值，调整为默认值1，然后重新上传即可，如果是公库的素材，推荐换一个素材或者使用新材质上传自己重新上传一个材质即可
-
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226684/C03DE640394871C9C421A056F4924976.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226684/C03DE640394871C9C421A056F4924976.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226684/C03DE640394871C9C421A056F4924976.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226684/C03DE640394871C9C421A056F4924976.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
+MEDIA_STEP_1_IMAGE_3: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226679/CFB1D9851719E84B886ED393E7C7E059.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226679/CFB1D9851719E84B886ED393E7C7E059.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226679/CFB1D9851719E84B886ED393E7C7E059.png" alt="Step 3" style="max-width:100%;height:auto;" />
-
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png" alt="Step 3" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226679/CFB1D9851719E84B886ED393E7C7E059.png" alt="Step 1" style="max-width:100%;height:auto;" />
 
 ### Step 2
+解法2 1.如果是自己上传的材质，只需要在max中将材质属性中的模糊值，调整为默认值1，然后重新上传即可，如果是公库的素材，推荐换一个素材或者使用新材质上传自己重新上传一个材质即可
+
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png
+![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png)
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png" alt="Step 2" style="max-width:100%;height:auto;" />
+
+### Step 3
 提高光线的亮度
 
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png
 ![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png" alt="Step 2" style="max-width:100%;height:auto;" />
+<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png" alt="Step 3" style="max-width:100%;height:auto;" />
 
-
-如下图中图一红线的部分为阴影；图二模型表面存在异常；图三吊顶上出现斑块，这个我们称之为重面（噪点/阴影/黑色斑块）
 
 # 原因1
 
@@ -92,33 +83,22 @@ Each step below includes the screenshot used in this article.
 
 ## Assistant step guide
 
-MANDATORY for the assistant response:
-- Copy each numbered step below.
-- After each step, output HTML: `<img src="EXACT_URL" alt="Step" style="max-width:100%;height:auto;" />`
-- Use the exact image URL from this section. Do not omit images.
+Mintlify assistant tools may strip markdown images. Always use the plain
+MEDIA_* lines below (they contain full https:// URLs).
 
-1. 在第一张图中，可以看到，天空的位置并没有物体，但是也出现类似的情况，这是由于在相同位置有一块透明的玻璃，这样渲染的时候，玻璃的面和吊顶的面发生重叠，就会出现下图中的情况。
+For each MEDIA_STEP_N_TEXT, output the step, then embed every matching
+MEDIA_STEP_N_IMAGE URL using:
+`<img src="URL" alt="Step" style="max-width:100%;height:auto;" />`
 
-2. 在一些定制板材或者柜子中经常出现下图中的情况，这是由于模型在建模的时候就出现了两个面重叠的情况，所以在渲染的时候会出现有阴影的情况。
+MEDIA_STEP_1_TEXT: 调整下面光源的高度，让吊顶高度和面光源不重叠。
+MEDIA_STEP_1_IMAGE_1: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png
+MEDIA_STEP_1_IMAGE_2: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226684/C03DE640394871C9C421A056F4924976.png
+MEDIA_STEP_1_IMAGE_3: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226679/CFB1D9851719E84B886ED393E7C7E059.png
 
-3. 由于光源和模型之间发生重叠，当吊顶高度和面光源高度重叠的时候，渲染就会出现下图中的情况，吊顶会丢失。
+MEDIA_STEP_2_TEXT: 解法2 1.如果是自己上传的材质，只需要在max中将材质属性中的模糊值，调整为默认值1，然后重新上传即可，如果是公库的素材，推荐换一个素材或者使用新材质上传自己重新上传一个材质即可
+MEDIA_STEP_2_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png
 
-1. 如果是图一中的情况，只需要删除自由造影的重叠面，即可，如果还是不能解决问题，可以尝试清空吊顶设计来解决。
-
-2. 把模型中重叠的面删除，如果是定制柜体的模型，可以尝试在资源列表中找到重叠的板件，删除即可。
-
-3. 调整下面光源的高度，让吊顶高度和面光源不重叠。 画面很干净，但是局部某一个材质出现噪点，如下图 1.上传的模型附带的参数中有一个选项设置为低于1，就会出现下图中的情况，如果是公库的材质，那么就是上传的素材有问题， 2.照射的光线过暗 1.如果是自己上传的材质，只需要在max中将材质属性中的模糊值，调整为默认值1，然后重新上传即可，如果是公库的素材，推荐换一个素材或者使用新材质上传自己重新上传一个材质即可
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226675/C61A23282006CB221735C95917B5AD6E.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226684/C03DE640394871C9C421A056F4924976.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226684/C03DE640394871C9C421A056F4924976.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226679/CFB1D9851719E84B886ED393E7C7E059.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226679/CFB1D9851719E84B886ED393E7C7E059.png" alt="Step 3" style="max-width:100%;height:auto;" />
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226628/50262E2E498FAC0F5D52DB7CFA030E69.png" alt="Step 3" style="max-width:100%;height:auto;" />
-
-2. 提高光线的亮度
-![](https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png)
-<img src="https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png" alt="Step 2" style="max-width:100%;height:auto;" />
+MEDIA_STEP_3_TEXT: 提高光线的亮度
+MEDIA_STEP_3_IMAGE: https://qhstaticssl.kujiale.com/yuntai/image/jpeg/1762136226825/69A49BD6697064DEB4D319402BB3DBBA.png
 
 </Visibility>
