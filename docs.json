@@ -53,16 +53,23 @@
               {
                 "group": "Floor plan",
                 "pages": [
+                  "knowledge/en/3fo4k4wbwnak_floor_plan_design_basics",
                   "knowledge/en/3fo4k4weqpo7_floor_plan_efficiently_correct_imported_floor_plan_drawings",
-                  "knowledge/en/3fo4k4wfp2m6_floor_plan_efficiently_adjust_imported_floor_plan_drawings"
+                  "knowledge/en/3fo4k4wfp2m6_floor_plan_efficiently_adjust_imported_floor_plan_drawings",
+                  "knowledge/en/3fo4k4wkljig_floor_plan_draw_beams_efficiently"
                 ]
               },
               {
                 "group": "General",
                 "pages": [
+                  "knowledge/en/3fo4k4wb9cfl_guide_for_uploading_cad_floor_plan_files",
+                  "knowledge/en/3fo4k4wf4m32_floor_design_wave_line_and_waterjet_pattern_floor_design_guide",
+                  "knowledge/en/3fo4k4wj9q4g_tips_and_tricks_on_floor_plan",
                   "knowledge/en/3fo4k4wk57qk_guide_for_using_real-time_material_editor",
                   "knowledge/en/3fo4k4wk71a4_what_is_the_color_difference_of_the_texture_after_generating_images_videos",
-                  "knowledge/en/3fo4k4wkagn5_what_is_the_difference_between_4k_360_walkthrough_and_normal_image"
+                  "knowledge/en/3fo4k4wkagn5_what_is_the_difference_between_4k_360_walkthrough_and_normal_image",
+                  "knowledge/en/3fo4k4wkslxk_guide_for_uploading_cad_floor_plan_by_images_pdf",
+                  "knowledge/en/3fo4k4wla22h_enterprise_brand_series_management_and_department_brand_management_tutorial"
                 ]
               },
               {
@@ -75,16 +82,28 @@
                   "knowledge/en/3fo4k4wjundp_how_to_generate_video_roaming",
                   "knowledge/en/3fo4k4wjvp61_how_to_generate_a_image_and_video_of_my_floor_plan",
                   "knowledge/en/3fo4k4wk8qgm_how_to_enhance_beautify_the_image",
-                  "knowledge/en/3fo4k4wkeaea_how_to_get_aerial_view_image"
+                  "knowledge/en/3fo4k4wkeaea_how_to_get_aerial_view_image",
+                  "knowledge/en/3fo4k4wl96y8_how_to_generate_a_detail_view"
                 ]
               },
               {
                 "group": "Kitchen & closet",
                 "pages": [
+                  "knowledge/en/3fo4k4wavcop_kitchen_closet_use_material_brush_to_change_the_model_material",
+                  "knowledge/en/3fo4k4wb3f4t_kitchen_closet_images_tools_basics",
+                  "knowledge/en/3fo4k4wb3vty_kitchen_closet_public_library_usage_guide",
+                  "knowledge/en/3fo4k4wb55bc_kitchen_closet_room_design_basics",
+                  "knowledge/en/3fo4k4wb63qm_kitchen_closet_closet_design_basics",
+                  "knowledge/en/3fo4k4wb673n_kitchen_closet_kitchen_design_basics",
+                  "knowledge/en/3fo4k4wbdwwy_kitchen_closet_drawing_design_basics",
                   "knowledge/en/3fo4k4wctnf5_closet_design_upload_model_materials_in_advanced_tool",
                   "knowledge/en/3fo4k4wctxg8_kitchen_closet_upload_model_materials_in_kitchen_closet_design",
+                  "knowledge/en/3fo4k4wdi5y6_kitchen_closet_draw_a_roof",
                   "knowledge/en/3fo4k4wf3kaq_kitchen_design_al_kitchen_auto-layout_usage_guide",
-                  "knowledge/en/3fo4k4wf628h_kitchen_closet_al_kitchen_auto-layout_usage_guide"
+                  "knowledge/en/3fo4k4wf628h_kitchen_closet_al_kitchen_auto-layout_usage_guide",
+                  "knowledge/en/3fo4k4wjp4g2_kitchen_design_open_and_close_doors_with_one_click",
+                  "knowledge/en/3fo4k4wkpnao_kitchen_design_use_style_brush_to_replace_the_door_style",
+                  "knowledge/en/3fo4k4wlbul1_kitchen_closet_get_started_with_design_tools"
                 ]
               },
               {
@@ -95,7 +114,9 @@
                   "knowledge/en/3fo4k4wfcqah_model_material_use_the_rotate_tools_to_adjust_the_model_orientation",
                   "knowledge/en/3fo4k4wk1hcg_3d_models_upload_operation_guide",
                   "knowledge/en/3fo4k4wka6m2_upload_textures_in_models",
-                  "knowledge/en/3fo4k4wkqbov_material_component_tool_how_to_use_push_pull"
+                  "knowledge/en/3fo4k4wkp9wk_material_component_tool_how_to_add_moldings",
+                  "knowledge/en/3fo4k4wkqbov_material_component_tool_how_to_use_push_pull",
+                  "knowledge/en/3fo4k4wkxy76_material_component_hide_display_walls_or_furniture"
                 ]
               },
               {
@@ -108,11 +129,21 @@
               {
                 "group": "Rendering",
                 "pages": [
+                  "knowledge/en/3fo4k4waj4p2_render_360_walkthrough_editor_function_introduction",
+                  "knowledge/en/3fo4k4wb23bf_render_indoor_daytime_nighttime_3.0_3.1_update_description",
+                  "knowledge/en/3fo4k4wb4dk4_render_ultra-fast_daytime_nighttime_3.0_3.1_update_description",
                   "knowledge/en/3fo4k4wcp9lt_render_real-time_rendering_split_screen_preview_function_guide",
                   "knowledge/en/3fo4k4wctde2_render_rendering_video_montage_function_guide",
+                  "knowledge/en/3fo4k4wdj4eg_render_set_the_environment_parameters",
+                  "knowledge/en/3fo4k4wdk66r_render_display_or_hide_environment_in_a_custom_lighting_scheme",
+                  "knowledge/en/3fo4k4we5bos_render_comparison_of_automatic_lighting_templates",
+                  "knowledge/en/3fo4k4we6ni7_render_lighting_template_video_effects_comparison",
                   "knowledge/en/3fo4k4wj962a_horizontal_rotation_and_stick_environment_in_the_images",
+                  "knowledge/en/3fo4k4wja7tl_render_3_steps_to_light_customization",
                   "knowledge/en/3fo4k4wjb2wu_generate_a_futuristic_dome_image_video_in_coohom",
+                  "knowledge/en/3fo4k4wjbto3_render_upload_your_own_environment_images",
                   "knowledge/en/3fo4k4wjm957_render_generate_720_vr_tour",
+                  "knowledge/en/3fo4k4wjropt_render_perspective_composition_tips",
                   "knowledge/en/3fo4k4wkbbqe_render_360_walkthrough_rendering_guide",
                   "knowledge/en/3fo4k4wkio7l_render_rendering_gallery_usage_guide",
                   "knowledge/en/3fo4k4wkpglm_snap_shot_feature_released",
@@ -146,7 +177,11 @@
               {
                 "group": "其他",
                 "pages": [
-                  "knowledge/zh/3fo4k4wdkjjv_实时材质编辑器使用指南"
+                  "knowledge/zh/3fo4k4wb8hcc_上传cad户型文件操作指南",
+                  "knowledge/zh/3fo4k4wbqjaq_上传cad户型图片操作指南",
+                  "knowledge/zh/3fo4k4wbxvqx_企业_品牌_系列管理和部门品牌管理教程",
+                  "knowledge/zh/3fo4k4wdkjjv_实时材质编辑器使用指南",
+                  "knowledge/zh/3fo4k4wf4iq1_地台设计_波打线和水刀地面设计"
                 ]
               },
               {
@@ -161,8 +196,16 @@
               {
                 "group": "定制设计",
                 "pages": [
+                  "knowledge/zh/3fo4k4wb4070_全屋定制_渲染工具基础入门",
+                  "knowledge/zh/3fo4k4wb51yb_全屋定制_户型设计基础入门",
+                  "knowledge/zh/3fo4k4wb5iog_全屋定制_厨房设计基础入门",
+                  "knowledge/zh/3fo4k4wb5m1h_全屋定制_公库使用指南",
+                  "knowledge/zh/3fo4k4wb6afo_全屋定制_衣帽间设计基础入门",
+                  "knowledge/zh/3fo4k4wbao90_全屋定制_设计工具快速上手",
+                  "knowledge/zh/3fo4k4wbf32b_全屋定制_图纸设计基础入门",
                   "knowledge/zh/3fo4k4wctu47_全屋定制_在厨房和衣帽间设计中上传模型材质",
                   "knowledge/zh/3fo4k4wcvxnt_全屋设计_在定制工具线中上传模型材质",
+                  "knowledge/zh/3fo4k4wdhkw0_全屋定制_绘制屋顶",
                   "knowledge/zh/3fo4k4wf2iif_橱柜设计_ai厨房自动布局使用指南",
                   "knowledge/zh/3fo4k4wf7rf0_全屋定制_ai橱柜自动布局使用指南"
                 ]
@@ -224,6 +267,24 @@
               {
                 "group": "部品・モデル",
                 "pages": [
+                  "knowledge/ja/3fo4k4wayeom_環境設定での画面色背景色を変更する方法",
+                  "knowledge/ja/3fo4k4wb0jsy_表示設定の切り替えについて",
+                  "knowledge/ja/3fo4k4wb0n60_ショートカットとマウス操作_キッチン_クローゼットデザイン_2d",
+                  "knowledge/ja/3fo4k4wb0qi1_ログイン方法",
+                  "knowledge/ja/3fo4k4wb0tu2_ツール画面の基本構成",
+                  "knowledge/ja/3fo4k4wb0x73_新規作成の入口",
+                  "knowledge/ja/3fo4k4wb1886_3d表示でカメラ視点を保存する方法",
+                  "knowledge/ja/3fo4k4wb1ew8_3d表示で画面を移動ためのショットキー",
+                  "knowledge/ja/3fo4k4wb1sac_プロフィール情報の変更方法",
+                  "knowledge/ja/3fo4k4wb26ng_アカウントのログイン",
+                  "knowledge/ja/3fo4k4wb2a0h_アカウント設定",
+                  "knowledge/ja/3fo4k4wb2dci_初めての準備",
+                  "knowledge/ja/3fo4k4wb2xeo_プロジェクトリンクの有効期限を設定する方法",
+                  "knowledge/ja/3fo4k4wb353q_プロジェクトの管理について",
+                  "knowledge/ja/3fo4k4wboj35_環境設定について",
+                  "knowledge/ja/3fo4k4wfjc0g_プライバシーポリシー",
+                  "knowledge/ja/3fo4k4wfjioi_サブスクリプション利用規約",
+                  "knowledge/ja/3fo4k4wfk0en_利用規約_terms_of_use_terms",
                   "knowledge/ja/3fo4k4wfohk0_部品交換_部品削除とパラメータ編集"
                 ]
               }

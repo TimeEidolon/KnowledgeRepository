@@ -8,7 +8,7 @@ Coohom product knowledge base built with [Mintlify](https://mintlify.com).
 - `knowledge/en/` — English articles (MDX)
 - `knowledge/zh/` — Chinese articles (MDX)
 - `knowledge/ja/` — Japanese articles (MDX)
-- `markdown/` — legacy Markdown source (ignored by Mintlify; kept for reference)
+- `scripts/sync_helpcenter.py` — sync articles from Help Center API
 
 ## Local preview
 
@@ -26,15 +26,26 @@ mint validate
 mint broken-links
 ```
 
-## Migrate from markdown/
+## Sync from Help Center API (recommended)
 
-After updating files under `markdown/`, re-run:
+Pull articles from Kujiale Help Center and write directly to `knowledge/`:
 
 ```bash
-python3 scripts/migrate_to_mintlify.py
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/sync_helpcenter.py --days 7
 ```
 
-Then merge `scripts/navigation-languages.json` into `docs.json` (or re-run the docs.json generation step in the migration workflow).
+Options (same semantics as Java `syncToMarkdown`):
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--days N` | 1 | Sync articles updated in the last N days |
+| `--start-time` / `--end-time` | — | Epoch milliseconds (overrides `--days`) |
+| `--only-publish` / `--no-only-publish` | publish only | Filter `PUBLISH` status |
+| `--no-update-nav` | — | Skip regenerating `docs.json` |
+| `--json` | — | Print result JSON |
 
 ## AI tools
 
