@@ -5,3 +5,16 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Legacy markdown source (migrated to knowledge/*.mdx)
+markdown/
+
+# Mintlify starter template (not in navigation)
+starter-main/
+starter.zip
+essentials/
+api-reference/
+agent-ready/
+ai-tools/
+quickstart.mdx
+development.mdx

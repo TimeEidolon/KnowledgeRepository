@@ -1,55 +1,49 @@
-# Mintlify Starter Kit
+# Coohom Help Center (Mintlify)
 
-Use the starter kit to get your docs deployed and ready to customize.
+Coohom product knowledge base built with [Mintlify](https://mintlify.com).
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Structure
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- `docs.json` — site configuration and multilingual navigation
+- `knowledge/en/` — English articles (MDX)
+- `knowledge/zh/` — Chinese articles (MDX)
+- `knowledge/ja/` — Japanese articles (MDX)
+- `markdown/` — legacy Markdown source (ignored by Mintlify; kept for reference)
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## Local preview
 
-## AI-assisted writing
+```bash
+npm i -g mint
+mint dev
+```
 
-Set up your AI coding tool to work with Mintlify:
+Open [http://localhost:3000](http://localhost:3000).
+
+## Validate
+
+```bash
+mint validate
+mint broken-links
+```
+
+## Migrate from markdown/
+
+After updating files under `markdown/`, re-run:
+
+```bash
+python3 scripts/migrate_to_mintlify.py
+```
+
+Then merge `scripts/navigation-languages.json` into `docs.json` (or re-run the docs.json generation step in the migration workflow).
+
+## AI tools
 
 ```bash
 npx skills add https://mintlify.com/docs
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+Connect your deployed docs MCP at `https://<your-docs-domain>/mcp` in Cursor for documentation search.
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+## Deploy
 
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Connect this repository in the [Mintlify dashboard](https://dashboard.mintlify.com) and install the GitHub app. Pushes to the default branch deploy automatically.

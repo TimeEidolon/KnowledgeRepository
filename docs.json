@@ -1,91 +1,237 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "KnowledgeRepository",
+  "name": "Coohom Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2563EB",
+    "light": "#3B82F6",
+    "dark": "#1D4ED8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "en",
+        "label": "English",
+        "tabs": [
           {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Agent ready",
-            "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+            "tab": "Help Center",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "knowledge/en/index"
+                ]
+              },
+              {
+                "group": "360 walkthrough",
+                "pages": [
+                  "knowledge/en/3fo4k4waj4p2_360_walkthrough_editor_function_introduction"
+                ]
+              },
+              {
+                "group": "Account & billing",
+                "pages": [
+                  "knowledge/en/3fo4k4wfnt5s_coohom_personal_edition_credits_instructions",
+                  "knowledge/en/3fo4k4wfnwht_coohom_enterprise_edition_credits_instructions",
+                  "knowledge/en/3fo4k4wk2pst_subscription_agreement",
+                  "knowledge/en/3fo4k4wkt3np_coohom_3ds_max_sketchup_model_upload_requirements"
+                ]
+              },
+              {
+                "group": "Ceiling design",
+                "pages": [
+                  "knowledge/en/3fo4k4wf70nr_ceiling_design_draw_a_tray_ceiling_with_slanted_edges",
+                  "knowledge/en/3fo4k4wf7y42_ceiling_design_draw_a_ceiling_with_no_main_light",
+                  "knowledge/en/3fo4k4wf85s4_ceiling_design_draw_a_multi-level_stepped_ceiling",
+                  "knowledge/en/3fo4k4wf8ch6_ceiling_design_draw_a_curved_ceiling",
+                  "knowledge/en/3fo4k4wfq4eh_ceiling_design_draw_a_freeform_luminous_ceiling",
+                  "knowledge/en/3fo4k4wjtbkb_ceiling_design_create_your_ceiling_templates",
+                  "knowledge/en/3fo4k4wjy73r_ceiling_design_quick_placement_of_the_finished_or_parametric_ceiling"
+                ]
+              },
+              {
+                "group": "Floor plan",
+                "pages": [
+                  "knowledge/en/3fo4k4weqpo7_floor_plan_efficiently_correct_imported_floor_plan_drawings",
+                  "knowledge/en/3fo4k4wfp2m6_floor_plan_efficiently_adjust_imported_floor_plan_drawings"
+                ]
+              },
+              {
+                "group": "General",
+                "pages": [
+                  "knowledge/en/3fo4k4wk57qk_guide_for_using_real-time_material_editor",
+                  "knowledge/en/3fo4k4wk71a4_what_is_the_color_difference_of_the_texture_after_generating_images_videos",
+                  "knowledge/en/3fo4k4wkagn5_what_is_the_difference_between_4k_360_walkthrough_and_normal_image"
+                ]
+              },
+              {
+                "group": "How-to guides",
+                "pages": [
+                  "knowledge/en/3fo4k4wb7pl4_how_to_share_your_coohom_walkthrough_tour_on_social_media",
+                  "knowledge/en/3fo4k4wjt1j8_how_to_see_vr_effect_in_panorama",
+                  "knowledge/en/3fo4k4wjtsag_how_to_upload_texture_-_advanced_settings",
+                  "knowledge/en/3fo4k4wjugon_how_to_rename_panorama",
+                  "knowledge/en/3fo4k4wjundp_how_to_generate_video_roaming",
+                  "knowledge/en/3fo4k4wjvp61_how_to_generate_a_image_and_video_of_my_floor_plan",
+                  "knowledge/en/3fo4k4wk8qgm_how_to_enhance_beautify_the_image",
+                  "knowledge/en/3fo4k4wkeaea_how_to_get_aerial_view_image"
+                ]
+              },
+              {
+                "group": "Kitchen & closet",
+                "pages": [
+                  "knowledge/en/3fo4k4wctnf5_closet_design_upload_model_materials_in_advanced_tool",
+                  "knowledge/en/3fo4k4wctxg8_kitchen_closet_upload_model_materials_in_kitchen_closet_design",
+                  "knowledge/en/3fo4k4wf3kaq_kitchen_design_al_kitchen_auto-layout_usage_guide",
+                  "knowledge/en/3fo4k4wf628h_kitchen_closet_al_kitchen_auto-layout_usage_guide"
+                ]
+              },
+              {
+                "group": "Models & materials",
+                "pages": [
+                  "knowledge/en/3fo4k4wbpe6e_3ds_max_model_upload_management_platform_operation_instructions",
+                  "knowledge/en/3fo4k4wd8sad_how_many_3d_models_or_textures_can_users_upload_to_coohom",
+                  "knowledge/en/3fo4k4wfcqah_model_material_use_the_rotate_tools_to_adjust_the_model_orientation",
+                  "knowledge/en/3fo4k4wk1hcg_3d_models_upload_operation_guide",
+                  "knowledge/en/3fo4k4wka6m2_upload_textures_in_models",
+                  "knowledge/en/3fo4k4wkqbov_material_component_tool_how_to_use_push_pull"
+                ]
+              },
+              {
+                "group": "Product updates",
+                "pages": [
+                  "knowledge/en/3fo4k4wet49w_march_2026_model_topics_overview",
+                  "knowledge/en/3fo4k4wfo7iw_april_2026_model_topics_overview"
+                ]
+              },
+              {
+                "group": "Rendering",
+                "pages": [
+                  "knowledge/en/3fo4k4wcp9lt_render_real-time_rendering_split_screen_preview_function_guide",
+                  "knowledge/en/3fo4k4wctde2_render_rendering_video_montage_function_guide",
+                  "knowledge/en/3fo4k4wj962a_horizontal_rotation_and_stick_environment_in_the_images",
+                  "knowledge/en/3fo4k4wjb2wu_generate_a_futuristic_dome_image_video_in_coohom",
+                  "knowledge/en/3fo4k4wjm957_render_generate_720_vr_tour",
+                  "knowledge/en/3fo4k4wkbbqe_render_360_walkthrough_rendering_guide",
+                  "knowledge/en/3fo4k4wkio7l_render_rendering_gallery_usage_guide",
+                  "knowledge/en/3fo4k4wkpglm_snap_shot_feature_released",
+                  "knowledge/en/3fo4k4wl702k_render_download_360_walk-through_photos",
+                  "knowledge/en/3fo4k4wl9xpg_render_real-time_rendering_operation_guide"
+                ]
+              },
+              {
+                "group": "Wall design",
+                "pages": [
+                  "knowledge/en/3fo4k4wfqefk_wall_design_ceramic_tile_wall_design_guide"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "language": "zh",
+        "label": "简体中文",
+        "tabs": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+            "tab": "Help Center",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "knowledge/zh/index"
+                ]
+              },
+              {
+                "group": "其他",
+                "pages": [
+                  "knowledge/zh/3fo4k4wdkjjv_实时材质编辑器使用指南"
+                ]
+              },
+              {
+                "group": "团队空间",
+                "pages": [
+                  "knowledge/zh/3fo4k4wekf0b_elite团队空间_创建团队方案",
+                  "knowledge/zh/3fo4k4wewgaw_elite团队空间_在团队库中上传模型素材",
+                  "knowledge/zh/3fo4k4wfd4nl_elite团队空间_复制方案_模型至团队空间",
+                  "knowledge/zh/3fo4k4wfq7qi_elite团队空间_与其他人分享方案"
+                ]
+              },
+              {
+                "group": "定制设计",
+                "pages": [
+                  "knowledge/zh/3fo4k4wctu47_全屋定制_在厨房和衣帽间设计中上传模型材质",
+                  "knowledge/zh/3fo4k4wcvxnt_全屋设计_在定制工具线中上传模型材质",
+                  "knowledge/zh/3fo4k4wf2iif_橱柜设计_ai厨房自动布局使用指南",
+                  "knowledge/zh/3fo4k4wf7rf0_全屋定制_ai橱柜自动布局使用指南"
+                ]
+              },
+              {
+                "group": "户型工具",
+                "pages": [
+                  "knowledge/zh/3fo4k4wer0pa_户型工具_高效矫正导入的户型图纸",
+                  "knowledge/zh/3fo4k4wf3a9n_户型工具_ai智能布局工具使用指南",
+                  "knowledge/zh/3fo4k4wfp5y7_户型工具_高效调整导入的户型图纸"
+                ]
+              },
+              {
+                "group": "模型与素材",
+                "pages": [
+                  "knowledge/zh/3fo4k4wbm25e_coohom_3ds_max_和_sketchup_模型上传要求",
+                  "knowledge/zh/3fo4k4wbpatd_3ds_max模型上传管理平台操作说明",
+                  "knowledge/zh/3fo4k4wby6s1_3d模型上传操作指南",
+                  "knowledge/zh/3fo4k4wfd1bk_模型素材_用旋转翻转工具调整模型方向"
+                ]
+              },
+              {
+                "group": "渲染",
+                "pages": [
+                  "knowledge/zh/3fo4k4wfed4y_渲染_全景图渲染指南"
+                ]
+              },
+              {
+                "group": "硬装设计",
+                "pages": [
+                  "knowledge/zh/3fo4k4wfqb3j_背景墙设计_瓷砖墙面设计指南",
+                  "knowledge/zh/3fo4k4wfql4m_吊顶设计_绘制不规则发光吊顶"
+                ]
+              },
+              {
+                "group": "账户与积分",
+                "pages": [
+                  "knowledge/zh/3fo4k4wfo46v_coohom企业版积分说明",
+                  "knowledge/zh/3fo4k4wfoaux_coohom个人版积分说明"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "ja",
+        "label": "日本語",
+        "tabs": [
           {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "tab": "Help Center",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "knowledge/ja/index"
+                ]
+              },
+              {
+                "group": "部品・モデル",
+                "pages": [
+                  "knowledge/ja/3fo4k4wfohk0_部品交換_部品削除とパラメータ編集"
+                ]
+              }
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -94,14 +240,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Coohom",
+        "href": "https://www.coohom.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go to Coohom",
+      "href": "https://www.coohom.com"
     }
   },
   "contextual": {
@@ -116,11 +262,12 @@
       "vscode"
     ]
   },
+  "seo": {
+    "indexing": "all"
+  },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/mintlify"
     }
   }
 }
